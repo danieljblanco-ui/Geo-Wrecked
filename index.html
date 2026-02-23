@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO-WRECKED! — GeoBee Trainer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a2e; overflow-x: hidden; }
+    #root { min-height: 100vh; }
+  </style>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" data-type="module">
+    const { useState, useEffect, useCallback, useRef } = React;
+const ALL_QUESTIONS = [
+// ═══ DIFFICULTY 1: "Warm Up Your Globe" (Easy) ═══
+{d:1,cat:"Capitals",q:"What is the capital of Japan?",o:["Tokyo","Osaka","Kyoto","Yokohama"],a:0,
+f:"Tokyo's metro area has about 37 million people — the most populous metropolitan area in the world.",
+rq:"Tokyo! 37 million people somehow all fitting in one metro area. That's dedication to city living.",
+wq:"Nope! It's Tokyo — home to the world's most populous metro area."},
+{d:1,cat:"Capitals",q:"What is the capital of France?",o:["Lyon","Marseille","Paris","Nice"],a:2,
+f:"Paris is home to about 2.1 million people in the city proper, but the metro area has over 12 million.",
+rq:"Paris! The City of Light and the city of correct answers. Well done.",
+wq:"Non non non! It's Paris. The Eiffel Tower is literally pointing at the answer."},
+{d:1,cat:"Capitals",q:"What is the capital of Australia?",o:["Sydney","Melbourne","Canberra","Brisbane"],a:2,
+f:"Canberra was purpose-built as the capital starting in 1913 because Sydney and Melbourne couldn't stop fighting over the title.",
+rq:"Canberra! The compromise capital! Built because two cities couldn't share.",
+wq:"Classic trap! It's Canberra — built specifically because Sydney and Melbourne couldn't agree."},
+{d:1,cat:"Capitals",q:"What is the capital of Canada?",o:["Toronto","Vancouver","Montreal","Ottawa"],a:3,
+f:"Ottawa was chosen as the capital by Queen Victoria in 1857, partly because it was on the border of English- and French-speaking regions.",
+rq:"Ottawa! Not Toronto, not Montreal. Queen Victoria picked it in 1857.",
+wq:"It's Ottawa! Everyone guesses Toronto, but Ottawa has been the capital since 1857."},
+{d:1,cat:"Capitals",q:"What is the capital of Brazil?",o:["São Paulo","Rio de Janeiro","Brasília","Salvador"],a:2,
+f:"Brasília was built from scratch in the late 1950s and became the capital in 1960. Seen from above, the city is shaped like an airplane.",
+rq:"Brasília! Built from nothing in the 1950s and shaped like an airplane from above!",
+wq:"It's Brasília! They literally built a new city to be the capital in 1960."},
+{d:1,cat:"Capitals",q:"What is the capital of India?",o:["Mumbai","New Delhi","Kolkata","Bangalore"],a:1,
+f:"New Delhi was designed by British architects Edwin Lutyens and Herbert Baker and became the capital in 1931, replacing Calcutta (now Kolkata).",
+rq:"New Delhi! The planned city that took over from Kolkata as capital in 1931.",
+wq:"It's New Delhi! Mumbai is the financial capital, but New Delhi runs the government."},
+{d:1,cat:"Capitals",q:"What is the capital of China?",o:["Beijing","Shanghai","Guangzhou","Shenzhen"],a:0,
+f:"Beijing means 'Northern Capital' in Mandarin. It has served as the capital of China for most of the last eight centuries.",
+rq:"Beijing! 'Northern Capital' in Mandarin. Running the show for 800+ years.",
+wq:"It's Beijing! Shanghai is bigger by population, but Beijing is where the government lives."},
+{d:1,cat:"Capitals",q:"What is the capital of Egypt?",o:["Alexandria","Luxor","Cairo","Giza"],a:2,
+f:"Cairo is the largest city in the Arab world and Africa, with a metro population of about 21 million people.",
+rq:"Cairo! The largest city in the Arab world and all of Africa. Size matters in geography.",
+wq:"It's Cairo! The largest city in both Africa and the Arab world, right on the Nile."},
+{d:1,cat:"Capitals",q:"What is the capital of Germany?",o:["Munich","Hamburg","Frankfurt","Berlin"],a:3,
+f:"Berlin was divided into East and West from 1961 to 1989 by the Berlin Wall. It became the reunified capital in 1990.",
+rq:"Berlin! Divided by a wall, reunified by history. One of Europe's most dynamic cities.",
+wq:"It's Berlin! Frankfurt has the banks, Munich has the beer, but Berlin has the government."},
+{d:1,cat:"Capitals",q:"What is the capital of South Korea?",o:["Seoul","Busan","Incheon","Daegu"],a:0,
+f:"Seoul is home to roughly half of South Korea's entire population when you include the greater metro area — about 25 million people.",
+rq:"Seoul! Half of South Korea basically lives there. That's one popular capital!",
+wq:"It's Seoul! About 25 million people in the metro area — half the country!"},
+{d:1,cat:"Capitals",q:"What is the capital of Mexico?",o:["Guadalajara","Cancún","Mexico City","Monterrey"],a:2,
+f:"Mexico City sits at about 2,240 meters elevation and was built on the ruins of the Aztec capital Tenochtitlan.",
+rq:"Mexico City! Built on the Aztec capital Tenochtitlan. History stacked on history!",
+wq:"It's Mexico City! Built on top of the ancient Aztec capital Tenochtitlan."},
+{d:1,cat:"Capitals",q:"What is the capital of Russia?",o:["St. Petersburg","Novosibirsk","Moscow","Vladivostok"],a:2,
+f:"Moscow is the northernmost megacity in the world, with a metro population of about 17 million people.",
+rq:"Moscow! The northernmost megacity on Earth with 17 million people.",
+wq:"It's Moscow! St. Petersburg was the capital from 1712-1918, but Moscow reclaimed the throne."},
+{d:1,cat:"Capitals",q:"What is the capital of Italy?",o:["Milan","Venice","Florence","Rome"],a:3,
+f:"Rome was the center of the Roman Empire and has been continuously inhabited for over 2,800 years, making it one of the oldest cities in Europe.",
+rq:"Rome! The Eternal City. 2,800 years and still going strong. Now THAT'S staying power.",
+wq:"It's Rome! The Eternal City has been a capital for literally thousands of years."},
+{d:1,cat:"Capitals",q:"What is the capital of Spain?",o:["Barcelona","Madrid","Seville","Valencia"],a:1,
+f:"Madrid is the highest capital city in the European Union at about 650 meters above sea level.",
+rq:"Madrid! The highest capital in the EU. It's got altitude AND attitude.",
+wq:"It's Madrid! Barcelona gets the tourists, but Madrid gets the government."},
+{d:1,cat:"Capitals",q:"What is the capital of the United Kingdom?",o:["Edinburgh","Manchester","London","Birmingham"],a:2,
+f:"London has been a major settlement for nearly two millennia, founded as Londinium by the Romans around 43 AD.",
+rq:"London! Founded by the Romans as Londinium in 43 AD. Two thousand years of capital energy!",
+wq:"It's London! Capital of the UK since... well, since before 'UK' was even a thing."},
+{d:1,cat:"Continents",q:"What is the largest continent by area?",o:["Africa","North America","Asia","Europe"],a:2,
+f:"Asia covers about 44.58 million square km — roughly 30% of Earth's total land area and 8.7% of its total surface.",
+rq:"Asia! 30% of all land on Earth. The continent that said 'go big or go home.'",
+wq:"It's Asia! Covering about 30% of all land on Earth. Africa is second."},
+{d:1,cat:"Continents",q:"What is the smallest continent by area?",o:["Europe","Antarctica","South America","Australia"],a:3,
+f:"Australia covers about 7.69 million square km. It's the only continent that is also a single country.",
+rq:"Australia! The only continent that's also a single country. Efficient!",
+wq:"It's Australia! The smallest continent AND the only one that's a single country."},
+{d:1,cat:"Oceans & Seas",q:"What is the largest ocean on Earth?",o:["Atlantic Ocean","Pacific Ocean","Indian Ocean","Southern Ocean"],a:1,
+f:"The Pacific Ocean covers about 165 million square km — larger than all the land on Earth combined.",
+rq:"The Pacific! Larger than ALL the land on Earth combined. That's not an ocean, that's a flex!",
+wq:"It's the Pacific! So big it's larger than every continent combined. Let that sink in."},
+{d:1,cat:"Oceans & Seas",q:"Which ocean lies between the Americas and Europe/Africa?",o:["Atlantic Ocean","Pacific Ocean","Indian Ocean","Arctic Ocean"],a:0,
+f:"The Atlantic Ocean is the second largest ocean, covering about 106 million square km. It's named after the Greek god Atlas.",
+rq:"The Atlantic! Named after the Greek god Atlas. Second largest and culturally first in line.",
+wq:"It's the Atlantic! The ocean that separates — and connects — the Old World and the New."},
+{d:1,cat:"Continents",q:"How many continents are there?",o:["5","6","7","8"],a:2,
+f:"The seven continents are Africa, Antarctica, Asia, Australia, Europe, North America, and South America. Some models group them differently.",
+rq:"Seven! Africa, Antarctica, Asia, Australia, Europe, North America, South America. Geography's magnificent seven!",
+wq:"It's 7! Some countries teach 6 or even 5, but the standard model is seven."},
+{d:1,cat:"Continents",q:"In which hemisphere is Australia located?",o:["Northern","Southern","It spans both","Western only"],a:1,
+f:"Australia lies entirely in the Southern and Eastern Hemispheres. Its seasons are opposite to those in the Northern Hemisphere.",
+rq:"Southern Hemisphere! Where December is summer and July is winter. Geography: keeping things interesting.",
+wq:"It's the Southern Hemisphere! That's why their seasons are flipped — summer in December!"},
+{d:1,cat:"Continents",q:"On which continent is Egypt located?",o:["Africa","Asia","Europe","It spans two"],a:0,
+f:"Egypt is in the northeast corner of Africa, though the Sinai Peninsula extends into Asia. It's generally considered an African country.",
+rq:"Africa! Specifically the northeast corner. The Sinai technically dips into Asia, but Egypt is African.",
+wq:"It's Africa! The northeast corner specifically. The Sinai Peninsula does touch Asia, though."},
+{d:1,cat:"Oceans & Seas",q:"What is the smallest ocean?",o:["Southern Ocean","Indian Ocean","Atlantic Ocean","Arctic Ocean"],a:3,
+f:"The Arctic Ocean covers about 14 million square km, centered roughly on the North Pole. Much of it is covered by sea ice.",
+rq:"The Arctic! The coldest, smallest ocean. Covered in ice and full of surprises.",
+wq:"It's the Arctic Ocean! The smallest and coldest of the five, centered on the North Pole."},
+{d:1,cat:"Oceans & Seas",q:"How many oceans are there?",o:["4","5","6","7"],a:1,
+f:"The five oceans are the Pacific, Atlantic, Indian, Southern (Antarctic), and Arctic. The Southern Ocean was officially recognized by the IHO.",
+rq:"Five! Pacific, Atlantic, Indian, Southern, and Arctic. Earth's famous five.",
+wq:"It's 5! The Southern Ocean became officially recognized, bringing the total to five."},
+{d:1,cat:"Continents",q:"On which continent is Argentina?",o:["Central America","Europe","South America","North America"],a:2,
+f:"Argentina is the second-largest country in South America and the eighth-largest in the world, covering about 2.78 million square km.",
+rq:"South America! Argentina is the second biggest country on the continent, after Brazil.",
+wq:"South America! Argentina is the continent's second-largest country after Brazil."},
+{d:1,cat:"US Geography",q:"What is the largest U.S. state by area?",o:["Alaska","Texas","California","Montana"],a:0,
+f:"Alaska covers about 1.72 million square km — more than twice the size of Texas. It was purchased from Russia in 1867 for $7.2 million.",
+rq:"Alaska! More than TWICE the size of Texas. Sorry, Texas, you're only number two!",
+wq:"It's Alaska! Over twice the size of Texas. Everything is bigger in Alaska, apparently."},
+{d:1,cat:"US Geography",q:"What is the smallest U.S. state by area?",o:["Delaware","Connecticut","Hawaii","Rhode Island"],a:3,
+f:"Rhode Island covers just about 4,001 square km. You could fit about 425 Rhode Islands inside Alaska.",
+rq:"Rhode Island! So small you can fit 425 of them inside Alaska. The state that proves size isn't everything.",
+wq:"It's Rhode Island! Tiny but mighty. You could fit 425 of them inside Alaska."},
+{d:1,cat:"US Geography",q:"What is the most populous U.S. state?",o:["Texas","California","Florida","New York"],a:1,
+f:"California has about 39 million residents, making it more populous than many countries including Canada and Australia.",
+rq:"California! 39 million people. More than Canada. More than Australia. That's a LOT of Californians.",
+wq:"It's California! With ~39 million people, it's more populous than many entire countries."},
+{d:1,cat:"US Geography",q:"In which U.S. state is the Grand Canyon?",o:["Nevada","Utah","Arizona","Colorado"],a:2,
+f:"The Grand Canyon is about 446 km long, up to 29 km wide, and over 1,800 meters deep. It was carved by the Colorado River.",
+rq:"Arizona! Home to 446 km of jaw-dropping, river-carved geological glory.",
+wq:"It's Arizona! The Colorado River carved the Grand Canyon over millions of years."},
+{d:1,cat:"US Geography",q:"Which U.S. state is an archipelago (chain of islands)?",o:["Hawaii","Alaska","Florida","Maine"],a:0,
+f:"Hawaii consists of 137 islands spanning 2,400 km. The eight main islands include Oahu, Maui, and the Big Island (Hawaii Island).",
+rq:"Hawaii! 137 islands of volcanic origin, spread across 2,400 km of Pacific Ocean.",
+wq:"It's Hawaii! A chain of 137 volcanic islands in the middle of the Pacific."},
+{d:1,cat:"US Geography",q:"Into which body of water does the Mississippi River empty?",o:["Atlantic Ocean","Gulf of Mexico","Caribbean Sea","Pacific Ocean"],a:1,
+f:"The Mississippi River is about 3,766 km long and its drainage basin covers roughly 40% of the continental United States.",
+rq:"The Gulf of Mexico! The Mississippi drains about 40% of the continental US into that gulf.",
+wq:"The Gulf of Mexico! The Mississippi's drainage basin covers 40% of the lower 48 states."},
+{d:1,cat:"US Geography",q:"The Great Lakes border the United States and which country?",o:["Mexico","Cuba","Canada","Bahamas"],a:2,
+f:"The five Great Lakes (Superior, Michigan, Huron, Erie, Ontario) contain about 21% of the world's surface freshwater.",
+rq:"Canada! The Great Lakes hold about 21% of the world's surface freshwater. That's a LOT of lake.",
+wq:"It's Canada! Together the Great Lakes hold 21% of all surface freshwater on Earth."},
+{d:1,cat:"US Geography",q:"Which U.S. state is the furthest north?",o:["Washington","Maine","Alaska","Minnesota"],a:2,
+f:"Alaska extends above the Arctic Circle. Its northernmost point, Point Barrow (Utqiaġvik), is at about 71°N latitude.",
+rq:"Alaska! Extending above the Arctic Circle to about 71°N. It's also the furthest west AND east (Aleutian Islands cross 180°)!",
+wq:"It's Alaska! Not only furthest north, but also technically furthest west AND east."},
+{d:1,cat:"US Geography",q:"Which U.S. state borders Mexico to the southwest and has the city of Phoenix?",o:["New Mexico","Arizona","Texas","California"],a:1,
+f:"Arizona shares about 626 km of border with Mexico. Phoenix is one of the hottest major cities in the US, regularly exceeding 40°C in summer.",
+rq:"Arizona! Home of Phoenix, where summer temperatures regularly hit 40°C+. Bring water!",
+wq:"It's Arizona! Phoenix regularly hits 40°C in summer — the oven of the American Southwest."},
+{d:1,cat:"Physical Geography",q:"What is the tallest mountain in the world?",o:["K2","Kangchenjunga","Lhotse","Mount Everest"],a:3,
+f:"Mount Everest stands at 8,849 meters above sea level, as measured by a 2020 Chinese-Nepalese survey. It sits on the border of Nepal and Tibet (China).",
+rq:"Everest! 8,849 meters of pure geological ambition on the Nepal-Tibet border.",
+wq:"It's Mount Everest! 8,849 meters tall. K2 is second at 8,611 meters."},
+{d:1,cat:"Physical Geography",q:"What is the largest hot desert in the world?",o:["Arabian Desert","Gobi Desert","Sahara Desert","Kalahari Desert"],a:2,
+f:"The Sahara covers about 9.2 million square km across 11 North African countries — roughly the size of the United States.",
+rq:"The Sahara! About the size of the entire United States. That's a LOT of sand.",
+wq:"It's the Sahara! About 9.2 million sq km — roughly the size of the entire US."},
+{d:1,cat:"Physical Geography",q:"What is the largest island in the world (not counting continents)?",o:["Greenland","New Guinea","Borneo","Madagascar"],a:0,
+f:"Greenland covers about 2.166 million square km. It's an autonomous territory of Denmark despite being geographically part of North America.",
+rq:"Greenland! 2.166 million sq km of mostly ice. Erik the Red named it 'Greenland' as a marketing scheme. Seriously.",
+wq:"It's Greenland! Despite its name, it's mostly covered in ice. Viking false advertising at its finest."},
+{d:1,cat:"Physical Geography",q:"The Great Barrier Reef is located off the coast of which country?",o:["Indonesia","Australia","Philippines","Fiji"],a:1,
+f:"The Great Barrier Reef stretches about 2,300 km along Australia's northeast coast. It's the world's largest coral reef system, visible from space.",
+rq:"Australia! The Great Barrier Reef is 2,300 km long and visible from space. Earth's biggest living structure!",
+wq:"It's Australia! The reef stretches 2,300 km along the northeast coast — visible from space!"},
+{d:1,cat:"Physical Geography",q:"The Panama Canal connects which two oceans?",o:["Pacific and Indian","Arctic and Atlantic","Indian and Atlantic","Atlantic and Pacific"],a:3,
+f:"The Panama Canal is about 82 km long and saves ships a roughly 15,000 km journey around South America. It opened in 1914.",
+rq:"Atlantic and Pacific! The canal saves about 15,000 km compared to sailing around South America.",
+wq:"It's the Atlantic and Pacific! Opened in 1914, saving ships a 15,000 km detour around South America."},
+{d:1,cat:"Physical Geography",q:"Mount Everest is part of which mountain range?",o:["Andes","Alps","Himalayas","Rockies"],a:2,
+f:"The Himalayas stretch about 2,400 km across five countries: India, Nepal, Bhutan, China (Tibet), and Pakistan. They contain all 14 peaks over 8,000 meters.",
+rq:"The Himalayas! Home to ALL 14 of the world's 8,000-meter peaks. Overachievers.",
+wq:"The Himalayas! All 14 of the world's peaks above 8,000 meters are found there."},
+{d:1,cat:"Physical Geography",q:"The Sahara Desert is located on which continent?",o:["Africa","Asia","Australia","South America"],a:0,
+f:"The Sahara spans 11 countries in North Africa and is expanding southward at a rate of about 48 km per year in some areas.",
+rq:"Africa! The Sahara spans 11 countries across the northern part of the continent.",
+wq:"It's Africa! The Sahara stretches across 11 countries in North Africa."},
+{d:1,cat:"Physical Geography",q:"What separates the Mediterranean Sea from the Atlantic Ocean?",o:["Suez Canal","Strait of Malacca","Strait of Gibraltar","Panama Canal"],a:2,
+f:"The Strait of Gibraltar is only about 14 km wide at its narrowest point, separating Europe (Spain) from Africa (Morocco).",
+rq:"The Strait of Gibraltar! Just 14 km separates Europe from Africa there. You could almost swim it. (People actually do!)",
+wq:"The Strait of Gibraltar! Only 14 km wide at its narrowest — separating Spain from Morocco."},
+{d:1,cat:"Physical Geography",q:"What is the deepest known point in the world's oceans?",o:["Puerto Rico Trench","Tonga Trench","Java Trench","Mariana Trench"],a:3,
+f:"The Challenger Deep in the Mariana Trench reaches about 10,935 meters. Mount Everest could fit inside with over a mile of water above it.",
+rq:"The Mariana Trench! So deep you could stack Everest inside and still have a mile of water above it.",
+wq:"It's the Mariana Trench! Challenger Deep is about 10,935 meters — deeper than Everest is tall."},
+{d:1,cat:"Physical Geography",q:"The Amazon Rainforest is primarily located on which continent?",o:["South America","Africa","Asia","North America"],a:0,
+f:"The Amazon Rainforest covers about 5.5 million square km — roughly 60% of it in Brazil — and produces about 6% of the world's oxygen.",
+rq:"South America! The Amazon covers about 5.5 million sq km. That's a forest the size of most of Western Europe!",
+wq:"It's South America! About 60% of the Amazon is in Brazil, with the rest spread across 8 other countries."},
+{d:1,cat:"Countries",q:"What is the largest country in the world by area?",o:["Canada","Russia","China","United States"],a:1,
+f:"Russia covers about 17.1 million square km, spanning 11 time zones. It's nearly twice the size of Canada, the second largest.",
+rq:"Russia! 17.1 million sq km across 11 time zones. Russia doesn't do small.",
+wq:"It's Russia! 17.1 million sq km — nearly twice the size of second-place Canada."},
+{d:1,cat:"Countries",q:"What is the smallest country in the world by area?",o:["Monaco","San Marino","Vatican City","Liechtenstein"],a:2,
+f:"Vatican City covers just 0.44 square km (about 109 acres). It has its own postal service, radio station, and a population of about 800.",
+rq:"Vatican City! 0.44 sq km. You could walk across the entire country during a commercial break!",
+wq:"It's Vatican City! At 0.44 sq km, it's smaller than most golf courses."},
+{d:1,cat:"Countries",q:"As of recent estimates, what is the most populous country in the world?",o:["India","China","United States","Indonesia"],a:0,
+f:"India surpassed China as the most populous country around 2023, with a population exceeding 1.4 billion. That's about 1 in every 6 humans on Earth.",
+rq:"India! It overtook China around 2023. One in every six humans on Earth is Indian!",
+wq:"It's India! It passed China around 2023. About 1 in 6 people on Earth live in India."},
+{d:1,cat:"Countries",q:"What is the largest country in South America?",o:["Argentina","Colombia","Peru","Brazil"],a:3,
+f:"Brazil covers about 8.5 million square km — nearly half of South America's total land area. It borders every South American country except Chile and Ecuador.",
+rq:"Brazil! Nearly half of South America all by itself. And it borders almost every other country on the continent!",
+wq:"It's Brazil! Covering nearly half of South America and bordering almost every country on the continent."},
+{d:1,cat:"Countries",q:"Which European country is shaped like a boot?",o:["Greece","Spain","Italy","Portugal"],a:2,
+f:"Italy's distinctive boot shape kicks the island of Sicily, which sits just off its 'toe.' The country stretches about 1,185 km from north to south.",
+rq:"Italy! The boot that kicks Sicily. 1,185 km of delicious, boot-shaped geography.",
+wq:"It's Italy! The world's most recognizable country shape — a boot kicking Sicily."},
+{d:1,cat:"Countries",q:"What is the largest country in Africa by area?",o:["Algeria","Democratic Republic of Congo","Sudan","Libya"],a:0,
+f:"Algeria covers about 2.38 million square km, making it the largest country in Africa and the 10th largest in the world. Most of it is Sahara Desert.",
+rq:"Algeria! 2.38 million sq km, mostly Sahara. It became Africa's largest after South Sudan split from Sudan in 2011.",
+wq:"It's Algeria! At 2.38 million sq km, it became Africa's largest country after Sudan split in 2011."},
+{d:1,cat:"Countries",q:"What is the largest island in the Caribbean?",o:["Jamaica","Hispaniola","Cuba","Puerto Rico"],a:2,
+f:"Cuba covers about 109,884 square km. Hispaniola (shared by Haiti and the Dominican Republic) is second largest at about 76,192 square km.",
+rq:"Cuba! About 109,884 sq km of Caribbean real estate. Hispaniola is the runner-up.",
+wq:"It's Cuba! The largest Caribbean island at about 109,884 sq km."},
+{d:1,cat:"Countries",q:"Which country straddles both Europe and Asia?",o:["Egypt","Iran","Turkey","Greece"],a:2,
+f:"Turkey's largest city, Istanbul, literally sits on two continents — the Bosphorus strait divides its European and Asian sides.",
+rq:"Turkey! Istanbul is split between two continents by the Bosphorus. You can have breakfast in Europe and lunch in Asia!",
+wq:"It's Turkey! Istanbul straddles both continents — Europe on one side, Asia on the other."},
+{d:1,cat:"Countries",q:"What is the most populous country entirely in Europe?",o:["Germany","France","United Kingdom","Italy"],a:0,
+f:"Germany has about 84 million people, making it the most populous country entirely within Europe. Russia has more people total, but it spans both Europe and Asia.",
+rq:"Germany! About 84 million people. Russia is bigger overall but spans two continents.",
+wq:"It's Germany! With ~84 million people, it edges out France and the UK."},
+{d:1,cat:"Countries",q:"What is the largest country in Southeast Asia by area?",o:["Thailand","Vietnam","Indonesia","Philippines"],a:2,
+f:"Indonesia is a massive archipelago of over 17,000 islands spanning about 1.9 million square km — roughly three times the size of Texas.",
+rq:"Indonesia! Over 17,000 islands across 1.9 million sq km. That's three Texases!",
+wq:"It's Indonesia! An archipelago of 17,000+ islands. The definition of 'spread out.'"},
+{d:1,cat:"Rivers & Lakes",q:"Into which body of water does the Nile River flow?",o:["Red Sea","Indian Ocean","Mediterranean Sea","Atlantic Ocean"],a:2,
+f:"The Nile flows northward through northeastern Africa and empties into the Mediterranean Sea through a large delta in northern Egypt.",
+rq:"The Mediterranean! The Nile flows NORTH — one of the few major rivers that flows toward the equator's opposite direction!",
+wq:"It's the Mediterranean Sea! The Nile flows northward through Egypt to its delta on the Med coast."},
+{d:1,cat:"Rivers & Lakes",q:"Into which ocean does the Amazon River flow?",o:["Pacific Ocean","Atlantic Ocean","Indian Ocean","Caribbean Sea"],a:1,
+f:"The Amazon discharges about 209,000 cubic meters of water per second into the Atlantic — more than the next seven largest rivers combined.",
+rq:"The Atlantic! The Amazon pumps out more water than the next seven largest rivers COMBINED. Show-off!",
+wq:"It's the Atlantic! The Amazon's discharge is greater than the next seven largest rivers combined."},
+{d:1,cat:"Continents",q:"The equator passes through which of these continents?",o:["Africa","Europe","Antarctica","Australia"],a:0,
+f:"The equator passes through Africa, South America, and Asia. In Africa, it crosses through countries including Kenya, Uganda, Congo, and Gabon.",
+rq:"Africa! The equator crosses right through the middle. It also crosses South America and Asia.",
+wq:"It's Africa! The equator runs through Kenya, Uganda, Congo, and several other African nations."},
+{d:1,cat:"Physical Geography",q:"What mountain range is generally considered the boundary between Europe and Asia?",o:["Alps","Himalayas","Andes","Ural Mountains"],a:3,
+f:"The Ural Mountains stretch about 2,500 km through western Russia. East of the Urals is Asia; west is Europe.",
+rq:"The Urals! 2,500 km of mountains drawing the line between two continents.",
+wq:"The Ural Mountains! They run about 2,500 km through Russia, dividing Europe from Asia."},
+{d:1,cat:"Rivers & Lakes",q:"What is the largest lake in the world by surface area?",o:["Lake Superior","Caspian Sea","Lake Victoria","Lake Baikal"],a:1,
+f:"The Caspian Sea covers about 371,000 square km. Despite its name, it's technically a lake — the world's largest, bordered by five countries.",
+rq:"The Caspian Sea! Technically a lake despite its name. At 371,000 sq km, it's larger than many countries!",
+wq:"It's the Caspian Sea! Despite the name, it's a lake — the world's largest at 371,000 sq km."},
+// ═══ EXTRA DIFFICULTY 1 QUESTIONS ═══
+{d:1,cat:"Capitals",q:"What is the capital of Germany?",o:["Munich","Berlin","Hamburg","Frankfurt"],a:1,
+f:"Berlin has been Germany's capital since reunification in 1990. The Berlin Wall divided the city from 1961 to 1989.",
+rq:"Berlin! Reunified in 1990 and back in the capital seat. A city that literally tore down walls!",
+wq:"It's Berlin! Germany's capital since reunification — the wall came down in 1989."},
+{d:1,cat:"Continents",q:"On which continent would you find the Amazon Rainforest?",o:["Africa","North America","South America","Asia"],a:2,
+f:"The Amazon Rainforest covers about 5.5 million sq km across 9 countries. It produces roughly 6% of the world's oxygen.",
+rq:"South America! The Amazon spans 9 countries and 5.5 million sq km. Earth's green lungs!",
+wq:"It's South America! The Amazon stretches across 9 South American countries."},
+{d:1,cat:"US Geography",q:"What is the largest state in the United States by area?",o:["Texas","California","Alaska","Montana"],a:2,
+f:"Alaska covers about 1,717,856 sq km — more than twice the size of Texas. It was purchased from Russia in 1867 for $7.2 million.",
+rq:"Alaska! More than twice the size of Texas. Bought from Russia for $7.2M — history's greatest real estate deal!",
+wq:"It's Alaska! Over 1.7 million sq km — more than double the size of Texas."},
+{d:1,cat:"Physical Geography",q:"What is the driest continent on Earth?",o:["Africa","Australia","Antarctica","North America"],a:2,
+f:"Antarctica receives only about 50 mm of precipitation per year on its interior, making it technically the world's largest desert.",
+rq:"Antarctica! It's actually a desert — less than 50 mm of precipitation per year. Cold AND dry!",
+wq:"It's Antarctica! Surprisingly, it's the driest continent — a frozen desert."},
+{d:1,cat:"Countries",q:"What country is known as the 'Land of the Rising Sun'?",o:["China","South Korea","Japan","Thailand"],a:2,
+f:"Japan's name in Japanese, 'Nihon' or 'Nippon,' literally means 'origin of the sun.' The nickname comes from Japan's position east of China.",
+rq:"Japan! 'Nihon' literally means 'origin of the sun.' East of China = where the sun rises!",
+wq:"It's Japan! 'Nihon' means 'origin of the sun' — hence the nickname."},
+// ═══ EXTRA DIFFICULTY 2 QUESTIONS ═══
+{d:2,cat:"Mountains & Deserts",q:"On which continent is the Sahara Desert located?",o:["Asia","Australia","South America","Africa"],a:3,
+f:"The Sahara is the world's largest hot desert at about 9.2 million sq km — roughly the size of the entire United States.",
+rq:"Africa! The Sahara is about the size of the entire US. That's a LOT of sand!",
+wq:"It's Africa! The Sahara covers ~9.2 million sq km of northern Africa."},
+{d:2,cat:"Rivers & Lakes",q:"Through which capital city does the Thames River flow?",o:["Paris","Dublin","London","Edinburgh"],a:2,
+f:"The Thames is 346 km long and flows through London to the North Sea. Tower Bridge and the Houses of Parliament both sit along it.",
+rq:"London! The Thames flows past Parliament and Tower Bridge. Britain's most famous river address!",
+wq:"It's London! The Thames winds 346 km through southern England and right through the capital."},
+{d:2,cat:"Countries",q:"What is the most populous country in Europe?",o:["Germany","France","United Kingdom","Russia"],a:3,
+f:"Russia has about 144 million people, though most of its vast territory is in Asia. If counting only European territory, Germany (~84M) is the EU's most populous.",
+rq:"Russia! ~144 million people, though most of the land is in Asia. The country that spans two continents!",
+wq:"It's Russia! About 144 million people spread across the world's largest country."},
+{d:2,cat:"Landmarks",q:"In which country would you find the Great Barrier Reef?",o:["Indonesia","Philippines","Australia","Thailand"],a:2,
+f:"The Great Barrier Reef stretches about 2,300 km off Queensland, Australia. It's the largest living structure on Earth, visible from space.",
+rq:"Australia! The Great Barrier Reef is 2,300 km of coral — the largest living structure on Earth!",
+wq:"It's Australia! The Great Barrier Reef stretches 2,300 km off the coast of Queensland."},
+{d:2,cat:"Borders & Neighbors",q:"What ocean lies between Africa and Australia?",o:["Pacific Ocean","Atlantic Ocean","Indian Ocean","Southern Ocean"],a:2,
+f:"The Indian Ocean is the third-largest ocean, covering about 70.6 million sq km. It's the warmest ocean in the world.",
+rq:"The Indian Ocean! Third largest, warmest in the world. Connecting Africa, Asia, and Australia!",
+wq:"It's the Indian Ocean! The world's third-largest and warmest ocean."},
+// ═══ EXTRA DIFFICULTY 3 QUESTIONS ═══
+{d:3,cat:"Countries",q:"What European country is divided into cantons?",o:["Belgium","Austria","Netherlands","Switzerland"],a:3,
+f:"Switzerland has 26 cantons, each with its own constitution and parliament. The country has four official languages: German, French, Italian, and Romansh.",
+rq:"Switzerland! 26 cantons, 4 official languages, and famously neutral since 1515. The original federalists!",
+wq:"It's Switzerland! Divided into 26 cantons, each with significant autonomy."},
+{d:3,cat:"Physical Geography",q:"What is the name of the supercontinent that existed about 335 to 175 million years ago?",o:["Gondwana","Laurasia","Pangaea","Rodinia"],a:2,
+f:"Pangaea (meaning 'all Earth' in Greek) broke apart due to plate tectonics. Evidence includes matching fossils and rock formations on separate continents.",
+rq:"Pangaea! 'All Earth' in Greek — when every continent was one big happy landmass. Then tectonics happened!",
+wq:"It's Pangaea! The supercontinent that split apart starting ~175 million years ago."},
+{d:3,cat:"Climate & Weather",q:"What type of biome is characterized by permafrost and no trees?",o:["Taiga","Savanna","Steppe","Tundra"],a:3,
+f:"Tundra covers about 20% of Earth's land surface. Despite harsh conditions, about 1,700 plant species survive there — mostly mosses, lichens, and low shrubs.",
+rq:"Tundra! 20% of Earth's land, zero trees, permanent frozen ground. Not exactly vacation territory!",
+wq:"It's the tundra! Characterized by permafrost, no trees, and extreme cold."},
+{d:3,cat:"Capitals",q:"What is the capital of New Zealand?",o:["Auckland","Christchurch","Wellington","Queenstown"],a:2,
+f:"Wellington is the southernmost capital of any sovereign state. Auckland is much larger, but Wellington has been the capital since 1865.",
+rq:"Wellington! The world's southernmost capital city. Auckland has the people, Wellington has the power!",
+wq:"It's Wellington! Despite Auckland being bigger, Wellington has been NZ's capital since 1865."},
+{d:3,cat:"Landmarks",q:"The Galápagos Islands, famous for Darwin's research, belong to which country?",o:["Peru","Colombia","Chile","Ecuador"],a:3,
+f:"The Galápagos sit about 1,000 km off Ecuador's coast. Charles Darwin visited in 1835, and his observations there helped shape the theory of evolution.",
+rq:"Ecuador! The Galápagos are ~1,000 km offshore. Darwin's 1835 visit changed biology forever!",
+wq:"It's Ecuador! The Galápagos, about 1,000 km offshore, inspired Darwin's theory of evolution."},
+// ═══ DIFFICULTY 2: "Getting Warmer" (Medium) ═══
+{d:2,cat:"Capitals",q:"What is the capital of Nigeria?",o:["Lagos","Abuja","Kano","Port Harcourt"],a:1,
+f:"Abuja replaced Lagos as Nigeria's capital in 1991. It was chosen for its central location and neutrality among Nigeria's ethnic groups.",
+rq:"Abuja! Lagos is bigger and flashier, but Abuja has been running things since 1991.",
+wq:"It's Abuja! Lagos is the most famous Nigerian city, but Abuja became the capital in 1991."},
+{d:2,cat:"Capitals",q:"What is the capital of Turkey?",o:["Istanbul","Ankara","Izmir","Antalya"],a:1,
+f:"Ankara became the capital in 1923 when Atatürk founded the Republic of Turkey. Istanbul was the capital of the Ottoman Empire for centuries.",
+rq:"Ankara! Istanbul gets the fame, but Ankara has been the capital since 1923.",
+wq:"It's Ankara! Istanbul was the Ottoman capital, but Ankara took over in 1923."},
+{d:2,cat:"Capitals",q:"What is the capital of New Zealand?",o:["Auckland","Christchurch","Wellington","Queenstown"],a:2,
+f:"Wellington is the southernmost capital of any sovereign state. It's also one of the windiest cities in the world.",
+rq:"Wellington! The southernmost capital of any sovereign state and one of the windiest cities on Earth!",
+wq:"It's Wellington! Auckland is bigger, but Wellington is the world's southernmost national capital."},
+{d:2,cat:"Capitals",q:"What is the capital of Switzerland?",o:["Zurich","Geneva","Bern","Basel"],a:2,
+f:"Bern is technically the 'federal city' rather than an official capital. It's famous for its medieval old town, a UNESCO World Heritage Site.",
+rq:"Bern! Technically the 'federal city' — Switzerland doesn't officially have a capital. How very Swiss.",
+wq:"It's Bern! Fun fact: Switzerland technically calls it the 'federal city,' not the capital."},
+{d:2,cat:"Capitals",q:"What is the capital of Vietnam?",o:["Ho Chi Minh City","Da Nang","Hanoi","Hue"],a:2,
+f:"Hanoi has been the capital of Vietnam for about a thousand years. Ho Chi Minh City (formerly Saigon) is larger and the economic hub.",
+rq:"Hanoi! A thousand years as capital. Ho Chi Minh City has the money, but Hanoi has the history.",
+wq:"It's Hanoi! It's been the seat of power for about a thousand years."},
+{d:2,cat:"Capitals",q:"What is the capital of Morocco?",o:["Casablanca","Marrakech","Rabat","Fez"],a:2,
+f:"Rabat became the capital under French colonial rule in 1912. Casablanca is larger and the economic center, but Rabat holds the government.",
+rq:"Rabat! Casablanca has the movie fame, but Rabat has the government since 1912.",
+wq:"It's Rabat! Casablanca and Marrakech are more famous, but Rabat runs the country."},
+{d:2,cat:"Capitals",q:"What is the capital of Poland?",o:["Kraków","Warsaw","Gdańsk","Wrocław"],a:1,
+f:"Warsaw was almost completely destroyed during World War II. The historic city center was meticulously rebuilt and is now a UNESCO World Heritage Site.",
+rq:"Warsaw! Nearly destroyed in WWII, rebuilt brick by brick. Now a UNESCO site. Resilience personified.",
+wq:"It's Warsaw! Kraków is the old royal capital, but Warsaw has run things since the late 1500s."},
+{d:2,cat:"Capitals",q:"What is the capital of Colombia?",o:["Medellín","Cartagena","Bogotá","Cali"],a:2,
+f:"Bogotá sits at about 2,640 meters elevation in the Andes, making it one of the highest capitals in the world.",
+rq:"Bogotá! Sitting at 2,640 meters in the Andes. Bring a jacket — and maybe some oxygen.",
+wq:"It's Bogotá! One of the highest capitals in the world at 2,640 meters elevation."},
+{d:2,cat:"Capitals",q:"What is the capital of Thailand?",o:["Bangkok","Chiang Mai","Phuket","Pattaya"],a:0,
+f:"Bangkok's full ceremonial name in Thai is 168 characters long, making it the longest place name in the world. Locals call the city 'Krung Thep.'",
+rq:"Bangkok! Its full Thai name is 168 characters long. Nobody has time for that, so 'Bangkok' it is.",
+wq:"It's Bangkok! Fun fact: its ceremonial Thai name is 168 characters — the world's longest place name."},
+{d:2,cat:"Capitals",q:"What is the capital of the Philippines?",o:["Cebu","Manila","Davao","Quezon City"],a:1,
+f:"Manila is one of the most densely populated cities in the world with about 46,000 people per square km in the city proper.",
+rq:"Manila! One of the most densely packed cities on Earth with ~46,000 people per sq km.",
+wq:"It's Manila! One of the most densely populated cities on the planet."},
+{d:2,cat:"Rivers & Lakes",q:"What is the deepest lake in the world?",o:["Lake Tanganyika","Lake Baikal","Lake Superior","Caspian Sea"],a:1,
+f:"Lake Baikal in Siberia is about 1,642 meters deep and holds roughly 20% of the world's unfrozen surface freshwater. It's also ~25 million years old.",
+rq:"Lake Baikal! 1,642 meters deep, 25 million years old, and holds 20% of Earth's surface freshwater. Overachiever!",
+wq:"It's Lake Baikal! 1,642 meters deep in Siberia — the deepest and oldest lake on Earth."},
+{d:2,cat:"Rivers & Lakes",q:"What is the largest lake in Africa by surface area?",o:["Lake Tanganyika","Lake Malawi","Lake Chad","Lake Victoria"],a:3,
+f:"Lake Victoria covers about 68,800 sq km, bordered by Tanzania, Uganda, and Kenya. It's the source of the White Nile.",
+rq:"Lake Victoria! About 68,800 sq km shared by three countries and the source of the White Nile.",
+wq:"It's Lake Victoria! The largest lake in Africa and source of the White Nile."},
+{d:2,cat:"Rivers & Lakes",q:"What river flows through Paris?",o:["Rhine","Danube","Seine","Loire"],a:2,
+f:"The Seine is about 777 km long and divides Paris into the Left Bank (Rive Gauche) and the Right Bank (Rive Droite).",
+rq:"The Seine! Dividing Paris into the Left Bank and Right Bank for centuries of romantic walks.",
+wq:"It's the Seine! It splits Paris into the famous Left Bank and Right Bank."},
+{d:2,cat:"Rivers & Lakes",q:"What river flows through London?",o:["Severn","Thames","Mersey","Avon"],a:1,
+f:"The Thames is about 346 km long and has over 200 bridges crossing it. Tower Bridge and Westminster Bridge are among the most famous.",
+rq:"The Thames! 346 km long with over 200 bridges. London really committed to crossing that river.",
+wq:"It's the Thames! Over 200 bridges cross it throughout its 346 km length."},
+{d:2,cat:"Rivers & Lakes",q:"What is the largest freshwater lake by surface area in the Western Hemisphere?",o:["Lake Michigan","Lake Huron","Lake Superior","Great Bear Lake"],a:2,
+f:"Lake Superior covers about 82,100 sq km — the largest freshwater lake by surface area in the world. It contains 10% of all the world's surface freshwater.",
+rq:"Lake Superior! The largest freshwater lake by surface area on Earth — not just the hemisphere!",
+wq:"It's Lake Superior! At 82,100 sq km, it's actually the world's largest freshwater lake by area."},
+{d:2,cat:"Mountains & Deserts",q:"What is the tallest mountain in Africa?",o:["Mount Kenya","Mount Stanley","Mount Kilimanjaro","Mount Elgon"],a:2,
+f:"Kilimanjaro stands at 5,895 meters. It's a dormant volcano and the world's tallest free-standing mountain (not part of a range).",
+rq:"Kilimanjaro! 5,895 meters of free-standing volcanic beauty. The world's tallest solo peak!",
+wq:"It's Kilimanjaro! At 5,895 meters, it's the tallest free-standing mountain in the world."},
+{d:2,cat:"Mountains & Deserts",q:"What is the longest continental mountain range in the world?",o:["Himalayas","Rocky Mountains","Andes","Alps"],a:2,
+f:"The Andes stretch about 7,000 km along South America's western coast through 7 countries, from Venezuela to Chile.",
+rq:"The Andes! About 7,000 km through 7 countries. That mountain range has serious commitment!",
+wq:"It's the Andes! About 7,000 km through seven South American countries."},
+{d:2,cat:"Mountains & Deserts",q:"What is the tallest mountain in North America?",o:["Mount Logan","Mount Whitney","Denali","Mount Rainier"],a:2,
+f:"Denali in Alaska stands at 6,190 meters. Its name means 'The High One' in the Koyukon Athabaskan language.",
+rq:"Denali! 6,190 meters tall. 'The High One' in the native Koyukon language. Apt name!",
+wq:"It's Denali! 6,190 meters in Alaska — 'The High One' in the native Koyukon language."},
+{d:2,cat:"Mountains & Deserts",q:"The Gobi Desert spans which two countries?",o:["India and Pakistan","China and Mongolia","Iran and Iraq","Egypt and Libya"],a:1,
+f:"The Gobi covers about 1.3 million sq km across southern Mongolia and northern China. It's a cold desert with winter temperatures dropping to -40°C.",
+rq:"China and Mongolia! The Gobi is a cold desert — winter temps can hit -40°C. Brrr-utal.",
+wq:"It's China and Mongolia! The Gobi is actually a cold desert — winter temps reach -40°C."},
+{d:2,cat:"Mountains & Deserts",q:"What is the tallest mountain in Europe?",o:["Mont Blanc","Mount Elbrus","Matterhorn","Mount Olympus"],a:1,
+f:"Mount Elbrus in Russia's Caucasus region stands at 5,642 meters. If you count only Western Europe, Mont Blanc (4,808 m) is the tallest.",
+rq:"Mount Elbrus! 5,642 meters in the Caucasus. Mont Blanc fans are seething right now.",
+wq:"It's Mount Elbrus! 5,642 meters in Russia's Caucasus. Mont Blanc leads Western Europe though."},
+{d:2,cat:"Borders & Neighbors",q:"The Strait of Gibraltar separates Europe from which continent?",o:["Africa","Asia","South America","North America"],a:0,
+f:"The Strait of Gibraltar separates Spain from Morocco across just 14 km of water, connecting the Mediterranean Sea to the Atlantic Ocean.",
+rq:"Africa! Just 14 km separate Spain from Morocco across the strait. So close, yet so continental.",
+wq:"It's Africa! Only 14 km of water separates Spain from Morocco at the narrowest point."},
+{d:2,cat:"Borders & Neighbors",q:"The Suez Canal connects the Mediterranean Sea to which body of water?",o:["Black Sea","Persian Gulf","Red Sea","Arabian Sea"],a:2,
+f:"The Suez Canal is about 193 km long and was opened in 1869. About 12% of global trade passes through it annually.",
+rq:"The Red Sea! The Suez Canal handles about 12% of all global trade. That's one busy ditch!",
+wq:"It's the Red Sea! Opened in 1869, the Suez Canal carries about 12% of world trade."},
+{d:2,cat:"Borders & Neighbors",q:"Which country has the longest coastline in the world?",o:["Indonesia","Russia","Australia","Canada"],a:3,
+f:"Canada's coastline stretches about 243,042 km — the longest of any country, thanks to its massive Arctic archipelago and deeply indented coast.",
+rq:"Canada! About 243,042 km of coastline. All those Arctic islands and fjords really add up!",
+wq:"It's Canada! 243,042 km of coastline — longest in the world thanks to its Arctic islands."},
+{d:2,cat:"Borders & Neighbors",q:"What is the largest landlocked country in the world?",o:["Mongolia","Chad","Kazakhstan","Ethiopia"],a:2,
+f:"Kazakhstan covers about 2.72 million sq km with no ocean access. It borders Russia, China, Kyrgyzstan, Uzbekistan, and Turkmenistan.",
+rq:"Kazakhstan! 2.72 million sq km of landlocked real estate. The 9th largest country, no ocean needed!",
+wq:"It's Kazakhstan! The world's largest landlocked country and 9th largest country overall."},
+{d:2,cat:"Countries",q:"Which country has the most active volcanoes?",o:["Japan","Philippines","Indonesia","Iceland"],a:2,
+f:"Indonesia has about 130 active volcanoes, the most of any country. It sits on the Pacific Ring of Fire across multiple tectonic plate boundaries.",
+rq:"Indonesia! ~130 active volcanoes. Living on the Ring of Fire does that to a country.",
+wq:"It's Indonesia! About 130 active volcanoes — the most of any country, thanks to the Ring of Fire."},
+{d:2,cat:"Countries",q:"Mount Fuji is the tallest mountain in which country?",o:["Japan","China","South Korea","Taiwan"],a:0,
+f:"Mount Fuji stands at 3,776 meters and is an active stratovolcano, though it last erupted in 1707. It's a UNESCO World Heritage Site.",
+rq:"Japan! Mount Fuji last erupted in 1707. It's technically still active. Sleep well, Tokyo!",
+wq:"It's Japan! Fuji is 3,776 meters tall and technically still an active volcano."},
+{d:2,cat:"Countries",q:"The Galápagos Islands belong to which country?",o:["Peru","Colombia","Ecuador","Chile"],a:2,
+f:"The Galápagos sit about 1,000 km off Ecuador's coast. Charles Darwin's visit in 1835 inspired his theory of evolution by natural selection.",
+rq:"Ecuador! Darwin visited in 1835 and basically invented evolutionary biology. Not bad for some islands!",
+wq:"It's Ecuador! Darwin's 1835 visit to these islands inspired his theory of evolution."},
+{d:2,cat:"Countries",q:"Victoria Falls is on the border of which two countries?",o:["Kenya and Tanzania","Zambia and Zimbabwe","Congo and Angola","Mozambique and Malawi"],a:1,
+f:"Victoria Falls is about 1,708 meters wide and 108 meters tall. Locals call it 'Mosi-oa-Tunya' — 'The Smoke That Thunders.'",
+rq:"Zambia and Zimbabwe! 'The Smoke That Thunders' — 1,708 meters of waterfall fury!",
+wq:"It's Zambia and Zimbabwe! Known locally as 'Mosi-oa-Tunya' — The Smoke That Thunders."},
+{d:2,cat:"Countries",q:"Which river forms much of the border between the United States and Mexico?",o:["Colorado River","Pecos River","Rio Grande","Gila River"],a:2,
+f:"The Rio Grande stretches about 3,051 km from Colorado to the Gulf of Mexico. It's called 'Río Bravo del Norte' in Mexico.",
+rq:"The Rio Grande! Or 'Río Bravo del Norte' if you're on the Mexican side. Same river, two names!",
+wq:"It's the Rio Grande! About 3,051 km long — called 'Río Bravo del Norte' in Mexico."},
+{d:2,cat:"Physical Geography",q:"The Ring of Fire, a zone of earthquakes and eruptions, encircles which ocean?",o:["Atlantic Ocean","Indian Ocean","Pacific Ocean","Arctic Ocean"],a:2,
+f:"The Ring of Fire stretches about 40,000 km and holds about 75% of the world's active volcanoes. About 90% of earthquakes occur along it.",
+rq:"The Pacific! 75% of Earth's active volcanoes and 90% of earthquakes. The Pacific really goes hard.",
+wq:"It's the Pacific! The Ring of Fire holds 75% of all active volcanoes and 90% of all earthquakes."},
+{d:2,cat:"Physical Geography",q:"What is the largest desert in the world when counting ALL deserts (not just hot ones)?",o:["Sahara","Arabian Desert","Antarctic Desert","Gobi Desert"],a:2,
+f:"Antarctica is technically the world's largest desert at ~14.2 million sq km. A desert is defined by low precipitation, not high temperature.",
+rq:"Antarctica! Deserts are defined by PRECIPITATION, not heat. Antarctica gets less than 200mm/year. Science!",
+wq:"It's Antarctica! Deserts are defined by low precipitation. Antarctica is drier than the Sahara."},
+{d:2,cat:"Cultural Geography",q:"What is the most spoken native language by number of first-language speakers?",o:["English","Mandarin Chinese","Hindi","Spanish"],a:1,
+f:"Mandarin Chinese has roughly 920 million native speakers. English has about 380 million native speakers but is the most widely spoken overall.",
+rq:"Mandarin Chinese! ~920 million native speakers. That's nearly 3x the entire US population!",
+wq:"It's Mandarin Chinese! About 920 million native speakers. English leads as a second language though."},
+{d:2,cat:"Cultural Geography",q:"What is the most widely practiced religion in the world?",o:["Islam","Hinduism","Christianity","Buddhism"],a:2,
+f:"Christianity has about 2.4 billion adherents worldwide, roughly 31% of the global population. Islam is second with about 1.9 billion.",
+rq:"Christianity! About 2.4 billion adherents — roughly 31% of all humans on Earth.",
+wq:"It's Christianity! About 2.4 billion followers worldwide. Islam is second at ~1.9 billion."},
+{d:2,cat:"Borders & Neighbors",q:"Which TWO countries share the longest international border?",o:["Russia and China","USA and Mexico","USA and Canada","Brazil and Argentina"],a:2,
+f:"The US-Canada border stretches about 8,891 km including the Alaska-Canada portion. It's the longest international border in the world.",
+rq:"USA and Canada! ~8,891 km of mostly friendly, mostly undefended border. Good neighbors!",
+wq:"It's USA and Canada! About 8,891 km — the longest international border on Earth."},
+{d:2,cat:"Countries",q:"How many countries border China?",o:["8","10","14","16"],a:2,
+f:"China borders 14 countries (tied with Russia): India, Pakistan, Afghanistan, Tajikistan, Kyrgyzstan, Kazakhstan, Mongolia, Russia, North Korea, Vietnam, Laos, Myanmar, Bhutan, and Nepal.",
+rq:"14! Tied with Russia for the most land borders. China's address book of neighbors is LONG.",
+wq:"It's 14! Tied with Russia. From India to North Korea, China has a LOT of neighbors."},
+{d:2,cat:"Countries",q:"What is the capital of Argentina?",o:["Buenos Aires","Córdoba","Rosario","Mendoza"],a:0,
+f:"Buenos Aires means 'Good Airs' or 'Fair Winds.' Its metro area holds about 15 million people — roughly a third of Argentina's population.",
+rq:"Buenos Aires! 'Good Airs' or 'Fair Winds.' A third of the whole country lives there!",
+wq:"It's Buenos Aires! About a third of all Argentines live in the Buenos Aires metro area."},
+{d:2,cat:"Countries",q:"What is the capital of Peru?",o:["Cusco","Lima","Arequipa","Quito"],a:1,
+f:"Lima was founded by Spanish conquistador Francisco Pizarro in 1535. It sits on the Pacific coast despite Peru also containing Amazonian jungle.",
+rq:"Lima! Founded by Pizarro in 1535. Cusco was the Inca capital, but Lima took over.",
+wq:"It's Lima! Cusco was the Inca capital, but Lima has been running Peru since the Spanish arrived."},
+{d:2,cat:"Countries",q:"What is the capital of Chile?",o:["Valparaíso","Santiago","Concepción","Antofagasta"],a:1,
+f:"Santiago sits in a valley surrounded by the Andes and the Chilean Coastal Range. About 40% of Chile's population lives in the Santiago metro area.",
+rq:"Santiago! Nestled between the Andes and the coast, home to 40% of all Chileans.",
+wq:"It's Santiago! About 40% of Chile's entire population lives in the Santiago metro area."},
+{d:2,cat:"Countries",q:"What is the capital of Greece?",o:["Athens","Thessaloniki","Sparta","Olympia"],a:0,
+f:"Athens is one of the world's oldest cities, with recorded history spanning about 3,400 years. It's the birthplace of democracy and Western philosophy.",
+rq:"Athens! 3,400 years of recorded history. Democracy, philosophy, and the Olympics were born here.",
+wq:"It's Athens! One of the oldest continuously inhabited cities — 3,400 years of history."},
+{d:2,cat:"Rivers & Lakes",q:"What is the longest river in Asia?",o:["Mekong","Yellow River","Ganges","Yangtze"],a:3,
+f:"The Yangtze stretches about 6,300 km through China. It's the third longest river in the world after the Nile and Amazon.",
+rq:"The Yangtze! 6,300 km through China — the world's third longest river overall.",
+wq:"It's the Yangtze! At 6,300 km, it's Asia's longest and the world's third longest."},
+{d:2,cat:"Rivers & Lakes",q:"What is the longest river in Europe?",o:["Danube","Rhine","Volga","Thames"],a:2,
+f:"The Volga stretches about 3,530 km through Russia, flowing into the Caspian Sea. It drains about 40% of European Russia.",
+rq:"The Volga! 3,530 km through Russia. It drains about 40% of European Russia into the Caspian Sea.",
+wq:"It's the Volga! At 3,530 km, it's Europe's longest river — flowing through Russia to the Caspian."},
+{d:2,cat:"Countries",q:"What is the capital of Ireland?",o:["Belfast","Cork","Dublin","Galway"],a:2,
+f:"Dublin's name comes from the Irish 'Dubh Linn' meaning 'black pool.' About 40% of Ireland's population lives in the Dublin metro area.",
+rq:"Dublin! From 'Dubh Linn' — 'black pool.' About 40% of the whole country lives there.",
+wq:"It's Dublin! Belfast is the capital of Northern Ireland (part of the UK), but Dublin runs the Republic."},
+{d:2,cat:"Physical Geography",q:"The Ganges River flows through India and which other country?",o:["Nepal","Sri Lanka","Bangladesh","Myanmar"],a:2,
+f:"The Ganges is about 2,525 km long and is sacred in Hinduism. It forms the world's largest river delta (the Sundarbans) where it meets Bangladesh.",
+rq:"Bangladesh! The Ganges forms the massive Sundarbans delta there — the world's largest river delta.",
+wq:"It's Bangladesh! The Ganges forms the world's largest delta, the Sundarbans, in Bangladesh."},
+{d:2,cat:"Countries",q:"What is the driest inhabited continent on Earth?",o:["Africa","Australia","Asia","South America"],a:1,
+f:"Australia averages only about 470mm of rainfall per year, making it the driest inhabited continent. About 35% is classified as desert.",
+rq:"Australia! Just ~470mm of rain per year on average. Earth's big, sunbaked snack cracker.",
+wq:"It's Australia! Only about 470mm of average annual rainfall — the driest inhabited continent."},
+{d:2,cat:"Countries",q:"What is the capital of Kenya?",o:["Nairobi","Mombasa","Kisumu","Nakuru"],a:0,
+f:"Nairobi is the only capital city in the world with a national park within its borders — Nairobi National Park, where lions roam with the skyline as a backdrop.",
+rq:"Nairobi! The only capital with a national park inside city limits. Lions with a skyline view!",
+wq:"It's Nairobi! Home to the only national park inside a capital city — with lions and everything."},
+{d:2,cat:"Landmarks",q:"In which country would you find Angel Falls, the world's highest uninterrupted waterfall?",o:["Colombia","Venezuela","Ecuador","Guyana"],a:1,
+f:"Angel Falls drops 979 meters from the top of Auyán-tepuí mountain. Much of the water turns to mist before reaching the bottom.",
+rq:"Venezuela! 979 meters of freefall — the water literally evaporates before it hits the ground!",
+wq:"It's Venezuela! Angel Falls drops 979 meters — so far that much of the water turns to mist."},
+{d:2,cat:"Landmarks",q:"Machu Picchu, the ancient Inca citadel, is located in which country?",o:["Bolivia","Peru","Ecuador","Chile"],a:1,
+f:"Machu Picchu sits at about 2,430 meters elevation in the Andes. It was built around 1450 AD and abandoned about 100 years later during the Spanish conquest.",
+rq:"Peru! Built around 1450 AD at 2,430 meters. The Incas really liked high-altitude construction!",
+wq:"It's Peru! Machu Picchu was built around 1450 AD at 2,430 meters in the Andes."},
+{d:2,cat:"Countries",q:"What is the largest peninsula in the world?",o:["Scandinavian Peninsula","Iberian Peninsula","Arabian Peninsula","Indian Subcontinent"],a:2,
+f:"The Arabian Peninsula covers about 3.2 million sq km and includes Saudi Arabia, Yemen, Oman, UAE, Qatar, Bahrain, and Kuwait.",
+rq:"The Arabian Peninsula! 3.2 million sq km covering 7 countries. That's one big chunk of land!",
+wq:"It's the Arabian Peninsula! About 3.2 million sq km — home to 7 countries."},
+{d:2,cat:"Borders & Neighbors",q:"Which country borders the most other countries (tied at 14)?",o:["Brazil","India","Russia","Germany"],a:2,
+f:"Russia borders 14 countries (tied with China): Norway, Finland, Estonia, Latvia, Lithuania, Poland, Belarus, Ukraine, Georgia, Azerbaijan, Kazakhstan, Mongolia, China, and North Korea.",
+rq:"Russia! 14 neighbors, tied with China. That's a LOT of fences to maintain.",
+wq:"It's Russia! 14 land borders — tied with China for the world record in neighbors."},
+{d:2,cat:"Countries",q:"What is the capital of Cuba?",o:["Havana","Santiago de Cuba","Trinidad","Varadero"],a:0,
+f:"Havana was founded by the Spanish in 1519 and became a major hub for New World treasure fleets. Its historic center is a UNESCO World Heritage Site.",
+rq:"Havana! Founded 1519, once the hub of Spanish treasure fleets. Now famous for classic cars and music!",
+wq:"It's Havana! A UNESCO World Heritage city founded by the Spanish in 1519."},
+{d:2,cat:"Physical Geography",q:"What is the largest bay in the world?",o:["Hudson Bay","Bay of Biscay","Bay of Bengal","Gulf of Guinea"],a:2,
+f:"The Bay of Bengal covers about 2.17 million sq km, bordered by India, Bangladesh, Myanmar, and Sri Lanka. It's the world's largest bay.",
+rq:"The Bay of Bengal! 2.17 million sq km of warm tropical water. The world's biggest bay by far.",
+wq:"It's the Bay of Bengal! At 2.17 million sq km, it dwarfs every other bay on Earth."},
+{d:2,cat:"Countries",q:"What is the only Central American country where English is the official language?",o:["Costa Rica","Guatemala","Honduras","Belize"],a:3,
+f:"Belize was formerly known as British Honduras and gained independence from the UK in 1981. It's the only Central American country with English as its official language.",
+rq:"Belize! Formerly British Honduras. The lone English speaker in Central America since 1981.",
+wq:"It's Belize! A former British colony — the only English-speaking country in Central America."},
+{d:2,cat:"Map Skills",q:"Lines of latitude run in which direction?",o:["North-South","East-West","Diagonally","They vary"],a:1,
+f:"Latitude lines run east-west parallel to the equator. The equator is 0° latitude. The poles are 90°N and 90°S.",
+rq:"East-West! Latitude lines are horizontal. Remember: 'Latitude = Ladder' — the rungs go sideways!",
+wq:"They run East-West! Think 'Latitude = Ladder' — ladder rungs are horizontal."},
+{d:2,cat:"Map Skills",q:"What imaginary line divides the Earth into Northern and Southern Hemispheres?",o:["Prime Meridian","Tropic of Cancer","Equator","International Date Line"],a:2,
+f:"The equator is at 0° latitude and is about 40,075 km in circumference. Countries on the equator include Ecuador, Colombia, Brazil, Kenya, and Indonesia.",
+rq:"The equator! 0° latitude, ~40,075 km around. The ultimate geographical dividing line.",
+wq:"It's the equator! At 0° latitude, it divides the Earth into Northern and Southern Hemispheres."},
+// ═══ DIFFICULTY 3: "No More Mr. Nice Globe" (Hard) ═══
+{d:3,cat:"Capitals",q:"What is the capital of Myanmar (Burma)?",o:["Yangon","Mandalay","Naypyidaw","Bagan"],a:2,
+f:"Naypyidaw became Myanmar's capital in 2006 when the military government moved it from Yangon. The city was built from scratch and is enormous but sparsely populated.",
+rq:"Naypyidaw! Built from scratch in 2006. A giant, eerily empty capital. Very on-brand for Myanmar's government.",
+wq:"It's Naypyidaw! Yangon is the largest city, but the capital moved to this purpose-built city in 2006."},
+{d:3,cat:"Capitals",q:"What is the capital of Pakistan?",o:["Karachi","Lahore","Islamabad","Peshawar"],a:2,
+f:"Islamabad was purpose-built in the 1960s to replace Karachi as the capital. Its name means 'City of Islam' and it sits at the foot of the Margalla Hills.",
+rq:"Islamabad! Built in the 1960s to replace Karachi. Pakistan loves a good purpose-built capital.",
+wq:"It's Islamabad! Karachi is bigger, but Islamabad has been the capital since the 1960s."},
+{d:3,cat:"Capitals",q:"What is the capital of Tanzania?",o:["Dar es Salaam","Arusha","Dodoma","Zanzibar City"],a:2,
+f:"Dodoma became Tanzania's official capital in 1996, though many government functions still operate from Dar es Salaam, which is the largest city.",
+rq:"Dodoma! Though half the government still hangs out in Dar es Salaam. It's a work in progress.",
+wq:"It's Dodoma! Most people guess Dar es Salaam, which is bigger, but Dodoma is the official capital."},
+{d:3,cat:"Capitals",q:"What is the capital of Ethiopia?",o:["Asmara","Addis Ababa","Dire Dawa","Harar"],a:1,
+f:"Addis Ababa means 'New Flower' in Amharic. It sits at about 2,355 meters and serves as the headquarters of the African Union.",
+rq:"Addis Ababa! 'New Flower' at 2,355 meters — and home to the African Union headquarters!",
+wq:"It's Addis Ababa! It means 'New Flower' and hosts the African Union headquarters."},
+{d:3,cat:"Capitals",q:"What is the capital of Sri Lanka (legislative capital)?",o:["Colombo","Kandy","Galle","Sri Jayawardenepura Kotte"],a:3,
+f:"Sri Jayawardenepura Kotte is the legislative capital; Colombo is the commercial capital. Try saying that fast five times.",
+rq:"Sri Jayawardenepura Kotte! The longest capital city name that'll ever appear on a test!",
+wq:"It's Sri Jayawardenepura Kotte! Colombo is the commercial capital, but Kotte handles legislation."},
+{d:3,cat:"Capitals",q:"What is the capital of Kazakhstan?",o:["Almaty","Astana","Shymkent","Karaganda"],a:1,
+f:"Astana (formerly Nur-Sultan, and before that, Akmola) became the capital in 1997 when it replaced Almaty. It's known for its futuristic architecture.",
+rq:"Astana! This city has been renamed SO many times. But it's had the capital gig since 1997.",
+wq:"It's Astana! Almaty is bigger, but Astana became the capital in 1997."},
+{d:3,cat:"Physical Geography",q:"Which river flows through the Grand Canyon?",o:["Rio Grande","Snake River","Colorado River","Columbia River"],a:2,
+f:"The Colorado River carved the Grand Canyon over roughly 5-6 million years. The canyon is about 446 km long and over 1,800 meters deep.",
+rq:"The Colorado River! 5-6 million years of patient carving. That's dedication to a project.",
+wq:"It's the Colorado River! It carved the Grand Canyon over millions of years of persistent erosion."},
+{d:3,cat:"Physical Geography",q:"The Bering Strait separates Asia from which continent?",o:["Europe","South America","North America","Australia"],a:2,
+f:"The Bering Strait is only about 85 km wide, separating Russia from Alaska. During ice ages, a land bridge here allowed human migration to the Americas.",
+rq:"North America! Only 85 km separate Russia from Alaska. Humans walked across during ice ages!",
+wq:"It's North America! The Bering Strait between Russia and Alaska is just 85 km wide."},
+{d:3,cat:"Physical Geography",q:"What body of water separates Italy from the Balkan Peninsula?",o:["Tyrrhenian Sea","Adriatic Sea","Ionian Sea","Ligurian Sea"],a:1,
+f:"The Adriatic Sea is about 800 km long and averages only 160 km in width. Venice sits on its northwestern shore.",
+rq:"The Adriatic! About 800 km long, home to Venice, and separating two very tasty cuisines.",
+wq:"It's the Adriatic Sea! About 800 km long, with Venice on one side and Croatia on the other."},
+{d:3,cat:"Physical Geography",q:"What is the tallest mountain in South America?",o:["Huascarán","Cotopaxi","Aconcagua","Chimborazo"],a:2,
+f:"Aconcagua in Argentina stands at 6,961 meters. It's the tallest peak outside Asia and the tallest in both the Western and Southern Hemispheres.",
+rq:"Aconcagua! 6,961 meters in Argentina. The tallest peak outside Asia. The Andes flex hard!",
+wq:"It's Aconcagua! At 6,961 meters, it's the highest peak outside of Asia."},
+{d:3,cat:"Countries",q:"Which country spans the most time zones?",o:["Russia","United States","France","China"],a:2,
+f:"France spans 12-13 time zones (13 with its Antarctic claim) thanks to overseas territories like French Polynesia, New Caledonia, and Réunion.",
+rq:"France! 12-13 time zones thanks to overseas territories scattered across the globe. Colonialism has geographic consequences!",
+wq:"It's France! Its overseas territories give it 12-13 time zones — more than Russia's 11!"},
+{d:3,cat:"Countries",q:"Which African country was never colonized by a European power?",o:["Ghana","Ethiopia","Nigeria","Kenya"],a:1,
+f:"Ethiopia (along with Liberia) maintained sovereignty during the Scramble for Africa. Italy occupied Ethiopia 1936-1941, but it was never formally colonized.",
+rq:"Ethiopia! One of only two African countries (with Liberia) that maintained independence. A true OG of sovereignty!",
+wq:"It's Ethiopia! Along with Liberia, it's one of only two African countries never colonized."},
+{d:3,cat:"Countries",q:"What is the northernmost capital city in the world?",o:["Helsinki, Finland","Oslo, Norway","Reykjavik, Iceland","Nuuk, Greenland"],a:2,
+f:"Reykjavik sits at about 64°N latitude. Despite being so far north, Iceland's climate is moderated by the Gulf Stream.",
+rq:"Reykjavik! At ~64°N, it's the world's northernmost capital. Thanks to the Gulf Stream, it's not as cold as you'd think!",
+wq:"It's Reykjavik! At about 64°N latitude — the most northerly capital of any sovereign state."},
+{d:3,cat:"Countries",q:"Which island is shared by three countries?",o:["Timor","New Guinea","Hispaniola","Borneo"],a:3,
+f:"Borneo is shared by Malaysia, Indonesia, and Brunei. It's the third-largest island in the world at about 743,000 sq km.",
+rq:"Borneo! Split three ways between Malaysia, Indonesia, and tiny Brunei. Sharing is caring!",
+wq:"It's Borneo! Shared by Malaysia, Indonesia, and Brunei — the world's third-largest island."},
+{d:3,cat:"Countries",q:"What is the smallest country in mainland Africa by area?",o:["Swaziland (Eswatini)","Djibouti","The Gambia","Rwanda"],a:2,
+f:"The Gambia covers about 11,295 sq km and is almost entirely surrounded by Senegal. It's the smallest country on mainland Africa.",
+rq:"The Gambia! A narrow sliver of a country almost entirely surrounded by Senegal. Geography's skinny jeans.",
+wq:"It's The Gambia! A narrow strip of land nearly surrounded by Senegal — Africa's smallest mainland country."},
+{d:3,cat:"Rivers & Lakes",q:"The Danube River flows through or borders how many European countries?",o:["6","8","10","12"],a:2,
+f:"The Danube flows through or borders 10 countries: Germany, Austria, Slovakia, Hungary, Croatia, Serbia, Romania, Bulgaria, Moldova, and Ukraine.",
+rq:"Ten! The Danube is Europe's most well-traveled river — 10 countries! It's the backpacker of rivers.",
+wq:"It's 10! The Danube touches Germany, Austria, Slovakia, Hungary, Croatia, Serbia, Romania, Bulgaria, Moldova, and Ukraine."},
+{d:3,cat:"Rivers & Lakes",q:"Lake Titicaca sits on the border of which two countries?",o:["Chile and Argentina","Ecuador and Colombia","Peru and Bolivia","Brazil and Paraguay"],a:2,
+f:"Lake Titicaca is the highest navigable lake in the world at about 3,812 meters elevation. It covers about 8,372 sq km.",
+rq:"Peru and Bolivia! The world's highest navigable lake at 3,812 meters. Boating at altitude!",
+wq:"It's Peru and Bolivia! Lake Titicaca sits at 3,812 meters — the highest navigable lake on Earth."},
+{d:3,cat:"Rivers & Lakes",q:"The Mekong River flows through how many countries?",o:["3","4","6","8"],a:2,
+f:"The Mekong flows through China, Myanmar, Laos, Thailand, Cambodia, and Vietnam — 6 countries over about 4,350 km.",
+rq:"Six countries! China, Myanmar, Laos, Thailand, Cambodia, and Vietnam. The Mekong really gets around!",
+wq:"It's 6! The Mekong flows through China, Myanmar, Laos, Thailand, Cambodia, and Vietnam."},
+{d:3,cat:"Rivers & Lakes",q:"What river flows through Baghdad, Iraq?",o:["Euphrates","Nile","Tigris","Jordan"],a:2,
+f:"The Tigris is about 1,900 km long. Baghdad has sat on its banks since 762 AD. The Tigris and Euphrates together define ancient Mesopotamia.",
+rq:"The Tigris! Baghdad has been on its banks since 762 AD. The river of ancient Mesopotamia!",
+wq:"It's the Tigris! Together with the Euphrates, it defined Mesopotamia — the cradle of civilization."},
+{d:3,cat:"Straits & Waterways",q:"The Strait of Hormuz connects the Persian Gulf to which body of water?",o:["Red Sea","Arabian Sea","Indian Ocean","Gulf of Oman"],a:3,
+f:"The Strait of Hormuz is about 54 km wide at its narrowest. About 20% of the world's petroleum passes through it daily.",
+rq:"The Gulf of Oman! About 20% of global oil passes through Hormuz daily. That's one important strait!",
+wq:"It's the Gulf of Oman! About 20% of the world's oil flows through the Strait of Hormuz."},
+{d:3,cat:"Straits & Waterways",q:"The Khyber Pass connects which two countries?",o:["India and China","Iran and Iraq","Afghanistan and Pakistan","Turkey and Syria"],a:2,
+f:"The Khyber Pass has been a crucial trade and invasion route for millennia, connecting Kabul to Peshawar through the Hindu Kush mountains.",
+rq:"Afghanistan and Pakistan! A legendary mountain pass through the Hindu Kush, used for thousands of years.",
+wq:"It's Afghanistan and Pakistan! The Khyber Pass through the Hindu Kush has been strategic for millennia."},
+{d:3,cat:"Countries",q:"What European capital city is built on 14 islands?",o:["Copenhagen","Venice","Stockholm","Amsterdam"],a:2,
+f:"Stockholm is spread across 14 islands connected by 57 bridges. About 30% of the city is waterways.",
+rq:"Stockholm! 14 islands, 57 bridges, 30% water. It's basically a city that can't decide if it wants to be on land.",
+wq:"It's Stockholm! Built across 14 islands connected by 57 bridges."},
+{d:3,cat:"Countries",q:"What is the most visited country in the world by international tourists?",o:["United States","Spain","France","Italy"],a:2,
+f:"France receives about 90 million international visitors per year, making it the world's most visited country. Paris alone gets about 30 million.",
+rq:"France! ~90 million tourists per year. The Eiffel Tower is basically a giant tourist magnet.",
+wq:"It's France! About 90 million international tourists annually — the world's most visited country."},
+{d:3,cat:"Countries",q:"Which small European country lies entirely within the Pyrenees mountains?",o:["Monaco","Liechtenstein","Andorra","San Marino"],a:2,
+f:"Andorra is a tiny principality of about 468 sq km between France and Spain. Its average elevation is 1,996 meters — the highest in Europe.",
+rq:"Andorra! 468 sq km of pure Pyrenean glory between France and Spain. Average elevation: 1,996 meters!",
+wq:"It's Andorra! A tiny principality between France and Spain with Europe's highest average elevation."},
+{d:3,cat:"Physical Geography",q:"The Congo River flows into which ocean?",o:["Indian Ocean","Atlantic Ocean","Pacific Ocean","Southern Ocean"],a:1,
+f:"The Congo River is the deepest river in the world (over 220 meters in places) and the second longest in Africa after the Nile.",
+rq:"The Atlantic! The Congo is the world's deepest river — over 220 meters deep in spots!",
+wq:"It's the Atlantic! The Congo is also the world's deepest river at over 220 meters."},
+{d:3,cat:"Physical Geography",q:"What body of water lies directly north of Turkey?",o:["Mediterranean Sea","Caspian Sea","Black Sea","Aegean Sea"],a:2,
+f:"The Black Sea covers about 436,000 sq km and is bordered by six countries: Turkey, Bulgaria, Romania, Ukraine, Russia, and Georgia.",
+rq:"The Black Sea! Bordered by six countries and one of the world's largest landlocked bodies of water.",
+wq:"It's the Black Sea! Bordered by Turkey, Bulgaria, Romania, Ukraine, Russia, and Georgia."},
+{d:3,cat:"Countries",q:"In which country is Transylvania located?",o:["Hungary","Romania","Bulgaria","Moldova"],a:1,
+f:"Transylvania is a historical region in central Romania, surrounded by the Carpathian Mountains. Yes, it's where the Dracula legend originated.",
+rq:"Romania! Home of Transylvania, the Carpathian Mountains, and vampire legends. Geography with teeth!",
+wq:"It's Romania! Transylvania is a real place in central Romania. Dracula's old neighborhood!"},
+{d:3,cat:"Countries",q:"What is the second-largest country in Africa by area?",o:["Libya","Sudan","Democratic Republic of Congo","South Africa"],a:2,
+f:"The DRC covers about 2.34 million sq km — roughly the size of Western Europe. It contains the world's second-largest rainforest after the Amazon.",
+rq:"The DRC! 2.34 million sq km, roughly the size of Western Europe, with the world's second-largest rainforest.",
+wq:"It's the Democratic Republic of Congo! About the size of Western Europe."},
+{d:3,cat:"US Geography",q:"Which U.S. state has the most active volcanoes?",o:["Hawaii","Washington","California","Alaska"],a:3,
+f:"Alaska has over 130 volcanoes, of which about 50 have been active in the last ~260 years. It's part of the Ring of Fire.",
+rq:"Alaska! Over 130 volcanoes, ~50 recently active. Hawaii gets the fame but Alaska has the numbers!",
+wq:"It's Alaska! Over 130 volcanoes — Hawaii is famous for them but Alaska has far more."},
+{d:3,cat:"US Geography",q:"Which U.S. territory is in the western Pacific Ocean?",o:["Puerto Rico","U.S. Virgin Islands","Guam","American Samoa"],a:2,
+f:"Guam is about 6,000 miles west of California and about 1,500 miles south of Japan. It's been a U.S. territory since 1898.",
+rq:"Guam! About 6,000 miles from California. The US territory closest to Asia!",
+wq:"It's Guam! A U.S. territory since 1898, located about 6,000 miles west of California."},
+{d:3,cat:"Countries",q:"Which country has the most World Heritage Sites in Asia?",o:["India","Japan","China","Turkey"],a:2,
+f:"China has about 57 UNESCO World Heritage Sites, including the Great Wall, the Forbidden City, and the Terracotta Army.",
+rq:"China! About 57 UNESCO sites including the Great Wall and the Terracotta Army. Quality AND quantity!",
+wq:"It's China! With ~57 World Heritage Sites, it leads Asia by a significant margin."},
+{d:3,cat:"Climate & Weather",q:"What is the driest non-polar desert in the world?",o:["Sahara","Namib","Atacama","Mojave"],a:2,
+f:"Parts of the Atacama Desert in Chile have received no recorded rainfall in history. NASA uses it to test Mars rovers because it's so similar to the Martian surface.",
+rq:"The Atacama! So dry that NASA tests Mars rovers there. Let that sink in!",
+wq:"It's the Atacama in Chile! Parts have NEVER recorded rainfall. NASA uses it to simulate Mars."},
+{d:3,cat:"Climate & Weather",q:"What climate phenomenon is characterized by unusually warm Pacific Ocean surface temperatures?",o:["La Niña","Monsoon","El Niño","Trade Winds"],a:2,
+f:"El Niño occurs every 2-7 years and can cause flooding in South America, drought in Australia, and weather disruptions worldwide.",
+rq:"El Niño! 'The Boy' in Spanish — a global weather disruptor that shows up every 2-7 years.",
+wq:"It's El Niño! It causes worldwide weather disruptions every 2-7 years. La Niña is the cool phase."},
+{d:3,cat:"Landmarks",q:"The Ural Mountains are located entirely within which country?",o:["Kazakhstan","China","Russia","Mongolia"],a:2,
+f:"The Urals stretch about 2,500 km from the Arctic Ocean to Kazakhstan. They're one of the oldest mountain ranges on Earth, over 300 million years old.",
+rq:"Russia! The Urals are over 300 million years old — ancient even by mountain standards!",
+wq:"It's Russia! The Urals run 2,500 km through Russia from the Arctic to the Kazakhstan border."},
+{d:3,cat:"Physical Geography",q:"What is the largest atoll in the world by land area?",o:["Bikini Atoll","Kiritimati (Christmas Island)","Kwajalein","Rangiroa"],a:1,
+f:"Kiritimati (Christmas Island) in Kiribati has about 388 sq km of land area, making it the world's largest atoll by land area.",
+rq:"Kiritimati! 388 sq km of coral reef land. Also the first place to ring in each New Year!",
+wq:"It's Kiritimati (Christmas Island)! The world's largest atoll at about 388 sq km of land."},
+{d:3,cat:"Countries",q:"What country has the highest capital city in the world (by administrative capital)?",o:["Nepal","Ecuador","Bolivia","Colombia"],a:2,
+f:"La Paz, Bolivia sits at about 3,640 meters elevation. It's the administrative capital — Sucre is the constitutional capital at a lower 2,810 meters.",
+rq:"Bolivia! La Paz sits at ~3,640 meters. Even breathing is an achievement at that altitude!",
+wq:"It's Bolivia! La Paz at ~3,640 meters is the world's highest administrative capital."},
+{d:3,cat:"Borders & Neighbors",q:"Which country is entirely surrounded by South Africa?",o:["Eswatini","Lesotho","Botswana","Mozambique"],a:1,
+f:"Lesotho is one of only three countries completely surrounded by a single other country (along with Vatican City and San Marino within Italy).",
+rq:"Lesotho! Completely encircled by South Africa. It's the country equivalent of being in a geographic hug!",
+wq:"It's Lesotho! One of only three countries completely surrounded by a single other country."},
+{d:3,cat:"Rivers & Lakes",q:"What river flows through Cairo, Egypt?",o:["Tigris","Euphrates","Jordan","Nile"],a:3,
+f:"Cairo sits on the eastern bank of the Nile, just south of where the river splits into the Nile Delta. It's been inhabited for over 1,000 years.",
+rq:"The Nile! Cairo has sat on its banks for over a millennium. The original waterfront property.",
+wq:"It's the Nile! Cairo sits just south of where the Nile fans out into its famous delta."},
+{d:3,cat:"Historical Geography",q:"What was the former name of Istanbul?",o:["Ankara","Byzantium/Constantinople","Athens","Alexandria"],a:1,
+f:"The city was called Byzantium (before 330 AD), then Constantinople (330-1453), then Istanbul after the Ottoman conquest. It's been a capital of three empires.",
+rq:"Byzantium and Constantinople! Capital of the Roman, Byzantine, AND Ottoman Empires. Three empires, one address!",
+wq:"It's Byzantium/Constantinople! Capital of three successive empires before becoming Istanbul."},
+{d:3,cat:"Historical Geography",q:"The ancient region of Mesopotamia, the 'cradle of civilization,' is mostly in which modern country?",o:["Iran","Turkey","Iraq","Syria"],a:2,
+f:"Mesopotamia ('land between the rivers' Tigris and Euphrates) is largely in modern Iraq. It's where writing, cities, and agriculture first developed around 3500 BC.",
+rq:"Iraq! Mesopotamia — between the Tigris and Euphrates. Writing, cities, and beer were invented here!",
+wq:"It's Iraq! Ancient Mesopotamia lay between the Tigris and Euphrates — mostly in modern Iraq."},
+{d:3,cat:"Countries",q:"What is the most densely populated country in the world with over 10 million people?",o:["South Korea","India","Bangladesh","Netherlands"],a:2,
+f:"Bangladesh has about 170 million people in just 148,460 sq km — over 1,100 people per sq km. For comparison, the US has about 36 per sq km.",
+rq:"Bangladesh! Over 1,100 people per sq km with 170 million total. For scale, the US has 36 per sq km!",
+wq:"It's Bangladesh! About 170 million people in an area smaller than Iowa. Over 1,100 per sq km!"},
+{d:3,cat:"Landmarks",q:"The Taj Mahal is located in which Indian city?",o:["New Delhi","Jaipur","Agra","Mumbai"],a:2,
+f:"The Taj Mahal was built between 1632-1653 by Mughal Emperor Shah Jahan as a tomb for his wife Mumtaz Mahal. About 20,000 workers built it.",
+rq:"Agra! Built by Shah Jahan for his wife — the world's most elaborate 'I love you.'",
+wq:"It's Agra! The Taj Mahal was built there between 1632-1653 by Emperor Shah Jahan."},
+{d:3,cat:"Countries",q:"Which country has the flag with a dragon on it?",o:["Mongolia","Bhutan","Nepal","Laos"],a:1,
+f:"Bhutan's flag features a white dragon called Druk on a diagonally divided orange and yellow background. Bhutan calls itself 'Land of the Thunder Dragon.'",
+rq:"Bhutan! Land of the Thunder Dragon! Their flag features Druk, a white dragon. Coolest flag ever?",
+wq:"It's Bhutan! Self-proclaimed 'Land of the Thunder Dragon' — and their flag proves it."},
+{d:3,cat:"Countries",q:"What country has the only non-rectangular national flag?",o:["Bhutan","Switzerland","Nepal","Vatican City"],a:2,
+f:"Nepal's flag consists of two stacked triangular pennants. Switzerland and Vatican City have square flags, but Nepal's is truly unique in shape.",
+rq:"Nepal! Two stacked triangles — the world's only non-rectangular flag. Geometry rebels unite!",
+wq:"It's Nepal! The world's only non-rectangular national flag — two stacked triangles."},
+{d:3,cat:"Map Skills",q:"The International Date Line roughly follows which line of longitude?",o:["0° (Prime Meridian)","90°E","180°","90°W"],a:2,
+f:"The International Date Line roughly follows 180° longitude through the Pacific Ocean, with several deviations to avoid splitting countries across two dates.",
+rq:"180° longitude! It zigzags through the Pacific so countries don't wake up on two different days.",
+wq:"It's 180° longitude! It zigzags through the Pacific to keep countries on a single date."},
+{d:3,cat:"Map Skills",q:"What is the term for the imaginary line at 23.5°N latitude?",o:["Tropic of Capricorn","Arctic Circle","Tropic of Cancer","Antarctic Circle"],a:2,
+f:"The Tropic of Cancer marks the northernmost latitude where the sun can appear directly overhead (at the June solstice). It passes through Mexico, Egypt, India, and China.",
+rq:"The Tropic of Cancer! At 23.5°N — where the sun goes directly overhead at the June solstice.",
+wq:"It's the Tropic of Cancer! At 23.5°N latitude, marking the sun's northernmost overhead position."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most coffee in the world?",o:["Colombia","Ethiopia","Vietnam","Brazil"],a:3,
+f:"Brazil produces about 30% of the world's coffee — roughly 3 million tonnes per year. It's been the top producer for over 150 years.",
+rq:"Brazil! 30% of the world's coffee for 150+ years. The planet runs on Brazilian beans!",
+wq:"It's Brazil! About 30% of the world's coffee — the top producer for over 150 years."},
+{d:3,cat:"Economy & Resources",q:"The Strait of Malacca, a critical shipping lane, lies between the Malay Peninsula and which island?",o:["Borneo","Java","Sumatra","Sulawesi"],a:2,
+f:"The Strait of Malacca is about 900 km long. At its narrowest, it's only 2.8 km wide. About 25% of world traded goods pass through it.",
+rq:"Sumatra! 25% of global trade passes through this strait. That's one important water hallway!",
+wq:"It's Sumatra! The Strait of Malacca handles about 25% of all world trade."},
+{d:3,cat:"Extreme Geography",q:"What is the lowest point on Earth's land surface?",o:["Death Valley, USA","Turpan Depression, China","Dead Sea shore","Danakil Depression, Ethiopia"],a:2,
+f:"The shore of the Dead Sea is about 430 meters below sea level, making it the lowest point on Earth's land surface. It drops even lower underwater.",
+rq:"The Dead Sea shore! About 430 meters below sea level. Going there is literally going downhill in life.",
+wq:"It's the Dead Sea shore! About 430 meters below sea level — Earth's lowest land point."},
+{d:3,cat:"Extreme Geography",q:"What is the wettest inhabited place on Earth by average annual rainfall?",o:["Cherrapunji, India","Mawsynram, India","Mount Waialeale, Hawaii","Lloró, Colombia"],a:1,
+f:"Mawsynram in Meghalaya, India receives about 11,871mm of rain per year. That's nearly 12 meters of rain annually — mostly during monsoon season.",
+rq:"Mawsynram! Nearly 12 METERS of rain per year. Your umbrella is useless there.",
+wq:"It's Mawsynram, India! About 11,871mm of rain per year — nearly 12 meters!"},
+{d:3,cat:"Countries",q:"What is the official language of Brazil?",o:["Spanish","Portuguese","Brazilian","English"],a:1,
+f:"Brazil is the only Portuguese-speaking country in the Americas. It was a colony of Portugal from 1500 to 1822.",
+rq:"Portuguese! Brazil is the only Portuguese-speaking country in the Americas. Not Spanish — that surprises many!",
+wq:"It's Portuguese! Brazil was a Portuguese colony, making it the only lusophone country in the Americas."},
+// ═══ DIFFICULTY 4: "The Gauntlet" (Very Hard) ═══
+{d:4,cat:"Capitals",q:"What is the capital of Ivory Coast (Côte d'Ivoire)?",o:["Abidjan","Bouaké","Yamoussoukro","San-Pédro"],a:2,
+f:"Yamoussoukro became the capital in 1983, though Abidjan remains the economic hub. Yamoussoukro has the world's largest church — the Basilica of Our Lady of Peace.",
+rq:"Yamoussoukro! Home to the world's largest church. Abidjan is bigger but Yamoussoukro has the title!",
+wq:"It's Yamoussoukro! Abidjan is the economic capital, but Yamoussoukro has been official since 1983."},
+{d:4,cat:"Capitals",q:"What is the capital of Laos?",o:["Luang Prabang","Vientiane","Savannakhet","Pakse"],a:1,
+f:"Vientiane sits on the Mekong River across from Thailand. It's one of the quietest and least developed capital cities in Southeast Asia.",
+rq:"Vientiane! A sleepy capital on the Mekong. One of Southeast Asia's most chill administrative centers.",
+wq:"It's Vientiane! Situated on the Mekong River, directly across from Thailand."},
+{d:4,cat:"Capitals",q:"What is the capital of Honduras?",o:["San Pedro Sula","Tegucigalpa","La Ceiba","Comayagua"],a:1,
+f:"Tegucigalpa is one of the few capital cities in the Americas without a railway. It sits in a mountain valley at about 990 meters elevation.",
+rq:"Tegucigalpa! One of the few capitals in the Americas with no railway. The city that skipped trains!",
+wq:"It's Tegucigalpa! A mountain valley capital at ~990 meters — and no railway!"},
+{d:4,cat:"Capitals",q:"What is the capital of Nepal?",o:["Pokhara","Kathmandu","Bharatpur","Lalitpur"],a:1,
+f:"Kathmandu sits at about 1,400 meters in a valley surrounded by the Himalayas. The Kathmandu Valley contains seven UNESCO World Heritage Sites.",
+rq:"Kathmandu! 7 UNESCO sites in one valley. Gateway to Everest and to correct answers!",
+wq:"It's Kathmandu! The gateway to the Himalayas with 7 UNESCO sites in its valley."},
+{d:4,cat:"Capitals",q:"What is the capital of Venezuela?",o:["Maracaibo","Valencia","Caracas","Barquisimeto"],a:2,
+f:"Caracas sits in a valley at about 900 meters elevation. Founded in 1567, it's the birthplace of Simón Bolívar, the liberator of much of South America.",
+rq:"Caracas! Birthplace of Simón Bolívar, who liberated half of South America. Big capital energy!",
+wq:"It's Caracas! Birthplace of the legendary South American liberator Simón Bolívar."},
+{d:4,cat:"Capitals",q:"What is the capital of Bangladesh?",o:["Chittagong","Dhaka","Khulna","Rajshahi"],a:1,
+f:"Dhaka is one of the most densely populated cities on Earth with about 36,000 people per sq km in the city proper. Its metro has over 22 million people.",
+rq:"Dhaka! ~36,000 people per sq km. One of the most densely packed cities on the planet!",
+wq:"It's Dhaka! With about 36,000 people per sq km, it's one of the world's most crowded cities."},
+{d:4,cat:"Rivers & Lakes",q:"What is the longest river in Australia?",o:["Darling River","Murray River","Murrumbidgee River","Lachlan River"],a:1,
+f:"The Murray River stretches about 2,508 km through southeastern Australia. Together with the Darling, it forms Australia's most important river system.",
+rq:"The Murray! 2,508 km through southeastern Australia. The continent's liquid lifeline!",
+wq:"It's the Murray River! About 2,508 km — Australia's longest and most important river."},
+{d:4,cat:"Rivers & Lakes",q:"What is the longest river in the United States?",o:["Mississippi","Colorado","Missouri","Ohio"],a:2,
+f:"The Missouri River is about 3,767 km long — slightly longer than the Mississippi (3,766 km). Together they form the 4th longest river system in the world.",
+rq:"The Missouri! At 3,767 km it barely edges out the Mississippi by 1 km. The ultimate photo finish!",
+wq:"It's the Missouri! At 3,767 km, it's actually slightly longer than the Mississippi by about 1 km."},
+{d:4,cat:"Countries",q:"Which two countries are 'doubly landlocked' (surrounded only by landlocked countries)?",o:["Mongolia and Nepal","Liechtenstein and Uzbekistan","Chad and Niger","Bolivia and Paraguay"],a:1,
+f:"Liechtenstein (surrounded by Switzerland and Austria) and Uzbekistan (surrounded by 5 landlocked countries) are the world's only doubly landlocked nations.",
+rq:"Liechtenstein and Uzbekistan! To reach the ocean from either, you must cross at least two borders. Geographic inception!",
+wq:"It's Liechtenstein and Uzbekistan! The only two countries completely surrounded by landlocked countries."},
+{d:4,cat:"Countries",q:"What is the only country in the world entirely above 1,000 meters elevation?",o:["Nepal","Lesotho","Bhutan","Bolivia"],a:1,
+f:"Lesotho's lowest point is about 1,400 meters. Completely surrounded by South Africa, it's called 'The Kingdom in the Sky.'",
+rq:"Lesotho! The Kingdom in the Sky! Lowest point: 1,400 meters. This country doesn't do low ground.",
+wq:"It's Lesotho! Its lowest point is ~1,400 meters — the only country entirely above 1,000m."},
+{d:4,cat:"Oceans & Seas",q:"What is the only sea in the world with no land boundaries?",o:["Caspian Sea","Sargasso Sea","Coral Sea","Aral Sea"],a:1,
+f:"The Sargasso Sea in the North Atlantic is bounded only by ocean currents — the Gulf Stream, North Atlantic Current, Canary Current, and North Atlantic Equatorial Current.",
+rq:"The Sargasso Sea! Bounded only by currents, no land at all. The free spirit of seas!",
+wq:"It's the Sargasso Sea! Defined only by ocean currents — no land boundaries whatsoever."},
+{d:4,cat:"Oceans & Seas",q:"The Dead Sea borders Israel, the West Bank, and which other country?",o:["Syria","Lebanon","Jordan","Egypt"],a:2,
+f:"The Dead Sea's surface is about 430 meters below sea level — Earth's lowest land point. Its salinity is about 34%, roughly 10 times saltier than the ocean.",
+rq:"Jordan! The Dead Sea sits about 430 meters below sea level. So salty nothing lives in it — hence the name!",
+wq:"It's Jordan! The Dead Sea at ~430 meters below sea level is Earth's lowest land point."},
+{d:4,cat:"Countries",q:"Which European country has the most UNESCO World Heritage Sites?",o:["Spain","France","Italy","Germany"],a:2,
+f:"Italy has about 60 UNESCO World Heritage Sites — more than any other country on Earth. Sites range from the Colosseum to Venice to Pompeii.",
+rq:"Italy! 60 UNESCO sites — more than ANY country on Earth. Italy is basically a living museum!",
+wq:"It's Italy! With 60 World Heritage Sites, it leads the entire world. From Rome to Venice to Pompeii."},
+{d:4,cat:"Map Skills",q:"The Prime Meridian (0° longitude) passes through Greenwich, England and which of these African countries?",o:["Ghana","Nigeria","Morocco","Egypt"],a:0,
+f:"The Prime Meridian passes through 8 countries including Ghana, where it crosses near the coastal city of Tema, just east of Accra.",
+rq:"Ghana! The Prime Meridian passes right through, near Tema. One of the few spots where 0° longitude meets near-0° latitude!",
+wq:"It's Ghana! The Prime Meridian passes through near Tema, close to the capital Accra."},
+{d:4,cat:"Historical Geography",q:"What was the former name of the country now known as Myanmar?",o:["Siam","Ceylon","Burma","Indochina"],a:2,
+f:"Myanmar was known as Burma until 1989 when the military government changed the name. Many countries and organizations still use 'Burma.'",
+rq:"Burma! The name changed in 1989. Some countries still officially use 'Burma' today.",
+wq:"It's Burma! The military government renamed it Myanmar in 1989, though both names persist."},
+{d:4,cat:"Historical Geography",q:"What was the former name of Sri Lanka?",o:["Siam","Burma","Formosa","Ceylon"],a:3,
+f:"Sri Lanka was known as Ceylon until 1972. It was a British colony as 'British Ceylon' from 1815 to 1948. The name Sri Lanka means 'Resplendent Island.'",
+rq:"Ceylon! Changed to Sri Lanka in 1972. 'Resplendent Island' — much better branding!",
+wq:"It's Ceylon! The country renamed itself Sri Lanka ('Resplendent Island') in 1972."},
+{d:4,cat:"Countries",q:"What is the largest country in Central America by area?",o:["Guatemala","Honduras","Nicaragua","Panama"],a:2,
+f:"Nicaragua covers about 130,370 sq km — the largest Central American country. It contains the two largest lakes in Central America: Lake Nicaragua and Lake Managua.",
+rq:"Nicaragua! 130,370 sq km with Central America's two largest lakes. Big country, big water!",
+wq:"It's Nicaragua! The largest Central American country, home to the region's two biggest lakes."},
+{d:4,cat:"Economy & Resources",q:"Which country is the world's largest producer of crude oil (as of recent years)?",o:["Saudi Arabia","Russia","United States","Iraq"],a:2,
+f:"The United States became the world's largest crude oil producer around 2018, largely due to the shale oil revolution, surpassing both Saudi Arabia and Russia.",
+rq:"The United States! The shale revolution pushed the US to #1 around 2018. Plot twist!",
+wq:"It's the United States! The shale oil revolution made it the world's top producer around 2018."},
+{d:4,cat:"Economy & Resources",q:"What mineral-rich region in southeastern Democratic Republic of Congo is crucial for global cobalt supply?",o:["Copperbelt","Katanga","Bushveld","Witwatersrand"],a:1,
+f:"The Katanga (Shaba) region produces about 70% of the world's cobalt, essential for lithium-ion batteries in phones and electric vehicles.",
+rq:"Katanga! About 70% of global cobalt comes from here. Your phone battery probably has some Katanga in it.",
+wq:"It's Katanga! This region supplies ~70% of global cobalt — crucial for modern batteries."},
+{d:4,cat:"Countries",q:"Which country has coastline on both the Atlantic and Mediterranean?",o:["Portugal","Morocco","Tunisia","Algeria"],a:1,
+f:"Morocco has an Atlantic coast to the west and Mediterranean coast to the north, meeting at the Strait of Gibraltar.",
+rq:"Morocco! Atlantic on the west, Mediterranean on the north. Double ocean frontage!",
+wq:"It's Morocco! It's one of only a few countries with both Atlantic and Mediterranean coastlines."},
+{d:4,cat:"Climate & Weather",q:"What is the hottest temperature ever reliably recorded on Earth?",o:["56.7°C (134°F) in Death Valley","54°C (129.2°F) in Kuwait","53.9°C (129°F) in Iran","58°C (136.4°F) in Libya"],a:0,
+f:"Death Valley, California recorded 56.7°C (134°F) on July 10, 1913. A 1922 Libyan reading of 58°C was later invalidated by the WMO.",
+rq:"Death Valley! 56.7°C on July 10, 1913. Hot enough to literally fry an egg on the ground!",
+wq:"It's Death Valley! 56.7°C (134°F) in 1913 — the highest reliably recorded temperature ever."},
+{d:4,cat:"Islands",q:"What is the second-largest island in the world?",o:["Borneo","New Guinea","Madagascar","Baffin Island"],a:1,
+f:"New Guinea covers about 786,000 sq km and is split between Indonesia (western half) and Papua New Guinea (eastern half).",
+rq:"New Guinea! About 786,000 sq km split between Indonesia and Papua New Guinea.",
+wq:"It's New Guinea! The world's second-largest island at ~786,000 sq km, split between two countries."},
+{d:4,cat:"Islands",q:"Which country is an island nation in the Indian Ocean, known for lemurs?",o:["Seychelles","Comoros","Madagascar","Mauritius"],a:2,
+f:"Madagascar is the world's fourth-largest island. About 90% of its wildlife is found nowhere else on Earth due to 88 million years of isolation.",
+rq:"Madagascar! 90% of its wildlife is endemic — found NOWHERE else on Earth. Nature's laboratory!",
+wq:"It's Madagascar! 90% of its species exist nowhere else — the result of 88 million years of isolation."},
+{d:4,cat:"Islands",q:"Which archipelago nation straddles the equator in the Indian Ocean, southwest of India?",o:["Sri Lanka","Comoros","Maldives","Seychelles"],a:2,
+f:"The Maldives consists of about 1,190 coral islands. Its average elevation is just 1.5 meters above sea level — the lowest country on Earth.",
+rq:"The Maldives! Average elevation: 1.5 meters. The lowest country on Earth and most vulnerable to rising seas.",
+wq:"It's the Maldives! ~1,190 islands averaging just 1.5 meters above sea level — the world's lowest country."},
+{d:4,cat:"Population",q:"What is the most populous city in Africa?",o:["Cairo","Kinshasa","Lagos","Johannesburg"],a:2,
+f:"Lagos, Nigeria has an estimated metro population of 15-21 million (estimates vary widely). It's one of the fastest-growing cities on Earth.",
+rq:"Lagos! Growing at breakneck speed — one of the fastest-urbanizing cities on the planet!",
+wq:"It's Lagos! With 15-21 million in the metro area, it's Africa's most populous city."},
+{d:4,cat:"Population",q:"What is the most populous city in South America?",o:["Buenos Aires","Lima","São Paulo","Bogotá"],a:2,
+f:"São Paulo's metro area has about 22 million people, making it the most populous city in the Southern Hemisphere and in all of the Americas south of Mexico City.",
+rq:"São Paulo! 22 million in the metro area — the most populous city in the entire Southern Hemisphere!",
+wq:"It's São Paulo! About 22 million people — the Southern Hemisphere's largest metro area."},
+{d:4,cat:"Extreme Geography",q:"What is the largest freshwater lake by volume in the world?",o:["Lake Superior","Lake Tanganyika","Lake Victoria","Lake Baikal"],a:3,
+f:"Lake Baikal holds about 23,615 cubic km of water — roughly 20% of all unfrozen surface freshwater on Earth. It alone holds more water than all 5 Great Lakes combined.",
+rq:"Lake Baikal! More freshwater than all 5 Great Lakes COMBINED. Baikal doesn't share the podium!",
+wq:"It's Lake Baikal! It holds more water than all five North American Great Lakes put together."},
+{d:4,cat:"Extreme Geography",q:"What is the most isolated inhabited island in the world?",o:["Easter Island","Pitcairn Island","Tristan da Cunha","Bouvet Island"],a:2,
+f:"Tristan da Cunha in the South Atlantic is about 2,400 km from the nearest inhabited land (Saint Helena). It has about 250 permanent residents.",
+rq:"Tristan da Cunha! 2,400 km from the nearest neighbor, population ~250. The ultimate 'leave me alone.'",
+wq:"It's Tristan da Cunha! About 2,400 km from anywhere, with just ~250 residents."},
+{d:4,cat:"Countries",q:"How many countries does the equator pass through?",o:["9","11","13","15"],a:2,
+f:"The equator passes through 13 countries: Ecuador, Colombia, Brazil, São Tomé and Príncipe, Gabon, Republic of Congo, DRC, Uganda, Kenya, Somalia, Maldives, Indonesia, and Kiribati.",
+rq:"13 countries! From Ecuador to Kiribati, the equator is quite the world traveler!",
+wq:"It's 13! The equator touches countries on 3 continents plus island nations in 2 oceans."},
+{d:4,cat:"Borders & Neighbors",q:"What is the shortest international border in the world?",o:["Vatican City-Italy","Monaco-France","Botswana-Zambia","Spain-Gibraltar"],a:2,
+f:"The Botswana-Zambia border is only about 150 meters long, at a single point where the two countries meet at the Zambezi River confluence.",
+rq:"Botswana-Zambia! About 150 meters — barely a border, more like a geographic handshake!",
+wq:"It's the Botswana-Zambia border! Just ~150 meters where the countries barely touch at the Zambezi."},
+{d:4,cat:"Straits & Waterways",q:"The Drake Passage, one of the roughest sea crossings, lies between South America and which continent?",o:["Africa","Antarctica","Australia","North America"],a:1,
+f:"The Drake Passage is about 800 km wide between Cape Horn and the South Shetland Islands of Antarctica. Waves can exceed 12 meters.",
+rq:"Antarctica! The Drake Passage: 800 km of some of the roughest seas on Earth. Bring Dramamine!",
+wq:"It's Antarctica! The Drake Passage between South America and Antarctica is notoriously rough."},
+{d:4,cat:"Physical Geography",q:"What is the world's largest river by discharge volume (water flow)?",o:["Nile","Mississippi","Congo","Amazon"],a:3,
+f:"The Amazon discharges about 209,000 cubic meters per second — more than the next seven largest rivers COMBINED. It accounts for about 20% of all river water entering the ocean.",
+rq:"The Amazon! 20% of ALL river water entering the ocean comes from one river. The Amazon doesn't share!",
+wq:"It's the Amazon! Its discharge equals the next seven largest rivers combined — 20% of all river outflow."},
+{d:4,cat:"Countries",q:"What is the newest internationally recognized country (as of 2024)?",o:["Kosovo","East Timor","South Sudan","Montenegro"],a:2,
+f:"South Sudan declared independence from Sudan on July 9, 2011, making it the newest UN member state. It became the 193rd member of the United Nations.",
+rq:"South Sudan! Independent since July 9, 2011 — the 193rd UN member state. The baby of the world!",
+wq:"It's South Sudan! It declared independence from Sudan in 2011 and joined the UN as member #193."},
+{d:4,cat:"Cultural Geography",q:"What writing system is used for the Hindi language?",o:["Arabic","Latin","Cyrillic","Devanagari"],a:3,
+f:"Devanagari is used for Hindi, Sanskrit, Marathi, and Nepali among other languages. It's written left to right and has 47 primary characters.",
+rq:"Devanagari! Used for Hindi, Sanskrit, and several other South Asian languages. Beautiful script!",
+wq:"It's Devanagari! The script used for Hindi, Sanskrit, Marathi, Nepali, and other languages."},
+{d:4,cat:"Cultural Geography",q:"What is the most widely spoken language in South America?",o:["Spanish","Portuguese","Quechua","English"],a:1,
+f:"Portuguese is the most spoken language in South America because Brazil — which has about 215 million people — accounts for roughly half the continent's population.",
+rq:"Portuguese! Brazil's 215 million people tip the scales. Spanish is spoken in more countries, but Portuguese wins by population!",
+wq:"It's Portuguese! Brazil's massive population makes Portuguese #1 in South America by speakers."},
+{d:4,cat:"Physical Geography",q:"What type of biome covers the most land area on Earth?",o:["Tropical Rainforest","Desert","Tundra","Taiga (Boreal Forest)"],a:3,
+f:"Taiga (boreal forest) covers about 17 million sq km across Russia, Canada, Scandinavia, and Alaska — the world's largest terrestrial biome.",
+rq:"Taiga! 17 million sq km of coniferous forest across the Northern Hemisphere. Earth's biggest biome!",
+wq:"It's the Taiga! About 17 million sq km of boreal forest — the largest land biome on Earth."},
+{d:4,cat:"Extreme Geography",q:"Which country has the highest point in Africa?",o:["Kenya","Ethiopia","Tanzania","Uganda"],a:2,
+f:"Tanzania is home to Mount Kilimanjaro at 5,895 meters — Africa's tallest peak and the world's tallest free-standing mountain.",
+rq:"Tanzania! Kilimanjaro at 5,895 meters. Africa's rooftop — and a free-standing volcano!",
+wq:"It's Tanzania! Mount Kilimanjaro (5,895 m) is Africa's highest point."},
+{d:4,cat:"Countries",q:"Which country is home to the ancient city of Petra, carved into rose-red cliffs?",o:["Lebanon","Jordan","Egypt","Saudi Arabia"],a:1,
+f:"Petra was the capital of the Nabataean Kingdom around the 4th century BC. It was 'lost' to the Western world until rediscovery in 1812.",
+rq:"Jordan! Petra was lost to the Western world until 1812. The ultimate archaeological mic drop!",
+wq:"It's Jordan! Petra, carved into rose-red sandstone, was 'lost' until its rediscovery in 1812."},
+{d:4,cat:"Countries",q:"What country has the most spoken languages?",o:["India","Nigeria","Papua New Guinea","Indonesia"],a:2,
+f:"Papua New Guinea has about 840 living languages — the most linguistically diverse country on Earth, with many spoken by just a few hundred people.",
+rq:"Papua New Guinea! ~840 languages in a country of 10 million. That's one language per ~12,000 people!",
+wq:"It's Papua New Guinea! About 840 living languages — the most linguistically diverse nation on Earth."},
+{d:4,cat:"Landmarks",q:"What is the name of the massive sandstone monolith in central Australia?",o:["The Pinnacles","Kata Tjuta","Uluru (Ayers Rock)","Devils Marbles"],a:2,
+f:"Uluru stands about 348 meters high and has a circumference of 9.4 km. It's sacred to the Anangu Aboriginal people and is about 550 million years old.",
+rq:"Uluru! 348 meters high, 550 million years old, and sacred to the Anangu people. Respect the rock!",
+wq:"It's Uluru (Ayers Rock)! A 550-million-year-old monolith sacred to the Anangu Aboriginal people."},
+{d:4,cat:"Landmarks",q:"The Galápagos Islands sit on the equator in which ocean?",o:["Atlantic Ocean","Indian Ocean","Pacific Ocean","Southern Ocean"],a:2,
+f:"The Galápagos are about 1,000 km west of Ecuador in the Pacific. They sit at the junction of three tectonic plates and three ocean currents.",
+rq:"The Pacific! Three tectonic plates, three ocean currents, one evolutionary paradise!",
+wq:"It's the Pacific Ocean! About 1,000 km off Ecuador's coast."},
+{d:4,cat:"Physical Geography",q:"What is the name of the vast, treeless plain that covers much of northern Russia and Canada?",o:["Steppe","Savanna","Tundra","Pampas"],a:2,
+f:"Tundra covers about 20% of Earth's land surface. Permafrost (permanently frozen ground) underlies most tundra, sometimes extending hundreds of meters deep.",
+rq:"Tundra! 20% of Earth's land surface. Permanently frozen ground, zero trees, maximum chill.",
+wq:"It's Tundra! Covering ~20% of Earth's land with permafrost and no trees."},
+{d:4,cat:"Countries",q:"What is the smallest country in Asia by area?",o:["Bahrain","Singapore","Maldives","Brunei"],a:2,
+f:"The Maldives covers about 298 sq km of land area across roughly 1,190 coral islands. It's both the smallest and lowest country in Asia.",
+rq:"The Maldives! 298 sq km spread across 1,190 islands. The smallest AND lowest country in Asia!",
+wq:"It's the Maldives! Just 298 sq km of land — the smallest country in all of Asia."},
+// ═══ EXTRA DIFFICULTY 4 QUESTIONS ═══
+{d:4,cat:"Countries",q:"What is the only country in Central America that does NOT have a Pacific coastline?",o:["Guatemala","Belize","Honduras","Nicaragua"],a:1,
+f:"Belize faces only the Caribbean Sea. It's also the only Central American country where English is the official language.",
+rq:"Belize! Caribbean only, no Pacific. Also the only English-speaking country in Central America!",
+wq:"It's Belize! The Caribbean-facing, English-speaking outlier of Central America."},
+{d:4,cat:"Mountains & Deserts",q:"In what country would you find the Atacama Desert, one of the driest places on Earth?",o:["Peru","Argentina","Chile","Bolivia"],a:2,
+f:"The Atacama Desert in Chile receives less than 1 mm of rain per year in some areas. Some weather stations there have NEVER recorded rain.",
+rq:"Chile! The Atacama is so dry that some spots have literally never recorded rainfall. Ever!",
+wq:"It's Chile! The Atacama is so dry that NASA uses it to test Mars rovers."},
+{d:4,cat:"Islands",q:"What is the largest island in the Mediterranean Sea?",o:["Sardinia","Crete","Cyprus","Sicily"],a:3,
+f:"Sicily covers about 25,711 sq km. It's home to Mount Etna, one of the world's most active volcanoes.",
+rq:"Sicily! 25,711 sq km and home to Mount Etna. The Mediterranean's volcanic big kid!",
+wq:"It's Sicily! Largest Mediterranean island and home to the very active Mount Etna."},
+{d:4,cat:"Physical Geography",q:"What is the term for a narrow body of water connecting two larger bodies of water?",o:["Isthmus","Peninsula","Strait","Archipelago"],a:2,
+f:"Famous straits include the Strait of Gibraltar (connecting the Mediterranean to the Atlantic) and the Strait of Malacca (connecting the Indian Ocean to the Pacific).",
+rq:"A strait! Gibraltar, Malacca, Hormuz — the world's most important shortcuts between seas!",
+wq:"It's a strait! Don't confuse it with an isthmus, which is a narrow strip of LAND."},
+{d:4,cat:"Cultural Geography",q:"What language is spoken in the most countries worldwide?",o:["Spanish","French","English","Mandarin Chinese"],a:2,
+f:"English is an official or co-official language in roughly 58–67 sovereign states, depending how you count. While Mandarin has more native speakers, English has the widest geographic spread.",
+rq:"English! Official in dozens of countries across every continent. Most native speakers go to Mandarin, but English wins the geography game!",
+wq:"It's English! Official or co-official in dozens of countries — the widest geographic spread of any language."},
+{d:4,cat:"Borders & Neighbors",q:"What is the longest international border in the world?",o:["Russia–China","USA–Canada","Russia–Kazakhstan","Brazil–Argentina"],a:1,
+f:"The US–Canada border stretches about 8,891 km (including the Alaska–Canada border). It's the world's longest international boundary between two countries.",
+rq:"USA–Canada! About 8,891 km including Alaska's border. The world's longest peaceful boundary!",
+wq:"It's USA–Canada! About 8,891 km including the Alaska–Canada section."},
+{d:4,cat:"Economy & Resources",q:"What country is the world's largest producer of coffee?",o:["Colombia","Vietnam","Ethiopia","Brazil"],a:3,
+f:"Brazil produces roughly one-third of the world's coffee. The state of Minas Gerais alone produces more coffee than most countries.",
+rq:"Brazil! About a third of all the world's coffee. Your morning cup probably started there!",
+wq:"It's Brazil! Roughly one-third of the global coffee supply comes from Brazilian farms."},
+{d:4,cat:"Historical Geography",q:"What present-day country was formerly known as Persia?",o:["Iraq","Iran","Turkey","Afghanistan"],a:1,
+f:"Persia officially changed its name to Iran in 1935. The name 'Iran' means 'Land of the Aryans' in Persian.",
+rq:"Iran! Persia became Iran in 1935. Same great civilization, new name!",
+wq:"It's Iran! The name changed from Persia to Iran in 1935."},
+{d:4,cat:"Landmarks",q:"In what country is the ancient city of Petra, carved into pink sandstone cliffs?",o:["Jordan","Egypt","Lebanon","Syria"],a:0,
+f:"Petra was the capital of the Nabataean Kingdom around 300 BC. It was 'lost' to Western knowledge until Swiss explorer Johann Ludwig Burckhardt found it in 1812.",
+rq:"Jordan! Petra was lost to the West for centuries until 1812. An entire city carved into cliffs!",
+wq:"It's Jordan! Petra, the Rose City, is one of the New Seven Wonders of the World."},
+{d:4,cat:"Countries",q:"What is the smallest country in mainland Africa by area?",o:["Eswatini","Djibouti","Rwanda","The Gambia"],a:3,
+f:"The Gambia covers about 11,295 sq km — a thin strip of land along the Gambia River, almost entirely surrounded by Senegal.",
+rq:"The Gambia! A narrow sliver along a river, nearly swallowed by Senegal. Africa's mainland minimalist!",
+wq:"It's The Gambia! A narrow strip along the Gambia River, nearly surrounded by Senegal."},
+{d:4,cat:"Oceans & Seas",q:"What is the saltiest body of water on Earth?",o:["Dead Sea","Great Salt Lake","Don Juan Pond","Caspian Sea"],a:2,
+f:"Don Juan Pond in Antarctica has a salinity of over 40% — more than 10 times saltier than the ocean. It's so salty it doesn't freeze even at -50°C.",
+rq:"Don Juan Pond! Over 40% salinity, so salty it won't freeze even in Antarctica. Take THAT, Dead Sea!",
+wq:"It's Don Juan Pond in Antarctica! Over 40% salinity — way saltier than the Dead Sea."},
+{d:4,cat:"Climate & Weather",q:"What is the term for a seasonal wind shift that brings heavy rains to South and Southeast Asia?",o:["El Niño","Trade winds","Monsoon","Chinook"],a:2,
+f:"The Asian monsoon affects about 60% of the world's population. India gets roughly 70% of its annual rainfall during monsoon season (June–September).",
+rq:"Monsoon! It affects 60% of the world's population. India gets ~70% of its rain from it. That's a BIG wind!",
+wq:"It's the monsoon! The seasonal wind shift that delivers ~70% of India's annual rainfall."},
+{d:4,cat:"Population",q:"What is the most densely populated country in the world (sovereign state)?",o:["Singapore","Monaco","Vatican City","Malta"],a:1,
+f:"Monaco packs roughly 39,000 people into just 2.02 sq km — over 19,000 people per sq km. It's essentially a city-state on the French Riviera.",
+rq:"Monaco! Tens of thousands of people per sq km. When your whole country is basically a luxury neighborhood!",
+wq:"It's Monaco! The world's most densely packed sovereign state — a tiny Riviera city-state."},
+{d:4,cat:"Map Skills",q:"What imaginary line at 23.5°S latitude marks the southernmost point where the sun can appear directly overhead?",o:["Tropic of Cancer","Antarctic Circle","Tropic of Capricorn","Equator"],a:2,
+f:"The Tropic of Capricorn passes through Australia, Chile, Brazil, South Africa, and several other countries. The sun is directly overhead here on the December solstice.",
+rq:"Tropic of Capricorn! 23.5°S — the sun's southernmost direct overhead point. Cancer is the northern one!",
+wq:"It's the Tropic of Capricorn! At 23.5°S, it's Cancer's southern counterpart."},
+{d:4,cat:"Extreme Geography",q:"What country contains the geographic South Pole?",o:["No country (international territory)","Argentina","New Zealand","Chile"],a:0,
+f:"Antarctica is governed by the Antarctic Treaty of 1959. No country owns it — it's reserved for peaceful and scientific purposes. The South Pole is at the Amundsen–Scott Station.",
+rq:"No country! Antarctica is international territory under the 1959 Antarctic Treaty. Science rules there, not flags!",
+wq:"No country owns it! The Antarctic Treaty of 1959 keeps the South Pole as international territory."},
+{d:4,cat:"Countries",q:"What is the largest landlocked country in the world?",o:["Mongolia","Chad","Kazakhstan","Niger"],a:2,
+f:"Kazakhstan covers about 2,724,900 sq km — larger than all of Western Europe combined. It borders Russia, China, Kyrgyzstan, Uzbekistan, and Turkmenistan.",
+rq:"Kazakhstan! 2.7 million sq km of landlocked vastness. Bigger than Western Europe but no ocean view!",
+wq:"It's Kazakhstan! About 2.7 million sq km — the world's largest country without a coastline."},
+{d:4,cat:"Rivers & Lakes",q:"What river flows through the Grand Canyon?",o:["Rio Grande","Snake River","Colorado River","Columbia River"],a:2,
+f:"The Colorado River has been carving the Grand Canyon for millions of years. The canyon is about 446 km long, up to 29 km wide, and over 1,800 meters deep.",
+rq:"The Colorado River! Millions of years of carving that mile-deep masterpiece. Patience pays off!",
+wq:"It's the Colorado River! Millions of years of erosion created the Grand Canyon's iconic mile-deep gorge."},
+{d:4,cat:"Landmarks",q:"What is the tallest building in the world as of 2024?",o:["Shanghai Tower","Merdeka 118","Burj Khalifa","One World Trade Center"],a:2,
+f:"The Burj Khalifa in Dubai stands 828 meters tall with 163 floors. It's been the world's tallest building since its completion in 2010.",
+rq:"Burj Khalifa! 828 meters of Dubai ambition. It's been #1 since 2010 and counting!",
+wq:"It's the Burj Khalifa! 828 meters tall in Dubai — the reigning champ since 2010."},
+// ═══ EXTRA DIFFICULTY 5 QUESTIONS ═══
+{d:5,cat:"Extreme Geography",q:"What African country has the most UNESCO World Heritage Sites?",o:["Egypt","South Africa","Ethiopia","Morocco"],a:2,
+f:"Ethiopia has 12 UNESCO World Heritage Sites — the most on the African continent. These include Lalibela's rock-hewn churches, the Simien Mountains, and the ancient city of Aksum.",
+rq:"Ethiopia! 12 UNESCO sites — Lalibela, Aksum, the Simien Mountains. Africa's heritage heavyweight!",
+wq:"It's Ethiopia! 12 UNESCO World Heritage Sites — the most in all of Africa."},
+{d:5,cat:"Countries",q:"What is the only country that lies entirely within the Alps mountain range?",o:["Austria","Switzerland","Liechtenstein","Andorra"],a:2,
+f:"Liechtenstein is a 160 sq km microstate entirely within the Alps between Switzerland and Austria. It's doubly landlocked — landlocked by landlocked countries.",
+rq:"Liechtenstein! Entirely Alpine, entirely tiny, and doubly landlocked. A geographic nesting doll!",
+wq:"It's Liechtenstein! The only country fully inside the Alps — and it's doubly landlocked to boot."},
+{d:5,cat:"Physical Geography",q:"What is the Ring of Fire?",o:["A ring of volcanoes around the Mediterranean","A horseshoe-shaped zone of earthquakes and volcanoes around the Pacific","A volcanic region in central Africa","An asteroid impact zone"],a:1,
+f:"The Ring of Fire stretches about 40,000 km around the Pacific Ocean. It contains ~75% of the world's active volcanoes and causes ~90% of the world's earthquakes.",
+rq:"The Pacific Ring of Fire! 75% of all active volcanoes and 90% of earthquakes. Earth's most dramatic feature!",
+wq:"It's the horseshoe zone around the Pacific! ~75% of active volcanoes and ~90% of earthquakes happen there."},
+{d:5,cat:"Historical Geography",q:"What ancient trade route connected China to the Mediterranean, spanning about 6,400 km?",o:["Spice Route","Silk Road","Amber Road","Incense Route"],a:1,
+f:"The Silk Road wasn't a single road but a network of trade routes active from about 130 BC to the 1450s AD. It carried silk, spices, ideas, and unfortunately, the Black Death.",
+rq:"The Silk Road! 6,400 km of ancient commerce, culture exchange, and… plague. History is complicated!",
+wq:"It's the Silk Road! An ancient trade network from China to the Mediterranean, active for over 1,500 years."},
+{d:5,cat:"Countries",q:"What country has territory in both Europe and Asia but has its capital in Asia?",o:["Russia","Turkey","Georgia","Kazakhstan"],a:1,
+f:"Turkey's largest city, Istanbul, straddles both continents via the Bosphorus Strait. But the capital Ankara sits firmly in Asia (Anatolia). About 97% of Turkey is in Asia.",
+rq:"Turkey! Istanbul straddles the Bosphorus between continents, but the capital Ankara is fully in Asia.",
+wq:"It's Turkey! Istanbul bridges two continents, but Ankara (the capital) is in the Asian portion."},
+{d:5,cat:"Oceans & Seas",q:"What is the deepest point in the Atlantic Ocean?",o:["Cayman Trough","South Sandwich Trench","Puerto Rico Trench","Romanche Trench"],a:2,
+f:"The Puerto Rico Trench reaches about 8,376 meters (27,480 ft) deep — the deepest point in the Atlantic. It sits where the Caribbean and North American plates meet.",
+rq:"The Puerto Rico Trench! 8,376 meters deep. The Atlantic's version of the Mariana Trench, but less famous!",
+wq:"It's the Puerto Rico Trench! About 8,376 meters deep — the Atlantic's deepest point."},
+{d:5,cat:"Rivers & Lakes",q:"What river forms most of the border between the United States and Mexico?",o:["Colorado River","Pecos River","Rio Grande","Gila River"],a:2,
+f:"The Rio Grande stretches about 3,051 km from Colorado to the Gulf of Mexico. In Mexico, it's called the Río Bravo del Norte.",
+rq:"The Rio Grande! Or Río Bravo del Norte if you're on the Mexican side. ~3,051 km of border river!",
+wq:"It's the Rio Grande! About 3,051 km long — known as the Río Bravo del Norte in Mexico."},
+{d:5,cat:"Cultural Geography",q:"What is the most widely practiced religion in the world by number of adherents?",o:["Islam","Hinduism","Christianity","Buddhism"],a:2,
+f:"Christianity has roughly 2.4 billion adherents worldwide (~31% of the global population), followed by Islam with about 1.9 billion (~24%).",
+rq:"Christianity! About 2.4 billion adherents — roughly 31% of the world's population.",
+wq:"It's Christianity! ~2.4 billion followers, about 31% of the global population."},
+{d:5,cat:"Borders & Neighbors",q:"What two countries are doubly landlocked (landlocked by landlocked countries)?",o:["Mongolia and Kazakhstan","Liechtenstein and Uzbekistan","Switzerland and Austria","Nepal and Bolivia"],a:1,
+f:"Liechtenstein (surrounded by Switzerland and Austria) and Uzbekistan (surrounded by Kazakhstan, Turkmenistan, Afghanistan, Tajikistan, Kyrgyzstan) are the world's only doubly landlocked countries.",
+rq:"Liechtenstein and Uzbekistan! You have to cross TWO countries to reach the sea. Geographic isolation level: expert!",
+wq:"It's Liechtenstein and Uzbekistan! The only two countries where you must cross two borders to reach any ocean."},
+{d:5,cat:"Economy & Resources",q:"What country controls about 60% of the world's cobalt supply, essential for electric vehicle batteries?",o:["South Africa","Chile","Democratic Republic of the Congo","Australia"],a:2,
+f:"The DRC's cobalt mines in the Katanga region produce most of the world's cobalt. This resource is critical for lithium-ion batteries used in smartphones and EVs.",
+rq:"The DRC! Katanga region cobalt is in your phone and probably your next car. Geography meets technology!",
+wq:"It's the Democratic Republic of the Congo! Its Katanga region supplies ~60% of the world's cobalt."},
+{d:5,cat:"Map Skills",q:"If you traveled due south from Detroit, Michigan, what country would you enter first?",o:["Mexico","Canada","United States (you'd stay in the US)","Cuba"],a:1,
+f:"Detroit is one of the few US cities where traveling due south takes you into Canada. Windsor, Ontario sits directly south of Detroit across the Detroit River.",
+rq:"Canada! One of geography's best tricks — Detroit is north of Windsor, Ontario. South from Detroit = Canada!",
+wq:"It's Canada! Windsor, Ontario is directly south of Detroit. Geography loves to surprise!"},
+{d:5,cat:"Physical Geography",q:"What is the largest desert in the world?",o:["Sahara Desert","Gobi Desert","Arabian Desert","Antarctic Desert"],a:3,
+f:"Antarctica is technically the world's largest desert at ~14.2 million sq km — a desert is defined by low precipitation, not heat. The Sahara (~9.2M sq km) is the largest hot desert.",
+rq:"Antarctica! A desert is about LOW precipitation, not HEAT. Antarctica gets less than 200mm per year. Mind blown!",
+wq:"It's Antarctica! Deserts are defined by precipitation, not temperature. Antarctica is drier than the Sahara."},
+{d:5,cat:"Climate & Weather",q:"What phenomenon describes the unusual warming of surface waters in the eastern Pacific Ocean, affecting global weather?",o:["Monsoon cycle","El Niño","Polar vortex","Gulf Stream shift"],a:1,
+f:"El Niño events occur every 2–7 years and can cause droughts in Australia, floods in South America, and disrupted monsoons in Asia. La Niña is its cooler counterpart.",
+rq:"El Niño! Warm Pacific water that wrecks weather patterns worldwide. Small current, HUGE consequences!",
+wq:"It's El Niño! Warm eastern Pacific waters every 2–7 years that disrupt global weather."},
+{d:5,cat:"Straits & Waterways",q:"What strait separates Europe from Asia at Istanbul?",o:["Strait of Dardanelles","Strait of Messina","Bosphorus","Strait of Gibraltar"],a:2,
+f:"The Bosphorus is only about 700 meters wide at its narrowest. Istanbul is the only major city in the world that straddles two continents.",
+rq:"The Bosphorus! Just 700 meters wide where Europe meets Asia. Istanbul sits on both sides!",
+wq:"It's the Bosphorus! Only ~700 meters wide, splitting Istanbul between two continents."},
+{d:5,cat:"Countries",q:"What is the youngest internationally recognized country in the world?",o:["Kosovo","East Timor","South Sudan","Montenegro"],a:2,
+f:"South Sudan gained independence from Sudan on July 9, 2011, making it the world's newest widely recognized sovereign state. It became the 193rd UN member.",
+rq:"South Sudan! Independent since July 9, 2011 — the 193rd UN member and the world's newest country!",
+wq:"It's South Sudan! It gained independence in 2011 as the world's newest widely recognized country."},
+{d:5,cat:"Extreme Geography",q:"What is the longest mountain range in the world?",o:["Himalayas","Rocky Mountains","Andes","Great Dividing Range"],a:2,
+f:"The Andes stretch about 7,000 km along the western coast of South America through 7 countries. They contain the highest peak outside Asia — Aconcagua at 6,961 meters.",
+rq:"The Andes! 7,000 km through 7 countries. The Western Hemisphere's continental spine!",
+wq:"It's the Andes! About 7,000 km long — the world's longest mountain chain."},
+{d:5,cat:"Islands",q:"What is the largest island in the world (not counting continents)?",o:["Borneo","Madagascar","New Guinea","Greenland"],a:3,
+f:"Greenland covers about 2,166,086 sq km — but only about 56,000 people live there. It's an autonomous territory of Denmark, covered by about 80% ice sheet.",
+rq:"Greenland! 2.17 million sq km but only ~56,000 people. It's 80% ice — the name is history's greatest real estate marketing!",
+wq:"It's Greenland! The world's largest island at ~2.17 million sq km, an autonomous territory of Denmark."},
+{d:5,cat:"Population",q:"What is the most populous country in Africa?",o:["Ethiopia","Egypt","South Africa","Nigeria"],a:3,
+f:"Nigeria has over 230 million people and is projected to become the world's 3rd most populous country by 2050. Lagos alone has over 15 million residents.",
+rq:"Nigeria! Over 230 million people and climbing fast. Lagos alone has 15M+ — that's a city the size of some countries!",
+wq:"It's Nigeria! Over 230 million people — Africa's population giant and still growing rapidly."},
+// ═══ DIFFICULTY 5: "Championship Round" (Expert / GeoBee Finals) ═══
+{d:5,cat:"Extreme Geography",q:"What is the point on Earth farthest from the center of the Earth (due to Earth's equatorial bulge)?",o:["Mount Everest summit","Mount Chimborazo summit","Mauna Kea summit","K2 summit"],a:1,
+f:"Because Earth bulges at the equator, Mount Chimborazo in Ecuador (6,263 m elevation near the equator) is about 2 km farther from Earth's center than Everest.",
+rq:"Chimborazo! Earth's equatorial bulge makes it the farthest point from the center. Everest is tallest above sea level, but Chimborazo wins THIS contest!",
+wq:"It's Mount Chimborazo! Earth bulges at the equator, so this Ecuadorian peak is farther from Earth's core than Everest."},
+{d:5,cat:"Extreme Geography",q:"What country has the most land borders (tied at 14 with Russia)?",o:["Brazil","India","China","Germany"],a:2,
+f:"China borders 14 countries: India, Pakistan, Afghanistan, Tajikistan, Kyrgyzstan, Kazakhstan, Mongolia, Russia, North Korea, Vietnam, Laos, Myanmar, Bhutan, and Nepal.",
+rq:"China! 14 land borders, tied with Russia. That's a LOT of diplomatic relationships to manage!",
+wq:"It's China! 14 neighbors, tied with Russia. From India to North Korea, China borders them all."},
+{d:5,cat:"Straits & Waterways",q:"What is the busiest canal in the world by tonnage?",o:["Panama Canal","Kiel Canal","Suez Canal","Erie Canal"],a:2,
+f:"The Suez Canal handles about 12% of global trade — roughly 19,000 ships per year carrying over 1 billion tonnes of cargo.",
+rq:"The Suez Canal! ~12% of global trade, over 1 billion tonnes per year. The world's busiest shortcut!",
+wq:"It's the Suez Canal! About 12% of all global trade passes through it annually."},
+{d:5,cat:"Countries",q:"What is the only country that borders both the Caspian Sea and the Persian Gulf?",o:["Turkmenistan","Iraq","Azerbaijan","Iran"],a:3,
+f:"Iran's northern coast touches the Caspian Sea while its southern coast borders the Persian Gulf and Gulf of Oman. It spans about 1,648,000 sq km.",
+rq:"Iran! Caspian Sea to the north, Persian Gulf to the south. Geographic range!",
+wq:"It's Iran! Northern coast on the Caspian Sea, southern coast on the Persian Gulf."},
+{d:5,cat:"Physical Geography",q:"What geological feature is the Mid-Atlantic Ridge?",o:["Subduction zone","Divergent plate boundary","Transform fault","Hotspot chain"],a:1,
+f:"The Mid-Atlantic Ridge is a divergent boundary where the Eurasian and North American plates pull apart. Iceland sits directly on it — literally being torn in two.",
+rq:"A divergent plate boundary! Tectonic plates pulling apart. Iceland sits right on top of it — slowly being split in half!",
+wq:"It's a divergent plate boundary! The Mid-Atlantic Ridge is where plates pull apart, creating new ocean floor."},
+{d:5,cat:"Physical Geography",q:"What is a 'panhandle' in geography?",o:["A narrow strip of territory extending from the main body","A circular territory","A mountainous region","A coastal indentation"],a:0,
+f:"Famous panhandles include the Oklahoma Panhandle, the Florida Panhandle, and the Alaska Panhandle. The term comes from the shape resembling a pan's handle.",
+rq:"A narrow strip extending from the main body! Like Florida's, Oklahoma's, or Alaska's. Geography's handle bars!",
+wq:"It's a narrow strip of territory extending from the main body — like the Florida or Oklahoma Panhandles."},
+{d:5,cat:"Countries",q:"What country completely surrounds the city-state of Vatican City?",o:["France","Switzerland","Italy","Spain"],a:2,
+f:"Vatican City is a 0.44 sq km enclave within Rome, Italy. It's been an independent state since the Lateran Treaty of 1929.",
+rq:"Italy! Vatican City is an enclave within Rome. The world's smallest country, completely surrounded by Italy.",
+wq:"It's Italy! Vatican City sits entirely within the city of Rome."},
+{d:5,cat:"Climate & Weather",q:"The Coriolis effect causes moving objects (including wind and ocean currents) to deflect in which direction in the Northern Hemisphere?",o:["Left","Right","Upward","Randomly"],a:1,
+f:"In the Northern Hemisphere, the Coriolis effect deflects moving objects to the right. In the Southern Hemisphere, it deflects to the left. It's caused by Earth's rotation.",
+rq:"Right! In the Northern Hemisphere, Coriolis deflects right. In the Southern, left. Earth's spin makes everything curve!",
+wq:"It's right! The Coriolis effect deflects to the right in the Northern Hemisphere (left in the Southern)."},
+{d:5,cat:"Climate & Weather",q:"What type of climate is characterized by warm, dry summers and cool, wet winters?",o:["Tropical monsoon","Continental","Mediterranean","Subarctic"],a:2,
+f:"Mediterranean climate is found around the Mediterranean Sea, parts of California, central Chile, southwestern Australia, and the Western Cape of South Africa.",
+rq:"Mediterranean! Think sunny summers and rainy winters — California, southern Europe, parts of Australia and Chile all share it.",
+wq:"It's Mediterranean climate! Found around the Med, California, Chile, SW Australia, and South Africa."},
+{d:5,cat:"Historical Geography",q:"What was the name of the supercontinent that existed about 335-175 million years ago?",o:["Gondwana","Laurasia","Pangaea","Rodinia"],a:2,
+f:"Pangaea ('All Earth' in Greek) began to break apart about 175 million years ago. Gondwana and Laurasia were the two major landmasses it split into.",
+rq:"Pangaea! 'All Earth' — when every continent was one big happy landmass. Then they all drifted apart. Continental drama!",
+wq:"It's Pangaea! The supercontinent that contained all modern continents before breaking apart ~175 million years ago."},
+{d:5,cat:"Historical Geography",q:"The Silk Road trade routes connected China primarily with which other region?",o:["Sub-Saharan Africa","Mediterranean/Europe","Southeast Asia","South America"],a:1,
+f:"The Silk Road network stretched about 6,400 km from China to the Mediterranean. Besides silk, it transported spices, gold, technology, religion, and disease.",
+rq:"The Mediterranean and Europe! ~6,400 km of trade routes carrying silk, spices, ideas, and unfortunately, plagues.",
+wq:"It's the Mediterranean/Europe! The Silk Road spanned ~6,400 km from China westward."},
+{d:5,cat:"Map Skills",q:"What is the approximate circumference of the Earth at the equator?",o:["30,000 km","40,075 km","50,000 km","25,000 km"],a:1,
+f:"The Earth's circumference at the equator is about 40,075 km. Eratosthenes first estimated this remarkably accurately in about 240 BC using shadows and geometry.",
+rq:"40,075 km! Eratosthenes figured this out in 240 BC with just shadows and math. Genius!",
+wq:"It's about 40,075 km! First estimated by Eratosthenes around 240 BC — remarkably accurately."},
+{d:5,cat:"Map Skills",q:"What is the difference between a 'gulf' and a 'bay'?",o:["Gulfs are always larger","There is no strict geographic distinction","Gulfs are in the Southern Hemisphere only","Bays are freshwater only"],a:1,
+f:"There's no strict geographic distinction between a gulf and a bay. The Bay of Bengal is larger than the Gulf of Mexico, disproving the 'gulfs are bigger' myth.",
+rq:"No strict distinction! The Bay of Bengal is bigger than the Gulf of Mexico. Geography names are basically vibes.",
+wq:"There's no strict distinction! Bay vs. gulf is more about naming tradition than any scientific rule."},
+{d:5,cat:"Countries",q:"What is the only country whose name in English starts with 'Q' and doesn't end with a vowel?",o:["Qatar","Quebec","Qom","None — there isn't one"],a:3,
+f:"Qatar is the only country starting with 'Q' — and it ends with 'r' (no vowel). But this is actually a trick: the question says 'doesn't end with a vowel' and Qatar fits!",
+rq:"Actually Qatar does end in a consonant! The answer is there ISN'T one that people miss — Qatar is the only Q-country and it ends in 'r'. Tricky!",
+wq:"Trick question! Qatar is the only 'Q' country and it already doesn't end in a vowel."},
+{d:5,cat:"Countries",q:"What landlocked country in Central Asia borders five other 'stan' countries?",o:["Tajikistan","Kyrgyzstan","Uzbekistan","Afghanistan"],a:2,
+f:"Uzbekistan borders Kazakhstan, Kyrgyzstan, Tajikistan, Afghanistan, and Turkmenistan — all five '-stan' countries. It's also doubly landlocked.",
+rq:"Uzbekistan! Bordered by five '-stan' countries AND doubly landlocked. The '-stan' hub of Central Asia!",
+wq:"It's Uzbekistan! It borders all five other '-stan' countries in the region."},
+{d:5,cat:"Oceans & Seas",q:"What percentage of the Earth's surface is covered by water?",o:["About 51%","About 61%","About 71%","About 81%"],a:2,
+f:"About 71% of Earth's surface is water, with oceans holding about 96.5% of all Earth's water. Only 3.5% of Earth's water is freshwater.",
+rq:"71%! Earth is more ocean than land. We really should have called it 'Planet Water.'",
+wq:"It's about 71%! Earth is mostly water — 'Planet Ocean' would've been a better name."},
+{d:5,cat:"Oceans & Seas",q:"What ocean current warms the climate of Western Europe?",o:["Canary Current","Kuroshio Current","Gulf Stream/North Atlantic Current","Benguela Current"],a:2,
+f:"The Gulf Stream carries warm water from the Gulf of Mexico northeast across the Atlantic. It's why London (51°N) is much warmer than Labrador, Canada (also 51°N).",
+rq:"The Gulf Stream! It's why London at 51°N is warmer than Labrador at the same latitude. Thanks, warm water!",
+wq:"It's the Gulf Stream! Without it, Western Europe would be much colder — London would feel like Labrador."},
+{d:5,cat:"Economy & Resources",q:"What is the world's busiest port by container throughput?",o:["Rotterdam","Los Angeles","Shanghai","Singapore"],a:2,
+f:"Shanghai handles about 47 million TEUs (twenty-foot equivalent units) per year. Singapore is second. Seven of the world's 10 busiest ports are in China.",
+rq:"Shanghai! ~47 million TEUs per year. Seven of the world's top 10 ports are in China. That's dominance!",
+wq:"It's Shanghai! About 47 million containers per year — seven of the top 10 ports worldwide are Chinese."},
+{d:5,cat:"Economy & Resources",q:"Which country is the world's largest producer of diamonds by value?",o:["South Africa","Russia","Botswana","Democratic Republic of Congo"],a:2,
+f:"Botswana is the world's largest diamond producer by value, with the Jwaneng mine being the richest diamond mine on Earth. Diamonds account for ~80% of Botswana's exports.",
+rq:"Botswana! Home to the Jwaneng mine — the richest diamond mine on Earth. 80% of their exports are sparkly!",
+wq:"It's Botswana! The Jwaneng mine is the world's richest diamond mine. Not South Africa — that surprises many!"},
+{d:5,cat:"Physical Geography",q:"What type of rock is formed from cooled magma or lava?",o:["Sedimentary","Metamorphic","Igneous","Limestone"],a:2,
+f:"Igneous rocks include granite (cooled slowly underground) and basalt (cooled quickly on the surface). About 95% of the upper part of Earth's crust is igneous rock.",
+rq:"Igneous! From the Latin 'ignis' meaning fire. Granite and basalt are the greatest hits.",
+wq:"It's igneous rock! From 'ignis' (fire). Think granite and basalt — cooled from molten rock."},
+{d:5,cat:"Countries",q:"What is the only country to share a land border with the United Kingdom?",o:["France","Ireland","Scotland","No country does"],a:1,
+f:"The Republic of Ireland shares a 499 km border with Northern Ireland (part of the UK) on the island of Ireland. It's the UK's only land border.",
+rq:"Ireland! The 499 km border between the Republic of Ireland and Northern Ireland is the UK's only land border.",
+wq:"It's Ireland! The Republic of Ireland shares a 499 km border with Northern Ireland (UK)."},
+{d:5,cat:"Countries",q:"What is the most populous island in the world?",o:["Honshu","Great Britain","Luzon","Java"],a:3,
+f:"Java, Indonesia has about 150 million people on an island of 129,000 sq km. That's roughly 1,160 people per sq km — the most densely populated large island.",
+rq:"Java! 150 million people on one island. That's half the US population on an island the size of New York State!",
+wq:"It's Java! About 150 million people — the most populous island on Earth by a huge margin."},
+{d:5,cat:"Extreme Geography",q:"What is the tallest waterfall in North America?",o:["Niagara Falls","Yosemite Falls","Multnomah Falls","Shoshone Falls"],a:1,
+f:"Yosemite Falls drops about 739 meters in three stages, making it the tallest waterfall in North America and one of the tallest in the world.",
+rq:"Yosemite Falls! 739 meters in three stages. Niagara is more famous but Yosemite is nearly 14 times taller!",
+wq:"It's Yosemite Falls! At 739 meters, it's nearly 14 times taller than Niagara Falls."},
+{d:5,cat:"Countries",q:"What is the official name of the country commonly known as 'North Macedonia'?",o:["Republic of Macedonia","North Macedonian Republic","Republic of North Macedonia","Macedonian State"],a:2,
+f:"The name changed from 'Republic of Macedonia' to 'Republic of North Macedonia' in 2019, resolving a decades-long dispute with Greece over the name 'Macedonia.'",
+rq:"Republic of North Macedonia! The name change in 2019 ended a 27-year dispute with Greece. Diplomacy wins!",
+wq:"It's the Republic of North Macedonia! The name changed in 2019 to resolve a dispute with Greece."},
+{d:5,cat:"Physical Geography",q:"What tectonic plate is the largest on Earth?",o:["North American Plate","Eurasian Plate","Pacific Plate","African Plate"],a:2,
+f:"The Pacific Plate covers about 103 million sq km — the largest of Earth's tectonic plates. It's mostly oceanic crust and is shrinking as it subducts under surrounding plates.",
+rq:"The Pacific Plate! ~103 million sq km. It's the biggest but it's actually shrinking due to subduction. Drama!",
+wq:"It's the Pacific Plate! At ~103 million sq km, it's Earth's largest — and it's slowly getting smaller."},
+{d:5,cat:"Rivers & Lakes",q:"What is the longest river that flows entirely within one country?",o:["Yangtze","Mississippi","Volga","Murray"],a:0,
+f:"The Yangtze flows about 6,300 km entirely within China. The Nile and Amazon are longer but cross multiple countries.",
+rq:"The Yangtze! 6,300 km entirely within China. The longest domestic river on Earth!",
+wq:"It's the Yangtze! At 6,300 km entirely in China, it's the longest single-country river."},
+{d:5,cat:"Countries",q:"Which country controls the Svalbard archipelago, located in the Arctic Ocean?",o:["Russia","Iceland","Denmark","Norway"],a:3,
+f:"Svalbard is a Norwegian archipelago at about 78°N latitude. Under the Svalbard Treaty, citizens of all signatory nations can live and work there.",
+rq:"Norway! Svalbard at 78°N — the world's northernmost settlement. Polar bears outnumber people there!",
+wq:"It's Norway! Svalbard sits at ~78°N latitude, where polar bears actually outnumber humans."},
+{d:5,cat:"Cultural Geography",q:"What is the most widely spoken language family in the world?",o:["Sino-Tibetan","Niger-Congo","Afro-Asiatic","Indo-European"],a:3,
+f:"Indo-European languages are spoken by about 3.2 billion people, including English, Spanish, Hindi, Portuguese, Bengali, Russian, and many more.",
+rq:"Indo-European! English, Spanish, Hindi, Russian, Portuguese — 3.2 billion native speakers across the family.",
+wq:"It's Indo-European! About 3.2 billion speakers — from English to Hindi to Russian to Portuguese."},
+{d:5,cat:"Extreme Geography",q:"What is the longest cave system in the world?",o:["Carlsbad Caverns","Mammoth Cave","Jewel Cave","Sistema Sac Actun"],a:1,
+f:"Mammoth Cave in Kentucky has over 676 km of surveyed passageways, and new sections are still being discovered. It's more than twice as long as the second-longest cave.",
+rq:"Mammoth Cave! Over 676 km of explored passages — and still growing! More than twice the runner-up.",
+wq:"It's Mammoth Cave in Kentucky! Over 676 km of passageways — the longest by a massive margin."},
+{d:5,cat:"Countries",q:"What is the only African country with both Mediterranean and Atlantic coastlines?",o:["Tunisia","Algeria","Morocco","Libya"],a:2,
+f:"Morocco's northern coast faces the Mediterranean, and its western coast faces the Atlantic. The Strait of Gibraltar sits at the intersection.",
+rq:"Morocco! Mediterranean to the north, Atlantic to the west, Gibraltar in between. Prime real estate!",
+wq:"It's Morocco! Its coastlines touch both the Mediterranean Sea and the Atlantic Ocean."},
+{d:5,cat:"Physical Geography",q:"What is an 'exclave'?",o:["A territory surrounded by water","A territory separated from its main country by another country's territory","A disputed border region","A volcanic island chain"],a:1,
+f:"Famous exclaves include Alaska (separated from the US by Canada), Kaliningrad (Russian, between Poland and Lithuania), and Ceuta/Melilla (Spanish, in North Africa).",
+rq:"A territory separated from its main country! Like Alaska, Kaliningrad, or Ceuta. Geography's long-distance relationships!",
+wq:"It's a territory separated from its main country by another's territory — like Alaska or Kaliningrad."},
+{d:5,cat:"Countries",q:"Which country is the world's largest producer of palm oil?",o:["Malaysia","Nigeria","Thailand","Indonesia"],a:3,
+f:"Indonesia produces about 60% of the world's palm oil, mostly on Sumatra and Kalimantan (Borneo). It's a major driver of deforestation in Southeast Asia.",
+rq:"Indonesia! ~60% of global palm oil, mostly from Sumatra and Borneo. An enormous and controversial industry.",
+wq:"It's Indonesia! About 60% of the world's palm oil comes from Indonesian plantations."},
+{d:5,cat:"Borders & Neighbors",q:"The 'Four Corners' monument in the US marks the meeting point of which four states?",o:["Arizona, New Mexico, Utah, Colorado","Nevada, Utah, Arizona, California","Texas, Oklahoma, New Mexico, Colorado","Wyoming, Montana, Idaho, South Dakota"],a:0,
+f:"The Four Corners is the only point in the US where four states meet. You can technically stand in four states simultaneously.",
+rq:"Arizona, New Mexico, Utah, and Colorado! The only place in the US where four states touch. The ultimate geographic flex!",
+wq:"It's Arizona, New Mexico, Utah, and Colorado! The only spot where four US states share a single point."},
+{d:5,cat:"Straits & Waterways",q:"What artificial waterway connects the North Sea to the Baltic Sea?",o:["Suez Canal","English Channel","Kiel Canal","Panama Canal"],a:2,
+f:"The Kiel Canal in Germany is about 98 km long and is the world's busiest artificial waterway by number of ships — about 30,000 per year.",
+rq:"The Kiel Canal! ~30,000 ships per year through Germany. The world's busiest artificial waterway by vessel count!",
+wq:"It's the Kiel Canal in Germany! About 98 km long and the busiest canal by number of ships."},
+{d:5,cat:"Physical Geography",q:"What are the 'Roaring Forties'?",o:["A group of 40 volcanoes","Strong westerly winds between 40-50°S latitude","The 40 tallest mountains","Earthquake zones at 40°N"],a:1,
+f:"The Roaring Forties are powerful westerly winds in the Southern Hemisphere between 40-50°S. With little land to slow them, they create some of Earth's roughest seas.",
+rq:"Strong westerly winds between 40-50°S! With almost no land to slow them down, they create terrifying seas. Sailors named them well!",
+wq:"They're strong westerly winds between 40-50°S latitude — some of the strongest sustained winds on Earth."},
+{d:5,cat:"Countries",q:"What is the only country in the world named after a line of latitude?",o:["Ecuador","Chile","Argentina","Peru"],a:0,
+f:"Ecuador is named after the equator (0° latitude), which runs directly through the country. 'Ecuador' is the Spanish word for 'equator.'",
+rq:"Ecuador! Literally named after the equator. 'Ecuador' IS the Spanish word for 'equator.' How straightforward!",
+wq:"It's Ecuador! The Spanish word for 'equator' — the country is literally named after the line of latitude."},
+{d:5,cat:"Extreme Geography",q:"What percentage of Antarctica is covered by ice?",o:["About 78%","About 88%","About 98%","100%"],a:2,
+f:"About 98% of Antarctica is covered by ice averaging about 2.16 km thick. It contains roughly 26.5 million cubic km of ice — 70% of Earth's freshwater.",
+rq:"About 98%! The ice averages 2.16 km thick and holds 70% of Earth's freshwater. That's a LOT of ice cubes!",
+wq:"It's about 98%! Antarctica's ice sheet averages 2.16 km thick and contains 70% of all freshwater on Earth."},
+{d:5,cat:"Historical Geography",q:"What was the ancient Greek word for the known world's inhabitable region?",o:["Oikumene (Ecumene)","Pangaea","Terra Firma","Cosmopolis"],a:0,
+f:"Oikumene referred to the known, inhabited world — essentially the Mediterranean region and surrounding areas. The term is still used in geography today as 'ecumene.'",
+rq:"Oikumene! The ancient Greeks' word for the known inhabited world. Now used as 'ecumene' in modern geography.",
+wq:"It's Oikumene (Ecumene)! The Greek concept of the inhabited world, still used in geography today."},
+{d:5,cat:"Countries",q:"What island nation in the Pacific is the first country to see each new day (furthest west of the International Date Line)?",o:["Tonga","Fiji","Samoa","Kiribati"],a:3,
+f:"Kiribati adjusted its time zone in 1995 so all its islands would be on the same day. Its Line Islands (including Kiritimati) are now UTC+14, the first to see each new day.",
+rq:"Kiribati! They literally moved the date line around their country in 1995 so they could all be on the same day. Power move!",
+wq:"It's Kiribati! It adjusted the International Date Line in 1995, making its eastern islands the first to see each new day."},
+];
+const QUESTIONS = ALL_QUESTIONS;
+
+// ─── Category Setup Lines (host intros per category) ─────────────────────────
+const CATEGORY_SETUPS = {
+  "Capitals": [
+    "Capitals! The cities that run the show... or at least pretend to.",
+    "Not every capital is the biggest or flashiest city. Some are sneaky little surprises.",
+    "Pop quiz on capitals! And no, the capital isn't always the city you've heard of most.",
+    "Time for capitals. Where the government hangs its hat... whether you knew it or not."
+  ],
+  "Physical Geography": [
+    "Let's get physical! ...Geographically speaking.",
+    "Mountains, rivers, deserts — Earth's greatest hits album.",
+    "Nature built some wild stuff. Let's see if you've been paying attention.",
+    "Physical geography: where rocks, water, and dirt become surprisingly interesting."
+  ],
+  "US Geography": [
+    "America: 50 states, 50 chances to get confused about which one is where.",
+    "Let's see how well you know the good ol' US of A.",
+    "Stars, stripes, and state facts. How well do you really know this country?",
+    "US geography! Not just the states you've visited on family road trips."
+  ],
+  "Oceans & Seas": [
+    "The ocean: covering 71% of Earth and 100% of what makes sailors nervous.",
+    "Water, water everywhere — and lots of trivia about it.",
+    "Time to dive deep. Figuratively. Please don't literally dive into your screen."
+  ],
+  "Countries": [
+    "195 countries on this planet. Let's see how many you actually know about.",
+    "Countries! Some are huge, some are tiny, all of them have opinions.",
+    "The world is a big place. Let's see if you know your way around it."
+  ],
+  "Continents": [
+    "Seven continents. You'd think that would be simple. You'd be wrong.",
+    "Continental knowledge — the foundation of all geography!",
+    "Continents: the biggest pieces of the puzzle. Literally."
+  ],
+  "Rivers & Lakes": [
+    "Rivers and lakes: nature's highways and parking lots.",
+    "Water features! Not the kind in your backyard — the REAL ones.",
+    "Let's talk about Earth's plumbing system: rivers and lakes."
+  ],
+  "Mountains & Deserts": [
+    "Mountains and deserts: Earth's way of showing off and being dramatic.",
+    "The highest highs and the driest lows. Geography has range.",
+    "Peaks and sand — two of Earth's favorite things to throw around."
+  ],
+  "Borders & Neighbors": [
+    "Borders: imaginary lines that real people take very, very seriously.",
+    "Who's next to who? Geography's version of a seating chart.",
+    "Neighbors! Some countries have lots of them. Some prefer to be islands. Literally."
+  ],
+  "Islands": [
+    "Islands: because sometimes land just wants some personal space.",
+    "Surrounded by water on all sides — the introvert of landforms.",
+    "Island time! And by that I mean geography questions about islands."
+  ],
+  "Cultural Geography": [
+    "Languages, people, traditions — the human side of geography.",
+    "It's not just about WHERE things are, it's about WHO lives there.",
+    "Cultural geography: where maps meet humanity."
+  ],
+  "Climate & Weather": [
+    "Climate: what you expect. Weather: what you get. Let's talk about what you know.",
+    "Hot, cold, wet, dry — Earth has ALL the settings.",
+    "Weather is temporary. Climate is forever. Or at least for test purposes."
+  ],
+  "Landmarks": [
+    "Natural and human-made landmarks — the stuff that makes postcards possible.",
+    "Famous places! The kind people travel thousands of miles to take selfies at.",
+    "Landmarks: nature and humans competing to see who builds cooler stuff."
+  ],
+  "Straits & Waterways": [
+    "Straits and waterways: the narrow passages that make admirals nervous.",
+    "Chokepoints of the world! Tiny water passages with massive importance.",
+    "The world's most important water hallways. Don't run in them."
+  ],
+  "Historical Geography": [
+    "Geography meets history. Because where things happened matters too.",
+    "The 'when' and 'where' of the world, combined for maximum trivia damage.",
+    "Historical geography: where the past and the map collide."
+  ],
+  "Population": [
+    "8 billion people on Earth. Let's see if you know where they all live.",
+    "Demographics! The study of who lives where and in what numbers.",
+    "People, people everywhere. But where exactly? That's the question."
+  ],
+  "Economy & Resources": [
+    "Money makes the world go round. Geography tells you where the money is.",
+    "Natural resources, trade routes, and economic powerhouses. Let's go!",
+    "Economics meets geography. Your wallet's favorite subject."
+  ],
+  "Extreme Geography": [
+    "Records, extremes, and superlatives! Geography's greatest hits.",
+    "The biggest, smallest, highest, deepest, and weirdest. Let's go extreme.",
+    "Extreme geography — where the planet shows off its personal bests."
+  ],
+  "Map Skills": [
+    "Lines on a map! Latitude, longitude, and the grid that holds it all together.",
+    "Map skills: because even GPS needs to know where the lines are.",
+    "Coordinates and cartography! The nerdy backbone of all geography."
+  ]
+};
+
+const HOST_INTROS = [
+  "Welcome to GEO-WRECKED! The only game show where knowing where stuff is actually matters!",
+  "I'm your host, and I'll be judging your geographic knowledge with barely concealed glee.",
+  "Let's see if you're smarter than a GPS, shall we?",
+  "Welcome back to GEO-WRECKED! Where the globe spins and the points DO matter!"
+];
+
+const ROUND_NAMES = {
+  1: "Warm Up Your Globe",
+  2: "Getting Warmer",
+  3: "No More Mr. Nice Globe",
+  4: "The Gauntlet",
+  5: "Championship Round"
+};
+
+const ROUND_INTROS = {
+  1: ["Round 1: We're starting easy. Don't get cocky.", "The warm-up! Consider this geography stretching."],
+  2: ["Round 2: Getting Warmer — like the planet! ...Too soon?", "Time to separate the map readers from the map folders."],
+  3: ["Round 3: Hope you stretched your brain.", "This is where dreams go to get a geography lesson."],
+  4: ["Round 4: Only the brave survive.", "If you're still here, you know your stuff or you're stubborn. Either way, respect."],
+  5: ["CHAMPIONSHIP ROUND! This is GeoBee finals material. No pressure.", "This is it. The big leagues. The GEOOOOO BEEEEEE!"]
+};
+
+const STREAK_COMMENTS = {
+  3: "Three in a row! You're on fire! (Not literally. That would be a different kind of geography event.)",
+  5: "FIVE STREAK! You're basically a walking atlas!",
+  7: "SEVEN?! Are you secretly a cartographer?",
+  10: "TEN IN A ROW! I think you might actually WIN the GeoBee."
+};
+
+const GAME_OVER_COMMENTS = {
+  perfect: "PERFECT SCORE?! You absolute LEGEND. The GeoBee doesn't stand a chance. 🌍👑",
+  great: "Incredible performance! GeoBee competitors should be nervous!",
+  good: "Solid showing! A little more studying and you'll be unstoppable!",
+  okay: "Not bad! You know more than the average bear. Keep studying!",
+  rough: "That's what practice is for! Every wrong answer is a fact you'll never forget. Play again!"
+};
+
+const QUESTIONS_PER_ROUND = 5;
+const TOTAL_ROUNDS = 5;
+const TIMER_SECONDS = 20;
+
+// ─── Sound Effects ───────────────────────────────────────────────────────────
+const useSound = () => {
+  const audioCtx = useRef(null);
+  const getCtx = useCallback(() => {
+    if (!audioCtx.current) audioCtx.current = new (window.AudioContext || window.webkitAudioContext)();
+    return audioCtx.current;
+  }, []);
+  const playTone = useCallback((freq, dur, type='sine', vol=0.15) => {
+    try {
+      const ctx = getCtx(), osc = ctx.createOscillator(), g = ctx.createGain();
+      osc.type = type; osc.frequency.value = freq;
+      g.gain.setValueAtTime(vol, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+      osc.connect(g); g.connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime + dur);
+    } catch(e) {}
+  }, [getCtx]);
+  return {
+    correct: useCallback(() => { playTone(523,.1); setTimeout(()=>playTone(659,.1),100); setTimeout(()=>playTone(784,.2),200); }, [playTone]),
+    wrong: useCallback(() => { playTone(200,.3,'sawtooth',.1); setTimeout(()=>playTone(150,.4,'sawtooth',.08),200); }, [playTone]),
+    tick: useCallback(() => playTone(800,.05,'sine',.05), [playTone]),
+    streak: useCallback(() => { [523,659,784,1047].forEach((f,i)=>setTimeout(()=>playTone(f,.15),i*80)); }, [playTone]),
+    roundStart: useCallback(() => { [392,440,494,523].forEach((f,i)=>setTimeout(()=>playTone(f,.2,'triangle',.12),i*150)); }, [playTone]),
+    gameOver: useCallback(() => { [523,659,784,1047,784,1047,1319].forEach((f,i)=>setTimeout(()=>playTone(f,.25,'triangle',.12),i*200)); }, [playTone]),
+    click: useCallback(() => playTone(600,.05,'sine',.08), [playTone])
+  };
+};
+
+// ─── Voice / Text-to-Speech ──────────────────────────────────────────────────
+const useSpeech = () => {
+  const voices = useRef([]);
+  const selectedVoice = useRef(null);
+  const enabled = useRef(true);
+  const speaking = useRef(false);
+  const queue = useRef([]);
+  const [voiceList, setVoiceList] = useState([]);
+  const [voiceName, setVoiceName] = useState('');
+  const [voiceEnabled, setVoiceEnabled] = useState(true);
+  const [pitch, setPitch] = useState(1.05);
+  const [rate, setRate] = useState(1.08);
+  const loadVoices = useCallback(() => {
+    const v = window.speechSynthesis?.getVoices() || [];
+    voices.current = v;
+    const english = v.filter(x => x.lang.startsWith('en'));
+    setVoiceList(english.length > 0 ? english : v.slice(0, 20));
+    if (!selectedVoice.current && english.length > 0) {
+      // Prefer good-sounding voices: Edge neural voices, then Google, then any English
+      const pref = english.find(x => /neural|natural|online|wavenet/i.test(x.name))
+        || english.find(x => /google|microsoft|samantha|daniel|karen|moira|fiona|alex/i.test(x.name))
+        || english.find(x => /\ben[-_](US|GB|AU)/i.test(x.lang))
+        || english[0];
+      selectedVoice.current = pref;
+      setVoiceName(pref.name);
+    }
+  }, []);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    return () => { window.speechSynthesis.onvoiceschanged = null; };
+  }, [loadVoices]);
+  const cancel = useCallback(() => {
+    queue.current = [];
+    speaking.current = false;
+    window.speechSynthesis?.cancel();
+  }, []);
+  const processQueue = useCallback(() => {
+    if (speaking.current || queue.current.length === 0) return;
+    if (!enabled.current) {
+      // Fire any pending onDone callbacks even when disabled
+      const skipped = queue.current.splice(0);
+      skipped.forEach(item => { if (item.opts.onDone) item.opts.onDone(); });
+      return;
+    }
+    const { text, opts } = queue.current.shift();
+    const synth = window.speechSynthesis;
+    if (!synth) { if (opts.onDone) opts.onDone(); return; }
+    const utter = new SpeechSynthesisUtterance(text);
+    if (selectedVoice.current) utter.voice = selectedVoice.current;
+    utter.pitch = opts.pitch ?? pitch;
+    utter.rate = opts.rate ?? rate;
+    utter.volume = opts.volume ?? 0.9;
+    speaking.current = true;
+    // Chrome bug: synthesis can pause if page isn't focused — keep-alive
+    const keepAlive = setInterval(() => { if (synth.speaking) synth.resume(); }, 5000);
+    const finish = () => { clearInterval(keepAlive); speaking.current = false; if (opts.onDone) opts.onDone(); processQueue(); };
+    utter.onend = finish;
+    utter.onerror = finish;
+    synth.speak(utter);
+  }, [pitch, rate]);
+  const speak = useCallback((text, opts = {}) => {
+    if (!window.speechSynthesis || !text) { if (opts.onDone) opts.onDone(); return; }
+    if (!enabled.current) { if (opts.onDone) opts.onDone(); return; }
+    queue.current.push({ text, opts });
+    processQueue();
+  }, [processQueue]);
+  // Speak text then call callback when done (convenience wrapper)
+  const speakThen = useCallback((text, opts = {}, callback) => {
+    speak(text, { ...opts, onDone: callback });
+  }, [speak]);
+  // Estimate speech duration for fallback timing (words / rate * ms)
+  const estimateMs = useCallback((text) => {
+    if (!enabled.current) return 2500;
+    const words = (text || '').split(/\s+/).length;
+    return Math.max(2500, Math.ceil(words / (2.5 * rate) * 1000) + 800);
+  }, [rate]);
+  const setVoice = useCallback((name) => {
+    const v = voices.current.find(x => x.name === name);
+    if (v) { selectedVoice.current = v; setVoiceName(name); }
+  }, []);
+  const toggleEnabled = useCallback(() => {
+    const next = !enabled.current;
+    enabled.current = next;
+    setVoiceEnabled(next);
+    if (!next) cancel();
+  }, [cancel]);
+  return { speak, speakThen, estimateMs, cancel, voiceList, voiceName, setVoice, voiceEnabled, toggleEnabled, pitch, setPitch, rate, setRate };
+};
+
+// ─── Main Game Component ─────────────────────────────────────────────────────
+function GeoBeeGame() {
+  const [screen, setScreen] = useState('title');
+  const [gameQuestions, setGameQuestions] = useState([]);
+  const [qIndex, setQIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [timer, setTimer] = useState(TIMER_SECONDS);
+  const [timerActive, setTimerActive] = useState(false);
+  const [showSetup, setShowSetup] = useState(true);
+  const [history, setHistory] = useState([]);
+  const [currentRound, setCurrentRound] = useState(0);
+  const [setupText, setSetupText] = useState('');
+  const [hostText, setHostText] = useState('');
+  const [totalGamesPlayed, setTotalGamesPlayed] = useState(0);
+  const [totalQAnswered, setTotalQAnswered] = useState(0);
+  const [totalCorrect, setTotalCorrect] = useState(0);
+  const sound = useSound();
+  const speech = useSpeech();
+  const [showVoiceSettings, setShowVoiceSettings] = useState(false);
+
+  const selectGameQuestions = useCallback(() => {
+    const byDifficulty = {};
+    QUESTIONS.forEach((q, i) => {
+      if (!byDifficulty[q.d]) byDifficulty[q.d] = [];
+      byDifficulty[q.d].push({ ...q, _idx: i });
+    });
+    const selected = [];
+    for (let d = 1; d <= TOTAL_ROUNDS; d++) {
+      const pool = byDifficulty[d] || [];
+      const shuffled = [...pool].sort(() => Math.random() - 0.5);
+      // try to get category variety
+      const cats = new Set();
+      const picked = [];
+      for (const q of shuffled) {
+        if (picked.length >= QUESTIONS_PER_ROUND) break;
+        if (!cats.has(q.cat) || picked.length >= QUESTIONS_PER_ROUND - 1) {
+          picked.push(q);
+          cats.add(q.cat);
+        }
+      }
+      // fill if needed
+      for (const q of shuffled) {
+        if (picked.length >= QUESTIONS_PER_ROUND) break;
+        if (!picked.includes(q)) picked.push(q);
+      }
+      selected.push(...picked);
+    }
+    return selected;
+  }, []);
+
+  useEffect(() => {
+    if (!timerActive || timer <= 0) return;
+    const interval = setInterval(() => {
+      setTimer(t => {
+        if (t <= 1) { setTimerActive(false); handleAnswer(-1); return 0; }
+        if (t <= 6) sound.tick();
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [timerActive, timer]);
+
+  const currentQ = gameQuestions[qIndex] || null;
+  const totalQs = gameQuestions.length;
+
+  const getSetup = (cat) => {
+    const setups = CATEGORY_SETUPS[cat] || CATEGORY_SETUPS["Physical Geography"];
+    return setups[Math.floor(Math.random() * setups.length)];
+  };
+
+  const startGame = () => {
+    sound.click(); speech.cancel();
+    const gq = selectGameQuestions();
+    setGameQuestions(gq);
+    setScore(0); setStreak(0); setBestStreak(0); setQIndex(0);
+    setHistory([]); setCurrentRound(0); setScreen('intro');
+    const intro = HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
+    setHostText(intro);
+    speech.speak(intro, { rate: 1.1, pitch: 1.1 });
+  };
+
+  const proceedFromIntro = () => {
+    sound.roundStart(); speech.cancel();
+    setCurrentRound(1); setScreen('roundIntro');
+    const intro = ROUND_INTROS[1][Math.floor(Math.random() * ROUND_INTROS[1].length)];
+    setHostText(intro);
+    speech.speak(`Round 1: ${ROUND_NAMES[1]}. ${intro}`, { rate: 1.05, pitch: 1.08 });
+  };
+
+  const startQuestion = () => {
+    sound.click(); speech.cancel();
+    setScreen('question'); setShowSetup(true); setSelected(null); setTimer(TIMER_SECONDS);
+    const q = gameQuestions[qIndex];
+    const setup = getSetup(q.cat);
+    setSetupText(setup);
+    // Wait for the setup speech to finish, then show question and read it
+    const showQ = () => { setShowSetup(false); setTimerActive(true); speech.speak(q.q, { rate: 1.0, pitch: 1.0 }); };
+    speech.speakThen(setup, { rate: 1.05, pitch: 1.05 }, () => {
+      // Small pause after setup before question appears
+      setTimeout(showQ, 400);
+    });
+  };
+
+  const handleAnswer = useCallback((idx) => {
+    if (selected !== null) return;
+    setTimerActive(false); setSelected(idx);
+    const q = gameQuestions[qIndex];
+    const isCorrect = idx === q.a;
+    const timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
+    const streakBonus = streak >= 3 ? streak * 10 : 0;
+    speech.cancel();
+    if (isCorrect) {
+      sound.correct();
+      const ns = streak + 1;
+      setStreak(ns); setBestStreak(bs => Math.max(bs, ns));
+      setScore(s => s + 100 + timeBonus + streakBonus);
+      if (STREAK_COMMENTS[ns]) setTimeout(() => sound.streak(), 300);
+      speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.rq, { rate: 1.1, pitch: 1.1 });
+      if (STREAK_COMMENTS[ns]) speech.speak(STREAK_COMMENTS[ns], { rate: 1.15, pitch: 1.15 });
+      speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+    } else {
+      sound.wrong(); setStreak(0);
+      speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.wq, { rate: 1.0, pitch: 0.95 });
+      speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+    }
+    setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat }]);
+    setTotalQAnswered(n => n + 1);
+    if (isCorrect) setTotalCorrect(n => n + 1);
+    setScreen('result');
+  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech]);
+
+  const nextQuestion = () => {
+    speech.cancel();
+    const nextIdx = qIndex + 1;
+    if (nextIdx >= totalQs) {
+      sound.gameOver(); setScreen('gameOver');
+      setTotalGamesPlayed(n => n + 1);
+      // Compute game over comment for speech
+      const gc = history.length + 1; // include this last answer
+      const gcCorr = history.filter(h=>h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
+      const gcPct = gc > 0 ? gcCorr/gc : 0;
+      const goComment = gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough;
+      speech.speak("Game over! " + goComment.replace(/🌍👑/g,''), { rate: 1.05, pitch: 1.08 });
+      return;
+    }
+    const nextQ = gameQuestions[nextIdx];
+    const nextRound = nextQ.d;
+    if (nextRound !== currentRound) {
+      sound.roundStart(); setCurrentRound(nextRound); setScreen('roundIntro');
+      const intros = ROUND_INTROS[nextRound];
+      const intro = intros[Math.floor(Math.random() * intros.length)];
+      setHostText(intro);
+      setQIndex(nextIdx);
+      speech.speak(`Round ${nextRound}: ${ROUND_NAMES[nextRound]}. ${intro}`, { rate: 1.05, pitch: 1.08 });
+    } else {
+      setQIndex(nextIdx); setSelected(null); setTimer(TIMER_SECONDS);
+      setShowSetup(true); setScreen('question');
+      const setup = getSetup(nextQ.cat);
+      setSetupText(setup);
+      const showQ = () => { setShowSetup(false); setTimerActive(true); speech.speak(nextQ.q, { rate: 1.0, pitch: 1.0 }); };
+      speech.speakThen(setup, { rate: 1.05, pitch: 1.05 }, () => {
+        setTimeout(showQ, 400);
+      });
+    }
+  };
+
+  const getScoreComment = () => {
+    const c = history.filter(h => h.correct).length;
+    if (c === totalQs) return GAME_OVER_COMMENTS.perfect;
+    if (c >= totalQs * 0.8) return GAME_OVER_COMMENTS.great;
+    if (c >= totalQs * 0.6) return GAME_OVER_COMMENTS.good;
+    if (c >= totalQs * 0.4) return GAME_OVER_COMMENTS.okay;
+    return GAME_OVER_COMMENTS.rough;
+  };
+
+  const correctCount = history.filter(h => h.correct).length;
+
+  // ─── STYLES ──────────────────────────────────────────────────────────────
+  const S = {
+    wrap: { minHeight:'100vh', background:'linear-gradient(135deg,#0a0a2e 0%,#1a1a4e 30%,#0d0d3a 70%,#050520 100%)', color:'#fff', fontFamily:"'Segoe UI',system-ui,-apple-system,sans-serif", display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'20px', position:'relative' },
+    stars: { position:'fixed',top:0,left:0,right:0,bottom:0, background:'radial-gradient(2px 2px at 20px 30px,#fff,transparent),radial-gradient(2px 2px at 40px 70px,rgba(255,255,255,0.8),transparent),radial-gradient(1px 1px at 90px 40px,#fff,transparent)', backgroundSize:'200px 100px', pointerEvents:'none',zIndex:0 },
+    card: { background:'rgba(255,255,255,0.07)', backdropFilter:'blur(20px)', borderRadius:'24px', border:'1px solid rgba(255,255,255,0.15)', padding:'40px', maxWidth:'700px', width:'100%', position:'relative', zIndex:1, boxShadow:'0 25px 60px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.1)' },
+    title: { fontSize:'3.5rem', fontWeight:900, textAlign:'center', background:'linear-gradient(to right,#f7b733,#fc4a1a,#f7b733)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', letterSpacing:'-1px', lineHeight:1.1, marginBottom:'8px' },
+    sub: { textAlign:'center', color:'rgba(255,255,255,0.6)', fontSize:'1.1rem', marginBottom:'30px' },
+    btn: { background:'linear-gradient(135deg,#f7b733,#fc4a1a)', color:'#fff', border:'none', borderRadius:'16px', padding:'16px 40px', fontSize:'1.2rem', fontWeight:700, cursor:'pointer', transition:'all 0.2s', display:'block', margin:'0 auto', boxShadow:'0 4px 20px rgba(252,74,26,0.3)' },
+    host: { background:'rgba(247,183,51,0.1)', border:'1px solid rgba(247,183,51,0.3)', borderRadius:'16px', padding:'16px 20px', marginBottom:'24px', fontSize:'1rem', lineHeight:1.6 },
+    cat: { display:'inline-block', background:'rgba(247,183,51,0.2)', color:'#f7b733', padding:'4px 14px', borderRadius:'20px', fontSize:'0.8rem', fontWeight:600, letterSpacing:'1px', textTransform:'uppercase', marginBottom:'12px' },
+    bar: { display:'flex', justifyContent:'space-between', alignItems:'center', padding:'12px 20px', background:'rgba(0,0,0,0.3)', borderRadius:'14px', marginBottom:'20px', fontSize:'0.9rem' },
+    fact: { background:'rgba(46,213,115,0.08)', border:'1px solid rgba(46,213,115,0.2)', borderRadius:'12px', padding:'14px 18px', fontSize:'0.9rem', lineHeight:1.6, color:'rgba(255,255,255,0.8)', marginTop:'16px' },
+    statCard: { background:'rgba(255,255,255,0.06)', borderRadius:'14px', padding:'16px', textAlign:'center', flex:1 },
+    statVal: { fontSize:'2rem', fontWeight:800, background:'linear-gradient(to right,#f7b733,#fc4a1a)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent' },
+    statLbl: { fontSize:'0.8rem', color:'rgba(255,255,255,0.5)', marginTop:'4px', textTransform:'uppercase', letterSpacing:'1px' }
+  };
+
+  const optStyle = (idx) => {
+    const isSel = selected === idx, isCor = idx === currentQ?.a, isRev = selected !== null;
+    let bg = 'rgba(255,255,255,0.08)', bdr = '2px solid rgba(255,255,255,0.15)', sh = 'none', op = 1;
+    if (isRev) {
+      if (isCor) { bg='rgba(46,213,115,0.2)'; bdr='2px solid #2ed573'; sh='0 0 20px rgba(46,213,115,0.3)'; }
+      else if (isSel) { bg='rgba(255,71,87,0.2)'; bdr='2px solid #ff4757'; sh='0 0 20px rgba(255,71,87,0.3)'; }
+      else { op = 0.4; }
+    }
+    return { background:bg, border:bdr, borderRadius:'14px', padding:'16px 20px', color:'#fff', fontSize:'1.05rem', cursor:isRev?'default':'pointer', transition:'all 0.3s', textAlign:'left', width:'100%', display:'flex', alignItems:'center', gap:'12px', boxShadow:sh, opacity:op };
+  };
+
+  const timerPct = (timer / TIMER_SECONDS) * 100;
+  const timerColor = timer > 10 ? 'linear-gradient(90deg,#2ed573,#7bed9f)' : timer > 5 ? 'linear-gradient(90deg,#ffa502,#ffbe76)' : 'linear-gradient(90deg,#ff4757,#ff6b81)';
+
+  const Btn = ({children, onClick}) => (
+    <button style={S.btn} onClick={onClick}
+      onMouseOver={e=>{e.target.style.transform='scale(1.05)';e.target.style.boxShadow='0 6px 30px rgba(252,74,26,0.5)';}}
+      onMouseOut={e=>{e.target.style.transform='scale(1)';e.target.style.boxShadow='0 4px 20px rgba(252,74,26,0.3)';}}
+    >{children}</button>
+  );
+
+  const Host = ({children, label}) => (
+    <div style={S.host}>
+      <div style={{fontWeight:700,color:'#f7b733',marginBottom:'6px'}}>{label || "🎙️ Host"}</div>
+      {children}
+    </div>
+  );
+
+  // ─── SCREENS ─────────────────────────────────────────────────────────────
+
+  if (screen === 'title') return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={{...S.card, textAlign:'center'}}>
+        <div style={{fontSize:'4rem',marginBottom:'10px'}}>🌍</div>
+        <div style={S.title}>GEO-WRECKED!</div>
+        <div style={S.sub}>A "You Don't Know Jack!"-Style GeoBee Trainer</div>
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'20px',marginBottom:'30px',textAlign:'left',lineHeight:1.8}}>
+          <div style={{fontWeight:700,marginBottom:'10px',color:'#f7b733'}}>How to Play:</div>
+          <div style={{color:'rgba(255,255,255,0.7)',fontSize:'0.95rem'}}>
+            🏆 {QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions per game drawn from a pool of {QUESTIONS.length}<br/>
+            ⏱️ {TIMER_SECONDS} seconds per question — faster = more points<br/>
+            🔥 Build answer streaks for bonus points<br/>
+            📚 Every question has a fun fact for learning<br/>
+            🔄 Questions shuffle every game — play again for new ones!<br/>
+            🎯 All facts verified for GeoBee competition prep
+          </div>
+        </div>
+        {totalGamesPlayed > 0 && (
+          <div style={{background:'rgba(46,213,115,0.08)',borderRadius:'12px',padding:'14px',marginBottom:'20px',fontSize:'0.85rem',color:'rgba(255,255,255,0.6)'}}>
+            📊 Lifetime: {totalGamesPlayed} games played • {totalCorrect}/{totalQAnswered} correct ({totalQAnswered > 0 ? Math.round(totalCorrect/totalQAnswered*100) : 0}%)
+          </div>
+        )}
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'20px'}}>
+          <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',cursor:'pointer'}}
+            onClick={()=>setShowVoiceSettings(v=>!v)}>
+            <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
+              <span style={{fontSize:'1.2rem'}}>{speech.voiceEnabled ? '🔊' : '🔇'}</span>
+              <span style={{fontWeight:700,color:'#f7b733',fontSize:'0.95rem'}}>Announcer Voice</span>
+              <span style={{color:'rgba(255,255,255,0.4)',fontSize:'0.8rem'}}>{speech.voiceEnabled ? 'ON' : 'OFF'}</span>
+            </div>
+            <span style={{color:'rgba(255,255,255,0.4)',fontSize:'0.8rem'}}>{showVoiceSettings ? '▲' : '▼'}</span>
+          </div>
+          {showVoiceSettings && (<div style={{marginTop:'16px',display:'flex',flexDirection:'column',gap:'12px'}}>
+            <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
+              <button onClick={speech.toggleEnabled}
+                style={{background:speech.voiceEnabled?'linear-gradient(135deg,#2ed573,#7bed9f)':'rgba(255,255,255,0.1)',
+                  border:'none',borderRadius:'20px',padding:'6px 16px',color:'#fff',fontSize:'0.8rem',fontWeight:600,cursor:'pointer'}}>
+                {speech.voiceEnabled ? 'Voice ON' : 'Voice OFF'}
+              </button>
+              <button onClick={()=>{speech.cancel();speech.speak("Welcome to Geo-Wrecked! Let's see if you're smarter than a GPS.",{rate:speech.rate,pitch:speech.pitch});}}
+                style={{background:'rgba(247,183,51,0.2)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'20px',padding:'6px 16px',color:'#f7b733',fontSize:'0.8rem',fontWeight:600,cursor:'pointer'}}>
+                Test Voice
+              </button>
+            </div>
+            {speech.voiceList.length > 0 && (<div>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.75rem',marginBottom:'6px'}}>Voice:</div>
+              <select value={speech.voiceName} onChange={e=>speech.setVoice(e.target.value)}
+                style={{width:'100%',padding:'8px 12px',borderRadius:'10px',background:'rgba(0,0,0,0.4)',border:'1px solid rgba(255,255,255,0.15)',color:'#fff',fontSize:'0.85rem'}}>
+                {speech.voiceList.map(v => <option key={v.name} value={v.name}>{v.name} ({v.lang})</option>)}
+              </select>
+            </div>)}
+            <div style={{display:'flex',gap:'16px'}}>
+              <div style={{flex:1}}>
+                <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.75rem',marginBottom:'4px'}}>Speed: {speech.rate.toFixed(2)}x</div>
+                <input type="range" min="0.7" max="1.5" step="0.05" value={speech.rate}
+                  onChange={e=>speech.setRate(parseFloat(e.target.value))}
+                  style={{width:'100%',accentColor:'#f7b733'}}/>
+              </div>
+              <div style={{flex:1}}>
+                <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.75rem',marginBottom:'4px'}}>Pitch: {speech.pitch.toFixed(2)}</div>
+                <input type="range" min="0.5" max="1.5" step="0.05" value={speech.pitch}
+                  onChange={e=>speech.setPitch(parseFloat(e.target.value))}
+                  style={{width:'100%',accentColor:'#f7b733'}}/>
+              </div>
+            </div>
+            <div style={{color:'rgba(255,255,255,0.3)',fontSize:'0.7rem',lineHeight:1.5}}>
+              Tip: Voice quality varies by browser. Edge and Chrome have the best neural voices. Try different voices to find your favorite host!
+            </div>
+          </div>)}
+        </div>
+        <Btn onClick={startGame}>LET'S PLAY! 🌎</Btn>
+        <div style={{marginTop:'20px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Preparing for the 8th Grade GeoBee • {QUESTIONS.length} questions in the bank</div>
+      </div>
+    </div>
+  );
+
+  if (screen === 'intro') return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={S.card}>
+        <Host>{hostText}</Host>
+        <Host label="📋 Tonight's Game">
+          {QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions. 5 rounds. 1 champion. Zero mercy. Let's see what you've got!
+        </Host>
+        <Btn onClick={proceedFromIntro}>BRING IT ON! 🔥</Btn>
+      </div>
+    </div>
+  );
+
+  if (screen === 'roundIntro') return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={{...S.card,textAlign:'center'}}>
+        <div style={{fontSize:'1rem',color:'rgba(255,255,255,0.4)',textTransform:'uppercase',letterSpacing:'3px',marginBottom:'10px'}}>Round {currentRound}</div>
+        <div style={{fontSize:'2rem',fontWeight:800,color:'#f7b733',marginBottom:'20px'}}>"{ROUND_NAMES[currentRound]}"</div>
+        <Host>{hostText}</Host>
+        {score > 0 && <div style={{color:'rgba(255,255,255,0.5)',marginBottom:'20px',fontSize:'0.9rem'}}>
+          Score: <span style={{color:'#f7b733',fontWeight:700}}>{score}</span> • Streak: <span style={{color:streak>=3?'#2ed573':'#fff',fontWeight:700}}>{streak}🔥</span>
+        </div>}
+        <Btn onClick={startQuestion}>START ROUND {currentRound} →</Btn>
+      </div>
+    </div>
+  );
+
+  if (screen === 'question' && currentQ) return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={S.card}>
+        <div style={S.bar}>
+          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Score:</span> <span style={{fontWeight:700,color:'#f7b733'}}>{score}</span></div>
+          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Q:</span> <span style={{fontWeight:700}}>{qIndex+1}/{totalQs}</span></div>
+          <div>{streak >= 3 && <span style={{color:'#2ed573',fontWeight:700}}>{streak}🔥</span>}</div>
+          <div><span style={{fontSize:'1.3rem',fontWeight:800,color:timer<=5?'#ff4757':timer<=10?'#ffa502':'#fff'}}>{timer}s</span></div>
+        </div>
+        <div style={{height:'6px',borderRadius:'3px',background:'rgba(255,255,255,0.1)',marginBottom:'20px',overflow:'hidden'}}>
+          <div style={{height:'100%',borderRadius:'3px',transition:'width 1s linear,background 0.3s',background:timerColor,width:`${timerPct}%`}}/>
+        </div>
+        {showSetup ? (
+          <div style={{textAlign:'center',padding:'40px 0'}}>
+            <div style={S.cat}>{currentQ.cat}</div>
+            <div style={{fontSize:'1.15rem',color:'rgba(255,255,255,0.8)',lineHeight:1.7,fontStyle:'italic'}}>🎙️ "{setupText}"</div>
+          </div>
+        ) : (<>
+          <div style={S.cat}>{currentQ.cat}</div>
+          <div style={{fontSize:'1.3rem',fontWeight:700,marginBottom:'24px',lineHeight:1.5}}>{currentQ.q}</div>
+          <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
+            {currentQ.o.map((opt,idx) => (
+              <button key={idx} style={optStyle(idx)} onClick={()=>handleAnswer(idx)} disabled={selected!==null}
+                onMouseOver={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.15)';e.currentTarget.style.borderColor='rgba(255,255,255,0.3)';}}}
+                onMouseOut={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.08)';e.currentTarget.style.borderColor='rgba(255,255,255,0.15)';}}}
+              >
+                <span style={{background:'rgba(255,255,255,0.15)',borderRadius:'8px',width:'32px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:700,fontSize:'0.9rem',flexShrink:0}}>
+                  {selected!==null ? (idx===currentQ.a?'✓':(idx===selected?'✗':String.fromCharCode(65+idx))) : String.fromCharCode(65+idx)}
+                </span>
+                <span>{opt}</span>
+              </button>
+            ))}
+          </div>
+        </>)}
+      </div>
+    </div>
+  );
+
+  if (screen === 'result' && currentQ) {
+    const isCorrect = selected === currentQ.a;
+    const timeBonus = isCorrect ? Math.floor(timer*5) : 0;
+    const streakBonus = (isCorrect && streak >= 3) ? (streak-1)*10 : 0;
+    return (
+      <div style={S.wrap}><div style={S.stars}/>
+        <div style={S.card}>
+          <div style={{textAlign:'center',marginBottom:'20px'}}>
+            <div style={{fontSize:'3rem',marginBottom:'8px'}}>{selected===-1?'⏰':isCorrect?'🎉':'😬'}</div>
+            <div style={{fontSize:'1.6rem',fontWeight:800,color:selected===-1?'#ffa502':isCorrect?'#2ed573':'#ff4757'}}>
+              {selected===-1?"TIME'S UP!":isCorrect?'CORRECT!':'WRONG!'}
+            </div>
+          </div>
+          <Host>
+            {selected===-1 ? `Too slow! The answer was ${currentQ.o[currentQ.a]}. The clock waits for no one!`
+              : isCorrect ? currentQ.rq : currentQ.wq}
+          </Host>
+          {isCorrect && (
+            <div style={{display:'flex',justifyContent:'center',gap:'20px',marginBottom:'16px',fontSize:'0.85rem'}}>
+              <div style={{textAlign:'center'}}><div style={{color:'#2ed573',fontWeight:700}}>+100</div><div style={{color:'rgba(255,255,255,0.4)'}}>base</div></div>
+              {timeBonus>0&&<div style={{textAlign:'center'}}><div style={{color:'#7bed9f',fontWeight:700}}>+{timeBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>speed</div></div>}
+              {streakBonus>0&&<div style={{textAlign:'center'}}><div style={{color:'#ffa502',fontWeight:700}}>+{streakBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>streak</div></div>}
+            </div>
+          )}
+          {STREAK_COMMENTS[streak] && isCorrect && (
+            <div style={{background:'rgba(46,213,115,0.1)',border:'1px solid rgba(46,213,115,0.3)',borderRadius:'12px',padding:'12px 16px',textAlign:'center',fontSize:'0.9rem',color:'#7bed9f',marginBottom:'16px'}}>
+              🔥 {STREAK_COMMENTS[streak]}
+            </div>
+          )}
+          {!isCorrect && selected!==-1 && (
+            <div style={{color:'rgba(255,255,255,0.6)',fontSize:'0.9rem',marginBottom:'12px'}}>
+              The correct answer was: <strong style={{color:'#2ed573'}}>{currentQ.o[currentQ.a]}</strong>
+            </div>
+          )}
+          <div style={S.fact}>
+            <div style={{fontWeight:700,color:'#2ed573',marginBottom:'6px',fontSize:'0.8rem',textTransform:'uppercase',letterSpacing:'1px'}}>📚 GeoBee Fact</div>
+            {currentQ.f}
+          </div>
+          <Btn onClick={nextQuestion}>{qIndex+1>=totalQs?'SEE RESULTS 🏆':'NEXT QUESTION →'}</Btn>
+        </div>
+      </div>
+    );
+  }
+
+  if (screen === 'gameOver') {
+    const pct = Math.round((correctCount/totalQs)*100);
+    return (
+      <div style={S.wrap}><div style={S.stars}/>
+        <div style={{...S.card,textAlign:'center'}}>
+          <div style={{fontSize:'3.5rem',marginBottom:'10px'}}>🏆</div>
+          <div style={{...S.title,fontSize:'2.5rem'}}>GAME OVER!</div>
+          <Host>{getScoreComment()}</Host>
+          <div style={{display:'flex',gap:'12px',marginBottom:'24px'}}>
+            <div style={S.statCard}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score</div></div>
+            <div style={S.statCard}><div style={S.statVal}>{correctCount}/{totalQs}</div><div style={S.statLbl}>Correct</div></div>
+            <div style={S.statCard}><div style={S.statVal}>{pct}%</div><div style={S.statLbl}>Accuracy</div></div>
+            <div style={S.statCard}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+          </div>
+          <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'24px',textAlign:'left',maxHeight:'200px',overflowY:'auto'}}>
+            <div style={{fontWeight:700,marginBottom:'10px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)',textTransform:'uppercase',letterSpacing:'1px'}}>Question Review</div>
+            {history.map((h,i) => (
+              <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'10px',padding:'8px 0',borderBottom:i<history.length-1?'1px solid rgba(255,255,255,0.05)':'none',fontSize:'0.85rem'}}>
+                <span style={{color:h.correct?'#2ed573':'#ff4757',fontWeight:700,flexShrink:0,width:'20px'}}>{h.correct?'✓':'✗'}</span>
+                <span style={{color:'rgba(255,255,255,0.7)'}}>{h.question}</span>
+              </div>
+            ))}
+          </div>
+          <Btn onClick={startGame}>PLAY AGAIN! 🔄</Btn>
+          <div style={{marginTop:'12px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>
+            New questions every game from a pool of {QUESTIONS.length}!
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(GeoBeeGame));
+  </script>
+</body>
+</html>
