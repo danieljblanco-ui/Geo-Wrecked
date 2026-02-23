@@ -1199,7 +1199,186 @@ f:"Kiribati adjusted its time zone in 1995 so all its islands would be on the sa
 rq:"Kiribati! They literally moved the date line around their country in 1995 so they could all be on the same day. Power move!",
 wq:"It's Kiribati! It adjusted the International Date Line in 1995, making its eastern islands the first to see each new day."},
 ];
-const QUESTIONS = ALL_QUESTIONS;
+
+// ─── IMAGE-BASED QUESTIONS: Flags (using emoji) & Map Silhouettes ────────────
+// type:'flag' → show a large flag emoji, player identifies the country
+// type:'silhouette' → show an SVG country outline, player identifies it
+const IMAGE_QUESTIONS = [
+// ═══ FLAG QUESTIONS (Difficulty 1-3) ═══
+{d:1,cat:"Flags",type:"flag",flag:"JP",q:"Which country does this flag belong to?",o:["China","South Korea","Japan","Vietnam"],a:2,
+f:"Japan's flag, the Hinomaru (circle of the sun), has been used since at least 1870. The red circle represents the sun.",
+rq:"Japan! The Land of the Rising Sun. That red circle is iconic!",wq:"It's Japan! The red circle on white — the Hinomaru — has represented the sun since 1870."},
+{d:1,cat:"Flags",type:"flag",flag:"FR",q:"Which country does this flag belong to?",o:["Italy","France","Netherlands","Romania"],a:1,
+f:"The French tricolore was adopted during the French Revolution. The blue and red are the colors of Paris, while white was the color of the monarchy.",
+rq:"France! Blue, white, and red — the tricolore born from revolution!",wq:"It's France! The tricolore has been flying since the French Revolution."},
+{d:1,cat:"Flags",type:"flag",flag:"BR",q:"Which country does this flag belong to?",o:["Brazil","Colombia","Argentina","Portugal"],a:0,
+f:"Brazil's flag features the motto 'Ordem e Progresso' (Order and Progress) and a starry sky showing how the sky looked over Rio on November 15, 1889.",
+rq:"Brazil! Green, yellow, blue — and each star represents a Brazilian state!",wq:"It's Brazil! Those 27 stars each represent a Brazilian state and the Federal District."},
+{d:1,cat:"Flags",type:"flag",flag:"CA",q:"Which country does this flag belong to?",o:["Canada","Switzerland","Peru","Denmark"],a:0,
+f:"Canada's maple leaf flag was only adopted in 1965. Before that, Canada used the Red Ensign featuring the Union Jack.",
+rq:"Canada! The maple leaf — adopted in 1965 after decades of flag debate!",wq:"It's Canada! The famous maple leaf flag is surprisingly young — only adopted in 1965."},
+{d:2,cat:"Flags",type:"flag",flag:"IN",q:"Which country does this flag belong to?",o:["Niger","India","Ivory Coast","Ireland"],a:1,
+f:"India's flag features the Ashoka Chakra, a 24-spoke wheel representing the eternal wheel of law. It was adopted on July 22, 1947.",
+rq:"India! The saffron, white, and green with the Ashoka Chakra spinning at the center!",wq:"It's India! The 24-spoke Ashoka Chakra at the center represents the eternal wheel of law."},
+{d:2,cat:"Flags",type:"flag",flag:"AU",q:"Which country does this flag belong to?",o:["New Zealand","United Kingdom","Australia","Fiji"],a:2,
+f:"Australia's flag features the Southern Cross constellation and the Commonwealth Star (with 7 points representing the 6 states and territories).",
+rq:"Australia! Six states, seven-pointed Commonwealth Star, and the Southern Cross!",wq:"It's Australia! The Southern Cross and the seven-pointed Commonwealth Star give it away."},
+{d:2,cat:"Flags",type:"flag",flag:"MX",q:"Which country does this flag belong to?",o:["Italy","Mexico","Hungary","Ireland"],a:1,
+f:"Mexico's coat of arms shows an eagle eating a serpent on a cactus — based on the Aztec legend of founding Tenochtitlan.",
+rq:"Mexico! That eagle-on-a-cactus is the legendary founding symbol of the Aztecs!",wq:"It's Mexico! The eagle and serpent on the cactus comes from Aztec mythology."},
+{d:2,cat:"Flags",type:"flag",flag:"KR",q:"Which country does this flag belong to?",o:["Japan","North Korea","South Korea","Laos"],a:2,
+f:"South Korea's flag (Taegukgi) features a yin-yang symbol and four trigrams from the I Ching, representing balance and cosmic harmony.",
+rq:"South Korea! The Taegukgi — yin-yang and ancient trigrams representing cosmic balance!",wq:"It's South Korea! The yin-yang and four trigrams make the Taegukgi unique among world flags."},
+{d:2,cat:"Flags",type:"flag",flag:"ZA",q:"Which country does this flag belong to?",o:["Central African Republic","South Africa","Kenya","Ghana"],a:1,
+f:"South Africa's colorful six-color flag was adopted in 1994 when apartheid ended. It's one of only two national flags with six colors and no seal.",
+rq:"South Africa! Six colors for the Rainbow Nation — adopted with democracy in 1994!",wq:"It's South Africa! The six-color flag was born in 1994, symbolizing a new united nation."},
+{d:3,cat:"Flags",type:"flag",flag:"NP",q:"Which country does this flag belong to?",o:["Nepal","Bhutan","Sri Lanka","Bangladesh"],a:0,
+f:"Nepal is the only country with a non-rectangular flag. Its two stacked triangles represent the Himalaya mountains and two major religions (Hinduism and Buddhism).",
+rq:"Nepal! The only non-rectangular flag in the world. Two triangles for two mountain peaks!",wq:"It's Nepal! The world's only non-rectangular national flag — representing the Himalayas."},
+{d:3,cat:"Flags",type:"flag",flag:"BT",q:"Which country does this flag belong to?",o:["Bhutan","Nepal","Bangladesh","Mongolia"],a:0,
+f:"Bhutan's flag features a white dragon (Druk) holding jewels. Bhutan is known as 'Land of the Thunder Dragon' in the local Dzongkha language.",
+rq:"Bhutan! The Thunder Dragon on orange and yellow — Druk Yul, the Land of the Thunder Dragon!",wq:"It's Bhutan! That dragon is Druk, the Thunder Dragon that gives the country its local name."},
+{d:3,cat:"Flags",type:"flag",flag:"MZ",q:"Which country does this flag belong to?",o:["Mozambique","Zimbabwe","Kenya","Ethiopia"],a:0,
+f:"Mozambique's flag is the only national flag featuring a modern firearm — an AK-47 with a bayonet, symbolizing the struggle for independence.",
+rq:"Mozambique! The only flag in the world with a modern rifle on it. That's commitment to history!",wq:"It's Mozambique! Its flag famously features an AK-47, symbolizing the fight for independence."},
+// ═══ SILHOUETTE / MAP OUTLINE QUESTIONS ═══
+{d:2,cat:"Map Outlines",type:"silhouette",shape:"italy",q:"Which country has this distinctive boot-shaped outline?",o:["Greece","Spain","Italy","Portugal"],a:2,
+f:"Italy's boot shape is one of the most recognizable in the world. The 'toe' kicks the island of Sicily, and the 'heel' forms the Apulia region.",
+rq:"Italy! The boot that kicks Sicily! One of the most recognizable shapes on any map.",wq:"It's Italy! The famous boot shape — kicking Sicily across the Mediterranean."},
+{d:2,cat:"Map Outlines",type:"silhouette",shape:"india",q:"Which country has this large triangular peninsula shape?",o:["Saudi Arabia","India","Thailand","Myanmar"],a:1,
+f:"India's Deccan Plateau forms the distinctive triangular peninsula that juts into the Indian Ocean between the Arabian Sea and Bay of Bengal.",
+rq:"India! That massive triangular peninsula is the Deccan Plateau. Hard to miss on a map!",wq:"It's India! The triangular peninsula of the Deccan Plateau is one of Asia's most distinctive shapes."},
+{d:2,cat:"Map Outlines",type:"silhouette",shape:"australia",q:"Which country/continent has this unique shape — the only one that is both?",o:["Greenland","Antarctica","Australia","Madagascar"],a:2,
+f:"Australia is the smallest continent and largest island (excluding Antarctica). Its most distinctive features are the Gulf of Carpentaria in the north.",
+rq:"Australia! Continent AND country in one! That Gulf of Carpentaria bite in the north is unmistakable.",wq:"It's Australia! The only place that's both a continent and a country."},
+{d:3,cat:"Map Outlines",type:"silhouette",shape:"chile",q:"Which country is known for being extremely long and narrow?",o:["Vietnam","Norway","Chile","New Zealand"],a:2,
+f:"Chile stretches 4,270 km from north to south but averages only 177 km wide. It spans desert, Mediterranean, and glacial climates.",
+rq:"Chile! 4,270 km long but only 177 km wide on average. Geography's thinest country!",wq:"It's Chile! The world's narrowest country — spanning from desert to glaciers in one long strip."},
+{d:3,cat:"Map Outlines",type:"silhouette",shape:"japan",q:"Which country is an archipelago forming a long arc off the east coast of Asia?",o:["Philippines","Indonesia","Japan","Taiwan"],a:2,
+f:"Japan consists of 6,852 islands stretching 3,000 km. The four main islands — Hokkaido, Honshu, Shikoku, and Kyushu — make up 97% of the land area.",
+rq:"Japan! 6,852 islands in an elegant arc. Four main islands making up 97% of the land!",wq:"It's Japan! An archipelago of 6,852 islands arcing along the Pacific Ring of Fire."},
+{d:3,cat:"Map Outlines",type:"silhouette",shape:"france",q:"Which European country is nicknamed 'the Hexagon' due to its shape?",o:["Spain","France","Germany","Poland"],a:1,
+f:"France is often called L'Hexagone because its mainland borders and coastlines roughly form a six-sided shape.",
+rq:"France! L'Hexagone — the six-sided country. The French love a good geometric nickname!",wq:"It's France! Known as L'Hexagone because its shape roughly forms a hexagon."},
+{d:3,cat:"Map Outlines",type:"silhouette",shape:"brazil",q:"Which South American country takes up roughly half the continent?",o:["Argentina","Colombia","Brazil","Peru"],a:2,
+f:"Brazil occupies 47.3% of South America's land area and shares borders with every South American country except Chile and Ecuador.",
+rq:"Brazil! Nearly half of South America in one country. It borders every neighbor except Chile and Ecuador!",wq:"It's Brazil! Taking up 47.3% of the continent and bordering almost every other South American country."},
+{d:4,cat:"Map Outlines",type:"silhouette",shape:"russia",q:"Which country spans 11 time zones, making it the widest in the world?",o:["China","Canada","Russia","United States"],a:2,
+f:"Russia covers over 17 million square km — about 11.5% of the world's total land area. It spans from the Baltic Sea to the Pacific Ocean.",
+rq:"Russia! 11 time zones wide. When it's morning in Moscow, it's already bedtime in Vladivostok!",wq:"It's Russia! Spanning 11 time zones and covering 11.5% of the world's land. Simply massive."},
+{d:4,cat:"Map Outlines",type:"silhouette",shape:"uk",q:"Which island nation sits just off the northwest coast of mainland Europe?",o:["Iceland","Ireland","United Kingdom","Denmark"],a:2,
+f:"Great Britain (England, Scotland, Wales) is the largest island in Europe and the ninth-largest in the world at 209,331 square km.",
+rq:"The United Kingdom! Great Britain — Europe's largest island. Small but mighty in world history!",wq:"It's the United Kingdom! Great Britain is the largest island in Europe at 209,331 square km."},
+];
+
+// Merge image questions into main pool
+const QUESTIONS = [...ALL_QUESTIONS, ...IMAGE_QUESTIONS];
+
+// SVG country outlines (simplified paths for silhouette questions)
+const COUNTRY_OUTLINES = {
+  italy: "M 50,10 L 55,18 52,25 48,22 42,30 40,38 38,45 44,52 50,58 55,62 52,68 48,72 52,78 55,85 50,90 45,85 42,78 38,72 35,65 32,58 30,52 35,45 40,40 42,35 44,28 46,20 48,15 Z M 40,85 L 35,82 32,88 38,92 44,90 40,85 Z",
+  india: "M 55,5 L 62,8 68,12 72,18 75,25 72,32 68,38 72,45 75,52 72,58 68,65 62,72 55,80 50,88 48,92 45,85 42,78 38,72 35,65 38,58 42,52 40,45 38,38 42,32 48,28 52,22 55,15 52,10 Z",
+  australia: "M 22,25 L 30,22 38,18 48,15 55,18 62,22 68,25 72,20 78,22 82,28 78,35 75,42 78,48 82,52 78,58 72,55 65,52 58,55 52,58 45,60 38,58 32,55 28,58 22,62 18,58 20,52 22,45 18,38 15,32 18,28 Z",
+  chile: "M 48,2 L 52,8 50,15 52,22 50,28 48,35 50,42 48,48 50,55 48,62 50,68 48,75 50,82 48,88 50,95 46,98 44,92 46,85 44,78 46,72 44,65 46,58 44,52 46,45 44,38 46,32 44,25 46,18 44,12 46,5 Z",
+  japan: "M 60,8 L 65,12 62,18 58,22 55,28 58,35 62,42 65,48 62,52 58,45 55,38 52,32 50,25 52,18 55,12 Z M 50,55 L 55,58 58,62 55,68 52,72 48,68 45,62 48,58 Z M 42,75 L 48,78 50,82 46,85 42,82 40,78 Z",
+  france: "M 35,12 L 45,8 55,10 65,15 70,22 68,32 72,42 65,50 55,55 45,58 35,55 25,48 22,38 28,28 30,18 Z",
+  brazil: "M 58,5 L 68,8 75,15 80,25 82,35 78,45 82,55 78,65 72,75 65,82 55,88 48,92 40,88 35,80 30,72 25,62 22,52 25,42 28,32 32,22 38,15 45,8 52,5 Z",
+  russia: "M 5,30 L 12,25 22,22 32,20 42,18 52,15 62,12 72,10 82,12 90,15 95,22 90,28 85,32 88,38 92,42 88,48 82,45 75,42 68,45 62,48 55,45 48,42 42,45 35,48 28,45 22,42 15,38 10,35 Z",
+  uk: "M 42,10 L 50,8 55,12 58,18 56,25 60,32 58,38 55,42 50,48 46,52 42,48 38,42 36,35 38,28 40,22 38,18 Z M 32,20 L 38,22 36,28 32,32 28,28 30,22 Z",
+};
+
+// ─── Country Tag Map (question index → ISO country codes for map progress) ───
+const COUNTRY_TAG_MAP = {0:["JP"],1:["FR"],2:["AU"],3:["CA"],4:["BR"],5:["IN"],6:["CN"],7:["EG"],8:["DE"],9:["KR"],10:["MX"],11:["RU"],12:["IT"],13:["ES"],14:["GB"],16:["AU"],20:["AU"],21:["EG"],24:["AR"],25:["US"],26:["US"],27:["US"],28:["US"],29:["US"],30:["US"],31:["US","CA"],32:["US"],33:["US"],34:["NP","CN"],35:["US"],36:["DK","GL"],37:["AU","FJ","ID","PH"],38:["IN","PA"],39:["NP","BT","CN","IN","PK"],40:["AU"],41:["ES","MA"],42:["PR"],43:["BR"],44:["CA","CN","RU","US"],45:["LI","MC","SM","VA"],46:["CN","ID","IN","US"],47:["AR","BR","CL","CO","EC","PE"],48:["ES","GR","IT","PT"],49:["DZ","LY","SD"],50:["CU","DO","HT","JM","PR"],51:["EG","GR","IR","TR"],52:["DE","FR","GB","IT","RU"],53:["ID","PH","TH","VN"],54:["EG","IN"],55:["IN"],56:["AU","KE","UG"],57:["RU"],60:["RU","US"],61:["AU"],62:["CN","JP","KR","TH"],64:["DE","FR","GB","RU"],65:["AU","ID","PH","TH"],66:["AU","IN"],69:["NZ"],70:["CL","CO","EC","PE"],71:["TR"],72:["NZ"],73:["CH"],74:["US","VN"],75:["MA"],76:["PL"],77:["CO"],78:["GB","TH"],79:["PH"],81:["KE","MW","TD","TZ","UG"],85:["KE"],86:["CL","VE"],87:["GB"],88:["CN","EG","IN","IQ","IR","LY","MN","PK"],89:["RU"],90:["ES","MA"],92:["AU","CA","ID","RU"],93:["CN","KG","KZ","MN","RU","TD","TM","UZ"],94:["ID","IS","JP","PH"],95:["CN","JP","KR","TW"],96:["CL","CO","EC","PE"],97:["AO","KE","MW","MZ","TZ","ZM","ZW"],98:["MX","US"],99:["IN"],103:["CA","US"],104:["CN","RU"],105:["AR"],106:["PE"],107:["CL"],108:["GR"],109:["CN"],110:["RU"],111:["IE"],112:["BD","IN","LK","MM","NP"],113:["AU"],114:["KE"],115:["CO","EC","GY","VE"],116:["BO","CL","EC","PE"],117:["AE","BH","SA","YE"],118:["CN","RU"],119:["CU"],120:["BD","IN","LK","MM"],121:["BZ","CR","GT","HN"],123:["BR","CO","EC","ID","KE"],124:["PK"],125:["TZ"],126:["ET"],127:["LK"],128:["KZ"],130:["AU","RU"],131:["IT"],132:["AR"],133:["CN","FR","RU","US"],134:["ET","GH","KE","NE","NG"],135:["FI","GL","IS","NO"],136:["BN","ID","MY"],137:["DJ","GM","RW","SN","SZ"],138:["AT","BG","DE","HR","HU","RO","RS","SK","UA"],139:["AR","BO","BR","CL","CO","EC","PE","PY"],140:["CN","KH","LA","MM","TH","VN"],141:["IQ","JO"],142:["IN"],143:["AF","CN","IN","IQ","IR","PK","SY","TR"],145:["ES","FR","IT","US"],146:["AD","ES","FR","LI","MC","SM"],147:["IN"],148:["BG","GE","RO","RU","TR","UA"],149:["BG","HU","MD","RO"],150:["LY","SD","ZA"],151:["US"],152:["GU","JP","PR","US"],153:["CN","IN","JP","TR"],154:["CL"],155:["AU"],156:["CN","KZ","MN","RU"],157:["KI"],158:["BO","CO","EC","NP"],159:["BW","IT","LS","MZ","SM","SZ","VA","ZA"],160:["EG","JO"],161:["SA"],162:["IQ","IR","SY","TR"],163:["BD","IN","KR","NL"],164:["IN"],165:["BT","LA","MN","NP"],166:["BT","CH","NP","VA"],168:["CN","EG","IN","MX"],169:["BR","CO","ET","VN"],171:["CN","ET","US"],172:["CO","IN"],173:["BR","PT"],174:["LA","TH"],175:["HN"],176:["NP"],177:["VE"],178:["BD"],179:["AU"],180:["US"],181:["AT","BO","CH","LI","MN","NE","NP","PY","TD","UZ"],182:["BO","BT","LS","NP","ZA"],184:["EG","IL","JO","LB","PS","SY"],185:["DE","ES","FR","IT"],186:["EG","GH","MA","NE","NG"],187:["CN","MM"],188:["LK","MM"],189:["GT","HN","NI","PA"],190:["IQ","RU","SA","US"],191:["CG"],192:["DZ","MA","TN"],193:["IR","LY"],194:["ID","MG","PG"],195:["IN","MG","MU","SC"],196:["IN","LK","MV","SC"],197:["NE","NG"],198:["MX"],201:["BR","CO","EC","ID","KE","KI","ML","SO","ST","UG"],202:["BW","ES","FR","IT","MC","VA","ZM"],203:["AU"],204:["CG"],205:["ME","SS","TL","XK"],206:["NP"],207:["BR"],208:["CA","RU"],209:["ET","KE","TZ","UG"],210:["EG","JO","LB","SA"],211:["ID","IN","NE","NG","PG"],212:["AU"],213:["EC","IN"],214:["CA","RU"],215:["BH","BN","MV","SG"],216:["AR","BO","CL","PE"],217:["CY"],218:["IN"],220:["AR","BR","CA","CN","KZ","RU","US"],221:["BR","CO","ET","VN"],222:["AF","IQ","IR","TR"],223:["EG","JO","LB","SY"],224:["DJ","GM","RW","SN","SZ"],226:["IN"],227:["MC","MT","SG","VA"],228:["AU","BR","CL","ZA"],229:["AR","CL","NZ"],230:["CN","KG","KZ","MN","RU","TM","UZ"],233:["AD","AT","CH","LI"],235:["CN"],236:["GE","KZ","RU","TR"],238:["MX","US"],240:["AF","AT","BO","CH","KG","KZ","LI","MN","NP","TJ","TM","UZ"],241:["AU","CL","ZA"],242:["CA","CU","MX","US"],244:["AU"],246:["ME","SS","TL","XK"],248:["DK","GL","MG"],249:["EG","ET","NE","NG","ZA"],250:["CN","RU"],251:["PA"],252:["AZ","IQ","IR","TM"],253:["IS"],255:["CH","ES","FR","IT","VA"],257:["AU","CL","ZA"],259:["CN"],261:["MX"],262:["QA"],263:["AF","KG","KZ","TJ","TM","UZ"],265:["CA","MX"],266:["CN","SG"],267:["BW","RU","ZA"],269:["FR","GB","IE"],270:["ID"],272:["GR","MK"],274:["CN"],275:["DK","IS","NO","RU"],276:["NE","RU"],278:["DZ","LY","MA","TN"],279:["CA","LT","PL","RU"],280:["ID","MY","NE","NG","TH"],281:["MX"],282:["DE","PA"],284:["AR","CL","EC","PE"],287:["FJ","KI","TO","WS"],297:["JP"],298:["FR"],299:["BR"],300:["CA"],301:["IN"],302:["AU"],303:["MX"],304:["KR"],305:["ZA"],306:["NP"],307:["BT"],308:["MZ"],309:["IT"],310:["IN"],311:["AU"],312:["CL"],313:["JP"],314:["FR"],315:["BR"],316:["RU"],317:["GB"]};
+
+// ─── Flag emoji from ISO code ─────────────────────────────────────────────────
+const flagEmoji = (code) => String.fromCodePoint(...[...code.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
+
+// ─── Countries by continent (for map display) ────────────────────────────────
+const WORLD_COUNTRIES = {
+  "North America":[
+    ["US","United States"],["CA","Canada"],["MX","Mexico"],["CU","Cuba"],["GT","Guatemala"],
+    ["HN","Honduras"],["NI","Nicaragua"],["CR","Costa Rica"],["PA","Panama"],["BZ","Belize"],
+    ["JM","Jamaica"],["HT","Haiti"],["DO","Dominican Republic"],["PR","Puerto Rico"],["BS","Bahamas"]
+  ],
+  "South America":[
+    ["BR","Brazil"],["AR","Argentina"],["CO","Colombia"],["PE","Peru"],["VE","Venezuela"],
+    ["CL","Chile"],["EC","Ecuador"],["BO","Bolivia"],["PY","Paraguay"],["GY","Guyana"],["UY","Uruguay"]
+  ],
+  "Europe":[
+    ["GB","United Kingdom"],["FR","France"],["DE","Germany"],["IT","Italy"],["ES","Spain"],
+    ["PT","Portugal"],["NL","Netherlands"],["BE","Belgium"],["CH","Switzerland"],["AT","Austria"],
+    ["PL","Poland"],["GR","Greece"],["IE","Ireland"],["NO","Norway"],["SE","Sweden"],
+    ["FI","Finland"],["DK","Denmark"],["IS","Iceland"],["RO","Romania"],["BG","Bulgaria"],
+    ["HR","Croatia"],["RS","Serbia"],["HU","Hungary"],["SK","Slovakia"],["UA","Ukraine"],
+    ["CZ","Czech Republic"],["LT","Lithuania"],["LV","Latvia"],["EE","Estonia"],["MD","Moldova"],
+    ["AD","Andorra"],["LI","Liechtenstein"],["MC","Monaco"],["SM","San Marino"],["VA","Vatican City"],
+    ["MT","Malta"],["ME","Montenegro"],["MK","North Macedonia"],["XK","Kosovo"],["BY","Belarus"],
+    ["GE","Georgia"],["AZ","Azerbaijan"]
+  ],
+  "Africa":[
+    ["EG","Egypt"],["NG","Nigeria"],["ZA","South Africa"],["KE","Kenya"],["ET","Ethiopia"],
+    ["GH","Ghana"],["TZ","Tanzania"],["UG","Uganda"],["DZ","Algeria"],["MA","Morocco"],
+    ["TN","Tunisia"],["LY","Libya"],["SD","Sudan"],["SS","South Sudan"],["CG","Congo"],
+    ["CD","DR Congo"],["AO","Angola"],["MZ","Mozambique"],["MG","Madagascar"],["MW","Malawi"],
+    ["ZM","Zambia"],["ZW","Zimbabwe"],["BW","Botswana"],["NE","Niger"],["ML","Mali"],
+    ["SN","Senegal"],["GN","Guinea"],["TD","Chad"],["RW","Rwanda"],["DJ","Djibouti"],
+    ["GM","Gambia"],["SZ","Eswatini"],["LS","Lesotho"],["LR","Liberia"],["SO","Somalia"],
+    ["ST","São Tomé"],["MU","Mauritius"],["SC","Seychelles"],["KM","Comoros"],["TL","Timor-Leste"]
+  ],
+  "Asia":[
+    ["CN","China"],["JP","Japan"],["IN","India"],["KR","South Korea"],["ID","Indonesia"],
+    ["TH","Thailand"],["VN","Vietnam"],["PH","Philippines"],["MY","Malaysia"],["SG","Singapore"],
+    ["MM","Myanmar"],["KH","Cambodia"],["LA","Laos"],["BD","Bangladesh"],["LK","Sri Lanka"],
+    ["NP","Nepal"],["BT","Bhutan"],["PK","Pakistan"],["AF","Afghanistan"],["IR","Iran"],
+    ["IQ","Iraq"],["SA","Saudi Arabia"],["AE","UAE"],["IL","Israel"],["JO","Jordan"],
+    ["LB","Lebanon"],["SY","Syria"],["TR","Turkey"],["KZ","Kazakhstan"],["UZ","Uzbekistan"],
+    ["TM","Turkmenistan"],["KG","Kyrgyzstan"],["TJ","Tajikistan"],["MN","Mongolia"],
+    ["KP","North Korea"],["TW","Taiwan"],["BN","Brunei"],["MV","Maldives"],["BH","Bahrain"],
+    ["KW","Kuwait"],["QA","Qatar"],["YE","Yemen"],["CY","Cyprus"],["PS","Palestine"]
+  ],
+  "Oceania":[
+    ["AU","Australia"],["NZ","New Zealand"],["FJ","Fiji"],["PG","Papua New Guinea"],
+    ["WS","Samoa"],["TO","Tonga"],["KI","Kiribati"],["GU","Guam"],["GL","Greenland"]
+  ]
+};
+
+// Total countries across all continents
+const ALL_COUNTRY_CODES = new Set(Object.values(WORLD_COUNTRIES).flat().map(c => c[0]));
+const TOTAL_COUNTRIES = ALL_COUNTRY_CODES.size;
+
+// ─── Badge Definitions ────────────────────────────────────────────────────────
+const BADGE_DEFINITIONS = [
+  {id:"first_steps",name:"First Steps",icon:"👣",desc:"Play your first game",check:p=>p.gamesPlayed>=1},
+  {id:"globe_trotter",name:"Globe Trotter",icon:"🌍",desc:"Play 10 games",check:p=>p.gamesPlayed>=10},
+  {id:"geo_nut",name:"Geography Nut",icon:"🥜",desc:"Play 25 games",check:p=>p.gamesPlayed>=25},
+  {id:"perfect_round",name:"Perfect Round",icon:"💎",desc:"Get 5/5 in a round",check:p=>p.perfectRounds>=1},
+  {id:"perfect_game",name:"Perfect Game",icon:"👑",desc:"Get 25/25 in a game",check:p=>p.perfectGames>=1},
+  {id:"speed_demon",name:"Speed Demon",icon:"⚡",desc:"Answer 5 questions with 15+ seconds left",check:p=>p.speedAnswers>=5},
+  {id:"capital_expert",name:"Capital Expert",icon:"🏛️",desc:"Answer 20 Capitals questions correctly",check:p=>(p.catCorrect?.Capitals||0)>=20},
+  {id:"us_pro",name:"US Pro",icon:"🇺🇸",desc:"Answer 20 US Geography questions correctly",check:p=>(p.catCorrect?.["US Geography"]||0)>=20},
+  {id:"world_traveler",name:"World Traveler",icon:"✈️",desc:"Discover 25 countries on the map",check:p=>p.countriesDiscovered>=25},
+  {id:"cartographer",name:"Cartographer",icon:"🗺️",desc:"Discover 50 countries on the map",check:p=>p.countriesDiscovered>=50},
+  {id:"world_explorer",name:"World Explorer",icon:"🧭",desc:"Discover 100 countries on the map",check:p=>p.countriesDiscovered>=100},
+  {id:"streak_starter",name:"Streak Starter",icon:"🔥",desc:"Get a 3-question answer streak",check:p=>p.bestStreak>=3},
+  {id:"on_fire",name:"On Fire",icon:"🔥",desc:"Get a 5-question answer streak",check:p=>p.bestStreak>=5},
+  {id:"unstoppable",name:"Unstoppable",icon:"💪",desc:"Get a 10-question answer streak",check:p=>p.bestStreak>=10},
+  {id:"daily_devotee",name:"Daily Devotee",icon:"📅",desc:"Play 7 days in a row",check:p=>p.dailyStreak>=7},
+  {id:"dedicated",name:"Dedicated",icon:"🏅",desc:"Play 14 days in a row",check:p=>p.dailyStreak>=14},
+  {id:"geo_master",name:"Geography Master",icon:"🎓",desc:"Play 30 days in a row",check:p=>p.dailyStreak>=30},
+  {id:"knowledge_sponge",name:"Knowledge Sponge",icon:"🧠",desc:"Answer 500 total questions",check:p=>p.totalAnswered>=500},
+  {id:"brain_bank",name:"Brain Bank",icon:"🏦",desc:"Answer 1000 total questions",check:p=>p.totalAnswered>=1000},
+  {id:"well_rounded",name:"Well Rounded",icon:"🎯",desc:"Answer questions from all 19 categories",check:p=>Object.keys(p.catCorrect||{}).length>=19}
+];
+
+// ─── Daily Streak Milestones ──────────────────────────────────────────────────
+const STREAK_MILESTONES = [
+  {days:3,title:"Getting Warmed Up",icon:"🌡️",bonus:5},
+  {days:7,title:"Week Warrior",icon:"⚔️",bonus:10},
+  {days:14,title:"Two-Week Champion",icon:"🏆",bonus:15},
+  {days:30,title:"Monthly Maven",icon:"🌟",bonus:20},
+  {days:60,title:"Geography Guru",icon:"🧘",bonus:25},
+  {days:100,title:"Century Scholar",icon:"📜",bonus:30}
+];
 
 // ─── Category Setup Lines (host intros per category) ─────────────────────────
 const CATEGORY_SETUPS = {
@@ -1463,6 +1642,124 @@ const useSpeech = () => {
   return { speak, speakThen, estimateMs, cancel, voiceList, voiceName, setVoice, voiceEnabled, toggleEnabled, pitch, setPitch, rate, setRate };
 };
 
+// ─── localStorage Hook ────────────────────────────────────────────────────────
+const useLocalStorage = (key, initialValue) => {
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (e) { return initialValue; }
+  });
+  const setValue = useCallback((value) => {
+    setStoredValue(prev => {
+      const next = typeof value === 'function' ? value(prev) : value;
+      try { window.localStorage.setItem(key, JSON.stringify(next)); } catch (e) {}
+      return next;
+    });
+  }, [key]);
+  return [storedValue, setValue];
+};
+
+// ─── Player Profile Hook ──────────────────────────────────────────────────────
+const usePlayerProfile = () => {
+  const [profile, setProfile] = useLocalStorage('geobee_player', {
+    gamesPlayed: 0, totalAnswered: 0, totalCorrect: 0, bestStreak: 0,
+    perfectRounds: 0, perfectGames: 0, speedAnswers: 0,
+    catCorrect: {}, catTotal: {}, gameHistory: []
+  });
+  const recordAnswer = useCallback((cat, isCorrect, timeRemaining) => {
+    setProfile(p => ({
+      ...p,
+      totalAnswered: p.totalAnswered + 1,
+      totalCorrect: p.totalCorrect + (isCorrect ? 1 : 0),
+      speedAnswers: p.speedAnswers + (isCorrect && timeRemaining >= 15 ? 1 : 0),
+      catCorrect: { ...p.catCorrect, [cat]: (p.catCorrect[cat] || 0) + (isCorrect ? 1 : 0) },
+      catTotal: { ...p.catTotal, [cat]: (p.catTotal[cat] || 0) + 1 }
+    }));
+  }, [setProfile]);
+  const recordGame = useCallback((score, correct, total, bestStrk) => {
+    setProfile(p => {
+      const history = [...(p.gameHistory || []), { score, correct, total, date: new Date().toISOString().slice(0,10) }].slice(-20);
+      return {
+        ...p,
+        gamesPlayed: p.gamesPlayed + 1,
+        bestStreak: Math.max(p.bestStreak, bestStrk),
+        perfectGames: p.perfectGames + (correct === total ? 1 : 0),
+        gameHistory: history
+      };
+    });
+  }, [setProfile]);
+  const recordPerfectRound = useCallback(() => {
+    setProfile(p => ({ ...p, perfectRounds: p.perfectRounds + 1 }));
+  }, [setProfile]);
+  const resetProfile = useCallback(() => {
+    setProfile({ gamesPlayed:0, totalAnswered:0, totalCorrect:0, bestStreak:0, perfectRounds:0, perfectGames:0, speedAnswers:0, catCorrect:{}, catTotal:{}, gameHistory:[] });
+    try { window.localStorage.removeItem('geobee_daily_streak'); window.localStorage.removeItem('geobee_badges'); window.localStorage.removeItem('geobee_map'); } catch(e) {}
+  }, [setProfile]);
+  return { profile, recordAnswer, recordGame, recordPerfectRound, resetProfile };
+};
+
+// ─── Daily Streak Hook ────────────────────────────────────────────────────────
+const useDailyStreak = () => {
+  const [streak, setStreak] = useLocalStorage('geobee_daily_streak', {
+    current: 0, best: 0, lastPlayDate: null, milestonesHit: []
+  });
+  const checkIn = useCallback(() => {
+    const today = new Date().toISOString().slice(0, 10);
+    let newMilestone = null;
+    setStreak(s => {
+      if (s.lastPlayDate === today) return s;
+      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      const newCurrent = s.lastPlayDate === yesterday ? s.current + 1 : 1;
+      const newBest = Math.max(s.best, newCurrent);
+      const milestone = STREAK_MILESTONES.find(m => m.days === newCurrent && !s.milestonesHit.includes(m.days));
+      if (milestone) newMilestone = milestone;
+      return {
+        current: newCurrent, best: newBest, lastPlayDate: today,
+        milestonesHit: milestone ? [...s.milestonesHit, milestone.days] : s.milestonesHit
+      };
+    });
+    return newMilestone;
+  }, [setStreak]);
+  const getBonus = useCallback(() => {
+    const milestone = [...STREAK_MILESTONES].reverse().find(m => streak.current >= m.days);
+    return milestone ? milestone.bonus : 0;
+  }, [streak]);
+  return { streak, checkIn, getBonus };
+};
+
+// ─── Badges Hook ──────────────────────────────────────────────────────────────
+const useBadges = () => {
+  const [earned, setEarned] = useLocalStorage('geobee_badges', []);
+  const checkBadges = useCallback((profileData) => {
+    const newBadges = [];
+    BADGE_DEFINITIONS.forEach(badge => {
+      if (!earned.includes(badge.id) && badge.check(profileData)) {
+        newBadges.push(badge);
+      }
+    });
+    if (newBadges.length > 0) {
+      setEarned(prev => [...prev, ...newBadges.map(b => b.id)]);
+    }
+    return newBadges;
+  }, [earned, setEarned]);
+  return { earned, checkBadges };
+};
+
+// ─── Map Progress Hook ────────────────────────────────────────────────────────
+const useMapProgress = () => {
+  const [discovered, setDiscovered] = useLocalStorage('geobee_map', []);
+  const discoverCountries = useCallback((questionIdx) => {
+    const codes = COUNTRY_TAG_MAP[questionIdx];
+    if (!codes) return;
+    setDiscovered(prev => {
+      const newCodes = codes.filter(c => !prev.includes(c) && ALL_COUNTRY_CODES.has(c));
+      return newCodes.length > 0 ? [...prev, ...newCodes] : prev;
+    });
+  }, [setDiscovered]);
+  return { discovered, discoverCountries };
+};
+
 // ─── Main Game Component ─────────────────────────────────────────────────────
 export default function GeoBeeGame() {
   const [screen, setScreen] = useState('title');
@@ -1479,42 +1776,146 @@ export default function GeoBeeGame() {
   const [currentRound, setCurrentRound] = useState(0);
   const [setupText, setSetupText] = useState('');
   const [hostText, setHostText] = useState('');
-  const [totalGamesPlayed, setTotalGamesPlayed] = useState(0);
-  const [totalQAnswered, setTotalQAnswered] = useState(0);
-  const [totalCorrect, setTotalCorrect] = useState(0);
   const sound = useSound();
   const speech = useSpeech();
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
+  // ─── Game Mode State ─────────────────────────────────────────────────
+  const [gameMode, setGameMode] = useState('classic'); // 'classic','survival','multiplayer'
+  const [survivalLives, setSurvivalLives] = useState(3);
+  // Multiplayer state
+  const [players, setPlayers] = useState([{name:'Player 1',score:0,correct:0,history:[]},{name:'Player 2',score:0,correct:0,history:[]}]);
+  const [currentPlayer, setCurrentPlayer] = useState(0);
+  const [mpNames, setMpNames] = useState(['Player 1','Player 2']);
+  // Lifelines state
+  const [lifelines, setLifelines] = useState({fiftyFifty:1,skip:1,extraTime:1});
+  const [hiddenOptions, setHiddenOptions] = useState([]);
+  const [skippedQuestions, setSkippedQuestions] = useState([]);
+  // ─── Inject keyframe animation for badge toast ───────────────────────
+  useEffect(() => {
+    if (document.getElementById('geobee-animations')) return;
+    const style = document.createElement('style');
+    style.id = 'geobee-animations';
+    style.textContent = `@keyframes slideDown{from{transform:translateX(-50%) translateY(-100%);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}`;
+    document.head.appendChild(style);
+  }, []);
+  // ─── New Feature Hooks ───────────────────────────────────────────────
+  const playerProfile = usePlayerProfile();
+  const dailyStreak = useDailyStreak();
+  const badges = useBadges();
+  const mapProgress = useMapProgress();
+  const [profileTab, setProfileTab] = useState('stats');
+  const [badgeToast, setBadgeToast] = useState(null);
+  const [streakMilestone, setStreakMilestone] = useState(null);
+  const [roundCorrect, setRoundCorrect] = useState(0);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [newBadgesThisGame, setNewBadgesThisGame] = useState([]);
+  const toastTimer = useRef(null);
+  const showBadgeToast = useCallback((badge) => {
+    setBadgeToast(badge);
+    if (toastTimer.current) clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setBadgeToast(null), 3500);
+  }, []);
+  // Check badges after profile changes
+  const checkAndShowBadges = useCallback((extraData = {}) => {
+    const data = {
+      ...playerProfile.profile, ...extraData,
+      countriesDiscovered: mapProgress.discovered.length,
+      dailyStreak: dailyStreak.streak.current
+    };
+    const newBadges = badges.checkBadges(data);
+    if (newBadges.length > 0) {
+      showBadgeToast(newBadges[0]);
+      setNewBadgesThisGame(prev => [...prev, ...newBadges]);
+    }
+  }, [playerProfile.profile, mapProgress.discovered, dailyStreak.streak, badges, showBadgeToast]);
 
-  const selectGameQuestions = useCallback(() => {
+  const selectGameQuestions = useCallback((mode) => {
+    const m = mode || gameMode;
+    if (m === 'survival') {
+      // Survival: shuffle ALL questions, start easy then ramp up
+      const all = QUESTIONS.map((q, i) => ({ ...q, _idx: i }));
+      const shuffled = [...all].sort(() => Math.random() - 0.5);
+      // Sort by difficulty for progressive ramp
+      shuffled.sort((a, b) => a.d - b.d);
+      // Add some randomness within difficulty bands
+      const banded = [];
+      for (let d = 1; d <= 5; d++) {
+        const band = shuffled.filter(q => q.d === d).sort(() => Math.random() - 0.5);
+        banded.push(...band);
+      }
+      return banded;
+    }
+    // Classic and Multiplayer: standard 25 questions across 5 rounds
     const byDifficulty = {};
     QUESTIONS.forEach((q, i) => {
       if (!byDifficulty[q.d]) byDifficulty[q.d] = [];
       byDifficulty[q.d].push({ ...q, _idx: i });
     });
     const selected = [];
-    for (let d = 1; d <= TOTAL_ROUNDS; d++) {
+    const totalRounds = m === 'multiplayer' ? TOTAL_ROUNDS : TOTAL_ROUNDS;
+    const perRound = m === 'multiplayer' ? QUESTIONS_PER_ROUND * 2 : QUESTIONS_PER_ROUND;
+    for (let d = 1; d <= totalRounds; d++) {
       const pool = byDifficulty[d] || [];
       const shuffled = [...pool].sort(() => Math.random() - 0.5);
-      // try to get category variety
       const cats = new Set();
       const picked = [];
       for (const q of shuffled) {
-        if (picked.length >= QUESTIONS_PER_ROUND) break;
-        if (!cats.has(q.cat) || picked.length >= QUESTIONS_PER_ROUND - 1) {
+        if (picked.length >= perRound) break;
+        if (!cats.has(q.cat) || picked.length >= perRound - 1) {
           picked.push(q);
           cats.add(q.cat);
         }
       }
-      // fill if needed
       for (const q of shuffled) {
-        if (picked.length >= QUESTIONS_PER_ROUND) break;
+        if (picked.length >= perRound) break;
         if (!picked.includes(q)) picked.push(q);
       }
       selected.push(...picked);
     }
     return selected;
-  }, []);
+  }, [gameMode]);
+
+  // ─── Lifeline Functions ─────────────────────────────────────────────
+  const useFiftyFifty = useCallback(() => {
+    if (lifelines.fiftyFifty <= 0 || selected !== null || !currentQ) return;
+    sound.click();
+    const correctIdx = currentQ.a;
+    const wrongIdxs = [0,1,2,3].filter(i => i !== correctIdx);
+    // Shuffle and pick 2 to hide
+    const toHide = wrongIdxs.sort(() => Math.random() - 0.5).slice(0, 2);
+    setHiddenOptions(toHide);
+    setLifelines(l => ({ ...l, fiftyFifty: l.fiftyFifty - 1 }));
+    speech.speak("50-50! Two wrong answers eliminated!", { rate: 1.15, pitch: 1.1 });
+  }, [lifelines.fiftyFifty, selected, currentQ, sound, speech]);
+
+  const useSkipQuestion = useCallback(() => {
+    if (lifelines.skip <= 0 || selected !== null || !currentQ) return;
+    sound.click();
+    setLifelines(l => ({ ...l, skip: l.skip - 1 }));
+    setTimerActive(false);
+    // Bank this question for later
+    setSkippedQuestions(prev => [...prev, qIndex]);
+    // Move to next question
+    const nextIdx = qIndex + 1;
+    if (nextIdx < totalQs) {
+      setQIndex(nextIdx); setSelected(null); setTimer(TIMER_SECONDS);
+      setHiddenOptions([]);
+      setShowSetup(true); setScreen('question');
+      const nextQ = gameQuestions[nextIdx];
+      const setup = getSetup(nextQ.cat);
+      setSetupText(setup);
+      const showQ = () => { setShowSetup(false); setTimerActive(true); speech.speak(nextQ.q, { rate: 1.0, pitch: 1.0 }); };
+      speech.speakThen(`Skip! We'll come back to that one. ${setup}`, { rate: 1.05, pitch: 1.05 }, () => setTimeout(showQ, 400));
+    }
+  }, [lifelines.skip, selected, currentQ, qIndex, totalQs, gameQuestions, sound, speech]);
+
+  const useExtraTime = useCallback(() => {
+    if (lifelines.extraTime <= 0 || selected !== null) return;
+    sound.click();
+    setTimer(t => t + 10);
+    setLifelines(l => ({ ...l, extraTime: l.extraTime - 1 }));
+    speech.speak("10 extra seconds on the clock!", { rate: 1.15, pitch: 1.1 });
+  }, [lifelines.extraTime, selected, sound, speech]);
 
   useEffect(() => {
     if (!timerActive || timer <= 0) return;
@@ -1536,13 +1937,54 @@ export default function GeoBeeGame() {
     return setups[Math.floor(Math.random() * setups.length)];
   };
 
-  const startGame = () => {
+  const startGame = (mode) => {
+    const m = mode || gameMode;
+    setGameMode(m);
     sound.click(); speech.cancel();
-    const gq = selectGameQuestions();
+    const gq = selectGameQuestions(m);
     setGameQuestions(gq);
     setScore(0); setStreak(0); setBestStreak(0); setQIndex(0);
-    setHistory([]); setCurrentRound(0); setScreen('intro');
-    const intro = HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
+    setHistory([]); setCurrentRound(0); setRoundCorrect(0);
+    setNewBadgesThisGame([]);
+    setHiddenOptions([]); setSkippedQuestions([]);
+    // Reset lifelines — gate behind badges
+    const earnedBadges = badges.earned;
+    setLifelines({
+      fiftyFifty: 1,
+      skip: earnedBadges.includes('streak_starter') ? 1 : 0,
+      extraTime: earnedBadges.includes('first_steps') ? 1 : 0
+    });
+    if (m === 'survival') {
+      setSurvivalLives(3);
+    }
+    if (m === 'multiplayer') {
+      setPlayers([{name:mpNames[0],score:0,correct:0,history:[]},{name:mpNames[1],score:0,correct:0,history:[]}]);
+      setCurrentPlayer(0);
+    }
+    // Daily streak check-in
+    const milestone = dailyStreak.checkIn();
+    if (milestone) {
+      setStreakMilestone(milestone);
+      setScreen('streakReward');
+      return;
+    }
+    setScreen('intro');
+    const intro = m === 'survival'
+      ? "Welcome to SURVIVAL MODE! Answer questions until you drop. You've got 3 lives. How far can you go?"
+      : m === 'multiplayer'
+      ? `It's ${mpNames[0]} versus ${mpNames[1]}! You'll take turns answering questions. Highest score wins!`
+      : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
+    setHostText(intro);
+    speech.speak(intro, { rate: 1.1, pitch: 1.1 });
+  };
+  const proceedFromStreakReward = () => {
+    setStreakMilestone(null);
+    setScreen('intro');
+    const intro = gameMode === 'survival'
+      ? "Welcome to SURVIVAL MODE! 3 lives. Infinite questions. Let's see how far you can go!"
+      : gameMode === 'multiplayer'
+      ? `${mpNames[0]} vs ${mpNames[1]}! Let the battle begin!`
+      : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
     setHostText(intro);
     speech.speak(intro, { rate: 1.1, pitch: 1.1 });
   };
@@ -1572,48 +2014,99 @@ export default function GeoBeeGame() {
   const handleAnswer = useCallback((idx) => {
     if (selected !== null) return;
     setTimerActive(false); setSelected(idx);
+    setHiddenOptions([]);
     const q = gameQuestions[qIndex];
     const isCorrect = idx === q.a;
+    const dailyBonus = dailyStreak.getBonus();
     const timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
     const streakBonus = streak >= 3 ? streak * 10 : 0;
+    const dailyBonusPts = isCorrect && dailyBonus > 0 ? Math.floor((100 + timeBonus) * dailyBonus / 100) : 0;
+    const pointsEarned = isCorrect ? 100 + timeBonus + streakBonus + dailyBonusPts : 0;
     speech.cancel();
     if (isCorrect) {
       sound.correct();
       const ns = streak + 1;
       setStreak(ns); setBestStreak(bs => Math.max(bs, ns));
-      setScore(s => s + 100 + timeBonus + streakBonus);
+      setScore(s => s + pointsEarned);
+      setRoundCorrect(rc => rc + 1);
       if (STREAK_COMMENTS[ns]) setTimeout(() => sound.streak(), 300);
       speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.rq, { rate: 1.1, pitch: 1.1 });
       if (STREAK_COMMENTS[ns]) speech.speak(STREAK_COMMENTS[ns], { rate: 1.15, pitch: 1.15 });
       speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+      if (q._idx !== undefined) mapProgress.discoverCountries(q._idx);
     } else {
-      sound.wrong(); setStreak(0);
+      sound.wrong(); setStreak(0); setRoundCorrect(0);
       speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.wq, { rate: 1.0, pitch: 0.95 });
       speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+      // Survival mode: lose a life
+      if (gameMode === 'survival') {
+        setSurvivalLives(l => l - 1);
+      }
     }
+    // Multiplayer: track per-player
+    if (gameMode === 'multiplayer') {
+      setPlayers(prev => prev.map((p, i) => i === currentPlayer ? {
+        ...p, score: p.score + pointsEarned, correct: p.correct + (isCorrect ? 1 : 0),
+        history: [...p.history, { question: q.q, correct: isCorrect, cat: q.cat }]
+      } : p));
+    }
+    playerProfile.recordAnswer(q.cat, isCorrect, timer);
     setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat }]);
-    setTotalQAnswered(n => n + 1);
-    if (isCorrect) setTotalCorrect(n => n + 1);
     setScreen('result');
-  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech]);
+    setTimeout(() => checkAndShowBadges({ bestStreak: Math.max(playerProfile.profile.bestStreak, isCorrect ? streak + 1 : streak) }), 100);
+  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer]);
+
+  const endGame = useCallback(() => {
+    sound.gameOver(); setScreen('gameOver');
+    const gc = history.length + 1;
+    const gcCorr = history.filter(h=>h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
+    playerProfile.recordGame(score, gcCorr, gc, bestStreak);
+    if (roundCorrect >= QUESTIONS_PER_ROUND) playerProfile.recordPerfectRound();
+    const gcPct = gc > 0 ? gcCorr/gc : 0;
+    let goComment;
+    if (gameMode === 'survival') {
+      goComment = `You survived ${gc} questions! ${gcPct >= 0.8 ? "Incredible run!" : gcPct >= 0.6 ? "Solid endurance!" : "Not bad! Try again to go further!"}`;
+    } else if (gameMode === 'multiplayer') {
+      const winner = players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null;
+      goComment = winner ? `${winner} wins! What a match!` : "It's a tie! Incredible!";
+    } else {
+      goComment = gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough;
+    }
+    speech.speak("Game over! " + goComment.replace(/🌍👑/g,''), { rate: 1.05, pitch: 1.08 });
+    setTimeout(() => checkAndShowBadges(), 200);
+  }, [sound, history, selected, gameQuestions, qIndex, score, bestStreak, roundCorrect, playerProfile, gameMode, players, speech, checkAndShowBadges]);
 
   const nextQuestion = () => {
     speech.cancel();
+    // Survival: check if out of lives
+    if (gameMode === 'survival' && survivalLives <= 0) {
+      endGame(); return;
+    }
     const nextIdx = qIndex + 1;
+    // Check if we've run out of questions
     if (nextIdx >= totalQs) {
-      sound.gameOver(); setScreen('gameOver');
-      setTotalGamesPlayed(n => n + 1);
-      // Compute game over comment for speech
-      const gc = history.length + 1; // include this last answer
-      const gcCorr = history.filter(h=>h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
-      const gcPct = gc > 0 ? gcCorr/gc : 0;
-      const goComment = gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough;
-      speech.speak("Game over! " + goComment.replace(/🌍👑/g,''), { rate: 1.05, pitch: 1.08 });
-      return;
+      endGame(); return;
+    }
+    // Multiplayer: alternate players
+    if (gameMode === 'multiplayer') {
+      setCurrentPlayer(cp => (cp + 1) % 2);
     }
     const nextQ = gameQuestions[nextIdx];
     const nextRound = nextQ.d;
+    // Survival mode: no round intros, just keep going
+    if (gameMode === 'survival') {
+      setQIndex(nextIdx); setSelected(null); setTimer(TIMER_SECONDS);
+      setHiddenOptions([]);
+      setShowSetup(true); setScreen('question');
+      const setup = getSetup(nextQ.cat);
+      setSetupText(setup);
+      const showQ = () => { setShowSetup(false); setTimerActive(true); speech.speak(nextQ.q, { rate: 1.0, pitch: 1.0 }); };
+      speech.speakThen(setup, { rate: 1.05, pitch: 1.05 }, () => setTimeout(showQ, 400));
+      return;
+    }
     if (nextRound !== currentRound) {
+      if (roundCorrect >= QUESTIONS_PER_ROUND) playerProfile.recordPerfectRound();
+      setRoundCorrect(0);
       sound.roundStart(); setCurrentRound(nextRound); setScreen('roundIntro');
       const intros = ROUND_INTROS[nextRound];
       const intro = intros[Math.floor(Math.random() * intros.length)];
@@ -1622,6 +2115,7 @@ export default function GeoBeeGame() {
       speech.speak(`Round ${nextRound}: ${ROUND_NAMES[nextRound]}. ${intro}`, { rate: 1.05, pitch: 1.08 });
     } else {
       setQIndex(nextIdx); setSelected(null); setTimer(TIMER_SECONDS);
+      setHiddenOptions([]);
       setShowSetup(true); setScreen('question');
       const setup = getSetup(nextQ.cat);
       setSetupText(setup);
@@ -1688,15 +2182,253 @@ export default function GeoBeeGame() {
     </div>
   );
 
+  // ─── Badge Toast Overlay ──────────────────────────────────────────────────
+  const BadgeToast = badgeToast ? (
+    <div style={{position:'fixed',top:'20px',left:'50%',transform:'translateX(-50%)',zIndex:1000,
+      background:'linear-gradient(135deg,rgba(247,183,51,0.95),rgba(252,74,26,0.95))',borderRadius:'16px',padding:'14px 28px',
+      boxShadow:'0 8px 32px rgba(252,74,26,0.4)',display:'flex',alignItems:'center',gap:'12px',
+      animation:'slideDown 0.4s ease-out',color:'#fff'}}>
+      <span style={{fontSize:'2rem'}}>{badgeToast.icon}</span>
+      <div><div style={{fontWeight:800,fontSize:'0.95rem'}}>Badge Unlocked!</div>
+        <div style={{fontSize:'0.85rem',opacity:0.9}}>{badgeToast.name}</div></div>
+    </div>
+  ) : null;
+
   // ─── SCREENS ─────────────────────────────────────────────────────────────
 
+  // ─── Streak Reward Screen ───────────────────────────────────────────────
+  if (screen === 'streakReward' && streakMilestone) return (
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+      <div style={{...S.card, textAlign:'center'}}>
+        <div style={{fontSize:'4rem',marginBottom:'10px'}}>{streakMilestone.icon}</div>
+        <div style={{...S.title,fontSize:'2.2rem'}}>STREAK MILESTONE!</div>
+        <div style={{color:'rgba(255,255,255,0.6)',fontSize:'1.1rem',marginBottom:'20px'}}>
+          {dailyStreak.streak.current} days in a row!
+        </div>
+        <div style={{background:'rgba(247,183,51,0.15)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'16px',padding:'24px',marginBottom:'24px'}}>
+          <div style={{fontSize:'1.4rem',fontWeight:800,color:'#f7b733',marginBottom:'8px'}}>"{streakMilestone.title}"</div>
+          <div style={{color:'rgba(255,255,255,0.7)',fontSize:'1rem'}}>
+            You've earned a <span style={{color:'#2ed573',fontWeight:700}}>+{streakMilestone.bonus}%</span> score bonus for this game!
+          </div>
+        </div>
+        <Btn onClick={proceedFromStreakReward}>LET'S GO! 🔥</Btn>
+      </div>
+    </div>
+  );
+
+  // ─── Profile Screen ─────────────────────────────────────────────────────
+  if (screen === 'profile') {
+    const p = playerProfile.profile;
+    const accuracy = p.totalAnswered > 0 ? Math.round(p.totalCorrect / p.totalAnswered * 100) : 0;
+    const strongestCat = Object.entries(p.catCorrect || {}).sort((a,b) => b[1] - a[1])[0];
+    const tabBtn = (tab, label) => (
+      <button onClick={() => { setProfileTab(tab); sound.click(); }}
+        style={{flex:1,padding:'10px',background:profileTab===tab?'linear-gradient(135deg,#f7b733,#fc4a1a)':'rgba(255,255,255,0.08)',
+          border:profileTab===tab?'none':'1px solid rgba(255,255,255,0.1)',borderRadius:'12px',color:'#fff',
+          fontWeight:profileTab===tab?700:400,fontSize:'0.85rem',cursor:'pointer',transition:'all 0.2s'}}>
+        {label}
+      </button>
+    );
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+        <div style={{...S.card,maxWidth:'800px'}}>
+          <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:'24px'}}>
+            <div>
+              <div style={{fontSize:'1.8rem',fontWeight:800,color:'#f7b733'}}>Player Profile</div>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>
+                {dailyStreak.streak.current > 0 ? `🔥 ${dailyStreak.streak.current}-day streak` : 'Start playing to build your streak!'}
+              </div>
+            </div>
+            <button onClick={() => { setScreen('title'); sound.click(); }}
+              style={{background:'rgba(255,255,255,0.1)',border:'1px solid rgba(255,255,255,0.15)',borderRadius:'12px',
+                padding:'8px 16px',color:'#fff',cursor:'pointer',fontSize:'0.85rem'}}>
+              ← Back
+            </button>
+          </div>
+          <div style={{display:'flex',gap:'8px',marginBottom:'24px'}}>
+            {tabBtn('stats','📊 Stats')}{tabBtn('badges','🏅 Badges')}{tabBtn('map','🗺️ World Map')}
+          </div>
+
+          {profileTab === 'stats' && (<div>
+            <div style={{display:'flex',gap:'12px',marginBottom:'20px',flexWrap:'wrap'}}>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{p.gamesPlayed}</div><div style={S.statLbl}>Games</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{accuracy}%</div><div style={S.statLbl}>Accuracy</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{p.bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{mapProgress.discovered.length}</div><div style={S.statLbl}>Countries</div></div>
+            </div>
+            <div style={{display:'flex',gap:'12px',marginBottom:'20px',flexWrap:'wrap'}}>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{p.totalCorrect}/{p.totalAnswered}</div><div style={S.statLbl}>Correct</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{dailyStreak.streak.best}</div><div style={S.statLbl}>Best Day Streak</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{p.perfectRounds}</div><div style={S.statLbl}>Perfect Rounds</div></div>
+              <div style={{...S.statCard,minWidth:'120px'}}><div style={S.statVal}>{p.perfectGames}</div><div style={S.statLbl}>Perfect Games</div></div>
+            </div>
+            {strongestCat && (
+              <div style={{background:'rgba(46,213,115,0.08)',border:'1px solid rgba(46,213,115,0.2)',borderRadius:'12px',padding:'14px 18px',marginBottom:'16px'}}>
+                <div style={{fontWeight:700,color:'#2ed573',fontSize:'0.85rem',marginBottom:'4px'}}>Strongest Category</div>
+                <div style={{color:'rgba(255,255,255,0.8)'}}>{strongestCat[0]} — {strongestCat[1]} correct answers</div>
+              </div>
+            )}
+            {p.gameHistory && p.gameHistory.length > 0 && (
+              <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px'}}>
+                <div style={{fontWeight:700,color:'rgba(255,255,255,0.5)',fontSize:'0.8rem',textTransform:'uppercase',letterSpacing:'1px',marginBottom:'12px'}}>Recent Games</div>
+                <div style={{display:'flex',alignItems:'flex-end',gap:'4px',height:'80px'}}>
+                  {p.gameHistory.map((g, i) => {
+                    const pct = g.total > 0 ? g.correct / g.total : 0;
+                    const h = Math.max(8, pct * 70);
+                    const color = pct >= 0.8 ? '#2ed573' : pct >= 0.6 ? '#ffa502' : '#ff4757';
+                    return <div key={i} style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'flex-end',height:'100%'}}>
+                      <div style={{width:'100%',maxWidth:'24px',height:`${h}px`,background:color,borderRadius:'4px 4px 0 0',transition:'height 0.3s'}}/>
+                      <div style={{fontSize:'0.6rem',color:'rgba(255,255,255,0.3)',marginTop:'4px'}}>{Math.round(pct*100)}%</div>
+                    </div>;
+                  })}
+                </div>
+              </div>
+            )}
+            <button onClick={() => setShowResetConfirm(true)}
+              style={{marginTop:'20px',background:'rgba(255,71,87,0.1)',border:'1px solid rgba(255,71,87,0.3)',borderRadius:'12px',
+                padding:'10px 20px',color:'#ff4757',cursor:'pointer',fontSize:'0.85rem',width:'100%'}}>
+              Reset All Progress
+            </button>
+            {showResetConfirm && (
+              <div style={{marginTop:'12px',background:'rgba(255,71,87,0.1)',border:'1px solid rgba(255,71,87,0.3)',borderRadius:'12px',padding:'16px',textAlign:'center'}}>
+                <div style={{color:'#ff4757',fontWeight:700,marginBottom:'8px'}}>Are you sure? This cannot be undone!</div>
+                <div style={{display:'flex',gap:'10px',justifyContent:'center'}}>
+                  <button onClick={() => { playerProfile.resetProfile(); setShowResetConfirm(false); sound.click(); }}
+                    style={{background:'#ff4757',border:'none',borderRadius:'10px',padding:'8px 20px',color:'#fff',cursor:'pointer',fontWeight:700}}>
+                    Yes, Reset Everything
+                  </button>
+                  <button onClick={() => setShowResetConfirm(false)}
+                    style={{background:'rgba(255,255,255,0.1)',border:'1px solid rgba(255,255,255,0.15)',borderRadius:'10px',padding:'8px 20px',color:'#fff',cursor:'pointer'}}>
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>)}
+
+          {profileTab === 'badges' && (<div>
+            <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem',marginBottom:'16px'}}>
+              {badges.earned.length}/{BADGE_DEFINITIONS.length} badges earned
+            </div>
+            <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(140px,1fr))',gap:'12px'}}>
+              {BADGE_DEFINITIONS.map(badge => {
+                const isEarned = badges.earned.includes(badge.id);
+                return (
+                  <div key={badge.id} style={{background:isEarned?'rgba(247,183,51,0.12)':'rgba(255,255,255,0.04)',
+                    border:`1px solid ${isEarned?'rgba(247,183,51,0.3)':'rgba(255,255,255,0.08)'}`,
+                    borderRadius:'14px',padding:'16px',textAlign:'center',transition:'all 0.3s',
+                    opacity:isEarned?1:0.5}}>
+                    <div style={{fontSize:'2rem',marginBottom:'6px',filter:isEarned?'none':'grayscale(1)'}}>
+                      {isEarned ? badge.icon : '🔒'}
+                    </div>
+                    <div style={{fontWeight:700,fontSize:'0.8rem',color:isEarned?'#f7b733':'rgba(255,255,255,0.4)',marginBottom:'4px'}}>
+                      {badge.name}
+                    </div>
+                    <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)',lineHeight:1.4}}>
+                      {badge.desc}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>)}
+
+          {profileTab === 'map' && (<div>
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'16px'}}>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>
+                {mapProgress.discovered.length}/{TOTAL_COUNTRIES} countries discovered
+              </div>
+              <div style={{background:'rgba(255,255,255,0.1)',borderRadius:'20px',height:'8px',width:'200px',overflow:'hidden'}}>
+                <div style={{height:'100%',background:'linear-gradient(90deg,#f7b733,#fc4a1a)',borderRadius:'20px',
+                  width:`${(mapProgress.discovered.length/TOTAL_COUNTRIES)*100}%`,transition:'width 0.5s'}}/>
+              </div>
+            </div>
+            {Object.entries(WORLD_COUNTRIES).map(([continent, countries]) => {
+              const discoveredInContinent = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
+              return (
+                <div key={continent} style={{marginBottom:'20px'}}>
+                  <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'10px'}}>
+                    <div style={{fontWeight:700,color:'#f7b733',fontSize:'0.9rem'}}>{continent}</div>
+                    <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>{discoveredInContinent}/{countries.length}</div>
+                  </div>
+                  <div style={{display:'flex',flexWrap:'wrap',gap:'6px'}}>
+                    {countries.map(([code, name]) => {
+                      const isDiscovered = mapProgress.discovered.includes(code);
+                      return (
+                        <div key={code} title={name}
+                          style={{background:isDiscovered?'rgba(247,183,51,0.2)':'rgba(255,255,255,0.04)',
+                            border:`1px solid ${isDiscovered?'rgba(247,183,51,0.4)':'rgba(255,255,255,0.08)'}`,
+                            borderRadius:'8px',padding:'4px 10px',fontSize:'0.75rem',
+                            color:isDiscovered?'#f7b733':'rgba(255,255,255,0.25)',
+                            fontWeight:isDiscovered?600:400,transition:'all 0.3s',cursor:'default'}}>
+                          {isDiscovered ? `${flagEmoji(code)} ${name}` : '???'}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>)}
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Multiplayer Name Entry Screen ────────────────────────────────────
+  if (screen === 'mpNameEntry') return (
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+      <div style={{...S.card,textAlign:'center'}}>
+        <div style={{fontSize:'3rem',marginBottom:'10px'}}>👥</div>
+        <div style={{...S.title,fontSize:'2.2rem'}}>MULTIPLAYER</div>
+        <div style={S.sub}>Enter player names and battle it out!</div>
+        <div style={{display:'flex',flexDirection:'column',gap:'16px',marginBottom:'24px'}}>
+          <div style={{background:'rgba(52,152,219,0.1)',border:'1px solid rgba(52,152,219,0.3)',borderRadius:'14px',padding:'16px'}}>
+            <div style={{fontWeight:700,color:'#3498db',marginBottom:'8px',fontSize:'0.85rem'}}>Player 1</div>
+            <input type="text" value={mpNames[0]} onChange={e => setMpNames(n => [e.target.value, n[1]])}
+              maxLength={20} placeholder="Player 1"
+              style={{width:'100%',padding:'10px 14px',borderRadius:'10px',background:'rgba(0,0,0,0.4)',
+                border:'1px solid rgba(52,152,219,0.3)',color:'#fff',fontSize:'1rem',outline:'none',boxSizing:'border-box'}}/>
+          </div>
+          <div style={{background:'rgba(231,76,60,0.1)',border:'1px solid rgba(231,76,60,0.3)',borderRadius:'14px',padding:'16px'}}>
+            <div style={{fontWeight:700,color:'#e74c3c',marginBottom:'8px',fontSize:'0.85rem'}}>Player 2</div>
+            <input type="text" value={mpNames[1]} onChange={e => setMpNames(n => [n[0], e.target.value])}
+              maxLength={20} placeholder="Player 2"
+              style={{width:'100%',padding:'10px 14px',borderRadius:'10px',background:'rgba(0,0,0,0.4)',
+                border:'1px solid rgba(231,76,60,0.3)',color:'#fff',fontSize:'1rem',outline:'none',boxSizing:'border-box'}}/>
+          </div>
+        </div>
+        <Btn onClick={() => startGame('multiplayer')}>START MATCH! ⚔️</Btn>
+        <button onClick={() => { setScreen('title'); sound.click(); }}
+          style={{marginTop:'12px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer',
+            display:'block',margin:'12px auto 0'}}>
+          ← Back
+        </button>
+      </div>
+    </div>
+  );
+
   if (screen === 'title') return (
-    <div style={S.wrap}><div style={S.stars}/>
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
       <div style={{...S.card, textAlign:'center'}}>
         <div style={{fontSize:'4rem',marginBottom:'10px'}}>🌍</div>
         <div style={S.title}>GEO-WRECKED!</div>
         <div style={S.sub}>A "You Don't Know Jack!"-Style GeoBee Trainer</div>
-        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'20px',marginBottom:'30px',textAlign:'left',lineHeight:1.8}}>
+        {dailyStreak.streak.current > 0 && (
+          <div style={{background:'linear-gradient(135deg,rgba(252,74,26,0.15),rgba(247,183,51,0.15))',
+            border:'1px solid rgba(247,183,51,0.3)',borderRadius:'14px',padding:'14px',marginBottom:'20px',
+            display:'flex',alignItems:'center',justifyContent:'center',gap:'12px'}}>
+            <span style={{fontSize:'1.5rem'}}>🔥</span>
+            <div>
+              <div style={{fontWeight:700,color:'#f7b733',fontSize:'0.95rem'}}>{dailyStreak.streak.current}-Day Streak!</div>
+              <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>
+                {dailyStreak.getBonus() > 0 ? `+${dailyStreak.getBonus()}% score bonus active` : 'Play daily to build your streak'}
+              </div>
+            </div>
+          </div>
+        )}
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'20px',marginBottom:'20px',textAlign:'left',lineHeight:1.8}}>
           <div style={{fontWeight:700,marginBottom:'10px',color:'#f7b733'}}>How to Play:</div>
           <div style={{color:'rgba(255,255,255,0.7)',fontSize:'0.95rem'}}>
             🏆 {QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions per game drawn from a pool of {QUESTIONS.length}<br/>
@@ -1707,9 +2439,13 @@ export default function GeoBeeGame() {
             🎯 All facts verified for GeoBee competition prep
           </div>
         </div>
-        {totalGamesPlayed > 0 && (
-          <div style={{background:'rgba(46,213,115,0.08)',borderRadius:'12px',padding:'14px',marginBottom:'20px',fontSize:'0.85rem',color:'rgba(255,255,255,0.6)'}}>
-            📊 Lifetime: {totalGamesPlayed} games played • {totalCorrect}/{totalQAnswered} correct ({totalQAnswered > 0 ? Math.round(totalCorrect/totalQAnswered*100) : 0}%)
+        {playerProfile.profile.gamesPlayed > 0 && (
+          <div style={{background:'rgba(46,213,115,0.08)',borderRadius:'12px',padding:'14px',marginBottom:'20px',fontSize:'0.85rem',color:'rgba(255,255,255,0.6)',
+            display:'flex',justifyContent:'space-around',flexWrap:'wrap',gap:'8px'}}>
+            <span>📊 {playerProfile.profile.gamesPlayed} games</span>
+            <span>🎯 {playerProfile.profile.totalAnswered > 0 ? Math.round(playerProfile.profile.totalCorrect/playerProfile.profile.totalAnswered*100) : 0}% accuracy</span>
+            <span>🗺️ {mapProgress.discovered.length} countries</span>
+            <span>🏅 {badges.earned.length} badges</span>
           </div>
         )}
         <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'20px'}}>
@@ -1760,26 +2496,67 @@ export default function GeoBeeGame() {
             </div>
           </div>)}
         </div>
-        <Btn onClick={startGame}>LET'S PLAY! 🌎</Btn>
-        <div style={{marginTop:'20px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Preparing for the 8th Grade GeoBee • {QUESTIONS.length} questions in the bank</div>
+        <div style={{display:'flex',flexDirection:'column',gap:'10px',marginBottom:'10px'}}>
+          <Btn onClick={() => startGame('classic')}>CLASSIC MODE 🌎</Btn>
+          <button onClick={() => startGame('survival')}
+            style={{...S.btn,background:'linear-gradient(135deg,#e74c3c,#c0392b)',boxShadow:'0 4px 20px rgba(231,76,60,0.3)',fontSize:'1rem',padding:'14px 32px'}}
+            onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+            SURVIVAL MODE ❤️❤️❤️
+          </button>
+          <button onClick={() => { setScreen('mpNameEntry'); sound.click(); }}
+            style={{...S.btn,background:'linear-gradient(135deg,#3498db,#2980b9)',boxShadow:'0 4px 20px rgba(52,152,219,0.3)',fontSize:'1rem',padding:'14px 32px'}}
+            onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+            MULTIPLAYER 👥
+          </button>
+        </div>
+        <div style={{display:'flex',justifyContent:'center',gap:'16px',marginBottom:'6px',fontSize:'0.75rem',color:'rgba(255,255,255,0.35)'}}>
+          <span>🌎 5 rounds, 25 Qs</span>
+          <span>❤️ 3 lives, endless Qs</span>
+          <span>👥 2 players, take turns</span>
+        </div>
+        <button onClick={() => { setScreen('profile'); sound.click(); }}
+          style={{marginTop:'16px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'14px',padding:'12px 28px',color:'rgba(255,255,255,0.7)',fontSize:'0.95rem',
+            cursor:'pointer',transition:'all 0.2s',display:'block',margin:'16px auto 0'}}
+          onMouseOver={e=>{e.target.style.background='rgba(255,255,255,0.15)';e.target.style.color='#fff';}}
+          onMouseOut={e=>{e.target.style.background='rgba(255,255,255,0.08)';e.target.style.color='rgba(255,255,255,0.7)';}}>
+          👤 Player Profile
+        </button>
+        <div style={{marginTop:'16px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Preparing for the 8th Grade GeoBee • {QUESTIONS.length} questions in the bank</div>
       </div>
     </div>
   );
 
   if (screen === 'intro') return (
-    <div style={S.wrap}><div style={S.stars}/>
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
       <div style={S.card}>
         <Host>{hostText}</Host>
-        <Host label="📋 Tonight's Game">
-          {QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions. 5 rounds. 1 champion. Zero mercy. Let's see what you've got!
+        <Host label={gameMode === 'survival' ? "❤️ Survival Rules" : gameMode === 'multiplayer' ? "👥 Match Rules" : "📋 Tonight's Game"}>
+          {gameMode === 'survival'
+            ? "All questions from easy to legendary. 3 lives — wrong answers cost a life. No rounds, no breaks. How long can you survive?"
+            : gameMode === 'multiplayer'
+            ? `${mpNames[0]} and ${mpNames[1]} take turns answering. ${QUESTIONS_PER_ROUND * TOTAL_ROUNDS * 2} questions total. Highest score at the end wins!`
+            : `${QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions. 5 rounds. 1 champion. Zero mercy. Let's see what you've got!`}
         </Host>
-        <Btn onClick={proceedFromIntro}>BRING IT ON! 🔥</Btn>
+        {(lifelines.fiftyFifty > 0 || lifelines.skip > 0 || lifelines.extraTime > 0) && (
+          <div style={{background:'rgba(155,89,182,0.1)',border:'1px solid rgba(155,89,182,0.3)',borderRadius:'14px',padding:'14px 18px',marginBottom:'20px'}}>
+            <div style={{fontWeight:700,color:'#9b59b6',marginBottom:'8px',fontSize:'0.85rem'}}>🛡️ Lifelines Available</div>
+            <div style={{display:'flex',gap:'12px',flexWrap:'wrap',fontSize:'0.85rem',color:'rgba(255,255,255,0.7)'}}>
+              {lifelines.fiftyFifty > 0 && <span>🎯 50/50</span>}
+              {lifelines.skip > 0 && <span>⏭️ Skip</span>}
+              {lifelines.extraTime > 0 && <span>⏱️ +10s</span>}
+            </div>
+          </div>
+        )}
+        <Btn onClick={gameMode === 'survival' ? startQuestion : proceedFromIntro}>
+          {gameMode === 'survival' ? "LET'S SURVIVE! ❤️" : gameMode === 'multiplayer' ? `${mpNames[0]} GOES FIRST! ⚔️` : "BRING IT ON! 🔥"}
+        </Btn>
       </div>
     </div>
   );
 
   if (screen === 'roundIntro') return (
-    <div style={S.wrap}><div style={S.stars}/>
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
       <div style={{...S.card,textAlign:'center'}}>
         <div style={{fontSize:'1rem',color:'rgba(255,255,255,0.4)',textTransform:'uppercase',letterSpacing:'3px',marginBottom:'10px'}}>Round {currentRound}</div>
         <div style={{fontSize:'2rem',fontWeight:800,color:'#f7b733',marginBottom:'20px'}}>"{ROUND_NAMES[currentRound]}"</div>
@@ -1793,17 +2570,66 @@ export default function GeoBeeGame() {
   );
 
   if (screen === 'question' && currentQ) return (
-    <div style={S.wrap}><div style={S.stars}/>
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
       <div style={S.card}>
+        {/* Mode indicator bar */}
+        {gameMode === 'survival' && (
+          <div style={{display:'flex',justifyContent:'center',gap:'8px',marginBottom:'12px'}}>
+            {[...Array(3)].map((_, i) => (
+              <span key={i} style={{fontSize:'1.4rem',opacity:i < survivalLives ? 1 : 0.2,transition:'opacity 0.3s'}}>❤️</span>
+            ))}
+          </div>
+        )}
+        {gameMode === 'multiplayer' && (
+          <div style={{display:'flex',justifyContent:'center',gap:'16px',marginBottom:'12px'}}>
+            {players.map((p, i) => (
+              <div key={i} style={{padding:'6px 14px',borderRadius:'10px',fontSize:'0.8rem',fontWeight:700,
+                background:i===currentPlayer?'linear-gradient(135deg,rgba(52,152,219,0.3),rgba(41,128,185,0.3))':'rgba(255,255,255,0.05)',
+                border:i===currentPlayer?'1px solid rgba(52,152,219,0.5)':'1px solid rgba(255,255,255,0.08)',
+                color:i===currentPlayer?'#3498db':'rgba(255,255,255,0.4)'}}>
+                {p.name}: {p.score} pts
+              </div>
+            ))}
+          </div>
+        )}
         <div style={S.bar}>
-          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Score:</span> <span style={{fontWeight:700,color:'#f7b733'}}>{score}</span></div>
-          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Q:</span> <span style={{fontWeight:700}}>{qIndex+1}/{totalQs}</span></div>
+          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Score:</span> <span style={{fontWeight:700,color:'#f7b733'}}>{gameMode==='multiplayer'?players[currentPlayer]?.score||0:score}</span></div>
+          <div><span style={{color:'rgba(255,255,255,0.5)'}}>Q:</span> <span style={{fontWeight:700}}>{qIndex+1}{gameMode!=='survival'?`/${totalQs}`:''}</span></div>
           <div>{streak >= 3 && <span style={{color:'#2ed573',fontWeight:700}}>{streak}🔥</span>}</div>
           <div><span style={{fontSize:'1.3rem',fontWeight:800,color:timer<=5?'#ff4757':timer<=10?'#ffa502':'#fff'}}>{timer}s</span></div>
         </div>
-        <div style={{height:'6px',borderRadius:'3px',background:'rgba(255,255,255,0.1)',marginBottom:'20px',overflow:'hidden'}}>
+        <div style={{height:'6px',borderRadius:'3px',background:'rgba(255,255,255,0.1)',marginBottom:'12px',overflow:'hidden'}}>
           <div style={{height:'100%',borderRadius:'3px',transition:'width 1s linear,background 0.3s',background:timerColor,width:`${timerPct}%`}}/>
         </div>
+        {/* Lifeline buttons */}
+        {!showSetup && selected === null && (lifelines.fiftyFifty > 0 || lifelines.skip > 0 || lifelines.extraTime > 0) && (
+          <div style={{display:'flex',justifyContent:'center',gap:'8px',marginBottom:'16px'}}>
+            {lifelines.fiftyFifty > 0 && (
+              <button onClick={useFiftyFifty}
+                style={{background:'rgba(155,89,182,0.15)',border:'1px solid rgba(155,89,182,0.4)',borderRadius:'10px',
+                  padding:'6px 14px',color:'#9b59b6',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',transition:'all 0.2s'}}
+                onMouseOver={e=>e.target.style.background='rgba(155,89,182,0.3)'} onMouseOut={e=>e.target.style.background='rgba(155,89,182,0.15)'}>
+                🎯 50/50
+              </button>
+            )}
+            {lifelines.skip > 0 && (
+              <button onClick={useSkipQuestion}
+                style={{background:'rgba(241,196,15,0.15)',border:'1px solid rgba(241,196,15,0.4)',borderRadius:'10px',
+                  padding:'6px 14px',color:'#f1c40f',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',transition:'all 0.2s'}}
+                onMouseOver={e=>e.target.style.background='rgba(241,196,15,0.3)'} onMouseOut={e=>e.target.style.background='rgba(241,196,15,0.15)'}>
+                ⏭️ Skip
+              </button>
+            )}
+            {lifelines.extraTime > 0 && (
+              <button onClick={useExtraTime}
+                style={{background:'rgba(46,213,115,0.15)',border:'1px solid rgba(46,213,115,0.4)',borderRadius:'10px',
+                  padding:'6px 14px',color:'#2ed573',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',transition:'all 0.2s'}}
+                onMouseOver={e=>e.target.style.background='rgba(46,213,115,0.3)'} onMouseOut={e=>e.target.style.background='rgba(46,213,115,0.15)'}>
+                ⏱️ +10s
+              </button>
+            )}
+          </div>
+        )}
         {showSetup ? (
           <div style={{textAlign:'center',padding:'40px 0'}}>
             <div style={S.cat}>{currentQ.cat}</div>
@@ -1811,9 +2637,41 @@ export default function GeoBeeGame() {
           </div>
         ) : (<>
           <div style={S.cat}>{currentQ.cat}</div>
+          {/* Flag display for flag questions */}
+          {currentQ.type === 'flag' && (
+            <div style={{textAlign:'center',marginBottom:'16px'}}>
+              <div style={{fontSize:'6rem',lineHeight:1.2,filter:'drop-shadow(0 4px 12px rgba(0,0,0,0.3))',
+                background:'rgba(255,255,255,0.05)',borderRadius:'16px',padding:'12px 24px',display:'inline-block',
+                border:'1px solid rgba(255,255,255,0.1)'}}>
+                {flagEmoji(currentQ.flag)}
+              </div>
+            </div>
+          )}
+          {/* SVG silhouette for map outline questions */}
+          {currentQ.type === 'silhouette' && COUNTRY_OUTLINES[currentQ.shape] && (
+            <div style={{textAlign:'center',marginBottom:'16px'}}>
+              <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'16px',padding:'16px',display:'inline-block',
+                border:'1px solid rgba(255,255,255,0.1)'}}>
+                <svg viewBox="0 0 100 100" width="140" height="140" style={{filter:'drop-shadow(0 2px 8px rgba(247,183,51,0.3))'}}>
+                  <path d={COUNTRY_OUTLINES[currentQ.shape]} fill="#f7b733" stroke="#fc4a1a" strokeWidth="1.5" opacity="0.9"/>
+                </svg>
+                <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.3)',marginTop:'4px'}}>Country Outline</div>
+              </div>
+            </div>
+          )}
           <div style={{fontSize:'1.3rem',fontWeight:700,marginBottom:'24px',lineHeight:1.5}}>{currentQ.q}</div>
           <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
-            {currentQ.o.map((opt,idx) => (
+            {currentQ.o.map((opt,idx) => {
+              const isHidden = hiddenOptions.includes(idx);
+              if (isHidden && selected === null) return (
+                <div key={idx} style={{...optStyle(idx),opacity:0.15,pointerEvents:'none',borderStyle:'dashed'}}>
+                  <span style={{background:'rgba(255,255,255,0.1)',borderRadius:'8px',width:'32px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:700,fontSize:'0.9rem',flexShrink:0}}>
+                    {String.fromCharCode(65+idx)}
+                  </span>
+                  <span style={{textDecoration:'line-through'}}>{opt}</span>
+                </div>
+              );
+              return (
               <button key={idx} style={optStyle(idx)} onClick={()=>handleAnswer(idx)} disabled={selected!==null}
                 onMouseOver={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.15)';e.currentTarget.style.borderColor='rgba(255,255,255,0.3)';}}}
                 onMouseOut={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.08)';e.currentTarget.style.borderColor='rgba(255,255,255,0.15)';}}}
@@ -1823,7 +2681,8 @@ export default function GeoBeeGame() {
                 </span>
                 <span>{opt}</span>
               </button>
-            ))}
+              );
+            })}
           </div>
         </>)}
       </div>
@@ -1835,7 +2694,7 @@ export default function GeoBeeGame() {
     const timeBonus = isCorrect ? Math.floor(timer*5) : 0;
     const streakBonus = (isCorrect && streak >= 3) ? (streak-1)*10 : 0;
     return (
-      <div style={S.wrap}><div style={S.stars}/>
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
         <div style={S.card}>
           <div style={{textAlign:'center',marginBottom:'20px'}}>
             <div style={{fontSize:'3rem',marginBottom:'8px'}}>{selected===-1?'⏰':isCorrect?'🎉':'😬'}</div>
@@ -1868,7 +2727,20 @@ export default function GeoBeeGame() {
             <div style={{fontWeight:700,color:'#2ed573',marginBottom:'6px',fontSize:'0.8rem',textTransform:'uppercase',letterSpacing:'1px'}}>📚 GeoBee Fact</div>
             {currentQ.f}
           </div>
-          <Btn onClick={nextQuestion}>{qIndex+1>=totalQs?'SEE RESULTS 🏆':'NEXT QUESTION →'}</Btn>
+          {gameMode === 'survival' && !isCorrect && (
+            <div style={{display:'flex',justifyContent:'center',gap:'8px',marginBottom:'16px'}}>
+              {[...Array(3)].map((_, i) => (
+                <span key={i} style={{fontSize:'1.3rem',opacity:i < survivalLives ? 1 : 0.2,transition:'opacity 0.3s'}}>{i < survivalLives ? '❤️' : '🖤'}</span>
+              ))}
+              {survivalLives <= 0 && <span style={{color:'#ff4757',fontWeight:700,fontSize:'0.9rem',marginLeft:'8px'}}>NO LIVES LEFT!</span>}
+            </div>
+          )}
+          {gameMode === 'multiplayer' && (
+            <div style={{textAlign:'center',marginBottom:'12px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)'}}>
+              {players[currentPlayer]?.name}'s turn • Score: {players[currentPlayer]?.score || 0}
+            </div>
+          )}
+          <Btn onClick={nextQuestion}>{gameMode==='survival'&&survivalLives<=0?'SEE RESULTS 🏆':qIndex+1>=totalQs?'SEE RESULTS 🏆':'NEXT QUESTION →'}</Btn>
         </div>
       </div>
     );
@@ -1876,18 +2748,66 @@ export default function GeoBeeGame() {
 
   if (screen === 'gameOver') {
     const pct = Math.round((correctCount/totalQs)*100);
+    const streakBonusLabel = dailyStreak.getBonus() > 0 ? `(+${dailyStreak.getBonus()}% streak bonus!)` : '';
+    const mpWinner = gameMode === 'multiplayer' ? (players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null) : null;
     return (
-      <div style={S.wrap}><div style={S.stars}/>
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
         <div style={{...S.card,textAlign:'center'}}>
-          <div style={{fontSize:'3.5rem',marginBottom:'10px'}}>🏆</div>
-          <div style={{...S.title,fontSize:'2.5rem'}}>GAME OVER!</div>
-          <Host>{getScoreComment()}</Host>
-          <div style={{display:'flex',gap:'12px',marginBottom:'24px'}}>
-            <div style={S.statCard}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score</div></div>
-            <div style={S.statCard}><div style={S.statVal}>{correctCount}/{totalQs}</div><div style={S.statLbl}>Correct</div></div>
-            <div style={S.statCard}><div style={S.statVal}>{pct}%</div><div style={S.statLbl}>Accuracy</div></div>
-            <div style={S.statCard}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+          <div style={{fontSize:'3.5rem',marginBottom:'10px'}}>{gameMode==='multiplayer'?'⚔️':gameMode==='survival'?'💀':'🏆'}</div>
+          <div style={{...S.title,fontSize:'2.5rem'}}>
+            {gameMode==='survival'?'SURVIVED!':gameMode==='multiplayer'?(mpWinner?`${mpWinner} WINS!`:"IT'S A TIE!"):'GAME OVER!'}
           </div>
+          {gameMode === 'multiplayer' ? (
+            <>
+              <Host>{mpWinner ? `${mpWinner} takes the crown! What a battle!` : "Neither player could pull ahead! Incredible match!"}</Host>
+              <div style={{display:'flex',gap:'12px',marginBottom:'24px'}}>
+                <div style={{...S.statCard,border:players[0].score>=players[1].score?'2px solid #3498db':'2px solid transparent'}}>
+                  <div style={{fontWeight:700,color:'#3498db',marginBottom:'8px',fontSize:'0.85rem'}}>{players[0].name}</div>
+                  <div style={S.statVal}>{players[0].score}</div><div style={S.statLbl}>Score</div>
+                  <div style={{marginTop:'8px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)'}}>{players[0].correct} correct</div>
+                </div>
+                <div style={{display:'flex',alignItems:'center',fontSize:'1.5rem',color:'rgba(255,255,255,0.3)'}}>VS</div>
+                <div style={{...S.statCard,border:players[1].score>=players[0].score?'2px solid #e74c3c':'2px solid transparent'}}>
+                  <div style={{fontWeight:700,color:'#e74c3c',marginBottom:'8px',fontSize:'0.85rem'}}>{players[1].name}</div>
+                  <div style={S.statVal}>{players[1].score}</div><div style={S.statLbl}>Score</div>
+                  <div style={{marginTop:'8px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)'}}>{players[1].correct} correct</div>
+                </div>
+              </div>
+            </>
+          ) : gameMode === 'survival' ? (
+            <>
+              <Host>{getScoreComment()}</Host>
+              <div style={{display:'flex',gap:'12px',marginBottom:'24px',flexWrap:'wrap'}}>
+                <div style={S.statCard}><div style={S.statVal}>{qIndex+1}</div><div style={S.statLbl}>Questions Survived</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{correctCount}</div><div style={S.statLbl}>Correct</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+              </div>
+            </>
+          ) : (
+            <>
+              <Host>{getScoreComment()}</Host>
+              <div style={{display:'flex',gap:'12px',marginBottom:'24px',flexWrap:'wrap'}}>
+                <div style={S.statCard}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score {streakBonusLabel}</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{correctCount}/{totalQs}</div><div style={S.statLbl}>Correct</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{pct}%</div><div style={S.statLbl}>Accuracy</div></div>
+                <div style={S.statCard}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+              </div>
+            </>
+          )}
+          {newBadgesThisGame.length > 0 && (
+            <div style={{background:'rgba(247,183,51,0.1)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'14px',padding:'16px',marginBottom:'20px'}}>
+              <div style={{fontWeight:700,color:'#f7b733',marginBottom:'10px',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'1px'}}>🏅 Badges Earned This Game</div>
+              <div style={{display:'flex',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
+                {newBadgesThisGame.map(b => (
+                  <div key={b.id} style={{textAlign:'center'}}>
+                    <div style={{fontSize:'1.8rem'}}>{b.icon}</div>
+                    <div style={{fontSize:'0.75rem',color:'#f7b733',fontWeight:600}}>{b.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'24px',textAlign:'left',maxHeight:'200px',overflowY:'auto'}}>
             <div style={{fontWeight:700,marginBottom:'10px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)',textTransform:'uppercase',letterSpacing:'1px'}}>Question Review</div>
             {history.map((h,i) => (
@@ -1897,9 +2817,25 @@ export default function GeoBeeGame() {
               </div>
             ))}
           </div>
-          <Btn onClick={startGame}>PLAY AGAIN! 🔄</Btn>
+          <Btn onClick={() => startGame(gameMode)}>PLAY AGAIN! 🔄</Btn>
+          {gameMode !== 'classic' && (
+            <button onClick={() => { setScreen('title'); sound.click(); }}
+              style={{marginTop:'8px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+                borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer',
+                display:'block',margin:'8px auto 0'}}
+              onMouseOver={e=>{e.target.style.color='#fff';}} onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';}}>
+              Change Mode →
+            </button>
+          )}
+          <button onClick={() => { setScreen('profile'); sound.click(); }}
+            style={{marginTop:'12px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+              borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer',
+              display:'block',margin:'12px auto 0'}}
+            onMouseOver={e=>{e.target.style.color='#fff';}} onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';}}>
+            View Profile →
+          </button>
           <div style={{marginTop:'12px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>
-            New questions every game from a pool of {QUESTIONS.length}!
+            {mapProgress.discovered.length} countries discovered • {badges.earned.length} badges earned
           </div>
         </div>
       </div>
