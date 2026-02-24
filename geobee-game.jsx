@@ -3825,6 +3825,10 @@ export default function GeoBeeGame() {
     return selected;
   }, [gameMode]);
 
+  // ─── Current Question (must be above useCallback hooks that reference it) ──
+  const currentQ = gameQuestions[qIndex] || null;
+  const totalQs = gameQuestions.length;
+
   // ─── Lifeline Functions ─────────────────────────────────────────────
   const useFiftyFifty = useCallback(() => {
     if (lifelines.fiftyFifty <= 0 || selected !== null || !currentQ) return;
@@ -3882,9 +3886,6 @@ export default function GeoBeeGame() {
     }, 1000);
     return () => clearInterval(interval);
   }, [timerActive, timer]);
-
-  const currentQ = gameQuestions[qIndex] || null;
-  const totalQs = gameQuestions.length;
 
   // ─── Commentator System ───────────────────────────────────────────────
   const showCommentator = useCallback((category) => {

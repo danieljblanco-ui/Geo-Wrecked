@@ -28,13 +28,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script>
-const {
+var {
   useState,
   useEffect,
   useCallback,
   useRef
 } = React;
-const ALL_QUESTIONS = [
+var ALL_QUESTIONS = [
 // ═══ DIFFICULTY 1: "Warm Up Your Globe" (Easy) ═══
 {
   d: 1,
@@ -8087,7 +8087,7 @@ const ALL_QUESTIONS = [
 // ─── IMAGE-BASED QUESTIONS: Flags (using emoji) & Map Silhouettes ────────────
 // type:'flag' → show a large flag emoji, player identifies the country
 // type:'silhouette' → show an SVG country outline, player identifies it
-const IMAGE_QUESTIONS = [
+var IMAGE_QUESTIONS = [
 // ═══ FLAG QUESTIONS (Difficulty 1-3) ═══
 {
   d: 1,
@@ -8766,10 +8766,10 @@ const IMAGE_QUESTIONS = [
 }];
 
 // Merge image questions into main pool
-const QUESTIONS = [...ALL_QUESTIONS, ...IMAGE_QUESTIONS];
+var QUESTIONS = [...ALL_QUESTIONS, ...IMAGE_QUESTIONS];
 
 // SVG country outlines (simplified paths for silhouette questions)
-const COUNTRY_OUTLINES = {
+var COUNTRY_OUTLINES = {
   italy: "M 50,10 L 55,18 52,25 48,22 42,30 40,38 38,45 44,52 50,58 55,62 52,68 48,72 52,78 55,85 50,90 45,85 42,78 38,72 35,65 32,58 30,52 35,45 40,40 42,35 44,28 46,20 48,15 Z M 40,85 L 35,82 32,88 38,92 44,90 40,85 Z",
   india: "M 55,5 L 62,8 68,12 72,18 75,25 72,32 68,38 72,45 75,52 72,58 68,65 62,72 55,80 50,88 48,92 45,85 42,78 38,72 35,65 38,58 42,52 40,45 38,38 42,32 48,28 52,22 55,15 52,10 Z",
   australia: "M 22,25 L 30,22 38,18 48,15 55,18 62,22 68,25 72,20 78,22 82,28 78,35 75,42 78,48 82,52 78,58 72,55 65,52 58,55 52,58 45,60 38,58 32,55 28,58 22,62 18,58 20,52 22,45 18,38 15,32 18,28 Z",
@@ -8782,7 +8782,7 @@ const COUNTRY_OUTLINES = {
 };
 
 // ─── Country Tag Map (question index → ISO country codes for map progress) ───
-const COUNTRY_TAG_MAP = {
+var COUNTRY_TAG_MAP = {
   0: ["JP"],
   1: ["FR"],
   2: ["AU"],
@@ -9082,10 +9082,10 @@ const COUNTRY_TAG_MAP = {
 };
 
 // ─── Flag emoji from ISO code ─────────────────────────────────────────────────
-const flagEmoji = code => String.fromCodePoint(...[...code.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
+var flagEmoji = code => String.fromCodePoint(...[...code.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
 
 // ─── Countries by continent (for map display) ────────────────────────────────
-const WORLD_COUNTRIES = {
+var WORLD_COUNTRIES = {
   "North America": [["US", "United States"], ["CA", "Canada"], ["MX", "Mexico"], ["CU", "Cuba"], ["GT", "Guatemala"], ["HN", "Honduras"], ["NI", "Nicaragua"], ["CR", "Costa Rica"], ["PA", "Panama"], ["BZ", "Belize"], ["JM", "Jamaica"], ["HT", "Haiti"], ["DO", "Dominican Republic"], ["PR", "Puerto Rico"], ["BS", "Bahamas"]],
   "South America": [["BR", "Brazil"], ["AR", "Argentina"], ["CO", "Colombia"], ["PE", "Peru"], ["VE", "Venezuela"], ["CL", "Chile"], ["EC", "Ecuador"], ["BO", "Bolivia"], ["PY", "Paraguay"], ["GY", "Guyana"], ["UY", "Uruguay"]],
   "Europe": [["GB", "United Kingdom"], ["FR", "France"], ["DE", "Germany"], ["IT", "Italy"], ["ES", "Spain"], ["PT", "Portugal"], ["NL", "Netherlands"], ["BE", "Belgium"], ["CH", "Switzerland"], ["AT", "Austria"], ["PL", "Poland"], ["GR", "Greece"], ["IE", "Ireland"], ["NO", "Norway"], ["SE", "Sweden"], ["FI", "Finland"], ["DK", "Denmark"], ["IS", "Iceland"], ["RO", "Romania"], ["BG", "Bulgaria"], ["HR", "Croatia"], ["RS", "Serbia"], ["HU", "Hungary"], ["SK", "Slovakia"], ["UA", "Ukraine"], ["CZ", "Czech Republic"], ["LT", "Lithuania"], ["LV", "Latvia"], ["EE", "Estonia"], ["MD", "Moldova"], ["AD", "Andorra"], ["LI", "Liechtenstein"], ["MC", "Monaco"], ["SM", "San Marino"], ["VA", "Vatican City"], ["MT", "Malta"], ["ME", "Montenegro"], ["MK", "North Macedonia"], ["XK", "Kosovo"], ["BY", "Belarus"], ["GE", "Georgia"], ["AZ", "Azerbaijan"]],
@@ -9095,11 +9095,11 @@ const WORLD_COUNTRIES = {
 };
 
 // Total countries across all continents
-const ALL_COUNTRY_CODES = new Set(Object.values(WORLD_COUNTRIES).flat().map(c => c[0]));
-const TOTAL_COUNTRIES = ALL_COUNTRY_CODES.size;
+var ALL_COUNTRY_CODES = new Set(Object.values(WORLD_COUNTRIES).flat().map(c => c[0]));
+var TOTAL_COUNTRIES = ALL_COUNTRY_CODES.size;
 
 // ─── Badge Definitions ────────────────────────────────────────────────────────
-const BADGE_DEFINITIONS = [{
+var BADGE_DEFINITIONS = [{
   id: "first_steps",
   name: "First Steps",
   icon: "👣",
@@ -9223,7 +9223,7 @@ const BADGE_DEFINITIONS = [{
 
 // ─── Secret / Hidden Badge Definitions ───────────────────────────────────────
 // These badges are HIDDEN from the player until earned. Descriptions are cryptic hints.
-const SECRET_BADGE_DEFINITIONS = [
+var SECRET_BADGE_DEFINITIONS = [
 // Time-based
 {
   id: "night_owl",
@@ -9388,10 +9388,10 @@ const SECRET_BADGE_DEFINITIONS = [
 }];
 
 // Combine all badge definitions
-const ALL_BADGE_DEFINITIONS = [...BADGE_DEFINITIONS, ...SECRET_BADGE_DEFINITIONS];
+var ALL_BADGE_DEFINITIONS = [...BADGE_DEFINITIONS, ...SECRET_BADGE_DEFINITIONS];
 
 // ─── Theme Definitions ────────────────────────────────────────────────────────
-const THEMES = {
+var THEMES = {
   space: {
     id: 'space',
     name: 'Space',
@@ -9463,7 +9463,7 @@ const THEMES = {
 };
 
 // ─── Challenge Mode Lock Requirements ─────────────────────────────────────────
-const CHALLENGE_LOCKS = {
+var CHALLENGE_LOCKS = {
   continentsprint: {
     badgeId: 'globe_trotter',
     badgeName: 'Globe Trotter',
@@ -9477,7 +9477,7 @@ const CHALLENGE_LOCKS = {
 };
 
 // ─── Survival Difficulty Tiers ────────────────────────────────────────────────
-const SURVIVAL_TIERS = [{
+var SURVIVAL_TIERS = [{
   id: 'normal',
   name: 'Normal',
   icon: '💚',
@@ -9510,7 +9510,7 @@ const SURVIVAL_TIERS = [{
 }];
 
 // ─── Daily Streak Milestones ──────────────────────────────────────────────────
-const STREAK_MILESTONES = [{
+var STREAK_MILESTONES = [{
   days: 3,
   title: "Getting Warmed Up",
   icon: "🌡️",
@@ -9543,7 +9543,7 @@ const STREAK_MILESTONES = [{
 }];
 
 // ─── Category Setup Lines (host intros per category) ─────────────────────────
-const CATEGORY_SETUPS = {
+var CATEGORY_SETUPS = {
   "Capitals": ["Capitals! The cities that run the show... or at least pretend to.", "Not every capital is the biggest or flashiest city. Some are sneaky little surprises.", "Pop quiz on capitals! And no, the capital isn't always the city you've heard of most.", "Time for capitals. Where the government hangs its hat... whether you knew it or not.", "Capital cities! The VIP section of every country. Some of them are surprising.", "Here's a life lesson: the capital is almost NEVER the city you'd guess first. Geography loves plot twists.", "Capitals are like lead singers — they get all the attention, even when they're not the biggest.", "If you think the biggest city is always the capital, geography is about to humble you."],
   "Physical Geography": ["Let's get physical! ...Geographically speaking.", "Mountains, rivers, deserts — Earth's greatest hits album.", "Nature built some wild stuff. Let's see if you've been paying attention.", "Physical geography: where rocks, water, and dirt become surprisingly interesting.", "Earth has been sculpting itself for 4.5 billion years. Pop quiz on the results.", "Tectonic plates, erosion, and volcanic fury — Earth's renovation never stops.", "The planet has mountains, trenches, deserts, and glaciers. It's basically showing off at this point.", "Physical geography! Where 'the floor is lava' is sometimes literally true."],
   "US Geography": ["America: 50 states, 50 chances to get confused about which one is where.", "Let's see how well you know the good ol' US of A.", "Stars, stripes, and state facts. How well do you really know this country?", "US geography! Not just the states you've visited on family road trips.", "50 states, and most people can only point to like 12 on a map. Be better than most people.", "The United States: where everything is big, dramatic, and geographically extra.", "Quick: can you name all 50 states? No? Well, at least know the ones in this question.", "US Geography! Where 'it's somewhere in the middle' is never an acceptable answer."],
@@ -9570,42 +9570,42 @@ const CATEGORY_SETUPS = {
   "Geo Scramble": ["Geo Scramble! The letters are all there. They're just... rearranged. You got this. Probably.", "Unscramble the country! It's like Wordle met an atlas and they had a baby.", "The letters are jumbled, but the country is real. Think fast, spell faster!", "Geo Scramble time! Your brain is about to do geography AND a word puzzle simultaneously. Good luck.", "Scrambled letters, one country. It's anagram time, geography style!", "Every letter is a clue. Unscramble them and name the nation. No pressure, but there's a timer.", "Geo Scramble! Like Scrabble, except every answer is a country and you can't use a blank tile.", "Word jumble meets world map. If you've ever rearranged fridge magnets, you're basically trained for this."],
   "Landmark Clues": ["Landmark Clues! Cryptic hints about famous places. Can you crack the code?", "Every landmark tells a story. I'll give you the story — you tell me where it lives.", "Emoji clues + poetic hints = one iconic landmark. This is geography meets riddles.", "Famous landmarks, described the hard way. No names, just vibes and emojis.", "Landmark Clues! I'll paint a picture with words and emojis. You tell me the country.", "Some landmarks are world-famous. Let's see if you can identify them from a cryptic clue.", "Riddle me this, geography fans: which country holds this famous landmark?", "Clue-based geography! It's like a scavenger hunt, except the whole world is the playing field."]
 };
-const HOST_INTROS = ["Welcome to GEO-WRECKED! The only game show where knowing where stuff is actually matters!", "I'm your host, and I'll be judging your geographic knowledge with barely concealed glee.", "Let's see if you're smarter than a GPS, shall we?", "Welcome back to GEO-WRECKED! Where the globe spins and the points DO matter!", "Oh good, you're back. The globe was getting dusty. Let's spin it.", "GEO-WRECKED! Where we turn 'I think it's somewhere in Europe' into actual knowledge.", "Welcome! Fun fact: you're currently located at your device. That's the last easy question.", "Ladies and gentlemen, welcome to the show where 'close enough' is NOT good enough!", "You could be doing literally anything right now, and you chose geography. I respect that chaotic energy.", "GEO-WRECKED! Because Google Maps can't help you on the GeoBee stage.", "I'm back, you're back, and the world is still round. Mostly. Let's do this.", "Welcome! Remember: in this game, the only continent that matters is the one in the question.", "GEO-WRECKED! The game that makes your geography teacher's heart grow three sizes.", "Before we start, a reminder: there's no 'phone a friend' in geography. Only raw brainpower.", "Welcome to the show where we separate the atlases from the amateurs!", "You've got 25 questions between you and geographic glory. No pressure. Okay, SOME pressure.", "GEO-WRECKED! Turning 'wait, is that in South America or Africa?' into championship material.", "I've been told to go easy on you. I've decided not to listen.", "Welcome! The only show where knowing the capital of Burkina Faso makes you a rockstar.", "GEO-WRECKED! Because the world is too interesting to NOT know about it.", "Fun fact: most people can't name 10 countries. You're about to name a LOT more. Or fail trying.", "Welcome! Confidence is great. Accurate confidence is better. Let's see which one you've got.", "The globe is spinning, the clock is ticking, and your reputation is on the line. Standard Tuesday.", "GEO-WRECKED! Where being a geography nerd is finally a competitive advantage.", "You know what separates champions from everyone else? Knowing that Myanmar used to be Burma. Let's go.", "Welcome to GEO-WRECKED, where the questions are real and the points are meaningful!", "The world has 195 countries, 7 continents, and 1 champion. Will it be you? Spoiler: we'll find out."];
-const ROUND_NAMES = {
+var HOST_INTROS = ["Welcome to GEO-WRECKED! The only game show where knowing where stuff is actually matters!", "I'm your host, and I'll be judging your geographic knowledge with barely concealed glee.", "Let's see if you're smarter than a GPS, shall we?", "Welcome back to GEO-WRECKED! Where the globe spins and the points DO matter!", "Oh good, you're back. The globe was getting dusty. Let's spin it.", "GEO-WRECKED! Where we turn 'I think it's somewhere in Europe' into actual knowledge.", "Welcome! Fun fact: you're currently located at your device. That's the last easy question.", "Ladies and gentlemen, welcome to the show where 'close enough' is NOT good enough!", "You could be doing literally anything right now, and you chose geography. I respect that chaotic energy.", "GEO-WRECKED! Because Google Maps can't help you on the GeoBee stage.", "I'm back, you're back, and the world is still round. Mostly. Let's do this.", "Welcome! Remember: in this game, the only continent that matters is the one in the question.", "GEO-WRECKED! The game that makes your geography teacher's heart grow three sizes.", "Before we start, a reminder: there's no 'phone a friend' in geography. Only raw brainpower.", "Welcome to the show where we separate the atlases from the amateurs!", "You've got 25 questions between you and geographic glory. No pressure. Okay, SOME pressure.", "GEO-WRECKED! Turning 'wait, is that in South America or Africa?' into championship material.", "I've been told to go easy on you. I've decided not to listen.", "Welcome! The only show where knowing the capital of Burkina Faso makes you a rockstar.", "GEO-WRECKED! Because the world is too interesting to NOT know about it.", "Fun fact: most people can't name 10 countries. You're about to name a LOT more. Or fail trying.", "Welcome! Confidence is great. Accurate confidence is better. Let's see which one you've got.", "The globe is spinning, the clock is ticking, and your reputation is on the line. Standard Tuesday.", "GEO-WRECKED! Where being a geography nerd is finally a competitive advantage.", "You know what separates champions from everyone else? Knowing that Myanmar used to be Burma. Let's go.", "Welcome to GEO-WRECKED, where the questions are real and the points are meaningful!", "The world has 195 countries, 7 continents, and 1 champion. Will it be you? Spoiler: we'll find out."];
+var ROUND_NAMES = {
   1: "Warm Up Your Globe",
   2: "Getting Warmer",
   3: "No More Mr. Nice Globe",
   4: "The Gauntlet",
   5: "Championship Round"
 };
-const ROUND_INTROS = {
+var ROUND_INTROS = {
   1: ["We're starting easy. Don't get cocky.", "Consider this geography stretching. Loosen up those brain muscles.", "The warm-up round! If you miss these, we need to have a conversation.", "Easy mode! Enjoy it while it lasts. Spoiler: it won't last.", "Think of this as the tutorial level. Except the timer is real.", "Softballs first! I'm nice like that. Temporarily.", "Round 1 is basically a free trial. The subscription gets expensive.", "If geography were a pool, we're in the shallow end. Floaties encouraged."],
   2: ["Getting Warmer — like the planet! ...Too soon?", "Time to separate the map readers from the map folders.", "Okay, recess is over. Time to actually think.", "If Round 1 was a stroll, Round 2 is a brisk jog. Keep up.", "We're ramping up! Think of this as geography's second gear.", "The training wheels are off. Try not to crash.", "Things are heating up! And I don't just mean because of global warming.", "Round 2: where 'I think I knew that' becomes 'I definitely don't know that.'"],
   3: ["Hope you stretched your brain. It's about to get a workout.", "This is where dreams go to get a geography lesson.", "Welcome to the part of the game where guessing stops working.", "Round 3: No More Mr. Nice Globe. That's literally the name. I don't make the rules.", "If you're still feeling confident, enjoy the next 30 seconds of that.", "The fun and games are over. Well, it's still a game. But the fun part is debatable.", "Things just got real. Like, 'studying for the GeoBee' real.", "This is the round that separates the tourists from the explorers."],
   4: ["Only the brave survive this round. The rest just... learn things.", "If you're still here, you know your stuff. Or you're stubborn. Either way, respect.", "Welcome to The Gauntlet! Where the questions come harder and the timer feels shorter.", "Round 4: now we're cooking with gas. Geographic gas. That sounded better in my head.", "This is where geography teachers watch and nod approvingly. Or wince. Could go either way.", "Four rounds in and you're still standing? The GeoBee committee is taking notes.", "This is expert territory. If geography were a video game, this is the boss level.", "Round 4: where we find out if your knowledge has depth or if you've been bluffing."],
   5: ["CHAMPIONSHIP ROUND! This is GeoBee finals material. No pressure. Okay, ALL the pressure.", "This is it. The big leagues. The GEOOOOO BEEEEEE!", "The final round. Where legends are born and egos are humbled.", "If you ace this, you are officially a geography weapon. A WEAPON.", "Five rounds of geography. You've survived this long. Finish strong or finish... aware of your weaknesses.", "Championship material! These questions are the geography equivalent of a final boss.", "The last five questions. Your entire geographic reputation comes down to this. No big deal.", "FINAL ROUND! This is the stuff that makes National Geographic champions cry. Let's gooooo!"]
 };
-const STREAK_COMMENTS = {
+var STREAK_COMMENTS = {
   3: ["Three in a row! You're on fire! (Not literally. That would be a different kind of geography event.)", "Hat trick! Three straight! The globe is impressed.", "Three correct! That's called a trend, people!", "Triple threat! Is this skill or luck? Let's find out."],
   5: ["FIVE STREAK! You're basically a walking atlas!", "Five in a row! Your brain is giving GPS a run for its money!", "FIVE! That's not luck anymore, that's talent!", "Five straight! You're the human equivalent of a really good map."],
   7: ["SEVEN?! Are you secretly a cartographer?", "SEVEN IN A ROW! Okay, who let the geography professor in here?", "Seven! At this point, I'm starting to think YOU should be hosting.", "Seven straight! The atlas called, it wants its job back."],
   10: ["TEN IN A ROW! I think you might actually WIN the GeoBee.", "TEN! That's not a streak, that's a DYNASTY! Someone call National Geographic!", "Double digits! You're not playing the game anymore, the game is playing YOU.", "TEN IN A ROW?! I need to make harder questions. This is embarrassing for me."]
 };
-const GAME_OVER_COMMENTS = {
+var GAME_OVER_COMMENTS = {
   perfect: ["PERFECT SCORE?! You absolute LEGEND. The GeoBee doesn't stand a chance. 🌍👑", "100%?! I'm not even mad, I'm IMPRESSED. You are geography itself. 🌍👑", "Flawless victory! Did you secretly eat an atlas for breakfast? 🌍👑", "PERFECT?! Honestly, I'm a little scared of you right now. In a respectful way. 🌍👑", "You didn't miss a single one. The globe bows to you. WE ALL BOW. 🌍👑", "That was SURGICAL. Every question, destroyed. You're not a student, you're a force of nature. 🌍👑"],
   great: ["Incredible performance! GeoBee competitors should be nervous!", "80%+ accuracy! You're not just good at geography, you're DANGEROUS at it!", "That was elite! A few more games and you'll be teaching the teacher!", "Seriously impressive! You know more about the world than most adults. That's not a joke.", "Outstanding! If this were the actual GeoBee, the judges would be nodding approvingly right now.", "You crushed it! Your brain is basically a globe with extra features."],
   good: ["Solid showing! A little more studying and you'll be unstoppable!", "Hey, that's a passing grade in most countries! And you know where those countries ARE, so...", "Respectable! You're definitely in 'knows their stuff' territory. A few more rounds and you'll be elite.", "Good work! You clearly know your way around a map. Let's turn that 'good' into 'great.'", "Not shabby! You've got the foundation. Now let's build the skyscraper of geographic knowledge!", "Nice job! You missed some, but you clearly LEARNED some. That's the whole point!"],
   okay: ["Not bad! You know more than the average bear. Keep studying!", "Hey, at least you now know the answers to the ones you missed! That's called GROWTH.", "Some hits, some misses. The important thing is you showed up and your brain got a workout.", "Room for improvement! But also: room for DRAMATIC improvement! Glass half full!", "You know what? Every champion started somewhere. This is your somewhere. Own it.", "Mixed results, but think of it this way: you just learned a bunch of geography FACTS for FREE."],
   rough: ["That's what practice is for! Every wrong answer is a fact you'll never forget. Play again!", "Okay, that was rough. But you know what? You now know MORE than when you started. That counts!", "Geography is hard! That's why they have a whole competition about it. Play again — revenge is sweet.", "Look, Rome wasn't built in a day. And you now know where Rome IS, so that's a start!", "I believe in you! The questions don't get easier, but YOU get smarter. Run it back!", "You know what the best part of getting wrecked is? The COMEBACK STORY. Let's write yours."]
 };
-const QUESTIONS_PER_ROUND = 5;
-const TOTAL_ROUNDS = 5;
-const TIMER_SECONDS = 20;
-const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+var QUESTIONS_PER_ROUND = 5;
+var TOTAL_ROUNDS = 5;
+var TIMER_SECONDS = 20;
+var pick = arr => arr[Math.floor(Math.random() * arr.length)];
 
 // ─── Challenge Mode Data ──────────────────────────────────────────────────────
 // Border Challenge: "Name all countries that border X"
-const BORDER_CHALLENGES = [{
+var BORDER_CHALLENGES = [{
   country: 'Switzerland',
   borders: ['Germany', 'France', 'Italy', 'Austria', 'Liechtenstein'],
   hint: 'Landlocked in the Alps',
@@ -9668,7 +9668,7 @@ const BORDER_CHALLENGES = [{
 }];
 
 // Capital Blitz: rapid-fire capital questions
-const CAPITAL_BLITZ_QS = [{
+var CAPITAL_BLITZ_QS = [{
   country: 'Japan',
   capital: 'Tokyo',
   decoys: ['Osaka', 'Kyoto', 'Nagoya']
@@ -9815,7 +9815,7 @@ const CAPITAL_BLITZ_QS = [{
 }];
 
 // Flag Frenzy: rapid-fire flag identification
-const FLAG_FRENZY_QS = [{
+var FLAG_FRENZY_QS = [{
   flag: '🇯🇵',
   country: 'Japan',
   decoys: ['China', 'South Korea', 'Vietnam']
@@ -9978,7 +9978,7 @@ const FLAG_FRENZY_QS = [{
 }];
 
 // Continent Sprint: sort countries by continent
-const CONTINENT_SPRINT_DATA = {
+var CONTINENT_SPRINT_DATA = {
   Africa: ['Nigeria', 'Egypt', 'South Africa', 'Kenya', 'Ethiopia', 'Morocco', 'Ghana', 'Tanzania', 'Algeria', 'Senegal', 'Uganda', 'Rwanda', 'Cameroon', 'Mozambique', 'Madagascar', 'Tunisia', 'Ivory Coast', 'Zambia', 'Zimbabwe', 'Mali'],
   Asia: ['China', 'India', 'Japan', 'Thailand', 'Vietnam', 'Indonesia', 'Philippines', 'Pakistan', 'Bangladesh', 'South Korea', 'Malaysia', 'Myanmar', 'Nepal', 'Sri Lanka', 'Cambodia', 'Mongolia', 'Kazakhstan', 'Uzbekistan', 'Laos', 'Bhutan'],
   Europe: ['France', 'Germany', 'Italy', 'Spain', 'Poland', 'Ukraine', 'Romania', 'Netherlands', 'Belgium', 'Sweden', 'Norway', 'Austria', 'Switzerland', 'Portugal', 'Czech Republic', 'Greece', 'Hungary', 'Finland', 'Denmark', 'Ireland'],
@@ -9986,7 +9986,7 @@ const CONTINENT_SPRINT_DATA = {
   'North America': ['United States', 'Canada', 'Mexico', 'Cuba', 'Jamaica', 'Haiti', 'Dominican Republic', 'Guatemala', 'Honduras', 'Panama', 'Costa Rica', 'El Salvador', 'Nicaragua', 'Trinidad and Tobago', 'Belize'],
   Oceania: ['Australia', 'New Zealand', 'Papua New Guinea', 'Fiji', 'Samoa', 'Tonga', 'Vanuatu', 'Solomon Islands', 'Kiribati', 'Micronesia', 'Palau', 'Marshall Islands', 'Nauru', 'Tuvalu']
 };
-const CONTINENT_DECOYS = {
+var CONTINENT_DECOYS = {
   Africa: ['Asia', 'Europe', 'South America'],
   Asia: ['Europe', 'Africa', 'Oceania'],
   Europe: ['Asia', 'Africa', 'North America'],
@@ -9996,7 +9996,7 @@ const CONTINENT_DECOYS = {
 };
 
 // Population Showdown: which country has more people?
-const POPULATION_PAIRS = [{
+var POPULATION_PAIRS = [{
   a: 'India',
   popA: 1428,
   b: 'China',
@@ -10209,7 +10209,7 @@ const POPULATION_PAIRS = [{
 }];
 
 // Commentator reactions — context-aware quips
-const COMMENTATOR = {
+var COMMENTATOR = {
   streakStart: ["Ooh, we got a streak building! 🔥", "Two in a row — don't let it go to your head!", "Back-to-back! The brain is warmed up!"],
   streakHot: ["UNSTOPPABLE! Are you secretly a cartographer?!", "This is a MASTERCLASS in geography right now!", "The streak is ALIVE! Nobody touch anything!"],
   streakBroken: ["Oof! The streak snaps! It was a good run though.", "And the streak falls! Geography is a cruel mistress.", "That one stings. Shake it off, shake it off!"],
@@ -10221,16 +10221,16 @@ const COMMENTATOR = {
 };
 
 // ─── Sound Effects (Game Show Quality) ───────────────────────────────────────
-const useSound = () => {
-  const audioCtx = useRef(null);
-  const musicGain = useRef(null);
-  const musicTimer = useRef(null);
-  const musicPlaying = useRef(false);
-  const [sfxEnabled, setSfxEnabled] = useLocalStorage('geobee_sfx', true);
-  const [musicEnabled, setMusicEnabled] = useLocalStorage('geobee_music', false);
-  const [sfxVolume, setSfxVolume] = useLocalStorage('geobee_sfx_vol', 0.5);
-  const [musicVolume, setMusicVolume] = useLocalStorage('geobee_music_vol', 0.3);
-  const getCtx = useCallback(() => {
+var useSound = () => {
+  var audioCtx = useRef(null);
+  var musicGain = useRef(null);
+  var musicTimer = useRef(null);
+  var musicPlaying = useRef(false);
+  var [sfxEnabled, setSfxEnabled] = useLocalStorage('geobee_sfx', true);
+  var [musicEnabled, setMusicEnabled] = useLocalStorage('geobee_music', false);
+  var [sfxVolume, setSfxVolume] = useLocalStorage('geobee_sfx_vol', 0.5);
+  var [musicVolume, setMusicVolume] = useLocalStorage('geobee_music_vol', 0.3);
+  var getCtx = useCallback(() => {
     if (!audioCtx.current) {
       audioCtx.current = new (window.AudioContext || window.webkitAudioContext)();
       musicGain.current = audioCtx.current.createGain();
@@ -10240,15 +10240,15 @@ const useSound = () => {
     if (audioCtx.current.state === 'suspended') audioCtx.current.resume();
     return audioCtx.current;
   }, [musicVolume]);
-  const playTone = useCallback((freq, dur, type = 'sine', vol = 0.15) => {
+  var playTone = useCallback((freq, dur, type = 'sine', vol = 0.15) => {
     if (!sfxEnabled) return;
     try {
-      const ctx = getCtx(),
+      var ctx = getCtx(),
         osc = ctx.createOscillator(),
         g = ctx.createGain();
       osc.type = type;
       osc.frequency.value = freq;
-      const v = vol * sfxVolume;
+      var v = vol * sfxVolume;
       g.gain.setValueAtTime(v, ctx.currentTime);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
       osc.connect(g);
@@ -10257,24 +10257,24 @@ const useSound = () => {
       osc.stop(ctx.currentTime + dur + 0.05);
     } catch (e) {}
   }, [getCtx, sfxEnabled, sfxVolume]);
-  const playChord = useCallback((freqs, dur, type = 'sine', vol = 0.08) => {
+  var playChord = useCallback((freqs, dur, type = 'sine', vol = 0.08) => {
     freqs.forEach(f => playTone(f, dur, type, vol));
   }, [playTone]);
-  const playNoise = useCallback((dur, vol = 0.1, filter = 2000) => {
+  var playNoise = useCallback((dur, vol = 0.1, filter = 2000) => {
     if (!sfxEnabled) return;
     try {
-      const ctx = getCtx();
-      const bufSize = Math.max(1, Math.floor(ctx.sampleRate * dur));
-      const buf = ctx.createBuffer(1, bufSize, ctx.sampleRate);
-      const data = buf.getChannelData(0);
-      for (let i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
-      const src = ctx.createBufferSource();
+      var ctx = getCtx();
+      var bufSize = Math.max(1, Math.floor(ctx.sampleRate * dur));
+      var buf = ctx.createBuffer(1, bufSize, ctx.sampleRate);
+      var data = buf.getChannelData(0);
+      for (var i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
+      var src = ctx.createBufferSource();
       src.buffer = buf;
-      const filt = ctx.createBiquadFilter();
+      var filt = ctx.createBiquadFilter();
       filt.type = 'lowpass';
       filt.frequency.value = filter;
-      const g = ctx.createGain();
-      const v = vol * sfxVolume;
+      var g = ctx.createGain();
+      var v = vol * sfxVolume;
       g.gain.setValueAtTime(v, ctx.currentTime);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
       src.connect(filt);
@@ -10286,7 +10286,7 @@ const useSound = () => {
   }, [getCtx, sfxEnabled, sfxVolume]);
 
   // Correct: triumphant ascending arpeggio with sparkle
-  const correct = useCallback(() => {
+  var correct = useCallback(() => {
     playTone(523, .12, 'sine', .18);
     setTimeout(() => playTone(659, .12, 'sine', .18), 80);
     setTimeout(() => playTone(784, .15, 'sine', .2), 160);
@@ -10298,16 +10298,16 @@ const useSound = () => {
   }, [playTone, playNoise]);
 
   // Wrong: dramatic buzzer with descending slide
-  const wrong = useCallback(() => {
+  var wrong = useCallback(() => {
     if (!sfxEnabled) return;
     try {
-      const ctx = getCtx();
-      const osc = ctx.createOscillator(),
+      var ctx = getCtx();
+      var osc = ctx.createOscillator(),
         g = ctx.createGain();
       osc.type = 'sawtooth';
       osc.frequency.setValueAtTime(280, ctx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.5);
-      const v = 0.12 * sfxVolume;
+      var v = 0.12 * sfxVolume;
       g.gain.setValueAtTime(v, ctx.currentTime);
       g.gain.setValueAtTime(v, ctx.currentTime + 0.3);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
@@ -10320,8 +10320,8 @@ const useSound = () => {
   }, [getCtx, sfxEnabled, sfxVolume, playTone]);
 
   // Tick: urgent when low, gentle when time is plenty
-  const tick = useCallback(timeLeft => {
-    const tl = typeof timeLeft === 'number' ? timeLeft : 15;
+  var tick = useCallback(timeLeft => {
+    var tl = typeof timeLeft === 'number' ? timeLeft : 15;
     if (tl <= 3) {
       playTone(900, .06, 'square', .1);
       setTimeout(() => playTone(900, .06, 'square', .08), 100);
@@ -10329,9 +10329,9 @@ const useSound = () => {
   }, [playTone]);
 
   // Streak: fanfare that gets more epic with higher streaks
-  const streak = useCallback(count => {
-    const base = [523, 659, 784, 1047];
-    const c = count || 3;
+  var streak = useCallback(count => {
+    var base = [523, 659, 784, 1047];
+    var c = count || 3;
     if (c >= 7) {
       base.push(1319, 1568);
     } else if (c >= 5) {
@@ -10343,20 +10343,20 @@ const useSound = () => {
   }, [playTone, playNoise, playChord]);
 
   // Round Start: game show intro stinger
-  const roundStart = useCallback(() => {
-    const notes = [262, 330, 392, 523, 392, 523, 659];
+  var roundStart = useCallback(() => {
+    var notes = [262, 330, 392, 523, 392, 523, 659];
     notes.forEach((f, i) => setTimeout(() => playTone(f, .2, 'triangle', .14), i * 120));
     setTimeout(() => playChord([523, 659, 784], .4, 'triangle', .06), notes.length * 120);
     setTimeout(() => playNoise(.1, .04, 6000), 100);
   }, [playTone, playChord, playNoise]);
 
   // Game Over: adapts to performance
-  const gameOver = useCallback(scorePct => {
-    const pct = typeof scorePct === 'number' ? scorePct : 0.5;
+  var gameOver = useCallback(scorePct => {
+    var pct = typeof scorePct === 'number' ? scorePct : 0.5;
     if (pct >= 0.8) {
-      const mel = [523, 523, 523, 659, 784, 659, 784, 1047];
-      const ts = [0, 100, 200, 350, 500, 650, 800, 1000];
-      const ds = [.08, .08, .15, .15, .15, .15, .15, .4];
+      var mel = [523, 523, 523, 659, 784, 659, 784, 1047];
+      var ts = [0, 100, 200, 350, 500, 650, 800, 1000];
+      var ds = [.08, .08, .15, .15, .15, .15, .15, .4];
       mel.forEach((f, i) => setTimeout(() => playTone(f, ds[i], 'triangle', .15), ts[i]));
       setTimeout(() => {
         playChord([523, 659, 784, 1047], .6, 'sine', .05);
@@ -10370,23 +10370,23 @@ const useSound = () => {
   }, [playTone, playChord, playNoise]);
 
   // Click: snappy UI click
-  const click = useCallback(() => {
+  var click = useCallback(() => {
     playTone(800, .03, 'sine', .06);
     playNoise(.02, .03, 5000);
   }, [playTone, playNoise]);
 
   // Lifeline: power-up whoosh
-  const lifeline = useCallback(() => {
+  var lifeline = useCallback(() => {
     if (!sfxEnabled) return;
     try {
-      const ctx = getCtx();
-      const osc = ctx.createOscillator(),
+      var ctx = getCtx();
+      var osc = ctx.createOscillator(),
         g = ctx.createGain();
       osc.type = 'sine';
       osc.frequency.setValueAtTime(300, ctx.currentTime);
       osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.25);
       osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.4);
-      const v = 0.12 * sfxVolume;
+      var v = 0.12 * sfxVolume;
       g.gain.setValueAtTime(v, ctx.currentTime);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
       osc.connect(g);
@@ -10398,19 +10398,19 @@ const useSound = () => {
   }, [getCtx, sfxEnabled, sfxVolume, playNoise]);
 
   // Time Warning: urgent alarm at 5 seconds
-  const timeWarning = useCallback(() => {
+  var timeWarning = useCallback(() => {
     [800, 1000, 800, 1000].forEach((f, i) => setTimeout(() => playTone(f, .08, 'square', .1), i * 80));
   }, [playTone]);
 
   // Time Up: buzzer
-  const timeUp = useCallback(() => {
+  var timeUp = useCallback(() => {
     playTone(200, .5, 'sawtooth', .12);
     setTimeout(() => playTone(150, .5, 'sawtooth', .08), 100);
     setTimeout(() => playNoise(.15, .06, 1000), 50);
   }, [playTone, playNoise]);
 
   // Perfect Round: confetti celebration
-  const perfectRound = useCallback(() => {
+  var perfectRound = useCallback(() => {
     [523, 659, 784, 1047, 1319, 1568].forEach((f, i) => setTimeout(() => {
       playTone(f, .2, 'sine', .12);
       if (i >= 3) playNoise(.04, .03, 10000);
@@ -10419,14 +10419,14 @@ const useSound = () => {
   }, [playTone, playNoise, playChord]);
 
   // Player Select: friendly pop
-  const playerSelect = useCallback(() => {
+  var playerSelect = useCallback(() => {
     playTone(440, .08, 'sine', .1);
     setTimeout(() => playTone(660, .12, 'sine', .12), 60);
     playNoise(.03, .03, 6000);
   }, [playTone, playNoise]);
 
   // Badge Earned: achievement unlock chime
-  const badgeEarned = useCallback(() => {
+  var badgeEarned = useCallback(() => {
     [523, 659, 784, 1047, 1319].forEach((f, i) => setTimeout(() => playTone(f, .15, 'sine', .12), i * 90));
     setTimeout(() => {
       playChord([784, 1047, 1319], .5, 'sine', .05);
@@ -10435,9 +10435,9 @@ const useSound = () => {
   }, [playTone, playChord, playNoise]);
 
   // ── Background Music: difficulty-adaptive ambient tracks ──
-  const currentTier = useRef('chill'); // 'chill','medium','intense','legendary','blitz'
+  var currentTier = useRef('chill'); // 'chill','medium','intense','legendary','blitz'
 
-  const MUSIC_TIERS = {
+  var MUSIC_TIERS = {
     chill: {
       bpm: 85,
       bass: [131, 147, 165, 147, 131, 147, 165, 147],
@@ -10494,9 +10494,9 @@ const useSound = () => {
       padVol: 0.006
     }
   };
-  const setMusicTier = useCallback(tier => {
+  var setMusicTier = useCallback(tier => {
     if (!MUSIC_TIERS[tier]) return;
-    const wasPlaying = musicPlaying.current;
+    var wasPlaying = musicPlaying.current;
     currentTier.current = tier;
     if (wasPlaying) {
       // Restart with new tier — stopMusic then startMusic will be called
@@ -10511,21 +10511,21 @@ const useSound = () => {
           musicPlaying.current = false; // ensure clean
           // Re-trigger start
           try {
-            const ctx = getCtx();
+            var ctx = getCtx();
             musicPlaying.current = true;
             if (musicGain.current) musicGain.current.gain.value = musicVolume;
-            const tier2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
-            const beatLen = 60 / tier2.bpm;
-            const loopLen = tier2.bass.length * beatLen;
-            const scheduleLoop2 = () => {
+            var tier2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
+            var beatLen = 60 / tier2.bpm;
+            var loopLen = tier2.bass.length * beatLen;
+            var scheduleLoop2 = () => {
               if (!musicPlaying.current) return;
-              const ctx2 = audioCtx.current;
+              var ctx2 = audioCtx.current;
               if (!ctx2 || !musicGain.current) return;
-              const now = ctx2.currentTime;
+              var now = ctx2.currentTime;
               tier2.bass.forEach((freq, i) => {
-                const t = now + i * beatLen;
+                var t = now + i * beatLen;
                 try {
-                  const bOsc = ctx2.createOscillator(),
+                  var bOsc = ctx2.createOscillator(),
                     bG = ctx2.createGain();
                   bOsc.type = tier2.bassType;
                   bOsc.frequency.value = freq;
@@ -10536,7 +10536,7 @@ const useSound = () => {
                   bOsc.start(t);
                   bOsc.stop(t + beatLen);
                   if (tier2.chords[i]) tier2.chords[i].forEach(cf => {
-                    const cOsc = ctx2.createOscillator(),
+                    var cOsc = ctx2.createOscillator(),
                       cG = ctx2.createGain();
                     cOsc.type = tier2.chordType;
                     cOsc.frequency.value = cf;
@@ -10551,7 +10551,7 @@ const useSound = () => {
                   // Ambient pad layer
                   if (i === 0 && tier2.padFreqs) {
                     tier2.padFreqs.forEach(pf => {
-                      const pOsc = ctx2.createOscillator(),
+                      var pOsc = ctx2.createOscillator(),
                         pG = ctx2.createGain();
                       pOsc.type = 'sine';
                       pOsc.frequency.value = pf;
@@ -10574,25 +10574,25 @@ const useSound = () => {
       }, 80);
     }
   }, [getCtx, musicVolume]);
-  const startMusic = useCallback(tier => {
+  var startMusic = useCallback(tier => {
     if (musicPlaying.current || !musicEnabled) return;
     if (tier) currentTier.current = tier;
     try {
-      const ctx = getCtx();
+      var ctx = getCtx();
       musicPlaying.current = true;
       if (musicGain.current) musicGain.current.gain.value = musicVolume;
-      const t2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
-      const beatLen = 60 / t2.bpm;
-      const loopLen = t2.bass.length * beatLen;
-      const scheduleLoop = () => {
+      var t2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
+      var beatLen = 60 / t2.bpm;
+      var loopLen = t2.bass.length * beatLen;
+      var scheduleLoop = () => {
         if (!musicPlaying.current) return;
-        const ctx2 = audioCtx.current;
+        var ctx2 = audioCtx.current;
         if (!ctx2 || !musicGain.current) return;
-        const now = ctx2.currentTime;
+        var now = ctx2.currentTime;
         t2.bass.forEach((freq, i) => {
-          const t = now + i * beatLen;
+          var t = now + i * beatLen;
           try {
-            const bOsc = ctx2.createOscillator(),
+            var bOsc = ctx2.createOscillator(),
               bG = ctx2.createGain();
             bOsc.type = t2.bassType;
             bOsc.frequency.value = freq;
@@ -10603,7 +10603,7 @@ const useSound = () => {
             bOsc.start(t);
             bOsc.stop(t + beatLen);
             if (t2.chords[i]) t2.chords[i].forEach(cf => {
-              const cOsc = ctx2.createOscillator(),
+              var cOsc = ctx2.createOscillator(),
                 cG = ctx2.createGain();
               cOsc.type = t2.chordType;
               cOsc.frequency.value = cf;
@@ -10617,7 +10617,7 @@ const useSound = () => {
             });
             if (i === 0 && t2.padFreqs) {
               t2.padFreqs.forEach(pf => {
-                const pOsc = ctx2.createOscillator(),
+                var pOsc = ctx2.createOscillator(),
                   pG = ctx2.createGain();
                 pOsc.type = 'sine';
                 pOsc.frequency.value = pf;
@@ -10637,7 +10637,7 @@ const useSound = () => {
       scheduleLoop();
     } catch (e) {}
   }, [getCtx, musicEnabled, musicVolume]);
-  const stopMusic = useCallback(() => {
+  var stopMusic = useCallback(() => {
     musicPlaying.current = false;
     currentTier.current = 'chill';
     if (musicTimer.current) {
@@ -10653,25 +10653,25 @@ const useSound = () => {
   }, [musicEnabled, startMusic, stopMusic]);
 
   // Challenge mode SFX
-  const blitzCorrect = useCallback(() => {
+  var blitzCorrect = useCallback(() => {
     playTone(784, .06, 'sine', .2);
     setTimeout(() => playTone(1047, .08, 'sine', .2), 50);
     playNoise(.03, .04, 10000);
   }, [playTone, playNoise]);
-  const blitzWrong = useCallback(() => {
+  var blitzWrong = useCallback(() => {
     playTone(200, .15, 'sawtooth', .1);
   }, [playTone]);
-  const blitzTick = useCallback(() => {
+  var blitzTick = useCallback(() => {
     playTone(1200, .03, 'square', .06);
   }, [playTone]);
-  const challengeWin = useCallback(() => {
+  var challengeWin = useCallback(() => {
     [523, 659, 784, 1047, 1319].forEach((f, i) => setTimeout(() => {
       playTone(f, .2, 'sine', .15);
       if (i >= 2) playNoise(.04, .03, 10000);
     }, i * 90));
     setTimeout(() => playChord([784, 1047, 1319, 1568], .6, 'sine', .05), 500);
   }, [playTone, playNoise, playChord]);
-  const challengeStart = useCallback(() => {
+  var challengeStart = useCallback(() => {
     playNoise(.08, .06, 3000);
     [392, 494, 587, 784].forEach((f, i) => setTimeout(() => playTone(f, .15, 'triangle', .14), i * 100));
     setTimeout(() => playChord([587, 784, 988], .3, 'triangle', .06), 450);
@@ -10712,25 +10712,25 @@ const useSound = () => {
 };
 
 // ─── Voice / Text-to-Speech ──────────────────────────────────────────────────
-const useSpeech = () => {
-  const voices = useRef([]);
-  const selectedVoice = useRef(null);
-  const enabled = useRef(true);
-  const speaking = useRef(false);
-  const queue = useRef([]);
-  const [voiceList, setVoiceList] = useState([]);
-  const [voiceName, setVoiceName] = useState('');
-  const [voiceEnabled, setVoiceEnabled] = useState(true);
-  const [pitch, setPitch] = useState(1.05);
-  const [rate, setRate] = useState(1.08);
-  const loadVoices = useCallback(() => {
-    const v = window.speechSynthesis?.getVoices() || [];
+var useSpeech = () => {
+  var voices = useRef([]);
+  var selectedVoice = useRef(null);
+  var enabled = useRef(true);
+  var speaking = useRef(false);
+  var queue = useRef([]);
+  var [voiceList, setVoiceList] = useState([]);
+  var [voiceName, setVoiceName] = useState('');
+  var [voiceEnabled, setVoiceEnabled] = useState(true);
+  var [pitch, setPitch] = useState(1.05);
+  var [rate, setRate] = useState(1.08);
+  var loadVoices = useCallback(() => {
+    var v = window.speechSynthesis?.getVoices() || [];
     voices.current = v;
-    const english = v.filter(x => x.lang.startsWith('en'));
+    var english = v.filter(x => x.lang.startsWith('en'));
     setVoiceList(english.length > 0 ? english : v.slice(0, 20));
     if (!selectedVoice.current && english.length > 0) {
       // Prefer good-sounding voices: Edge neural voices, then Google, then any English
-      const pref = english.find(x => /neural|natural|online|wavenet/i.test(x.name)) || english.find(x => /google|microsoft|samantha|daniel|karen|moira|fiona|alex/i.test(x.name)) || english.find(x => /\ben[-_](US|GB|AU)/i.test(x.lang)) || english[0];
+      var pref = english.find(x => /neural|natural|online|wavenet/i.test(x.name)) || english.find(x => /google|microsoft|samantha|daniel|karen|moira|fiona|alex/i.test(x.name)) || english.find(x => /\ben[-_](US|GB|AU)/i.test(x.lang)) || english[0];
       selectedVoice.current = pref;
       setVoiceName(pref.name);
     }
@@ -10743,41 +10743,41 @@ const useSpeech = () => {
       window.speechSynthesis.onvoiceschanged = null;
     };
   }, [loadVoices]);
-  const cancel = useCallback(() => {
+  var cancel = useCallback(() => {
     queue.current = [];
     speaking.current = false;
     window.speechSynthesis?.cancel();
   }, []);
-  const processQueue = useCallback(() => {
+  var processQueue = useCallback(() => {
     if (speaking.current || queue.current.length === 0) return;
     if (!enabled.current) {
       // Fire any pending onDone callbacks even when disabled
-      const skipped = queue.current.splice(0);
+      var skipped = queue.current.splice(0);
       skipped.forEach(item => {
         if (item.opts.onDone) item.opts.onDone();
       });
       return;
     }
-    const {
+    var {
       text,
       opts
     } = queue.current.shift();
-    const synth = window.speechSynthesis;
+    var synth = window.speechSynthesis;
     if (!synth) {
       if (opts.onDone) opts.onDone();
       return;
     }
-    const utter = new SpeechSynthesisUtterance(text);
+    var utter = new SpeechSynthesisUtterance(text);
     if (selectedVoice.current) utter.voice = selectedVoice.current;
     utter.pitch = opts.pitch ?? pitch;
     utter.rate = opts.rate ?? rate;
     utter.volume = opts.volume ?? 0.9;
     speaking.current = true;
     // Chrome bug: synthesis can pause if page isn't focused — keep-alive
-    const keepAlive = setInterval(() => {
+    var keepAlive = setInterval(() => {
       if (synth.speaking) synth.resume();
     }, 5000);
-    const finish = () => {
+    var finish = () => {
       clearInterval(keepAlive);
       speaking.current = false;
       if (opts.onDone) opts.onDone();
@@ -10787,7 +10787,7 @@ const useSpeech = () => {
     utter.onerror = finish;
     synth.speak(utter);
   }, [pitch, rate]);
-  const speak = useCallback((text, opts = {}) => {
+  var speak = useCallback((text, opts = {}) => {
     if (!window.speechSynthesis || !text) {
       if (opts.onDone) opts.onDone();
       return;
@@ -10803,27 +10803,27 @@ const useSpeech = () => {
     processQueue();
   }, [processQueue]);
   // Speak text then call callback when done (convenience wrapper)
-  const speakThen = useCallback((text, opts = {}, callback) => {
+  var speakThen = useCallback((text, opts = {}, callback) => {
     speak(text, {
       ...opts,
       onDone: callback
     });
   }, [speak]);
   // Estimate speech duration for fallback timing (words / rate * ms)
-  const estimateMs = useCallback(text => {
+  var estimateMs = useCallback(text => {
     if (!enabled.current) return 2500;
-    const words = (text || '').split(/\s+/).length;
+    var words = (text || '').split(/\s+/).length;
     return Math.max(2500, Math.ceil(words / (2.5 * rate) * 1000) + 800);
   }, [rate]);
-  const setVoice = useCallback(name => {
-    const v = voices.current.find(x => x.name === name);
+  var setVoice = useCallback(name => {
+    var v = voices.current.find(x => x.name === name);
     if (v) {
       selectedVoice.current = v;
       setVoiceName(name);
     }
   }, []);
-  const toggleEnabled = useCallback(() => {
-    const next = !enabled.current;
+  var toggleEnabled = useCallback(() => {
+    var next = !enabled.current;
     enabled.current = next;
     setVoiceEnabled(next);
     if (!next) cancel();
@@ -10846,32 +10846,32 @@ const useSpeech = () => {
 };
 
 // ─── localStorage Hook ────────────────────────────────────────────────────────
-const useLocalStorage = (key, initialValue) => {
-  const [storedValue, setStoredValue] = useState(() => {
+var useLocalStorage = (key, initialValue) => {
+  var [storedValue, setStoredValue] = useState(() => {
     try {
-      const item = window.localStorage.getItem(key);
+      var item = window.localStorage.getItem(key);
       return item ? JSON.parse(item) : initialValue;
     } catch (e) {
       return initialValue;
     }
   });
   // Re-read from localStorage when key changes (e.g. player switch)
-  const prevKey = useRef(key);
-  const initRef = useRef(initialValue);
+  var prevKey = useRef(key);
+  var initRef = useRef(initialValue);
   useEffect(() => {
     if (prevKey.current !== key) {
       prevKey.current = key;
       try {
-        const item = window.localStorage.getItem(key);
+        var item = window.localStorage.getItem(key);
         setStoredValue(item ? JSON.parse(item) : initRef.current);
       } catch (e) {
         setStoredValue(initRef.current);
       }
     }
   }, [key]);
-  const setValue = useCallback(value => {
+  var setValue = useCallback(value => {
     setStoredValue(prev => {
-      const next = typeof value === 'function' ? value(prev) : value;
+      var next = typeof value === 'function' ? value(prev) : value;
       try {
         window.localStorage.setItem(key, JSON.stringify(next));
       } catch (e) {}
@@ -10882,7 +10882,7 @@ const useLocalStorage = (key, initialValue) => {
 };
 
 // ─── Player Roster ───────────────────────────────────────────────────────────
-const PLAYER_LIST = [{
+var PLAYER_LIST = [{
   id: 'henry',
   name: 'Henry',
   emoji: '🦁',
@@ -10915,9 +10915,9 @@ const PLAYER_LIST = [{
 }];
 
 // ─── Player Profile Hook ──────────────────────────────────────────────────────
-const usePlayerProfile = playerId => {
-  const key = playerId ? `geobee_player_${playerId}` : 'geobee_player';
-  const [profile, setProfile] = useLocalStorage(key, {
+var usePlayerProfile = playerId => {
+  var key = playerId ? `geobee_player_${playerId}` : 'geobee_player';
+  var [profile, setProfile] = useLocalStorage(key, {
     gamesPlayed: 0,
     totalAnswered: 0,
     totalCorrect: 0,
@@ -10955,15 +10955,15 @@ const usePlayerProfile = playerId => {
     // consecutive correct in survival
     typeCorrect: {} // correct by question type (flag, silhouette, food, scramble, landmark_clue)
   });
-  const recordAnswer = useCallback((cat, isCorrect, timeRemaining, extraMeta = {}) => {
+  var recordAnswer = useCallback((cat, isCorrect, timeRemaining, extraMeta = {}) => {
     setProfile(p => {
-      const newCatStreak = {
+      var newCatStreak = {
         ...(p.catStreak || {})
       };
-      const newBestCatStreak = {
+      var newBestCatStreak = {
         ...(p.bestCatStreak || {})
       };
-      const newTypeCorrect = {
+      var newTypeCorrect = {
         ...(p.typeCorrect || {})
       };
       if (isCorrect) {
@@ -10997,10 +10997,10 @@ const usePlayerProfile = playerId => {
       };
     });
   }, [setProfile]);
-  const recordGame = useCallback((score, correct, total, bestStrk, extraMeta = {}) => {
-    const hour = new Date().getHours();
+  var recordGame = useCallback((score, correct, total, bestStrk, extraMeta = {}) => {
+    var hour = new Date().getHours();
     setProfile(p => {
-      const history = [...(p.gameHistory || []), {
+      var history = [...(p.gameHistory || []), {
         score,
         correct,
         total,
@@ -11024,13 +11024,13 @@ const usePlayerProfile = playerId => {
       };
     });
   }, [setProfile]);
-  const recordPerfectRound = useCallback(() => {
+  var recordPerfectRound = useCallback(() => {
     setProfile(p => ({
       ...p,
       perfectRounds: p.perfectRounds + 1
     }));
   }, [setProfile]);
-  const resetProfile = useCallback(() => {
+  var resetProfile = useCallback(() => {
     setProfile({
       gamesPlayed: 0,
       totalAnswered: 0,
@@ -11060,7 +11060,7 @@ const usePlayerProfile = playerId => {
       perfectSurvivalRun: 0,
       typeCorrect: {}
     });
-    const suffix = playerId ? `_${playerId}` : '';
+    var suffix = playerId ? `_${playerId}` : '';
     try {
       window.localStorage.removeItem('geobee_daily_streak' + suffix);
       window.localStorage.removeItem('geobee_badges' + suffix);
@@ -11077,23 +11077,23 @@ const usePlayerProfile = playerId => {
 };
 
 // ─── Daily Streak Hook ────────────────────────────────────────────────────────
-const useDailyStreak = playerId => {
-  const key = playerId ? `geobee_daily_streak_${playerId}` : 'geobee_daily_streak';
-  const [streak, setStreak] = useLocalStorage(key, {
+var useDailyStreak = playerId => {
+  var key = playerId ? `geobee_daily_streak_${playerId}` : 'geobee_daily_streak';
+  var [streak, setStreak] = useLocalStorage(key, {
     current: 0,
     best: 0,
     lastPlayDate: null,
     milestonesHit: []
   });
-  const checkIn = useCallback(() => {
-    const today = new Date().toISOString().slice(0, 10);
-    let newMilestone = null;
+  var checkIn = useCallback(() => {
+    var today = new Date().toISOString().slice(0, 10);
+    var newMilestone = null;
     setStreak(s => {
       if (s.lastPlayDate === today) return s;
-      const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-      const newCurrent = s.lastPlayDate === yesterday ? s.current + 1 : 1;
-      const newBest = Math.max(s.best, newCurrent);
-      const milestone = STREAK_MILESTONES.find(m => m.days === newCurrent && !s.milestonesHit.includes(m.days));
+      var yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+      var newCurrent = s.lastPlayDate === yesterday ? s.current + 1 : 1;
+      var newBest = Math.max(s.best, newCurrent);
+      var milestone = STREAK_MILESTONES.find(m => m.days === newCurrent && !s.milestonesHit.includes(m.days));
       if (milestone) newMilestone = milestone;
       return {
         current: newCurrent,
@@ -11104,8 +11104,8 @@ const useDailyStreak = playerId => {
     });
     return newMilestone;
   }, [setStreak]);
-  const getBonus = useCallback(() => {
-    const milestone = [...STREAK_MILESTONES].reverse().find(m => streak.current >= m.days);
+  var getBonus = useCallback(() => {
+    var milestone = [...STREAK_MILESTONES].reverse().find(m => streak.current >= m.days);
     return milestone ? milestone.bonus : 0;
   }, [streak]);
   return {
@@ -11116,11 +11116,11 @@ const useDailyStreak = playerId => {
 };
 
 // ─── Badges Hook ──────────────────────────────────────────────────────────────
-const useBadges = playerId => {
-  const key = playerId ? `geobee_badges_${playerId}` : 'geobee_badges';
-  const [earned, setEarned] = useLocalStorage(key, []);
-  const checkBadges = useCallback(profileData => {
-    const newBadges = [];
+var useBadges = playerId => {
+  var key = playerId ? `geobee_badges_${playerId}` : 'geobee_badges';
+  var [earned, setEarned] = useLocalStorage(key, []);
+  var checkBadges = useCallback(profileData => {
+    var newBadges = [];
     ALL_BADGE_DEFINITIONS.forEach(badge => {
       if (!earned.includes(badge.id) && badge.check(profileData)) {
         newBadges.push(badge);
@@ -11138,7 +11138,7 @@ const useBadges = playerId => {
 };
 
 // ─── Country Coordinates for World Map (simplified Mercator, viewBox 0 0 1000 500) ─
-const COUNTRY_COORDS = {
+var COUNTRY_COORDS = {
   // North America
   US: [175, 185, 22],
   CA: [170, 130, 24],
@@ -11311,7 +11311,7 @@ const COUNTRY_COORDS = {
 };
 
 // Continent outline paths (simplified shapes for background context)
-const CONTINENT_OUTLINES = {
+var CONTINENT_OUTLINES = {
   "North America": "M80,90 L220,80 L230,140 L200,175 L180,225 L160,240 L130,260 L105,250 L100,210 L85,190 L80,150 Z",
   "South America": "M175,260 L210,255 L250,260 L290,285 L290,350 L270,430 L240,470 L215,450 L200,390 L185,340 L175,290 Z",
   "Europe": "M400,85 L540,80 L555,130 L530,170 L495,190 L445,185 L410,175 L415,145 L400,120 Z",
@@ -11321,14 +11321,14 @@ const CONTINENT_OUTLINES = {
 };
 
 // ─── Map Progress Hook ────────────────────────────────────────────────────────
-const useMapProgress = playerId => {
-  const key = playerId ? `geobee_map_${playerId}` : 'geobee_map';
-  const [discovered, setDiscovered] = useLocalStorage(key, []);
-  const discoverCountries = useCallback(questionIdx => {
-    const codes = COUNTRY_TAG_MAP[questionIdx];
+var useMapProgress = playerId => {
+  var key = playerId ? `geobee_map_${playerId}` : 'geobee_map';
+  var [discovered, setDiscovered] = useLocalStorage(key, []);
+  var discoverCountries = useCallback(questionIdx => {
+    var codes = COUNTRY_TAG_MAP[questionIdx];
     if (!codes) return;
     setDiscovered(prev => {
-      const newCodes = codes.filter(c => !prev.includes(c) && ALL_COUNTRY_CODES.has(c));
+      var newCodes = codes.filter(c => !prev.includes(c) && ALL_COUNTRY_CODES.has(c));
       return newCodes.length > 0 ? [...prev, ...newCodes] : prev;
     });
   }, [setDiscovered]);
@@ -11341,30 +11341,30 @@ const useMapProgress = playerId => {
 // ─── Main Game Component ─────────────────────────────────────────────────────
 function GeoBeeGame() {
   // ─── Active Player Selection ────────────────────────────────────────
-  const [activePlayerId, setActivePlayerId] = useLocalStorage('geobee_active_player', null);
-  const activePlayerInfo = PLAYER_LIST.find(p => p.id === activePlayerId) || null;
-  const [screen, setScreen] = useState(activePlayerId ? 'title' : 'playerSelect');
-  const [gameQuestions, setGameQuestions] = useState([]);
-  const [qIndex, setQIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [streak, setStreak] = useState(0);
-  const [bestStreak, setBestStreak] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [timer, setTimer] = useState(TIMER_SECONDS);
-  const [timerActive, setTimerActive] = useState(false);
-  const [showSetup, setShowSetup] = useState(true);
-  const [history, setHistory] = useState([]);
-  const [currentRound, setCurrentRound] = useState(0);
-  const [setupText, setSetupText] = useState('');
-  const [hostText, setHostText] = useState('');
-  const sound = useSound();
-  const speech = useSpeech();
-  const [showVoiceSettings, setShowVoiceSettings] = useState(false);
+  var [activePlayerId, setActivePlayerId] = useLocalStorage('geobee_active_player', null);
+  var activePlayerInfo = PLAYER_LIST.find(p => p.id === activePlayerId) || null;
+  var [screen, setScreen] = useState(activePlayerId ? 'title' : 'playerSelect');
+  var [gameQuestions, setGameQuestions] = useState([]);
+  var [qIndex, setQIndex] = useState(0);
+  var [score, setScore] = useState(0);
+  var [streak, setStreak] = useState(0);
+  var [bestStreak, setBestStreak] = useState(0);
+  var [selected, setSelected] = useState(null);
+  var [timer, setTimer] = useState(TIMER_SECONDS);
+  var [timerActive, setTimerActive] = useState(false);
+  var [showSetup, setShowSetup] = useState(true);
+  var [history, setHistory] = useState([]);
+  var [currentRound, setCurrentRound] = useState(0);
+  var [setupText, setSetupText] = useState('');
+  var [hostText, setHostText] = useState('');
+  var sound = useSound();
+  var speech = useSpeech();
+  var [showVoiceSettings, setShowVoiceSettings] = useState(false);
   // ─── Game Mode State ─────────────────────────────────────────────────
-  const [gameMode, setGameMode] = useState('classic'); // 'classic','survival','multiplayer','duel'
-  const [survivalLives, setSurvivalLives] = useState(3);
+  var [gameMode, setGameMode] = useState('classic'); // 'classic','survival','multiplayer','duel'
+  var [survivalLives, setSurvivalLives] = useState(3);
   // Multiplayer state
-  const [players, setPlayers] = useState([{
+  var [players, setPlayers] = useState([{
     name: 'Player 1',
     score: 0,
     correct: 0,
@@ -11375,14 +11375,14 @@ function GeoBeeGame() {
     correct: 0,
     history: []
   }]);
-  const [currentPlayer, setCurrentPlayer] = useState(0);
-  const [mpNames, setMpNames] = useState(['Player 1', 'Player 2']);
+  var [currentPlayer, setCurrentPlayer] = useState(0);
+  var [mpNames, setMpNames] = useState(['Player 1', 'Player 2']);
   // ─── Duel Mode State ──────────────────────────────────────────────────
-  const DUEL_COLORS = ['#3498db', '#e74c3c', '#2ecc71'];
-  const DUEL_KEYS = ['Q', 'W', 'E'];
-  const DUEL_QS = 15;
-  const [duelNames, setDuelNames] = useState(['Player 1', 'Player 2', 'Player 3']);
-  const [duelPlayers, setDuelPlayers] = useState([{
+  var DUEL_COLORS = ['#3498db', '#e74c3c', '#2ecc71'];
+  var DUEL_KEYS = ['Q', 'W', 'E'];
+  var DUEL_QS = 15;
+  var [duelNames, setDuelNames] = useState(['Player 1', 'Player 2', 'Player 3']);
+  var [duelPlayers, setDuelPlayers] = useState([{
     name: 'Player 1',
     score: 0,
     correct: 0,
@@ -11401,88 +11401,88 @@ function GeoBeeGame() {
     wrong: 0,
     steals: 0
   }]);
-  const [duelPhase, setDuelPhase] = useState('reading'); // 'reading','buzzer','answering','steal','result'
-  const [buzzedPlayer, setBuzzedPlayer] = useState(null);
-  const [buzzLocked, setBuzzLocked] = useState(false);
-  const [stealQueue, setStealQueue] = useState([]); // players who can still steal
-  const [duelQIndex, setDuelQIndex] = useState(0);
-  const [buzzTimerActive, setBuzzTimerActive] = useState(false);
-  const [buzzTimer, setBuzzTimer] = useState(8); // seconds to buzz in
-  const [answerTimer, setAnswerTimer] = useState(10); // seconds to answer after buzzing
-  const [answerTimerActive, setAnswerTimerActive] = useState(false);
-  const [duelRoundLabel, setDuelRoundLabel] = useState('');
+  var [duelPhase, setDuelPhase] = useState('reading'); // 'reading','buzzer','answering','steal','result'
+  var [buzzedPlayer, setBuzzedPlayer] = useState(null);
+  var [buzzLocked, setBuzzLocked] = useState(false);
+  var [stealQueue, setStealQueue] = useState([]); // players who can still steal
+  var [duelQIndex, setDuelQIndex] = useState(0);
+  var [buzzTimerActive, setBuzzTimerActive] = useState(false);
+  var [buzzTimer, setBuzzTimer] = useState(8); // seconds to buzz in
+  var [answerTimer, setAnswerTimer] = useState(10); // seconds to answer after buzzing
+  var [answerTimerActive, setAnswerTimerActive] = useState(false);
+  var [duelRoundLabel, setDuelRoundLabel] = useState('');
   // ─── Challenge Mode State ─────────────────────────────────────────────
-  const [challengeType, setChallengeType] = useState(null); // 'borders' | 'blitz'
-  const [challengeData, setChallengeData] = useState(null); // current challenge info
-  const [borderGuesses, setBorderGuesses] = useState([]); // correct guesses so far
-  const [borderInput, setBorderInput] = useState('');
-  const [borderTimer, setBorderTimer] = useState(60);
-  const [borderTimerActive, setBorderTimerActive] = useState(false);
-  const [borderShake, setBorderShake] = useState(false);
-  const [borderHint, setBorderHint] = useState(false);
-  const [blitzQs, setBlitzQs] = useState([]); // shuffled blitz questions
-  const [blitzIdx, setBlitzIdx] = useState(0);
-  const [blitzScore, setBlitzScore] = useState(0);
-  const [blitzTimer, setBlitzTimer] = useState(60);
-  const [blitzTimerActive, setBlitzTimerActive] = useState(false);
-  const [blitzStreak, setBlitzStreak] = useState(0);
-  const [blitzBestStreak, setBlitzBestStreak] = useState(0);
-  const [blitzSelected, setBlitzSelected] = useState(null);
-  const [blitzResults, setBlitzResults] = useState([]);
-  const blitzOptionsRef = useRef([]);
+  var [challengeType, setChallengeType] = useState(null); // 'borders' | 'blitz'
+  var [challengeData, setChallengeData] = useState(null); // current challenge info
+  var [borderGuesses, setBorderGuesses] = useState([]); // correct guesses so far
+  var [borderInput, setBorderInput] = useState('');
+  var [borderTimer, setBorderTimer] = useState(60);
+  var [borderTimerActive, setBorderTimerActive] = useState(false);
+  var [borderShake, setBorderShake] = useState(false);
+  var [borderHint, setBorderHint] = useState(false);
+  var [blitzQs, setBlitzQs] = useState([]); // shuffled blitz questions
+  var [blitzIdx, setBlitzIdx] = useState(0);
+  var [blitzScore, setBlitzScore] = useState(0);
+  var [blitzTimer, setBlitzTimer] = useState(60);
+  var [blitzTimerActive, setBlitzTimerActive] = useState(false);
+  var [blitzStreak, setBlitzStreak] = useState(0);
+  var [blitzBestStreak, setBlitzBestStreak] = useState(0);
+  var [blitzSelected, setBlitzSelected] = useState(null);
+  var [blitzResults, setBlitzResults] = useState([]);
+  var blitzOptionsRef = useRef([]);
   // ─── Commentator State ──────────────────────────────────────────────
-  const [commentatorMsg, setCommentatorMsg] = useState(null);
-  const commentatorTimer = useRef(null);
-  const lastWrongStreak = useRef(0);
+  var [commentatorMsg, setCommentatorMsg] = useState(null);
+  var commentatorTimer = useRef(null);
+  var lastWrongStreak = useRef(0);
   // Flag Frenzy state
-  const [flagQs, setFlagQs] = useState([]);
-  const [flagIdx, setFlagIdx] = useState(0);
-  const [flagScore, setFlagScore] = useState(0);
-  const [flagTimer, setFlagTimer] = useState(45);
-  const [flagTimerActive, setFlagTimerActive] = useState(false);
-  const [flagStreak, setFlagStreak] = useState(0);
-  const [flagBestStreak, setFlagBestStreak] = useState(0);
-  const [flagSelected, setFlagSelected] = useState(null);
-  const [flagResults, setFlagResults] = useState([]);
+  var [flagQs, setFlagQs] = useState([]);
+  var [flagIdx, setFlagIdx] = useState(0);
+  var [flagScore, setFlagScore] = useState(0);
+  var [flagTimer, setFlagTimer] = useState(45);
+  var [flagTimerActive, setFlagTimerActive] = useState(false);
+  var [flagStreak, setFlagStreak] = useState(0);
+  var [flagBestStreak, setFlagBestStreak] = useState(0);
+  var [flagSelected, setFlagSelected] = useState(null);
+  var [flagResults, setFlagResults] = useState([]);
   // Continent Sprint state
-  const [sprintContinent, setSprintContinent] = useState('');
-  const [sprintCountries, setSprintCountries] = useState([]);
-  const [sprintIdx, setSprintIdx] = useState(0);
-  const [sprintScore, setSprintScore] = useState(0);
-  const [sprintTimer, setSprintTimer] = useState(40);
-  const [sprintTimerActive, setSprintTimerActive] = useState(false);
-  const [sprintStreak, setSprintStreak] = useState(0);
-  const [sprintSelected, setSprintSelected] = useState(null);
-  const [sprintResults, setSprintResults] = useState([]);
+  var [sprintContinent, setSprintContinent] = useState('');
+  var [sprintCountries, setSprintCountries] = useState([]);
+  var [sprintIdx, setSprintIdx] = useState(0);
+  var [sprintScore, setSprintScore] = useState(0);
+  var [sprintTimer, setSprintTimer] = useState(40);
+  var [sprintTimerActive, setSprintTimerActive] = useState(false);
+  var [sprintStreak, setSprintStreak] = useState(0);
+  var [sprintSelected, setSprintSelected] = useState(null);
+  var [sprintResults, setSprintResults] = useState([]);
   // Population Showdown state
-  const [popPairs, setPopPairs] = useState([]);
-  const [popIdx, setPopIdx] = useState(0);
-  const [popScore, setPopScore] = useState(0);
-  const [popTimer, setPopTimer] = useState(50);
-  const [popTimerActive, setPopTimerActive] = useState(false);
-  const [popStreak, setPopStreak] = useState(0);
-  const [popBestStreak, setPopBestStreak] = useState(0);
-  const [popSelected, setPopSelected] = useState(null);
-  const [popResults, setPopResults] = useState([]);
+  var [popPairs, setPopPairs] = useState([]);
+  var [popIdx, setPopIdx] = useState(0);
+  var [popScore, setPopScore] = useState(0);
+  var [popTimer, setPopTimer] = useState(50);
+  var [popTimerActive, setPopTimerActive] = useState(false);
+  var [popStreak, setPopStreak] = useState(0);
+  var [popBestStreak, setPopBestStreak] = useState(0);
+  var [popSelected, setPopSelected] = useState(null);
+  var [popResults, setPopResults] = useState([]);
   // Lifelines state
-  const [lifelines, setLifelines] = useState({
+  var [lifelines, setLifelines] = useState({
     fiftyFifty: 1,
     skip: 1,
     extraTime: 1
   });
-  const lifelineTracker = useRef({
+  var lifelineTracker = useRef({
     ff: 0,
     sk: 0,
     et: 0
   }); // tracks usage per game
-  const [hiddenOptions, setHiddenOptions] = useState([]);
-  const [skippedQuestions, setSkippedQuestions] = useState([]);
+  var [hiddenOptions, setHiddenOptions] = useState([]);
+  var [skippedQuestions, setSkippedQuestions] = useState([]);
   // ─── Leaderboard view state ─────────────────────────────────────────
-  const [showLeaderboard, setShowLeaderboard] = useState(false);
+  var [showLeaderboard, setShowLeaderboard] = useState(false);
   // ─── Inject keyframe animation for badge toast ───────────────────────
   useEffect(() => {
     if (document.getElementById('geobee-animations')) return;
-    const style = document.createElement('style');
+    var style = document.createElement('style');
     style.id = 'geobee-animations';
     style.textContent = `
 @keyframes slideDown{from{transform:translateX(-50%) translateY(-100%);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}
@@ -11504,45 +11504,45 @@ function GeoBeeGame() {
     document.head.appendChild(style);
   }, []);
   // ─── New Feature Hooks (player-scoped) ──────────────────────────────
-  const playerProfile = usePlayerProfile(activePlayerId);
-  const dailyStreak = useDailyStreak(activePlayerId);
-  const badges = useBadges(activePlayerId);
-  const mapProgress = useMapProgress(activePlayerId);
-  const [profileTab, setProfileTab] = useState('stats');
-  const [badgeToast, setBadgeToast] = useState(null);
+  var playerProfile = usePlayerProfile(activePlayerId);
+  var dailyStreak = useDailyStreak(activePlayerId);
+  var badges = useBadges(activePlayerId);
+  var mapProgress = useMapProgress(activePlayerId);
+  var [profileTab, setProfileTab] = useState('stats');
+  var [badgeToast, setBadgeToast] = useState(null);
   // Theme and unlocks
-  const [selectedTheme, setSelectedTheme] = useLocalStorage(activePlayerId ? `geobee_theme_${activePlayerId}` : 'geobee_theme', 'space');
-  const [unlockToast, setUnlockToast] = useState(null);
-  const unlockToastTimer = useRef(null);
-  const [survivalTierActive, setSurvivalTierActive] = useState(null);
-  const [mapHovered, setMapHovered] = useState(null);
-  const [streakMilestone, setStreakMilestone] = useState(null);
-  const [roundCorrect, setRoundCorrect] = useState(0);
-  const [showResetConfirm, setShowResetConfirm] = useState(false);
-  const [newBadgesThisGame, setNewBadgesThisGame] = useState([]);
+  var [selectedTheme, setSelectedTheme] = useLocalStorage(activePlayerId ? `geobee_theme_${activePlayerId}` : 'geobee_theme', 'space');
+  var [unlockToast, setUnlockToast] = useState(null);
+  var unlockToastTimer = useRef(null);
+  var [survivalTierActive, setSurvivalTierActive] = useState(null);
+  var [mapHovered, setMapHovered] = useState(null);
+  var [streakMilestone, setStreakMilestone] = useState(null);
+  var [roundCorrect, setRoundCorrect] = useState(0);
+  var [showResetConfirm, setShowResetConfirm] = useState(false);
+  var [newBadgesThisGame, setNewBadgesThisGame] = useState([]);
   // ─── Animation State ───────────────────────────────────────────────────
-  const [screenAnim, setScreenAnim] = useState(''); // 'fadeSlideIn' | ''
-  const [cardShake, setCardShake] = useState(false);
-  const [cardFlash, setCardFlash] = useState(''); // 'correct' | 'wrong' | ''
-  const [confettiPieces, setConfettiPieces] = useState([]);
-  const [showConfetti, setShowConfetti] = useState(false);
-  const confettiTimer = useRef(null);
+  var [screenAnim, setScreenAnim] = useState(''); // 'fadeSlideIn' | ''
+  var [cardShake, setCardShake] = useState(false);
+  var [cardFlash, setCardFlash] = useState(''); // 'correct' | 'wrong' | ''
+  var [confettiPieces, setConfettiPieces] = useState([]);
+  var [showConfetti, setShowConfetti] = useState(false);
+  var confettiTimer = useRef(null);
   // Trigger screen enter animation whenever screen changes
-  const prevScreen = useRef('');
+  var prevScreen = useRef('');
   useEffect(() => {
     if (screen !== prevScreen.current) {
       setScreenAnim('fadeSlideIn');
       prevScreen.current = screen;
-      const t = setTimeout(() => setScreenAnim(''), 500);
+      var t = setTimeout(() => setScreenAnim(''), 500);
       return () => clearTimeout(t);
     }
   }, [screen]);
   // Confetti launcher
-  const launchConfetti = useCallback(() => {
-    const colors = ['#f7b733', '#fc4a1a', '#2ed573', '#3498db', '#9b59b6', '#ff6b81', '#ffa502', '#1e90ff', '#ff4757', '#7bed9f'];
-    const shapes = ['■', '●', '▲', '★', '◆', '♦'];
-    const pieces = [];
-    for (let i = 0; i < 80; i++) {
+  var launchConfetti = useCallback(() => {
+    var colors = ['#f7b733', '#fc4a1a', '#2ed573', '#3498db', '#9b59b6', '#ff6b81', '#ffa502', '#1e90ff', '#ff4757', '#7bed9f'];
+    var shapes = ['■', '●', '▲', '★', '◆', '♦'];
+    var pieces = [];
+    for (var i = 0; i < 80; i++) {
       pieces.push({
         id: i,
         left: Math.random() * 100,
@@ -11564,7 +11564,7 @@ function GeoBeeGame() {
     }, 5000);
   }, []);
   // Shake trigger
-  const triggerShake = useCallback(() => {
+  var triggerShake = useCallback(() => {
     setCardShake(true);
     setCardFlash('wrong');
     setTimeout(() => {
@@ -11573,23 +11573,23 @@ function GeoBeeGame() {
     }, 600);
   }, []);
   // Correct flash trigger
-  const triggerCorrectFlash = useCallback(() => {
+  var triggerCorrectFlash = useCallback(() => {
     setCardFlash('correct');
     setTimeout(() => setCardFlash(''), 700);
   }, []);
-  const toastTimer = useRef(null);
-  const showBadgeToast = useCallback(badge => {
+  var toastTimer = useRef(null);
+  var showBadgeToast = useCallback(badge => {
     setBadgeToast(badge);
     if (toastTimer.current) clearTimeout(toastTimer.current);
     toastTimer.current = setTimeout(() => setBadgeToast(null), 3500);
   }, []);
-  const showUnlockToast = useCallback(message => {
+  var showUnlockToast = useCallback(message => {
     setUnlockToast(message);
     sound.challengeWin();
     if (unlockToastTimer.current) clearTimeout(unlockToastTimer.current);
     unlockToastTimer.current = setTimeout(() => setUnlockToast(null), 4000);
   }, [sound]);
-  const checkUnlocks = useCallback(newBadgeIds => {
+  var checkUnlocks = useCallback(newBadgeIds => {
     if (!newBadgeIds || newBadgeIds.length === 0) return;
 
     // Check challenge unlocks
@@ -11607,7 +11607,7 @@ function GeoBeeGame() {
     });
 
     // Check theme unlocks (based on total badge count AFTER earning)
-    const totalBadges = badges.earned.length;
+    var totalBadges = badges.earned.length;
     Object.values(THEMES).forEach(theme => {
       if (theme.unlockReq > 0 && totalBadges >= theme.unlockReq && totalBadges - newBadgeIds.length < theme.unlockReq) {
         setTimeout(() => showUnlockToast(`${theme.icon} ${theme.name} Theme!`), 4000);
@@ -11616,14 +11616,14 @@ function GeoBeeGame() {
   }, [badges.earned, showUnlockToast]);
 
   // Check badges after profile changes
-  const checkAndShowBadges = useCallback((extraData = {}) => {
-    const data = {
+  var checkAndShowBadges = useCallback((extraData = {}) => {
+    var data = {
       ...playerProfile.profile,
       ...extraData,
       countriesDiscovered: mapProgress.discovered.length,
       dailyStreak: dailyStreak.streak.current
     };
-    const newBadges = badges.checkBadges(data);
+    var newBadges = badges.checkBadges(data);
     if (newBadges.length > 0) {
       showBadgeToast(newBadges[0]);
       sound.badgeEarned();
@@ -11632,28 +11632,31 @@ function GeoBeeGame() {
       checkUnlocks(newBadges.map(b => b.id));
     }
   }, [playerProfile.profile, mapProgress.discovered, dailyStreak.streak, badges, showBadgeToast, checkUnlocks]);
-  const selectGameQuestions = useCallback(mode => {
-    const m = mode || gameMode;
+  var selectGameQuestions = useCallback(mode => {
+    var m = mode || gameMode;
     if (m === 'survival') {
       // Survival: shuffle ALL questions, start easy then ramp up
-      const all = QUESTIONS.map((q, i) => ({
+      var all = QUESTIONS.map((q, i) => ({
         ...q,
         _idx: i
       }));
-      const shuffled = [...all].sort(() => Math.random() - 0.5);
+      var shuffled = [...all].sort(() => Math.random() - 0.5);
       // Sort by difficulty for progressive ramp
       shuffled.sort((a, b) => a.d - b.d);
       // Add some randomness within difficulty bands
-      const banded = [];
-      for (let d = 1; d <= 5; d++) {
-        const band = shuffled.filter(q => q.d === d).sort(() => Math.random() - 0.5);
+      var banded = [];
+      var _loop = function (d) {
+        var band = shuffled.filter(q => q.d === d).sort(() => Math.random() - 0.5);
         banded.push(...band);
+      };
+      for (var d = 1; d <= 5; d++) {
+        _loop(d);
       }
       return banded;
     }
     if (m === 'duel') {
       // Duel: 15 questions, progressive difficulty (3 easy, 4 medium, 4 hard, 2 expert, 2 legendary)
-      const byDiff = {};
+      var byDiff = {};
       QUESTIONS.forEach((q, i) => {
         if (!byDiff[q.d]) byDiff[q.d] = [];
         byDiff[q.d].push({
@@ -11661,22 +11664,22 @@ function GeoBeeGame() {
           _idx: i
         });
       });
-      const duelPicks = [];
-      const duelDist = {
+      var duelPicks = [];
+      var duelDist = {
         1: 3,
         2: 4,
         3: 4,
         4: 2,
         5: 2
       };
-      for (let d = 1; d <= 5; d++) {
-        const pool = (byDiff[d] || []).sort(() => Math.random() - 0.5);
-        duelPicks.push(...pool.slice(0, duelDist[d] || 3));
+      for (var _d = 1; _d <= 5; _d++) {
+        var pool = (byDiff[_d] || []).sort(() => Math.random() - 0.5);
+        duelPicks.push(...pool.slice(0, duelDist[_d] || 3));
       }
       return duelPicks;
     }
     // Classic and Multiplayer: standard 25 questions across 5 rounds
-    const byDifficulty = {};
+    var byDifficulty = {};
     QUESTIONS.forEach((q, i) => {
       if (!byDifficulty[q.d]) byDifficulty[q.d] = [];
       byDifficulty[q.d].push({
@@ -11684,38 +11687,42 @@ function GeoBeeGame() {
         _idx: i
       });
     });
-    const selected = [];
-    const totalRounds = m === 'multiplayer' ? TOTAL_ROUNDS : TOTAL_ROUNDS;
-    const perRound = m === 'multiplayer' ? QUESTIONS_PER_ROUND * 2 : QUESTIONS_PER_ROUND;
-    for (let d = 1; d <= totalRounds; d++) {
-      const pool = byDifficulty[d] || [];
-      const shuffled = [...pool].sort(() => Math.random() - 0.5);
-      const cats = new Set();
-      const picked = [];
-      for (const q of shuffled) {
+    var selected = [];
+    var totalRounds = m === 'multiplayer' ? TOTAL_ROUNDS : TOTAL_ROUNDS;
+    var perRound = m === 'multiplayer' ? QUESTIONS_PER_ROUND * 2 : QUESTIONS_PER_ROUND;
+    for (var _d2 = 1; _d2 <= totalRounds; _d2++) {
+      var _pool = byDifficulty[_d2] || [];
+      var _shuffled = [..._pool].sort(() => Math.random() - 0.5);
+      var cats = new Set();
+      var picked = [];
+      for (var q of _shuffled) {
         if (picked.length >= perRound) break;
         if (!cats.has(q.cat) || picked.length >= perRound - 1) {
           picked.push(q);
           cats.add(q.cat);
         }
       }
-      for (const q of shuffled) {
+      for (var _q of _shuffled) {
         if (picked.length >= perRound) break;
-        if (!picked.includes(q)) picked.push(q);
+        if (!picked.includes(_q)) picked.push(_q);
       }
       selected.push(...picked);
     }
     return selected;
   }, [gameMode]);
 
+  // ─── Current Question (must be above useCallback hooks that reference it) ──
+  var currentQ = gameQuestions[qIndex] || null;
+  var totalQs = gameQuestions.length;
+
   // ─── Lifeline Functions ─────────────────────────────────────────────
-  const useFiftyFifty = useCallback(() => {
+  var useFiftyFifty = useCallback(() => {
     if (lifelines.fiftyFifty <= 0 || selected !== null || !currentQ) return;
     sound.lifeline();
-    const correctIdx = currentQ.a;
-    const wrongIdxs = [0, 1, 2, 3].filter(i => i !== correctIdx);
+    var correctIdx = currentQ.a;
+    var wrongIdxs = [0, 1, 2, 3].filter(i => i !== correctIdx);
     // Shuffle and pick 2 to hide
-    const toHide = wrongIdxs.sort(() => Math.random() - 0.5).slice(0, 2);
+    var toHide = wrongIdxs.sort(() => Math.random() - 0.5).slice(0, 2);
     setHiddenOptions(toHide);
     setLifelines(l => ({
       ...l,
@@ -11727,7 +11734,7 @@ function GeoBeeGame() {
       pitch: 1.1
     });
   }, [lifelines.fiftyFifty, selected, currentQ, sound, speech]);
-  const useSkipQuestion = useCallback(() => {
+  var useSkipQuestion = useCallback(() => {
     if (lifelines.skip <= 0 || selected !== null || !currentQ) return;
     sound.lifeline();
     setLifelines(l => ({
@@ -11739,7 +11746,7 @@ function GeoBeeGame() {
     // Bank this question for later
     setSkippedQuestions(prev => [...prev, qIndex]);
     // Move to next question
-    const nextIdx = qIndex + 1;
+    var nextIdx = qIndex + 1;
     if (nextIdx < totalQs) {
       setQIndex(nextIdx);
       setSelected(null);
@@ -11747,10 +11754,10 @@ function GeoBeeGame() {
       setHiddenOptions([]);
       setShowSetup(true);
       setScreen('question');
-      const nextQ = gameQuestions[nextIdx];
-      const setup = getSetup(nextQ.cat);
+      var nextQ = gameQuestions[nextIdx];
+      var setup = getSetup(nextQ.cat);
       setSetupText(setup);
-      const showQ = () => {
+      var showQ = () => {
         setShowSetup(false);
         setTimerActive(true);
         speech.speak(nextQ.q, {
@@ -11764,7 +11771,7 @@ function GeoBeeGame() {
       }, () => setTimeout(showQ, 400));
     }
   }, [lifelines.skip, selected, currentQ, qIndex, totalQs, gameQuestions, sound, speech]);
-  const useExtraTime = useCallback(() => {
+  var useExtraTime = useCallback(() => {
     if (lifelines.extraTime <= 0 || selected !== null) return;
     sound.lifeline();
     setTimer(t => t + 10);
@@ -11780,7 +11787,7 @@ function GeoBeeGame() {
   }, [lifelines.extraTime, selected, sound, speech]);
   useEffect(() => {
     if (!timerActive || timer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setTimer(t => {
         if (t <= 1) {
           setTimerActive(false);
@@ -11795,13 +11802,11 @@ function GeoBeeGame() {
     }, 1000);
     return () => clearInterval(interval);
   }, [timerActive, timer]);
-  const currentQ = gameQuestions[qIndex] || null;
-  const totalQs = gameQuestions.length;
 
   // ─── Commentator System ───────────────────────────────────────────────
-  const showCommentator = useCallback(category => {
+  var showCommentator = useCallback(category => {
     if (!COMMENTATOR[category]) return;
-    const msg = pick(COMMENTATOR[category]);
+    var msg = pick(COMMENTATOR[category]);
     setCommentatorMsg(msg);
     if (commentatorTimer.current) clearTimeout(commentatorTimer.current);
     commentatorTimer.current = setTimeout(() => setCommentatorMsg(null), 3500);
@@ -11816,22 +11821,22 @@ function GeoBeeGame() {
   useEffect(() => {
     if (gameMode !== 'classic' && gameMode !== 'survival') return;
     if (!currentQ) return;
-    const d = currentQ.d || 1;
-    const tierMap = {
+    var d = currentQ.d || 1;
+    var tierMap = {
       1: 'chill',
       2: 'medium',
       3: 'intense',
       4: 'legendary',
       5: 'legendary'
     };
-    const newTier = tierMap[d] || 'chill';
+    var newTier = tierMap[d] || 'chill';
     if (sound.musicEnabled) sound.setMusicTier(newTier);
   }, [currentQ, gameMode, sound]);
 
   // ─── Challenge Mode Functions ─────────────────────────────────────────
-  const startChallenge = useCallback(type => {
+  var startChallenge = useCallback(type => {
     // Check challenge lock
-    const lock = CHALLENGE_LOCKS[type];
+    var lock = CHALLENGE_LOCKS[type];
     if (lock && !badges.earned.includes(lock.badgeId)) {
       speech.speak(`This challenge is locked! Earn the ${lock.badgeName} badge to unlock it.`, {
         rate: 1.1,
@@ -11843,7 +11848,7 @@ function GeoBeeGame() {
     speech.cancel();
     setChallengeType(type);
     if (type === 'borders') {
-      const challenge = BORDER_CHALLENGES[Math.floor(Math.random() * BORDER_CHALLENGES.length)];
+      var challenge = BORDER_CHALLENGES[Math.floor(Math.random() * BORDER_CHALLENGES.length)];
       setChallengeData(challenge);
       setBorderGuesses([]);
       setBorderInput('');
@@ -11853,7 +11858,7 @@ function GeoBeeGame() {
       setBorderHint(false);
       setScreen('challengeIntro');
     } else if (type === 'blitz') {
-      const shuffled = [...CAPITAL_BLITZ_QS].sort(() => Math.random() - 0.5);
+      var shuffled = [...CAPITAL_BLITZ_QS].sort(() => Math.random() - 0.5);
       setBlitzQs(shuffled);
       setBlitzIdx(0);
       setBlitzScore(0);
@@ -11865,8 +11870,8 @@ function GeoBeeGame() {
       setBlitzResults([]);
       setScreen('challengeIntro');
     } else if (type === 'flags') {
-      const shuffled = [...FLAG_FRENZY_QS].sort(() => Math.random() - 0.5);
-      setFlagQs(shuffled);
+      var _shuffled2 = [...FLAG_FRENZY_QS].sort(() => Math.random() - 0.5);
+      setFlagQs(_shuffled2);
       setFlagIdx(0);
       setFlagScore(0);
       setFlagTimer(45);
@@ -11877,20 +11882,20 @@ function GeoBeeGame() {
       setFlagResults([]);
       setScreen('challengeIntro');
     } else if (type === 'continentsprint') {
-      const continents = Object.keys(CONTINENT_SPRINT_DATA);
-      const chosen = continents[Math.floor(Math.random() * continents.length)];
+      var continents = Object.keys(CONTINENT_SPRINT_DATA);
+      var chosen = continents[Math.floor(Math.random() * continents.length)];
       setSprintContinent(chosen);
       // Build mix of correct and wrong countries
-      const correct = CONTINENT_SPRINT_DATA[chosen].map(c => ({
+      var correct = CONTINENT_SPRINT_DATA[chosen].map(c => ({
         country: c,
         belongs: true
       }));
-      const wrongPool = Object.entries(CONTINENT_SPRINT_DATA).filter(([k]) => k !== chosen).flatMap(([, v]) => v);
-      const wrongs = wrongPool.sort(() => Math.random() - 0.5).slice(0, correct.length).map(c => ({
+      var wrongPool = Object.entries(CONTINENT_SPRINT_DATA).filter(([k]) => k !== chosen).flatMap(([, v]) => v);
+      var wrongs = wrongPool.sort(() => Math.random() - 0.5).slice(0, correct.length).map(c => ({
         country: c,
         belongs: false
       }));
-      const mixed = [...correct, ...wrongs].sort(() => Math.random() - 0.5);
+      var mixed = [...correct, ...wrongs].sort(() => Math.random() - 0.5);
       setSprintCountries(mixed);
       setSprintIdx(0);
       setSprintScore(0);
@@ -11901,9 +11906,9 @@ function GeoBeeGame() {
       setSprintResults([]);
       setScreen('challengeIntro');
     } else if (type === 'population') {
-      const shuffled = [...POPULATION_PAIRS].sort(() => Math.random() - 0.5);
+      var _shuffled3 = [...POPULATION_PAIRS].sort(() => Math.random() - 0.5);
       // Randomly swap a/b in each pair for variety
-      const swapped = shuffled.map(p => Math.random() > 0.5 ? p : {
+      var swapped = _shuffled3.map(p => Math.random() > 0.5 ? p : {
         a: p.b,
         popA: p.popB,
         b: p.a,
@@ -11922,7 +11927,7 @@ function GeoBeeGame() {
       setScreen('challengeIntro');
     }
   }, [sound, speech]);
-  const startChallengeTimer = useCallback(() => {
+  var startChallengeTimer = useCallback(() => {
     if (challengeType === 'borders') {
       setBorderTimerActive(true);
       if (sound.musicEnabled) sound.startMusic('intense');
@@ -11967,10 +11972,10 @@ function GeoBeeGame() {
   }, [challengeType, challengeData, sound, speech, sprintContinent]);
 
   // Border challenge: check guess
-  const checkBorderGuess = useCallback(() => {
+  var checkBorderGuess = useCallback(() => {
     if (!challengeData || !borderInput.trim()) return;
-    const guess = borderInput.trim().toLowerCase();
-    const match = challengeData.borders.find(b => b.toLowerCase() === guess || b.toLowerCase().replace(/[^a-z]/g, '') === guess.replace(/[^a-z]/g, ''));
+    var guess = borderInput.trim().toLowerCase();
+    var match = challengeData.borders.find(b => b.toLowerCase() === guess || b.toLowerCase().replace(/[^a-z]/g, '') === guess.replace(/[^a-z]/g, ''));
     if (match && !borderGuesses.includes(match)) {
       sound.blitzCorrect();
       setBorderGuesses(prev => [...prev, match]);
@@ -11996,12 +12001,12 @@ function GeoBeeGame() {
   }, [challengeData, borderInput, borderGuesses, sound, speech]);
 
   // Blitz: handle answer (pass true/false for correct)
-  const handleBlitzAnswer = useCallback((isCorrectChoice, displayIdx) => {
+  var handleBlitzAnswer = useCallback((isCorrectChoice, displayIdx) => {
     if (blitzSelected !== null) return;
-    const q = blitzQs[blitzIdx];
+    var q = blitzQs[blitzIdx];
     if (!q) return;
     setBlitzSelected(displayIdx);
-    const isCorrect = isCorrectChoice;
+    var isCorrect = isCorrectChoice;
     if (isCorrect) {
       sound.blitzCorrect();
       setBlitzScore(s => s + 100 + blitzStreak * 25);
@@ -12030,12 +12035,12 @@ function GeoBeeGame() {
   }, [blitzSelected, blitzQs, blitzIdx, blitzStreak, sound]);
 
   // Flag Frenzy: handle answer
-  const handleFlagAnswer = useCallback((selectedCountry, displayIdx) => {
+  var handleFlagAnswer = useCallback((selectedCountry, displayIdx) => {
     if (flagSelected !== null) return;
-    const q = flagQs[flagIdx];
+    var q = flagQs[flagIdx];
     if (!q) return;
     setFlagSelected(displayIdx);
-    const isCorrect = selectedCountry === q.country;
+    var isCorrect = selectedCountry === q.country;
     if (isCorrect) {
       sound.blitzCorrect();
       setFlagScore(s => s + 100 + flagStreak * 25);
@@ -12062,12 +12067,12 @@ function GeoBeeGame() {
   }, [flagSelected, flagQs, flagIdx, flagStreak, sound]);
 
   // Continent Sprint: handle answer
-  const handleSprintAnswer = useCallback(answer => {
+  var handleSprintAnswer = useCallback(answer => {
     if (sprintSelected !== null) return;
-    const item = sprintCountries[sprintIdx];
+    var item = sprintCountries[sprintIdx];
     if (!item) return;
     setSprintSelected(answer);
-    const isCorrect = answer === 'yes' === item.belongs;
+    var isCorrect = answer === 'yes' === item.belongs;
     if (isCorrect) {
       sound.blitzCorrect();
       setSprintScore(s => s + 100 + sprintStreak * 20);
@@ -12093,13 +12098,13 @@ function GeoBeeGame() {
   }, [sprintSelected, sprintCountries, sprintIdx, sprintStreak, sound]);
 
   // Population Showdown: handle answer
-  const handlePopAnswer = useCallback(choice => {
+  var handlePopAnswer = useCallback(choice => {
     if (popSelected !== null) return;
-    const pair = popPairs[popIdx];
+    var pair = popPairs[popIdx];
     if (!pair) return;
     setPopSelected(choice);
-    const correctChoice = pair.popA >= pair.popB ? 'a' : 'b';
-    const isCorrect = choice === correctChoice;
+    var correctChoice = pair.popA >= pair.popB ? 'a' : 'b';
+    var isCorrect = choice === correctChoice;
     if (isCorrect) {
       sound.blitzCorrect();
       setPopScore(s => s + 100 + popStreak * 30);
@@ -12130,7 +12135,7 @@ function GeoBeeGame() {
   // Border timer
   useEffect(() => {
     if (!borderTimerActive || borderTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setBorderTimer(t => {
         if (t <= 1) {
           setBorderTimerActive(false);
@@ -12152,12 +12157,12 @@ function GeoBeeGame() {
   // Blitz timer
   useEffect(() => {
     if (!blitzTimerActive || blitzTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setBlitzTimer(t => {
         if (t <= 1) {
           setBlitzTimerActive(false);
           sound.timeUp();
-          const correct = blitzResults.filter(r => r.correct).length;
+          var correct = blitzResults.filter(r => r.correct).length;
           speech.speak(`Time's up! You got ${correct} capitals right! ${correct >= 15 ? 'AMAZING!' : correct >= 10 ? 'Great job!' : 'Not bad!'}`, {
             rate: 1.1,
             pitch: 1.05
@@ -12179,12 +12184,12 @@ function GeoBeeGame() {
   // Flag Frenzy timer
   useEffect(() => {
     if (!flagTimerActive || flagTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setFlagTimer(t => {
         if (t <= 1) {
           setFlagTimerActive(false);
           sound.timeUp();
-          const correct = flagResults.filter(r => r.correct).length;
+          var correct = flagResults.filter(r => r.correct).length;
           speech.speak(`Time's up! You identified ${correct} flags!`, {
             rate: 1.1,
             pitch: 1.05
@@ -12202,12 +12207,12 @@ function GeoBeeGame() {
   // Continent Sprint timer
   useEffect(() => {
     if (!sprintTimerActive || sprintTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setSprintTimer(t => {
         if (t <= 1) {
           setSprintTimerActive(false);
           sound.timeUp();
-          const correct = sprintResults.filter(r => r.correct).length;
+          var correct = sprintResults.filter(r => r.correct).length;
           speech.speak(`Time's up! You sorted ${correct} countries correctly!`, {
             rate: 1.1,
             pitch: 1.05
@@ -12225,12 +12230,12 @@ function GeoBeeGame() {
   // Population Showdown timer
   useEffect(() => {
     if (!popTimerActive || popTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setPopTimer(t => {
         if (t <= 1) {
           setPopTimerActive(false);
           sound.timeUp();
-          const correct = popResults.filter(r => r.correct).length;
+          var correct = popResults.filter(r => r.correct).length;
           speech.speak(`Time's up! You got ${correct} population matchups right!`, {
             rate: 1.1,
             pitch: 1.05
@@ -12244,20 +12249,20 @@ function GeoBeeGame() {
     }, 1000);
     return () => clearInterval(interval);
   }, [popTimerActive, popTimer, popResults, sound, speech]);
-  const getSetup = cat => {
-    const setups = CATEGORY_SETUPS[cat] || CATEGORY_SETUPS["Physical Geography"];
+  var getSetup = cat => {
+    var setups = CATEGORY_SETUPS[cat] || CATEGORY_SETUPS["Physical Geography"];
     return setups[Math.floor(Math.random() * setups.length)];
   };
-  const startGame = (mode, survTier) => {
-    const m = mode || gameMode;
+  var startGame = (mode, survTier) => {
+    var m = mode || gameMode;
     setGameMode(m);
     sound.click();
     speech.cancel();
     lastWrongStreak.current = 0;
     setCommentatorMsg(null);
-    const startTier = m === 'duel' ? 'intense' : m === 'survival' ? 'medium' : 'chill';
+    var startTier = m === 'duel' ? 'intense' : m === 'survival' ? 'medium' : 'chill';
     if (sound.musicEnabled) sound.startMusic(startTier);
-    const gq = selectGameQuestions(m);
+    var gq = selectGameQuestions(m);
     setGameQuestions(gq);
     setScore(0);
     setStreak(0);
@@ -12275,14 +12280,14 @@ function GeoBeeGame() {
       et: 0
     };
     // Reset lifelines — gate behind badges
-    const earnedBadges = badges.earned;
+    var earnedBadges = badges.earned;
     setLifelines({
       fiftyFifty: 1,
       skip: earnedBadges.includes('streak_starter') ? 1 : 0,
       extraTime: earnedBadges.includes('first_steps') ? 1 : 0
     });
     if (m === 'survival') {
-      const tier = survTier || SURVIVAL_TIERS[0];
+      var tier = survTier || SURVIVAL_TIERS[0];
       setSurvivalLives(tier.lives);
       setSurvivalTierActive(tier);
     }
@@ -12317,24 +12322,24 @@ function GeoBeeGame() {
       setAnswerTimerActive(false);
     }
     // Daily streak check-in
-    const milestone = dailyStreak.checkIn();
+    var milestone = dailyStreak.checkIn();
     if (milestone) {
       setStreakMilestone(milestone);
       setScreen('streakReward');
       return;
     }
     setScreen('intro');
-    const intro = m === 'survival' ? "Welcome to SURVIVAL MODE! Answer questions until you drop. You've got 3 lives. How far can you go?" : m === 'multiplayer' ? `It's ${mpNames[0]} versus ${mpNames[1]}! You'll take turns answering questions. Highest score wins!` : m === 'duel' ? `It's duel time! ${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — buzz in fast, answer right, and steal when they slip up!` : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
+    var intro = m === 'survival' ? "Welcome to SURVIVAL MODE! Answer questions until you drop. You've got 3 lives. How far can you go?" : m === 'multiplayer' ? `It's ${mpNames[0]} versus ${mpNames[1]}! You'll take turns answering questions. Highest score wins!` : m === 'duel' ? `It's duel time! ${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — buzz in fast, answer right, and steal when they slip up!` : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
     setHostText(intro);
     speech.speak(intro, {
       rate: 1.1,
       pitch: 1.1
     });
   };
-  const proceedFromStreakReward = () => {
+  var proceedFromStreakReward = () => {
     setStreakMilestone(null);
     setScreen('intro');
-    const intro = gameMode === 'survival' ? "Welcome to SURVIVAL MODE! 3 lives. Infinite questions. Let's see how far you can go!" : gameMode === 'multiplayer' ? `${mpNames[0]} vs ${mpNames[1]}! Let the battle begin!` : gameMode === 'duel' ? `${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — the duel begins NOW!` : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
+    var intro = gameMode === 'survival' ? "Welcome to SURVIVAL MODE! 3 lives. Infinite questions. Let's see how far you can go!" : gameMode === 'multiplayer' ? `${mpNames[0]} vs ${mpNames[1]}! Let the battle begin!` : gameMode === 'duel' ? `${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — the duel begins NOW!` : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
     setHostText(intro);
     speech.speak(intro, {
       rate: 1.1,
@@ -12343,9 +12348,9 @@ function GeoBeeGame() {
   };
 
   // ─── Duel Mode Functions ──────────────────────────────────────────────
-  const startDuelQuestion = useCallback(() => {
+  var startDuelQuestion = useCallback(() => {
     speech.cancel();
-    const q = gameQuestions[duelQIndex];
+    var q = gameQuestions[duelQIndex];
     if (!q) return;
     setSelected(null);
     setBuzzedPlayer(null);
@@ -12358,10 +12363,10 @@ function GeoBeeGame() {
     setAnswerTimerActive(false);
     setHiddenOptions([]);
     // Determine round label
-    const diffLabel = ['', 'Warm Up', 'Getting Harder', 'Challenge Round', 'Expert Level', 'LEGENDARY'][q.d] || '';
+    var diffLabel = ['', 'Warm Up', 'Getting Harder', 'Challenge Round', 'Expert Level', 'LEGENDARY'][q.d] || '';
     setDuelRoundLabel(`Q${duelQIndex + 1}/${DUEL_QS} • ${diffLabel}`);
     setScreen('duelQuestion');
-    const setup = getSetup(q.cat);
+    var setup = getSetup(q.cat);
     setSetupText(setup);
     setShowSetup(true);
     speech.speakThen(setup, {
@@ -12379,7 +12384,7 @@ function GeoBeeGame() {
       }, 400);
     });
   }, [gameQuestions, duelQIndex, speech, sound]);
-  const duelBuzzIn = useCallback(playerIdx => {
+  var duelBuzzIn = useCallback(playerIdx => {
     if (duelPhase !== 'buzzer' || buzzLocked) return;
     sound.click();
     setBuzzLocked(true);
@@ -12395,16 +12400,16 @@ function GeoBeeGame() {
       pitch: 1.15
     });
   }, [duelPhase, buzzLocked, sound, speech, duelPlayers, duelNames]);
-  const duelAnswer = useCallback(idx => {
+  var duelAnswer = useCallback(idx => {
     if (selected !== null) return;
     setAnswerTimerActive(false);
     setBuzzTimerActive(false);
     setSelected(idx);
-    const q = gameQuestions[duelQIndex];
-    const isCorrect = idx === q.a;
-    const timeBonus = isCorrect ? Math.floor(answerTimer * 8) : 0;
-    const pts = isCorrect ? 150 + timeBonus : 0;
-    const isSteal = duelPhase === 'steal';
+    var q = gameQuestions[duelQIndex];
+    var isCorrect = idx === q.a;
+    var timeBonus = isCorrect ? Math.floor(answerTimer * 8) : 0;
+    var pts = isCorrect ? 150 + timeBonus : 0;
+    var isSteal = duelPhase === 'steal';
     if (isCorrect) {
       sound.correct();
       triggerCorrectFlash();
@@ -12445,7 +12450,7 @@ function GeoBeeGame() {
         difficulty: q.d
       });
       // Check if anyone can steal
-      const remaining = stealQueue.filter(i => i !== buzzedPlayer);
+      var remaining = stealQueue.filter(i => i !== buzzedPlayer);
       if (remaining.length > 0) {
         setStealQueue(remaining);
         setBuzzedPlayer(null);
@@ -12483,7 +12488,7 @@ function GeoBeeGame() {
       buzzedBy: buzzedPlayer !== null ? duelPlayers[buzzedPlayer]?.name || '?' : '?'
     }]);
   }, [selected, gameQuestions, duelQIndex, duelPhase, buzzedPlayer, stealQueue, answerTimer, sound, speech, triggerCorrectFlash, triggerShake, duelPlayers, mapProgress, playerProfile]);
-  const duelStealBuzz = useCallback(playerIdx => {
+  var duelStealBuzz = useCallback(playerIdx => {
     if (duelPhase !== 'steal' || !stealQueue.includes(playerIdx)) return;
     sound.click();
     setBuzzedPlayer(playerIdx);
@@ -12497,19 +12502,19 @@ function GeoBeeGame() {
       pitch: 1.15
     });
   }, [duelPhase, stealQueue, sound, speech, duelPlayers, duelNames]);
-  const duelNextQuestionRef = useRef(null);
-  const duelNextQuestion = useCallback(() => {
+  var duelNextQuestionRef = useRef(null);
+  var duelNextQuestion = useCallback(() => {
     speech.cancel();
-    const nextIdx = duelQIndex + 1;
+    var nextIdx = duelQIndex + 1;
     if (nextIdx >= DUEL_QS || nextIdx >= gameQuestions.length) {
       // End duel
       setScreen('duelGameOver');
       sound.stopMusic();
-      const sorted = [...duelPlayers].sort((a, b) => b.score - a.score);
-      const winner = sorted[0];
-      const isTie = sorted[0].score === sorted[1].score;
+      var sorted = [...duelPlayers].sort((a, b) => b.score - a.score);
+      var winner = sorted[0];
+      var isTie = sorted[0].score === sorted[1].score;
       sound.gameOver(winner.correct / Math.max(1, DUEL_QS));
-      const goComment = isTie ? "It's a tie! What an incredible duel!" : `${winner.name} wins the duel! What a performance!`;
+      var goComment = isTie ? "It's a tie! What an incredible duel!" : `${winner.name} wins the duel! What a performance!`;
       speech.speak("Game over! " + goComment, {
         rate: 1.05,
         pitch: 1.08
@@ -12529,7 +12534,7 @@ function GeoBeeGame() {
     if (gameMode !== 'duel' || duelNextQuestionRef.current === null) return;
     if (screen === 'duelQuestion' || duelNextQuestionRef.current === duelQIndex) {
       duelNextQuestionRef.current = null;
-      const t = setTimeout(() => startDuelQuestion(), 100);
+      var t = setTimeout(() => startDuelQuestion(), 100);
       return () => clearTimeout(t);
     }
   }, [duelQIndex, gameMode, screen, startDuelQuestion]);
@@ -12537,13 +12542,13 @@ function GeoBeeGame() {
   // Duel buzz timer countdown
   useEffect(() => {
     if (!buzzTimerActive || buzzTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setBuzzTimer(t => {
         if (t <= 1) {
           setBuzzTimerActive(false);
           if (duelPhase === 'buzzer' || duelPhase === 'steal') {
             // Nobody buzzed — show answer and move on
-            const q = gameQuestions[duelQIndex];
+            var q = gameQuestions[duelQIndex];
             if (q) {
               sound.timeUp();
               setSelected(-1);
@@ -12578,7 +12583,7 @@ function GeoBeeGame() {
   // Duel answer timer countdown
   useEffect(() => {
     if (!answerTimerActive || answerTimer <= 0) return;
-    const interval = setInterval(() => {
+    var interval = setInterval(() => {
       setAnswerTimer(t => {
         if (t <= 1) {
           setAnswerTimerActive(false);
@@ -12596,8 +12601,8 @@ function GeoBeeGame() {
   // Keyboard listener for duel buzzer
   useEffect(() => {
     if (gameMode !== 'duel') return;
-    const handler = e => {
-      const key = e.key.toUpperCase();
+    var handler = e => {
+      var key = e.key.toUpperCase();
       if (duelPhase === 'buzzer') {
         if (key === 'Q' || key === '1') duelBuzzIn(0);else if (key === 'W' || key === '2') duelBuzzIn(1);else if (key === 'E' || key === '3') duelBuzzIn(2);
       } else if (duelPhase === 'steal') {
@@ -12608,7 +12613,7 @@ function GeoBeeGame() {
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, [gameMode, duelPhase, duelBuzzIn, duelStealBuzz, stealQueue]);
-  const proceedFromIntro = () => {
+  var proceedFromIntro = () => {
     sound.roundStart();
     speech.cancel();
     if (gameMode === 'duel') {
@@ -12617,25 +12622,25 @@ function GeoBeeGame() {
     }
     setCurrentRound(1);
     setScreen('roundIntro');
-    const intro = ROUND_INTROS[1][Math.floor(Math.random() * ROUND_INTROS[1].length)];
+    var intro = ROUND_INTROS[1][Math.floor(Math.random() * ROUND_INTROS[1].length)];
     setHostText(intro);
     speech.speak(`Round 1: ${ROUND_NAMES[1]}. ${intro}`, {
       rate: 1.05,
       pitch: 1.08
     });
   };
-  const startQuestion = () => {
+  var startQuestion = () => {
     sound.click();
     speech.cancel();
     setScreen('question');
     setShowSetup(true);
     setSelected(null);
     setTimer(TIMER_SECONDS);
-    const q = gameQuestions[qIndex];
-    const setup = getSetup(q.cat);
+    var q = gameQuestions[qIndex];
+    var setup = getSetup(q.cat);
     setSetupText(setup);
     // Wait for the setup speech to finish, then show question and read it
-    const showQ = () => {
+    var showQ = () => {
       setShowSetup(false);
       setTimerActive(true);
       speech.speak(q.q, {
@@ -12651,23 +12656,23 @@ function GeoBeeGame() {
       setTimeout(showQ, 400);
     });
   };
-  const handleAnswer = useCallback(idx => {
+  var handleAnswer = useCallback(idx => {
     if (selected !== null) return;
     setTimerActive(false);
     setSelected(idx);
     setHiddenOptions([]);
-    const q = gameQuestions[qIndex];
-    const isCorrect = idx === q.a;
-    const dailyBonus = dailyStreak.getBonus();
-    const timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
-    const streakBonus = streak >= 3 ? streak * 10 : 0;
-    const dailyBonusPts = isCorrect && dailyBonus > 0 ? Math.floor((100 + timeBonus) * dailyBonus / 100) : 0;
-    const pointsEarned = isCorrect ? 100 + timeBonus + streakBonus + dailyBonusPts : 0;
+    var q = gameQuestions[qIndex];
+    var isCorrect = idx === q.a;
+    var dailyBonus = dailyStreak.getBonus();
+    var timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
+    var streakBonus = streak >= 3 ? streak * 10 : 0;
+    var dailyBonusPts = isCorrect && dailyBonus > 0 ? Math.floor((100 + timeBonus) * dailyBonus / 100) : 0;
+    var pointsEarned = isCorrect ? 100 + timeBonus + streakBonus + dailyBonusPts : 0;
     speech.cancel();
     if (isCorrect) {
       sound.correct();
       triggerCorrectFlash();
-      const ns = streak + 1;
+      var ns = streak + 1;
       setStreak(ns);
       setBestStreak(bs => Math.max(bs, ns));
       setScore(s => s + pointsEarned);
@@ -12678,7 +12683,7 @@ function GeoBeeGame() {
         pitch: 1.1
       });
       if (STREAK_COMMENTS[ns]) {
-        const sc = STREAK_COMMENTS[ns];
+        var sc = STREAK_COMMENTS[ns];
         speech.speak(sc[Math.floor(Math.random() * sc.length)], {
           rate: 1.15,
           pitch: 1.15
@@ -12720,9 +12725,9 @@ function GeoBeeGame() {
         }]
       } : p));
     }
-    const TINY_COUNTRIES = ['Vatican City', 'Monaco', 'San Marino', 'Liechtenstein', 'Andorra', 'Tuvalu', 'Nauru', 'Luxembourg', 'Malta', 'Brunei', 'Bhutan', 'Nepal'];
-    const correctAnswer = q.o[q.a];
-    const isTiny = TINY_COUNTRIES.some(tc => correctAnswer.includes(tc) || q.q.includes(tc));
+    var TINY_COUNTRIES = ['Vatican City', 'Monaco', 'San Marino', 'Liechtenstein', 'Andorra', 'Tuvalu', 'Nauru', 'Luxembourg', 'Malta', 'Brunei', 'Bhutan', 'Nepal'];
+    var correctAnswer = q.o[q.a];
+    var isTiny = TINY_COUNTRIES.some(tc => correctAnswer.includes(tc) || q.q.includes(tc));
     playerProfile.recordAnswer(q.cat, isCorrect, timer, {
       qtype: q.type || 'standard',
       difficulty: q.d,
@@ -12738,8 +12743,8 @@ function GeoBeeGame() {
     }]);
     // Commentator triggers
     if (isCorrect) {
-      const ns = streak + 1;
-      if (ns === 2) setTimeout(() => showCommentator('streakStart'), 1200);else if (ns >= 7) setTimeout(() => showCommentator('streakHot'), 1200);
+      var _ns = streak + 1;
+      if (_ns === 2) setTimeout(() => showCommentator('streakStart'), 1200);else if (_ns >= 7) setTimeout(() => showCommentator('streakHot'), 1200);
       if (timer <= 3 && timer > 0) setTimeout(() => showCommentator('clutch'), 800);
       if (lastWrongStreak.current >= 2) setTimeout(() => showCommentator('comeback'), 1000);
       lastWrongStreak.current = 0;
@@ -12755,14 +12760,14 @@ function GeoBeeGame() {
       bestStreak: Math.max(playerProfile.profile.bestStreak, isCorrect ? streak + 1 : streak)
     }), 100);
   }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer, triggerShake, triggerCorrectFlash, showCommentator, totalQs]);
-  const endGame = useCallback(() => {
+  var endGame = useCallback(() => {
     setScreen('gameOver');
     sound.stopMusic();
-    const gc = history.length + 1;
-    const gcCorr = history.filter(h => h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
+    var gc = history.length + 1;
+    var gcCorr = history.filter(h => h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
     sound.gameOver(gc > 0 ? gcCorr / gc : 0);
-    const lt = lifelineTracker.current;
-    const totalLifelinesUsed = lt.ff + lt.sk + lt.et;
+    var lt = lifelineTracker.current;
+    var totalLifelinesUsed = lt.ff + lt.sk + lt.et;
     playerProfile.recordGame(score, gcCorr, gc, bestStreak, {
       lifelinesUsedThisGame: totalLifelinesUsed,
       fiftyFiftyUsedThisGame: lt.ff,
@@ -12777,14 +12782,14 @@ function GeoBeeGame() {
       setTimeout(() => sound.perfectRound(), 1500);
       setTimeout(() => launchConfetti(), 800);
     }
-    const gcPct = gc > 0 ? gcCorr / gc : 0;
+    var gcPct = gc > 0 ? gcCorr / gc : 0;
     // Also launch confetti for great overall scores (80%+)
     if (gcPct >= 0.8 && gc >= 5) setTimeout(() => launchConfetti(), 1200);
-    let goComment;
+    var goComment;
     if (gameMode === 'survival') {
       goComment = `You survived ${gc} questions! ${gcPct >= 0.8 ? "Incredible run!" : gcPct >= 0.6 ? "Solid endurance!" : "Not bad! Try again to go further!"}`;
     } else if (gameMode === 'multiplayer') {
-      const winner = players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null;
+      var winner = players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null;
       goComment = winner ? `${winner} wins! What a match!` : "It's a tie! Incredible!";
     } else {
       goComment = pick(gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough);
@@ -12795,14 +12800,14 @@ function GeoBeeGame() {
     });
     setTimeout(() => checkAndShowBadges(), 200);
   }, [sound, history, selected, gameQuestions, qIndex, score, bestStreak, roundCorrect, playerProfile, gameMode, players, speech, checkAndShowBadges, launchConfetti]);
-  const nextQuestion = () => {
+  var nextQuestion = () => {
     speech.cancel();
     // Survival: check if out of lives
     if (gameMode === 'survival' && survivalLives <= 0) {
       endGame();
       return;
     }
-    const nextIdx = qIndex + 1;
+    var nextIdx = qIndex + 1;
     // Check if we've run out of questions
     if (nextIdx >= totalQs) {
       endGame();
@@ -12812,8 +12817,8 @@ function GeoBeeGame() {
     if (gameMode === 'multiplayer') {
       setCurrentPlayer(cp => (cp + 1) % 2);
     }
-    const nextQ = gameQuestions[nextIdx];
-    const nextRound = nextQ.d;
+    var nextQ = gameQuestions[nextIdx];
+    var nextRound = nextQ.d;
     // Survival mode: no round intros, just keep going
     if (gameMode === 'survival') {
       setQIndex(nextIdx);
@@ -12822,9 +12827,9 @@ function GeoBeeGame() {
       setHiddenOptions([]);
       setShowSetup(true);
       setScreen('question');
-      const setup = getSetup(nextQ.cat);
+      var setup = getSetup(nextQ.cat);
       setSetupText(setup);
-      const showQ = () => {
+      var showQ = () => {
         setShowSetup(false);
         setTimerActive(true);
         speech.speak(nextQ.q, {
@@ -12844,8 +12849,8 @@ function GeoBeeGame() {
       sound.roundStart();
       setCurrentRound(nextRound);
       setScreen('roundIntro');
-      const intros = ROUND_INTROS[nextRound];
-      const intro = intros[Math.floor(Math.random() * intros.length)];
+      var intros = ROUND_INTROS[nextRound];
+      var intro = intros[Math.floor(Math.random() * intros.length)];
       setHostText(intro);
       setQIndex(nextIdx);
       speech.speak(`Round ${nextRound}: ${ROUND_NAMES[nextRound]}. ${intro}`, {
@@ -12859,9 +12864,9 @@ function GeoBeeGame() {
       setHiddenOptions([]);
       setShowSetup(true);
       setScreen('question');
-      const setup = getSetup(nextQ.cat);
-      setSetupText(setup);
-      const showQ = () => {
+      var _setup = getSetup(nextQ.cat);
+      setSetupText(_setup);
+      var _showQ = () => {
         setShowSetup(false);
         setTimerActive(true);
         speech.speak(nextQ.q, {
@@ -12869,27 +12874,27 @@ function GeoBeeGame() {
           pitch: 1.0
         });
       };
-      speech.speakThen(setup, {
+      speech.speakThen(_setup, {
         rate: 1.05,
         pitch: 1.05
       }, () => {
-        setTimeout(showQ, 400);
+        setTimeout(_showQ, 400);
       });
     }
   };
-  const getScoreComment = () => {
-    const c = history.filter(h => h.correct).length;
+  var getScoreComment = () => {
+    var c = history.filter(h => h.correct).length;
     if (c === totalQs) return pick(GAME_OVER_COMMENTS.perfect);
     if (c >= totalQs * 0.8) return pick(GAME_OVER_COMMENTS.great);
     if (c >= totalQs * 0.6) return pick(GAME_OVER_COMMENTS.good);
     if (c >= totalQs * 0.4) return pick(GAME_OVER_COMMENTS.okay);
     return pick(GAME_OVER_COMMENTS.rough);
   };
-  const correctCount = history.filter(h => h.correct).length;
+  var correctCount = history.filter(h => h.correct).length;
 
   // ─── STYLES (Theme-Aware) ────────────────────────────────────────────────
-  const activeTheme = THEMES[selectedTheme] || THEMES.space;
-  const S = {
+  var activeTheme = THEMES[selectedTheme] || THEMES.space;
+  var S = {
     wrap: {
       minHeight: '100vh',
       background: activeTheme.wrapBg,
@@ -13023,11 +13028,11 @@ function GeoBeeGame() {
       letterSpacing: '1px'
     }
   };
-  const optStyle = idx => {
-    const isSel = selected === idx,
+  var optStyle = idx => {
+    var isSel = selected === idx,
       isCor = idx === currentQ?.a,
       isRev = selected !== null;
-    let bg = 'rgba(255,255,255,0.08)',
+    var bg = 'rgba(255,255,255,0.08)',
       bdr = '2px solid rgba(255,255,255,0.15)',
       sh = 'none',
       op = 1;
@@ -13062,9 +13067,9 @@ function GeoBeeGame() {
       opacity: op
     };
   };
-  const timerPct = timer / TIMER_SECONDS * 100;
-  const timerColor = timer > 10 ? 'linear-gradient(90deg,#2ed573,#7bed9f)' : timer > 5 ? 'linear-gradient(90deg,#ffa502,#ffbe76)' : 'linear-gradient(90deg,#ff4757,#ff6b81)';
-  const Btn = ({
+  var timerPct = timer / TIMER_SECONDS * 100;
+  var timerColor = timer > 10 ? 'linear-gradient(90deg,#2ed573,#7bed9f)' : timer > 5 ? 'linear-gradient(90deg,#ffa502,#ffbe76)' : 'linear-gradient(90deg,#ff4757,#ff6b81)';
+  var Btn = ({
     children,
     onClick
   }) => /*#__PURE__*/React.createElement("button", {
@@ -13079,7 +13084,7 @@ function GeoBeeGame() {
       e.target.style.boxShadow = '0 4px 20px rgba(252,74,26,0.3)';
     }
   }, children);
-  const Host = ({
+  var Host = ({
     children,
     label
   }) => /*#__PURE__*/React.createElement("div", {
@@ -13093,14 +13098,14 @@ function GeoBeeGame() {
   }, label || "🎙️ Host"), children);
 
   // ─── Animated Card: adds shake + flash + screen transition ─────────────
-  const animCard = (extra = {}) => ({
+  var animCard = (extra = {}) => ({
     ...S.card,
     ...extra,
     animation: [screenAnim ? `${screenAnim} 0.45s ease-out` : '', cardShake ? 'shakeWrong 0.5s ease' : '', cardFlash === 'wrong' ? 'wrongFlash 0.6s ease-out' : '', cardFlash === 'correct' ? 'correctPulse 0.7s ease-out' : ''].filter(Boolean).join(', ') || undefined
   });
 
   // ─── Confetti Overlay ──────────────────────────────────────────────────
-  const ConfettiOverlay = showConfetti ? /*#__PURE__*/React.createElement("div", {
+  var ConfettiOverlay = showConfetti ? /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'fixed',
       top: 0,
@@ -13126,8 +13131,8 @@ function GeoBeeGame() {
   }, p.shape))) : null;
 
   // ─── Badge Toast Overlay ──────────────────────────────────────────────────
-  const BadgeToast = badgeToast ? (() => {
-    const isSecret = SECRET_BADGE_DEFINITIONS.some(b => b.id === badgeToast.id);
+  var BadgeToast = badgeToast ? (() => {
+    var isSecret = SECRET_BADGE_DEFINITIONS.some(b => b.id === badgeToast.id);
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'fixed',
@@ -13164,7 +13169,7 @@ function GeoBeeGame() {
   })() : null;
 
   // ─── Unlock Toast Overlay ────────────────────────────────────────────────
-  const UnlockToast = unlockToast ? /*#__PURE__*/React.createElement("div", {
+  var UnlockToast = unlockToast ? /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'fixed',
       top: '18px',
@@ -13204,15 +13209,15 @@ function GeoBeeGame() {
   // ─── SCREENS ─────────────────────────────────────────────────────────────
 
   // ─── Helper: get any player's stats from localStorage ──────────────────
-  const getPlayerStats = pid => {
+  var getPlayerStats = pid => {
     try {
-      const raw = window.localStorage.getItem(`geobee_player_${pid}`);
+      var raw = window.localStorage.getItem(`geobee_player_${pid}`);
       return raw ? JSON.parse(raw) : null;
     } catch (e) {
       return null;
     }
   };
-  const switchPlayer = pid => {
+  var switchPlayer = pid => {
     setActivePlayerId(pid);
     sound.playerSelect();
     setScreen('title');
@@ -13246,8 +13251,8 @@ function GeoBeeGame() {
       marginTop: '20px'
     }
   }, PLAYER_LIST.map(p => {
-    const stats = getPlayerStats(p.id);
-    const isActive = activePlayerId === p.id;
+    var stats = getPlayerStats(p.id);
+    var isActive = activePlayerId === p.id;
     return /*#__PURE__*/React.createElement("button", {
       key: p.id,
       onClick: () => switchPlayer(p.id),
@@ -13326,7 +13331,7 @@ function GeoBeeGame() {
       flexWrap: 'wrap'
     }
   }, SURVIVAL_TIERS.map(tier => {
-    const isLocked = tier.unlockBadge && !badges.earned.includes(tier.unlockBadge);
+    var isLocked = tier.unlockBadge && !badges.earned.includes(tier.unlockBadge);
     return /*#__PURE__*/React.createElement("button", {
       key: tier.id,
       onClick: () => {
@@ -13412,8 +13417,8 @@ function GeoBeeGame() {
 
   // ─── Leaderboard Screen ────────────────────────────────────────────────
   if (screen === 'leaderboard') {
-    const allStats = PLAYER_LIST.map(p => {
-      const stats = getPlayerStats(p.id);
+    var allStats = PLAYER_LIST.map(p => {
+      var stats = getPlayerStats(p.id);
       return {
         ...p,
         stats: stats || {
@@ -13426,11 +13431,11 @@ function GeoBeeGame() {
         }
       };
     }).filter(p => p.stats.gamesPlayed > 0).sort((a, b) => {
-      const accA = a.stats.totalAnswered > 0 ? a.stats.totalCorrect / a.stats.totalAnswered : 0;
-      const accB = b.stats.totalAnswered > 0 ? b.stats.totalCorrect / b.stats.totalAnswered : 0;
+      var accA = a.stats.totalAnswered > 0 ? a.stats.totalCorrect / a.stats.totalAnswered : 0;
+      var accB = b.stats.totalAnswered > 0 ? b.stats.totalCorrect / b.stats.totalAnswered : 0;
       return accB - accA;
     });
-    const medals = ['🥇', '🥈', '🥉'];
+    var medals = ['🥇', '🥈', '🥉'];
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -13484,9 +13489,9 @@ function GeoBeeGame() {
         gap: '12px'
       }
     }, allStats.map((p, idx) => {
-      const acc = p.stats.totalAnswered > 0 ? Math.round(p.stats.totalCorrect / p.stats.totalAnswered * 100) : 0;
-      const avgScore = p.stats.gameHistory && p.stats.gameHistory.length > 0 ? Math.round(p.stats.gameHistory.reduce((s, g) => s + g.score, 0) / p.stats.gameHistory.length) : 0;
-      const isMe = p.id === activePlayerId;
+      var acc = p.stats.totalAnswered > 0 ? Math.round(p.stats.totalCorrect / p.stats.totalAnswered * 100) : 0;
+      var avgScore = p.stats.gameHistory && p.stats.gameHistory.length > 0 ? Math.round(p.stats.gameHistory.reduce((s, g) => s + g.score, 0) / p.stats.gameHistory.length) : 0;
+      var isMe = p.id === activePlayerId;
       return /*#__PURE__*/React.createElement("div", {
         key: p.id,
         style: {
@@ -13605,10 +13610,10 @@ function GeoBeeGame() {
 
   // ─── Profile Screen ─────────────────────────────────────────────────────
   if (screen === 'profile') {
-    const p = playerProfile.profile;
-    const accuracy = p.totalAnswered > 0 ? Math.round(p.totalCorrect / p.totalAnswered * 100) : 0;
-    const strongestCat = Object.entries(p.catCorrect || {}).sort((a, b) => b[1] - a[1])[0];
-    const tabBtn = (tab, label) => /*#__PURE__*/React.createElement("button", {
+    var p = playerProfile.profile;
+    var accuracy = p.totalAnswered > 0 ? Math.round(p.totalCorrect / p.totalAnswered * 100) : 0;
+    var strongestCat = Object.entries(p.catCorrect || {}).sort((a, b) => b[1] - a[1])[0];
+    var tabBtn = (tab, label) => /*#__PURE__*/React.createElement("button", {
       onClick: () => {
         setProfileTab(tab);
         sound.click();
@@ -13800,9 +13805,9 @@ function GeoBeeGame() {
         height: '80px'
       }
     }, p.gameHistory.map((g, i) => {
-      const pct = g.total > 0 ? g.correct / g.total : 0;
-      const h = Math.max(8, pct * 70);
-      const color = pct >= 0.8 ? '#2ed573' : pct >= 0.6 ? '#ffa502' : '#ff4757';
+      var pct = g.total > 0 ? g.correct / g.total : 0;
+      var h = Math.max(8, pct * 70);
+      var color = pct >= 0.8 ? '#2ed573' : pct >= 0.6 ? '#ffa502' : '#ff4757';
       return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
@@ -13902,7 +13907,7 @@ function GeoBeeGame() {
         marginBottom: '32px'
       }
     }, BADGE_DEFINITIONS.map(badge => {
-      const isEarned = badges.earned.includes(badge.id);
+      var isEarned = badges.earned.includes(badge.id);
       return /*#__PURE__*/React.createElement("div", {
         key: badge.id,
         style: {
@@ -13971,7 +13976,7 @@ function GeoBeeGame() {
         gap: '12px'
       }
     }, SECRET_BADGE_DEFINITIONS.map(badge => {
-      const isEarned = badges.earned.includes(badge.id);
+      var isEarned = badges.earned.includes(badge.id);
       return /*#__PURE__*/React.createElement("div", {
         key: badge.id,
         style: {
@@ -14079,9 +14084,9 @@ function GeoBeeGame() {
       stroke: "rgba(255,255,255,0.06)",
       strokeWidth: "1"
     })), Object.entries(COUNTRY_COORDS).map(([code, [cx, cy, r]]) => {
-      const isDisc = mapProgress.discovered.includes(code);
-      const allCountries = Object.values(WORLD_COUNTRIES).flat();
-      const countryInfo = allCountries.find(c => c[0] === code);
+      var isDisc = mapProgress.discovered.includes(code);
+      var allCountries = Object.values(WORLD_COUNTRIES).flat();
+      var countryInfo = allCountries.find(c => c[0] === code);
       return /*#__PURE__*/React.createElement("g", {
         key: code
       }, /*#__PURE__*/React.createElement("circle", {
@@ -14104,9 +14109,9 @@ function GeoBeeGame() {
         strokeWidth: "0.5"
       }));
     }))), Object.entries(WORLD_COUNTRIES).map(([continent, countries]) => {
-      const discoveredInContinent = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
-      const pct = Math.round(discoveredInContinent / countries.length * 100);
-      const CONT_COLORS = {
+      var discoveredInContinent = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
+      var pct = Math.round(discoveredInContinent / countries.length * 100);
+      var CONT_COLORS = {
         "North America": "#3498db",
         "South America": "#2ecc71",
         "Europe": "#9b59b6",
@@ -14114,7 +14119,7 @@ function GeoBeeGame() {
         "Asia": "#e74c3c",
         "Oceania": "#1abc9c"
       };
-      const cc = CONT_COLORS[continent] || '#f7b733';
+      var cc = CONT_COLORS[continent] || '#f7b733';
       return /*#__PURE__*/React.createElement("div", {
         key: continent,
         style: {
@@ -14162,7 +14167,7 @@ function GeoBeeGame() {
           gap: '4px'
         }
       }, countries.map(([code, name]) => {
-        const isDiscovered = mapProgress.discovered.includes(code);
+        var isDiscovered = mapProgress.discovered.includes(code);
         return /*#__PURE__*/React.createElement("div", {
           key: code,
           title: name,
@@ -14194,7 +14199,7 @@ function GeoBeeGame() {
         color: activeTheme.accent
       }
     }, (() => {
-      let unlocked = 1; // space theme always unlocked
+      var unlocked = 1; // space theme always unlocked
       Object.values(THEMES).forEach(t => {
         if (t.unlockReq > 0 && badges.earned.length >= t.unlockReq) unlocked++;
       });
@@ -14228,7 +14233,7 @@ function GeoBeeGame() {
         gap: '10px'
       }
     }, Object.values(THEMES).map(theme => {
-      const isUnlocked = theme.unlockReq === 0 || badges.earned.length >= theme.unlockReq;
+      var isUnlocked = theme.unlockReq === 0 || badges.earned.length >= theme.unlockReq;
       return /*#__PURE__*/React.createElement("div", {
         key: theme.id,
         style: {
@@ -14300,7 +14305,7 @@ function GeoBeeGame() {
       icon: '👥',
       lock: CHALLENGE_LOCKS.population
     }].map(ch => {
-      const isUnlocked = !ch.lock || badges.earned.includes(ch.lock.badgeId);
+      var isUnlocked = !ch.lock || badges.earned.includes(ch.lock.badgeId);
       return /*#__PURE__*/React.createElement("div", {
         key: ch.type,
         style: {
@@ -14347,7 +14352,7 @@ function GeoBeeGame() {
         marginBottom: '10px'
       }
     }, "\u2764\uFE0F Survival Tiers"), SURVIVAL_TIERS.map(tier => {
-      const isUnlocked = !tier.unlockBadge || badges.earned.includes(tier.unlockBadge);
+      var isUnlocked = !tier.unlockBadge || badges.earned.includes(tier.unlockBadge);
       return /*#__PURE__*/React.createElement("div", {
         key: tier.id,
         style: {
@@ -14396,9 +14401,9 @@ function GeoBeeGame() {
 
   // ─── World Map Explorer Screen ───────────────────────────────────────
   if (screen === 'worldMap') {
-    const [hoveredCountry, setHoveredCountry] = [mapHovered, setMapHovered];
-    const allCountries = Object.values(WORLD_COUNTRIES).flat();
-    const CONT_COLORS = {
+    var [hoveredCountry, setHoveredCountry] = [mapHovered, setMapHovered];
+    var allCountries = Object.values(WORLD_COUNTRIES).flat();
+    var CONT_COLORS = {
       "North America": "#3498db",
       "South America": "#2ecc71",
       "Europe": "#9b59b6",
@@ -14406,8 +14411,8 @@ function GeoBeeGame() {
       "Asia": "#e74c3c",
       "Oceania": "#1abc9c"
     };
-    const getContinent = code => {
-      for (const [cont, countries] of Object.entries(WORLD_COUNTRIES)) {
+    var getContinent = code => {
+      for (var [cont, countries] of Object.entries(WORLD_COUNTRIES)) {
         if (countries.some(c => c[0] === code)) return cont;
       }
       return null;
@@ -14515,12 +14520,12 @@ function GeoBeeGame() {
       stroke: `${CONT_COLORS[name] || '#fff'}20`,
       strokeWidth: "1.5"
     })), Object.entries(COUNTRY_COORDS).map(([code, [cx, cy, r]]) => {
-      const isDisc = mapProgress.discovered.includes(code);
-      const isHovered = hoveredCountry === code;
-      const countryInfo = allCountries.find(c => c[0] === code);
-      const continent = getContinent(code);
-      const cc = CONT_COLORS[continent] || '#f7b733';
-      const dotR = Math.max(r * 0.5, 3);
+      var isDisc = mapProgress.discovered.includes(code);
+      var isHovered = hoveredCountry === code;
+      var countryInfo = allCountries.find(c => c[0] === code);
+      var continent = getContinent(code);
+      var cc = CONT_COLORS[continent] || '#f7b733';
+      var dotR = Math.max(r * 0.5, 3);
       return /*#__PURE__*/React.createElement("g", {
         key: code,
         onMouseEnter: () => setHoveredCountry(code),
@@ -14609,9 +14614,9 @@ function GeoBeeGame() {
         marginBottom: '16px'
       }
     }, Object.entries(WORLD_COUNTRIES).map(([continent, countries]) => {
-      const disc = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
-      const pct = Math.round(disc / countries.length * 100);
-      const cc = CONT_COLORS[continent];
+      var disc = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
+      var pct = Math.round(disc / countries.length * 100);
+      var cc = CONT_COLORS[continent];
       return /*#__PURE__*/React.createElement("div", {
         key: continent,
         style: {
@@ -14679,9 +14684,9 @@ function GeoBeeGame() {
         gap: '6px'
       }
     }, mapProgress.discovered.slice(-12).reverse().map(code => {
-      const info = allCountries.find(c => c[0] === code);
-      const continent = getContinent(code);
-      const cc = CONT_COLORS[continent] || '#f7b733';
+      var info = allCountries.find(c => c[0] === code);
+      var continent = getContinent(code);
+      var cc = CONT_COLORS[continent] || '#f7b733';
       return info ? /*#__PURE__*/React.createElement("div", {
         key: code,
         style: {
@@ -14759,7 +14764,7 @@ function GeoBeeGame() {
     type: "text",
     value: duelNames[i],
     onChange: e => {
-      const v = e.target.value;
+      var v = e.target.value;
       setDuelNames(prev => prev.map((n, j) => j === i ? v : n));
     },
     maxLength: 15,
@@ -14937,7 +14942,7 @@ function GeoBeeGame() {
   }, "\u2190 Back")));
 
   // ─── Commentator Overlay (shows on question/result screens) ────────
-  const CommentatorOverlay = commentatorMsg ? /*#__PURE__*/React.createElement("div", {
+  var CommentatorOverlay = commentatorMsg ? /*#__PURE__*/React.createElement("div", {
     style: {
       position: 'fixed',
       top: '12px',
@@ -15029,8 +15034,8 @@ function GeoBeeGame() {
 
   // ─── Border Challenge Screen ──────────────────────────────────────────
   if (screen === 'challengeBorders' && challengeData) {
-    const pct = challengeData.borders.length > 0 ? borderGuesses.length / challengeData.borders.length * 100 : 0;
-    const timerColor = borderTimer <= 10 ? '#e74c3c' : borderTimer <= 30 ? '#f7b733' : '#2ed573';
+    var pct = challengeData.borders.length > 0 ? borderGuesses.length / challengeData.borders.length * 100 : 0;
+    var _timerColor = borderTimer <= 10 ? '#e74c3c' : borderTimer <= 30 ? '#f7b733' : '#2ed573';
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -15064,7 +15069,7 @@ function GeoBeeGame() {
       style: {
         fontSize: '1.8rem',
         fontWeight: 800,
-        color: timerColor,
+        color: _timerColor,
         fontFamily: 'monospace'
       }
     }, borderTimer, "s")), /*#__PURE__*/React.createElement("div", {
@@ -15197,11 +15202,11 @@ function GeoBeeGame() {
 
   // ─── Capital Blitz Screen ─────────────────────────────────────────────
   if (screen === 'challengeBlitz' && blitzQs.length > 0) {
-    const q = blitzQs[blitzIdx];
-    const timerColor = blitzTimer <= 10 ? '#e74c3c' : blitzTimer <= 30 ? '#f7b733' : '#2ed573';
+    var q = blitzQs[blitzIdx];
+    var _timerColor2 = blitzTimer <= 10 ? '#e74c3c' : blitzTimer <= 30 ? '#f7b733' : '#2ed573';
     // Shuffle options for display
     if (blitzSelected === null && (blitzOptionsRef.current.length === 0 || blitzOptionsRef.current[0]?.srcCountry !== q?.country)) {
-      const opts = [{
+      var opts = [{
         text: q.capital,
         isCorrect: true,
         srcCountry: q.country
@@ -15212,7 +15217,7 @@ function GeoBeeGame() {
       }))];
       blitzOptionsRef.current = opts.sort(() => Math.random() - 0.5);
     }
-    const displayOpts = blitzOptionsRef.current;
+    var displayOpts = blitzOptionsRef.current;
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -15251,7 +15256,7 @@ function GeoBeeGame() {
       style: {
         fontSize: '1.8rem',
         fontWeight: 800,
-        color: timerColor,
+        color: _timerColor2,
         fontFamily: 'monospace'
       }
     }, blitzTimer, "s")), /*#__PURE__*/React.createElement("div", {
@@ -15316,11 +15321,11 @@ function GeoBeeGame() {
         gap: '10px'
       }
     }, displayOpts.map((opt, oi) => {
-      const picked = blitzSelected !== null;
-      const isThis = picked && oi === blitzSelected;
-      const isCorrectOpt = opt.isCorrect;
-      let bg = 'rgba(255,255,255,0.08)';
-      let border = '2px solid rgba(255,255,255,0.15)';
+      var picked = blitzSelected !== null;
+      var isThis = picked && oi === blitzSelected;
+      var isCorrectOpt = opt.isCorrect;
+      var bg = 'rgba(255,255,255,0.08)';
+      var border = '2px solid rgba(255,255,255,0.15)';
       if (picked && isCorrectOpt) {
         bg = 'rgba(46,213,115,0.2)';
         border = '2px solid #2ed573';
@@ -15353,14 +15358,14 @@ function GeoBeeGame() {
 
   // ─── Flag Frenzy Screen ─────────────────────────────────────────────
   if (screen === 'challengeFlags' && flagQs.length > 0) {
-    const q = flagQs[flagIdx];
-    if (!q) {
+    var _q2 = flagQs[flagIdx];
+    if (!_q2) {
       setScreen('challengeResult');
       return null;
     }
-    const opts = [q.country, ...q.decoys].sort(() => Math.random() - 0.5);
-    const pct = flagTimer / 45 * 100;
-    const timerColor = flagTimer <= 10 ? '#ff4757' : flagTimer <= 20 ? '#f7b733' : '#2ed573';
+    var _opts = [_q2.country, ..._q2.decoys].sort(() => Math.random() - 0.5);
+    var _pct = flagTimer / 45 * 100;
+    var _timerColor3 = flagTimer <= 10 ? '#ff4757' : flagTimer <= 20 ? '#f7b733' : '#2ed573';
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -15386,7 +15391,7 @@ function GeoBeeGame() {
       style: {
         fontSize: '1.2rem',
         fontWeight: 800,
-        color: timerColor
+        color: _timerColor3
       }
     }, flagTimer, "s"), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -15403,9 +15408,9 @@ function GeoBeeGame() {
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
-        width: pct + '%',
+        width: _pct + '%',
         height: '100%',
-        background: timerColor,
+        background: _timerColor3,
         transition: 'width 1s linear',
         borderRadius: '2px'
       }
@@ -15416,7 +15421,7 @@ function GeoBeeGame() {
         filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))',
         animation: 'bounceIn 0.3s ease-out'
       }
-    }, q.flag), /*#__PURE__*/React.createElement("div", {
+    }, _q2.flag), /*#__PURE__*/React.createElement("div", {
       style: {
         color: 'rgba(255,255,255,0.6)',
         fontSize: '0.85rem',
@@ -15434,11 +15439,11 @@ function GeoBeeGame() {
         gridTemplateColumns: '1fr 1fr',
         gap: '10px'
       }
-    }, opts.map((opt, oi) => {
-      const isCorrect = opt === q.country;
-      const isSelected = flagSelected === oi;
-      const showResult = flagSelected !== null;
-      const bg = showResult ? isCorrect ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.08)';
+    }, _opts.map((opt, oi) => {
+      var isCorrect = opt === _q2.country;
+      var isSelected = flagSelected === oi;
+      var showResult = flagSelected !== null;
+      var bg = showResult ? isCorrect ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.08)';
       return /*#__PURE__*/React.createElement("button", {
         key: oi,
         onClick: () => handleFlagAnswer(opt, oi),
@@ -15467,14 +15472,14 @@ function GeoBeeGame() {
 
   // ─── Continent Sprint Screen ────────────────────────────────────────
   if (screen === 'challengeSprint' && sprintCountries.length > 0) {
-    const item = sprintCountries[sprintIdx];
+    var item = sprintCountries[sprintIdx];
     if (!item) {
       setScreen('challengeResult');
       return null;
     }
-    const pct = sprintTimer / 40 * 100;
-    const timerColor = sprintTimer <= 8 ? '#ff4757' : sprintTimer <= 18 ? '#f7b733' : '#2ed573';
-    const correct = sprintResults.filter(r => r.correct).length;
+    var _pct2 = sprintTimer / 40 * 100;
+    var _timerColor4 = sprintTimer <= 8 ? '#ff4757' : sprintTimer <= 18 ? '#f7b733' : '#2ed573';
+    var correct = sprintResults.filter(r => r.correct).length;
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -15500,7 +15505,7 @@ function GeoBeeGame() {
       style: {
         fontSize: '1.2rem',
         fontWeight: 800,
-        color: timerColor
+        color: _timerColor4
       }
     }, sprintTimer, "s"), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -15517,9 +15522,9 @@ function GeoBeeGame() {
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
-        width: pct + '%',
+        width: _pct2 + '%',
         height: '100%',
-        background: timerColor,
+        background: _timerColor4,
         transition: 'width 1s linear',
         borderRadius: '2px'
       }
@@ -15567,10 +15572,10 @@ function GeoBeeGame() {
         justifyContent: 'center'
       }
     }, ['yes', 'no'].map(ans => {
-      const showResult = sprintSelected !== null;
-      const isCorrectAns = ans === 'yes' === item.belongs;
-      const isSelected = sprintSelected === ans;
-      const bg = showResult ? isCorrectAns ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : ans === 'yes' ? 'linear-gradient(135deg,#2ed573,#26c464)' : 'linear-gradient(135deg,#ff4757,#e8364b)';
+      var showResult = sprintSelected !== null;
+      var isCorrectAns = ans === 'yes' === item.belongs;
+      var isSelected = sprintSelected === ans;
+      var bg = showResult ? isCorrectAns ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : ans === 'yes' ? 'linear-gradient(135deg,#2ed573,#26c464)' : 'linear-gradient(135deg,#ff4757,#e8364b)';
       return /*#__PURE__*/React.createElement("button", {
         key: ans,
         onClick: () => handleSprintAnswer(ans),
@@ -15597,13 +15602,13 @@ function GeoBeeGame() {
 
   // ─── Population Showdown Screen ─────────────────────────────────────
   if (screen === 'challengePopulation' && popPairs.length > 0) {
-    const pair = popPairs[popIdx];
+    var pair = popPairs[popIdx];
     if (!pair) {
       setScreen('challengeResult');
       return null;
     }
-    const pct = popTimer / 50 * 100;
-    const timerColor = popTimer <= 10 ? '#ff4757' : popTimer <= 25 ? '#f7b733' : '#2ed573';
+    var _pct3 = popTimer / 50 * 100;
+    var _timerColor5 = popTimer <= 10 ? '#ff4757' : popTimer <= 25 ? '#f7b733' : '#2ed573';
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -15629,7 +15634,7 @@ function GeoBeeGame() {
       style: {
         fontSize: '1.2rem',
         fontWeight: 800,
-        color: timerColor
+        color: _timerColor5
       }
     }, popTimer, "s"), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -15646,9 +15651,9 @@ function GeoBeeGame() {
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
-        width: pct + '%',
+        width: _pct3 + '%',
         height: '100%',
-        background: timerColor,
+        background: _timerColor5,
         transition: 'width 1s linear',
         borderRadius: '2px'
       }
@@ -15672,13 +15677,13 @@ function GeoBeeGame() {
         alignItems: 'stretch'
       }
     }, ['a', 'b'].map(side => {
-      const name = side === 'a' ? pair.a : pair.b;
-      const pop = side === 'a' ? pair.popA : pair.popB;
-      const otherPop = side === 'a' ? pair.popB : pair.popA;
-      const isWinner = pop >= otherPop;
-      const isSelected = popSelected === side;
-      const showResult = popSelected !== null;
-      const bg = showResult ? isWinner ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.08)';
+      var name = side === 'a' ? pair.a : pair.b;
+      var pop = side === 'a' ? pair.popA : pair.popB;
+      var otherPop = side === 'a' ? pair.popB : pair.popA;
+      var isWinner = pop >= otherPop;
+      var isSelected = popSelected === side;
+      var showResult = popSelected !== null;
+      var bg = showResult ? isWinner ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.08)';
       return /*#__PURE__*/React.createElement("button", {
         key: side,
         onClick: () => handlePopAnswer(side),
@@ -15728,17 +15733,17 @@ function GeoBeeGame() {
 
   // ─── Challenge Result Screen ──────────────────────────────────────────
   if (screen === 'challengeResult') {
-    const isBorders = challengeType === 'borders';
-    const isBlitz = challengeType === 'blitz';
-    const isFlags = challengeType === 'flags';
-    const isSprint = challengeType === 'continentsprint';
-    const isPop = challengeType === 'population';
-    const total = isBorders ? challengeData?.borders?.length || 0 : isBlitz ? blitzResults.length : isFlags ? flagResults.length : isSprint ? sprintResults.length : popResults.length;
-    const correct = isBorders ? borderGuesses.length : isBlitz ? blitzResults.filter(r => r.correct).length : isFlags ? flagResults.filter(r => r.correct).length : isSprint ? sprintResults.filter(r => r.correct).length : popResults.filter(r => r.correct).length;
-    const pct = total > 0 ? Math.round(correct / total * 100) : 0;
-    const isPerfect = isBorders ? correct >= total : correct >= Math.max(15, Math.floor(total * 0.8));
-    const grade = pct >= 90 ? 'S' : pct >= 75 ? 'A' : pct >= 60 ? 'B' : pct >= 40 ? 'C' : 'D';
-    const gradeColor = {
+    var isBorders = challengeType === 'borders';
+    var isBlitz = challengeType === 'blitz';
+    var isFlags = challengeType === 'flags';
+    var isSprint = challengeType === 'continentsprint';
+    var isPop = challengeType === 'population';
+    var total = isBorders ? challengeData?.borders?.length || 0 : isBlitz ? blitzResults.length : isFlags ? flagResults.length : isSprint ? sprintResults.length : popResults.length;
+    var _correct = isBorders ? borderGuesses.length : isBlitz ? blitzResults.filter(r => r.correct).length : isFlags ? flagResults.filter(r => r.correct).length : isSprint ? sprintResults.filter(r => r.correct).length : popResults.filter(r => r.correct).length;
+    var _pct4 = total > 0 ? Math.round(_correct / total * 100) : 0;
+    var isPerfect = isBorders ? _correct >= total : _correct >= Math.max(15, Math.floor(total * 0.8));
+    var grade = _pct4 >= 90 ? 'S' : _pct4 >= 75 ? 'A' : _pct4 >= 60 ? 'B' : _pct4 >= 40 ? 'C' : 'D';
+    var gradeColor = {
       S: '#f7b733',
       A: '#2ed573',
       B: '#3498db',
@@ -15759,7 +15764,7 @@ function GeoBeeGame() {
         marginBottom: '10px',
         animation: 'bounceIn 0.5s ease-out'
       }
-    }, isPerfect ? '🏆' : pct >= 60 ? '🎉' : '📚'), /*#__PURE__*/React.createElement("div", {
+    }, isPerfect ? '🏆' : _pct4 >= 60 ? '🎉' : '📚'), /*#__PURE__*/React.createElement("div", {
       style: {
         ...S.title,
         fontSize: '1.8rem',
@@ -15791,7 +15796,7 @@ function GeoBeeGame() {
         fontWeight: 800,
         color: '#2ed573'
       }
-    }, correct), /*#__PURE__*/React.createElement("div", {
+    }, _correct), /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: '0.75rem',
         color: 'rgba(255,255,255,0.5)'
@@ -15841,7 +15846,7 @@ function GeoBeeGame() {
         fontSize: '0.75rem',
         color: 'rgba(255,255,255,0.5)'
       }
-    }, "Score")))), isBorders && correct < total && /*#__PURE__*/React.createElement("div", {
+    }, "Score")))), isBorders && _correct < total && /*#__PURE__*/React.createElement("div", {
       style: {
         background: 'rgba(255,255,255,0.05)',
         borderRadius: '12px',
@@ -16024,7 +16029,7 @@ function GeoBeeGame() {
       onClick: () => startChallenge(challengeType)
     }, "PLAY AGAIN! \uD83D\uDD04"), /*#__PURE__*/React.createElement("button", {
       onClick: () => {
-        const nextType = isBorders ? 'blitz' : isBlitz ? 'flags' : isFlags ? 'continentsprint' : isPop ? 'borders' : 'population';
+        var nextType = isBorders ? 'blitz' : isBlitz ? 'flags' : isFlags ? 'continentsprint' : isPop ? 'borders' : 'population';
         startChallenge(nextType);
       },
       style: {
@@ -16463,8 +16468,8 @@ function GeoBeeGame() {
       flexWrap: 'wrap'
     }
   }, Object.values(THEMES).map(theme => {
-    const isLocked = theme.unlockReq > 0 && badges.earned.length < theme.unlockReq;
-    const isActive = selectedTheme === theme.id;
+    var isLocked = theme.unlockReq > 0 && badges.earned.length < theme.unlockReq;
+    var isActive = selectedTheme === theme.id;
     return /*#__PURE__*/React.createElement("button", {
       key: theme.id,
       onClick: () => {
@@ -16672,8 +16677,8 @@ function GeoBeeGame() {
       e.target.style.transform = 'scale(1)';
     }
   }, "\uD83C\uDFC1 Flag Frenzy"), (() => {
-    const lock = CHALLENGE_LOCKS['continentsprint'];
-    const isLocked = lock && !badges.earned.includes(lock.badgeId);
+    var lock = CHALLENGE_LOCKS['continentsprint'];
+    var isLocked = lock && !badges.earned.includes(lock.badgeId);
     return /*#__PURE__*/React.createElement("button", {
       onClick: () => {
         if (isLocked) {
@@ -16719,8 +16724,8 @@ function GeoBeeGame() {
       }
     }, "\uD83C\uDFC5 ", lock.desc));
   })(), (() => {
-    const lock = CHALLENGE_LOCKS['population'];
-    const isLocked = lock && !badges.earned.includes(lock.badgeId);
+    var lock = CHALLENGE_LOCKS['population'];
+    var isLocked = lock && !badges.earned.includes(lock.badgeId);
     return /*#__PURE__*/React.createElement("button", {
       onClick: () => {
         if (isLocked) {
@@ -17247,7 +17252,7 @@ function GeoBeeGame() {
       gap: '10px'
     }
   }, currentQ.o.map((opt, idx) => {
-    const isHidden = hiddenOptions.includes(idx);
+    var isHidden = hiddenOptions.includes(idx);
     if (isHidden && selected === null) return /*#__PURE__*/React.createElement("div", {
       key: idx,
       style: {
@@ -17310,9 +17315,9 @@ function GeoBeeGame() {
     }, selected !== null ? idx === currentQ.a ? '✓' : idx === selected ? '✗' : String.fromCharCode(65 + idx) : String.fromCharCode(65 + idx)), /*#__PURE__*/React.createElement("span", null, opt));
   })))));
   if (screen === 'result' && currentQ) {
-    const isCorrect = selected === currentQ.a;
-    const timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
-    const streakBonus = isCorrect && streak >= 3 ? (streak - 1) * 10 : 0;
+    var isCorrect = selected === currentQ.a;
+    var timeBonus = isCorrect ? Math.floor(timer * 5) : 0;
+    var streakBonus = isCorrect && streak >= 3 ? (streak - 1) * 10 : 0;
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -17453,7 +17458,7 @@ function GeoBeeGame() {
 
   // ─── Duel Question Screen ──────────────────────────────────────────────
   if (screen === 'duelQuestion') {
-    const q = gameQuestions[duelQIndex];
+    var _q3 = gameQuestions[duelQIndex];
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -17498,13 +17503,13 @@ function GeoBeeGame() {
         fontSize: '0.8rem',
         marginBottom: '8px'
       }
-    }, duelRoundLabel), q && /*#__PURE__*/React.createElement("div", {
+    }, duelRoundLabel), _q3 && /*#__PURE__*/React.createElement("div", {
       style: {
         textAlign: 'center'
       }
     }, /*#__PURE__*/React.createElement("span", {
       style: S.cat
-    }, q.cat)), showSetup ? /*#__PURE__*/React.createElement(Host, null, setupText) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+    }, _q3.cat)), showSetup ? /*#__PURE__*/React.createElement(Host, null, setupText) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
       style: {
         fontSize: '1.25rem',
         fontWeight: 600,
@@ -17513,7 +17518,7 @@ function GeoBeeGame() {
         textAlign: 'center',
         minHeight: '60px'
       }
-    }, q?.q), duelPhase === 'buzzer' && /*#__PURE__*/React.createElement("div", {
+    }, _q3?.q), duelPhase === 'buzzer' && /*#__PURE__*/React.createElement("div", {
       style: {
         textAlign: 'center',
         marginBottom: '20px'
@@ -17609,7 +17614,7 @@ function GeoBeeGame() {
         gap: '10px'
       }
     }, duelPlayers.map((p, i) => {
-      const canSteal = stealQueue.includes(i);
+      var canSteal = stealQueue.includes(i);
       return /*#__PURE__*/React.createElement("button", {
         key: i,
         onClick: () => canSteal && duelStealBuzz(i),
@@ -17677,7 +17682,7 @@ function GeoBeeGame() {
         flexDirection: 'column',
         gap: '10px'
       }
-    }, q && q.o.map((opt, oi) => /*#__PURE__*/React.createElement("button", {
+    }, _q3 && _q3.o.map((opt, oi) => /*#__PURE__*/React.createElement("button", {
       key: oi,
       onClick: () => duelAnswer(oi),
       disabled: selected !== null,
@@ -17685,7 +17690,7 @@ function GeoBeeGame() {
         padding: '14px 20px',
         borderRadius: '12px',
         border: '1px solid rgba(255,255,255,0.15)',
-        background: selected === oi ? oi === q.a ? 'rgba(46,213,115,0.3)' : 'rgba(255,71,87,0.3)' : selected !== null && oi === q.a ? 'rgba(46,213,115,0.2)' : 'rgba(255,255,255,0.06)',
+        background: selected === oi ? oi === _q3.a ? 'rgba(46,213,115,0.3)' : 'rgba(255,71,87,0.3)' : selected !== null && oi === _q3.a ? 'rgba(46,213,115,0.2)' : 'rgba(255,255,255,0.06)',
         color: '#fff',
         fontSize: '1rem',
         cursor: selected === null ? 'pointer' : 'default',
@@ -17699,17 +17704,17 @@ function GeoBeeGame() {
         marginRight: '10px',
         fontWeight: 700
       }
-    }, String.fromCharCode(65 + oi)), opt, selected !== null && oi === q.a && /*#__PURE__*/React.createElement("span", {
+    }, String.fromCharCode(65 + oi)), opt, selected !== null && oi === _q3.a && /*#__PURE__*/React.createElement("span", {
       style: {
         float: 'right',
         color: '#2ed573'
       }
-    }, "\u2713"), selected === oi && oi !== q.a && /*#__PURE__*/React.createElement("span", {
+    }, "\u2713"), selected === oi && oi !== _q3.a && /*#__PURE__*/React.createElement("span", {
       style: {
         float: 'right',
         color: '#ff4757'
       }
-    }, "\u2717"))))), duelPhase === 'result' && q && /*#__PURE__*/React.createElement("div", null, selected === -1 ? /*#__PURE__*/React.createElement("div", {
+    }, "\u2717"))))), duelPhase === 'result' && _q3 && /*#__PURE__*/React.createElement("div", null, selected === -1 ? /*#__PURE__*/React.createElement("div", {
       style: {
         textAlign: 'center',
         marginBottom: '16px'
@@ -17729,20 +17734,20 @@ function GeoBeeGame() {
         color: '#2ed573',
         fontWeight: 700
       }
-    }, q.o[q.a]))) : /*#__PURE__*/React.createElement("div", {
+    }, _q3.o[_q3.a]))) : /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         flexDirection: 'column',
         gap: '10px',
         marginBottom: '16px'
       }
-    }, q.o.map((opt, oi) => /*#__PURE__*/React.createElement("div", {
+    }, _q3.o.map((opt, oi) => /*#__PURE__*/React.createElement("div", {
       key: oi,
       style: {
         padding: '14px 20px',
         borderRadius: '12px',
-        border: oi === q.a ? '1px solid rgba(46,213,115,0.4)' : '1px solid rgba(255,255,255,0.08)',
-        background: oi === q.a ? 'rgba(46,213,115,0.15)' : selected === oi ? 'rgba(255,71,87,0.15)' : 'rgba(255,255,255,0.03)',
+        border: oi === _q3.a ? '1px solid rgba(46,213,115,0.4)' : '1px solid rgba(255,255,255,0.08)',
+        background: oi === _q3.a ? 'rgba(46,213,115,0.15)' : selected === oi ? 'rgba(255,71,87,0.15)' : 'rgba(255,255,255,0.03)',
         color: '#fff',
         fontSize: '1rem'
       }
@@ -17752,7 +17757,7 @@ function GeoBeeGame() {
         marginRight: '10px',
         fontWeight: 700
       }
-    }, String.fromCharCode(65 + oi)), opt, oi === q.a && /*#__PURE__*/React.createElement("span", {
+    }, String.fromCharCode(65 + oi)), opt, oi === _q3.a && /*#__PURE__*/React.createElement("span", {
       style: {
         float: 'right',
         color: '#2ed573',
@@ -17760,7 +17765,7 @@ function GeoBeeGame() {
       }
     }, "\u2713")))), /*#__PURE__*/React.createElement("div", {
       style: S.fact
-    }, q.f), /*#__PURE__*/React.createElement("div", {
+    }, _q3.f), /*#__PURE__*/React.createElement("div", {
       style: {
         marginTop: '16px'
       }
@@ -17771,12 +17776,12 @@ function GeoBeeGame() {
 
   // ─── Duel Game Over Screen ──────────────────────────────────────────────
   if (screen === 'duelGameOver') {
-    const sorted = [...duelPlayers].sort((a, b) => b.score - a.score);
-    const podiumOrder = sorted.length >= 3 ? [sorted[1], sorted[0], sorted[2]] : sorted; // silver, gold, bronze layout
-    const podiumHeights = ['120px', '160px', '90px'];
-    const podiumLabels = ['🥈 2nd', '🥇 1st', '🥉 3rd'];
-    const podiumColors = ['#C0C0C0', '#FFD700', '#CD7F32'];
-    const isTie = sorted[0].score === sorted[1].score;
+    var sorted = [...duelPlayers].sort((a, b) => b.score - a.score);
+    var podiumOrder = sorted.length >= 3 ? [sorted[1], sorted[0], sorted[2]] : sorted; // silver, gold, bronze layout
+    var podiumHeights = ['120px', '160px', '90px'];
+    var podiumLabels = ['🥈 2nd', '🥇 1st', '🥉 3rd'];
+    var podiumColors = ['#C0C0C0', '#FFD700', '#CD7F32'];
+    var isTie = sorted[0].score === sorted[1].score;
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -17807,7 +17812,7 @@ function GeoBeeGame() {
         height: '200px'
       }
     }, podiumOrder.map((p, i) => {
-      const pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || podiumColors[i];
+      var pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || podiumColors[i];
       return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
@@ -17861,7 +17866,7 @@ function GeoBeeGame() {
         marginBottom: '20px'
       }
     }, sorted.map((p, i) => {
-      const pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || '#fff';
+      var pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || '#fff';
       return /*#__PURE__*/React.createElement("div", {
         key: i,
         style: {
@@ -17966,9 +17971,9 @@ function GeoBeeGame() {
     }, mapProgress.discovered.length, " countries discovered \u2022 ", badges.earned.length, "/", ALL_BADGE_DEFINITIONS.length, " badges")));
   }
   if (screen === 'gameOver') {
-    const pct = Math.round(correctCount / totalQs * 100);
-    const streakBonusLabel = dailyStreak.getBonus() > 0 ? `(+${dailyStreak.getBonus()}% streak bonus!)` : '';
-    const mpWinner = gameMode === 'multiplayer' ? players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null : null;
+    var _pct5 = Math.round(correctCount / totalQs * 100);
+    var streakBonusLabel = dailyStreak.getBonus() > 0 ? `(+${dailyStreak.getBonus()}% streak bonus!)` : '';
+    var mpWinner = gameMode === 'multiplayer' ? players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null : null;
     return /*#__PURE__*/React.createElement("div", {
       style: S.wrap
     }, /*#__PURE__*/React.createElement("div", {
@@ -18109,7 +18114,7 @@ function GeoBeeGame() {
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: S.statVal
-    }, pct, "%"), /*#__PURE__*/React.createElement("div", {
+    }, _pct5, "%"), /*#__PURE__*/React.createElement("div", {
       style: S.statLbl
     }, "Accuracy")), /*#__PURE__*/React.createElement("div", {
       style: {
