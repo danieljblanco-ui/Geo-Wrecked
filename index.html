@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEO-WRECKED! | GeoBee Trainer</title>
-    <script crossorigin src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a2e;
-        }
-    </style>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel" data-type="module">
-import { useState, useEffect, useCallback, useRef } from "react";
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GEO-WRECKED! | GeoBee Trainer</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{overflow-x:hidden}input,button,select{font-family:inherit}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:rgba(0,0,0,0.2)}::-webkit-scrollbar-thumb{background:rgba(247,183,51,0.3);border-radius:4px}</style>
+<script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.23.9/babel.min.js"></script>
+</head><body>
+<div id="root"></div>
+<script type="text/babel">
+const {useState,useEffect,useCallback,useRef}=React;
 const ALL_QUESTIONS = [
 // ═══ DIFFICULTY 1: "Warm Up Your Globe" (Easy) ═══
 {d:1,cat:"Capitals",q:"What is the capital of Japan?",o:["Tokyo","Osaka","Kyoto","Yokohama"],a:0,
@@ -2513,7 +2504,7 @@ const useMapProgress = (playerId) => {
 };
 
 // ─── Main Game Component ─────────────────────────────────────────────────────
-export default function GeoBeeGame() {
+function GeoBeeGame() {
   // ─── Active Player Selection ────────────────────────────────────────
   const [activePlayerId, setActivePlayerId] = useLocalStorage('geobee_active_player', null);
   const activePlayerInfo = PLAYER_LIST.find(p => p.id === activePlayerId) || null;
@@ -4532,8 +4523,7 @@ export default function GeoBeeGame() {
   return null;
 }
 
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(React.createElement(GeoBeeGame));
-    </script>
-</body>
-</html>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(React.createElement(GeoBeeGame));
+</script>
+</body></html>
