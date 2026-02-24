@@ -1269,6 +1269,120 @@ rq:"Russia! 11 time zones wide. When it's morning in Moscow, it's already bedtim
 {d:4,cat:"Map Outlines",type:"silhouette",shape:"uk",q:"Which island nation sits just off the northwest coast of mainland Europe?",o:["Iceland","Ireland","United Kingdom","Denmark"],a:2,
 f:"Great Britain (England, Scotland, Wales) is the largest island in Europe and the ninth-largest in the world at 209,331 square km.",
 rq:"The United Kingdom! Great Britain — Europe's largest island. Small but mighty in world history!",wq:"It's the United Kingdom! Great Britain is the largest island in Europe at 209,331 square km."},
+// ═══ FOOD & CUISINE ORIGINS ═══
+// type:'food' → shows food emoji + dish name, player guesses country of origin
+{d:1,cat:"Food Origins",type:"food",emoji:"🍕",dish:"Pizza Margherita",q:"Which country is the birthplace of pizza?",o:["United States","Greece","Italy","France"],a:2,
+f:"Modern pizza was born in Naples, Italy. The Margherita was supposedly created in 1889 to honor Queen Margherita, using tomato, mozzarella, and basil to represent the Italian flag.",
+rq:"Italy! Naples gave the world pizza, and honestly, we owe them everything.",wq:"It's Italy! Pizza was born in Naples. The Margherita was crafted in 1889 with Italian flag colors."},
+{d:1,cat:"Food Origins",type:"food",emoji:"🍫",dish:"Chocolate",q:"Which ancient civilization first cultivated cacao and made chocolate drinks?",o:["Egypt","Aztec/Maya (Mexico)","India","China"],a:1,
+f:"The Maya and Aztec civilizations in present-day Mexico drank bitter cacao beverages as early as 1900 BCE. The word 'chocolate' comes from the Nahuatl word 'xocolātl.'",
+rq:"Mexico! The Maya and Aztecs were sipping chocolate drinks thousands of years before your hot cocoa.",wq:"It's the Aztecs and Maya in Mexico! They were drinking cacao since 1900 BCE. OG chocolate lovers."},
+{d:1,cat:"Food Origins",type:"food",emoji:"🍣",dish:"Sushi",q:"Which country invented sushi as we know it today?",o:["China","South Korea","Japan","Thailand"],a:2,
+f:"While fermented fish and rice originated in Southeast Asia, modern sushi (with vinegared rice) was developed in Edo (Tokyo), Japan in the early 1800s as a fast food.",
+rq:"Japan! Edo-period Tokyo invented modern sushi as actual street fast food. The original food truck!",wq:"It's Japan! Modern sushi was invented in early 1800s Tokyo — originally a fast food."},
+{d:1,cat:"Food Origins",type:"food",emoji:"🌮",dish:"Tacos",q:"Which country gave the world tacos?",o:["Spain","United States","Mexico","Colombia"],a:2,
+f:"Tacos originated in Mexico, with evidence of tortilla-wrapped foods dating back to pre-Columbian times. The word 'taco' first appeared in Mexican silver mines in the 18th century.",
+rq:"Mexico! Tacos go back to pre-Columbian times. They've been perfecting them for centuries.",wq:"It's Mexico! Tacos have been a thing since before Columbus. That's a serious food legacy."},
+{d:2,cat:"Food Origins",type:"food",emoji:"🍟",dish:"French Fries",q:"Despite the name, which country actually claims to have invented French fries?",o:["France","Belgium","Netherlands","United Kingdom"],a:1,
+f:"Belgium claims to have invented fries in the late 1600s. The 'French' name likely came from American soldiers in WWI who encountered them in French-speaking Belgium.",
+rq:"Belgium! Plot twist: French fries aren't French. Belgium has been salty about this for centuries.",wq:"It's Belgium! 'French' fries are Belgian. WWI American soldiers just got confused by the language."},
+{d:2,cat:"Food Origins",type:"food",emoji:"🥐",dish:"Croissants",q:"While now iconic in France, which country actually invented the croissant?",o:["France","Italy","Austria","Switzerland"],a:2,
+f:"The croissant evolved from the Austrian 'kipferl.' It was supposedly created to celebrate Vienna's victory over the Ottoman siege of 1683, with its crescent shape mocking the Ottoman flag.",
+rq:"Austria! The croissant is Austrian, not French. France just adopted it and never gave credit. Classic.",wq:"It's Austria! The kipferl came first. France just gave it a French name and a PR makeover."},
+{d:2,cat:"Food Origins",type:"food",emoji:"🍝",dish:"Pasta (Noodles)",q:"Which country has the oldest evidence of noodles, dating back 4,000 years?",o:["Italy","China","Japan","Greece"],a:1,
+f:"A 4,000-year-old bowl of noodles was found at the Lajia archaeological site in China in 2005. They were made from millet, not wheat.",
+rq:"China! 4,000-year-old noodles were found in China. Italy showed up to the pasta party fashionably late.",wq:"It's China! Archaeologists found 4,000-year-old noodles there. Italy's pasta is a relative newcomer."},
+{d:2,cat:"Food Origins",type:"food",emoji:"☕",dish:"Coffee",q:"In which country was coffee first discovered and cultivated?",o:["Colombia","Brazil","Ethiopia","Turkey"],a:2,
+f:"Coffee originated in Ethiopia, where legend says a goat herder named Kaldi noticed his goats dancing after eating coffee berries. It spread to Yemen and then the world.",
+rq:"Ethiopia! A goat herder noticed his goats literally bouncing off the walls. And thus, Monday mornings were saved.",wq:"It's Ethiopia! Coffee was discovered there — legend says thanks to some hyperactive goats."},
+{d:3,cat:"Food Origins",type:"food",emoji:"🍛",dish:"Curry",q:"Which country is considered the origin of curry as a spice-based cooking tradition?",o:["Thailand","Japan","India","Malaysia"],a:2,
+f:"Curry traditions date back over 4,000 years in India. The word 'curry' likely comes from the Tamil word 'kari' meaning sauce or gravy.",
+rq:"India! 4,000 years of curry tradition. They've had more time perfecting spice blends than most civilizations have existed.",wq:"It's India! Curry goes back 4,000 years there. The Tamil word 'kari' gave us the name."},
+{d:3,cat:"Food Origins",type:"food",emoji:"🧇",dish:"Waffles",q:"Which country is most associated with the invention of the modern waffle?",o:["United States","Netherlands","Belgium","France"],a:2,
+f:"Belgium has been making waffles since the Middle Ages. The Brussels waffle and Liège waffle are the two famous Belgian varieties, each with devoted fans.",
+rq:"Belgium again! Fries AND waffles? Belgium is the unsung hero of comfort food.",wq:"It's Belgium! Brussels waffles and Liège waffles — two varieties, one legendary country."},
+{d:3,cat:"Food Origins",type:"food",emoji:"🫕",dish:"Fondue",q:"Which country made fondue its national dish?",o:["France","Italy","Switzerland","Austria"],a:2,
+f:"Switzerland declared fondue its national dish in the 1930s as a way to promote national unity and Swiss cheese and wine industries.",
+rq:"Switzerland! They made melted cheese a national identity. Honestly, respect.",wq:"It's Switzerland! Fondue became the national dish in the 1930s — a cheesy but effective unity move."},
+{d:3,cat:"Food Origins",type:"food",emoji:"🥟",dish:"Dumplings (Jiaozi)",q:"Which country has the longest tradition of making dumplings, dating back 1,800+ years?",o:["Japan","South Korea","China","Mongolia"],a:2,
+f:"Chinese jiaozi date back to the Eastern Han dynasty (25-220 CE). Legend credits Zhang Zhongjing, a famous doctor, with inventing them to treat frostbitten ears.",
+rq:"China! Dumplings were invented by a doctor to cure frostbitten ears. Best prescription ever written.",wq:"It's China! Jiaozi go back 1,800 years — supposedly invented as medicine for frozen ears."},
+// ═══ GEO SCRAMBLE — Unscramble the country name ═══
+// type:'scramble' → shows jumbled letters + a clue, player picks the correct country
+{d:1,cat:"Geo Scramble",type:"scramble",scrambled:"AZLIRB",clue:"Home to the Amazon Rainforest and Carnival",q:"Unscramble: AZLIRB",o:["Bolivia","Brazil","Belize","Brunei"],a:1,
+f:"Brazil contains about 60% of the Amazon Rainforest and hosts the world's largest Carnival celebration in Rio de Janeiro.",
+rq:"Brazil! AZLIRB unscrambled. The Amazon and Carnival — not exactly subtle clues!",wq:"It's Brazil! AZLIRB → BRAZIL. Home to 60% of the Amazon and the world's biggest party."},
+{d:1,cat:"Geo Scramble",type:"scramble",scrambled:"GTYEP",clue:"Land of the Pyramids and the Sphinx",q:"Unscramble: GTYEP",o:["Egypt","Ethiopia","Turkey","Greece"],a:0,
+f:"Egypt's Great Pyramid of Giza is the last surviving wonder of the ancient world, built around 2560 BCE.",
+rq:"Egypt! GTYEP → EGYPT. The pyramids have been standing there for 4,500 years. Kind of a giveaway.",wq:"It's Egypt! Home to the only surviving ancient wonder — the Great Pyramid of Giza."},
+{d:1,cat:"Geo Scramble",type:"scramble",scrambled:"PANJA",clue:"Island nation known for cherry blossoms and anime",q:"Unscramble: PANJA",o:["Japan","Nepal","Panama","Jordan"],a:0,
+f:"Japan's cherry blossom (sakura) season is a major cultural event. The country produces about 60% of the world's anime.",
+rq:"Japan! PANJA → JAPAN. Cherry blossoms and anime? That's the most Japanese combination possible.",wq:"It's Japan! PANJA unscrambles to JAPAN — the land of sakura and 60% of the world's anime."},
+{d:1,cat:"Geo Scramble",type:"scramble",scrambled:"NADACA",clue:"World's second-largest country by area, famous for maple syrup",q:"Unscramble: NADACA",o:["Canada","Panama","Jamaica","Grenada"],a:0,
+f:"Canada produces about 73% of the world's maple syrup, mostly from Quebec. It's the second-largest country by total area.",
+rq:"Canada! NADACA → CANADA. They produce 73% of the world's maple syrup. That's a monopoly!",wq:"It's Canada! 73% of the world's maple syrup comes from there. Quebec is basically a syrup empire."},
+{d:2,cat:"Geo Scramble",type:"scramble",scrambled:"AIROLTSUA",clue:"Continent-country with more kangaroos than people",q:"Unscramble: AIROLTSUA",o:["Austria","Australia","Albania","Algeria"],a:1,
+f:"Australia has an estimated 50 million kangaroos — roughly twice its human population. It's the only country that is also a continent.",
+rq:"Australia! AIROLTSUA → AUSTRALIA. 50 million kangaroos outnumber the humans 2 to 1!",wq:"It's Australia! AIROLTSUA unscrambled. Where kangaroos outnumber people 2:1."},
+{d:2,cat:"Geo Scramble",type:"scramble",scrambled:"CIEXMO",clue:"Country that gave the world chocolate, tacos, and the Aztec Empire",q:"Unscramble: CIEXMO",o:["Mexico","Monaco","Morocco","Moldova"],a:0,
+f:"Mexico was home to the Aztec civilization and is the birthplace of chocolate (cacao), tacos, and many chili peppers.",
+rq:"Mexico! CIEXMO → MEXICO. Chocolate AND tacos? Humanity owes this country a thank-you card.",wq:"It's Mexico! Birthplace of chocolate, tacos, and the mighty Aztec Empire."},
+{d:2,cat:"Geo Scramble",type:"scramble",scrambled:"REEGEC",clue:"Birthplace of the Olympics and democracy",q:"Unscramble: REEGEC",o:["Georgia","Greece","Germany","Grenada"],a:1,
+f:"Ancient Greece held the first Olympic Games in 776 BCE at Olympia. Athens is also credited as the birthplace of democracy around 508 BCE.",
+rq:"Greece! REEGEC → GREECE. Olympics AND democracy? Talk about overachieving in 500 BCE.",wq:"It's Greece! REEGEC unscrambled. First Olympics in 776 BCE, first democracy shortly after."},
+{d:2,cat:"Geo Scramble",type:"scramble",scrambled:"AINDLAN",clue:"Nordic island nation with volcanoes, geysers, and the Northern Lights",q:"Unscramble: AINDLAN",o:["Iceland","Ireland","Finland","Greenland"],a:0,
+f:"Iceland sits on the Mid-Atlantic Ridge with over 30 active volcanic systems. Despite its name, only about 11% of the country is covered in ice.",
+rq:"Iceland! AINDLAN → ICELAND. 30+ volcanoes and only 11% ice. The name is basically false advertising.",wq:"It's Iceland! Over 30 active volcanic systems, and the name is 89% inaccurate."},
+{d:3,cat:"Geo Scramble",type:"scramble",scrambled:"ZABEWMIQO",clue:"Southeast African nation whose flag features an AK-47",q:"Unscramble: ZABEWMIQO",o:["Mozambique","Zimbabwe","Botswana","Madagascar"],a:0,
+f:"Mozambique is the only country with a modern firearm on its flag — an AK-47 symbolizing the armed struggle for independence from Portugal.",
+rq:"Mozambique! ZABEWMIQO was a tough one. Only flag in the world with a modern rifle on it!",wq:"It's Mozambique! That 9-letter scramble hides the country with the most aggressive flag in the world."},
+{d:3,cat:"Geo Scramble",type:"scramble",scrambled:"GADASAMCAR",clue:"World's fourth-largest island, home to lemurs found nowhere else",q:"Unscramble: GADASAMCAR",o:["Madagascar","Guatemala","Azerbaijan","Mozambique"],a:0,
+f:"Madagascar is home to over 100 species of lemurs found nowhere else on Earth. It split from the Indian subcontinent about 88 million years ago.",
+rq:"Madagascar! GADASAMCAR → MADAGASCAR. An island so unique, 90% of its wildlife exists nowhere else!",wq:"It's Madagascar! Home to lemurs that exist literally nowhere else on the planet."},
+{d:3,cat:"Geo Scramble",type:"scramble",scrambled:"HAZAKASTKN",clue:"World's largest landlocked country, home to the Baikonur Cosmodrome",q:"Unscramble: HAZAKASTKN",o:["Kazakhstan","Uzbekistan","Tajikistan","Afghanistan"],a:0,
+f:"Kazakhstan is the world's largest landlocked country at 2.7 million km². Russia's Baikonur Cosmodrome, from which Yuri Gagarin launched into space, is leased within its borders.",
+rq:"Kazakhstan! HAZAKASTKN → KAZAKHSTAN. Largest landlocked country AND the launchpad for the first human in space!",wq:"It's Kazakhstan! 2.7 million km² of landlocked territory and home to humanity's space gateway."},
+{d:4,cat:"Geo Scramble",type:"scramble",scrambled:"THEINLETSENC",clue:"Tiny European principality nestled between Switzerland and Austria",q:"Unscramble: THEINLETSENC",o:["Liechtenstein","Luxembourg","Netherlands","Switzerland"],a:0,
+f:"Liechtenstein is one of only two doubly landlocked countries in the world (surrounded entirely by landlocked countries). Its entire police force has about 87 officers.",
+rq:"Liechtenstein! THEINLETSENC was brutal. A country so small its police force has 87 people!",wq:"It's Liechtenstein! Doubly landlocked and guarded by a police force of about 87 brave souls."},
+// ═══ LANDMARK CLUES — Cryptic clue + emoji, guess the country ═══
+// type:'landmark_clue' → shows emoji scene + poetic clue, player guesses which country
+{d:1,cat:"Landmark Clues",type:"landmark_clue",emoji:"🗼✨🥖",clue:"An iron lady watches over a city of lights and croissants",q:"Which country is home to this landmark?",o:["United Kingdom","France","Italy","Spain"],a:1,
+f:"The Eiffel Tower was built in 1889 for the World's Fair and was originally supposed to be torn down after 20 years. It's now the most-visited paid monument in the world.",
+rq:"France! The 'iron lady' is the Eiffel Tower — saved from demolition to become the world's most visited paid monument!",wq:"It's France! The Eiffel Tower was supposed to be temporary. 136 years later, she's still standing."},
+{d:1,cat:"Landmark Clues",type:"landmark_clue",emoji:"🗽🏙️🍎",clue:"A green giant holds a torch above a harbor in the Big Apple",q:"Which country is home to this landmark?",o:["France","United Kingdom","United States","Canada"],a:2,
+f:"The Statue of Liberty was a gift from France, dedicated in 1886. It stands 93 meters tall including its pedestal on Liberty Island in New York Harbor.",
+rq:"United States! Lady Liberty — a French gift that became America's most iconic welcome sign!",wq:"It's the United States! The Statue of Liberty has been greeting arrivals in New York Harbor since 1886."},
+{d:1,cat:"Landmark Clues",type:"landmark_clue",emoji:"🏛️⚔️🫒",clue:"An ancient hilltop temple dedicated to a goddess of wisdom overlooks a Mediterranean capital",q:"Which country is home to this landmark?",o:["Italy","Turkey","Egypt","Greece"],a:3,
+f:"The Parthenon atop the Acropolis in Athens was dedicated to Athena, goddess of wisdom. Built between 447-432 BCE, it's one of the most influential buildings in Western history.",
+rq:"Greece! The Parthenon on the Acropolis — 2,400 years old and still the gold standard of architecture.",wq:"It's Greece! The Parthenon has been watching over Athens for nearly 2,500 years."},
+{d:2,cat:"Landmark Clues",type:"landmark_clue",emoji:"🏯🌸⛩️",clue:"Cherry blossoms frame ancient wooden castles and vermillion gates",q:"Which country is home to these landmarks?",o:["China","South Korea","Japan","Vietnam"],a:2,
+f:"Japan has over 100 castles still standing, including Himeji Castle (a UNESCO site). The iconic torii gates, like Fushimi Inari's 10,000 vermillion gates, mark sacred Shinto spaces.",
+rq:"Japan! Castles, torii gates, and cherry blossoms — the ultimate aesthetic trio.",wq:"It's Japan! Over 100 castles still stand, and Fushimi Inari alone has 10,000 torii gates."},
+{d:2,cat:"Landmark Clues",type:"landmark_clue",emoji:"🦁🌊💎",clue:"A half-fish, half-lion fountain guards a futuristic city-state at the tip of a peninsula",q:"Which country is home to this landmark?",o:["Malaysia","Thailand","Singapore","Indonesia"],a:2,
+f:"The Merlion (half-lion, half-fish) is Singapore's national symbol. The original 8.6-meter statue at Merlion Park has become one of Southeast Asia's most photographed landmarks.",
+rq:"Singapore! The Merlion — half lion, half fish, fully iconic. Guarding the city-state since 1972!",wq:"It's Singapore! The Merlion combines a lion's head with a fish body — as strange as it is beloved."},
+{d:2,cat:"Landmark Clues",type:"landmark_clue",emoji:"🕌🐫🏜️",clue:"A perfect white marble teardrop rises above the banks of a river, built by a grieving emperor",q:"Which country is home to this landmark?",o:["Iran","Turkey","India","Pakistan"],a:2,
+f:"The Taj Mahal was built by Mughal Emperor Shah Jahan between 1632-1653 as a mausoleum for his wife Mumtaz Mahal. Around 22,000 workers and 1,000 elephants helped construct it.",
+rq:"India! The Taj Mahal — 22,000 workers, 1,000 elephants, and 21 years of construction for one epic love story.",wq:"It's India! The Taj Mahal took 21 years to build. That's commitment to a memorial."},
+{d:2,cat:"Landmark Clues",type:"landmark_clue",emoji:"🗿🌋🌊",clue:"Mysterious giant stone heads stare out to sea from the world's most remote inhabited island",q:"Which country controls the island with this landmark?",o:["New Zealand","Chile","Fiji","Australia"],a:1,
+f:"Easter Island (Rapa Nui) belongs to Chile, lying 3,700 km off its coast. The 887 moai statues were carved by the Rapa Nui people between 1250-1500 CE.",
+rq:"Chile! Easter Island is 3,700 km away but still Chilean. Those 887 moai have been staring into the Pacific for centuries.",wq:"It's Chile! Easter Island's 887 moai statues were carved over 250 years — on the world's most isolated inhabited island."},
+{d:3,cat:"Landmark Clues",type:"landmark_clue",emoji:"🏔️🧊🦅",clue:"A lost stone city sits hidden among cloud-wrapped peaks, built by an empire of the sun",q:"Which country is home to this landmark?",o:["Bolivia","Ecuador","Peru","Colombia"],a:2,
+f:"Machu Picchu sits at 2,430 meters in the Andes. Built around 1450 by the Inca emperor Pachacuti, it was unknown to the outside world until American historian Hiram Bingham reached it in 1911.",
+rq:"Peru! Machu Picchu — hidden in the clouds for 400 years until 1911. The Incas knew how to keep a secret!",wq:"It's Peru! Machu Picchu was hidden from the world until 1911. That's impressive for a whole city."},
+{d:3,cat:"Landmark Clues",type:"landmark_clue",emoji:"🐉🧱🏔️",clue:"A massive wall stretches across mountains and deserts, visible from nearby hills but not from space",q:"Which country is home to this landmark?",o:["Mongolia","China","Japan","India"],a:1,
+f:"The Great Wall of China stretches over 21,000 km across northern China. Despite popular myth, it is NOT visible from space with the naked eye — astronauts have confirmed this.",
+rq:"China! The Great Wall — 21,000 km long. And no, you can't see it from space. That's a myth!",wq:"It's China! The Great Wall is 21,000 km long but the 'visible from space' thing? Totally fake."},
+{d:3,cat:"Landmark Clues",type:"landmark_clue",emoji:"🎭🦘🌊",clue:"Sail-shaped shells of white tile float on a harbor, hosting opera and symphonies in the Southern Hemisphere",q:"Which country is home to this landmark?",o:["New Zealand","South Africa","Australia","Brazil"],a:2,
+f:"The Sydney Opera House took 16 years to build (1957-1973) and went 1,357% over budget. Danish architect Jørn Utzon left the project before completion due to disputes.",
+rq:"Australia! The Sydney Opera House — 1,357% over budget. Government projects haven't changed much since 1973.",wq:"It's Australia! The Opera House went 1,357% over budget. The most beautifully expensive oops in history."},
+{d:3,cat:"Landmark Clues",type:"landmark_clue",emoji:"🦁👑⚔️",clue:"An ancient rock fortress rises from the jungle, a palace built atop a 200-meter granite column",q:"Which country is home to this landmark?",o:["Cambodia","Myanmar","Sri Lanka","Thailand"],a:2,
+f:"Sigiriya ('Lion Rock') in Sri Lanka is a 200-meter rock column topped with the ruins of King Kashyapa's 5th-century palace. The entrance was carved as a giant lion's mouth.",
+rq:"Sri Lanka! Sigiriya — a palace on a 200-meter rock. King Kashyapa really didn't want visitors.",wq:"It's Sri Lanka! Sigiriya's 200-meter rock fortress was basically a 5th-century penthouse."},
+{d:4,cat:"Landmark Clues",type:"landmark_clue",emoji:"🌀🔵🕳️",clue:"A perfect circular blue hole in turquoise waters, a giant sinkhole visible from space",q:"Which country's waters contain this landmark?",o:["Belize","Bahamas","Maldives","Fiji"],a:0,
+f:"The Great Blue Hole off Belize is a giant marine sinkhole over 300 meters across and 125 meters deep. Jacques Cousteau declared it one of the world's top diving sites in 1971.",
+rq:"Belize! The Great Blue Hole — 300 meters across. Jacques Cousteau called it a top diving site. The man had taste!",wq:"It's Belize! The Great Blue Hole is 300 meters wide and 125 meters deep — a sinkhole you can see from space."},
 ];
 
 // Merge image questions into main pool
@@ -1288,7 +1402,7 @@ const COUNTRY_OUTLINES = {
 };
 
 // ─── Country Tag Map (question index → ISO country codes for map progress) ───
-const COUNTRY_TAG_MAP = {0:["JP"],1:["FR"],2:["AU"],3:["CA"],4:["BR"],5:["IN"],6:["CN"],7:["EG"],8:["DE"],9:["KR"],10:["MX"],11:["RU"],12:["IT"],13:["ES"],14:["GB"],16:["AU"],20:["AU"],21:["EG"],24:["AR"],25:["US"],26:["US"],27:["US"],28:["US"],29:["US"],30:["US"],31:["US","CA"],32:["US"],33:["US"],34:["NP","CN"],35:["US"],36:["DK","GL"],37:["AU","FJ","ID","PH"],38:["IN","PA"],39:["NP","BT","CN","IN","PK"],40:["AU"],41:["ES","MA"],42:["PR"],43:["BR"],44:["CA","CN","RU","US"],45:["LI","MC","SM","VA"],46:["CN","ID","IN","US"],47:["AR","BR","CL","CO","EC","PE"],48:["ES","GR","IT","PT"],49:["DZ","LY","SD"],50:["CU","DO","HT","JM","PR"],51:["EG","GR","IR","TR"],52:["DE","FR","GB","IT","RU"],53:["ID","PH","TH","VN"],54:["EG","IN"],55:["IN"],56:["AU","KE","UG"],57:["RU"],60:["RU","US"],61:["AU"],62:["CN","JP","KR","TH"],64:["DE","FR","GB","RU"],65:["AU","ID","PH","TH"],66:["AU","IN"],69:["NZ"],70:["CL","CO","EC","PE"],71:["TR"],72:["NZ"],73:["CH"],74:["US","VN"],75:["MA"],76:["PL"],77:["CO"],78:["GB","TH"],79:["PH"],81:["KE","MW","TD","TZ","UG"],85:["KE"],86:["CL","VE"],87:["GB"],88:["CN","EG","IN","IQ","IR","LY","MN","PK"],89:["RU"],90:["ES","MA"],92:["AU","CA","ID","RU"],93:["CN","KG","KZ","MN","RU","TD","TM","UZ"],94:["ID","IS","JP","PH"],95:["CN","JP","KR","TW"],96:["CL","CO","EC","PE"],97:["AO","KE","MW","MZ","TZ","ZM","ZW"],98:["MX","US"],99:["IN"],103:["CA","US"],104:["CN","RU"],105:["AR"],106:["PE"],107:["CL"],108:["GR"],109:["CN"],110:["RU"],111:["IE"],112:["BD","IN","LK","MM","NP"],113:["AU"],114:["KE"],115:["CO","EC","GY","VE"],116:["BO","CL","EC","PE"],117:["AE","BH","SA","YE"],118:["CN","RU"],119:["CU"],120:["BD","IN","LK","MM"],121:["BZ","CR","GT","HN"],123:["BR","CO","EC","ID","KE"],124:["PK"],125:["TZ"],126:["ET"],127:["LK"],128:["KZ"],130:["AU","RU"],131:["IT"],132:["AR"],133:["CN","FR","RU","US"],134:["ET","GH","KE","NE","NG"],135:["FI","GL","IS","NO"],136:["BN","ID","MY"],137:["DJ","GM","RW","SN","SZ"],138:["AT","BG","DE","HR","HU","RO","RS","SK","UA"],139:["AR","BO","BR","CL","CO","EC","PE","PY"],140:["CN","KH","LA","MM","TH","VN"],141:["IQ","JO"],142:["IN"],143:["AF","CN","IN","IQ","IR","PK","SY","TR"],145:["ES","FR","IT","US"],146:["AD","ES","FR","LI","MC","SM"],147:["IN"],148:["BG","GE","RO","RU","TR","UA"],149:["BG","HU","MD","RO"],150:["LY","SD","ZA"],151:["US"],152:["GU","JP","PR","US"],153:["CN","IN","JP","TR"],154:["CL"],155:["AU"],156:["CN","KZ","MN","RU"],157:["KI"],158:["BO","CO","EC","NP"],159:["BW","IT","LS","MZ","SM","SZ","VA","ZA"],160:["EG","JO"],161:["SA"],162:["IQ","IR","SY","TR"],163:["BD","IN","KR","NL"],164:["IN"],165:["BT","LA","MN","NP"],166:["BT","CH","NP","VA"],168:["CN","EG","IN","MX"],169:["BR","CO","ET","VN"],171:["CN","ET","US"],172:["CO","IN"],173:["BR","PT"],174:["LA","TH"],175:["HN"],176:["NP"],177:["VE"],178:["BD"],179:["AU"],180:["US"],181:["AT","BO","CH","LI","MN","NE","NP","PY","TD","UZ"],182:["BO","BT","LS","NP","ZA"],184:["EG","IL","JO","LB","PS","SY"],185:["DE","ES","FR","IT"],186:["EG","GH","MA","NE","NG"],187:["CN","MM"],188:["LK","MM"],189:["GT","HN","NI","PA"],190:["IQ","RU","SA","US"],191:["CG"],192:["DZ","MA","TN"],193:["IR","LY"],194:["ID","MG","PG"],195:["IN","MG","MU","SC"],196:["IN","LK","MV","SC"],197:["NE","NG"],198:["MX"],201:["BR","CO","EC","ID","KE","KI","ML","SO","ST","UG"],202:["BW","ES","FR","IT","MC","VA","ZM"],203:["AU"],204:["CG"],205:["ME","SS","TL","XK"],206:["NP"],207:["BR"],208:["CA","RU"],209:["ET","KE","TZ","UG"],210:["EG","JO","LB","SA"],211:["ID","IN","NE","NG","PG"],212:["AU"],213:["EC","IN"],214:["CA","RU"],215:["BH","BN","MV","SG"],216:["AR","BO","CL","PE"],217:["CY"],218:["IN"],220:["AR","BR","CA","CN","KZ","RU","US"],221:["BR","CO","ET","VN"],222:["AF","IQ","IR","TR"],223:["EG","JO","LB","SY"],224:["DJ","GM","RW","SN","SZ"],226:["IN"],227:["MC","MT","SG","VA"],228:["AU","BR","CL","ZA"],229:["AR","CL","NZ"],230:["CN","KG","KZ","MN","RU","TM","UZ"],233:["AD","AT","CH","LI"],235:["CN"],236:["GE","KZ","RU","TR"],238:["MX","US"],240:["AF","AT","BO","CH","KG","KZ","LI","MN","NP","TJ","TM","UZ"],241:["AU","CL","ZA"],242:["CA","CU","MX","US"],244:["AU"],246:["ME","SS","TL","XK"],248:["DK","GL","MG"],249:["EG","ET","NE","NG","ZA"],250:["CN","RU"],251:["PA"],252:["AZ","IQ","IR","TM"],253:["IS"],255:["CH","ES","FR","IT","VA"],257:["AU","CL","ZA"],259:["CN"],261:["MX"],262:["QA"],263:["AF","KG","KZ","TJ","TM","UZ"],265:["CA","MX"],266:["CN","SG"],267:["BW","RU","ZA"],269:["FR","GB","IE"],270:["ID"],272:["GR","MK"],274:["CN"],275:["DK","IS","NO","RU"],276:["NE","RU"],278:["DZ","LY","MA","TN"],279:["CA","LT","PL","RU"],280:["ID","MY","NE","NG","TH"],281:["MX"],282:["DE","PA"],284:["AR","CL","EC","PE"],287:["FJ","KI","TO","WS"],297:["JP"],298:["FR"],299:["BR"],300:["CA"],301:["IN"],302:["AU"],303:["MX"],304:["KR"],305:["ZA"],306:["NP"],307:["BT"],308:["MZ"],309:["IT"],310:["IN"],311:["AU"],312:["CL"],313:["JP"],314:["FR"],315:["BR"],316:["RU"],317:["GB"]};
+const COUNTRY_TAG_MAP = {0:["JP"],1:["FR"],2:["AU"],3:["CA"],4:["BR"],5:["IN"],6:["CN"],7:["EG"],8:["DE"],9:["KR"],10:["MX"],11:["RU"],12:["IT"],13:["ES"],14:["GB"],16:["AU"],20:["AU"],21:["EG"],24:["AR"],25:["US"],26:["US"],27:["US"],28:["US"],29:["US"],30:["US"],31:["US","CA"],32:["US"],33:["US"],34:["NP","CN"],35:["US"],36:["DK","GL"],37:["AU","FJ","ID","PH"],38:["IN","PA"],39:["NP","BT","CN","IN","PK"],40:["AU"],41:["ES","MA"],42:["PR"],43:["BR"],44:["CA","CN","RU","US"],45:["LI","MC","SM","VA"],46:["CN","ID","IN","US"],47:["AR","BR","CL","CO","EC","PE"],48:["ES","GR","IT","PT"],49:["DZ","LY","SD"],50:["CU","DO","HT","JM","PR"],51:["EG","GR","IR","TR"],52:["DE","FR","GB","IT","RU"],53:["ID","PH","TH","VN"],54:["EG","IN"],55:["IN"],56:["AU","KE","UG"],57:["RU"],60:["RU","US"],61:["AU"],62:["CN","JP","KR","TH"],64:["DE","FR","GB","RU"],65:["AU","ID","PH","TH"],66:["AU","IN"],69:["NZ"],70:["CL","CO","EC","PE"],71:["TR"],72:["NZ"],73:["CH"],74:["US","VN"],75:["MA"],76:["PL"],77:["CO"],78:["GB","TH"],79:["PH"],81:["KE","MW","TD","TZ","UG"],85:["KE"],86:["CL","VE"],87:["GB"],88:["CN","EG","IN","IQ","IR","LY","MN","PK"],89:["RU"],90:["ES","MA"],92:["AU","CA","ID","RU"],93:["CN","KG","KZ","MN","RU","TD","TM","UZ"],94:["ID","IS","JP","PH"],95:["CN","JP","KR","TW"],96:["CL","CO","EC","PE"],97:["AO","KE","MW","MZ","TZ","ZM","ZW"],98:["MX","US"],99:["IN"],103:["CA","US"],104:["CN","RU"],105:["AR"],106:["PE"],107:["CL"],108:["GR"],109:["CN"],110:["RU"],111:["IE"],112:["BD","IN","LK","MM","NP"],113:["AU"],114:["KE"],115:["CO","EC","GY","VE"],116:["BO","CL","EC","PE"],117:["AE","BH","SA","YE"],118:["CN","RU"],119:["CU"],120:["BD","IN","LK","MM"],121:["BZ","CR","GT","HN"],123:["BR","CO","EC","ID","KE"],124:["PK"],125:["TZ"],126:["ET"],127:["LK"],128:["KZ"],130:["AU","RU"],131:["IT"],132:["AR"],133:["CN","FR","RU","US"],134:["ET","GH","KE","NE","NG"],135:["FI","GL","IS","NO"],136:["BN","ID","MY"],137:["DJ","GM","RW","SN","SZ"],138:["AT","BG","DE","HR","HU","RO","RS","SK","UA"],139:["AR","BO","BR","CL","CO","EC","PE","PY"],140:["CN","KH","LA","MM","TH","VN"],141:["IQ","JO"],142:["IN"],143:["AF","CN","IN","IQ","IR","PK","SY","TR"],145:["ES","FR","IT","US"],146:["AD","ES","FR","LI","MC","SM"],147:["IN"],148:["BG","GE","RO","RU","TR","UA"],149:["BG","HU","MD","RO"],150:["LY","SD","ZA"],151:["US"],152:["GU","JP","PR","US"],153:["CN","IN","JP","TR"],154:["CL"],155:["AU"],156:["CN","KZ","MN","RU"],157:["KI"],158:["BO","CO","EC","NP"],159:["BW","IT","LS","MZ","SM","SZ","VA","ZA"],160:["EG","JO"],161:["SA"],162:["IQ","IR","SY","TR"],163:["BD","IN","KR","NL"],164:["IN"],165:["BT","LA","MN","NP"],166:["BT","CH","NP","VA"],168:["CN","EG","IN","MX"],169:["BR","CO","ET","VN"],171:["CN","ET","US"],172:["CO","IN"],173:["BR","PT"],174:["LA","TH"],175:["HN"],176:["NP"],177:["VE"],178:["BD"],179:["AU"],180:["US"],181:["AT","BO","CH","LI","MN","NE","NP","PY","TD","UZ"],182:["BO","BT","LS","NP","ZA"],184:["EG","IL","JO","LB","PS","SY"],185:["DE","ES","FR","IT"],186:["EG","GH","MA","NE","NG"],187:["CN","MM"],188:["LK","MM"],189:["GT","HN","NI","PA"],190:["IQ","RU","SA","US"],191:["CG"],192:["DZ","MA","TN"],193:["IR","LY"],194:["ID","MG","PG"],195:["IN","MG","MU","SC"],196:["IN","LK","MV","SC"],197:["NE","NG"],198:["MX"],201:["BR","CO","EC","ID","KE","KI","ML","SO","ST","UG"],202:["BW","ES","FR","IT","MC","VA","ZM"],203:["AU"],204:["CG"],205:["ME","SS","TL","XK"],206:["NP"],207:["BR"],208:["CA","RU"],209:["ET","KE","TZ","UG"],210:["EG","JO","LB","SA"],211:["ID","IN","NE","NG","PG"],212:["AU"],213:["EC","IN"],214:["CA","RU"],215:["BH","BN","MV","SG"],216:["AR","BO","CL","PE"],217:["CY"],218:["IN"],220:["AR","BR","CA","CN","KZ","RU","US"],221:["BR","CO","ET","VN"],222:["AF","IQ","IR","TR"],223:["EG","JO","LB","SY"],224:["DJ","GM","RW","SN","SZ"],226:["IN"],227:["MC","MT","SG","VA"],228:["AU","BR","CL","ZA"],229:["AR","CL","NZ"],230:["CN","KG","KZ","MN","RU","TM","UZ"],233:["AD","AT","CH","LI"],235:["CN"],236:["GE","KZ","RU","TR"],238:["MX","US"],240:["AF","AT","BO","CH","KG","KZ","LI","MN","NP","TJ","TM","UZ"],241:["AU","CL","ZA"],242:["CA","CU","MX","US"],244:["AU"],246:["ME","SS","TL","XK"],248:["DK","GL","MG"],249:["EG","ET","NE","NG","ZA"],250:["CN","RU"],251:["PA"],252:["AZ","IQ","IR","TM"],253:["IS"],255:["CH","ES","FR","IT","VA"],257:["AU","CL","ZA"],259:["CN"],261:["MX"],262:["QA"],263:["AF","KG","KZ","TJ","TM","UZ"],265:["CA","MX"],266:["CN","SG"],267:["BW","RU","ZA"],269:["FR","GB","IE"],270:["ID"],272:["GR","MK"],274:["CN"],275:["DK","IS","NO","RU"],276:["NE","RU"],278:["DZ","LY","MA","TN"],279:["CA","LT","PL","RU"],280:["ID","MY","NE","NG","TH"],281:["MX"],282:["DE","PA"],284:["AR","CL","EC","PE"],287:["FJ","KI","TO","WS"],297:["JP"],298:["FR"],299:["BR"],300:["CA"],301:["IN"],302:["AU"],303:["MX"],304:["KR"],305:["ZA"],306:["NP"],307:["BT"],308:["MZ"],309:["IT"],310:["IN"],311:["AU"],312:["CL"],313:["JP"],314:["FR"],315:["BR"],316:["RU"],317:["GB"],318:["IT"],319:["MX"],320:["JP"],321:["MX"],322:["BE"],323:["AT"],324:["CN"],325:["ET"],326:["IN"],327:["BE"],328:["CH"],329:["CN"],330:["BR"],331:["EG"],332:["JP"],333:["CA"],334:["AU"],335:["MX"],336:["GR"],337:["IS"],338:["MZ"],339:["MG"],340:["KZ"],341:["LI"],342:["FR"],343:["US"],344:["GR"],345:["JP"],346:["SG"],347:["IN"],348:["CL"],349:["PE"],350:["CN"],351:["AU"],352:["LK"],353:["BZ"]};
 
 // ─── Flag emoji from ISO code ─────────────────────────────────────────────────
 const flagEmoji = (code) => String.fromCodePoint(...[...code.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
@@ -1370,6 +1484,59 @@ const BADGE_DEFINITIONS = [
   {id:"well_rounded",name:"Well Rounded",icon:"🎯",desc:"Answer questions from all 19 categories",check:p=>Object.keys(p.catCorrect||{}).length>=19}
 ];
 
+// ─── Secret / Hidden Badge Definitions ───────────────────────────────────────
+// These badges are HIDDEN from the player until earned. Descriptions are cryptic hints.
+const SECRET_BADGE_DEFINITIONS = [
+  // Time-based
+  {id:"night_owl",name:"Night Owl",icon:"🦉",desc:"???",hint:"The world looks different after dark...",secret:true,
+    check:p=>(p.midnightGames||0)>=1},
+  {id:"early_bird",name:"Early Bird",icon:"🐦",desc:"???",hint:"Geography before breakfast? Respect.",secret:true,
+    check:p=>(p.earlyBirdGames||0)>=1},
+  // Category streaks
+  {id:"foodie_frenzy",name:"Foodie Frenzy",icon:"🍽️",desc:"???",hint:"One cuisine after another, no misses...",secret:true,
+    check:p=>(p.bestCatStreak?.["Food Origins"]||0)>=5},
+  {id:"flag_fanatic",name:"Flag Fanatic",icon:"🏴",desc:"???",hint:"You really know your cloth and colors.",secret:true,
+    check:p=>(p.typeCorrect?.flag||0)>=15},
+  {id:"silhouette_sleuth",name:"Silhouette Sleuth",icon:"🔍",desc:"???",hint:"Shadows tell you everything you need.",secret:true,
+    check:p=>(p.typeCorrect?.silhouette||0)>=10},
+  {id:"word_wizard",name:"Word Wizard",icon:"🧙",desc:"???",hint:"Unscramble your way to glory.",secret:true,
+    check:p=>(p.typeCorrect?.scramble||0)>=8},
+  {id:"landmark_legend",name:"Landmark Legend",icon:"🏛️",desc:"???",hint:"Clues in emoji? Child's play for you.",secret:true,
+    check:p=>(p.typeCorrect?.landmark_clue||0)>=8},
+  // Tiny/obscure countries
+  {id:"tiny_titan",name:"Tiny Titan",icon:"🔬",desc:"???",hint:"The smallest places, the biggest knowledge.",secret:true,
+    check:p=>(p.tinyCountryCorrect||0)>=5},
+  // Clutch plays
+  {id:"buzzer_beater",name:"Buzzer Beater",icon:"⏰",desc:"???",hint:"Two seconds left? No problem.",secret:true,
+    check:p=>(p.lastSecondCorrect||0)>=3},
+  // Lifeline mastery
+  {id:"lifeline_junkie",name:"Lifeline Junkie",icon:"🆘",desc:"???",hint:"Use every tool in the toolbox.",secret:true,
+    check:p=>p.usedAllLifelinesOneGame===true},
+  {id:"no_training_wheels",name:"No Training Wheels",icon:"🚲",desc:"???",hint:"Who needs help? Not you.",secret:true,
+    check:p=>(p.gamesPlayed||0)>=5 && (p.lifelinesUsed||0)===0},
+  // Difficulty mastery
+  {id:"big_brain",name:"Big Brain Energy",icon:"🧠",desc:"???",hint:"Level 4 questions fear YOU.",secret:true,
+    check:p=>(p.allDifficulty4Correct||0)>=10},
+  // Survival mode
+  {id:"cockroach",name:"Cockroach",icon:"🪳",desc:"???",hint:"Nothing can take you down in survival.",secret:true,
+    check:p=>(p.survivalBest||0)>=20},
+  {id:"flawless_survivor",name:"Flawless Survivor",icon:"💎",desc:"???",hint:"Survive without a single scratch.",secret:true,
+    check:p=>(p.perfectSurvivalRun||0)>=10},
+  // Volume/dedication
+  {id:"century_club",name:"Century Club",icon:"💯",desc:"???",hint:"Triple digits of correct answers.",secret:true,
+    check:p=>(p.totalCorrect||0)>=100},
+  {id:"capital_conqueror",name:"Capital Conqueror",icon:"👑",desc:"???",hint:"You could name every capital on Earth.",secret:true,
+    check:p=>(p.catCorrect?.Capitals||0)>=50},
+  // Failure badges (embrace the struggle!)
+  {id:"resilient",name:"Resilient",icon:"🦾",desc:"???",hint:"Fall down 5 times, get up 6.",secret:true,
+    check:p=>(p.wrongStreakMax||0)>=5},
+  {id:"geography_101",name:"Back to Basics",icon:"📚",desc:"???",hint:"Everyone starts somewhere... 50 games somewhere.",secret:true,
+    check:p=>(p.gamesPlayed||0)>=50},
+];
+
+// Combine all badge definitions
+const ALL_BADGE_DEFINITIONS = [...BADGE_DEFINITIONS, ...SECRET_BADGE_DEFINITIONS];
+
 // ─── Daily Streak Milestones ──────────────────────────────────────────────────
 const STREAK_MILESTONES = [
   {days:3,title:"Getting Warmed Up",icon:"🌡️",bonus:5},
@@ -1386,99 +1553,251 @@ const CATEGORY_SETUPS = {
     "Capitals! The cities that run the show... or at least pretend to.",
     "Not every capital is the biggest or flashiest city. Some are sneaky little surprises.",
     "Pop quiz on capitals! And no, the capital isn't always the city you've heard of most.",
-    "Time for capitals. Where the government hangs its hat... whether you knew it or not."
+    "Time for capitals. Where the government hangs its hat... whether you knew it or not.",
+    "Capital cities! The VIP section of every country. Some of them are surprising.",
+    "Here's a life lesson: the capital is almost NEVER the city you'd guess first. Geography loves plot twists.",
+    "Capitals are like lead singers — they get all the attention, even when they're not the biggest.",
+    "If you think the biggest city is always the capital, geography is about to humble you."
   ],
   "Physical Geography": [
     "Let's get physical! ...Geographically speaking.",
     "Mountains, rivers, deserts — Earth's greatest hits album.",
     "Nature built some wild stuff. Let's see if you've been paying attention.",
-    "Physical geography: where rocks, water, and dirt become surprisingly interesting."
+    "Physical geography: where rocks, water, and dirt become surprisingly interesting.",
+    "Earth has been sculpting itself for 4.5 billion years. Pop quiz on the results.",
+    "Tectonic plates, erosion, and volcanic fury — Earth's renovation never stops.",
+    "The planet has mountains, trenches, deserts, and glaciers. It's basically showing off at this point.",
+    "Physical geography! Where 'the floor is lava' is sometimes literally true."
   ],
   "US Geography": [
     "America: 50 states, 50 chances to get confused about which one is where.",
     "Let's see how well you know the good ol' US of A.",
     "Stars, stripes, and state facts. How well do you really know this country?",
-    "US geography! Not just the states you've visited on family road trips."
+    "US geography! Not just the states you've visited on family road trips.",
+    "50 states, and most people can only point to like 12 on a map. Be better than most people.",
+    "The United States: where everything is big, dramatic, and geographically extra.",
+    "Quick: can you name all 50 states? No? Well, at least know the ones in this question.",
+    "US Geography! Where 'it's somewhere in the middle' is never an acceptable answer."
   ],
   "Oceans & Seas": [
     "The ocean: covering 71% of Earth and 100% of what makes sailors nervous.",
     "Water, water everywhere — and lots of trivia about it.",
-    "Time to dive deep. Figuratively. Please don't literally dive into your screen."
+    "Time to dive deep. Figuratively. Please don't literally dive into your screen.",
+    "Oceans: 71% of the planet, 99% unexplored, and 100% on this quiz.",
+    "Fun fact: we know more about the surface of Mars than the bottom of our own oceans. Anyway, trivia time!",
+    "The oceans are big, salty, and full of surprises. Kind of like this game show.",
+    "If fish could take this quiz, they'd crush it. Let's see if you can keep up.",
+    "The seven seas! Well, five oceans. Depends who you ask. Geography is complicated."
   ],
   "Countries": [
     "195 countries on this planet. Let's see how many you actually know about.",
     "Countries! Some are huge, some are tiny, all of them have opinions.",
-    "The world is a big place. Let's see if you know your way around it."
+    "The world is a big place. Let's see if you know your way around it.",
+    "There are countries smaller than your city and cities bigger than most countries. Geography is wild.",
+    "195 countries, and every single one thinks it's the main character. Let's test your knowledge!",
+    "Countries! The building blocks of 'I've always wanted to visit there.'",
+    "Quick geography tip: knowing where countries are is roughly 80% of geography. Nail this.",
+    "Planet Earth: 195 countries, infinite trivia potential."
   ],
   "Continents": [
     "Seven continents. You'd think that would be simple. You'd be wrong.",
     "Continental knowledge — the foundation of all geography!",
-    "Continents: the biggest pieces of the puzzle. Literally."
+    "Continents: the biggest pieces of the puzzle. Literally.",
+    "Only seven continents and people STILL get them mixed up. You're better than that. ...Right?",
+    "Seven massive chunks of land. Let's make sure you know what's happening on each one.",
+    "Continents! The cheat code to geography. If you know your continents, you know your way around.",
+    "Think of continents as the neighborhoods of Earth. Let's see if you know the neighborhood.",
+    "Seven continents, seven chances to prove you paid attention in class."
   ],
   "Rivers & Lakes": [
     "Rivers and lakes: nature's highways and parking lots.",
     "Water features! Not the kind in your backyard — the REAL ones.",
-    "Let's talk about Earth's plumbing system: rivers and lakes."
+    "Let's talk about Earth's plumbing system: rivers and lakes.",
+    "Rivers: Earth's original highways. Lakes: Earth's original swimming pools. Both: on this quiz.",
+    "Every great civilization started near water. Let's see if you know which water.",
+    "Rivers don't care about borders. They just flow wherever they want. Respect that energy.",
+    "Fun fact: there are rivers under the ocean. Geography never stops being weird.",
+    "Lakes and rivers: providing drinking water, transportation, and geography questions since forever."
   ],
   "Mountains & Deserts": [
     "Mountains and deserts: Earth's way of showing off and being dramatic.",
     "The highest highs and the driest lows. Geography has range.",
-    "Peaks and sand — two of Earth's favorite things to throw around."
+    "Peaks and sand — two of Earth's favorite things to throw around.",
+    "Mountains said 'let me grow taller' and deserts said 'let me get drier.' Earth is competitive with itself.",
+    "If you think deserts are just sand and mountains are just rocks, geography is about to school you.",
+    "Mountains: where the air is thin and the quiz questions are thick.",
+    "Deserts are actually fascinating. Dry, but fascinating. Like this category.",
+    "The Sahara is the size of the US. Everest is taller than 29 stacked Statues of Liberty. Earth doesn't do 'subtle.'"
   ],
   "Borders & Neighbors": [
     "Borders: imaginary lines that real people take very, very seriously.",
     "Who's next to who? Geography's version of a seating chart.",
-    "Neighbors! Some countries have lots of them. Some prefer to be islands. Literally."
+    "Neighbors! Some countries have lots of them. Some prefer to be islands. Literally.",
+    "Borders are basically geography's relationship status. 'It's complicated.'",
+    "Some borders are rivers, some are mountains, some are just... vibes. Let's test your knowledge.",
+    "Knowing who borders who is like knowing the gossip of the world map. Essential stuff.",
+    "Countries can't pick their neighbors, but they CAN passive-aggressively build walls. Anyway, trivia!",
+    "Fun fact: some borders are straight lines drawn by colonizers who had rulers but no common sense."
   ],
   "Islands": [
     "Islands: because sometimes land just wants some personal space.",
     "Surrounded by water on all sides — the introvert of landforms.",
-    "Island time! And by that I mean geography questions about islands."
+    "Island time! And by that I mean geography questions about islands.",
+    "Islands: proof that even continents have pieces that break off and do their own thing.",
+    "Some islands are tropical paradises. Some are frozen wastelands. All of them are on this quiz.",
+    "An island is just land that committed to being surrounded by water. Respect the commitment.",
+    "From Greenland to Manhattan, islands come in every size. Let's see what you know!",
+    "Islands: where the vacation vibes are real but the geography questions are harder than you think."
   ],
   "Cultural Geography": [
     "Languages, people, traditions — the human side of geography.",
     "It's not just about WHERE things are, it's about WHO lives there.",
-    "Cultural geography: where maps meet humanity."
+    "Cultural geography: where maps meet humanity.",
+    "People, languages, and traditions — the part of geography that reminds you the world is alive.",
+    "Over 7,000 languages on Earth. You're about to be quizzed on the geography of a few of them.",
+    "Cultural geography! Because knowing WHERE people are is only half the story.",
+    "The world isn't just mountains and rivers. It's people, food, music, and really good trivia questions.",
+    "Culture makes geography interesting. Without people, it's just a really pretty rock in space."
   ],
   "Climate & Weather": [
     "Climate: what you expect. Weather: what you get. Let's talk about what you know.",
     "Hot, cold, wet, dry — Earth has ALL the settings.",
-    "Weather is temporary. Climate is forever. Or at least for test purposes."
+    "Weather is temporary. Climate is forever. Or at least for test purposes.",
+    "Earth's thermostat is broken and nobody can agree on the temperature. Anyway, quiz time!",
+    "Climate zones: because not every place on Earth agreed to have the same weather.",
+    "From tundra to tropical, Earth has more climate settings than your thermostat.",
+    "Rain, snow, sunshine, hurricanes — Earth is DRAMATIC about its weather.",
+    "Climate is basically weather's long-term personality. Let's see if you know the personality types."
   ],
   "Landmarks": [
     "Natural and human-made landmarks — the stuff that makes postcards possible.",
     "Famous places! The kind people travel thousands of miles to take selfies at.",
-    "Landmarks: nature and humans competing to see who builds cooler stuff."
+    "Landmarks: nature and humans competing to see who builds cooler stuff.",
+    "If it's on a magnet at an airport gift shop, it's probably a landmark. Let's quiz!",
+    "Landmarks! The stuff that makes you say 'I need to go there before I die.'",
+    "Humans build towers. Nature builds canyons. Both of them end up on this quiz.",
+    "From pyramids to waterfalls, the world has no shortage of 'wow, that's real?!' moments.",
+    "Landmarks: the world's way of saying 'look at me, look at me!'"
   ],
   "Straits & Waterways": [
     "Straits and waterways: the narrow passages that make admirals nervous.",
     "Chokepoints of the world! Tiny water passages with massive importance.",
-    "The world's most important water hallways. Don't run in them."
+    "The world's most important water hallways. Don't run in them.",
+    "Straits: tiny on the map, enormous in importance. Kind of like geography nerds.",
+    "These narrow waterways control global trade. No pressure, but knowing them is kind of a big deal.",
+    "Canals and straits: humanity's greatest shortcuts through water. Some natural, some hand-dug.",
+    "If geography had bottlenecks, they'd be straits. Literally. That's what they are.",
+    "Waterways: where 'a few miles wide' can control the economy of entire continents."
   ],
   "Historical Geography": [
     "Geography meets history. Because where things happened matters too.",
     "The 'when' and 'where' of the world, combined for maximum trivia damage.",
-    "Historical geography: where the past and the map collide."
+    "Historical geography: where the past and the map collide.",
+    "Countries change names, borders shift, empires rise and fall — but the geography questions remain.",
+    "History is just geography with a timeline. Let's test both at once.",
+    "The past isn't dead — it's on the map. Just sometimes under a different name.",
+    "Historical geography: for when regular geography isn't hard enough.",
+    "Empires, colonies, and name changes — the world's map has been through a LOT of edits."
   ],
   "Population": [
     "8 billion people on Earth. Let's see if you know where they all live.",
     "Demographics! The study of who lives where and in what numbers.",
-    "People, people everywhere. But where exactly? That's the question."
+    "People, people everywhere. But where exactly? That's the question.",
+    "8 billion people and they are NOT evenly distributed. Geography has favorites, apparently.",
+    "Some cities have more people than entire countries. The world is unevenly packed and that's on the quiz.",
+    "Population geography: where 'there are HOW many people there?' is a valid reaction.",
+    "Fun fact: more than half the world lives in Asia. The other half wishes they had that kind of squad.",
+    "Population density is wild. Some places have 50,000 people per square mile. Others have polar bears."
   ],
   "Economy & Resources": [
     "Money makes the world go round. Geography tells you where the money is.",
     "Natural resources, trade routes, and economic powerhouses. Let's go!",
-    "Economics meets geography. Your wallet's favorite subject."
+    "Economics meets geography. Your wallet's favorite subject.",
+    "Oil, gold, diamonds, lithium — the Earth is basically a treasure chest with countries sitting on top.",
+    "Trade routes shaped the modern world. Knowing them makes you dangerously smart.",
+    "Resources! The reason countries either thrive or really wish they had different geology.",
+    "Economic geography: where 'location, location, location' is literally the entire field.",
+    "Some countries sit on oil. Some sit on gold. Some sit on really nice beaches. All geography."
   ],
   "Extreme Geography": [
     "Records, extremes, and superlatives! Geography's greatest hits.",
     "The biggest, smallest, highest, deepest, and weirdest. Let's go extreme.",
-    "Extreme geography — where the planet shows off its personal bests."
+    "Extreme geography — where the planet shows off its personal bests.",
+    "Geography's highlight reel! The tallest, deepest, hottest, coldest, and most 'wait, really?!' facts.",
+    "If geography had a yearbook, these would be the superlatives. Most likely to be on the quiz.",
+    "Extreme geography: for when normal facts just aren't dramatic enough.",
+    "The Earth has been breaking its own records for billions of years. Pop quiz on the greatest hits.",
+    "Highest, lowest, biggest, smallest — Earth is the overachiever of the solar system."
   ],
   "Map Skills": [
     "Lines on a map! Latitude, longitude, and the grid that holds it all together.",
     "Map skills: because even GPS needs to know where the lines are.",
-    "Coordinates and cartography! The nerdy backbone of all geography."
+    "Coordinates and cartography! The nerdy backbone of all geography.",
+    "Latitude and longitude: the world's address system. And you need to know the zip codes.",
+    "Map skills! The difference between 'I know where that is' and actually knowing where that is.",
+    "Without map skills, geography is just looking at pretty colors. Let's level up.",
+    "Cartography: the ancient art of drawing the world before Google did it for us.",
+    "The Equator, the Prime Meridian, the International Date Line — geography's invisible infrastructure."
+  ],
+  "Flags": [
+    "Flag time! Every country designed a rectangle to represent themselves. Some got creative.",
+    "Flags: the world's most patriotic graphic design project.",
+    "Vexillology — that's the study of flags! Yes, that's a real word. No, it won't be on the quiz. The FLAG will.",
+    "Red, white, blue, green, stars, stripes, crescents, suns — flags have it all!",
+    "Some flags are iconic. Some look like they were designed in 5 minutes. All of them are geography.",
+    "Flag recognition: the skill that impresses exactly one type of person (geography nerds). You're welcome.",
+    "Every flag tells a story. Let's see if you can match the story to the country.",
+    "Flags: where colors, symbols, and national pride collide on a piece of fabric."
+  ],
+  "Silhouettes": [
+    "Country outlines! Can you name a country just by its shape? Let's find out.",
+    "Silhouette round! No labels, no colors, just shapes. Good luck!",
+    "Recognize the shape! It's like a geography Rorschach test, but there's a right answer.",
+    "Country outlines: the ultimate test of 'have you actually LOOKED at a map lately?'",
+    "Shape recognition! Some countries are instantly recognizable. Others... are rectangular.",
+    "No names, no hints, just borders. This is geography in hard mode.",
+    "Silhouettes! The geography equivalent of identifying someone by their shadow.",
+    "Can you ID a country by shape alone? This is the geography flex you didn't know you needed."
+  ],
+  "Map Outlines": [
+    "Country outlines! Can you name a country just by its shape? Let's find out.",
+    "Silhouette round! No labels, no colors, just shapes. Good luck!",
+    "It's like a geography Rorschach test, except there's a right answer.",
+    "The ultimate test of 'have you actually LOOKED at a map lately?'",
+    "Some countries are instantly recognizable by shape. Others look like a potato. Focus up.",
+    "No names, no hints, just borders. Geography in hard mode.",
+    "Identifying countries by outline — the skill that'll make you dangerous at pub trivia.",
+    "Can you ID a country by shape alone? This is the atlas equivalent of Name That Tune."
+  ],
+  "Food Origins": [
+    "Food Origins! Every delicious dish has a homeland. Time to trace your favorites back to their roots.",
+    "Where does your food come from? Not the grocery store. I mean ORIGINALLY.",
+    "Geography meets gastronomy! The most delicious quiz category ever invented.",
+    "Food Origins: where 'French fries' aren't French and 'Chinese checkers' aren't Chinese. Life is a lie.",
+    "Every iconic dish was invented somewhere. Let's see if you know where your favorites were born.",
+    "Time to test your culinary geography! Spoiler: the answers are often surprising.",
+    "The world gave us incredible food. Let's see if you can give the world credit for the right dishes.",
+    "Food Origins! Warning: this category may cause spontaneous hunger and geographic revelations."
+  ],
+  "Geo Scramble": [
+    "Geo Scramble! The letters are all there. They're just... rearranged. You got this. Probably.",
+    "Unscramble the country! It's like Wordle met an atlas and they had a baby.",
+    "The letters are jumbled, but the country is real. Think fast, spell faster!",
+    "Geo Scramble time! Your brain is about to do geography AND a word puzzle simultaneously. Good luck.",
+    "Scrambled letters, one country. It's anagram time, geography style!",
+    "Every letter is a clue. Unscramble them and name the nation. No pressure, but there's a timer.",
+    "Geo Scramble! Like Scrabble, except every answer is a country and you can't use a blank tile.",
+    "Word jumble meets world map. If you've ever rearranged fridge magnets, you're basically trained for this."
+  ],
+  "Landmark Clues": [
+    "Landmark Clues! Cryptic hints about famous places. Can you crack the code?",
+    "Every landmark tells a story. I'll give you the story — you tell me where it lives.",
+    "Emoji clues + poetic hints = one iconic landmark. This is geography meets riddles.",
+    "Famous landmarks, described the hard way. No names, just vibes and emojis.",
+    "Landmark Clues! I'll paint a picture with words and emojis. You tell me the country.",
+    "Some landmarks are world-famous. Let's see if you can identify them from a cryptic clue.",
+    "Riddle me this, geography fans: which country holds this famous landmark?",
+    "Clue-based geography! It's like a scavenger hunt, except the whole world is the playing field."
   ]
 };
 
@@ -1486,7 +1805,30 @@ const HOST_INTROS = [
   "Welcome to GEO-WRECKED! The only game show where knowing where stuff is actually matters!",
   "I'm your host, and I'll be judging your geographic knowledge with barely concealed glee.",
   "Let's see if you're smarter than a GPS, shall we?",
-  "Welcome back to GEO-WRECKED! Where the globe spins and the points DO matter!"
+  "Welcome back to GEO-WRECKED! Where the globe spins and the points DO matter!",
+  "Oh good, you're back. The globe was getting dusty. Let's spin it.",
+  "GEO-WRECKED! Where we turn 'I think it's somewhere in Europe' into actual knowledge.",
+  "Welcome! Fun fact: you're currently located at your device. That's the last easy question.",
+  "Ladies and gentlemen, welcome to the show where 'close enough' is NOT good enough!",
+  "You could be doing literally anything right now, and you chose geography. I respect that chaotic energy.",
+  "GEO-WRECKED! Because Google Maps can't help you on the GeoBee stage.",
+  "I'm back, you're back, and the world is still round. Mostly. Let's do this.",
+  "Welcome! Remember: in this game, the only continent that matters is the one in the question.",
+  "GEO-WRECKED! The game that makes your geography teacher's heart grow three sizes.",
+  "Before we start, a reminder: there's no 'phone a friend' in geography. Only raw brainpower.",
+  "Welcome to the show where we separate the atlases from the amateurs!",
+  "You've got 25 questions between you and geographic glory. No pressure. Okay, SOME pressure.",
+  "GEO-WRECKED! Turning 'wait, is that in South America or Africa?' into championship material.",
+  "I've been told to go easy on you. I've decided not to listen.",
+  "Welcome! The only show where knowing the capital of Burkina Faso makes you a rockstar.",
+  "GEO-WRECKED! Because the world is too interesting to NOT know about it.",
+  "Fun fact: most people can't name 10 countries. You're about to name a LOT more. Or fail trying.",
+  "Welcome! Confidence is great. Accurate confidence is better. Let's see which one you've got.",
+  "The globe is spinning, the clock is ticking, and your reputation is on the line. Standard Tuesday.",
+  "GEO-WRECKED! Where being a geography nerd is finally a competitive advantage.",
+  "You know what separates champions from everyone else? Knowing that Myanmar used to be Burma. Let's go.",
+  "Welcome to GEO-WRECKED, where the questions are real and the points are meaningful!",
+  "The world has 195 countries, 7 continents, and 1 champion. Will it be you? Spoiler: we'll find out."
 ];
 
 const ROUND_NAMES = {
@@ -1498,56 +1840,375 @@ const ROUND_NAMES = {
 };
 
 const ROUND_INTROS = {
-  1: ["Round 1: We're starting easy. Don't get cocky.", "The warm-up! Consider this geography stretching."],
-  2: ["Round 2: Getting Warmer — like the planet! ...Too soon?", "Time to separate the map readers from the map folders."],
-  3: ["Round 3: Hope you stretched your brain.", "This is where dreams go to get a geography lesson."],
-  4: ["Round 4: Only the brave survive.", "If you're still here, you know your stuff or you're stubborn. Either way, respect."],
-  5: ["CHAMPIONSHIP ROUND! This is GeoBee finals material. No pressure.", "This is it. The big leagues. The GEOOOOO BEEEEEE!"]
+  1: [
+    "We're starting easy. Don't get cocky.",
+    "Consider this geography stretching. Loosen up those brain muscles.",
+    "The warm-up round! If you miss these, we need to have a conversation.",
+    "Easy mode! Enjoy it while it lasts. Spoiler: it won't last.",
+    "Think of this as the tutorial level. Except the timer is real.",
+    "Softballs first! I'm nice like that. Temporarily.",
+    "Round 1 is basically a free trial. The subscription gets expensive.",
+    "If geography were a pool, we're in the shallow end. Floaties encouraged."
+  ],
+  2: [
+    "Getting Warmer — like the planet! ...Too soon?",
+    "Time to separate the map readers from the map folders.",
+    "Okay, recess is over. Time to actually think.",
+    "If Round 1 was a stroll, Round 2 is a brisk jog. Keep up.",
+    "We're ramping up! Think of this as geography's second gear.",
+    "The training wheels are off. Try not to crash.",
+    "Things are heating up! And I don't just mean because of global warming.",
+    "Round 2: where 'I think I knew that' becomes 'I definitely don't know that.'"
+  ],
+  3: [
+    "Hope you stretched your brain. It's about to get a workout.",
+    "This is where dreams go to get a geography lesson.",
+    "Welcome to the part of the game where guessing stops working.",
+    "Round 3: No More Mr. Nice Globe. That's literally the name. I don't make the rules.",
+    "If you're still feeling confident, enjoy the next 30 seconds of that.",
+    "The fun and games are over. Well, it's still a game. But the fun part is debatable.",
+    "Things just got real. Like, 'studying for the GeoBee' real.",
+    "This is the round that separates the tourists from the explorers."
+  ],
+  4: [
+    "Only the brave survive this round. The rest just... learn things.",
+    "If you're still here, you know your stuff. Or you're stubborn. Either way, respect.",
+    "Welcome to The Gauntlet! Where the questions come harder and the timer feels shorter.",
+    "Round 4: now we're cooking with gas. Geographic gas. That sounded better in my head.",
+    "This is where geography teachers watch and nod approvingly. Or wince. Could go either way.",
+    "Four rounds in and you're still standing? The GeoBee committee is taking notes.",
+    "This is expert territory. If geography were a video game, this is the boss level.",
+    "Round 4: where we find out if your knowledge has depth or if you've been bluffing."
+  ],
+  5: [
+    "CHAMPIONSHIP ROUND! This is GeoBee finals material. No pressure. Okay, ALL the pressure.",
+    "This is it. The big leagues. The GEOOOOO BEEEEEE!",
+    "The final round. Where legends are born and egos are humbled.",
+    "If you ace this, you are officially a geography weapon. A WEAPON.",
+    "Five rounds of geography. You've survived this long. Finish strong or finish... aware of your weaknesses.",
+    "Championship material! These questions are the geography equivalent of a final boss.",
+    "The last five questions. Your entire geographic reputation comes down to this. No big deal.",
+    "FINAL ROUND! This is the stuff that makes National Geographic champions cry. Let's gooooo!"
+  ]
 };
 
 const STREAK_COMMENTS = {
-  3: "Three in a row! You're on fire! (Not literally. That would be a different kind of geography event.)",
-  5: "FIVE STREAK! You're basically a walking atlas!",
-  7: "SEVEN?! Are you secretly a cartographer?",
-  10: "TEN IN A ROW! I think you might actually WIN the GeoBee."
+  3: [
+    "Three in a row! You're on fire! (Not literally. That would be a different kind of geography event.)",
+    "Hat trick! Three straight! The globe is impressed.",
+    "Three correct! That's called a trend, people!",
+    "Triple threat! Is this skill or luck? Let's find out."
+  ],
+  5: [
+    "FIVE STREAK! You're basically a walking atlas!",
+    "Five in a row! Your brain is giving GPS a run for its money!",
+    "FIVE! That's not luck anymore, that's talent!",
+    "Five straight! You're the human equivalent of a really good map."
+  ],
+  7: [
+    "SEVEN?! Are you secretly a cartographer?",
+    "SEVEN IN A ROW! Okay, who let the geography professor in here?",
+    "Seven! At this point, I'm starting to think YOU should be hosting.",
+    "Seven straight! The atlas called, it wants its job back."
+  ],
+  10: [
+    "TEN IN A ROW! I think you might actually WIN the GeoBee.",
+    "TEN! That's not a streak, that's a DYNASTY! Someone call National Geographic!",
+    "Double digits! You're not playing the game anymore, the game is playing YOU.",
+    "TEN IN A ROW?! I need to make harder questions. This is embarrassing for me."
+  ]
 };
 
 const GAME_OVER_COMMENTS = {
-  perfect: "PERFECT SCORE?! You absolute LEGEND. The GeoBee doesn't stand a chance. 🌍👑",
-  great: "Incredible performance! GeoBee competitors should be nervous!",
-  good: "Solid showing! A little more studying and you'll be unstoppable!",
-  okay: "Not bad! You know more than the average bear. Keep studying!",
-  rough: "That's what practice is for! Every wrong answer is a fact you'll never forget. Play again!"
+  perfect: [
+    "PERFECT SCORE?! You absolute LEGEND. The GeoBee doesn't stand a chance. 🌍👑",
+    "100%?! I'm not even mad, I'm IMPRESSED. You are geography itself. 🌍👑",
+    "Flawless victory! Did you secretly eat an atlas for breakfast? 🌍👑",
+    "PERFECT?! Honestly, I'm a little scared of you right now. In a respectful way. 🌍👑",
+    "You didn't miss a single one. The globe bows to you. WE ALL BOW. 🌍👑",
+    "That was SURGICAL. Every question, destroyed. You're not a student, you're a force of nature. 🌍👑"
+  ],
+  great: [
+    "Incredible performance! GeoBee competitors should be nervous!",
+    "80%+ accuracy! You're not just good at geography, you're DANGEROUS at it!",
+    "That was elite! A few more games and you'll be teaching the teacher!",
+    "Seriously impressive! You know more about the world than most adults. That's not a joke.",
+    "Outstanding! If this were the actual GeoBee, the judges would be nodding approvingly right now.",
+    "You crushed it! Your brain is basically a globe with extra features."
+  ],
+  good: [
+    "Solid showing! A little more studying and you'll be unstoppable!",
+    "Hey, that's a passing grade in most countries! And you know where those countries ARE, so...",
+    "Respectable! You're definitely in 'knows their stuff' territory. A few more rounds and you'll be elite.",
+    "Good work! You clearly know your way around a map. Let's turn that 'good' into 'great.'",
+    "Not shabby! You've got the foundation. Now let's build the skyscraper of geographic knowledge!",
+    "Nice job! You missed some, but you clearly LEARNED some. That's the whole point!"
+  ],
+  okay: [
+    "Not bad! You know more than the average bear. Keep studying!",
+    "Hey, at least you now know the answers to the ones you missed! That's called GROWTH.",
+    "Some hits, some misses. The important thing is you showed up and your brain got a workout.",
+    "Room for improvement! But also: room for DRAMATIC improvement! Glass half full!",
+    "You know what? Every champion started somewhere. This is your somewhere. Own it.",
+    "Mixed results, but think of it this way: you just learned a bunch of geography FACTS for FREE."
+  ],
+  rough: [
+    "That's what practice is for! Every wrong answer is a fact you'll never forget. Play again!",
+    "Okay, that was rough. But you know what? You now know MORE than when you started. That counts!",
+    "Geography is hard! That's why they have a whole competition about it. Play again — revenge is sweet.",
+    "Look, Rome wasn't built in a day. And you now know where Rome IS, so that's a start!",
+    "I believe in you! The questions don't get easier, but YOU get smarter. Run it back!",
+    "You know what the best part of getting wrecked is? The COMEBACK STORY. Let's write yours."
+  ]
 };
 
 const QUESTIONS_PER_ROUND = 5;
 const TOTAL_ROUNDS = 5;
 const TIMER_SECONDS = 20;
+const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// ─── Sound Effects ───────────────────────────────────────────────────────────
+// ─── Sound Effects (Game Show Quality) ───────────────────────────────────────
 const useSound = () => {
   const audioCtx = useRef(null);
+  const musicGain = useRef(null);
+  const musicTimer = useRef(null);
+  const musicPlaying = useRef(false);
+  const [sfxEnabled, setSfxEnabled] = useLocalStorage('geobee_sfx', true);
+  const [musicEnabled, setMusicEnabled] = useLocalStorage('geobee_music', false);
+  const [sfxVolume, setSfxVolume] = useLocalStorage('geobee_sfx_vol', 0.5);
+  const [musicVolume, setMusicVolume] = useLocalStorage('geobee_music_vol', 0.3);
+
   const getCtx = useCallback(() => {
-    if (!audioCtx.current) audioCtx.current = new (window.AudioContext || window.webkitAudioContext)();
+    if (!audioCtx.current) {
+      audioCtx.current = new (window.AudioContext || window.webkitAudioContext)();
+      musicGain.current = audioCtx.current.createGain();
+      musicGain.current.gain.value = musicVolume;
+      musicGain.current.connect(audioCtx.current.destination);
+    }
+    if (audioCtx.current.state === 'suspended') audioCtx.current.resume();
     return audioCtx.current;
-  }, []);
+  }, [musicVolume]);
+
   const playTone = useCallback((freq, dur, type='sine', vol=0.15) => {
+    if (!sfxEnabled) return;
     try {
       const ctx = getCtx(), osc = ctx.createOscillator(), g = ctx.createGain();
       osc.type = type; osc.frequency.value = freq;
-      g.gain.setValueAtTime(vol, ctx.currentTime);
+      const v = vol * sfxVolume;
+      g.gain.setValueAtTime(v, ctx.currentTime);
       g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
-      osc.connect(g); g.connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime + dur);
+      osc.connect(g); g.connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime + dur + 0.05);
     } catch(e) {}
-  }, [getCtx]);
+  }, [getCtx, sfxEnabled, sfxVolume]);
+
+  const playChord = useCallback((freqs, dur, type='sine', vol=0.08) => {
+    freqs.forEach(f => playTone(f, dur, type, vol));
+  }, [playTone]);
+
+  const playNoise = useCallback((dur, vol=0.1, filter=2000) => {
+    if (!sfxEnabled) return;
+    try {
+      const ctx = getCtx();
+      const bufSize = Math.max(1, Math.floor(ctx.sampleRate * dur));
+      const buf = ctx.createBuffer(1, bufSize, ctx.sampleRate);
+      const data = buf.getChannelData(0);
+      for (let i = 0; i < bufSize; i++) data[i] = Math.random() * 2 - 1;
+      const src = ctx.createBufferSource(); src.buffer = buf;
+      const filt = ctx.createBiquadFilter(); filt.type = 'lowpass'; filt.frequency.value = filter;
+      const g = ctx.createGain();
+      const v = vol * sfxVolume;
+      g.gain.setValueAtTime(v, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+      src.connect(filt); filt.connect(g); g.connect(ctx.destination);
+      src.start(); src.stop(ctx.currentTime + dur + 0.05);
+    } catch(e) {}
+  }, [getCtx, sfxEnabled, sfxVolume]);
+
+  // Correct: triumphant ascending arpeggio with sparkle
+  const correct = useCallback(() => {
+    playTone(523,.12,'sine',.18); setTimeout(()=>playTone(659,.12,'sine',.18),80);
+    setTimeout(()=>playTone(784,.15,'sine',.2),160);
+    setTimeout(()=>{playTone(1047,.25,'sine',.15);playTone(1568,.2,'sine',.06);},260);
+    setTimeout(()=>playNoise(.05,.04,8000),280);
+  }, [playTone, playNoise]);
+
+  // Wrong: dramatic buzzer with descending slide
+  const wrong = useCallback(() => {
+    if (!sfxEnabled) return;
+    try {
+      const ctx = getCtx();
+      const osc = ctx.createOscillator(), g = ctx.createGain();
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(280, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.5);
+      const v = 0.12 * sfxVolume;
+      g.gain.setValueAtTime(v, ctx.currentTime);
+      g.gain.setValueAtTime(v, ctx.currentTime + 0.3);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
+      osc.connect(g); g.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 0.65);
+    } catch(e) {}
+    setTimeout(()=>playTone(90,.4,'sawtooth',.08),150);
+  }, [getCtx, sfxEnabled, sfxVolume, playTone]);
+
+  // Tick: urgent when low, gentle when time is plenty
+  const tick = useCallback((timeLeft) => {
+    const tl = typeof timeLeft === 'number' ? timeLeft : 15;
+    if (tl <= 3) { playTone(900,.06,'square',.1); setTimeout(()=>playTone(900,.06,'square',.08),100); }
+    else if (tl <= 6) playTone(800,.06,'square',.07);
+    else playTone(600,.04,'sine',.03);
+  }, [playTone]);
+
+  // Streak: fanfare that gets more epic with higher streaks
+  const streak = useCallback((count) => {
+    const base = [523,659,784,1047];
+    const c = count || 3;
+    if (c >= 7) { base.push(1319,1568); } else if (c >= 5) { base.push(1319); }
+    base.forEach((f,i) => setTimeout(()=>playTone(f,.18,'triangle',.15),i*70));
+    setTimeout(()=>playNoise(.08,.05,10000),base.length*70);
+    if (c >= 10) setTimeout(()=>playChord([523,659,784,1047],.5,'sine',.06),base.length*70+50);
+  }, [playTone, playNoise, playChord]);
+
+  // Round Start: game show intro stinger
+  const roundStart = useCallback(() => {
+    const notes = [262,330,392,523,392,523,659];
+    notes.forEach((f,i)=>setTimeout(()=>playTone(f,.2,'triangle',.14),i*120));
+    setTimeout(()=>playChord([523,659,784],.4,'triangle',.06),notes.length*120);
+    setTimeout(()=>playNoise(.1,.04,6000),100);
+  }, [playTone, playChord, playNoise]);
+
+  // Game Over: adapts to performance
+  const gameOver = useCallback((scorePct) => {
+    const pct = typeof scorePct === 'number' ? scorePct : 0.5;
+    if (pct >= 0.8) {
+      const mel = [523,523,523,659,784,659,784,1047];
+      const ts = [0,100,200,350,500,650,800,1000];
+      const ds = [.08,.08,.15,.15,.15,.15,.15,.4];
+      mel.forEach((f,i)=>setTimeout(()=>playTone(f,ds[i],'triangle',.15),ts[i]));
+      setTimeout(()=>{playChord([523,659,784,1047],.6,'sine',.05);playNoise(.15,.06,8000);},1100);
+    } else if (pct >= 0.5) {
+      [392,440,523,659,523,659].forEach((f,i)=>setTimeout(()=>playTone(f,.2,'triangle',.12),i*150));
+    } else {
+      [494,466,440,349].forEach((f,i)=>setTimeout(()=>playTone(f,.35,'sawtooth',.08),i*300));
+    }
+  }, [playTone, playChord, playNoise]);
+
+  // Click: snappy UI click
+  const click = useCallback(() => {
+    playTone(800,.03,'sine',.06); playNoise(.02,.03,5000);
+  }, [playTone, playNoise]);
+
+  // Lifeline: power-up whoosh
+  const lifeline = useCallback(() => {
+    if (!sfxEnabled) return;
+    try {
+      const ctx = getCtx();
+      const osc = ctx.createOscillator(), g = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(300, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.25);
+      osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.4);
+      const v = 0.12 * sfxVolume;
+      g.gain.setValueAtTime(v, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+      osc.connect(g); g.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 0.55);
+    } catch(e) {}
+    setTimeout(()=>playNoise(.06,.04,8000),200);
+  }, [getCtx, sfxEnabled, sfxVolume, playNoise]);
+
+  // Time Warning: urgent alarm at 5 seconds
+  const timeWarning = useCallback(() => {
+    [800,1000,800,1000].forEach((f,i)=>setTimeout(()=>playTone(f,.08,'square',.1),i*80));
+  }, [playTone]);
+
+  // Time Up: buzzer
+  const timeUp = useCallback(() => {
+    playTone(200,.5,'sawtooth',.12);
+    setTimeout(()=>playTone(150,.5,'sawtooth',.08),100);
+    setTimeout(()=>playNoise(.15,.06,1000),50);
+  }, [playTone, playNoise]);
+
+  // Perfect Round: confetti celebration
+  const perfectRound = useCallback(() => {
+    [523,659,784,1047,1319,1568].forEach((f,i)=>setTimeout(()=>{
+      playTone(f,.2,'sine',.12); if(i>=3) playNoise(.04,.03,10000);
+    },i*100));
+    setTimeout(()=>playChord([523,784,1047,1319],.8,'sine',.04),700);
+  }, [playTone, playNoise, playChord]);
+
+  // Player Select: friendly pop
+  const playerSelect = useCallback(() => {
+    playTone(440,.08,'sine',.1); setTimeout(()=>playTone(660,.12,'sine',.12),60);
+    playNoise(.03,.03,6000);
+  }, [playTone, playNoise]);
+
+  // Badge Earned: achievement unlock chime
+  const badgeEarned = useCallback(() => {
+    [523,659,784,1047,1319].forEach((f,i)=>setTimeout(()=>playTone(f,.15,'sine',.12),i*90));
+    setTimeout(()=>{playChord([784,1047,1319],.5,'sine',.05);playNoise(.1,.05,10000);},5*90);
+  }, [playTone, playChord, playNoise]);
+
+  // ── Background Music: procedural game show loop ──
+  const startMusic = useCallback(() => {
+    if (musicPlaying.current || !musicEnabled) return;
+    try {
+      const ctx = getCtx();
+      musicPlaying.current = true;
+      if (musicGain.current) musicGain.current.gain.value = musicVolume;
+      const bassNotes = [131,147,165,147,131,165,147,131];
+      const chords = [[262,330,392],[294,370,440],[330,415,494],[294,370,440],[262,330,392],[330,415,494],[294,370,440],[262,330,392]];
+      const bpm = 110; const beatLen = 60/bpm; const loopLen = bassNotes.length * beatLen;
+      const scheduleLoop = () => {
+        if (!musicPlaying.current) return;
+        const ctx2 = audioCtx.current; if (!ctx2 || !musicGain.current) return;
+        const now = ctx2.currentTime;
+        bassNotes.forEach((freq,i) => {
+          const t = now + i * beatLen;
+          try {
+            const bOsc = ctx2.createOscillator(), bG = ctx2.createGain();
+            bOsc.type = 'triangle'; bOsc.frequency.value = freq;
+            bG.gain.setValueAtTime(0.06, t); bG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.9);
+            bOsc.connect(bG); bG.connect(musicGain.current); bOsc.start(t); bOsc.stop(t + beatLen);
+            if (chords[i]) chords[i].forEach(cf => {
+              const cOsc = ctx2.createOscillator(), cG = ctx2.createGain();
+              cOsc.type = 'sine'; cOsc.frequency.value = cf;
+              cG.gain.setValueAtTime(0.015, t); cG.gain.setValueAtTime(0.015, t + beatLen*0.7);
+              cG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.95);
+              cOsc.connect(cG); cG.connect(musicGain.current); cOsc.start(t); cOsc.stop(t + beatLen);
+            });
+          } catch(e) {}
+        });
+        musicTimer.current = setTimeout(scheduleLoop, loopLen * 900);
+      };
+      scheduleLoop();
+    } catch(e) {}
+  }, [getCtx, musicEnabled, musicVolume]);
+
+  const stopMusic = useCallback(() => {
+    musicPlaying.current = false;
+    if (musicTimer.current) { clearTimeout(musicTimer.current); musicTimer.current = null; }
+  }, []);
+
+  useEffect(() => {
+    if (musicGain.current) musicGain.current.gain.value = musicVolume;
+  }, [musicVolume]);
+
+  useEffect(() => {
+    if (musicEnabled && !musicPlaying.current) startMusic();
+    else if (!musicEnabled && musicPlaying.current) stopMusic();
+  }, [musicEnabled, startMusic, stopMusic]);
+
   return {
-    correct: useCallback(() => { playTone(523,.1); setTimeout(()=>playTone(659,.1),100); setTimeout(()=>playTone(784,.2),200); }, [playTone]),
-    wrong: useCallback(() => { playTone(200,.3,'sawtooth',.1); setTimeout(()=>playTone(150,.4,'sawtooth',.08),200); }, [playTone]),
-    tick: useCallback(() => playTone(800,.05,'sine',.05), [playTone]),
-    streak: useCallback(() => { [523,659,784,1047].forEach((f,i)=>setTimeout(()=>playTone(f,.15),i*80)); }, [playTone]),
-    roundStart: useCallback(() => { [392,440,494,523].forEach((f,i)=>setTimeout(()=>playTone(f,.2,'triangle',.12),i*150)); }, [playTone]),
-    gameOver: useCallback(() => { [523,659,784,1047,784,1047,1319].forEach((f,i)=>setTimeout(()=>playTone(f,.25,'triangle',.12),i*200)); }, [playTone]),
-    click: useCallback(() => playTone(600,.05,'sine',.08), [playTone])
+    correct, wrong, tick, streak, roundStart, gameOver, click,
+    lifeline, timeWarning, timeUp, perfectRound, playerSelect, badgeEarned,
+    startMusic, stopMusic,
+    sfxEnabled, setSfxEnabled: useCallback(v => setSfxEnabled(v), [setSfxEnabled]),
+    musicEnabled, setMusicEnabled: useCallback(v => setMusicEnabled(v), [setMusicEnabled]),
+    sfxVolume, setSfxVolume: useCallback(v => setSfxVolume(v), [setSfxVolume]),
+    musicVolume, setMusicVolume: useCallback(v => setMusicVolume(v), [setMusicVolume]),
+    toggleSfx: useCallback(() => setSfxEnabled(p => !p), [setSfxEnabled]),
+    toggleMusic: useCallback(() => setMusicEnabled(p => !p), [setMusicEnabled])
   };
 };
 
@@ -1650,6 +2311,18 @@ const useLocalStorage = (key, initialValue) => {
       return item ? JSON.parse(item) : initialValue;
     } catch (e) { return initialValue; }
   });
+  // Re-read from localStorage when key changes (e.g. player switch)
+  const prevKey = useRef(key);
+  const initRef = useRef(initialValue);
+  useEffect(() => {
+    if (prevKey.current !== key) {
+      prevKey.current = key;
+      try {
+        const item = window.localStorage.getItem(key);
+        setStoredValue(item ? JSON.parse(item) : initRef.current);
+      } catch (e) { setStoredValue(initRef.current); }
+    }
+  }, [key]);
   const setValue = useCallback((value) => {
     setStoredValue(prev => {
       const next = typeof value === 'function' ? value(prev) : value;
@@ -1660,24 +2333,67 @@ const useLocalStorage = (key, initialValue) => {
   return [storedValue, setValue];
 };
 
+// ─── Player Roster ───────────────────────────────────────────────────────────
+const PLAYER_LIST = [
+  { id: 'henry', name: 'Henry', emoji: '🦁', color: '#e74c3c' },
+  { id: 'josie', name: 'Josie', emoji: '🌟', color: '#9b59b6' },
+  { id: 'frankie', name: 'Frankie', emoji: '🚀', color: '#3498db' },
+  { id: 'daniel', name: 'Daniel', emoji: '🎯', color: '#2ed573' },
+  { id: 'catherine', name: 'Catherine', emoji: '👑', color: '#f39c12' },
+  { id: 'guest', name: 'Guest', emoji: '🌍', color: '#95a5a6' }
+];
+
 // ─── Player Profile Hook ──────────────────────────────────────────────────────
-const usePlayerProfile = () => {
-  const [profile, setProfile] = useLocalStorage('geobee_player', {
+const usePlayerProfile = (playerId) => {
+  const key = playerId ? `geobee_player_${playerId}` : 'geobee_player';
+  const [profile, setProfile] = useLocalStorage(key, {
     gamesPlayed: 0, totalAnswered: 0, totalCorrect: 0, bestStreak: 0,
     perfectRounds: 0, perfectGames: 0, speedAnswers: 0,
-    catCorrect: {}, catTotal: {}, gameHistory: []
+    catCorrect: {}, catTotal: {}, gameHistory: [],
+    // Secret badge tracking
+    catStreak: {}, bestCatStreak: {}, // consecutive correct per category
+    midnightGames: 0, earlyBirdGames: 0, // time-based play
+    lifelinesUsed: 0, fiftyFiftyUsed: 0, skipUsed: 0, extraTimeUsed: 0,
+    survivalBest: 0, // best survival run
+    tinyCountryCorrect: 0, // Liechtenstein, Monaco, Vatican, etc.
+    lastSecondCorrect: 0, // answered correctly with <=2 seconds
+    wrongStreakMax: 0, wrongStreakCurrent: 0, // worst streak
+    allDifficulty4Correct: 0, // hardest questions answered right
+    usedAllLifelinesOneGame: false,
+    perfectSurvivalRun: 0, // consecutive correct in survival
+    typeCorrect: {} // correct by question type (flag, silhouette, food, scramble, landmark_clue)
   });
-  const recordAnswer = useCallback((cat, isCorrect, timeRemaining) => {
-    setProfile(p => ({
-      ...p,
-      totalAnswered: p.totalAnswered + 1,
-      totalCorrect: p.totalCorrect + (isCorrect ? 1 : 0),
-      speedAnswers: p.speedAnswers + (isCorrect && timeRemaining >= 15 ? 1 : 0),
-      catCorrect: { ...p.catCorrect, [cat]: (p.catCorrect[cat] || 0) + (isCorrect ? 1 : 0) },
-      catTotal: { ...p.catTotal, [cat]: (p.catTotal[cat] || 0) + 1 }
-    }));
+  const recordAnswer = useCallback((cat, isCorrect, timeRemaining, extraMeta = {}) => {
+    setProfile(p => {
+      const newCatStreak = { ...p.catStreak || {} };
+      const newBestCatStreak = { ...p.bestCatStreak || {} };
+      const newTypeCorrect = { ...p.typeCorrect || {} };
+      if (isCorrect) {
+        newCatStreak[cat] = (newCatStreak[cat] || 0) + 1;
+        newBestCatStreak[cat] = Math.max(newBestCatStreak[cat] || 0, newCatStreak[cat]);
+        if (extraMeta.qtype) newTypeCorrect[extraMeta.qtype] = (newTypeCorrect[extraMeta.qtype] || 0) + 1;
+      } else {
+        newCatStreak[cat] = 0;
+      }
+      return {
+        ...p,
+        totalAnswered: p.totalAnswered + 1,
+        totalCorrect: p.totalCorrect + (isCorrect ? 1 : 0),
+        speedAnswers: p.speedAnswers + (isCorrect && timeRemaining >= 15 ? 1 : 0),
+        catCorrect: { ...p.catCorrect, [cat]: (p.catCorrect[cat] || 0) + (isCorrect ? 1 : 0) },
+        catTotal: { ...p.catTotal, [cat]: (p.catTotal[cat] || 0) + 1 },
+        catStreak: newCatStreak, bestCatStreak: newBestCatStreak,
+        lastSecondCorrect: (p.lastSecondCorrect || 0) + (isCorrect && timeRemaining <= 2 ? 1 : 0),
+        allDifficulty4Correct: (p.allDifficulty4Correct || 0) + (isCorrect && extraMeta.difficulty === 4 ? 1 : 0),
+        wrongStreakCurrent: isCorrect ? 0 : (p.wrongStreakCurrent || 0) + 1,
+        wrongStreakMax: Math.max(p.wrongStreakMax || 0, isCorrect ? p.wrongStreakCurrent || 0 : (p.wrongStreakCurrent || 0) + 1),
+        tinyCountryCorrect: (p.tinyCountryCorrect || 0) + (isCorrect && extraMeta.tinyCountry ? 1 : 0),
+        typeCorrect: newTypeCorrect
+      };
+    });
   }, [setProfile]);
-  const recordGame = useCallback((score, correct, total, bestStrk) => {
+  const recordGame = useCallback((score, correct, total, bestStrk, extraMeta = {}) => {
+    const hour = new Date().getHours();
     setProfile(p => {
       const history = [...(p.gameHistory || []), { score, correct, total, date: new Date().toISOString().slice(0,10) }].slice(-20);
       return {
@@ -1685,7 +2401,16 @@ const usePlayerProfile = () => {
         gamesPlayed: p.gamesPlayed + 1,
         bestStreak: Math.max(p.bestStreak, bestStrk),
         perfectGames: p.perfectGames + (correct === total ? 1 : 0),
-        gameHistory: history
+        gameHistory: history,
+        midnightGames: (p.midnightGames || 0) + (hour >= 23 || hour < 2 ? 1 : 0),
+        earlyBirdGames: (p.earlyBirdGames || 0) + (hour >= 5 && hour < 7 ? 1 : 0),
+        lifelinesUsed: (p.lifelinesUsed || 0) + (extraMeta.lifelinesUsedThisGame || 0),
+        fiftyFiftyUsed: (p.fiftyFiftyUsed || 0) + (extraMeta.fiftyFiftyUsedThisGame || 0),
+        skipUsed: (p.skipUsed || 0) + (extraMeta.skipUsedThisGame || 0),
+        extraTimeUsed: (p.extraTimeUsed || 0) + (extraMeta.extraTimeUsedThisGame || 0),
+        usedAllLifelinesOneGame: p.usedAllLifelinesOneGame || (extraMeta.usedAllLifelines || false),
+        survivalBest: Math.max(p.survivalBest || 0, extraMeta.survivalQuestions || 0),
+        perfectSurvivalRun: Math.max(p.perfectSurvivalRun || 0, extraMeta.perfectSurvivalRun || 0)
       };
     });
   }, [setProfile]);
@@ -1693,15 +2418,20 @@ const usePlayerProfile = () => {
     setProfile(p => ({ ...p, perfectRounds: p.perfectRounds + 1 }));
   }, [setProfile]);
   const resetProfile = useCallback(() => {
-    setProfile({ gamesPlayed:0, totalAnswered:0, totalCorrect:0, bestStreak:0, perfectRounds:0, perfectGames:0, speedAnswers:0, catCorrect:{}, catTotal:{}, gameHistory:[] });
-    try { window.localStorage.removeItem('geobee_daily_streak'); window.localStorage.removeItem('geobee_badges'); window.localStorage.removeItem('geobee_map'); } catch(e) {}
-  }, [setProfile]);
+    setProfile({ gamesPlayed:0, totalAnswered:0, totalCorrect:0, bestStreak:0, perfectRounds:0, perfectGames:0, speedAnswers:0, catCorrect:{}, catTotal:{}, gameHistory:[],
+      catStreak:{}, bestCatStreak:{}, midnightGames:0, earlyBirdGames:0, lifelinesUsed:0, fiftyFiftyUsed:0, skipUsed:0, extraTimeUsed:0,
+      survivalBest:0, tinyCountryCorrect:0, lastSecondCorrect:0, wrongStreakMax:0, wrongStreakCurrent:0, allDifficulty4Correct:0,
+      usedAllLifelinesOneGame:false, perfectSurvivalRun:0, typeCorrect:{} });
+    const suffix = playerId ? `_${playerId}` : '';
+    try { window.localStorage.removeItem('geobee_daily_streak' + suffix); window.localStorage.removeItem('geobee_badges' + suffix); window.localStorage.removeItem('geobee_map' + suffix); } catch(e) {}
+  }, [setProfile, playerId]);
   return { profile, recordAnswer, recordGame, recordPerfectRound, resetProfile };
 };
 
 // ─── Daily Streak Hook ────────────────────────────────────────────────────────
-const useDailyStreak = () => {
-  const [streak, setStreak] = useLocalStorage('geobee_daily_streak', {
+const useDailyStreak = (playerId) => {
+  const key = playerId ? `geobee_daily_streak_${playerId}` : 'geobee_daily_streak';
+  const [streak, setStreak] = useLocalStorage(key, {
     current: 0, best: 0, lastPlayDate: null, milestonesHit: []
   });
   const checkIn = useCallback(() => {
@@ -1729,11 +2459,12 @@ const useDailyStreak = () => {
 };
 
 // ─── Badges Hook ──────────────────────────────────────────────────────────────
-const useBadges = () => {
-  const [earned, setEarned] = useLocalStorage('geobee_badges', []);
+const useBadges = (playerId) => {
+  const key = playerId ? `geobee_badges_${playerId}` : 'geobee_badges';
+  const [earned, setEarned] = useLocalStorage(key, []);
   const checkBadges = useCallback((profileData) => {
     const newBadges = [];
-    BADGE_DEFINITIONS.forEach(badge => {
+    ALL_BADGE_DEFINITIONS.forEach(badge => {
       if (!earned.includes(badge.id) && badge.check(profileData)) {
         newBadges.push(badge);
       }
@@ -1747,8 +2478,9 @@ const useBadges = () => {
 };
 
 // ─── Map Progress Hook ────────────────────────────────────────────────────────
-const useMapProgress = () => {
-  const [discovered, setDiscovered] = useLocalStorage('geobee_map', []);
+const useMapProgress = (playerId) => {
+  const key = playerId ? `geobee_map_${playerId}` : 'geobee_map';
+  const [discovered, setDiscovered] = useLocalStorage(key, []);
   const discoverCountries = useCallback((questionIdx) => {
     const codes = COUNTRY_TAG_MAP[questionIdx];
     if (!codes) return;
@@ -1762,7 +2494,10 @@ const useMapProgress = () => {
 
 // ─── Main Game Component ─────────────────────────────────────────────────────
 export default function GeoBeeGame() {
-  const [screen, setScreen] = useState('title');
+  // ─── Active Player Selection ────────────────────────────────────────
+  const [activePlayerId, setActivePlayerId] = useLocalStorage('geobee_active_player', null);
+  const activePlayerInfo = PLAYER_LIST.find(p => p.id === activePlayerId) || null;
+  const [screen, setScreen] = useState(activePlayerId ? 'title' : 'playerSelect');
   const [gameQuestions, setGameQuestions] = useState([]);
   const [qIndex, setQIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -1780,35 +2515,124 @@ export default function GeoBeeGame() {
   const speech = useSpeech();
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   // ─── Game Mode State ─────────────────────────────────────────────────
-  const [gameMode, setGameMode] = useState('classic'); // 'classic','survival','multiplayer'
+  const [gameMode, setGameMode] = useState('classic'); // 'classic','survival','multiplayer','duel'
   const [survivalLives, setSurvivalLives] = useState(3);
   // Multiplayer state
   const [players, setPlayers] = useState([{name:'Player 1',score:0,correct:0,history:[]},{name:'Player 2',score:0,correct:0,history:[]}]);
   const [currentPlayer, setCurrentPlayer] = useState(0);
   const [mpNames, setMpNames] = useState(['Player 1','Player 2']);
+  // ─── Duel Mode State ──────────────────────────────────────────────────
+  const DUEL_COLORS = ['#3498db','#e74c3c','#2ecc71'];
+  const DUEL_KEYS = ['Q','W','E'];
+  const DUEL_QS = 15;
+  const [duelNames, setDuelNames] = useState(['Player 1','Player 2','Player 3']);
+  const [duelPlayers, setDuelPlayers] = useState([
+    {name:'Player 1',score:0,correct:0,wrong:0,steals:0},
+    {name:'Player 2',score:0,correct:0,wrong:0,steals:0},
+    {name:'Player 3',score:0,correct:0,wrong:0,steals:0}
+  ]);
+  const [duelPhase, setDuelPhase] = useState('reading'); // 'reading','buzzer','answering','steal','result'
+  const [buzzedPlayer, setBuzzedPlayer] = useState(null);
+  const [buzzLocked, setBuzzLocked] = useState(false);
+  const [stealQueue, setStealQueue] = useState([]); // players who can still steal
+  const [duelQIndex, setDuelQIndex] = useState(0);
+  const [buzzTimerActive, setBuzzTimerActive] = useState(false);
+  const [buzzTimer, setBuzzTimer] = useState(8); // seconds to buzz in
+  const [answerTimer, setAnswerTimer] = useState(10); // seconds to answer after buzzing
+  const [answerTimerActive, setAnswerTimerActive] = useState(false);
+  const [duelRoundLabel, setDuelRoundLabel] = useState('');
   // Lifelines state
   const [lifelines, setLifelines] = useState({fiftyFifty:1,skip:1,extraTime:1});
+  const lifelineTracker = useRef({ff:0,sk:0,et:0}); // tracks usage per game
   const [hiddenOptions, setHiddenOptions] = useState([]);
   const [skippedQuestions, setSkippedQuestions] = useState([]);
+  // ─── Leaderboard view state ─────────────────────────────────────────
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
   // ─── Inject keyframe animation for badge toast ───────────────────────
   useEffect(() => {
     if (document.getElementById('geobee-animations')) return;
     const style = document.createElement('style');
     style.id = 'geobee-animations';
-    style.textContent = `@keyframes slideDown{from{transform:translateX(-50%) translateY(-100%);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}`;
+    style.textContent = `
+@keyframes slideDown{from{transform:translateX(-50%) translateY(-100%);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}
+@keyframes popIn{from{transform:scale(0.8);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(24px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes fadeSlideOut{from{opacity:1;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(-16px) scale(0.97)}}
+@keyframes shakeWrong{0%,100%{transform:translateX(0)}10%,50%,90%{transform:translateX(-6px)}30%,70%{transform:translateX(6px)}20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
+@keyframes wrongFlash{0%{box-shadow:0 0 0 rgba(255,71,87,0)}25%{box-shadow:0 0 40px rgba(255,71,87,0.5),inset 0 0 30px rgba(255,71,87,0.15)}50%{box-shadow:0 0 20px rgba(255,71,87,0.3)}100%{box-shadow:none}}
+@keyframes correctPulse{0%{box-shadow:0 0 0 rgba(46,213,115,0)}30%{box-shadow:0 0 50px rgba(46,213,115,0.5),inset 0 0 30px rgba(46,213,115,0.12)}60%{box-shadow:0 0 25px rgba(46,213,115,0.3)}100%{box-shadow:none}}
+@keyframes bounceIn{0%{transform:scale(0);opacity:0}50%{transform:scale(1.15)}70%{transform:scale(0.92)}100%{transform:scale(1);opacity:1}}
+@keyframes confettiFall{0%{transform:translateY(0) rotate(0deg);opacity:1}80%{opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+@keyframes scorePopIn{0%{transform:scale(0) translateY(0);opacity:0}60%{transform:scale(1.3) translateY(-10px);opacity:1}100%{transform:scale(1) translateY(0);opacity:1}}
+@keyframes resultSlideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes titlePulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.15)}}
+@keyframes streakFlame{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.15);filter:brightness(1.3)}}
+@keyframes buzzerPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 rgba(255,255,255,0)}50%{transform:scale(1.03);box-shadow:0 0 20px rgba(255,255,255,0.15)}}
+`;
     document.head.appendChild(style);
   }, []);
-  // ─── New Feature Hooks ───────────────────────────────────────────────
-  const playerProfile = usePlayerProfile();
-  const dailyStreak = useDailyStreak();
-  const badges = useBadges();
-  const mapProgress = useMapProgress();
+  // ─── New Feature Hooks (player-scoped) ──────────────────────────────
+  const playerProfile = usePlayerProfile(activePlayerId);
+  const dailyStreak = useDailyStreak(activePlayerId);
+  const badges = useBadges(activePlayerId);
+  const mapProgress = useMapProgress(activePlayerId);
   const [profileTab, setProfileTab] = useState('stats');
   const [badgeToast, setBadgeToast] = useState(null);
   const [streakMilestone, setStreakMilestone] = useState(null);
   const [roundCorrect, setRoundCorrect] = useState(0);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [newBadgesThisGame, setNewBadgesThisGame] = useState([]);
+  // ─── Animation State ───────────────────────────────────────────────────
+  const [screenAnim, setScreenAnim] = useState('');  // 'fadeSlideIn' | ''
+  const [cardShake, setCardShake] = useState(false);
+  const [cardFlash, setCardFlash] = useState(''); // 'correct' | 'wrong' | ''
+  const [confettiPieces, setConfettiPieces] = useState([]);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const confettiTimer = useRef(null);
+  // Trigger screen enter animation whenever screen changes
+  const prevScreen = useRef('');
+  useEffect(() => {
+    if (screen !== prevScreen.current) {
+      setScreenAnim('fadeSlideIn');
+      prevScreen.current = screen;
+      const t = setTimeout(() => setScreenAnim(''), 500);
+      return () => clearTimeout(t);
+    }
+  }, [screen]);
+  // Confetti launcher
+  const launchConfetti = useCallback(() => {
+    const colors = ['#f7b733','#fc4a1a','#2ed573','#3498db','#9b59b6','#ff6b81','#ffa502','#1e90ff','#ff4757','#7bed9f'];
+    const shapes = ['■','●','▲','★','◆','♦'];
+    const pieces = [];
+    for (let i = 0; i < 80; i++) {
+      pieces.push({
+        id: i,
+        left: Math.random() * 100,
+        delay: Math.random() * 1.5,
+        duration: 2.5 + Math.random() * 2,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        shape: shapes[Math.floor(Math.random() * shapes.length)],
+        size: 8 + Math.random() * 12,
+        rotation: Math.random() * 360,
+        sway: -30 + Math.random() * 60,
+      });
+    }
+    setConfettiPieces(pieces);
+    setShowConfetti(true);
+    if (confettiTimer.current) clearTimeout(confettiTimer.current);
+    confettiTimer.current = setTimeout(() => { setShowConfetti(false); setConfettiPieces([]); }, 5000);
+  }, []);
+  // Shake trigger
+  const triggerShake = useCallback(() => {
+    setCardShake(true);
+    setCardFlash('wrong');
+    setTimeout(() => { setCardShake(false); setCardFlash(''); }, 600);
+  }, []);
+  // Correct flash trigger
+  const triggerCorrectFlash = useCallback(() => {
+    setCardFlash('correct');
+    setTimeout(() => setCardFlash(''), 700);
+  }, []);
   const toastTimer = useRef(null);
   const showBadgeToast = useCallback((badge) => {
     setBadgeToast(badge);
@@ -1825,6 +2649,7 @@ export default function GeoBeeGame() {
     const newBadges = badges.checkBadges(data);
     if (newBadges.length > 0) {
       showBadgeToast(newBadges[0]);
+      sound.badgeEarned();
       setNewBadgesThisGame(prev => [...prev, ...newBadges]);
     }
   }, [playerProfile.profile, mapProgress.discovered, dailyStreak.streak, badges, showBadgeToast]);
@@ -1844,6 +2669,18 @@ export default function GeoBeeGame() {
         banded.push(...band);
       }
       return banded;
+    }
+    if (m === 'duel') {
+      // Duel: 15 questions, progressive difficulty (3 easy, 4 medium, 4 hard, 2 expert, 2 legendary)
+      const byDiff = {};
+      QUESTIONS.forEach((q, i) => { if (!byDiff[q.d]) byDiff[q.d] = []; byDiff[q.d].push({ ...q, _idx: i }); });
+      const duelPicks = [];
+      const duelDist = {1:3,2:4,3:4,4:2,5:2};
+      for (let d = 1; d <= 5; d++) {
+        const pool = (byDiff[d] || []).sort(() => Math.random() - 0.5);
+        duelPicks.push(...pool.slice(0, duelDist[d] || 3));
+      }
+      return duelPicks;
     }
     // Classic and Multiplayer: standard 25 questions across 5 rounds
     const byDifficulty = {};
@@ -1878,20 +2715,22 @@ export default function GeoBeeGame() {
   // ─── Lifeline Functions ─────────────────────────────────────────────
   const useFiftyFifty = useCallback(() => {
     if (lifelines.fiftyFifty <= 0 || selected !== null || !currentQ) return;
-    sound.click();
+    sound.lifeline();
     const correctIdx = currentQ.a;
     const wrongIdxs = [0,1,2,3].filter(i => i !== correctIdx);
     // Shuffle and pick 2 to hide
     const toHide = wrongIdxs.sort(() => Math.random() - 0.5).slice(0, 2);
     setHiddenOptions(toHide);
     setLifelines(l => ({ ...l, fiftyFifty: l.fiftyFifty - 1 }));
+    lifelineTracker.current.ff++;
     speech.speak("50-50! Two wrong answers eliminated!", { rate: 1.15, pitch: 1.1 });
   }, [lifelines.fiftyFifty, selected, currentQ, sound, speech]);
 
   const useSkipQuestion = useCallback(() => {
     if (lifelines.skip <= 0 || selected !== null || !currentQ) return;
-    sound.click();
+    sound.lifeline();
     setLifelines(l => ({ ...l, skip: l.skip - 1 }));
+    lifelineTracker.current.sk++;
     setTimerActive(false);
     // Bank this question for later
     setSkippedQuestions(prev => [...prev, qIndex]);
@@ -1911,9 +2750,10 @@ export default function GeoBeeGame() {
 
   const useExtraTime = useCallback(() => {
     if (lifelines.extraTime <= 0 || selected !== null) return;
-    sound.click();
+    sound.lifeline();
     setTimer(t => t + 10);
     setLifelines(l => ({ ...l, extraTime: l.extraTime - 1 }));
+    lifelineTracker.current.et++;
     speech.speak("10 extra seconds on the clock!", { rate: 1.15, pitch: 1.1 });
   }, [lifelines.extraTime, selected, sound, speech]);
 
@@ -1921,8 +2761,9 @@ export default function GeoBeeGame() {
     if (!timerActive || timer <= 0) return;
     const interval = setInterval(() => {
       setTimer(t => {
-        if (t <= 1) { setTimerActive(false); handleAnswer(-1); return 0; }
-        if (t <= 6) sound.tick();
+        if (t <= 1) { setTimerActive(false); sound.timeUp(); handleAnswer(-1); return 0; }
+        if (t === 6) sound.timeWarning();
+        if (t <= 10) sound.tick(t);
         return t - 1;
       });
     }, 1000);
@@ -1941,12 +2782,14 @@ export default function GeoBeeGame() {
     const m = mode || gameMode;
     setGameMode(m);
     sound.click(); speech.cancel();
+    if (sound.musicEnabled) sound.startMusic();
     const gq = selectGameQuestions(m);
     setGameQuestions(gq);
     setScore(0); setStreak(0); setBestStreak(0); setQIndex(0);
     setHistory([]); setCurrentRound(0); setRoundCorrect(0);
     setNewBadgesThisGame([]);
     setHiddenOptions([]); setSkippedQuestions([]);
+    lifelineTracker.current = {ff:0,sk:0,et:0};
     // Reset lifelines — gate behind badges
     const earnedBadges = badges.earned;
     setLifelines({
@@ -1961,6 +2804,16 @@ export default function GeoBeeGame() {
       setPlayers([{name:mpNames[0],score:0,correct:0,history:[]},{name:mpNames[1],score:0,correct:0,history:[]}]);
       setCurrentPlayer(0);
     }
+    if (m === 'duel') {
+      setDuelPlayers(duelNames.map(n => ({name:n,score:0,correct:0,wrong:0,steals:0})));
+      setDuelQIndex(0);
+      setDuelPhase('reading');
+      setBuzzedPlayer(null);
+      setBuzzLocked(false);
+      setStealQueue([]);
+      setBuzzTimerActive(false);
+      setAnswerTimerActive(false);
+    }
     // Daily streak check-in
     const milestone = dailyStreak.checkIn();
     if (milestone) {
@@ -1973,6 +2826,8 @@ export default function GeoBeeGame() {
       ? "Welcome to SURVIVAL MODE! Answer questions until you drop. You've got 3 lives. How far can you go?"
       : m === 'multiplayer'
       ? `It's ${mpNames[0]} versus ${mpNames[1]}! You'll take turns answering questions. Highest score wins!`
+      : m === 'duel'
+      ? `It's duel time! ${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — buzz in fast, answer right, and steal when they slip up!`
       : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
     setHostText(intro);
     speech.speak(intro, { rate: 1.1, pitch: 1.1 });
@@ -1984,13 +2839,229 @@ export default function GeoBeeGame() {
       ? "Welcome to SURVIVAL MODE! 3 lives. Infinite questions. Let's see how far you can go!"
       : gameMode === 'multiplayer'
       ? `${mpNames[0]} vs ${mpNames[1]}! Let the battle begin!`
+      : gameMode === 'duel'
+      ? `${duelNames[0]}, ${duelNames[1]}, and ${duelNames[2]} — the duel begins NOW!`
       : HOST_INTROS[Math.floor(Math.random() * HOST_INTROS.length)];
     setHostText(intro);
     speech.speak(intro, { rate: 1.1, pitch: 1.1 });
   };
 
+  // ─── Duel Mode Functions ──────────────────────────────────────────────
+  const startDuelQuestion = useCallback(() => {
+    speech.cancel();
+    const q = gameQuestions[duelQIndex];
+    if (!q) return;
+    setSelected(null);
+    setBuzzedPlayer(null);
+    setBuzzLocked(false);
+    setStealQueue([]);
+    setDuelPhase('reading');
+    setBuzzTimer(8);
+    setAnswerTimer(10);
+    setBuzzTimerActive(false);
+    setAnswerTimerActive(false);
+    setHiddenOptions([]);
+    // Determine round label
+    const diffLabel = ['','Warm Up','Getting Harder','Challenge Round','Expert Level','LEGENDARY'][q.d] || '';
+    setDuelRoundLabel(`Q${duelQIndex+1}/${DUEL_QS} • ${diffLabel}`);
+    setScreen('duelQuestion');
+    const setup = getSetup(q.cat);
+    setSetupText(setup);
+    setShowSetup(true);
+    speech.speakThen(setup, { rate: 1.05, pitch: 1.05 }, () => {
+      setTimeout(() => {
+        setShowSetup(false);
+        setDuelPhase('buzzer');
+        setBuzzTimerActive(true);
+        speech.speak(q.q, { rate: 1.0, pitch: 1.0 });
+      }, 400);
+    });
+  }, [gameQuestions, duelQIndex, speech, sound]);
+
+  const duelBuzzIn = useCallback((playerIdx) => {
+    if (duelPhase !== 'buzzer' || buzzLocked) return;
+    sound.click();
+    setBuzzLocked(true);
+    setBuzzedPlayer(playerIdx);
+    setBuzzTimerActive(false);
+    setDuelPhase('answering');
+    setAnswerTimer(10);
+    setAnswerTimerActive(true);
+    // Build steal queue: everyone except buzzer
+    setStealQueue([0,1,2].filter(i => i !== playerIdx));
+    speech.speak(`${duelPlayers[playerIdx]?.name || duelNames[playerIdx]} buzzes in!`, { rate: 1.2, pitch: 1.15 });
+  }, [duelPhase, buzzLocked, sound, speech, duelPlayers, duelNames]);
+
+  const duelAnswer = useCallback((idx) => {
+    if (selected !== null) return;
+    setAnswerTimerActive(false);
+    setBuzzTimerActive(false);
+    setSelected(idx);
+    const q = gameQuestions[duelQIndex];
+    const isCorrect = idx === q.a;
+    const timeBonus = isCorrect ? Math.floor(answerTimer * 8) : 0;
+    const pts = isCorrect ? 150 + timeBonus : 0;
+    const isSteal = duelPhase === 'steal';
+    if (isCorrect) {
+      sound.correct(); triggerCorrectFlash();
+      speech.speak(q.rq || `Correct! The answer is ${q.o[q.a]}.`, { rate: 1.1, pitch: 1.1 });
+      speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+      setDuelPlayers(prev => prev.map((p, i) => i === buzzedPlayer ? {
+        ...p, score: p.score + pts, correct: p.correct + 1, steals: p.steals + (isSteal ? 1 : 0)
+      } : p));
+      if (q._idx !== undefined) mapProgress.discoverCountries(q._idx);
+      playerProfile.recordAnswer(q.cat, true, answerTimer, { qtype: q.type || 'standard', difficulty: q.d });
+    } else {
+      sound.wrong(); triggerShake();
+      speech.cancel();
+      setDuelPlayers(prev => prev.map((p, i) => i === buzzedPlayer ? { ...p, wrong: p.wrong + 1 } : p));
+      // Deduct points for wrong buzz-in (-50)
+      setDuelPlayers(prev => prev.map((p, i) => i === buzzedPlayer ? { ...p, score: Math.max(0, p.score - 50) } : p));
+      playerProfile.recordAnswer(q.cat, false, answerTimer, { qtype: q.type || 'standard', difficulty: q.d });
+      // Check if anyone can steal
+      const remaining = stealQueue.filter(i => i !== buzzedPlayer);
+      if (remaining.length > 0) {
+        setStealQueue(remaining);
+        setBuzzedPlayer(null);
+        setSelected(null);
+        setDuelPhase('steal');
+        setBuzzLocked(false);
+        setAnswerTimer(8);
+        setBuzzTimerActive(true);
+        setAnswerTimerActive(false);
+        speech.speak(`Wrong! ${q.o[q.a]} was not the answer. Anyone else? Buzz in to steal!`, { rate: 1.15, pitch: 1.1 });
+        return;
+      } else {
+        // Nobody left to steal
+        speech.speak(q.wq || `Wrong! The answer was ${q.o[q.a]}.`, { rate: 1.0, pitch: 0.95 });
+        speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+      }
+    }
+    setDuelPhase('result');
+    setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat, type: q.type,
+      buzzedBy: buzzedPlayer !== null ? (duelPlayers[buzzedPlayer]?.name || '?') : '?' }]);
+  }, [selected, gameQuestions, duelQIndex, duelPhase, buzzedPlayer, stealQueue, answerTimer,
+      sound, speech, triggerCorrectFlash, triggerShake, duelPlayers, mapProgress, playerProfile]);
+
+  const duelStealBuzz = useCallback((playerIdx) => {
+    if (duelPhase !== 'steal' || !stealQueue.includes(playerIdx)) return;
+    sound.click();
+    setBuzzedPlayer(playerIdx);
+    setBuzzTimerActive(false);
+    setDuelPhase('answering');
+    setAnswerTimer(8);
+    setAnswerTimerActive(true);
+    setStealQueue(prev => prev.filter(i => i !== playerIdx));
+    speech.speak(`${duelPlayers[playerIdx]?.name || duelNames[playerIdx]} goes for the steal!`, { rate: 1.2, pitch: 1.15 });
+  }, [duelPhase, stealQueue, sound, speech, duelPlayers, duelNames]);
+
+  const duelNextQuestionRef = useRef(null);
+  const duelNextQuestion = useCallback(() => {
+    speech.cancel();
+    const nextIdx = duelQIndex + 1;
+    if (nextIdx >= DUEL_QS || nextIdx >= gameQuestions.length) {
+      // End duel
+      setScreen('duelGameOver');
+      sound.stopMusic();
+      const sorted = [...duelPlayers].sort((a,b) => b.score - a.score);
+      const winner = sorted[0];
+      const isTie = sorted[0].score === sorted[1].score;
+      sound.gameOver(winner.correct / Math.max(1, DUEL_QS));
+      const goComment = isTie ? "It's a tie! What an incredible duel!" : `${winner.name} wins the duel! What a performance!`;
+      speech.speak("Game over! " + goComment, { rate: 1.05, pitch: 1.08 });
+      if (winner.correct >= DUEL_QS * 0.8) setTimeout(() => launchConfetti(), 800);
+      playerProfile.recordGame(duelPlayers.reduce((max,p) => Math.max(max,p.score),0),
+        duelPlayers.reduce((sum,p) => sum + p.correct, 0), DUEL_QS, 0, {});
+      setTimeout(() => checkAndShowBadges(), 200);
+      return;
+    }
+    setDuelQIndex(nextIdx);
+    setSelected(null);
+    duelNextQuestionRef.current = nextIdx;
+  }, [duelQIndex, gameQuestions, duelPlayers, sound, speech, launchConfetti, playerProfile, checkAndShowBadges]);
+
+  // Auto-start next duel question when duelQIndex changes mid-game
+  useEffect(() => {
+    if (gameMode !== 'duel' || duelNextQuestionRef.current === null) return;
+    if (screen === 'duelQuestion' || duelNextQuestionRef.current === duelQIndex) {
+      duelNextQuestionRef.current = null;
+      const t = setTimeout(() => startDuelQuestion(), 100);
+      return () => clearTimeout(t);
+    }
+  }, [duelQIndex, gameMode, screen, startDuelQuestion]);
+
+  // Duel buzz timer countdown
+  useEffect(() => {
+    if (!buzzTimerActive || buzzTimer <= 0) return;
+    const interval = setInterval(() => {
+      setBuzzTimer(t => {
+        if (t <= 1) {
+          setBuzzTimerActive(false);
+          if (duelPhase === 'buzzer' || duelPhase === 'steal') {
+            // Nobody buzzed — show answer and move on
+            const q = gameQuestions[duelQIndex];
+            if (q) {
+              sound.timeUp();
+              setSelected(-1);
+              setDuelPhase('result');
+              speech.speak(`Time's up! Nobody buzzed in. The answer was ${q.o[q.a]}.`, { rate: 1.05, pitch: 1.0 });
+              speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
+              setHistory(h => [...h, { question: q.q, correct: false, selected: -1, answer: q.a, cat: q.cat, buzzedBy: 'nobody' }]);
+            }
+          }
+          return 0;
+        }
+        if (t <= 3) sound.tick(t);
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [buzzTimerActive, buzzTimer, duelPhase, gameQuestions, duelQIndex, sound, speech]);
+
+  // Duel answer timer countdown
+  useEffect(() => {
+    if (!answerTimerActive || answerTimer <= 0) return;
+    const interval = setInterval(() => {
+      setAnswerTimer(t => {
+        if (t <= 1) {
+          setAnswerTimerActive(false);
+          // Ran out of time answering — treat as wrong
+          duelAnswer(-1);
+          return 0;
+        }
+        if (t <= 4) sound.tick(t);
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [answerTimerActive, answerTimer, sound, duelAnswer]);
+
+  // Keyboard listener for duel buzzer
+  useEffect(() => {
+    if (gameMode !== 'duel') return;
+    const handler = (e) => {
+      const key = e.key.toUpperCase();
+      if (duelPhase === 'buzzer') {
+        if (key === 'Q' || key === '1') duelBuzzIn(0);
+        else if (key === 'W' || key === '2') duelBuzzIn(1);
+        else if (key === 'E' || key === '3') duelBuzzIn(2);
+      } else if (duelPhase === 'steal') {
+        // Only allow players in steal queue
+        if ((key === 'Q' || key === '1') && stealQueue.includes(0)) duelStealBuzz(0);
+        else if ((key === 'W' || key === '2') && stealQueue.includes(1)) duelStealBuzz(1);
+        else if ((key === 'E' || key === '3') && stealQueue.includes(2)) duelStealBuzz(2);
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [gameMode, duelPhase, duelBuzzIn, duelStealBuzz, stealQueue]);
+
   const proceedFromIntro = () => {
     sound.roundStart(); speech.cancel();
+    if (gameMode === 'duel') {
+      startDuelQuestion();
+      return;
+    }
     setCurrentRound(1); setScreen('roundIntro');
     const intro = ROUND_INTROS[1][Math.floor(Math.random() * ROUND_INTROS[1].length)];
     setHostText(intro);
@@ -2024,18 +3095,19 @@ export default function GeoBeeGame() {
     const pointsEarned = isCorrect ? 100 + timeBonus + streakBonus + dailyBonusPts : 0;
     speech.cancel();
     if (isCorrect) {
-      sound.correct();
+      sound.correct(); triggerCorrectFlash();
       const ns = streak + 1;
       setStreak(ns); setBestStreak(bs => Math.max(bs, ns));
       setScore(s => s + pointsEarned);
       setRoundCorrect(rc => rc + 1);
-      if (STREAK_COMMENTS[ns]) setTimeout(() => sound.streak(), 300);
+      if (STREAK_COMMENTS[ns]) setTimeout(() => sound.streak(ns), 300);
       speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.rq, { rate: 1.1, pitch: 1.1 });
-      if (STREAK_COMMENTS[ns]) speech.speak(STREAK_COMMENTS[ns], { rate: 1.15, pitch: 1.15 });
+      if (STREAK_COMMENTS[ns]) { const sc = STREAK_COMMENTS[ns]; speech.speak(sc[Math.floor(Math.random()*sc.length)], { rate: 1.15, pitch: 1.15 }); }
       speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
       if (q._idx !== undefined) mapProgress.discoverCountries(q._idx);
     } else {
-      sound.wrong(); setStreak(0); setRoundCorrect(0);
+      sound.wrong(); triggerShake();
+      setStreak(0); setRoundCorrect(0);
       speech.speak(idx === -1 ? `Time's up! The answer was ${q.o[q.a]}.` : q.wq, { rate: 1.0, pitch: 0.95 });
       speech.speak(q.f, { rate: 0.95, pitch: 1.0 });
       // Survival mode: lose a life
@@ -2050,19 +3122,36 @@ export default function GeoBeeGame() {
         history: [...p.history, { question: q.q, correct: isCorrect, cat: q.cat }]
       } : p));
     }
-    playerProfile.recordAnswer(q.cat, isCorrect, timer);
-    setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat }]);
+    const TINY_COUNTRIES = ['Vatican City','Monaco','San Marino','Liechtenstein','Andorra','Tuvalu','Nauru','Luxembourg','Malta','Brunei','Bhutan','Nepal'];
+    const correctAnswer = q.o[q.a];
+    const isTiny = TINY_COUNTRIES.some(tc => correctAnswer.includes(tc) || q.q.includes(tc));
+    playerProfile.recordAnswer(q.cat, isCorrect, timer, {
+      qtype: q.type || 'standard', difficulty: q.d, tinyCountry: isTiny
+    });
+    setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat, type: q.type }]);
     setScreen('result');
     setTimeout(() => checkAndShowBadges({ bestStreak: Math.max(playerProfile.profile.bestStreak, isCorrect ? streak + 1 : streak) }), 100);
-  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer]);
+  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer, triggerShake, triggerCorrectFlash]);
 
   const endGame = useCallback(() => {
-    sound.gameOver(); setScreen('gameOver');
+    setScreen('gameOver');
+    sound.stopMusic();
     const gc = history.length + 1;
     const gcCorr = history.filter(h=>h.correct).length + (selected === gameQuestions[qIndex]?.a ? 1 : 0);
-    playerProfile.recordGame(score, gcCorr, gc, bestStreak);
-    if (roundCorrect >= QUESTIONS_PER_ROUND) playerProfile.recordPerfectRound();
+    sound.gameOver(gc > 0 ? gcCorr / gc : 0);
+    const lt = lifelineTracker.current;
+    const totalLifelinesUsed = lt.ff + lt.sk + lt.et;
+    playerProfile.recordGame(score, gcCorr, gc, bestStreak, {
+      lifelinesUsedThisGame: totalLifelinesUsed,
+      fiftyFiftyUsedThisGame: lt.ff, skipUsedThisGame: lt.sk, extraTimeUsedThisGame: lt.et,
+      usedAllLifelines: lt.ff > 0 && lt.sk > 0 && lt.et > 0,
+      survivalQuestions: gameMode === 'survival' ? gc : 0,
+      perfectSurvivalRun: gameMode === 'survival' ? gcCorr : 0
+    });
+    if (roundCorrect >= QUESTIONS_PER_ROUND) { playerProfile.recordPerfectRound(); setTimeout(() => sound.perfectRound(), 1500); setTimeout(() => launchConfetti(), 800); }
     const gcPct = gc > 0 ? gcCorr/gc : 0;
+    // Also launch confetti for great overall scores (80%+)
+    if (gcPct >= 0.8 && gc >= 5) setTimeout(() => launchConfetti(), 1200);
     let goComment;
     if (gameMode === 'survival') {
       goComment = `You survived ${gc} questions! ${gcPct >= 0.8 ? "Incredible run!" : gcPct >= 0.6 ? "Solid endurance!" : "Not bad! Try again to go further!"}`;
@@ -2070,11 +3159,11 @@ export default function GeoBeeGame() {
       const winner = players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null;
       goComment = winner ? `${winner} wins! What a match!` : "It's a tie! Incredible!";
     } else {
-      goComment = gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough;
+      goComment = pick(gcPct >= 1 ? GAME_OVER_COMMENTS.perfect : gcPct >= 0.8 ? GAME_OVER_COMMENTS.great : gcPct >= 0.6 ? GAME_OVER_COMMENTS.good : gcPct >= 0.4 ? GAME_OVER_COMMENTS.okay : GAME_OVER_COMMENTS.rough);
     }
     speech.speak("Game over! " + goComment.replace(/🌍👑/g,''), { rate: 1.05, pitch: 1.08 });
     setTimeout(() => checkAndShowBadges(), 200);
-  }, [sound, history, selected, gameQuestions, qIndex, score, bestStreak, roundCorrect, playerProfile, gameMode, players, speech, checkAndShowBadges]);
+  }, [sound, history, selected, gameQuestions, qIndex, score, bestStreak, roundCorrect, playerProfile, gameMode, players, speech, checkAndShowBadges, launchConfetti]);
 
   const nextQuestion = () => {
     speech.cancel();
@@ -2128,11 +3217,11 @@ export default function GeoBeeGame() {
 
   const getScoreComment = () => {
     const c = history.filter(h => h.correct).length;
-    if (c === totalQs) return GAME_OVER_COMMENTS.perfect;
-    if (c >= totalQs * 0.8) return GAME_OVER_COMMENTS.great;
-    if (c >= totalQs * 0.6) return GAME_OVER_COMMENTS.good;
-    if (c >= totalQs * 0.4) return GAME_OVER_COMMENTS.okay;
-    return GAME_OVER_COMMENTS.rough;
+    if (c === totalQs) return pick(GAME_OVER_COMMENTS.perfect);
+    if (c >= totalQs * 0.8) return pick(GAME_OVER_COMMENTS.great);
+    if (c >= totalQs * 0.6) return pick(GAME_OVER_COMMENTS.good);
+    if (c >= totalQs * 0.4) return pick(GAME_OVER_COMMENTS.okay);
+    return pick(GAME_OVER_COMMENTS.rough);
   };
 
   const correctCount = history.filter(h => h.correct).length;
@@ -2182,24 +3271,170 @@ export default function GeoBeeGame() {
     </div>
   );
 
-  // ─── Badge Toast Overlay ──────────────────────────────────────────────────
-  const BadgeToast = badgeToast ? (
-    <div style={{position:'fixed',top:'20px',left:'50%',transform:'translateX(-50%)',zIndex:1000,
-      background:'linear-gradient(135deg,rgba(247,183,51,0.95),rgba(252,74,26,0.95))',borderRadius:'16px',padding:'14px 28px',
-      boxShadow:'0 8px 32px rgba(252,74,26,0.4)',display:'flex',alignItems:'center',gap:'12px',
-      animation:'slideDown 0.4s ease-out',color:'#fff'}}>
-      <span style={{fontSize:'2rem'}}>{badgeToast.icon}</span>
-      <div><div style={{fontWeight:800,fontSize:'0.95rem'}}>Badge Unlocked!</div>
-        <div style={{fontSize:'0.85rem',opacity:0.9}}>{badgeToast.name}</div></div>
+  // ─── Animated Card: adds shake + flash + screen transition ─────────────
+  const animCard = (extra = {}) => ({
+    ...S.card, ...extra,
+    animation: [
+      screenAnim ? `${screenAnim} 0.45s ease-out` : '',
+      cardShake ? 'shakeWrong 0.5s ease' : '',
+      cardFlash === 'wrong' ? 'wrongFlash 0.6s ease-out' : '',
+      cardFlash === 'correct' ? 'correctPulse 0.7s ease-out' : ''
+    ].filter(Boolean).join(', ') || undefined
+  });
+
+  // ─── Confetti Overlay ──────────────────────────────────────────────────
+  const ConfettiOverlay = showConfetti ? (
+    <div style={{position:'fixed',top:0,left:0,right:0,bottom:0,pointerEvents:'none',zIndex:2000,overflow:'hidden'}}>
+      {confettiPieces.map(p => (
+        <div key={p.id} style={{
+          position:'absolute', top:'-20px', left:`${p.left}%`,
+          fontSize:`${p.size}px`, color:p.color,
+          animation:`confettiFall ${p.duration}s ease-in ${p.delay}s both`,
+          transform:`rotate(${p.rotation}deg)`, filter:'drop-shadow(0 2px 3px rgba(0,0,0,0.3))'
+        }}>{p.shape}</div>
+      ))}
     </div>
   ) : null;
 
+  // ─── Badge Toast Overlay ──────────────────────────────────────────────────
+  const BadgeToast = badgeToast ? (() => {
+    const isSecret = SECRET_BADGE_DEFINITIONS.some(b => b.id === badgeToast.id);
+    return (
+      <div style={{position:'fixed',top:'20px',left:'50%',transform:'translateX(-50%)',zIndex:1000,
+        background:isSecret
+          ? 'linear-gradient(135deg,rgba(155,89,182,0.95),rgba(52,152,219,0.95))'
+          : 'linear-gradient(135deg,rgba(247,183,51,0.95),rgba(252,74,26,0.95))',
+        borderRadius:'16px',padding:'14px 28px',
+        boxShadow:isSecret ? '0 8px 32px rgba(155,89,182,0.5)' : '0 8px 32px rgba(252,74,26,0.4)',
+        display:'flex',alignItems:'center',gap:'12px',
+        animation:'slideDown 0.4s ease-out, bounceIn 0.5s ease-out',color:'#fff'}}>
+        <span style={{fontSize:'2rem',animation:isSecret?'streakFlame 0.6s ease-in-out infinite':undefined}}>{badgeToast.icon}</span>
+        <div><div style={{fontWeight:800,fontSize:'0.95rem'}}>{isSecret ? '🕵️ Secret Badge Discovered!' : 'Badge Unlocked!'}</div>
+          <div style={{fontSize:'0.85rem',opacity:0.9}}>{badgeToast.name}</div></div>
+      </div>
+    );
+  })() : null;
+
   // ─── SCREENS ─────────────────────────────────────────────────────────────
+
+  // ─── Helper: get any player's stats from localStorage ──────────────────
+  const getPlayerStats = (pid) => {
+    try {
+      const raw = window.localStorage.getItem(`geobee_player_${pid}`);
+      return raw ? JSON.parse(raw) : null;
+    } catch(e) { return null; }
+  };
+
+  const switchPlayer = (pid) => {
+    setActivePlayerId(pid);
+    sound.playerSelect();
+    setScreen('title');
+  };
+
+  // ─── Player Select Screen ────────────────────────────────────────────────
+  if (screen === 'playerSelect') return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={animCard({textAlign:'center', maxWidth:'700px'})}>
+        <div style={{fontSize:'4rem',marginBottom:'10px'}}>🌍</div>
+        <div style={S.title}>GEO-WRECKED!</div>
+        <div style={S.sub}>Who's playing today?</div>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'14px',marginBottom:'24px',marginTop:'20px'}}>
+          {PLAYER_LIST.map(p => {
+            const stats = getPlayerStats(p.id);
+            const isActive = activePlayerId === p.id;
+            return (
+              <button key={p.id} onClick={() => switchPlayer(p.id)}
+                style={{background: isActive ? `linear-gradient(135deg,${p.color}33,${p.color}22)` : 'rgba(255,255,255,0.05)',
+                  border: `2px solid ${isActive ? p.color : 'rgba(255,255,255,0.1)'}`,
+                  borderRadius:'16px',padding:'20px 12px',cursor:'pointer',transition:'all 0.25s',
+                  display:'flex',flexDirection:'column',alignItems:'center',gap:'8px'}}>
+                <div style={{fontSize:'2.5rem'}}>{p.emoji}</div>
+                <div style={{fontWeight:700,color: isActive ? p.color : '#fff',fontSize:'1.05rem'}}>{p.name}</div>
+                {stats && stats.gamesPlayed > 0 ? (
+                  <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)',lineHeight:1.6}}>
+                    {stats.gamesPlayed} games • {stats.totalAnswered > 0 ? Math.round(stats.totalCorrect/stats.totalAnswered*100) : 0}% acc
+                  </div>
+                ) : (
+                  <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.25)'}}>New player</div>
+                )}
+              </button>
+            );
+          })}
+        </div>
+        <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Each player's stats, badges, and map progress are tracked separately</div>
+      </div>
+    </div>
+  );
+
+  // ─── Leaderboard Screen ────────────────────────────────────────────────
+  if (screen === 'leaderboard') {
+    const allStats = PLAYER_LIST.map(p => {
+      const stats = getPlayerStats(p.id);
+      return { ...p, stats: stats || { gamesPlayed:0, totalAnswered:0, totalCorrect:0, bestStreak:0, perfectGames:0, gameHistory:[] } };
+    }).filter(p => p.stats.gamesPlayed > 0).sort((a,b) => {
+      const accA = a.stats.totalAnswered > 0 ? a.stats.totalCorrect / a.stats.totalAnswered : 0;
+      const accB = b.stats.totalAnswered > 0 ? b.stats.totalCorrect / b.stats.totalAnswered : 0;
+      return accB - accA;
+    });
+    const medals = ['🥇','🥈','🥉'];
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+        <div style={animCard({maxWidth:'750px'})}>
+          <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:'24px'}}>
+            <div>
+              <div style={{fontSize:'1.8rem',fontWeight:800,color:'#f7b733'}}>🏆 Leaderboard</div>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>Family standings by accuracy</div>
+            </div>
+            <button onClick={() => { setScreen('title'); sound.click(); }}
+              style={{background:'rgba(255,255,255,0.1)',border:'1px solid rgba(255,255,255,0.15)',borderRadius:'12px',
+                padding:'8px 16px',color:'#fff',cursor:'pointer',fontSize:'0.85rem'}}>
+              ← Back
+            </button>
+          </div>
+          {allStats.length === 0 ? (
+            <div style={{textAlign:'center',padding:'40px 0',color:'rgba(255,255,255,0.4)'}}>
+              No one has played yet! Pick a player and start a game.
+            </div>
+          ) : (
+            <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
+              {allStats.map((p, idx) => {
+                const acc = p.stats.totalAnswered > 0 ? Math.round(p.stats.totalCorrect / p.stats.totalAnswered * 100) : 0;
+                const avgScore = p.stats.gameHistory && p.stats.gameHistory.length > 0
+                  ? Math.round(p.stats.gameHistory.reduce((s,g) => s + g.score, 0) / p.stats.gameHistory.length)
+                  : 0;
+                const isMe = p.id === activePlayerId;
+                return (
+                  <div key={p.id} style={{background: isMe ? `linear-gradient(135deg,${p.color}20,${p.color}10)` : 'rgba(255,255,255,0.04)',
+                    border: `1px solid ${isMe ? p.color + '60' : 'rgba(255,255,255,0.08)'}`,
+                    borderRadius:'16px',padding:'16px 20px',display:'flex',alignItems:'center',gap:'16px',transition:'all 0.3s'}}>
+                    <div style={{fontSize:'1.5rem',minWidth:'36px',textAlign:'center'}}>{idx < 3 ? medals[idx] : `#${idx+1}`}</div>
+                    <div style={{fontSize:'2rem'}}>{p.emoji}</div>
+                    <div style={{flex:1}}>
+                      <div style={{fontWeight:700,color: isMe ? p.color : '#fff',fontSize:'1.05rem'}}>
+                        {p.name} {isMe && <span style={{fontSize:'0.7rem',opacity:0.6}}>(you)</span>}
+                      </div>
+                      <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.4)',marginTop:'4px'}}>
+                        {p.stats.gamesPlayed} games • Best streak: {p.stats.bestStreak}🔥 • Avg: {avgScore} pts
+                      </div>
+                    </div>
+                    <div style={{textAlign:'right'}}>
+                      <div style={{fontSize:'1.8rem',fontWeight:800,color: acc >= 80 ? '#2ed573' : acc >= 60 ? '#ffa502' : '#ff4757'}}>{acc}%</div>
+                      <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)'}}>accuracy</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
 
   // ─── Streak Reward Screen ───────────────────────────────────────────────
   if (screen === 'streakReward' && streakMilestone) return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={{...S.card, textAlign:'center'}}>
+      <div style={animCard({textAlign:'center'})}>
         <div style={{fontSize:'4rem',marginBottom:'10px'}}>{streakMilestone.icon}</div>
         <div style={{...S.title,fontSize:'2.2rem'}}>STREAK MILESTONE!</div>
         <div style={{color:'rgba(255,255,255,0.6)',fontSize:'1.1rem',marginBottom:'20px'}}>
@@ -2231,10 +3466,12 @@ export default function GeoBeeGame() {
     );
     return (
       <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-        <div style={{...S.card,maxWidth:'800px'}}>
+        <div style={animCard({maxWidth:'800px'})}>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:'24px'}}>
             <div>
-              <div style={{fontSize:'1.8rem',fontWeight:800,color:'#f7b733'}}>Player Profile</div>
+              <div style={{fontSize:'1.8rem',fontWeight:800,color: activePlayerInfo ? activePlayerInfo.color : '#f7b733'}}>
+                {activePlayerInfo ? `${activePlayerInfo.emoji} ${activePlayerInfo.name}'s Profile` : 'Player Profile'}
+              </div>
               <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>
                 {dailyStreak.streak.current > 0 ? `🔥 ${dailyStreak.streak.current}-day streak` : 'Start playing to build your streak!'}
               </div>
@@ -2307,10 +3544,11 @@ export default function GeoBeeGame() {
           </div>)}
 
           {profileTab === 'badges' && (<div>
+            {/* Regular badges */}
             <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem',marginBottom:'16px'}}>
-              {badges.earned.length}/{BADGE_DEFINITIONS.length} badges earned
+              {badges.earned.filter(id => BADGE_DEFINITIONS.find(b=>b.id===id)).length}/{BADGE_DEFINITIONS.length} badges earned
             </div>
-            <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(140px,1fr))',gap:'12px'}}>
+            <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(140px,1fr))',gap:'12px',marginBottom:'32px'}}>
               {BADGE_DEFINITIONS.map(badge => {
                 const isEarned = badges.earned.includes(badge.id);
                 return (
@@ -2330,6 +3568,42 @@ export default function GeoBeeGame() {
                   </div>
                 );
               })}
+            </div>
+            {/* Secret badges section */}
+            <div style={{background:'linear-gradient(135deg,rgba(155,89,182,0.1),rgba(52,152,219,0.08))',border:'1px solid rgba(155,89,182,0.25)',
+              borderRadius:'16px',padding:'20px',marginBottom:'12px'}}>
+              <div style={{display:'flex',alignItems:'center',gap:'10px',marginBottom:'16px'}}>
+                <span style={{fontSize:'1.5rem'}}>🕵️</span>
+                <div>
+                  <div style={{fontWeight:800,fontSize:'1rem',color:'#d4a5ff'}}>Secret Badges</div>
+                  <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.4)'}}>
+                    {badges.earned.filter(id => SECRET_BADGE_DEFINITIONS.find(b=>b.id===id)).length}/{SECRET_BADGE_DEFINITIONS.length} discovered
+                  </div>
+                </div>
+              </div>
+              <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(140px,1fr))',gap:'12px'}}>
+                {SECRET_BADGE_DEFINITIONS.map(badge => {
+                  const isEarned = badges.earned.includes(badge.id);
+                  return (
+                    <div key={badge.id} style={{
+                      background:isEarned?'rgba(155,89,182,0.2)':'rgba(255,255,255,0.03)',
+                      border:`1px solid ${isEarned?'rgba(155,89,182,0.4)':'rgba(255,255,255,0.06)'}`,
+                      borderRadius:'14px',padding:'16px',textAlign:'center',transition:'all 0.3s',
+                      opacity:isEarned?1:0.4,
+                      animation:isEarned?'bounceIn 0.4s ease-out':undefined}}>
+                      <div style={{fontSize:'2rem',marginBottom:'6px',filter:isEarned?'drop-shadow(0 0 8px rgba(155,89,182,0.5))':'grayscale(1) blur(1px)'}}>
+                        {isEarned ? badge.icon : '❓'}
+                      </div>
+                      <div style={{fontWeight:700,fontSize:'0.8rem',color:isEarned?'#d4a5ff':'rgba(255,255,255,0.3)',marginBottom:'4px'}}>
+                        {isEarned ? badge.name : '???'}
+                      </div>
+                      <div style={{fontSize:'0.7rem',color:isEarned?'rgba(255,255,255,0.5)':'rgba(255,255,255,0.25)',lineHeight:1.4,fontStyle:isEarned?'normal':'italic'}}>
+                        {isEarned ? badge.name : badge.hint}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>)}
 
@@ -2375,10 +3649,50 @@ export default function GeoBeeGame() {
     );
   }
 
+  // ─── Duel Name Entry Screen ──────────────────────────────────────────
+  if (screen === 'duelNameEntry') return (
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+      <div style={animCard({textAlign:'center'})}>
+        <div style={{fontSize:'3rem',marginBottom:'10px'}}>⚡</div>
+        <div style={{...S.title,fontSize:'2.2rem'}}>HEAD-TO-HEAD DUEL</div>
+        <div style={S.sub}>3 players. 1 device. Buzz in first to answer!</div>
+        <div style={{display:'flex',flexDirection:'column',gap:'12px',marginBottom:'20px'}}>
+          {[0,1,2].map(i => (
+            <div key={i} style={{background:`${DUEL_COLORS[i]}15`,border:`1px solid ${DUEL_COLORS[i]}50`,borderRadius:'14px',padding:'14px'}}>
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'8px'}}>
+                <div style={{fontWeight:700,color:DUEL_COLORS[i],fontSize:'0.85rem'}}>Player {i+1}</div>
+                <div style={{background:`${DUEL_COLORS[i]}30`,borderRadius:'8px',padding:'2px 10px',fontSize:'0.75rem',
+                  color:DUEL_COLORS[i],fontWeight:600}}>Buzzer: {DUEL_KEYS[i]} or {i+1}</div>
+              </div>
+              <input type="text" value={duelNames[i]} onChange={e => {
+                const v = e.target.value;
+                setDuelNames(prev => prev.map((n,j) => j===i ? v : n));
+              }} maxLength={15} placeholder={`Player ${i+1}`}
+                style={{width:'100%',padding:'10px 14px',borderRadius:'10px',background:'rgba(0,0,0,0.4)',
+                  border:`1px solid ${DUEL_COLORS[i]}40`,color:'#fff',fontSize:'1rem',outline:'none',boxSizing:'border-box'}}/>
+            </div>
+          ))}
+        </div>
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'20px',fontSize:'0.85rem',
+          color:'rgba(255,255,255,0.6)',lineHeight:1.6,textAlign:'left'}}>
+          <div style={{fontWeight:700,color:'#f7b733',marginBottom:'6px'}}>How it works:</div>
+          <div>All 3 players see the question at once. Press your buzzer key (<span style={{color:DUEL_COLORS[0]}}>Q</span> / <span style={{color:DUEL_COLORS[1]}}>W</span> / <span style={{color:DUEL_COLORS[2]}}>E</span>) or tap your button to buzz in first. Get it right for +150 points + time bonus. Get it wrong and you lose 50 — plus the other players can steal!</div>
+        </div>
+        <Btn onClick={() => startGame('duel')}>START DUEL! ⚡</Btn>
+        <button onClick={() => { setScreen('title'); sound.click(); }}
+          style={{marginTop:'12px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+            borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer',
+            display:'block',margin:'12px auto 0'}}>
+          ← Back
+        </button>
+      </div>
+    </div>
+  );
+
   // ─── Multiplayer Name Entry Screen ────────────────────────────────────
   if (screen === 'mpNameEntry') return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={{...S.card,textAlign:'center'}}>
+      <div style={animCard({textAlign:'center'})}>
         <div style={{fontSize:'3rem',marginBottom:'10px'}}>👥</div>
         <div style={{...S.title,fontSize:'2.2rem'}}>MULTIPLAYER</div>
         <div style={S.sub}>Enter player names and battle it out!</div>
@@ -2411,10 +3725,23 @@ export default function GeoBeeGame() {
 
   if (screen === 'title') return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={{...S.card, textAlign:'center'}}>
-        <div style={{fontSize:'4rem',marginBottom:'10px'}}>🌍</div>
-        <div style={S.title}>GEO-WRECKED!</div>
+      <div style={animCard({textAlign:'center'})}>
+        <div style={{fontSize:'4rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>🌍</div>
+        <div style={{...S.title,animation:'titlePulse 3s ease-in-out infinite'}}>GEO-WRECKED!</div>
         <div style={S.sub}>A "You Don't Know Jack!"-Style GeoBee Trainer</div>
+        {activePlayerInfo && (
+          <div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'10px',marginBottom:'16px',
+            background:`linear-gradient(135deg,${activePlayerInfo.color}20,${activePlayerInfo.color}10)`,
+            border:`1px solid ${activePlayerInfo.color}40`,borderRadius:'14px',padding:'10px 20px'}}>
+            <span style={{fontSize:'1.5rem'}}>{activePlayerInfo.emoji}</span>
+            <span style={{fontWeight:700,color:activePlayerInfo.color,fontSize:'1rem'}}>Playing as {activePlayerInfo.name}</span>
+            <button onClick={() => { setScreen('playerSelect'); sound.click(); }}
+              style={{marginLeft:'8px',background:'rgba(255,255,255,0.1)',border:'1px solid rgba(255,255,255,0.2)',
+                borderRadius:'8px',padding:'4px 12px',color:'rgba(255,255,255,0.7)',fontSize:'0.75rem',cursor:'pointer'}}>
+              Switch
+            </button>
+          </div>
+        )}
         {dailyStreak.streak.current > 0 && (
           <div style={{background:'linear-gradient(135deg,rgba(252,74,26,0.15),rgba(247,183,51,0.15))',
             border:'1px solid rgba(247,183,51,0.3)',borderRadius:'14px',padding:'14px',marginBottom:'20px',
@@ -2496,6 +3823,41 @@ export default function GeoBeeGame() {
             </div>
           </div>)}
         </div>
+        {/* Sound Effects & Music Controls */}
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'20px'}}>
+          <div style={{display:'flex',alignItems:'center',gap:'10px',marginBottom:'12px'}}>
+            <span style={{fontSize:'1.2rem'}}>🎵</span>
+            <span style={{fontWeight:700,color:'#f7b733',fontSize:'0.95rem'}}>Sound & Music</span>
+          </div>
+          <div style={{display:'flex',gap:'8px',marginBottom:'12px'}}>
+            <button onClick={sound.toggleSfx}
+              style={{flex:1,background:sound.sfxEnabled?'linear-gradient(135deg,#2ed573,#7bed9f)':'rgba(255,255,255,0.1)',
+                border:'none',borderRadius:'20px',padding:'8px 16px',color:'#fff',fontSize:'0.8rem',fontWeight:600,cursor:'pointer',
+                transition:'all 0.2s'}}>
+              {sound.sfxEnabled ? '🔊 SFX ON' : '🔇 SFX OFF'}
+            </button>
+            <button onClick={sound.toggleMusic}
+              style={{flex:1,background:sound.musicEnabled?'linear-gradient(135deg,#3498db,#2980b9)':'rgba(255,255,255,0.1)',
+                border:'none',borderRadius:'20px',padding:'8px 16px',color:'#fff',fontSize:'0.8rem',fontWeight:600,cursor:'pointer',
+                transition:'all 0.2s'}}>
+              {sound.musicEnabled ? '🎶 Music ON' : '🎶 Music OFF'}
+            </button>
+          </div>
+          <div style={{display:'flex',gap:'16px'}}>
+            <div style={{flex:1}}>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.7rem',marginBottom:'4px'}}>SFX Volume</div>
+              <input type="range" min="0" max="1" step="0.1" value={sound.sfxVolume}
+                onChange={e=>{sound.setSfxVolume(parseFloat(e.target.value)); if(sound.sfxEnabled) sound.click();}}
+                style={{width:'100%',accentColor:'#2ed573'}}/>
+            </div>
+            <div style={{flex:1}}>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.7rem',marginBottom:'4px'}}>Music Volume</div>
+              <input type="range" min="0" max="1" step="0.1" value={sound.musicVolume}
+                onChange={e=>sound.setMusicVolume(parseFloat(e.target.value))}
+                style={{width:'100%',accentColor:'#3498db'}}/>
+            </div>
+          </div>
+        </div>
         <div style={{display:'flex',flexDirection:'column',gap:'10px',marginBottom:'10px'}}>
           <Btn onClick={() => startGame('classic')}>CLASSIC MODE 🌎</Btn>
           <button onClick={() => startGame('survival')}
@@ -2508,20 +3870,36 @@ export default function GeoBeeGame() {
             onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
             MULTIPLAYER 👥
           </button>
+          <button onClick={() => { setScreen('duelNameEntry'); sound.click(); }}
+            style={{...S.btn,background:'linear-gradient(135deg,#9b59b6,#8e44ad)',boxShadow:'0 4px 20px rgba(155,89,182,0.3)',fontSize:'1rem',padding:'14px 32px'}}
+            onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+            HEAD-TO-HEAD DUEL ⚡
+          </button>
         </div>
-        <div style={{display:'flex',justifyContent:'center',gap:'16px',marginBottom:'6px',fontSize:'0.75rem',color:'rgba(255,255,255,0.35)'}}>
+        <div style={{display:'flex',justifyContent:'center',gap:'12px',marginBottom:'6px',fontSize:'0.7rem',color:'rgba(255,255,255,0.35)',flexWrap:'wrap'}}>
           <span>🌎 5 rounds, 25 Qs</span>
           <span>❤️ 3 lives, endless Qs</span>
-          <span>👥 2 players, take turns</span>
+          <span>👥 2 players, turns</span>
+          <span>⚡ 3 players, buzzer</span>
         </div>
-        <button onClick={() => { setScreen('profile'); sound.click(); }}
-          style={{marginTop:'16px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
-            borderRadius:'14px',padding:'12px 28px',color:'rgba(255,255,255,0.7)',fontSize:'0.95rem',
-            cursor:'pointer',transition:'all 0.2s',display:'block',margin:'16px auto 0'}}
-          onMouseOver={e=>{e.target.style.background='rgba(255,255,255,0.15)';e.target.style.color='#fff';}}
-          onMouseOut={e=>{e.target.style.background='rgba(255,255,255,0.08)';e.target.style.color='rgba(255,255,255,0.7)';}}>
-          👤 Player Profile
-        </button>
+        <div style={{display:'flex',gap:'10px',justifyContent:'center',marginTop:'16px'}}>
+          <button onClick={() => { setScreen('profile'); sound.click(); }}
+            style={{background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+              borderRadius:'14px',padding:'12px 24px',color:'rgba(255,255,255,0.7)',fontSize:'0.9rem',
+              cursor:'pointer',transition:'all 0.2s'}}
+            onMouseOver={e=>{e.target.style.background='rgba(255,255,255,0.15)';e.target.style.color='#fff';}}
+            onMouseOut={e=>{e.target.style.background='rgba(255,255,255,0.08)';e.target.style.color='rgba(255,255,255,0.7)';}}>
+            👤 My Profile
+          </button>
+          <button onClick={() => { setScreen('leaderboard'); sound.click(); }}
+            style={{background:'rgba(247,183,51,0.1)',border:'1px solid rgba(247,183,51,0.25)',
+              borderRadius:'14px',padding:'12px 24px',color:'rgba(247,183,51,0.8)',fontSize:'0.9rem',
+              cursor:'pointer',transition:'all 0.2s'}}
+            onMouseOver={e=>{e.target.style.background='rgba(247,183,51,0.2)';e.target.style.color='#f7b733';}}
+            onMouseOut={e=>{e.target.style.background='rgba(247,183,51,0.1)';e.target.style.color='rgba(247,183,51,0.8)';}}>
+            🏆 Leaderboard
+          </button>
+        </div>
         <div style={{marginTop:'16px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Preparing for the 8th Grade GeoBee • {QUESTIONS.length} questions in the bank</div>
       </div>
     </div>
@@ -2529,13 +3907,15 @@ export default function GeoBeeGame() {
 
   if (screen === 'intro') return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={S.card}>
+      <div style={animCard()}>
         <Host>{hostText}</Host>
-        <Host label={gameMode === 'survival' ? "❤️ Survival Rules" : gameMode === 'multiplayer' ? "👥 Match Rules" : "📋 Tonight's Game"}>
+        <Host label={gameMode === 'survival' ? "❤️ Survival Rules" : gameMode === 'multiplayer' ? "👥 Match Rules" : gameMode === 'duel' ? "⚡ Duel Rules" : "📋 Tonight's Game"}>
           {gameMode === 'survival'
             ? "All questions from easy to legendary. 3 lives — wrong answers cost a life. No rounds, no breaks. How long can you survive?"
             : gameMode === 'multiplayer'
             ? `${mpNames[0]} and ${mpNames[1]} take turns answering. ${QUESTIONS_PER_ROUND * TOTAL_ROUNDS * 2} questions total. Highest score at the end wins!`
+            : gameMode === 'duel'
+            ? `${DUEL_QS} questions. All 3 players see the question — buzz in first to answer! Correct = +150 + time bonus. Wrong = -50 and others can STEAL. Use keys Q/W/E or tap your buzzer!`
             : `${QUESTIONS_PER_ROUND * TOTAL_ROUNDS} questions. 5 rounds. 1 champion. Zero mercy. Let's see what you've got!`}
         </Host>
         {(lifelines.fiftyFifty > 0 || lifelines.skip > 0 || lifelines.extraTime > 0) && (
@@ -2549,7 +3929,7 @@ export default function GeoBeeGame() {
           </div>
         )}
         <Btn onClick={gameMode === 'survival' ? startQuestion : proceedFromIntro}>
-          {gameMode === 'survival' ? "LET'S SURVIVE! ❤️" : gameMode === 'multiplayer' ? `${mpNames[0]} GOES FIRST! ⚔️` : "BRING IT ON! 🔥"}
+          {gameMode === 'survival' ? "LET'S SURVIVE! ❤️" : gameMode === 'multiplayer' ? `${mpNames[0]} GOES FIRST! ⚔️` : gameMode === 'duel' ? "START THE DUEL! ⚡" : "BRING IT ON! 🔥"}
         </Btn>
       </div>
     </div>
@@ -2557,7 +3937,7 @@ export default function GeoBeeGame() {
 
   if (screen === 'roundIntro') return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={{...S.card,textAlign:'center'}}>
+      <div style={animCard({textAlign:'center'})}>
         <div style={{fontSize:'1rem',color:'rgba(255,255,255,0.4)',textTransform:'uppercase',letterSpacing:'3px',marginBottom:'10px'}}>Round {currentRound}</div>
         <div style={{fontSize:'2rem',fontWeight:800,color:'#f7b733',marginBottom:'20px'}}>"{ROUND_NAMES[currentRound]}"</div>
         <Host>{hostText}</Host>
@@ -2570,8 +3950,8 @@ export default function GeoBeeGame() {
   );
 
   if (screen === 'question' && currentQ) return (
-    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-      <div style={S.card}>
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+      <div style={animCard()}>
         {/* Mode indicator bar */}
         {gameMode === 'survival' && (
           <div style={{display:'flex',justifyContent:'center',gap:'8px',marginBottom:'12px'}}>
@@ -2595,7 +3975,7 @@ export default function GeoBeeGame() {
         <div style={S.bar}>
           <div><span style={{color:'rgba(255,255,255,0.5)'}}>Score:</span> <span style={{fontWeight:700,color:'#f7b733'}}>{gameMode==='multiplayer'?players[currentPlayer]?.score||0:score}</span></div>
           <div><span style={{color:'rgba(255,255,255,0.5)'}}>Q:</span> <span style={{fontWeight:700}}>{qIndex+1}{gameMode!=='survival'?`/${totalQs}`:''}</span></div>
-          <div>{streak >= 3 && <span style={{color:'#2ed573',fontWeight:700}}>{streak}🔥</span>}</div>
+          <div>{streak >= 3 && <span style={{color:'#2ed573',fontWeight:700,animation:'streakFlame 0.8s ease-in-out infinite',display:'inline-block'}}>{streak}🔥</span>}</div>
           <div><span style={{fontSize:'1.3rem',fontWeight:800,color:timer<=5?'#ff4757':timer<=10?'#ffa502':'#fff'}}>{timer}s</span></div>
         </div>
         <div style={{height:'6px',borderRadius:'3px',background:'rgba(255,255,255,0.1)',marginBottom:'12px',overflow:'hidden'}}>
@@ -2659,6 +4039,43 @@ export default function GeoBeeGame() {
               </div>
             </div>
           )}
+          {/* Food Origins display */}
+          {currentQ.type === 'food' && (
+            <div style={{textAlign:'center',marginBottom:'16px'}}>
+              <div style={{background:'linear-gradient(135deg,rgba(255,165,2,0.12),rgba(255,107,53,0.12))',borderRadius:'16px',
+                padding:'16px 24px',display:'inline-block',border:'1px solid rgba(255,165,2,0.25)'}}>
+                <div style={{fontSize:'4rem',lineHeight:1.2,marginBottom:'4px'}}>{currentQ.emoji}</div>
+                <div style={{fontSize:'1.1rem',fontWeight:700,color:'#ffa502',letterSpacing:'0.5px'}}>{currentQ.dish}</div>
+              </div>
+            </div>
+          )}
+          {/* Geo Scramble display */}
+          {currentQ.type === 'scramble' && (
+            <div style={{textAlign:'center',marginBottom:'16px'}}>
+              <div style={{background:'linear-gradient(135deg,rgba(155,89,182,0.12),rgba(52,152,219,0.12))',borderRadius:'16px',
+                padding:'20px 24px',display:'inline-block',border:'1px solid rgba(155,89,182,0.25)'}}>
+                <div style={{display:'flex',gap:'6px',justifyContent:'center',marginBottom:'10px'}}>
+                  {currentQ.scrambled.split('').map((letter,li) => (
+                    <span key={li} style={{background:'rgba(155,89,182,0.3)',border:'2px solid rgba(155,89,182,0.5)',
+                      borderRadius:'8px',width:'36px',height:'42px',display:'flex',alignItems:'center',justifyContent:'center',
+                      fontSize:'1.4rem',fontWeight:800,color:'#d4a5ff',fontFamily:'monospace',
+                      animation:`popIn 0.3s ease ${li*0.05}s both`}}>{letter}</span>
+                  ))}
+                </div>
+                <div style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.5)',fontStyle:'italic'}}>💡 {currentQ.clue}</div>
+              </div>
+            </div>
+          )}
+          {/* Landmark Clue display */}
+          {currentQ.type === 'landmark_clue' && (
+            <div style={{textAlign:'center',marginBottom:'16px'}}>
+              <div style={{background:'linear-gradient(135deg,rgba(46,213,115,0.1),rgba(30,144,255,0.1))',borderRadius:'16px',
+                padding:'20px 24px',display:'inline-block',border:'1px solid rgba(46,213,115,0.2)',maxWidth:'360px'}}>
+                <div style={{fontSize:'3.5rem',lineHeight:1.3,marginBottom:'8px'}}>{currentQ.emoji}</div>
+                <div style={{fontSize:'0.95rem',color:'rgba(255,255,255,0.7)',fontStyle:'italic',lineHeight:1.6}}>"{currentQ.clue}"</div>
+              </div>
+            </div>
+          )}
           <div style={{fontSize:'1.3rem',fontWeight:700,marginBottom:'24px',lineHeight:1.5}}>{currentQ.q}</div>
           <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
             {currentQ.o.map((opt,idx) => {
@@ -2672,7 +4089,7 @@ export default function GeoBeeGame() {
                 </div>
               );
               return (
-              <button key={idx} style={optStyle(idx)} onClick={()=>handleAnswer(idx)} disabled={selected!==null}
+              <button key={idx} style={{...optStyle(idx), animation: selected === null ? `popIn 0.3s ease-out ${idx*0.08}s both` : undefined}} onClick={()=>handleAnswer(idx)} disabled={selected!==null}
                 onMouseOver={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.15)';e.currentTarget.style.borderColor='rgba(255,255,255,0.3)';}}}
                 onMouseOut={e=>{if(selected===null){e.currentTarget.style.background='rgba(255,255,255,0.08)';e.currentTarget.style.borderColor='rgba(255,255,255,0.15)';}}}
               >
@@ -2694,9 +4111,9 @@ export default function GeoBeeGame() {
     const timeBonus = isCorrect ? Math.floor(timer*5) : 0;
     const streakBonus = (isCorrect && streak >= 3) ? (streak-1)*10 : 0;
     return (
-      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-        <div style={S.card}>
-          <div style={{textAlign:'center',marginBottom:'20px'}}>
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+        <div style={animCard()}>
+          <div style={{textAlign:'center',marginBottom:'20px',animation:'bounceIn 0.4s ease-out'}}>
             <div style={{fontSize:'3rem',marginBottom:'8px'}}>{selected===-1?'⏰':isCorrect?'🎉':'😬'}</div>
             <div style={{fontSize:'1.6rem',fontWeight:800,color:selected===-1?'#ffa502':isCorrect?'#2ed573':'#ff4757'}}>
               {selected===-1?"TIME'S UP!":isCorrect?'CORRECT!':'WRONG!'}
@@ -2708,14 +4125,14 @@ export default function GeoBeeGame() {
           </Host>
           {isCorrect && (
             <div style={{display:'flex',justifyContent:'center',gap:'20px',marginBottom:'16px',fontSize:'0.85rem'}}>
-              <div style={{textAlign:'center'}}><div style={{color:'#2ed573',fontWeight:700}}>+100</div><div style={{color:'rgba(255,255,255,0.4)'}}>base</div></div>
-              {timeBonus>0&&<div style={{textAlign:'center'}}><div style={{color:'#7bed9f',fontWeight:700}}>+{timeBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>speed</div></div>}
-              {streakBonus>0&&<div style={{textAlign:'center'}}><div style={{color:'#ffa502',fontWeight:700}}>+{streakBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>streak</div></div>}
+              <div style={{textAlign:'center',animation:'scorePopIn 0.3s ease-out 0.1s both'}}><div style={{color:'#2ed573',fontWeight:700}}>+100</div><div style={{color:'rgba(255,255,255,0.4)'}}>base</div></div>
+              {timeBonus>0&&<div style={{textAlign:'center',animation:'scorePopIn 0.3s ease-out 0.3s both'}}><div style={{color:'#7bed9f',fontWeight:700}}>+{timeBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>speed</div></div>}
+              {streakBonus>0&&<div style={{textAlign:'center',animation:'scorePopIn 0.3s ease-out 0.5s both'}}><div style={{color:'#ffa502',fontWeight:700}}>+{streakBonus}</div><div style={{color:'rgba(255,255,255,0.4)'}}>streak</div></div>}
             </div>
           )}
           {STREAK_COMMENTS[streak] && isCorrect && (
             <div style={{background:'rgba(46,213,115,0.1)',border:'1px solid rgba(46,213,115,0.3)',borderRadius:'12px',padding:'12px 16px',textAlign:'center',fontSize:'0.9rem',color:'#7bed9f',marginBottom:'16px'}}>
-              🔥 {STREAK_COMMENTS[streak]}
+              🔥 {STREAK_COMMENTS[streak][qIndex % STREAK_COMMENTS[streak].length]}
             </div>
           )}
           {!isCorrect && selected!==-1 && (
@@ -2746,15 +4163,243 @@ export default function GeoBeeGame() {
     );
   }
 
+  // ─── Duel Question Screen ──────────────────────────────────────────────
+  if (screen === 'duelQuestion') {
+    const q = gameQuestions[duelQIndex];
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+        <div style={animCard()}>
+          {/* Scoreboard bar */}
+          <div style={{display:'flex',gap:'6px',marginBottom:'16px'}}>
+            {duelPlayers.map((p,i) => (
+              <div key={i} style={{flex:1,background:`${DUEL_COLORS[i]}15`,border:`1px solid ${DUEL_COLORS[i]}40`,
+                borderRadius:'10px',padding:'8px',textAlign:'center',
+                boxShadow:buzzedPlayer===i?`0 0 20px ${DUEL_COLORS[i]}60`:'none',
+                transition:'all 0.3s'}}>
+                <div style={{fontWeight:700,color:DUEL_COLORS[i],fontSize:'0.75rem',marginBottom:'2px'}}>{p.name}</div>
+                <div style={{fontWeight:800,fontSize:'1.2rem',color:'#fff'}}>{p.score}</div>
+              </div>
+            ))}
+          </div>
+          {/* Round label */}
+          <div style={{textAlign:'center',color:'rgba(255,255,255,0.4)',fontSize:'0.8rem',marginBottom:'8px'}}>{duelRoundLabel}</div>
+          {/* Category badge */}
+          {q && <div style={{textAlign:'center'}}><span style={S.cat}>{q.cat}</span></div>}
+          {/* Setup or Question */}
+          {showSetup ? (
+            <Host>{setupText}</Host>
+          ) : (
+            <>
+              <div style={{fontSize:'1.25rem',fontWeight:600,lineHeight:1.6,marginBottom:'20px',textAlign:'center',minHeight:'60px'}}>
+                {q?.q}
+              </div>
+              {/* Buzzer phase */}
+              {duelPhase === 'buzzer' && (
+                <div style={{textAlign:'center',marginBottom:'20px'}}>
+                  <div style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.5)',marginBottom:'12px'}}>
+                    BUZZ IN! ({buzzTimer}s)
+                  </div>
+                  <div style={{width:'100%',height:'6px',background:'rgba(255,255,255,0.1)',borderRadius:'3px',overflow:'hidden',marginBottom:'16px'}}>
+                    <div style={{height:'100%',background:'linear-gradient(90deg,#f7b733,#fc4a1a)',borderRadius:'3px',
+                      width:`${(buzzTimer/8)*100}%`,transition:'width 1s linear'}}/>
+                  </div>
+                  <div style={{display:'flex',gap:'10px'}}>
+                    {duelPlayers.map((p,i) => (
+                      <button key={i} onClick={() => duelBuzzIn(i)}
+                        style={{flex:1,padding:'18px 8px',borderRadius:'14px',border:`2px solid ${DUEL_COLORS[i]}`,
+                          background:`${DUEL_COLORS[i]}20`,color:DUEL_COLORS[i],fontSize:'1rem',fontWeight:700,
+                          cursor:'pointer',transition:'all 0.15s',position:'relative'}}>
+                        <div style={{fontSize:'1.5rem',marginBottom:'4px'}}>🔔</div>
+                        <div>{p.name}</div>
+                        <div style={{fontSize:'0.7rem',opacity:0.6,marginTop:'2px'}}>Press {DUEL_KEYS[i]} or {i+1}</div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {/* Steal phase */}
+              {duelPhase === 'steal' && (
+                <div style={{textAlign:'center',marginBottom:'20px'}}>
+                  <div style={{fontSize:'0.95rem',color:'#fc4a1a',fontWeight:700,marginBottom:'8px',animation:'streakFlame 0.8s ease-in-out infinite'}}>
+                    STEAL OPPORTUNITY! ({buzzTimer}s)
+                  </div>
+                  <div style={{width:'100%',height:'6px',background:'rgba(255,255,255,0.1)',borderRadius:'3px',overflow:'hidden',marginBottom:'16px'}}>
+                    <div style={{height:'100%',background:'linear-gradient(90deg,#e74c3c,#c0392b)',borderRadius:'3px',
+                      width:`${(buzzTimer/8)*100}%`,transition:'width 1s linear'}}/>
+                  </div>
+                  <div style={{display:'flex',gap:'10px'}}>
+                    {duelPlayers.map((p,i) => {
+                      const canSteal = stealQueue.includes(i);
+                      return (
+                        <button key={i} onClick={() => canSteal && duelStealBuzz(i)}
+                          disabled={!canSteal}
+                          style={{flex:1,padding:'18px 8px',borderRadius:'14px',
+                            border:`2px solid ${canSteal ? DUEL_COLORS[i] : 'rgba(255,255,255,0.1)'}`,
+                            background:canSteal ? `${DUEL_COLORS[i]}20` : 'rgba(255,255,255,0.03)',
+                            color:canSteal ? DUEL_COLORS[i] : 'rgba(255,255,255,0.2)',
+                            fontSize:'1rem',fontWeight:700,cursor:canSteal?'pointer':'not-allowed',
+                            transition:'all 0.15s',opacity:canSteal?1:0.4}}>
+                          <div style={{fontSize:'1.5rem',marginBottom:'4px'}}>{canSteal ? '🔔' : '❌'}</div>
+                          <div>{p.name}</div>
+                          {canSteal && <div style={{fontSize:'0.7rem',opacity:0.6,marginTop:'2px'}}>Press {DUEL_KEYS[i]}</div>}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+              {/* Answering phase — show answer options */}
+              {(duelPhase === 'answering') && buzzedPlayer !== null && (
+                <div>
+                  <div style={{textAlign:'center',marginBottom:'12px',fontSize:'0.9rem'}}>
+                    <span style={{color:DUEL_COLORS[buzzedPlayer],fontWeight:700}}>{duelPlayers[buzzedPlayer]?.name}</span>
+                    <span style={{color:'rgba(255,255,255,0.5)'}}> is answering... ({answerTimer}s)</span>
+                  </div>
+                  <div style={{width:'100%',height:'4px',background:'rgba(255,255,255,0.1)',borderRadius:'2px',overflow:'hidden',marginBottom:'16px'}}>
+                    <div style={{height:'100%',background:DUEL_COLORS[buzzedPlayer],borderRadius:'2px',
+                      width:`${(answerTimer/10)*100}%`,transition:'width 1s linear'}}/>
+                  </div>
+                  <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
+                    {q && q.o.map((opt, oi) => (
+                      <button key={oi} onClick={() => duelAnswer(oi)} disabled={selected !== null}
+                        style={{padding:'14px 20px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.15)',
+                          background:selected===oi?(oi===q.a?'rgba(46,213,115,0.3)':'rgba(255,71,87,0.3)')
+                            :selected!==null&&oi===q.a?'rgba(46,213,115,0.2)':'rgba(255,255,255,0.06)',
+                          color:'#fff',fontSize:'1rem',cursor:selected===null?'pointer':'default',
+                          textAlign:'left',transition:'all 0.2s',fontWeight:selected===oi?700:400}}>
+                        <span style={{color:'rgba(255,255,255,0.4)',marginRight:'10px',fontWeight:700}}>{String.fromCharCode(65+oi)}</span>
+                        {opt}
+                        {selected!==null && oi===q.a && <span style={{float:'right',color:'#2ed573'}}>✓</span>}
+                        {selected===oi && oi!==q.a && <span style={{float:'right',color:'#ff4757'}}>✗</span>}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {/* Result phase */}
+              {duelPhase === 'result' && q && (
+                <div>
+                  {selected === -1 ? (
+                    <div style={{textAlign:'center',marginBottom:'16px'}}>
+                      <div style={{fontSize:'1.5rem',marginBottom:'8px'}}>⏰</div>
+                      <div style={{color:'rgba(255,255,255,0.7)',fontSize:'0.95rem'}}>Nobody buzzed in! The answer was <span style={{color:'#2ed573',fontWeight:700}}>{q.o[q.a]}</span></div>
+                    </div>
+                  ) : (
+                    <div style={{display:'flex',flexDirection:'column',gap:'10px',marginBottom:'16px'}}>
+                      {q.o.map((opt, oi) => (
+                        <div key={oi} style={{padding:'14px 20px',borderRadius:'12px',
+                          border:oi===q.a?'1px solid rgba(46,213,115,0.4)':'1px solid rgba(255,255,255,0.08)',
+                          background:oi===q.a?'rgba(46,213,115,0.15)':selected===oi?'rgba(255,71,87,0.15)':'rgba(255,255,255,0.03)',
+                          color:'#fff',fontSize:'1rem'}}>
+                          <span style={{color:'rgba(255,255,255,0.4)',marginRight:'10px',fontWeight:700}}>{String.fromCharCode(65+oi)}</span>
+                          {opt}
+                          {oi===q.a && <span style={{float:'right',color:'#2ed573',fontWeight:700}}>✓</span>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <div style={S.fact}>{q.f}</div>
+                  <div style={{marginTop:'16px'}}>
+                    <Btn onClick={duelNextQuestion}>{duelQIndex+1>=DUEL_QS?'SEE RESULTS 🏆':'NEXT QUESTION →'}</Btn>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Duel Game Over Screen ──────────────────────────────────────────────
+  if (screen === 'duelGameOver') {
+    const sorted = [...duelPlayers].sort((a,b) => b.score - a.score);
+    const podiumOrder = sorted.length >= 3 ? [sorted[1], sorted[0], sorted[2]] : sorted; // silver, gold, bronze layout
+    const podiumHeights = ['120px','160px','90px'];
+    const podiumLabels = ['🥈 2nd','🥇 1st','🥉 3rd'];
+    const podiumColors = ['#C0C0C0','#FFD700','#CD7F32'];
+    const isTie = sorted[0].score === sorted[1].score;
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+        <div style={animCard({textAlign:'center'})}>
+          <div style={{fontSize:'3.5rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>⚡</div>
+          <div style={{...S.title,fontSize:'2.5rem',animation:'scorePopIn 0.6s ease-out 0.2s both'}}>
+            {isTie ? "IT'S A TIE!" : `${sorted[0].name} WINS!`}
+          </div>
+          <Host>{isTie ? "What an incredibly close duel! Nobody could pull ahead!" : `${sorted[0].name} dominated the duel! What a performance!`}</Host>
+          {/* Podium */}
+          <div style={{display:'flex',alignItems:'flex-end',justifyContent:'center',gap:'8px',marginBottom:'24px',height:'200px'}}>
+            {podiumOrder.map((p,i) => {
+              const pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || podiumColors[i];
+              return (
+                <div key={i} style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',animation:`resultSlideUp 0.4s ease-out ${0.2+i*0.15}s both`}}>
+                  <div style={{fontSize:'1.5rem',marginBottom:'4px'}}>{podiumLabels[i]}</div>
+                  <div style={{fontWeight:700,color:pColor,fontSize:'0.9rem',marginBottom:'6px'}}>{p.name}</div>
+                  <div style={{width:'100%',height:podiumHeights[i],background:`linear-gradient(180deg,${pColor}40,${pColor}15)`,
+                    border:`1px solid ${pColor}60`,borderRadius:'12px 12px 0 0',display:'flex',flexDirection:'column',
+                    alignItems:'center',justifyContent:'center',padding:'8px'}}>
+                    <div style={{fontSize:'1.8rem',fontWeight:800,color:'#fff'}}>{p.score}</div>
+                    <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>points</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* Detailed stats */}
+          <div style={{display:'flex',gap:'8px',marginBottom:'20px'}}>
+            {sorted.map((p,i) => {
+              const pColor = DUEL_COLORS[duelPlayers.findIndex(dp => dp.name === p.name)] || '#fff';
+              return (
+                <div key={i} style={{flex:1,background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'12px',
+                  border:i===0 ? `1px solid ${pColor}40` : '1px solid rgba(255,255,255,0.08)'}}>
+                  <div style={{fontWeight:700,color:pColor,fontSize:'0.8rem',marginBottom:'8px'}}>{p.name}</div>
+                  <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.6)',lineHeight:1.8}}>
+                    <div>✅ {p.correct} correct</div>
+                    <div>❌ {p.wrong} wrong</div>
+                    <div>🏴‍☠️ {p.steals} steal{p.steals!==1?'s':''}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* Question review */}
+          <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'24px',textAlign:'left',maxHeight:'180px',overflowY:'auto'}}>
+            <div style={{fontWeight:700,marginBottom:'10px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)',textTransform:'uppercase',letterSpacing:'1px'}}>Question Review</div>
+            {history.map((h,i) => (
+              <div key={i} style={{display:'flex',alignItems:'flex-start',gap:'10px',padding:'8px 0',borderBottom:i<history.length-1?'1px solid rgba(255,255,255,0.05)':'none',fontSize:'0.85rem'}}>
+                <span style={{color:h.correct?'#2ed573':h.buzzedBy==='nobody'?'rgba(255,255,255,0.3)':'#ff4757',fontWeight:700,flexShrink:0,width:'20px'}}>
+                  {h.correct?'✓':h.buzzedBy==='nobody'?'—':'✗'}
+                </span>
+                <span style={{color:'rgba(255,255,255,0.7)',flex:1}}>{h.question}</span>
+                <span style={{color:'rgba(255,255,255,0.3)',fontSize:'0.75rem',flexShrink:0}}>{h.buzzedBy || ''}</span>
+              </div>
+            ))}
+          </div>
+          <Btn onClick={() => startGame('duel')}>REMATCH! ⚡</Btn>
+          <button onClick={() => { setScreen('title'); sound.click(); }}
+            style={{marginTop:'8px',background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+              borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer',
+              display:'block',margin:'8px auto 0'}}
+            onMouseOver={e=>{e.target.style.color='#fff';}} onMouseOut={e=>{e.target.style.color='rgba(255,255,255,0.6)';}}>
+            Back to Menu →
+          </button>
+          <div style={{marginTop:'12px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>
+            {mapProgress.discovered.length} countries discovered • {badges.earned.length}/{ALL_BADGE_DEFINITIONS.length} badges
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (screen === 'gameOver') {
     const pct = Math.round((correctCount/totalQs)*100);
     const streakBonusLabel = dailyStreak.getBonus() > 0 ? `(+${dailyStreak.getBonus()}% streak bonus!)` : '';
     const mpWinner = gameMode === 'multiplayer' ? (players[0].score > players[1].score ? players[0].name : players[1].score > players[0].score ? players[1].name : null) : null;
     return (
-      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
-        <div style={{...S.card,textAlign:'center'}}>
-          <div style={{fontSize:'3.5rem',marginBottom:'10px'}}>{gameMode==='multiplayer'?'⚔️':gameMode==='survival'?'💀':'🏆'}</div>
-          <div style={{...S.title,fontSize:'2.5rem'}}>
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+        <div style={animCard({textAlign:'center'})}>
+          <div style={{fontSize:'3.5rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>{gameMode==='multiplayer'?'⚔️':gameMode==='survival'?'💀':'🏆'}</div>
+          <div style={{...S.title,fontSize:'2.5rem',animation:'scorePopIn 0.6s ease-out 0.2s both'}}>
             {gameMode==='survival'?'SURVIVED!':gameMode==='multiplayer'?(mpWinner?`${mpWinner} WINS!`:"IT'S A TIE!"):'GAME OVER!'}
           </div>
           {gameMode === 'multiplayer' ? (
@@ -2788,24 +4433,46 @@ export default function GeoBeeGame() {
             <>
               <Host>{getScoreComment()}</Host>
               <div style={{display:'flex',gap:'12px',marginBottom:'24px',flexWrap:'wrap'}}>
-                <div style={S.statCard}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score {streakBonusLabel}</div></div>
-                <div style={S.statCard}><div style={S.statVal}>{correctCount}/{totalQs}</div><div style={S.statLbl}>Correct</div></div>
-                <div style={S.statCard}><div style={S.statVal}>{pct}%</div><div style={S.statLbl}>Accuracy</div></div>
-                <div style={S.statCard}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
+                <div style={{...S.statCard,animation:'scorePopIn 0.4s ease-out 0.3s both'}}><div style={S.statVal}>{score}</div><div style={S.statLbl}>Score {streakBonusLabel}</div></div>
+                <div style={{...S.statCard,animation:'scorePopIn 0.4s ease-out 0.5s both'}}><div style={S.statVal}>{correctCount}/{totalQs}</div><div style={S.statLbl}>Correct</div></div>
+                <div style={{...S.statCard,animation:'scorePopIn 0.4s ease-out 0.7s both'}}><div style={S.statVal}>{pct}%</div><div style={S.statLbl}>Accuracy</div></div>
+                <div style={{...S.statCard,animation:'scorePopIn 0.4s ease-out 0.9s both'}}><div style={S.statVal}>{bestStreak}🔥</div><div style={S.statLbl}>Best Streak</div></div>
               </div>
             </>
           )}
           {newBadgesThisGame.length > 0 && (
-            <div style={{background:'rgba(247,183,51,0.1)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'14px',padding:'16px',marginBottom:'20px'}}>
-              <div style={{fontWeight:700,color:'#f7b733',marginBottom:'10px',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'1px'}}>🏅 Badges Earned This Game</div>
-              <div style={{display:'flex',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
-                {newBadgesThisGame.map(b => (
-                  <div key={b.id} style={{textAlign:'center'}}>
-                    <div style={{fontSize:'1.8rem'}}>{b.icon}</div>
-                    <div style={{fontSize:'0.75rem',color:'#f7b733',fontWeight:600}}>{b.name}</div>
+            <div style={{marginBottom:'20px'}}>
+              {/* Regular badges earned */}
+              {newBadgesThisGame.filter(b => !b.secret).length > 0 && (
+                <div style={{background:'rgba(247,183,51,0.1)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'14px',padding:'16px',marginBottom:'12px'}}>
+                  <div style={{fontWeight:700,color:'#f7b733',marginBottom:'10px',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'1px'}}>🏅 Badges Earned This Game</div>
+                  <div style={{display:'flex',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
+                    {newBadgesThisGame.filter(b => !b.secret).map(b => (
+                      <div key={b.id} style={{textAlign:'center',animation:'scorePopIn 0.4s ease-out both'}}>
+                        <div style={{fontSize:'1.8rem'}}>{b.icon}</div>
+                        <div style={{fontSize:'0.75rem',color:'#f7b733',fontWeight:600}}>{b.name}</div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              )}
+              {/* Secret badges earned */}
+              {newBadgesThisGame.filter(b => b.secret).length > 0 && (
+                <div style={{background:'linear-gradient(135deg,rgba(155,89,182,0.15),rgba(52,152,219,0.1))',
+                  border:'1px solid rgba(155,89,182,0.35)',borderRadius:'14px',padding:'16px'}}>
+                  <div style={{fontWeight:700,color:'#d4a5ff',marginBottom:'10px',fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'1px'}}>
+                    🕵️ Secret Badge{newBadgesThisGame.filter(b=>b.secret).length>1?'s':''} Discovered!
+                  </div>
+                  <div style={{display:'flex',justifyContent:'center',gap:'16px',flexWrap:'wrap'}}>
+                    {newBadgesThisGame.filter(b => b.secret).map(b => (
+                      <div key={b.id} style={{textAlign:'center',animation:'bounceIn 0.5s ease-out both'}}>
+                        <div style={{fontSize:'1.8rem',animation:'streakFlame 0.8s ease-in-out infinite'}}>{b.icon}</div>
+                        <div style={{fontSize:'0.75rem',color:'#d4a5ff',fontWeight:600}}>{b.name}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
           <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'24px',textAlign:'left',maxHeight:'200px',overflowY:'auto'}}>
@@ -2835,7 +4502,7 @@ export default function GeoBeeGame() {
             View Profile →
           </button>
           <div style={{marginTop:'12px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>
-            {mapProgress.discovered.length} countries discovered • {badges.earned.length} badges earned
+            {mapProgress.discovered.length} countries discovered • {badges.earned.length}/{ALL_BADGE_DEFINITIONS.length} badges{badges.earned.some(id => SECRET_BADGE_DEFINITIONS.find(b=>b.id===id)) ? ' (🕵️ secrets found!)' : ''}
           </div>
         </div>
       </div>
