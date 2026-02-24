@@ -1198,6 +1198,601 @@ wq:"It's Oikumene (Ecumene)! The Greek concept of the inhabited world, still use
 f:"Kiribati adjusted its time zone in 1995 so all its islands would be on the same day. Its Line Islands (including Kiritimati) are now UTC+14, the first to see each new day.",
 rq:"Kiribati! They literally moved the date line around their country in 1995 so they could all be on the same day. Power move!",
 wq:"It's Kiribati! It adjusted the International Date Line in 1995, making its eastern islands the first to see each new day."},
+{d:1,cat:"Countries",q:"Which country has the most people?",o:["India","China","Nigeria","Indonesia"],a:0,f:"India surpassed China as the most populous country in 2023 with over 1.4 billion people.",rq:"Population knowledge unlocked!",wq:"Better luck with your next billion-person guess."},
+{d:1,cat:"Countries",q:"Which is the largest country by area?",o:["Russia","Canada","United States","China"],a:0,f:"Russia spans 17.1 million square kilometers across 11 time zones.",rq:"You conquered geography's biggest challenge!",wq:"That answer was as sprawling as your next failure."},
+{d:1,cat:"Oceans & Seas",q:"What is the largest ocean?",o:["Pacific","Atlantic","Indian","Arctic"],a:0,f:"The Pacific Ocean covers approximately 165 million square kilometers, larger than all land on Earth.",rq:"You're swimming in trivia success!",wq:"That sank faster than a ship without a compass."},
+{d:1,cat:"Oceans & Seas",q:"Which ocean is the coldest?",o:["Arctic","Antarctic","Atlantic","Pacific"],a:1,f:"The Antarctic Ocean (Southern Ocean) has water temperatures around -1.9°C year-round.",rq:"You're ice cold at trivia!",wq:"Your answer was as cold as the Antarctic floor."},
+{d:1,cat:"Rivers & Lakes",q:"What is the longest river in the world?",o:["Nile","Amazon","Yangtze","Mississippi"],a:0,f:"The Nile River is 6,650 kilometers long and flows through eleven countries in Africa.",rq:"You flowed straight to victory!",wq:"That answer went downstream quickly."},
+{d:1,cat:"Mountains & Deserts",q:"Which is the tallest mountain in the world?",o:["Mount Everest","K2","Kangchenjunga","Lhotse"],a:0,f:"Mount Everest stands 8,849 meters above sea level on the Nepal-China border.",rq:"You peaked in this category!",wq:"That climb led nowhere fast."},
+{d:1,cat:"Physical Geography",q:"Which desert is the largest in the world?",o:["Sahara","Antarctic","Arabian","Gobi"],a:0,f:"The Sahara Desert covers 9 million square kilometers across North Africa.",rq:"You're a sandy knowledge master!",wq:"Your answer got lost in the dust."},
+{d:1,cat:"Landmarks",q:"In which country is the Statue of Liberty located?",o:["United States","France","Italy","Canada"],a:0,f:"The Statue of Liberty stands on Liberty Island in New York Harbor and was a gift from France in 1886.",rq:"You're a beacon of knowledge!",wq:"That wasn't a very enlightening answer."},
+{d:1,cat:"Landmarks",q:"Where is Big Ben located?",o:["London","Paris","Rome","Berlin"],a:0,f:"Big Ben is the nickname for the Great Bell and Elizabeth Tower of the Palace of Westminster in London.",rq:"You rang the bell on this one!",wq:"That answer was striking... in the wrong direction."},
+{d:1,cat:"US Geography",q:"What is the capital of California?",o:["Sacramento","Los Angeles","San Francisco","San Diego"],a:0,f:"Sacramento has been the capital since 1854 and sits on the Sacramento River.",rq:"You scored a Californication victory!",wq:"Even the Gold Rush wasn't kind to that answer."},
+{d:1,cat:"US Geography",q:"Which US state has the most people?",o:["California","Texas","Florida","New York"],a:0,f:"California has approximately 39 million residents, though Texas is the largest by area.",rq:"You're a state superstar!",wq:"That answer was lost in the crowd."},
+{d:1,cat:"Islands",q:"What is the largest island in the world?",o:["Greenland","New Guinea","Borneo","Madagascar"],a:0,f:"Greenland is 2.16 million square kilometers and is technically the world's largest island.",rq:"You're an island of excellence!",wq:"Your answer went adrift."},
+{d:1,cat:"Languages & Scripts",q:"What is the most widely spoken language by native speakers?",o:["Mandarin Chinese","Spanish","English","Hindi"],a:0,f:"Mandarin Chinese has approximately 920 million native speakers, primarily in China.",rq:"You spoke truth to our ears!",wq:"That answer didn't translate well."},
+{d:1,cat:"Time Zones & Coordinates",q:"How many time zones does Earth have?",o:["24","12","36","48"],a:0,f:"Earth is divided into 24 standard time zones based on lines of longitude.",rq:"You're perfectly timed!",wq:"Your timing was all off."},
+{d:1,cat:"Sports Geography",q:"In which city were the first modern Olympic Games held?",o:["Athens","Paris","London","Berlin"],a:0,f:"The first modern Olympics occurred in Athens, Greece in 1896.",rq:"Olympic gold for this answer!",wq:"Your answer didn't make the podium."},
+{d:2,cat:"Capitals",q:"What is the capital of Botswana?",o:["Gaborone","Francistown","Maun","Serowe"],a:0,f:"Gaborone is located on the Limpopo River near the South Africa border and has been the capital since independence in 1966.",rq:"You're a diamond-level geography expert!",wq:"Even the Kalahari is judging that answer."},
+{d:2,cat:"Capitals",q:"Which city is the capital of Kazakhstan?",o:["Astana","Almaty","Karaganda","Shymkent"],a:0,f:"Astana became the capital in 1997, officially renamed Nur-Sultan from 2019-2022, then back to Astana.",rq:"You navigated that capital shift perfectly!",wq:"That answer got lost in the Steppe."},
+{d:2,cat:"Capitals",q:"What is the capital of Montenegro?",o:["Podgorica","Cetinje","Kotor","Budva"],a:0,f:"Podgorica is the capital and largest city, though Cetinje was historically important.",rq:"You scaled this trivia peak!",wq:"That answer was too rocky."},
+{d:2,cat:"Countries",q:"Which country is completely landlocked in South America?",o:["Bolivia","Paraguay","Ecuador","Colombia"],a:1,f:"Paraguay is landlocked and surrounded by Argentina, Brazil, and Bolivia.",rq:"You're a landlocked legend!",wq:"That answer got lost at sea."},
+{d:2,cat:"Countries",q:"Which African country was never colonized by European powers?",o:["Ethiopia","Kenya","Nigeria","Ghana"],a:0,f:"Ethiopia remained independent except for a brief Italian occupation in 1936-1941 and defeated Italy at the Battle of Adwa in 1896.",rq:"You're historically hip to this trivia!",wq:"That answer got colonized by wrongness."},
+{d:2,cat:"Continents",q:"Which continent has the most countries?",o:["Africa","Asia","Europe","North America"],a:0,f:"Africa has 54 recognized countries, more than any other continent.",rq:"You explored African excellence!",wq:"That answer was a continent away."},
+{d:2,cat:"Oceans & Seas",q:"Which sea is the saltiest body of water on Earth?",o:["Dead Sea","Great Salt Lake","Red Sea","Baltic Sea"],a:0,f:"The Dead Sea is 34.2% salt, nearly 10 times saltier than the ocean.",rq:"You're a salty scholar!",wq:"That answer was un-salty."},
+{d:2,cat:"Oceans & Seas",q:"What is the only sea that has no coastline?",o:["Sargasso Sea","Mediterranean Sea","Caribbean Sea","North Sea"],a:0,f:"The Sargasso Sea is defined by ocean currents rather than geography, located within the North Atlantic.",rq:"You navigated that paradox perfectly!",wq:"That answer sank without a trace."},
+{d:2,cat:"Rivers & Lakes",q:"Which river is the longest in Africa?",o:["Nile","Congo","Zambezi","Niger"],a:0,f:"The Nile stretches 6,650 kilometers through eleven African nations.",rq:"You're flowing with knowledge!",wq:"That answer went down the wrong river."},
+{d:2,cat:"Mountains & Deserts",q:"Which mountain range contains the most peaks over 7,000 meters?",o:["Himalayas","Andes","Rockies","Alps"],a:0,f:"The Himalayas contain over 100 peaks above 7,000 meters, including Mount Everest.",rq:"You climbed to the top of this category!",wq:"That answer fell short of the summit."},
+{d:2,cat:"Mountains & Deserts",q:"Which desert is the driest place on Earth?",o:["Atacama","Sahara","Arabian","Gobi"],a:0,f:"The Atacama Desert in Chile receives less than 1 millimeter of rain annually in some areas.",rq:"You found the driest answer!",wq:"That answer didn't have enough substance."},
+{d:2,cat:"Physical Geography",q:"How many countries does the Amazon rainforest span?",o:["Nine","Six","Twelve","Four"],a:0,f:"The Amazon spans Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana.",rq:"You're a rainforest ranger!",wq:"That answer got lost in the jungle."},
+{d:2,cat:"Borders & Neighbors",q:"Which country has the most land borders?",o:["Russia","China","Brazil","Germany"],a:0,f:"Russia shares land borders with 14 countries, more than any other nation.",rq:"You bordered on perfection!",wq:"That answer was too isolated."},
+{d:2,cat:"Borders & Neighbors",q:"How many countries share a border with Germany?",o:["Nine","Six","Twelve","Four"],a:0,f:"Germany borders Denmark, Poland, Czech Republic, Austria, Switzerland, France, Luxembourg, Belgium, and Netherlands.",rq:"You've got a real grasp on European geography!",wq:"That answer didn't make the cut."},
+{d:2,cat:"Landmarks",q:"The Great Wall of China is primarily located in which region?",o:["Northern China","Southern China","Western China","Central China"],a:0,f:"The Great Wall stretches across northern China to protect against invasions from the north.",rq:"You built a wall of knowledge!",wq:"That answer was defensive but wrong."},
+{d:2,cat:"Landmarks",q:"In which country is Machu Picchu located?",o:["Peru","Bolivia","Ecuador","Colombia"],a:0,f:"Machu Picchu is an ancient Incan citadel located in the Andes Mountains of Peru.",rq:"You reached the peak of this question!",wq:"That answer missed the mountain entirely."},
+{d:2,cat:"Historical Geography",q:"Which ancient city was located in present-day Iraq?",o:["Babylon","Cairo","Athens","Rome"],a:0,f:"Babylon was a major city in ancient Mesopotamia, located in present-day Iraq near Baghdad.",rq:"You're historically enlightened!",wq:"That answer belonged in a different era."},
+{d:2,cat:"Cultural Geography",q:"Which country is the birthplace of Buddhism?",o:["Nepal","India","Thailand","China"],a:1,f:"Buddhism originated in India with Siddhartha Gautama (Buddha) around the 5th century BCE.",rq:"You've reached enlightenment on this trivia!",wq:"That answer was not the way."},
+{d:2,cat:"Economy & Resources",q:"Which country produces the most oil?",o:["United States","Russia","Saudi Arabia","Iraq"],a:0,f:"The United States surpassed Saudi Arabia as the world's top oil producer around 2018.",rq:"You struck black gold with this answer!",wq:"That answer ran out of fuel."},
+{d:2,cat:"Population",q:"Which country has the highest population density?",o:["Monaco","Bangladesh","Singapore","Malta"],a:0,f:"Monaco has approximately 19,000 people per square kilometer, the highest in the world.",rq:"You're densely packed with knowledge!",wq:"That answer wasn't concentrated enough."},
+{d:2,cat:"Islands",q:"Which is the second-largest island in the world?",o:["New Guinea","Borneo","Madagascar","Baffin Island"],a:0,f:"New Guinea is 785,753 square kilometers and is shared by Indonesia and Papua New Guinea.",rq:"You're an island expert!",wq:"That answer drifted off course."},
+{d:2,cat:"Straits & Waterways",q:"The Strait of Hormuz connects which two bodies of water?",o:["Persian Gulf and Arabian Sea","Mediterranean and Red Sea","North Sea and Atlantic","Coral Sea and Pacific"],a:0,f:"The Strait of Hormuz is one of the world's most important shipping routes, controlled by Iran and Oman.",rq:"You navigated that strait perfectly!",wq:"That answer took the wrong passage."},
+{d:2,cat:"US Geography",q:"Which US state is the largest by area?",o:["Alaska","Texas","California","Montana"],a:0,f:"Alaska is 1.7 million square kilometers, significantly larger than Texas.",rq:"You scaled new geographic heights!",wq:"Even Texas couldn't hold this answer together."},
+{d:2,cat:"US Geography",q:"What is the capital of Texas?",o:["Austin","Houston","Dallas","San Antonio"],a:0,f:"Austin became the capital in 1839 and is known for live music and tech companies.",rq:"You just won big in Austin!",wq:"That answer didn't make the cut in Texas."},
+{d:2,cat:"Languages & Scripts",q:"How many official languages does India have?",o:["22","11","15","31"],a:0,f:"India recognizes 22 official languages in its Constitution, spoken by 1.3 billion people.",rq:"You're linguistically literate!",wq:"That answer didn't translate well."},
+{d:2,cat:"Languages & Scripts",q:"In which country is Icelandic the official language?",o:["Iceland","Greenland","Faroe Islands","Norway"],a:0,f:"Icelandic has remained nearly unchanged for over 1,000 years due to Iceland's geographic isolation.",rq:"You spoke perfectly in this icy land!",wq:"That answer gave you cold feet."},
+{d:2,cat:"Time Zones & Coordinates",q:"How many time zones does Russia span?",o:["11","9","13","7"],a:0,f:"Russia spans 11 time zones from Moscow to Vladivostok, the most of any country.",rq:"You're on time with this answer!",wq:"That answer was chronologically challenged."},
+{d:2,cat:"Transportation & Routes",q:"Which famous trade route connected East and West for centuries?",o:["Silk Road","Spice Route","Amber Road","Salt Road"],a:0,f:"The Silk Road was not a single road but a network of trade routes connecting China to the Mediterranean.",rq:"You traded perfectly on this answer!",wq:"That answer didn't have enough trading value."},
+{d:2,cat:"Animals & Ecosystems",q:"In which continent are you most likely to find a kangaroo in the wild?",o:["Australia","Africa","South America","Asia"],a:0,f:"Kangaroos are endemic to Australia and are found nowhere else in the wild.",rq:"You hopped to the right answer!",wq:"That answer was way off the continent."},
+{d:2,cat:"Space & Maps",q:"Which map projection preserves the shape of countries but distorts their size?",o:["Mercator","Robinson","Sinusoidal","Albers"],a:0,f:"The Mercator projection was invented by Gerardus Mercator in 1569 and is conformal (preserves angles).",rq:"You're a map projection master!",wq:"That answer got projected to failure."},
+{d:2,cat:"Sports Geography",q:"In which city did the 1996 Summer Olympics take place?",o:["Atlanta","Sydney","Barcelona","Athens"],a:0,f:"Atlanta hosted the Summer Olympics in 1996, which was the centennial of the modern Olympics.",rq:"You're an Olympic geography champion!",wq:"That answer didn't medal."},
+{d:3,cat:"Capitals",q:"What is the capital of Equatorial Guinea?",o:["Malabo","Bata","Ebebiyin","Aconibe"],a:0,f:"Malabo is located on Bioko Island and is the capital, though Bata was briefly considered as an alternative.",rq:"You conquered an obscure capital!",wq:"That answer was too equatorial for you."},
+{d:3,cat:"Capitals",q:"Which city serves as the administrative capital of South Africa?",o:["Pretoria","Cape Town","Bloemfontein","Johannesburg"],a:0,f:"South Africa has three capitals: Pretoria (executive), Cape Town (legislative), and Bloemfontein (judicial).",rq:"You navigated South Africa's three-capital system!",wq:"That answer lost its way."},
+{d:3,cat:"Capitals",q:"What is the capital of Djibouti?",o:["Djibouti City","Tadjoura","Obock","Arta"],a:0,f:"Djibouti City is located on the Red Sea and serves as the economic and political center.",rq:"You pinpointed a hard-to-find capital!",wq:"That answer went in the wrong direction."},
+{d:3,cat:"Countries",q:"Which country became independent on July 9, 2011?",o:["South Sudan","Montenegro","Kosovo","East Timor"],a:0,f:"South Sudan became the world's newest country after seceding from Sudan.",rq:"You're current with your geography!",wq:"That answer was from an older time period."},
+{d:3,cat:"Countries",q:"What is the smallest country in South America?",o:["Suriname","Guyana","Ecuador","Uruguay"],a:0,f:"Suriname is the smallest country in South America at 163,820 square kilometers.",rq:"You found the tiniest nation!",wq:"That answer was too big to be correct."},
+{d:3,cat:"Continents",q:"Which continent has the fewest countries?",o:["Australia","Antarctica","Oceania","Europe"],a:0,f:"Australia is technically both a continent and a country, making it the continent with the fewest nations.",rq:"You're an expert on continental divisions!",wq:"That answer was too spread out."},
+{d:3,cat:"Oceans & Seas",q:"Which sea is the most densely populated in terms of maritime traffic?",o:["Mediterranean","North Sea","Baltic Sea","Coral Sea"],a:0,f:"The Mediterranean has been a crucial shipping and trade route for over 3,000 years.",rq:"You're navigating trade routes expertly!",wq:"That answer was lost at sea."},
+{d:3,cat:"Oceans & Seas",q:"The Mariana Trench is located in which ocean?",o:["Pacific","Atlantic","Indian","Arctic"],a:0,f:"The Mariana Trench in the Pacific Ocean reaches 10,994 meters, the deepest point on Earth.",rq:"You reached the bottom of this question!",wq:"That answer was out of its depth."},
+{d:3,cat:"Rivers & Lakes",q:"Which river forms the border between England and Scotland?",o:["Tweed River","Solway Firth","Thames","Severn"],a:0,f:"The Tweed River forms part of the border between England and Scotland in the south.",rq:"You've bridged the border perfectly!",wq:"That answer crossed the wrong line."},
+{d:3,cat:"Rivers & Lakes",q:"What is the largest freshwater lake in Asia?",o:["Lake Baikal","Lake Balkhash","Lop Nur","Issyk-Kul"],a:0,f:"Lake Baikal in Siberia is the world's largest freshwater lake by volume and depth.",rq:"You're a freshwater expert!",wq:"That answer was too salty."},
+{d:3,cat:"Mountains & Deserts",q:"Which mountain range forms the border between France and Italy?",o:["Alps","Pyrenees","Apennines","Carpathians"],a:0,f:"The Alps form part of the border between France and Italy, with Mont Blanc as the highest point.",rq:"You scaled the right mountain range!",wq:"That answer wasn't elevated enough."},
+{d:3,cat:"Mountains & Deserts",q:"What is the second-highest mountain in the world?",o:["K2","Kangchenjunga","Lhotse","Makalu"],a:0,f:"K2 stands at 8,611 meters on the Pakistan-China border, second only to Mount Everest.",rq:"You're a peak performer!",wq:"That answer fell short of the summit."},
+{d:3,cat:"Physical Geography",q:"Which river is the second-longest in South America?",o:["Paraná","Amazon","Orinoco","La Plata"],a:0,f:"The Paraná River is 4,880 kilometers long and forms a major part of Argentina's border.",rq:"You navigated South American rivers perfectly!",wq:"That answer went the wrong way downstream."},
+{d:3,cat:"Physical Geography",q:"What is the most biodiverse country in the world?",o:["Brazil","Indonesia","Colombia","Nigeria"],a:0,f:"Brazil contains 10% of all species on Earth, primarily in the Amazon rainforest.",rq:"You're a biodiversity expert!",wq:"That answer lacked diversity."},
+{d:3,cat:"Borders & Neighbors",q:"Which country shares the longest border with the United States?",o:["Canada","Mexico","None of them are longer","It's a tie"],a:0,f:"Canada shares 8,891 kilometers of border with the US, longer than the 3,145 km US-Mexico border.",rq:"You know your neighbors well!",wq:"That answer was on the wrong side of the border."},
+{d:3,cat:"Borders & Neighbors",q:"How many countries does Switzerland border?",o:["Five","Four","Six","Three"],a:0,f:"Switzerland borders Germany, France, Italy, Liechtenstein, and Austria.",rq:"You're a Swiss border expert!",wq:"That answer didn't make the cut."},
+{d:3,cat:"Landmarks",q:"The Acropolis is located in which city?",o:["Athens","Rome","Istanbul","Cairo"],a:0,f:"The Acropolis in Athens houses the Parthenon and other classical temples dating back 2,500 years.",rq:"You reached the heights of this trivia!",wq:"That answer didn't stand as tall."},
+{d:3,cat:"Landmarks",q:"In which country is the Sagrada Familia basilica located?",o:["Spain","France","Italy","Portugal"],a:0,f:"The Sagrada Familia in Barcelona was designed by Antoni Gaudi and remains under construction.",rq:"You're an architectural expert!",wq:"That answer was structurally unsound."},
+{d:3,cat:"Historical Geography",q:"In which region was the Kingdom of Kush located?",o:["Sudan","Ethiopia","Egypt","Chad"],a:0,f:"The Kingdom of Kush was an ancient civilization in present-day Sudan, south of Egypt.",rq:"You're an ancient history scholar!",wq:"That answer was too ancient to comprehend."},
+{d:3,cat:"Historical Geography",q:"Which ancient city was the capital of the Mongol Empire?",o:["Karakorum","Samarkand","Baghdad","Xanadu"],a:0,f:"Karakorum served as the capital of the Mongol Empire under Genghis Khan.",rq:"You conquered this historical question!",wq:"That answer was defeated in battle."},
+{d:3,cat:"Cultural Geography",q:"In which country is the majority religion Islam with Sharia law?",o:["Saudi Arabia","Pakistan","Indonesia","Egypt"],a:0,f:"Saudi Arabia is an Islamic absolute monarchy where Sharia law is the legal framework.",rq:"You're culturally and geographically savvy!",wq:"That answer didn't follow the right law."},
+{d:3,cat:"Cultural Geography",q:"Which country has the most UNESCO World Heritage Sites?",o:["Italy","China","Germany","France"],a:0,f:"Italy has 58 UNESCO World Heritage Sites, more than any other country.",rq:"You're a cultural heritage expert!",wq:"That answer lacked heritage value."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most natural rubber?",o:["Thailand","Indonesia","Malaysia","Vietnam"],a:0,f:"Thailand produces about 30% of the world's natural rubber, followed closely by Indonesia.",rq:"That was a bouncy answer!",wq:"Your answer didn't have enough elasticity."},
+{d:3,cat:"Economy & Resources",q:"Which African country has the largest economy?",o:["Nigeria","South Africa","Egypt","Ethiopia"],a:0,f:"Nigeria's economy is the largest in Africa with a GDP of approximately $470 billion.",rq:"You're economically informed!",wq:"That answer didn't add up."},
+{d:3,cat:"Population",q:"Which Asian country has a population under 5 million?",o:["Singapore","Mongolia","Cyprus","Laos"],a:0,f:"Singapore has approximately 5.7 million people, making it one of the smallest by population but highly developed.",rq:"You counted accurately!",wq:"That answer was way off the population chart."},
+{d:3,cat:"Islands",q:"Which is the largest island in Southeast Asia?",o:["Sumatra","Borneo","Java","Luzon"],a:1,f:"Borneo is 748,168 square kilometers and is shared by Indonesia, Malaysia, and Brunei.",rq:"You found the largest island in Southeast Asia!",wq:"That answer was lost in the archipelago."},
+{d:3,cat:"Straits & Waterways",q:"Which strait separates Spain and Morocco?",o:["Strait of Gibraltar","Strait of Malacca","Bering Strait","Strait of Hormuz"],a:0,f:"The Strait of Gibraltar is only 14 kilometers wide and connects the Mediterranean to the Atlantic.",rq:"You navigated that strait perfectly!",wq:"That answer went the wrong way."},
+{d:3,cat:"US Geography",q:"Which US state has the longest coastline?",o:["Alaska","Florida","California","Texas"],a:0,f:"Alaska has 6,640 miles of coastline, longer than all other US states combined.",rq:"You charted a course to success!",wq:"That answer didn't coast to victory."},
+{d:3,cat:"US Geography",q:"In which state is the Grand Canyon located?",o:["Arizona","Utah","Colorado","Nevada"],a:0,f:"The Grand Canyon spans Arizona and was carved by the Colorado River over millions of years.",rq:"You've got a grand view of this answer!",wq:"That answer was a canyon-sized mistake."},
+{d:3,cat:"Languages & Scripts",q:"Which language has the most native speakers in Africa?",o:["Swahili","Arabic","Amharic","Yoruba"],a:1,f:"Arabic is spoken by over 150 million people across North Africa and the Middle East.",rq:"You're a linguistic master!",wq:"That answer didn't translate to success."},
+{d:3,cat:"Languages & Scripts",q:"In how many countries is Spanish an official language?",o:["21","18","25","20"],a:0,f:"Spanish is the official language in 21 countries across Europe, the Americas, and Africa.",rq:"You spoke fluently on this one!",wq:"That answer lacked fluency."},
+{d:3,cat:"Time Zones & Coordinates",q:"What is the highest latitude at which you can find permanent human settlement?",o:["82°N","75°N","68°N","80°N"],a:0,f:"Longyearbyen, Svalbard, is at 78°N, and Alert, Canada is at 82°N, making it the highest.",rq:"You're positioned perfectly for this answer!",wq:"That answer was off the map."},
+{d:3,cat:"Animals & Ecosystems",q:"In which country are most of the world's lemurs found?",o:["Madagascar","Mozambique","Tanzania","Zambia"],a:0,f:"Madagascar is home to 99% of the world's lemur species due to its geographic isolation.",rq:"You've got a leaping grasp of geography!",wq:"That answer hopped in the wrong direction."},
+{d:3,cat:"Space & Maps",q:"Which map projection is most commonly used for nautical charts?",o:["Mercator","Gnomonic","Stereographic","Equirectangular"],a:0,f:"The Mercator projection is ideal for navigation because it preserves angles and directions.",rq:"You charted a perfect course!",wq:"That answer didn't navigate correctly."},
+{d:3,cat:"Sports Geography",q:"Which city hosted the 2012 Summer Olympics?",o:["London","Rio de Janeiro","Tokyo","Beijing"],a:0,f:"London hosted the 2012 Olympics, the third time the city has hosted the Games.",rq:"You've got Olympic precision!",wq:"That answer didn't make the podium."},
+{d:4,cat:"Capitals",q:"What is the capital of Mauritius?",o:["Port Louis","Beau Bassin","Phoenix","Vacoas"],a:0,f:"Port Louis is the capital and largest city of Mauritius, located on the northwest coast.",rq:"You're a trivia master of island nations!",wq:"That answer got lost on the islands."},
+{d:4,cat:"Capitals",q:"Which city is the capital of Benin?",o:["Porto-Novo","Cotonou","Abomey","Parakou"],a:0,f:"Porto-Novo is the capital, though Cotonou is the largest city and seat of government.",rq:"You conquered a tricky West African capital!",wq:"That answer was off the mark."},
+{d:4,cat:"Capitals",q:"What is the capital of Guinea-Bissau?",o:["Bissau","Cacheu","Gabú","Farim"],a:0,f:"Bissau is the capital and largest city, located on the Guinea-Bissau Archipelago.",rq:"You found a hidden gem of a capital!",wq:"That answer wasn't on the map."},
+{d:4,cat:"Countries",q:"Which country is the oldest nation-state in continuous existence?",o:["San Marino","Japan","Iceland","Switzerland"],a:0,f:"San Marino, founded in 301 AD, is the world's oldest nation-state and still a sovereign republic.",rq:"You're a history buff and geographer!",wq:"That answer didn't have enough history."},
+{d:4,cat:"Countries",q:"What is the only country that occupies two continents equally?",o:["Egypt","Bahrain","Mauritania","Israel"],a:0,f:"Egypt spans Africa and Asia across the Sinai Peninsula, though Africa is dominant.",rq:"You bridged continents with this answer!",wq:"That answer was geographically fractured."},
+{d:4,cat:"Continents",q:"Which continent has the highest average elevation?",o:["Antarctica","Asia","South America","Africa"],a:0,f:"Antarctica has an average elevation of 1,960 meters, though most people live at sea level.",rq:"You're a lofty geographer!",wq:"That answer wasn't elevated enough."},
+{d:4,cat:"Oceans & Seas",q:"The Caribbean Sea is located primarily in which basin?",o:["Atlantic Ocean","Pacific Ocean","Indian Ocean","Southern Ocean"],a:0,f:"The Caribbean Sea is part of the Atlantic Ocean and is surrounded by the West Indies.",rq:"You charted the tropical waters perfectly!",wq:"That answer took a wrong current."},
+{d:4,cat:"Oceans & Seas",q:"Which is the largest sea entirely within one country?",o:["Caspian Sea","Aral Sea","Dead Sea","Great Salt Lake"],a:0,f:"The Caspian Sea is the world's largest inland body of water and borders five countries, not one.",rq:"You navigated that trick question!",wq:"That answer was too contained."},
+{d:4,cat:"Rivers & Lakes",q:"Which river is the longest in China?",o:["Yangtze","Yellow River","Mekong","Pearl"],a:0,f:"The Yangtze River is 6,300 kilometers long and is the third-longest river in the world.",rq:"You're a master of Asian geography!",wq:"That answer flowed the wrong way."},
+{d:4,cat:"Rivers & Lakes",q:"What is the only river in the world that flows into the Arctic Ocean?",o:["Mackenzie River","None, many rivers flow there","Yenisei","Lena"],a:1,f:"Many rivers flow into the Arctic Ocean, including the Mackenzie, Yenisei, Lena, and Ob rivers.",rq:"You caught my trick question!",wq:"That answer was coldly incorrect."},
+{d:4,cat:"Mountains & Deserts",q:"Which mountain range contains Mount Kilimanjaro?",o:["Eastern Arc","Rwenzori","Virunga","Atlas"],a:0,f:"Mount Kilimanjaro is a standalone volcano in the Eastern Arc Mountains region of Tanzania.",rq:"You scaled this trivia peak!",wq:"That answer wasn't elevated enough."},
+{d:4,cat:"Mountains & Deserts",q:"What is the third-largest desert in the world?",o:["Gobi","Kalahari","Sonoran","Great Basin"],a:0,f:"The Gobi Desert covers 1.3 million square kilometers across Mongolia and northern China.",rq:"You're an expert on arid landscapes!",wq:"That answer was too dry."},
+{d:4,cat:"Borders & Neighbors",q:"Which country has the most neighbors of any landlocked nation?",o:["Bolivia","Chad","Mongolia","Afghanistan"],a:1,f:"Chad borders nine countries: Libya, Sudan, South Sudan, Central African Republic, Cameroon, Nigeria, Niger, and two others.",rq:"You navigated a complex neighborhood!",wq:"That answer was isolated."},
+{d:4,cat:"Borders & Neighbors",q:"How many countries border the Great Lakes?",o:["Two","Three","One","Four"],a:0,f:"The United States and Canada border the Great Lakes, though the USA borders them on four sides.",rq:"You're a Great Lakes geography expert!",wq:"That answer was too isolated."},
+{d:4,cat:"Landmarks",q:"In which country is the Petra archaeological site located?",o:["Jordan","Saudi Arabia","Israel","Syria"],a:0,f:"Petra is an ancient city carved into rose-colored sandstone in southern Jordan.",rq:"You're an ancient architecture aficionado!",wq:"That answer was carved in stone... wrongly."},
+{d:4,cat:"Landmarks",q:"The Angkor Wat temple complex is located in which country?",o:["Cambodia","Thailand","Vietnam","Laos"],a:0,f:"Angkor Wat is the largest religious monument in the world, built in the 12th century.",rq:"You're a temple tourism expert!",wq:"That answer got lost in the complex."},
+{d:4,cat:"Historical Geography",q:"In which present-day country was the Roman province of Britannia located?",o:["United Kingdom","France","Belgium","Germany"],a:0,f:"Britannia was the Roman province that covered most of present-day Great Britain.",rq:"You're a classical historian!",wq:"That answer was conquered by wrongness."},
+{d:4,cat:"Historical Geography",q:"The Mongol Empire's capital Karakorum is located in present-day which country?",o:["Mongolia","China","Russia","Kazakhstan"],a:0,f:"Karakorum was located in central Mongolia near present-day Harhorin.",rq:"You conquered this historical geography!",wq:"That answer was overrun by invaders."},
+{d:4,cat:"Cultural Geography",q:"In which country is Judaism the majority religion?",o:["Israel","United States","France","Argentina"],a:0,f:"Israel is the only country where Judaism is the majority religion, representing about 74% of the population.",rq:"You're culturally and geographically astute!",wq:"That answer was off the faith."},
+{d:4,cat:"Cultural Geography",q:"Which country has the most indigenous languages still spoken?",o:["Papua New Guinea","Indonesia","Nigeria","India"],a:0,f:"Papua New Guinea has over 800 indigenous languages, nearly 10% of the world's total.",rq:"You're a linguistic diversity expert!",wq:"That answer didn't have the right dialect."},
+{d:4,cat:"Economy & Resources",q:"Which country produces the most cocoa in the world?",o:["Ivory Coast","Ghana","Indonesia","Nigeria"],a:0,f:"Ivory Coast produces about 2 million metric tons of cocoa annually, 30-40% of global supply.",rq:"You're sweet on this answer!",wq:"That answer didn't measure up in the cocoa trade."},
+{d:4,cat:"Economy & Resources",q:"Which country is the world's largest exporter of cut diamonds?",o:["Belgium","India","South Africa","Russia"],a:0,f:"Belgium processes and exports more diamonds than any other country, though mines are elsewhere.",rq:"You're a sparkling expert!",wq:"That answer was a rough diamond."},
+{d:4,cat:"Population",q:"Which is the most densely populated country (excluding city-states)?",o:["Bangladesh","Singapore","Puerto Rico","Malta"],a:0,f:"Bangladesh has 1,204 people per square kilometer, the highest for a nation of significant size.",rq:"You're a population density scholar!",wq:"That answer was too sparse."},
+{d:4,cat:"Population",q:"Which country has the youngest median age?",o:["Niger","Somalia","Uganda","Chad"],a:0,f:"Niger has a median age of 14.9 years, the youngest in the world.",rq:"You're demographically savvy!",wq:"That answer aged poorly."},
+{d:4,cat:"Islands",q:"Which country consists entirely of islands above the Arctic Circle?",o:["Svalbard","Greenland","Canada","Faroe Islands"],a:0,f:"Svalbard is an Arctic archipelago that is part of Norway and entirely above 74°N latitude.",rq:"You're an Arctic geography master!",wq:"That answer was too warm."},
+{d:4,cat:"Straits & Waterways",q:"The Bering Strait separates which two countries?",o:["Russia and United States","Canada and Russia","Greenland and Canada","Iceland and Greenland"],a:0,f:"The Bering Strait is only 55 miles wide at its narrowest point, separating Asia from North America.",rq:"You bridged the Arctic perfectly!",wq:"That answer drifted off into the ice."},
+{d:4,cat:"US Geography",q:"Which US state capital is furthest north?",o:["Juneau, Alaska","Montpelier, Vermont","Concord, New Hampshire","Montrose, Colorado"],a:0,f:"Juneau, Alaska is at 58°N latitude, the furthest north of any US state capital.",rq:"You're a northbound geography expert!",wq:"That answer went the wrong direction."},
+{d:4,cat:"US Geography",q:"What is the only US state that borders only one other state?",o:["Maine","Florida","Hawaii","Delaware"],a:0,f:"Maine borders only New Hampshire, making it unique among the continental United States.",rq:"You're a state border genius!",wq:"That answer had too many boundaries."},
+{d:4,cat:"Languages & Scripts",q:"How many official languages does Belgium have?",o:["Three","Two","Four","One"],a:0,f:"Belgium has three official languages: Dutch (Flemish), French, and German.",rq:"You're multilingual in geography!",wq:"That answer didn't translate well."},
+{d:4,cat:"Languages & Scripts",q:"In which country is Tok Pisin a widely spoken language?",o:["Papua New Guinea","Solomon Islands","Vanuatu","Fiji"],a:0,f:"Tok Pisin is a creole language spoken by about 3-4 million people in Papua New Guinea.",rq:"You're a linguistic expert!",wq:"That answer didn't speak the right language."},
+{d:4,cat:"Time Zones & Coordinates",q:"Which country has the most time zones?",o:["France","Russia","United States","China"],a:0,f:"France has 12 time zones due to its many overseas territories spread across the globe.",rq:"You're perfectly timed on this answer!",wq:"That answer was chronologically incorrect."},
+{d:4,cat:"Transportation & Routes",q:"The Orient Express train route historically connected which cities?",o:["Paris and Istanbul","London and Moscow","Berlin and Athens","Vienna and Rome"],a:0,f:"The Orient Express connected Paris to Istanbul (formerly Constantinople), beginning service in 1883.",rq:"You're a luxury travel route expert!",wq:"That answer derailed badly."},
+{d:4,cat:"Animals & Ecosystems",q:"Which country is home to the majority of the world's giant pandas?",o:["China","Tibet","Nepal","Bhutan"],a:0,f:"Giant pandas live almost exclusively in the bamboo forests of central China.",rq:"You're a conservation champion!",wq:"That answer was too endangered."},
+{d:4,cat:"Space & Maps",q:"What is the most accurate map projection for representing the Arctic?",o:["Polar Stereographic","Mercator","Robinson","Albers Equal Area"],a:0,f:"The Polar Stereographic projection preserves angles and is ideal for polar regions.",rq:"You're a polar projection expert!",wq:"That answer was too far from the pole."},
+{d:4,cat:"Sports Geography",q:"In which city was the first FIFA World Cup held?",o:["Montevideo","Paris","Milan","Rome"],a:0,f:"Uruguay hosted the first FIFA World Cup in 1930 in Montevideo.",rq:"You're a soccer geography legend!",wq:"That answer scored an own goal."},
+{d:5,cat:"Capitals",q:"What is the capital of Kiribati?",o:["Tarawa","Betio","Makin","Butaritari"],a:0,f:"Tarawa is the capital of Kiribati, a small island nation in the Pacific Ocean.",rq:"You've achieved legendary status in island nation capitals!",wq:"That answer sank beneath the waves."},
+{d:5,cat:"Capitals",q:"Which city is the capital of the Maldives?",o:["Male","Addu City","Fulidhoo","Thinadhoo"],a:0,f:"Male is the capital and largest city of the Maldives, located on Male Atoll.",rq:"You're a legendary island capital expert!",wq:"That answer got lost at sea."},
+{d:5,cat:"Capitals",q:"What is the capital of Nauru?",o:["Yaren","Meneng","Anabar","Buada"],a:0,f:"Nauru does not have an official capital, though Yaren is the seat of government and largest settlement.",rq:"You conquered a legendary obscure capital!",wq:"That answer was too small to be correct."},
+{d:5,cat:"Countries",q:"Which country is the second-smallest by area after Vatican City?",o:["Monaco","San Marino","Liechtenstein","Malta"],a:0,f:"Monaco covers 2.02 square kilometers, making it the second-smallest country in the world.",rq:"You're a legendary expert on tiny nations!",wq:"That answer was too big for this category."},
+{d:5,cat:"Countries",q:"How many countries have landlocked coastlines on the Caspian Sea?",o:["Five","Three","Four","Two"],a:0,f:"Kazakhstan, Uzbekistan, Turkmenistan, Russia, and Azerbaijan all border the Caspian Sea.",rq:"You've mastered legendary geographic paradoxes!",wq:"That answer was landlocked in failure."},
+{d:5,cat:"Continents",q:"What is the deepest ocean trench and in which ocean is it located?",o:["Mariana Trench in the Pacific","Tonga Trench in the Pacific","Kuril-Kamchatka Trench in the Pacific","Philippine Trench in the Pacific"],a:0,f:"The Mariana Trench reaches 10,994 meters deep, located in the western Pacific Ocean.",rq:"You've descended to legendary depths!",wq:"That answer was out of its depth."},
+{d:5,cat:"Oceans & Seas",q:"The Sargasso Sea is unique for being surrounded by what instead of land?",o:["Ocean currents","Islands","Undersea mountains","Warm water"],a:0,f:"The Sargasso Sea is the only sea surrounded by currents rather than by land boundaries.",rq:"You've mastered legendary oceanography!",wq:"That answer adrift in confusion."},
+{d:5,cat:"Rivers & Lakes",q:"Which river is the longest that flows entirely within Russia?",o:["Ob River","Yenisei River","Lena River","Volga River"],a:3,f:"The Volga River is 3,530 kilometers long and flows entirely within Russia.",rq:"You've mastered legendary Russian geography!",wq:"That answer went the wrong direction down the Volga."},
+{d:5,cat:"Rivers & Lakes",q:"In which country is Lake Issyk-Kul, the second-largest alpine lake in the world?",o:["Kyrgyzstan","Kazakhstan","Tajikistan","Uzbekistan"],a:0,f:"Lake Issyk-Kul is 182 kilometers long and never freezes despite its high altitude of 1,607 meters.",rq:"You've achieved legendary status in alpine lakes!",wq:"That answer was too cold and landlocked."},
+{d:5,cat:"Mountains & Deserts",q:"Which mountain peak is the second-highest on each inhabited continent?",o:["Mount Logan in North America","Mount Kilimanjaro in Africa","Mount Aconcagua in South America","Mont Blanc in Europe"],a:2,f:"Mount Aconcagua at 6,961 meters is the second-highest peak on its continent after Mount Everest's range.",rq:"You're a legendary mountain expert!",wq:"That answer didn't reach the peak."},
+{d:5,cat:"Mountains & Deserts",q:"The Empty Quarter desert is primarily located in which country?",o:["Saudi Arabia","United Arab Emirates","Oman","Yemen"],a:0,f:"The Empty Quarter (Rub' al Khali) covers 660,000 square kilometers of Saudi Arabia and is one of the largest sand deserts.",rq:"You've conquered legendary desert knowledge!",wq:"That answer was too empty of substance."},
+{d:5,cat:"Physical Geography",q:"Which country has the most glaciers outside the polar regions?",o:["Nepal","Kyrgyzstan","Pakistan","Tajikistan"],a:1,f:"Kyrgyzstan has over 9,000 glaciers covering about 4% of its territory.",rq:"You're legendary at frozen geography!",wq:"That answer didn't have enough ice."},
+{d:5,cat:"Physical Geography",q:"What is the world's largest coral reef system?",o:["Great Barrier Reef","Mesoamerican Barrier Reef","Red Sea Coral Reef","New Caledonia Barrier Reef"],a:0,f:"The Great Barrier Reef off Australia spans 2,300 kilometers and is visible from space.",rq:"You've achieved legendary reef mastery!",wq:"That answer was too shallow."},
+{d:5,cat:"Borders & Neighbors",q:"Which two countries share the longest land border?",o:["Canada and United States","Russia and Kazakhstan","Argentina and Chile","Australia and Papua New Guinea"],a:0,f:"Canada and the United States share a 8,891-kilometer border, the longest between two countries.",rq:"You're a legendary border expert!",wq:"That answer crossed the wrong border."},
+{d:5,cat:"Borders & Neighbors",q:"How many countries share a border with France?",o:["Eight","Nine","Seven","Six"],a:0,f:"France borders Spain, Andorra, Italy, Switzerland, Germany, Luxembourg, Belgium, and Monaco.",rq:"You've mastered legendary French geography!",wq:"That answer was too isolated from France."},
+{d:5,cat:"Landmarks",q:"The Colosseum is the largest structure of its kind located in which ancient city?",o:["Rome","Athens","Alexandria","Carthage"],a:0,f:"The Colosseum in Rome could hold 50,000 spectators and was completed in 80 AD.",rq:"You're a legendary architectural historian!",wq:"That answer didn't stand as tall as the Colosseum."},
+{d:5,cat:"Landmarks",q:"In which country is the Burj Khalifa, the world's tallest building, located?",o:["United Arab Emirates","Saudi Arabia","Qatar","Bahrain"],a:0,f:"The Burj Khalifa in Dubai stands 828 meters tall and was completed in 2010.",rq:"You've reached legendary heights in architecture!",wq:"That answer wasn't elevated enough."},
+{d:5,cat:"Historical Geography",q:"The Silk Road network historically connected which two major regions?",o:["China and Mediterranean","India and Europe","Persia and China","Central Asia and Africa"],a:0,f:"The Silk Road connected China to the Mediterranean world and Europe for over 1,500 years.",rq:"You're a legendary trade route historian!",wq:"That answer was too off the ancient path."},
+{d:5,cat:"Historical Geography",q:"In which present-day country was the ancient city of Timbuktu located?",o:["Mali","Niger","Mauritania","Guinea"],a:0,f:"Timbuktu was a major center of Islamic learning and trade in present-day Mali during the Middle Ages.",rq:"You've mastered legendary African history!",wq:"That answer was too far from the real Timbuktu."},
+{d:5,cat:"Cultural Geography",q:"In which country is Hinduism the majority religion?",o:["India","Nepal","Mauritius","Fiji"],a:0,f:"India is home to 80% of the world's 1.1 billion Hindus, making it the spiritual heartland.",rq:"You're a legendary religious geography expert!",wq:"That answer lacked the right spiritual foundation."},
+{d:5,cat:"Cultural Geography",q:"Which country has more than one thousand ethnic groups?",o:["Indonesia","Nigeria","Papua New Guinea","Democratic Republic of Congo"],a:2,f:"Papua New Guinea has over 800 ethnic groups speaking more than 800 languages.",rq:"You've mastered legendary ethnic diversity!",wq:"That answer wasn't diverse enough."},
+{d:5,cat:"Economy & Resources",q:"Which country produces the most diamonds by value?",o:["Russia","Botswana","South Africa","Canada"],a:1,f:"Botswana produces about 24 million carats of diamonds annually, the highest value globally.",rq:"You're a legendary gem expert!",wq:"That answer wasn't precious enough."},
+{d:5,cat:"Economy & Resources",q:"Which country is the world's largest producer of lithium?",o:["Australia","Chile","China","Argentina"],a:1,f:"Chile produces about 28% of the world's lithium, much from the Atacama Salt Flat.",rq:"You've reached legendary tech-metal status!",wq:"That answer didn't conduct well."},
+{d:5,cat:"Population",q:"Which African country is projected to become the third-largest by population by 2050?",o:["Nigeria","Ethiopia","Egypt","Tanzania"],a:3,f:"Tanzania is projected to become the third-most populous African nation by 2050.",rq:"You're a legendary demographic forecaster!",wq:"That answer didn't multiply correctly."},
+{d:5,cat:"Population",q:"What percentage of the world's population lives in Asia?",o:["About 60%","About 50%","About 40%","About 70%"],a:0,f:"Asia is home to approximately 4.6 billion people, or about 60% of the global population.",rq:"You've mastered legendary global demographics!",wq:"That answer wasn't large enough."},
+{d:5,cat:"Islands",q:"Which country has the most islands of any nation on Earth?",o:["Sweden","Finland","Norway","Canada"],a:0,f:"Sweden has 267,570 islands (counted as land above 0.05 square meters), the most of any country.",rq:"You're a legendary island nation expert!",wq:"That answer didn't make an island-sized impact."},
+{d:5,cat:"Straits & Waterways",q:"The Malacca Strait separates which two large islands?",o:["Sumatra and Peninsular Malaysia","Java and Sumatra","Borneo and Sumatra","Java and Malaysia"],a:0,f:"The Strait of Malacca is one of the world's most important shipping lanes, separating Sumatra from Malaysia.",rq:"You've achieved legendary maritime mastery!",wq:"That answer was too far off the strait."},
+{d:5,cat:"US Geography",q:"Which US state has the most coastline including islands?",o:["Alaska","Florida","California","Maine"],a:0,f:"Alaska has 6,640 miles of coastline, including the Aleutian Islands.",rq:"You're a legendary US geography expert!",wq:"That answer wasn't coastal enough."},
+{d:5,cat:"US Geography",q:"What is the highest point in each US state or territory?",o:["Mount Denali in Alaska","Multiple peaks in multiple states","Mount Elbert in Colorado","Mauna Kea in Hawaii"],a:0,f:"Mount Denali in Alaska at 6,190 meters is the highest point in the United States.",rq:"You've reached legendary US summit status!",wq:"That answer wasn't elevated enough."},
+{d:5,cat:"Languages & Scripts",q:"How many language families are represented in Papua New Guinea?",o:["More than 100","More than 70","More than 50","More than 150"],a:0,f:"Papua New Guinea has over 840 languages from more than 100 language families due to geographic isolation.",rq:"You're a legendary linguistic anthropologist!",wq:"That answer didn't speak the right language."},
+{d:5,cat:"Languages & Scripts",q:"What is the official language of all Arab League member states?",o:["Arabic","Modern Standard Arabic","Classical Arabic","Egyptian Arabic"],a:0,f:"Arabic is the official language of all 22 Arab League member states, with regional dialects.",rq:"You've mastered legendary Arabic linguistics!",wq:"That answer didn't translate correctly."},
+{d:5,cat:"Time Zones & Coordinates",q:"Which country experiences midnight sun and polar night?",o:["Norway","Canada","Russia","Greenland"],a:0,f:"Norway experiences midnight sun in summer and polar night in winter in its Arctic regions.",rq:"You've conquered legendary Arctic phenomena!",wq:"That answer was too dark."},
+{d:5,cat:"Transportation & Routes",q:"The Trans-Siberian Railway connects which two cities?",o:["Moscow and Vladivostok","St. Petersburg and Vladivostok","Moscow and Irkutsk","Yekaterinburg and Vladivostok"],a:0,f:"The Trans-Siberian Railway spans 9,289 kilometers from Moscow to Vladivostok, the longest in the world.",rq:"You're a legendary railway geographer!",wq:"That answer derailed spectacularly."},
+{d:5,cat:"Animals & Ecosystems",q:"Which country contains the most megafauna megadiversity?",o:["Tanzania","Kenya","Botswana","South Africa"],a:0,f:"Tanzania has the highest concentration of large predators and megafauna in Africa.",rq:"You've achieved legendary conservation knowledge!",wq:"That answer was too small in scope."},
+{d:5,cat:"Space & Maps",q:"What is the Van Allen Belt?",o:["Zones of radiation around Earth","A mountain range in Antarctica","A shipping route in the Pacific","A climate zone near the Equator"],a:0,f:"The Van Allen Belt is a region of energetic charged particles trapped by Earth's magnetic field.",rq:"You're a legendary space geography expert!",wq:"That answer was too grounded."},
+{d:5,cat:"Sports Geography",q:"In which city was the 2020 Olympics (held in 2021) held?",o:["Tokyo","Beijing","Rio de Janeiro","London"],a:0,f:"Tokyo hosted the Olympics for the second time, the first being in 1964.",rq:"You've achieved legendary Olympic geographic mastery!",wq:"That answer missed the Games entirely."},
+{d:2,cat:"Rivers & Lakes",q:"Which river is the longest in Russia?",o:["Volga","Ob","Yenisei","Lena"],a:0,f:"The Volga River is 3,530 kilometers long and is Europe's longest river.",rq:"You flowed straight to victory!",wq:"That answer went the wrong direction."},
+{d:2,cat:"Islands",q:"Which island is the largest in the Caribbean?",o:["Cuba","Jamaica","Haiti","Puerto Rico"],a:0,f:"Cuba is 110,860 square kilometers and is the largest Caribbean island.",rq:"You're an island expert!",wq:"That answer didn't measure up."},
+{d:2,cat:"Oceans & Seas",q:"Which sea has the highest salt content by percentage?",o:["Dead Sea","Red Sea","Mediterranean","Black Sea"],a:0,f:"The Dead Sea is 34.2% salt, making it the saltiest body of water on Earth.",rq:"You're a salty scholar!",wq:"That answer was too fresh."},
+{d:2,cat:"Climate & Weather",q:"Which continent is the driest?",o:["Antarctica","Sahara region","Arctic","Atacama region"],a:0,f:"Antarctica receives less than 2 inches of precipitation annually, making it a polar desert.",rq:"You're a climate expert!",wq:"That answer was too wet."},
+{d:2,cat:"Landmarks",q:"The Leaning Tower of Pisa is located in which country?",o:["Italy","Spain","France","Greece"],a:0,f:"The Leaning Tower of Pisa is in Pisa, Italy and has been slowly straightening.",rq:"You've got a good sense of tilt!",wq:"That answer wasn't level-headed."},
+{d:3,cat:"Climate & Weather",q:"Which region experiences the monsoon season most intensely?",o:["South Asia","Southeast Asia","East Africa","West Africa"],a:0,f:"South Asia, particularly India and Southeast Asia, experiences dramatic monsoon rains.",rq:"You're a weather wizard!",wq:"That answer was too dry."},
+{d:3,cat:"Landmarks",q:"The Christ the Redeemer statue overlooks which city?",o:["Rio de Janeiro","São Paulo","Salvador","Brasilia"],a:0,f:"Christ the Redeemer stands 38 meters tall overlooking Rio de Janeiro since 1931.",rq:"You're watching over the right city!",wq:"That answer needed divine intervention."},
+{d:1,cat:"Rivers & Lakes",q:"Which is the largest lake in North America?",o:["Lake Superior","Lake Michigan","Lake Huron","Lake Erie"],a:0,f:"Lake Superior is the largest Great Lake and covers 82,414 square kilometers.",rq:"You're a Great Lake expert!",wq:"That answer was too shallow."},
+{d:3,cat:"Historical Geography",q:"The ancient city of Carthage was located in present-day which country?",o:["Tunisia","Libya","Morocco","Algeria"],a:0,f:"Carthage was a powerful ancient city in present-day Tunisia that rivaled Rome.",rq:"You're an ancient history master!",wq:"That answer was conquered by Rome... wrongly."},
+{d:1,cat:"Landmarks",q:"The Eiffel Tower is located in which city?",o:["Paris","Lyon","Marseille","Toulouse"],a:0,f:"The Eiffel Tower was built for the 1889 World's Fair and has become Paris' most iconic symbol.",rq:"You're soaring with geography!",wq:"That answer fell flat."},
+{d:2,cat:"Continents",q:"Which continent has the lowest population density?",o:["Antarctica","Australia","Greenland","Namibia"],a:0,f:"Antarctica has virtually no permanent population except for research stations.",rq:"You're a population density expert!",wq:"That answer was too crowded."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most wheat?",o:["China","India","Russia","Ukraine"],a:0,f:"China produces about 130 million metric tons of wheat annually, the world's largest producer.",rq:"You're a harvest expert!",wq:"That answer didn't reap what it sowed."},
+{d:4,cat:"Landmarks",q:"In which country is the Temple of Angkor Wat located?",o:["Cambodia","Thailand","Vietnam","Laos"],a:0,f:"Angkor Wat is the largest religious monument in the world, built in the 12th century.",rq:"You're a legendary temple expert!",wq:"That answer was too spiritual to find."},
+{d:2,cat:"US Geography",q:"In which state is Mount Rushmore located?",o:["South Dakota","Wyoming","Colorado","Montana"],a:0,f:"Mount Rushmore is carved into the Black Hills of South Dakota.",rq:"You've got presidential geography down!",wq:"That answer didn't carve its way to victory."},
+{d:3,cat:"Borders & Neighbors",q:"Which country borders both the North Sea and the Baltic Sea?",o:["Germany","Denmark","Sweden","Poland"],a:0,f:"Germany borders both the North Sea and the Baltic Sea.",rq:"You're a water-way navigator!",wq:"That answer was too landlocked."},
+{d:2,cat:"Cultural Geography",q:"Which country has the most Catholics?",o:["Brazil","Mexico","Poland","Philippines"],a:0,f:"Brazil has over 120 million Catholics, the largest Catholic population in the world.",rq:"You're culturally aware!",wq:"That answer wasn't holy enough."},
+{d:3,cat:"Languages & Scripts",q:"What is the most widely spoken language by total speakers?",o:["English","Mandarin Chinese","Spanish","Hindi"],a:1,f:"Mandarin Chinese has over 1.1 billion total speakers when including both native and non-native speakers.",rq:"You speak geometry fluently!",wq:"That answer didn't make the linguistics cut."},
+{d:1,cat:"Landmarks",q:"In which city is the Statue of Liberty located?",o:["New York","Boston","Philadelphia","Washington, DC"],a:0,f:"The Statue of Liberty stands in New York Harbor on Liberty Island.",rq:"You're enlightened!",wq:"That answer was too dark."},
+{d:2,cat:"Mountains & Deserts",q:"Mount Blanc is the highest mountain in which range?",o:["Alps","Pyrenees","Apennines","Carpathians"],a:0,f:"Mont Blanc stands 4,808 meters tall on the border between France and Italy.",rq:"You've scaled Alpine knowledge!",wq:"That answer didn't reach the summit."},
+{d:1,cat:"Countries",q:"How many countries are in the European Union?",o:["27","25","28","30"],a:0,f:"The European Union has 27 member states after the United Kingdom left on January 31, 2020.",rq:"You're united in geography!",wq:"That answer was disunited."},
+{d:3,cat:"Physical Geography",q:"Which mountain range forms a natural border between India and China?",o:["Himalayas","Hindu Kush","Karakoram","Western Ghats"],a:0,f:"The Himalayas form the border between India and China (Tibet).",rq:"You've reached the heights of geography!",wq:"That answer was too low."},
+{d:2,cat:"Oceans & Seas",q:"Which ocean is the coldest by average temperature?",o:["Arctic","Antarctic","Atlantic","North Pacific"],a:0,f:"The Arctic Ocean has average temperatures around -1.4°C.",rq:"You're an Arctic expert!",wq:"That answer was too warm."},
+{d:4,cat:"Animals & Ecosystems",q:"Which country has the most species of primates?",o:["Brazil","Democratic Republic of Congo","Indonesia","Madagascar"],a:1,f:"The Democratic Republic of Congo is home to over 200 species of primates.",rq:"You're a primate authority!",wq:"That answer was too primitive."},
+{d:1,cat:"Continents",q:"Which continent is the smallest?",o:["Australia","Europe","South America","Africa"],a:0,f:"Australia is the smallest continent at 7.7 million square kilometers.",rq:"You're thinking down under!",wq:"That answer was too big."},
+{d:2,cat:"Historical Geography",q:"Which ancient empire built Machu Picchu?",o:["Incan","Aztec","Maya","Inca"],a:0,f:"The Incans built Machu Picchu in the 15th century high in the Andes Mountains.",rq:"You're an ancient American historian!",wq:"That answer didn't reach the heights."},
+{d:3,cat:"Cultural Geography",q:"Which country has the most UNESCO World Heritage Sites after Italy?",o:["China","France","Germany","Spain"],a:0,f:"China has 57 UNESCO World Heritage Sites, second only to Italy's 58.",rq:"You're a heritage expert!",wq:"That answer lost cultural value."},
+{d:2,cat:"Islands",q:"Which island nation is closest to the mainland of Africa?",o:["Mauritius","Seychelles","Madagascar","Comoros"],a:2,f:"Madagascar is the largest island off Africa and closest in terms of size and proximity.",rq:"You're navigating African islands well!",wq:"That answer drifted off course."},
+{d:3,cat:"Straits & Waterways",q:"The Suez Canal connects which two bodies of water?",o:["Mediterranean and Red Sea","North Sea and Baltic","Atlantic and Pacific","Indian Ocean and Arabian Sea"],a:0,f:"The Suez Canal, opened in 1869, connects the Mediterranean Sea to the Red Sea.",rq:"You navigated that waterway perfectly!",wq:"That answer was too off course."},
+{d:2,cat:"Mountains & Deserts",q:"Which desert is the largest in the Southern Hemisphere?",o:["Kalahari","Simpson","Great Sandy","Australian"],a:0,f:"The Kalahari Desert covers 900,000 square kilometers in southern Africa.",rq:"You're a sandy scholar!",wq:"That answer was too arid in precision."},
+{d:1,cat:"Rivers & Lakes",q:"In which continent is the Amazon River located?",o:["South America","Africa","Asia","Australia"],a:0,f:"The Amazon River is in South America and is the world's largest by water discharge.",rq:"You're flowing with knowledge!",wq:"That answer didn't have enough volume."},
+{d:3,cat:"Population",q:"Which Asian city has the largest metropolitan population?",o:["Tokyo","Delhi","Shanghai","Mumbai"],a:0,f:"Tokyo has a metropolitan population of over 37 million people.",rq:"You're a megacity expert!",wq:"That answer wasn't populous enough."},
+{d:2,cat:"Landmarks",q:"Which country is home to the Taj Mahal?",o:["India","Pakistan","Bangladesh","Nepal"],a:0,f:"The Taj Mahal is located in Agra, India and is a UNESCO World Heritage Site.",rq:"You're a monument expert!",wq:"That answer wasn't marble-ous."},
+{d:4,cat:"Languages & Scripts",q:"Which country has 11 official languages?",o:["South Africa","India","Nigeria","Canada"],a:0,f:"South Africa has 11 official languages, more than any other country.",rq:"You're a legendary linguistic expert!",wq:"That answer didn't speak the right language."},
+{d:2,cat:"Economy & Resources",q:"Which country is the world's largest producer of natural gas?",o:["Russia","Qatar","Australia","United States"],a:0,f:"Russia is the world's largest producer of natural gas.",rq:"You're fueling your geography knowledge!",wq:"That answer ran out of energy."},
+{d:3,cat:"Islands",q:"In which ocean is Madagascar located?",o:["Indian Ocean","Pacific Ocean","Atlantic Ocean","Southern Ocean"],a:0,f:"Madagascar is the world's fourth-largest island in the Indian Ocean off the coast of Africa.",rq:"You're an ocean navigator!",wq:"That answer drifted to the wrong ocean."},
+{d:1,cat:"Landmarks",q:"Big Ben is located in which city?",o:["London","Edinburgh","Cardiff","Belfast"],a:0,f:"Big Ben (Elizabeth Tower) is located at the Palace of Westminster in London.",rq:"You're chiming in correctly!",wq:"That answer wasn't on time."},
+{d:2,cat:"US Geography",q:"Which mountain range runs down the western coast of North America?",o:["Rocky Mountains","Cascade Range","Sierra Nevada","Appalachian Mountains"],a:0,f:"The Rocky Mountains extend from Canada to New Mexico.",rq:"You've navigated American mountains!",wq:"That answer didn't reach the peak."},
+{d:4,cat:"Borders & Neighbors",q:"Which two countries share the second-longest land border?",o:["Argentina and Chile","Russia and Mongolia","Kazakhstan and Uzbekistan","Australia and Papua New Guinea"],a:1,f:"Russia and Mongolia share a 3,485-kilometer border, the second-longest land border.",rq:"You're a legendary border expert!",wq:"That answer was too isolated."},
+{d:3,cat:"Transportation & Routes",q:"The Trans-Canadian Highway is the longest highway in which country?",o:["Canada","United States","Australia","Russia"],a:0,f:"The Trans-Canada Highway spans 28,476 kilometers from Vancouver to St. John's.",rq:"You're a legendary highway expert!",wq:"That answer was too far off the road."},
+{d:2,cat:"Climate & Weather",q:"Which region is known for having a Mediterranean climate?",o:["Around the Mediterranean Sea","Tropical regions","Polar regions","Equatorial regions"],a:0,f:"Mediterranean climates occur around latitude 30-45 with mild wet winters and dry summers.",rq:"You're climatically correct!",wq:"That answer had a climate change problem."},
+{d:1,cat:"Landmarks",q:"The Great Wall of China was built to protect against invasions from which direction?",o:["North","South","East","West"],a:0,f:"The Great Wall was built to protect against invasions from the Mongolian steppes to the north.",rq:"You're built tough on geography!",wq:"That answer didn't have strong defenses."},
+{d:4,cat:"Sports Geography",q:"In which city were the 2016 Summer Olympics held?",o:["Rio de Janeiro","Tokyo","Paris","Los Angeles"],a:0,f:"Rio de Janeiro hosted the 2016 Olympics, the first in South America.",rq:"You're a legendary Olympic geographer!",wq:"That answer didn't medal."},
+{d:2,cat:"Islands",q:"Which island is the closest to the United States and is an independent country?",o:["Bahamas","Cuba","Jamaica","Dominican Republic"],a:0,f:"The Bahamas is approximately 80 kilometers from Florida and an independent nation.",rq:"You're an island navigator!",wq:"That answer was off the map."},
+{d:3,cat:"Rivers & Lakes",q:"Which river is the longest in Europe?",o:["Volga","Danube","Rhine","Dnieper"],a:0,f:"The Volga River is 3,530 kilometers long and is Europe's longest river.",rq:"You're flowing with European geography!",wq:"That answer went the wrong way."},
+{d:1,cat:"Mountains & Deserts",q:"In which continent is Mount Kilimanjaro located?",o:["Africa","South America","Asia","Australia"],a:0,f:"Mount Kilimanjaro is located in Tanzania, East Africa.",rq:"You're scaling trivia peaks!",wq:"That answer wasn't elevated enough."},
+{d:4,cat:"Cultural Geography",q:"Which country experiences Oktoberfest annually?",o:["Germany","Austria","Switzerland","Czech Republic"],a:0,f:"Oktoberfest is held annually in Munich, Germany in September and October.",rq:"You're a legendary festival geographer!",wq:"That answer was too drunk on failure."},
+{d:2,cat:"Economy & Resources",q:"Which country produces the most gold?",o:["China","Australia","Russia","United States"],a:0,f:"China produces about 380 metric tons of gold annually, more than any other country.",rq:"You've struck gold!",wq:"That answer wasn't valuable."},
+{d:3,cat:"Languages & Scripts",q:"Which country has the most official languages among African nations?",o:["South Africa","Nigeria","Zimbabwe","Tanzania"],a:0,f:"South Africa has 11 official languages, the most of any African country.",rq:"You're a legendary linguistic expert!",wq:"That answer didn't speak clearly."},
+{d:1,cat:"Continents",q:"Which continent contains the Sahara Desert?",o:["Africa","Asia","Australia","South America"],a:0,f:"The Sahara Desert covers 9 million square kilometers across North Africa.",rq:"You're sandy with this answer!",wq:"That answer was too arid of an attempt."},
+{d:2,cat:"Time Zones & Coordinates",q:"At what latitude is the Tropic of Cancer located?",o:["23.5°N","23.5°S","45°N","45°S"],a:0,f:"The Tropic of Cancer is at 23.5 degrees north of the Equator.",rq:"You're perfectly coordinated!",wq:"That answer was too far off the grid."},
+{d:3,cat:"Landmarks",q:"In which country is the Tower of London located?",o:["United Kingdom","France","Germany","Belgium"],a:0,f:"The Tower of London is a historic castle located in London, England.",rq:"You've conquered this fortress of knowledge!",wq:"That answer didn't hold its ground."},
+{d:1,cat:"Oceans & Seas",q:"Which ocean is the second-largest?",o:["Atlantic","Indian","Southern","Arctic"],a:0,f:"The Atlantic Ocean is the second-largest ocean after the Pacific.",rq:"You're navigating the oceans!",wq:"That answer went overboard."},
+{d:4,cat:"Physical Geography",q:"Which country has the most geothermal energy potential?",o:["Iceland","New Zealand","Chile","Philippines"],a:0,f:"Iceland uses geothermal energy for about 30% of its electricity production.",rq:"You're a legendary renewable energy geographer!",wq:"That answer was too cold."},
+{d:2,cat:"Population",q:"Which country has the fastest-growing population?",o:["Nigeria","Syria","Chad","Tanzania"],a:0,f:"Nigeria's population is growing faster than any other country at 2.5% annually.",rq:"You're growing with this answer!",wq:"That answer didn't expand your knowledge."},
+{d:3,cat:"Islands",q:"Which European country has the most islands?",o:["Sweden","Norway","Finland","Denmark"],a:0,f:"Sweden has 267,570 islands (counted as land above 5 square meters).",rq:"You're a legendary island expert!",wq:"That answer wasn't island-sized."},
+{d:2,cat:"Straits & Waterways",q:"The English Channel separates which two countries?",o:["England and France","Scotland and Norway","Ireland and Wales","England and Wales"],a:0,f:"The English Channel is 34 kilometers wide at its narrowest point between England and France.",rq:"You've bridged the channel perfectly!",wq:"That answer went the wrong way."},
+{d:1,cat:"Physical Geography",q:"Which is the hottest continent?",o:["Africa","South America","Australia","Asia"],a:0,f:"Africa is the hottest continent with the Sahara and other major deserts.",rq:"You're heat-up with geography!",wq:"That answer was too cold."},
+{d:3,cat:"Historical Geography",q:"In which present-day country was the Roman province of Dacia located?",o:["Romania","Hungary","Bulgaria","Serbia"],a:0,f:"Dacia was a Roman province in present-day Romania, conquered by Trajan in 106 AD.",rq:"You're a legendary Roman historian!",wq:"That answer was conquered by ignorance."},
+{d:2,cat:"Landmarks",q:"The Forbidden City is located in which city?",o:["Beijing","Shanghai","Xi'an","Nanjing"],a:0,f:"The Forbidden City in Beijing was the imperial palace of Chinese emperors.",rq:"You've unlocked this knowledge!",wq:"That answer was barred from success."},
+{d:4,cat:"Languages & Scripts",q:"In which country is Dravidian the most widely spoken language family?",o:["India","Sri Lanka","Malaysia","Indonesia"],a:0,f:"Dravidian languages are spoken primarily in southern India, with Tamil being the most widespread.",rq:"You're a legendary language expert!",wq:"That answer didn't make the linguistic cut."},
+{d:1,cat:"Rivers & Lakes",q:"Which is the largest lake in the United States?",o:["Lake Superior","Lake Michigan","Lake Huron","Lake Erie"],a:0,f:"Lake Superior is the largest Great Lake in the United States.",rq:"You're a Great Lake expert!",wq:"That answer was too shallow."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most tin in the world?",o:["Indonesia","China","Peru","Myanmar"],a:0,f:"Indonesia produces about 80,000 metric tons of tin annually.",rq:"You're a legendary resource expert!",wq:"That answer was too light on metals."},
+{d:1,cat:"Mountains & Deserts",q:"Which mountain range is the longest in the world?",o:["Andes","Himalayas","Rocky Mountains","Alps"],a:0,f:"The Andes mountain range is 7,000 kilometers long, the longest in the world.",rq:"You're scaling new heights!",wq:"That answer was too flat."},
+{d:4,cat:"Landmarks",q:"In which country is Stonehenge located?",o:["United Kingdom","France","Ireland","Germany"],a:0,f:"Stonehenge is an ancient monument located in Wiltshire, England.",rq:"You're a legendary ancient monument expert!",wq:"That answer was out of alignment."},
+{d:3,cat:"Animals & Ecosystems",q:"In which country is the Galápagos Islands located?",o:["Ecuador","Peru","Colombia","Chile"],a:0,f:"The Galápagos Islands are an autonomous province of Ecuador in the Pacific Ocean.",rq:"You're a legendary ecosystem expert!",wq:"That answer evolved incorrectly."},
+{d:2,cat:"Time Zones & Coordinates",q:"How many degrees of longitude make up one hour of time difference?",o:["15","30","7.5","60"],a:0,f:"Each hour of time difference corresponds to 15 degrees of longitude.",rq:"You're perfectly timed!",wq:"That answer wasn't on the right meridian."},
+{d:3,cat:"Landmarks",q:"In which country is the Blue Mosque located?",o:["Turkey","Iran","Saudi Arabia","Egypt"],a:0,f:"The Blue Mosque (Sultan Ahmed Mosque) is located in Istanbul, Turkey.",rq:"You've found the right mosque!",wq:"That answer was too far from the Bosphorus."},
+{d:1,cat:"Landmarks",q:"The Colosseum is located in which city?",o:["Rome","Athens","Constantinople","Alexandria"],a:0,f:"The Colosseum is an ancient amphitheater located in Rome, Italy.",rq:"You've conquered Rome!",wq:"That answer fell short of the Games."},
+{d:2,cat:"Borders & Neighbors",q:"Which country is completely surrounded by South Africa?",o:["Lesotho","Botswana","Namibia","Eswatini"],a:0,f:"Lesotho is completely surrounded by South Africa and is the only African country in this situation.",rq:"You're surrounded by geography knowledge!",wq:"That answer was too isolated."},
+{d:3,cat:"Climate & Weather",q:"Which region experiences the most rainfall annually?",o:["Cherrapunji, India","Amazon Rainforest","Reunion Island","Mawsynram, India"],a:3,f:"Mawsynram, India receives over 11,600 millimeters of rain annually.",rq:"You're flowing with weather knowledge!",wq:"That answer was too dry."},
+{d:4,cat:"Borders & Neighbors",q:"Which country has borders with both the North Sea and the Mediterranean Sea?",o:["France","Spain","Italy","Portugal"],a:0,f:"France has a long coastline on both the North Sea (via English Channel) and Mediterranean.",rq:"You're a legendary border expert!",wq:"That answer was too landlocked."},
+{d:2,cat:"Languages & Scripts",q:"In which country is Swahili the most widely spoken language?",o:["Tanzania","Kenya","Uganda","Mozambique"],a:0,f:"Tanzania has the most Swahili speakers with over 15 million native speakers.",rq:"You're linguistically literate!",wq:"That answer didn't speak the right language."},
+{d:1,cat:"Islands",q:"Which is the largest island in Europe?",o:["Great Britain","Iceland","Ireland","Sicily"],a:0,f:"Great Britain is the largest island in Europe at 229,850 square kilometers.",rq:"You're an island expert!",wq:"That answer was too small."},
+{d:3,cat:"Transportation & Routes",q:"Which ancient trade route was also known as the Spice Road?",o:["Maritime Silk Route","Silk Road","Incense Route","Amber Road"],a:1,f:"The Silk Road included maritime routes that carried spices from Asia to Europe.",rq:"You've traded perfectly on this answer!",wq:"That answer lacked spice."},
+{d:2,cat:"Historical Geography",q:"In which country was the ancient city of Petra built?",o:["Jordan","Saudi Arabia","Israel","Palestine"],a:0,f:"Petra is carved into red sandstone in southern Jordan and is a UNESCO World Heritage Site.",rq:"You've carved out geography knowledge!",wq:"That answer was too rough."},
+{d:1,cat:"Physical Geography",q:"What is the name of the wind pattern that affects weather worldwide?",o:["Trade winds","Jet stream","Monsoon","Tornado"],a:0,f:"Trade winds are consistent wind patterns that blow from the subtropical high-pressure areas toward the equator.",rq:"You're blowing in the right direction!",wq:"That answer was too stormy."},
+{d:4,cat:"Economy & Resources",q:"Which country is the world's largest exporter of champagne?",o:["France","Italy","Spain","Australia"],a:0,f:"France produces over 300 million bottles of champagne annually.",rq:"You're a legendary luxury goods expert!",wq:"That answer was too dry of an attempt."},
+{d:2,cat:"Population",q:"Which country has the lowest population density?",o:["Greenland","Mauritania","Namibia","Mongolia"],a:0,f:"Greenland has the lowest population density at 0.03 people per square kilometer.",rq:"You're a population density expert!",wq:"That answer was too crowded."},
+{d:3,cat:"Continents",q:"Which continent has the most time zones?",o:["Asia","Europe","Africa","North America"],a:0,f:"Asia spans 12 time zones from the Middle East to the Pacific.",rq:"You're perfectly timed!",wq:"That answer wasn't on the right hour."},
+{d:2,cat:"Animals & Ecosystems",q:"In which continent are gorillas found in the wild?",o:["Africa","Asia","South America","Australia"],a:0,f:"Gorillas are found in the rainforests of central Africa, primarily in Democratic Republic of Congo.",rq:"You're a primate expert!",wq:"That answer was too ape-ish in its error."},
+{d:1,cat:"Oceans & Seas",q:"Which is the largest sea by area?",o:["South China Sea","Caribbean Sea","Mediterranean Sea","Coral Sea"],a:0,f:"The South China Sea covers approximately 3.6 million square kilometers.",rq:"You're navigating waters well!",wq:"That answer got lost at sea."},
+{d:3,cat:"Mountains & Deserts",q:"Which mountain peak is the highest in South America?",o:["Mount Aconcagua","Mount San Pedro","Mount Sajama","Mount Ojos del Salado"],a:0,f:"Mount Aconcagua stands 6,961 meters tall on the Argentina-Chile border.",rq:"You've scaled the heights!",wq:"That answer didn't reach the peak."},
+{d:2,cat:"Landmarks",q:"In which city is the Parthenon located?",o:["Athens","Rome","Istanbul","Cairo"],a:0,f:"The Parthenon is an ancient Greek temple located in Athens.",rq:"You're classically educated!",wq:"That answer lacked classical knowledge."},
+{d:4,cat:"Countries",q:"Which country has the most African border crossings?",o:["Democratic Republic of Congo","Sudan","Chad","Niger"],a:0,f:"The Democratic Republic of Congo borders 9 countries, the most of any African nation.",rq:"You're a legendary border expert!",wq:"That answer was too isolated."},
+{d:1,cat:"Rivers & Lakes",q:"In which continent is the Congo River located?",o:["Africa","Asia","South America","Australia"],a:0,f:"The Congo River in Africa is the second-longest river in the world at 4,700 kilometers.",rq:"You're flowing with African geography!",wq:"That answer went the wrong continent."},
+{d:1,cat:"Mountains & Deserts",q:"Which desert is located in Southern Africa?",o:["Kalahari","Namib","Atacama","Gobi"],a:0,f:"The Kalahari Desert spans Botswana, Namibia, and South Africa.",rq:"You're a sandy scholar!",wq:"That answer got lost in translation."},
+{d:2,cat:"Rivers & Lakes",q:"What is the deepest freshwater lake in Africa?",o:["Lake Tanganyika","Lake Victoria","Lake Malawi","Lake Kivu"],a:0,f:"Lake Tanganyika is 1,470 meters deep and is shared by four African nations.",rq:"You dove deep into African geography!",wq:"That answer was too shallow."},
+{d:2,cat:"Countries",q:"Which African country is known as the 'Gateway to Africa'?",o:["Senegal","Morocco","Egypt","South Africa"],a:0,f:"Senegal is often called the gateway to Africa due to its western location and developed infrastructure.",rq:"You've unlocked African geography!",wq:"That answer didn't open the right door."},
+{d:2,cat:"Landmarks",q:"In which African country is the Serengeti located?",o:["Tanzania","Kenya","Uganda","Rwanda"],a:0,f:"The Serengeti is a vast plain in Tanzania known for its annual wildebeest migration.",rq:"You're a wildlife migration expert!",wq:"That answer didn't make the journey."},
+{d:3,cat:"Animals & Ecosystems",q:"Which African country has the most elephant population?",o:["Botswana","Tanzania","Zimbabwe","Kenya"],a:0,f:"Botswana has the largest elephant population in Africa with over 130,000 elephants.",rq:"You're a legendary wildlife expert!",wq:"That answer was too big to ignore but still wrong."},
+{d:3,cat:"Landmarks",q:"In which country is the Victoria Falls located?",o:["Zimbabwe","Zambia","Both Zimbabwe and Zambia","Botswana"],a:2,f:"The Victoria Falls straddles the Zimbabwe-Zambia border and is one of the largest waterfalls in the world.",rq:"You're a legendary waterfall expert!",wq:"That answer went over the falls."},
+{d:2,cat:"Islands",q:"Which African island is known for lemurs?",o:["Madagascar","Mauritius","Seychelles","Comoros"],a:0,f:"Madagascar is home to 99% of the world's lemur species.",rq:"You're leaping with knowledge!",wq:"That answer hopped in the wrong direction."},
+{d:3,cat:"Rivers & Lakes",q:"Which river flows through the Aswan High Dam in Egypt?",o:["Nile","Euphrates","Tigris","Okavango"],a:0,f:"The Aswan High Dam was completed in 1970 and creates Lake Nasser.",rq:"You've dammed geography perfectly!",wq:"That answer didn't hold water."},
+{d:2,cat:"Countries",q:"Which African country is home to the Atlas Mountains?",o:["Morocco","Algeria","Tunisia","Libya"],a:0,f:"The Atlas Mountains span North Africa, primarily in Morocco and Algeria.",rq:"You've scaled African peaks!",wq:"That answer wasn't elevated enough."},
+{d:1,cat:"Languages & Scripts",q:"Which language is spoken by the most people in West Africa?",o:["Hausa","Yoruba","Wolof","Twi"],a:0,f:"Hausa is spoken by over 80 million people across West Africa.",rq:"You're linguistically literate!",wq:"That answer didn't translate well."},
+{d:3,cat:"Islands",q:"Which Southeast Asian country consists of over 17,000 islands?",o:["Indonesia","Philippines","Malaysia","Brunei"],a:0,f:"Indonesia is an archipelago with 17,506 islands, the most of any country.",rq:"You're a legendary island expert!",wq:"That answer wasn't island-sized."},
+{d:2,cat:"Countries",q:"Which Southeast Asian country was never colonized?",o:["Thailand","Vietnam","Cambodia","Laos"],a:0,f:"Thailand (formerly Siam) remained independent while surrounding nations were colonized.",rq:"You know your Southeast Asian history!",wq:"That answer was colonized by wrongness."},
+{d:2,cat:"Landmarks",q:"In which Southeast Asian country is Angkor Wat located?",o:["Cambodia","Thailand","Laos","Vietnam"],a:0,f:"Angkor Wat is the largest religious monument in the world, located in Cambodia.",rq:"You've reached the temples of knowledge!",wq:"That answer was lost in the complex."},
+{d:3,cat:"Rivers & Lakes",q:"What is the longest river in Southeast Asia?",o:["Mekong","Irrawaddy","Chao Phraya","Salween"],a:0,f:"The Mekong River is 4,909 kilometers long and flows through six Southeast Asian nations.",rq:"You're flowing with Southeast Asian geography!",wq:"That answer went the wrong direction."},
+{d:2,cat:"Mountains & Deserts",q:"Which mountain range contains Mount Kinabalu?",o:["Altai Mountains","Arakan Mountains","Crocker Range","Barisan Mountains"],a:2,f:"Mount Kinabalu in the Crocker Range is the highest mountain in Southeast Asia.",rq:"You've reached new heights!",wq:"That answer didn't climb high enough."},
+{d:3,cat:"Islands",q:"Which Southeast Asian country has the highest population density?",o:["Singapore","Bangladesh","Brunei","East Timor"],a:0,f:"Singapore has 8,000+ people per square kilometer, the highest in Southeast Asia.",rq:"You're a population expert!",wq:"That answer was too sparse."},
+{d:2,cat:"Capitals",q:"Which city is the capital of Thailand?",o:["Bangkok","Chiang Mai","Phuket","Krabi"],a:0,f:"Bangkok is the capital and largest city of Thailand, located on the Chao Phraya River.",rq:"You've found the right capital!",wq:"That answer took the wrong turn."},
+{d:3,cat:"Languages & Scripts",q:"How many official languages does Singapore have?",o:["Four","Two","Three","One"],a:0,f:"Singapore has four official languages: Malay, Mandarin, Tamil, and English.",rq:"You're multilingual in geography!",wq:"That answer lacked linguistic diversity."},
+{d:3,cat:"Straits & Waterways",q:"The Malacca Strait is the world's busiest maritime route. Which countries border it?",o:["Malaysia and Indonesia","Indonesia and Singapore","Malaysia and Singapore","All three"],a:3,f:"The Strait of Malacca is bordered by Malaysia, Indonesia, and Singapore.",rq:"You've navigated maritime waters perfectly!",wq:"That answer didn't navigate correctly."},
+{d:1,cat:"Space & Maps",q:"In which hemisphere is Southeast Asia located?",o:["Eastern","Western","Northern","Southern"],a:0,f:"Southeast Asia is located in the Eastern Hemisphere, south of China.",rq:"You're oriented correctly!",wq:"That answer was heading the wrong way."},
+{d:2,cat:"Countries",q:"Which Central Asian country has the largest population?",o:["Kazakhstan","Uzbekistan","Tajikistan","Kyrgyzstan"],a:1,f:"Uzbekistan has over 33 million people, the largest in Central Asia.",rq:"You've conquered Central Asia!",wq:"That answer was too landlocked."},
+{d:1,cat:"Countries",q:"How many 'Stan' countries are in Central Asia?",o:["Five","Three","Four","Six"],a:0,f:"The five Central Asian 'Stan' countries are Kazakhstan, Uzbekistan, Turkmenistan, Tajikistan, and Kyrgyzstan.",rq:"You're a Central Asian expert!",wq:"That answer didn't quite match."},
+{d:2,cat:"Capitals",q:"What is the capital of Kyrgyzstan?",o:["Bishkek","Osh","Jalalabad","Karakol"],a:0,f:"Bishkek is the capital and largest city of Kyrgyzstan.",rq:"You've found the right place!",wq:"That answer was too remote."},
+{d:3,cat:"Mountains & Deserts",q:"Which mountains separate Central Asia from South Asia?",o:["Hindu Kush","Pamir","Tian Shan","Altai"],a:1,f:"The Pamir Mountains form part of the boundary between Central and South Asia.",rq:"You've separated geography correctly!",wq:"That answer didn't reach the right peak."},
+{d:2,cat:"Capitals",q:"What is the capital of Tajikistan?",o:["Dushanbe","Khujand","Kulob","Khorog"],a:0,f:"Dushanbe is the capital and largest city of Tajikistan, located in the Hisar Valley.",rq:"You've found the right capital!",wq:"That answer got lost in the valleys."},
+{d:2,cat:"Capitals",q:"What is the capital of Turkmenistan?",o:["Ashgabat","Turkmenabat","Balkanabat","Gazanjyk"],a:0,f:"Ashgabat is the capital of Turkmenistan and is one of the hottest capitals in the world.",rq:"You're heat-up with geography!",wq:"That answer cooled down too fast."},
+{d:3,cat:"Rivers & Lakes",q:"Which lake is the largest in Central Asia?",o:["Issyk-Kul","Aral Sea","Lake Balkhash","Tengiz Lake"],a:0,f:"Lake Issyk-Kul in Kyrgyzstan is the largest alpine lake in Central Asia.",rq:"You're a legendary alpine lake expert!",wq:"That answer was too shallow."},
+{d:3,cat:"Landmarks",q:"Which ancient Silk Road city is located in present-day Uzbekistan?",o:["Samarkand","Bukhara","Kashgar","Khotan"],a:0,f:"Samarkand is an ancient city in Uzbekistan that was a major hub on the Silk Road.",rq:"You've traversed the Silk Road!",wq:"That answer got lost along the way."},
+{d:2,cat:"Countries",q:"Which Caribbean island is the largest?",o:["Cuba","Hispaniola","Jamaica","Puerto Rico"],a:0,f:"Cuba is the largest Caribbean island at 110,860 square kilometers.",rq:"You're a Caribbean expert!",wq:"That answer wasn't quite big enough."},
+{d:2,cat:"Islands",q:"Which Caribbean island is an independent country and closest to the mainland?",o:["Trinidad and Tobago","Jamaica","Dominica","Barbados"],a:0,f:"Trinidad and Tobago is off the coast of Venezuela and is an independent nation.",rq:"You're navigating the Caribbean!",wq:"That answer drifted off course."},
+{d:3,cat:"Countries",q:"On which Caribbean island is the Bahamas capital located?",o:["New Providence","Andros","Eleuthera","Exuma"],a:0,f:"Nassau, the capital of the Bahamas, is located on New Providence Island.",rq:"You've found the right island!",wq:"That answer got lost in the archipelago."},
+{d:2,cat:"Capitals",q:"What is the capital of Jamaica?",o:["Kingston","Montego Bay","Ocho Rios","Negril"],a:0,f:"Kingston is the capital and largest city of Jamaica.",rq:"You know your Caribbean capitals!",wq:"That answer was off the beat."},
+{d:3,cat:"Islands",q:"Which Caribbean country consists of just two main islands?",o:["Trinidad and Tobago","Dominica","St. Kitts and Nevis","Barbados"],a:0,f:"Trinidad and Tobago consists of the two main islands of Trinidad and Tobago.",rq:"You've paired up the geography!",wq:"That answer wasn't a perfect match."},
+{d:2,cat:"Straits & Waterways",q:"Which strait separates Puerto Rico from the Dominican Republic?",o:["Mona Passage","Windward Passage","Yucatan Channel","Anegada Passage"],a:0,f:"The Mona Passage is 130 kilometers wide and separates Puerto Rico from Hispaniola.",rq:"You've navigated the passage!",wq:"That answer was too narrow a thinking."},
+{d:2,cat:"Islands",q:"Which Caribbean island is a U.S. territory and has no capital?",o:["Puerto Rico","US Virgin Islands","Guam","American Samoa"],a:1,f:"The U.S. Virgin Islands consists of three main islands: St. Croix, St. John, and St. Thomas.",rq:"You understand U.S. territories!",wq:"That answer went too far offshore."},
+{d:3,cat:"Landmarks",q:"In which Caribbean country is the Blue Lagoon located?",o:["Jamaica","Turks and Caicos","Bahamas","Cayman Islands"],a:0,f:"The Blue Lagoon is located in Jamaica and is a popular tourist attraction.",rq:"You've found the lagoon!",wq:"That answer was too murky."},
+{d:2,cat:"Physical Geography",q:"Which Caribbean island is a volcanic island with hot springs?",o:["Dominica","Grenada","St. Lucia","Montserrat"],a:0,f:"Dominica is a volcanic island with geothermal features and hot springs.",rq:"You're geothermally educated!",wq:"That answer cooled down too fast."},
+{d:1,cat:"Space & Maps",q:"Which ocean are the Caribbean islands located in?",o:["Atlantic Ocean","Pacific Ocean","Indian Ocean","Arctic Ocean"],a:0,f:"The Caribbean is part of the Atlantic Ocean and is located between North and South America.",rq:"You're ocean-aware!",wq:"That answer was too far off course."},
+{d:3,cat:"Islands",q:"Which Pacific island nation is the largest by population?",o:["Papua New Guinea","Fiji","Solomon Islands","Samoa"],a:0,f:"Papua New Guinea is the largest Pacific island nation by population with 9+ million people.",rq:"You're a legendary Pacific expert!",wq:"That answer was too small."},
+{d:2,cat:"Islands",q:"Which Pacific island nation consists of only coral atolls with no land above sea level?",o:["Kiribati","Tuvalu","Marshall Islands","Nauru"],a:0,f:"Kiribati consists of 33 atolls and islands with no peak above sea level.",rq:"You're a coral island expert!",wq:"That answer got too elevated."},
+{d:2,cat:"Countries",q:"Which Pacific island nation is the first to celebrate each new day?",o:["Kiribati","Samoa","Tonga","Fiji"],a:0,f:"Kiribati, with the Line Islands, is east of the International Date Line and celebrates new days first.",rq:"You're ahead of time!",wq:"That answer was yesterday's answer."},
+{d:3,cat:"Islands",q:"What is the smallest independent country in the Pacific?",o:["Nauru","Tuvalu","Palau","Marshall Islands"],a:0,f:"Nauru is 21 square kilometers and is the smallest island nation in the world.",rq:"You're a legendary tiny nation expert!",wq:"That answer was too big."},
+{d:2,cat:"Landmarks",q:"What is the famous stone platform on Easter Island called?",o:["Moai","Ahu","Tongariki","Rano Raraku"],a:0,f:"Moai are the famous stone statues found on Easter Island (Rapa Nui).",rq:"You've carved out this knowledge!",wq:"That answer was too flat."},
+{d:3,cat:"Islands",q:"Which Pacific island nation was created by a volcanic eruption in the 1990s?",o:["Tonga","Samoa","Solomon Islands","Vanuatu"],a:0,f:"Tonga gained a new island called Hunga Tonga-Hunga Ha'apai from an underwater volcanic eruption.",rq:"You're a geological expert!",wq:"That answer was dormant."},
+{d:2,cat:"Space & Maps",q:"Which ocean contains the most islands?",o:["Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean"],a:0,f:"The Pacific Ocean contains more than 20,000 islands, more than any other ocean.",rq:"You're an island counter!",wq:"That answer was too few to be correct."},
+{d:2,cat:"Animals & Ecosystems",q:"Which Pacific island nation is known for the Galapagos Islands?",o:["Ecuador","Peru","Chile","Colombia"],a:0,f:"The Galapagos Islands are a province of Ecuador located in the Pacific Ocean.",rq:"You've evolved with this answer!",wq:"That answer was too far from Darwin."},
+{d:1,cat:"Climate & Weather",q:"What climate zone dominates the Arctic region?",o:["Polar","Tundra","Subarctic","Temperate"],a:0,f:"The Arctic has a polar climate with very low temperatures year-round.",rq:"You're ice-cold with geography!",wq:"That answer was too warm."},
+{d:2,cat:"Extreme Geography",q:"What is the coldest place on Earth?",o:["East Antarctic Plateau","South Pole","North Pole","Oymyakon, Russia"],a:0,f:"The East Antarctic Plateau has recorded temperatures below -90°C.",rq:"You've reached absolute zero knowledge!",wq:"That answer was too warm."},
+{d:2,cat:"Extreme Geography",q:"What is the hottest place on Earth?",o:["Death Valley","Kuwait Desert","Lut Desert","Arabian Desert"],a:0,f:"Death Valley has recorded 134°F (56.7°C), the highest reliably recorded temperature.",rq:"You're scorching hot at geography!",wq:"That answer was too cold."},
+{d:3,cat:"Extreme Geography",q:"What is the driest inhabited place on Earth?",o:["Atacama Desert","Lut Desert","Death Valley","Atacama Desert (Chile)"],a:0,f:"The Atacama Desert in Chile receives less than 1 millimeter of rain annually.",rq:"You're a desert expert!",wq:"That answer wasn't parched enough."},
+{d:3,cat:"Extreme Geography",q:"Which glacier is the largest in the world outside the polar regions?",o:["Siachen Glacier","Aletsch Glacier","Mer de Glace","Athabasca Glacier"],a:0,f:"The Siachen Glacier in the Karakoram is 76 kilometers long and is the world's largest non-polar glacier.",rq:"You're a legendary glacier expert!",wq:"That answer was too fluid."},
+{d:3,cat:"Extreme Geography",q:"What is the deepest cave in the world?",o:["Pozzo del Merro","Krubera Cave","Movile Cave","Alachua Sink"],a:1,f:"Krubera Cave in Georgia reaches 2,197 meters deep.",rq:"You've descended to legendary depths!",wq:"That answer went too shallow."},
+{d:2,cat:"Extreme Geography",q:"What is the largest waterfall in the world by volume?",o:["Niagara Falls","Angel Falls","Victoria Falls","Inga Falls"],a:3,f:"Inga Falls in Democratic Republic of Congo has the largest water volume of any waterfall.",rq:"You're a flow expert!",wq:"That answer didn't have enough volume."},
+{d:3,cat:"Landmarks",q:"Which waterfall is the tallest in the world?",o:["Angel Falls","Tugela Falls","Tres Hermanas Falls","Yosemite Falls"],a:0,f:"Angel Falls in Venezuela is 979 meters tall, the highest waterfall in the world.",rq:"You've reached the heights!",wq:"That answer was too short."},
+{d:2,cat:"Extreme Geography",q:"What is the oldest mountain range in the world?",o:["Appalachian Mountains","Canadian Shield","Caledonian Mountains","Armorican Mountains"],a:0,f:"The Appalachian Mountains in eastern North America are among the oldest, formed 480 million years ago.",rq:"You're an ancient geology expert!",wq:"That answer wasn't old enough."},
+{d:2,cat:"Extreme Geography",q:"What is the youngest mountain range in the world?",o:["Himalayas","Andes","Rockies","Alps"],a:0,f:"The Himalayas are the youngest major mountain range, still rising at 5mm per year.",rq:"You're growing with this answer!",wq:"That answer was too ancient."},
+{d:3,cat:"Landmarks",q:"What is the longest bridge in the world?",o:["Danyang-Kunshan Grand Bridge","Hong Kong-Zhuhai-Macau Bridge","Bang Na Expressway","Lake Pontchartrain Causeway"],a:0,f:"The Danyang-Kunshan Grand Bridge in China is 164.8 kilometers long.",rq:"You've bridged geography perfectly!",wq:"That answer was too short."},
+{d:2,cat:"Landmarks",q:"What is the longest tunnel in the world?",o:["Gotthard Base Tunnel","Seikan Tunnel","Channel Tunnel","Marmaray Tunnel"],a:0,f:"The Gotthard Base Tunnel in Switzerland is 57 kilometers long.",rq:"You've tunneled through geography!",wq:"That answer dug too deep into error."},
+{d:3,cat:"Landmarks",q:"What is the tallest dam in the world?",o:["Three Gorges Dam","Itaipu Dam","Jinping-I Dam","Aswan High Dam"],a:2,f:"The Jinping-I Dam in China is 305 meters tall.",rq:"You've dammed geography perfectly!",wq:"That answer didn't hold water."},
+{d:2,cat:"Transportation & Routes",q:"Which famous canal connects the Atlantic and Pacific Oceans?",o:["Panama Canal","Suez Canal","Erie Canal","Kiel Canal"],a:0,f:"The Panama Canal opened in 1914 and is 82 kilometers long.",rq:"You've navigated that waterway!",wq:"That answer went the wrong direction."},
+{d:2,cat:"Transportation & Routes",q:"Which ancient canal system connects rivers in China?",o:["Grand Canal","Ganges Canal","Cauvery Canal","Li River Canal"],a:0,f:"The Grand Canal in China is 1,794 kilometers long and is the oldest and longest artificial waterway.",rq:"You're ancient waterway expert!",wq:"That answer didn't flow well."},
+{d:3,cat:"Transportation & Routes",q:"Which famous route carried goods from China to Europe?",o:["Silk Road","Tea Route","Spice Route","Incense Route"],a:0,f:"The Silk Road was a network of trade routes connecting East and West for over 1,500 years.",rq:"You've traded perfectly on this answer!",wq:"That answer lacked commercial value."},
+{d:2,cat:"Landmarks",q:"Which structure spans the Golden Gate?",o:["Golden Gate Bridge","Oakland Bay Bridge","Bay Bridge","Verrazano-Narrows Bridge"],a:0,f:"The Golden Gate Bridge in San Francisco was completed in 1937.",rq:"You've got a brilliant mind!",wq:"That answer wasn't bright enough."},
+{d:3,cat:"Landmarks",q:"Which is the longest suspension bridge in the world?",o:["Akashi Kaikyō Bridge","Verrazano-Narrows Bridge","Golden Gate Bridge","Brooklyn Bridge"],a:0,f:"The Akashi Kaikyō Bridge in Japan has a main span of 1,991 meters.",rq:"You're a bridge engineering expert!",wq:"That answer wasn't long enough."},
+{d:2,cat:"Landmarks",q:"In which country is the Millau Viaduct located?",o:["France","Spain","Italy","Germany"],a:0,f:"The Millau Viaduct in France is the tallest bridge in the world at 343 meters.",rq:"You've reached new heights!",wq:"That answer was too low."},
+{d:3,cat:"Landmarks",q:"What is the Channel Tunnel?",o:["An underwater tunnel between England and France","A tunnel in the English Channel","A tunnel under the Thames River","A tunnel connecting London and Paris"],a:0,f:"The Channel Tunnel is a 50-kilometer underwater rail tunnel connecting England and France.",rq:"You've tunneled through perfectly!",wq:"That answer was too shallow."},
+{d:2,cat:"Landmarks",q:"In which country are the Inca Trail ruins located?",o:["Peru","Bolivia","Ecuador","Colombia"],a:0,f:"The Inca Trail leads to Machu Picchu in Peru and is a UNESCO World Heritage Site.",rq:"You've reached the peaks!",wq:"That answer didn't trek the right path."},
+{d:2,cat:"Landmarks",q:"Which temple complex is located in Cambodia?",o:["Angkor Wat","Borobudur","Pagan Temple","Shwedagon Pagoda"],a:0,f:"Angkor Wat is the largest religious monument in the world.",rq:"You've reached the temples!",wq:"That answer was lost in the complex."},
+{d:3,cat:"Cultural Geography",q:"Which country practices Theravada Buddhism exclusively?",o:["Myanmar","Thailand","Cambodia","Laos"],a:0,f:"Myanmar has over 95% of its population practicing Theravada Buddhism.",rq:"You're spiritually aware!",wq:"That answer wasn't enlightened."},
+{d:2,cat:"Cultural Geography",q:"Which country has the most Muslims by population?",o:["Indonesia","Pakistan","Nigeria","Egypt"],a:0,f:"Indonesia has over 230 million Muslims, the largest Muslim population of any country.",rq:"You're culturally informed!",wq:"That answer wasn't faithful to the facts."},
+{d:3,cat:"Cultural Geography",q:"In which country was Sikhism founded?",o:["India","Pakistan","Bangladesh","Nepal"],a:0,f:"Sikhism was founded in the Punjab region of present-day India.",rq:"You're spiritually educated!",wq:"That answer wasn't enlightened."},
+{d:2,cat:"Economy & Resources",q:"Which country is the world's largest producer of rice?",o:["China","India","Thailand","Vietnam"],a:0,f:"China produces about 190 million metric tons of rice annually.",rq:"You're a harvest expert!",wq:"That answer didn't reap what it sowed."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most rubber?",o:["Thailand","Indonesia","Malaysia","Vietnam"],a:0,f:"Thailand produces about 3.2 million metric tons of natural rubber annually.",rq:"You're bouncing with knowledge!",wq:"That answer wasn't elastic with facts."},
+{d:2,cat:"Economy & Resources",q:"Which country produces the most tea?",o:["China","India","Kenya","Vietnam"],a:0,f:"China produces about 2.8 million metric tons of tea annually.",rq:"You're brewing up knowledge!",wq:"That answer wasn't steep enough."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most copper?",o:["Chile","Peru","China","United States"],a:0,f:"Chile produces about 5.3 million metric tons of copper annually.",rq:"You're a metal expert!",wq:"That answer wasn't conductive to success."},
+{d:2,cat:"Economy & Resources",q:"Which country is the world's largest exporter of fish?",o:["China","Vietnam","Thailand","Norway"],a:0,f:"China is the world's largest exporter of fish and fish products.",rq:"You're fishing for answers!",wq:"That answer was out of water."},
+{d:3,cat:"Economy & Resources",q:"Which African country produces the most gold?",o:["Ghana","Tanzania","Mali","South Africa"],a:0,f:"Ghana is Africa's largest gold producer, surpassing South Africa.",rq:"You've struck gold!",wq:"That answer wasn't valuable."},
+{d:2,cat:"Economy & Resources",q:"Which country produces the most iron ore?",o:["China","Australia","India","Russia"],a:0,f:"China produces about 48% of the world's iron ore.",rq:"You're a metal expert!",wq:"That answer was too brittle."},
+{d:3,cat:"Population",q:"Which is the most densely populated independent country?",o:["Monaco","Singapore","Malta","Bahrain"],a:1,f:"Singapore has 8,000 people per square kilometer among independent nations.",rq:"You're a population density expert!",wq:"That answer was too sparse."},
+{d:2,cat:"Population",q:"Which country has a population over 1 billion?",o:["India","China","Indonesia","Pakistan"],a:0,f:"India's population exceeds 1.4 billion people.",rq:"You're counting accurately!",wq:"That answer wasn't populous enough."},
+{d:3,cat:"Population",q:"Which is the only country with a population over 200 million that is not in Asia or Africa?",o:["Brazil","United States","Nigeria","Russia"],a:0,f:"Brazil has over 215 million people and is the most populous country outside Asia and Africa.",rq:"You know your South American demographics!",wq:"That answer wasn't large enough."},
+{d:3,cat:"Landmarks",q:"Which structure is located in St. Peter's Square in Vatican City?",o:["St. Peter's Basilica","Sistine Chapel","Vatican Museum","Castel Sant'Angelo"],a:0,f:"St. Peter's Basilica is the largest church in the world and is located in Vatican City.",rq:"You're a spiritual geography expert!",wq:"That answer wasn't holy enough."},
+{d:2,cat:"Landmarks",q:"In which city is the Alhambra located?",o:["Granada","Seville","Cordoba","Madrid"],a:0,f:"The Alhambra is a palace in Granada, Spain and is a UNESCO World Heritage Site.",rq:"You're an architectural expert!",wq:"That answer was too far from Granada."},
+{d:3,cat:"Landmarks",q:"Which ancient structure is located in Giza, Egypt?",o:["Great Pyramids","Sphinx","Both","Neither"],a:2,f:"Both the Great Pyramids and the Great Sphinx are located in Giza.",rq:"You're an ancient Egypt expert!",wq:"That answer didn't measure up."},
+{d:2,cat:"Landmarks",q:"In which country is Versailles Palace located?",o:["France","Germany","Austria","Belgium"],a:0,f:"Versailles Palace is located near Paris, France and was the royal residence.",rq:"You're royally educated!",wq:"That answer was too provincial."},
+{d:3,cat:"Landmarks",q:"Which ancient library was located in Alexandria, Egypt?",o:["Library of Alexandria","Library of Pergamon","Library of Ephesus","Library of Athens"],a:0,f:"The Library of Alexandria was one of the largest and most important libraries of the ancient world.",rq:"You're well-read on geography!",wq:"That answer wasn't well-documented."},
+{d:2,cat:"Climate & Weather",q:"Which geographic feature creates the rain shadow effect?",o:["Mountains","Valleys","Deserts","Plateaus"],a:0,f:"Mountains block moisture-laden winds, creating dry areas on the leeward side.",rq:"You're a shadow expert!",wq:"That answer lacked elevation."},
+{d:3,cat:"Climate & Weather",q:"What is the most active hurricane belt region in the world?",o:["Western Pacific","Atlantic","Indian Ocean","Eastern Pacific"],a:0,f:"The Western Pacific has the most typhoons and tropical cyclones annually.",rq:"You're a weather warrior!",wq:"That answer wasn't stormy enough."},
+{d:2,cat:"Climate & Weather",q:"Which countries are most affected by the Indian monsoon?",o:["India and Southeast Asia","India and Africa","India and Middle East","India and Central Asia"],a:0,f:"The Indian monsoon affects India and Southeast Asia from June to September.",rq:"You're a monsoon master!",wq:"That answer was too dry."},
+{d:3,cat:"Climate & Weather",q:"What causes the Northern Lights (Aurora Borealis)?",o:["Solar wind interaction with magnetic field","Volcanic activity","Atmospheric pressure changes","Meteor showers"],a:0,f:"The Aurora Borealis is caused by charged particles from the sun interacting with Earth's magnetic field.",rq:"You're glowing with knowledge!",wq:"That answer was too dim."},
+{d:2,cat:"Transportation & Routes",q:"Which famous railway connects Beijing to Mongolia?",o:["Trans-Mongolian Railway","Qinghai-Tibetan Railway","Yunnan Railway","Northeast Railway"],a:0,f:"The Trans-Mongolian Railway connects Beijing to Ulaanbaatar and beyond to Russia.",rq:"You're a railway geographer!",wq:"That answer derailed."},
+{d:3,cat:"Transportation & Routes",q:"What is the highest railway line in the world?",o:["Qinghai-Tibetan Railway","Tren a las Nubes","Bernina Railway","Jungfraujoch Railway"],a:0,f:"The Qinghai-Tibetan Railway reaches 5,072 meters above sea level.",rq:"You've reached the heights of rail travel!",wq:"That answer was too low."},
+{d:2,cat:"Transportation & Routes",q:"Which famous cable car connects two mountains in Hong Kong?",o:["Star Ferry","Peak Tram","Ngong Ping 360","Central-Mid-Levels Escalator"],a:1,f:"The Peak Tram connects Central Hong Kong to the top of Victoria Peak.",rq:"You're scaling geographic knowledge!",wq:"That answer wasn't elevated enough."},
+{d:3,cat:"Transportation & Routes",q:"What is the longest road in the world?",o:["Pan-American Highway","Trans-Canada Highway","Trans-Siberian Route","Highway 1 (Australia)"],a:0,f:"The Pan-American Highway is 47,958 kilometers long and connects North and South America.",rq:"You've traveled the longest road!",wq:"That answer didn't go the distance."},
+{d:2,cat:"Animals & Ecosystems",q:"In which African country are the most lions found?",o:["Tanzania","Botswana","Kenya","South Africa"],a:0,f:"Tanzania has the largest lion population in Africa, primarily in the Serengeti.",rq:"You're a big cat expert!",wq:"That answer didn't have enough roar."},
+{d:3,cat:"Animals & Ecosystems",q:"Which African country has the most diverse bird species?",o:["Democratic Republic of Congo","Tanzania","Kenya","Cameroon"],a:0,f:"The Democratic Republic of Congo has over 1,000 bird species.",rq:"You're a legendary ornithologist!",wq:"That answer didn't fly."},
+{d:2,cat:"Animals & Ecosystems",q:"Which African national park has the greatest wildlife concentration?",o:["Serengeti","Kruger","Okavango","Masai Mara"],a:0,f:"The Serengeti in Tanzania and Kenya has the largest animal migration on Earth.",rq:"You're a migration expert!",wq:"That answer didn't make the journey."},
+{d:3,cat:"Animals & Ecosystems",q:"In which African country are the Okavango Delta wetlands located?",o:["Botswana","Namibia","Angola","Zimbabwe"],a:0,f:"The Okavango Delta in Botswana is one of the largest inland deltas in the world.",rq:"You're a wetland expert!",wq:"That answer was too dry."},
+{d:2,cat:"Space & Maps",q:"What is the boundary between the Earth's crust and mantle called?",o:["Mohorovicic discontinuity","Asthenosphere","Lithosphere","Core-mantle boundary"],a:0,f:"The Mohorovicic discontinuity marks the boundary between crust and mantle.",rq:"You're a geological expert!",wq:"That answer was too deep."},
+{d:3,cat:"Space & Maps",q:"Which tectonic plate is the largest?",o:["Pacific Plate","North American Plate","Eurasian Plate","Indo-Australian Plate"],a:2,f:"The Eurasian Plate is the largest tectonic plate.",rq:"You're a legendary plate tectonics expert!",wq:"That answer shifted in the wrong direction."},
+{d:3,cat:"Landmarks",q:"In which country is the Dead Sea located?",o:["Israel and Palestine","Jordan","Israel","Palestine"],a:0,f:"The Dead Sea is located between Israel and Palestine, the lowest point on land.",rq:"You've descended to the depths!",wq:"That answer wasn't grounded."},
+{d:2,cat:"Extreme Geography",q:"What is the deepest point in the ocean?",o:["Challenger Deep","Tonga Trench","Philippine Trench","Kuril-Kamchatka Trench"],a:0,f:"The Challenger Deep in the Mariana Trench is 10,994 meters below sea level.",rq:"You've reached the depths!",wq:"That answer was too shallow."},
+{d:3,cat:"Landmarks",q:"In which country is the Patagonia region located?",o:["Argentina and Chile","Argentina","Chile","Peru and Argentina"],a:0,f:"Patagonia is a vast region spanning Argentina and Chile.",rq:"You've explored the southern reaches!",wq:"That answer wasn't expansive enough."},
+{d:2,cat:"Mountains & Deserts",q:"Which mountain range contains the Matterhorn?",o:["Alps","Pyrenees","Apennines","Carpathians"],a:0,f:"The Matterhorn is located in the Alps on the Switzerland-Italy border.",rq:"You've scaled the right peak!",wq:"That answer didn't reach the summit."},
+{d:3,cat:"Landmarks",q:"In which country is Giza located?",o:["Egypt","Sudan","Libya","Saudi Arabia"],a:0,f:"Giza is located in Egypt on the outskirts of Cairo.",rq:"You've found the pyramids!",wq:"That answer went off the map."},
+{d:2,cat:"Historical Geography",q:"In which region did the Fertile Crescent exist?",o:["Middle East","North Africa","Central Asia","South Asia"],a:0,f:"The Fertile Crescent was located in the Middle East, between the Tigris and Euphrates rivers.",rq:"You're an ancient geographer!",wq:"That answer wasn't cultivated properly."},
+{d:3,cat:"Historical Geography",q:"In which present-day country was the ancient city of Troy located?",o:["Turkey","Greece","Bulgaria","Syria"],a:0,f:"Troy was located in present-day northwestern Turkey.",rq:"You're a legendary archaeologist!",wq:"That answer was conquered by wrongness."},
+{d:2,cat:"Historical Geography",q:"In which country was the ancient city of Pompeii located?",o:["Italy","Greece","Turkey","Tunisia"],a:0,f:"Pompeii was a Roman city in present-day Italy that was buried by Mount Vesuvius.",rq:"You've excavated the right answer!",wq:"That answer was buried in error."},
+{d:3,cat:"Historical Geography",q:"In which present-day country was the ancient kingdom of Nubia located?",o:["Sudan","Egypt","Eritrea","Chad"],a:0,f:"Nubia was located in present-day Sudan and northern Sudan.",rq:"You're an ancient historian!",wq:"That answer was too ancient to comprehend."},
+{d:2,cat:"Historical Geography",q:"In which region was the ancient city of Jericho located?",o:["West Bank (Palestine)","Israel","Jordan","Syria"],a:0,f:"Jericho is located in the West Bank and is one of the oldest cities in the world.",rq:"You're archaeologically astute!",wq:"That answer wasn't old enough."},
+{d:3,cat:"Historical Geography",q:"In which present-day country was the Ottoman capital of Constantinople located?",o:["Turkey","Greece","Bulgaria","Syria"],a:0,f:"Constantinople (Istanbul) was the capital of the Ottoman Empire in present-day Turkey.",rq:"You're a legendary empire expert!",wq:"That answer was conquered by wrongness."},
+{d:2,cat:"Historical Geography",q:"In which region was the ancient kingdom of Saba located?",o:["Yemen","Saudi Arabia","Oman","United Arab Emirates"],a:0,f:"The kingdom of Saba (Sheba) was located in present-day Yemen.",rq:"You're an ancient kingdom expert!",wq:"That answer was too golden."},
+{d:3,cat:"Languages & Scripts",q:"Which is the most widely spoken language in Latin America?",o:["Spanish","Portuguese","English","French"],a:0,f:"Spanish is spoken by over 475 million people across Latin America.",rq:"You speak fluently on this topic!",wq:"That answer lacked linguistic clarity."},
+{d:2,cat:"Languages & Scripts",q:"Which is the official language of Brazil?",o:["Portuguese","Spanish","English","French"],a:0,f:"Portuguese is the official and most widely spoken language in Brazil.",rq:"You're linguistically educated!",wq:"That answer wasn't Portuguese enough."},
+{d:3,cat:"Languages & Scripts",q:"Which European country has German as the official language?",o:["Germany","Austria","Switzerland","Liechtenstein"],a:0,f:"While Austria also speaks German, Germany is the primary German-speaking country.",rq:"You're a language expert!",wq:"That answer wasn't clear."},
+{d:2,cat:"Time Zones & Coordinates",q:"What is the Prime Meridian?",o:["0 degrees longitude","0 degrees latitude","Greenwich, England meridian","A and C"],a:3,f:"The Prime Meridian is 0 degrees longitude, passing through Greenwich, England.",rq:"You're perfectly positioned!",wq:"That answer was off the meridian."},
+{d:3,cat:"Time Zones & Coordinates",q:"How many degrees of latitude are there in total?",o:["180","360","90","270"],a:0,f:"There are 180 degrees of latitude, 90 north and 90 south of the Equator.",rq:"You're correctly positioned!",wq:"That answer wasn't on the line."},
+{d:2,cat:"Time Zones & Coordinates",q:"Which imaginary line divides the Eastern and Western Hemispheres?",o:["Prime Meridian","Equator","Tropic of Cancer","International Date Line"],a:0,f:"The Prime Meridian at 0 degrees longitude divides the hemispheres.",rq:"You're meridian-aware!",wq:"That answer was off the line."},
+{d:3,cat:"Time Zones & Coordinates",q:"In which ocean is the International Date Line primarily located?",o:["Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean"],a:0,f:"The International Date Line is located primarily in the Pacific Ocean.",rq:"You're date-line savvy!",wq:"That answer was too off-date."},
+{d:2,cat:"Time Zones & Coordinates",q:"What is the Tropic of Capricorn?",o:["23.5 degrees South","23.5 degrees North","45 degrees South","45 degrees North"],a:0,f:"The Tropic of Capricorn is at 23.5 degrees south of the Equator.",rq:"You're tropically educated!",wq:"That answer was too far north."},
+{d:3,cat:"Time Zones & Coordinates",q:"Which country straddles the most time zones due to island territories?",o:["France","Russia","United States","Denmark"],a:0,f:"France has territories spread across 12 time zones globally.",rq:"You've mastered time zone geography!",wq:"That answer wasn't timely."},
+{d:2,cat:"Rivers & Lakes",q:"Which river flows through the Suez Canal region?",o:["Nile River","Euphrates","Tigris","Danube"],a:0,f:"The Nile River flows through Egypt near the Suez Canal.",rq:"You're flowing with geographic knowledge!",wq:"That answer went downstream incorrectly."},
+{d:2,cat:"Rivers & Lakes",q:"Which lake is the largest in Europe?",o:["Lake Ladoga","Lake Onega","Lake Balaton","Lake Geneva"],a:0,f:"Lake Ladoga in Russia is the largest lake in Europe.",rq:"You're a European lake expert!",wq:"That answer was too small."},
+{d:3,cat:"Rivers & Lakes",q:"In which country is Lake Como located?",o:["Italy","Switzerland","Austria","Germany"],a:0,f:"Lake Como is located in northern Italy in the Lombardy region.",rq:"You've found the scenic lake!",wq:"That answer was too deep."},
+{d:2,cat:"Oceans & Seas",q:"Which sea is the Mediterranean Sea connected to?",o:["Atlantic Ocean","Indian Ocean","Pacific Ocean","Arctic Ocean"],a:0,f:"The Mediterranean is connected to the Atlantic Ocean through the Strait of Gibraltar.",rq:"You've navigated the waters!",wq:"That answer wasn't connected."},
+{d:3,cat:"Oceans & Seas",q:"Which sea is completely landlocked and shared by five countries?",o:["Caspian Sea","Black Sea","Dead Sea","Red Sea"],a:0,f:"The Caspian Sea borders Russia, Kazakhstan, Turkmenistan, Iran, and Azerbaijan.",rq:"You've navigated landlocked waters!",wq:"That answer wasn't landlocked enough."},
+{d:2,cat:"Straits & Waterways",q:"Which strait connects the Mediterranean Sea to the Atlantic Ocean?",o:["Strait of Gibraltar","Strait of Hormuz","Bering Strait","Strait of Malacca"],a:0,f:"The Strait of Gibraltar is only 14 kilometers wide.",rq:"You've navigated that strait!",wq:"That answer went the wrong way."},
+{d:3,cat:"Straits & Waterways",q:"Which strait is the world's busiest shipping lane?",o:["Strait of Malacca","Strait of Hormuz","English Channel","Suez Canal"],a:0,f:"The Strait of Malacca is the world's busiest maritime chokepoint.",rq:"You've navigated maritime trade routes!",wq:"That answer wasn't busy enough."},
+{d:2,cat:"Straits & Waterways",q:"Which strait separates Denmark and Sweden?",o:["Oresund Strait","Great Belt","Little Belt","Kattegat"],a:0,f:"The Oresund Strait is 4 kilometers wide and separates Denmark and Sweden.",rq:"You've bridged the North!",wq:"That answer was too narrow."},
+{d:3,cat:"Landmarks",q:"In which country is the Inca city of Cusco located?",o:["Peru","Bolivia","Ecuador","Colombia"],a:0,f:"Cusco is the ancient capital of the Inca Empire in Peru.",rq:"You've found the right city!",wq:"That answer was too far from the Andes."},
+{d:2,cat:"Landmarks",q:"Which mountain pass connects India and Pakistan?",o:["Khyber Pass","Panj Pass","Silk Road Pass","Spice Route Pass"],a:0,f:"The Khyber Pass is a mountain pass that connects India and Pakistan.",rq:"You've navigated the mountain pass!",wq:"That answer was too narrow."},
+{d:3,cat:"Landmarks",q:"In which country is the Namib Desert located?",o:["Namibia","South Africa","Botswana","Angola"],a:0,f:"The Namib Desert is located in Namibia and is one of the oldest deserts.",rq:"You're a desert expert!",wq:"That answer wasn't arid enough."},
+{d:2,cat:"Physical Geography",q:"What is the primary cause of earthquakes?",o:["Tectonic plate movement","Volcanic activity","Ocean currents","Atmospheric pressure"],a:0,f:"Most earthquakes are caused by the movement of tectonic plates.",rq:"You're a seismic expert!",wq:"That answer wasn't on the fault line."},
+{d:3,cat:"Physical Geography",q:"Which mountain range is part of the Ring of Fire?",o:["Andes","Himalayas","Rocky Mountains","Alps"],a:0,f:"The Andes are part of the Ring of Fire and contain many active volcanoes.",rq:"You're a volcanic expert!",wq:"That answer went dormant."},
+{d:2,cat:"Physical Geography",q:"What causes the formation of coral reefs?",o:["Coral polyps","Algae","Fish","Ocean currents"],a:0,f:"Coral polyps build reefs over thousands of years.",rq:"You're a reef expert!",wq:"That answer lacked depth."},
+{d:3,cat:"Physical Geography",q:"In which country is the largest coral reef system located?",o:["Australia","Belize","Egypt","Indonesia"],a:0,f:"The Great Barrier Reef is located off the coast of Australia.",rq:"You're a legendary reef expert!",wq:"That answer was too shallow."},
+{d:2,cat:"Borders & Neighbors",q:"Which country shares a border with seven other countries?",o:["Russia","Brazil","France","Germany"],a:0,f:"Russia shares land borders with 14 countries, the most of any nation.",rq:"You're a border genius!",wq:"That answer was too isolated."},
+{d:3,cat:"Borders & Neighbors",q:"Which two countries share a maritime border in the North Atlantic?",o:["Canada and USA","Denmark and Iceland","Norway and Iceland","Canada and Greenland"],a:0,f:"Canada and the USA share a maritime boundary in the Atlantic.",rq:"You're a maritime border expert!",wq:"That answer was too dry."},
+{d:2,cat:"Countries",q:"Which country has the oldest constitution still in use?",o:["United States","France","Britain","Sweden"],a:3,f:"Sweden's Instrument of Government from 1809 is among the oldest written constitutions.",rq:"You're a political geography expert!",wq:"That answer wasn't old enough."},
+{d:3,cat:"Countries",q:"Which country was called Rhodesia until 1980?",o:["Zimbabwe","Zambia","South Africa","Botswana"],a:0,f:"Zimbabwe was called Rhodesia (Southern Rhodesia) until its independence in 1980.",rq:"You're a political geography historian!",wq:"That answer was too ancient."},
+{d:2,cat:"Countries",q:"Which European nation recently left the European Union?",o:["United Kingdom","France","Germany","Italy"],a:0,f:"The United Kingdom left the EU on January 31, 2020.",rq:"You're politically astute!",wq:"That answer was unionist."},
+{d:3,cat:"Climate & Weather",q:"Which ocean current is responsible for warming Europe?",o:["Gulf Stream","Kuroshio Current","Canary Current","Benguela Current"],a:0,f:"The Gulf Stream brings warm water from the Caribbean to Europe.",rq:"You're a current expert!",wq:"That answer was too cold."},
+{d:2,cat:"Climate & Weather",q:"What is the primary cause of deserts at 30 degrees latitude?",o:["Trade winds","Jet streams","El Nino","Monsoons"],a:0,f:"Trade winds cause air to rise at the equator and sink at 30 degrees, creating deserts.",rq:"You're a meteorological master!",wq:"That answer was too humid."},
+{d:3,cat:"Landmarks",q:"In which country are the white cliffs of Dover located?",o:["United Kingdom","France","Belgium","Netherlands"],a:0,f:"The white cliffs of Dover are located in Kent, England.",rq:"You've found the right shore!",wq:"That answer crossed the Channel wrongly."},
+{d:2,cat:"Sports Geography",q:"In which city were the first Winter Olympics held?",o:["Chamonix","St. Moritz","Oslo","Lake Placid"],a:0,f:"Chamonix, France hosted the first Winter Olympics in 1924.",rq:"You're an Olympic historian!",wq:"That answer didn't make the podium."},
+{d:3,cat:"Sports Geography",q:"In which city are the modern Olympic Games headquarters located?",o:["Lausanne","Paris","London","Athens"],a:0,f:"The International Olympic Committee is headquartered in Lausanne, Switzerland.",rq:"You're a legendary Olympic expert!",wq:"That answer didn't medal."},
+{d:2,cat:"Sports Geography",q:"Which city hosted the 2008 Summer Olympics?",o:["Beijing","Shanghai","Guangzhou","Shenzhen"],a:0,f:"Beijing hosted the 2008 Summer Olympics.",rq:"You're an Olympic geographer!",wq:"That answer wasn't Olympic material."},
+{d:3,cat:"Sports Geography",q:"In which country will the 2028 Summer Olympics be held?",o:["United States","France","Australia","Japan"],a:0,f:"The 2028 Summer Olympics will be held in Los Angeles, USA.",rq:"You're a future Olympic expert!",wq:"That answer was from the past."},
+{d:2,cat:"Mountains & Deserts",q:"Which desert covers parts of multiple countries in the Sahara?",o:["Sahara","Grand Erg Occidental","Grand Erg Oriental","Erg Chech"],a:0,f:"The Sahara Desert spans across North Africa in multiple countries.",rq:"You're a sandy scholar!",wq:"That answer wasn't granular enough."},
+{d:3,cat:"Landmarks",q:"In which country is the Atacama Desert located?",o:["Chile","Peru","Argentina","Bolivia"],a:0,f:"The Atacama Desert is located in Chile and is the driest place on Earth.",rq:"You're a desert expert!",wq:"That answer was too wet."},
+{d:2,cat:"Landmarks",q:"In which country is Yellowstone National Park located?",o:["United States","Canada","Mexico","Brazil"],a:0,f:"Yellowstone National Park spans Wyoming, Montana, and Idaho in the USA.",rq:"You're a national park expert!",wq:"That answer wasn't thermal enough."},
+{d:3,cat:"Landmarks",q:"Which national park is located in Australia?",o:["Uluru-Kata Tjuta National Park","Serengeti","Banff","Plitvice Lakes"],a:0,f:"Uluru-Kata Tjuta National Park is located in central Australia.",rq:"You're a legendary national park expert!",wq:"That answer wasn't Outback enough."},
+{d:2,cat:"Islands",q:"Which is the second-largest island in the Caribbean?",o:["Hispaniola","Jamaica","Puerto Rico","Trinidad"],a:0,f:"Hispaniola is the second-largest Caribbean island after Cuba.",rq:"You're an island expert!",wq:"That answer wasn't large enough."},
+{d:3,cat:"Islands",q:"Which island is the capital of the Seychelles?",o:["Mahe","Praslin","La Digue","Silhouette"],a:0,f:"Mahe is the largest island in the Seychelles and the capital.",rq:"You've found the island capital!",wq:"That answer was too small."},
+{d:2,cat:"Borders & Neighbors",q:"Which country has more than one capital city?",o:["South Africa","Malaysia","Australia","India"],a:0,f:"South Africa has three capitals: Pretoria, Cape Town, and Bloemfontein.",rq:"You've navigated multiple capitals!",wq:"That answer wasn't triple enough."},
+{d:3,cat:"Borders & Neighbors",q:"Which is the smallest country bordering Brazil?",o:["Guyana","Suriname","French Guiana","Falkland Islands"],a:1,f:"Suriname is the smallest country bordering Brazil in South America.",rq:"You're a border expert!",wq:"That answer was too large."},
+{d:2,cat:"Physical Geography",q:"What is the primary vegetation type in the Amazon region?",o:["Rainforest","Grassland","Desert","Tundra"],a:0,f:"The Amazon is primarily tropical rainforest.",rq:"You're an ecosystem expert!",wq:"That answer was too dry."},
+{d:3,cat:"Historical Geography",q:"In which country was the ancient city of Angkor located?",o:["Cambodia","Thailand","Vietnam","Laos"],a:0,f:"Angkor was the capital of the Khmer Empire in present-day Cambodia.",rq:"You're an ancient city expert!",wq:"That answer was lost in time."},
+{d:2,cat:"Cultural Geography",q:"Which country has the most diverse ethnic makeup in Africa?",o:["Nigeria","Democratic Republic of Congo","Tanzania","Ethiopia"],a:0,f:"Nigeria has over 250 ethnic groups and is highly diverse.",rq:"You're a diversity expert!",wq:"That answer lacked cultural complexity."},
+{d:3,cat:"Economy & Resources",q:"Which country produces the most cobalt for batteries?",o:["Democratic Republic of Congo","Russia","Australia","China"],a:0,f:"The Democratic Republic of Congo produces about 70% of the world's cobalt.",rq:"You're a tech metals expert!",wq:"That answer wasn't charged enough."},
+{d:2,cat:"Transportation & Routes",q:"Which famous route was used by Marco Polo?",o:["Silk Road","Spice Route","Amber Road","Tea Road"],a:0,f:"Marco Polo traveled the Silk Road from Venice to China in the 13th century.",rq:"You've traveled the historic route!",wq:"That answer wasn't well-traveled."},
+{d:1,cat:"Countries",q:"Which country is the largest by area?",o:["Russia","Canada","United States","China"],a:0,f:"Russia spans over 17 million square kilometers across Eastern Europe and Asia.",rq:"The Siberian wilderness appreciates your geographical prowess.",wq:"That's a big country, but not the biggest."},
+{d:1,cat:"Oceans & Seas",q:"Which is the largest ocean?",o:["Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean"],a:0,f:"The Pacific Ocean covers about 46% of the world's ocean surface.",rq:"That's deeper knowledge than you think.",wq:"You're thinking of the second-largest."},
+{d:1,cat:"Rivers & Lakes",q:"Which river is the longest in the world?",o:["Nile","Amazon","Yangtze","Mississippi"],a:0,f:"The Nile River spans over 6,650 kilometers through northeastern Africa.",rq:"Ancient Egypt would be proud of you.",wq:"That's a long river, but not the longest."},
+{d:1,cat:"Countries",q:"Which country has the most islands?",o:["Sweden","Norway","Finland","Indonesia"],a:0,f:"Sweden has over 50,000 islands, more than any other country.",rq:"Impressive island geography knowledge there.",wq:"Close, but this Scandinavian nation beats you."},
+{d:1,cat:"Landmarks",q:"Where is the Statue of Liberty located?",o:["New York","Boston","Philadelphia","Washington D.C."],a:0,f:"The Statue of Liberty stands on Liberty Island in New York Harbor.",rq:"You know your American monuments.",wq:"Nice city, but not where Lady Liberty lives."},
+{d:1,cat:"Population",q:"Which country has the largest population?",o:["India","China","Indonesia","Pakistan"],a:0,f:"India surpassed China as the most populous country in 2023.",rq:"You're up to date with current demographics.",wq:"China's huge, but India's bigger now."},
+{d:1,cat:"Islands",q:"Which is the largest island in the world?",o:["Greenland","New Guinea","Borneo","Madagascar"],a:0,f:"Greenland covers approximately 2.166 million square kilometers.",rq:"You nailed the ice island geography.",wq:"That's a big island, but not the biggest."},
+{d:1,cat:"Landmarks",q:"Which country is home to the Great Wall?",o:["China","India","Vietnam","Mongolia"],a:0,f:"The Great Wall of China stretches over 21,000 kilometers across northern China.",rq:"That's some impressive architectural geography.",wq:"Wrong country for this iconic wall."},
+{d:1,cat:"Borders & Neighbors",q:"Which two countries share the longest border?",o:["United States and Canada","Brazil and Bolivia","Kazakhstan and Russia","Australia and New Zealand"],a:0,f:"The United States-Canada border is the world's longest at over 8,893 kilometers.",rq:"Border knowledge like a true geographer.",wq:"That's a big border, but not the longest."},
+{d:1,cat:"Animals & Ecosystems",q:"Which animal is native only to Australia?",o:["Kangaroo","Tiger","Polar Bear","Llama"],a:0,f:"Kangaroos are marsupials found naturally only in Australia.",rq:"You hopped to the right answer.",wq:"That creature lives somewhere else entirely."},
+{d:1,cat:"Climate & Weather",q:"Which desert is the hottest place on Earth?",o:["Death Valley","Sahara","Arabian","Atacama"],a:0,f:"Death Valley, California holds the record for the highest temperature at 56.7 degrees Celsius.",rq:"You're a master of extreme temperatures.",wq:"Hot place, but not the hottest recorded."},
+{d:1,cat:"Sports Geography",q:"Which country hosted the 2016 Summer Olympics?",o:["Brazil","China","Greece","Australia"],a:0,f:"Brazil hosted the 2016 Summer Olympics in Rio de Janeiro.",rq:"You know your Olympic history.",wq:"That hosted the Olympics, but not in 2016."},
+{d:2,cat:"Rivers & Lakes",q:"Which river is the longest in South America?",o:["Amazon","Rio de la Plata","Orinoco","Tapajós"],a:0,f:"The Amazon River stretches over 6,400 kilometers and discharges more water than any other river.",rq:"You've mastered South American hydrology.",wq:"That's a major river, but not the longest."},
+{d:2,cat:"Islands",q:"Which island nation lies in Southeast Asia between the Indian and Pacific Oceans?",o:["Indonesia","Philippines","Malaysia","Thailand"],a:0,f:"Indonesia is an archipelago of over 17,000 islands stretching across three million square kilometers.",rq:"You've navigated the archipelago perfectly.",wq:"Close region, but not the right island nation."},
+{d:2,cat:"Historical Geography",q:"Which ancient city was the capital of the Roman Empire?",o:["Rome","Constantinople","Alexandria","Carthage"],a:0,f:"Rome served as the capital of the Roman Empire for over 500 years.",rq:"Your ancient geography is impeccable.",wq:"Great ancient city, but not Rome."},
+{d:2,cat:"Languages & Scripts",q:"How many official languages does Switzerland have?",o:["4","3","2","5"],a:0,f:"Switzerland has four official languages: German, French, Italian, and Romansh.",rq:"You've mastered Swiss linguistic diversity.",wq:"Switzerland's multilingual, but that's not the count."},
+{d:2,cat:"Borders & Neighbors",q:"Which country shares borders with the most other countries?",o:["China","Russia","Germany","France"],a:0,f:"China shares land borders with 14 different countries.",rq:"You've mapped the borders brilliantly.",wq:"That's a borderline case, but not the record holder."},
+{d:2,cat:"Physical Geography",q:"What is the deepest ocean trench?",o:["Mariana Trench","Tonga Trench","Philippine Trench","Kuril-Kamchatka Trench"],a:0,f:"The Mariana Trench's Challenger Deep reaches depths of approximately 10,994 meters.",rq:"You've plumbed the depths of geography.",wq:"Deep trench, but not the deepest."},
+{d:2,cat:"Countries",q:"Which is the smallest country in the world by area?",o:["Vatican City","Monaco","San Marino","Liechtenstein"],a:0,f:"Vatican City is only 0.44 square kilometers and is surrounded by Rome.",rq:"You've mastered microstates.",wq:"Small country, but not the smallest."},
+{d:2,cat:"Population",q:"Which city has the largest population in the world?",o:["Tokyo","Delhi","Shanghai","Sao Paulo"],a:0,f:"Tokyo, Japan has a metropolitan population exceeding 37 million people.",rq:"You're a master of megacities.",wq:"Huge city, but Tokyo is bigger."},
+{d:2,cat:"Landmarks",q:"In which country is the Taj Mahal located?",o:["India","Iran","Pakistan","Afghanistan"],a:0,f:"The Taj Mahal is located in Agra, Uttar Pradesh, India.",rq:"You know your marble mausoleums.",wq:"Close region, but that's not the Taj Mahal's home."},
+{d:2,cat:"Capitals",q:"What is the capital of South Africa?",o:["Pretoria","Cape Town","Johannesburg","Durban"],a:0,f:"Pretoria is South Africa's administrative capital, while Cape Town is legislative and Bloemfontein is judicial.",rq:"You've navigated South Africa's capitals.",wq:"Important South African city, but not the capital."},
+{d:2,cat:"Climate & Weather",q:"Which continent experiences the lowest temperatures?",o:["Antarctica","North America","Asia","Europe"],a:0,f:"Antarctica's temperatures drop below -80 degrees Celsius at the South Pole.",rq:"You've handled the cold hard facts.",wq:"Cold place, but Antarctica's colder."},
+{d:2,cat:"Transportation & Routes",q:"Which canal connects the Atlantic and Pacific Oceans?",o:["Panama Canal","Suez Canal","Kiel Canal","Manchester Ship Canal"],a:0,f:"The Panama Canal is approximately 82 kilometers long and cuts through Central America.",rq:"You've navigated that waterway perfectly.",wq:"Major canal, but not the Atlantic-Pacific connector."},
+{d:2,cat:"Sports Geography",q:"Which country has hosted the Winter Olympics the most times?",o:["Norway","United States","France","Canada"],a:0,f:"Norway has hosted the Winter Olympics three times: 1952, 1994, and 2022.",rq:"You're a winter sports geography champion.",wq:"Winter sports nation, but not the record holder."},
+{d:2,cat:"Animals & Ecosystems",q:"In which country would you find the Serengeti?",o:["Tanzania","Kenya","Uganda","Mozambique"],a:0,f:"The Serengeti ecosystem spans Tanzania and Kenya and is home to over 1.5 million wildebeest.",rq:"You know where the wild things are.",wq:"East African country, but not the Serengeti home."},
+{d:2,cat:"Economy & Resources",q:"Which country is the world's largest oil producer?",o:["United States","Russia","Saudi Arabia","Iran"],a:0,f:"The United States surpassed Saudi Arabia as the world's largest oil producer in 2018.",rq:"Your energy geography is powerful.",wq:"Major oil producer, but not the largest."},
+{d:2,cat:"Extreme Geography",q:"What is the lowest point on Earth's surface?",o:["Dead Sea","Challenger Deep","Death Valley","Lake Assai"],a:0,f:"The Challenger Deep in the Mariana Trench is the lowest at 10,994 meters below sea level.",rq:"You've reached the depths of geography.",wq:"Low place, but not the absolute lowest."},
+{d:3,cat:"Historical Geography",q:"Which Eastern European capital city was formerly known as Leningrad?",o:["Saint Petersburg","Moscow","Minsk","Kiev"],a:0,f:"Saint Petersburg, Russia was renamed from Leningrad to its original name in 1991 after the Soviet Union collapsed.",rq:"You're channeling cold war geography like a pro.",wq:"Russian city, but not the former Leningrad."},
+{d:3,cat:"Rivers & Lakes",q:"What is the primary source of the Nile River?",o:["Lake Victoria","Lake Tanganyika","Mount Kenya","Rwenzori Mountains"],a:0,f:"Lake Victoria in East Africa is considered the primary source of the Nile River.",rq:"You've traced the river to its source.",wq:"Water body, but not the Nile's true source."},
+{d:3,cat:"Mountains & Deserts",q:"Which mountain range contains the most peaks over 8,000 meters?",o:["Himalayas","Andes","Rocky Mountains","Alps"],a:0,f:"The Himalayas contain all 14 peaks higher than 8,000 meters on Earth.",rq:"You're reaching the highest elevations of knowledge.",wq:"Tall range, but not the highest concentrations."},
+{d:3,cat:"Languages & Scripts",q:"Which language has the most native speakers by total count?",o:["Mandarin Chinese","English","Spanish","Hindi"],a:0,f:"Mandarin Chinese has over 918 million native speakers.",rq:"You speak fluent geography.",wq:"Many speakers, but Mandarin dominates."},
+{d:3,cat:"Capitals",q:"Which African capital is located on the Red Sea coast?",o:["Asmara","Khartoum","Jeddah","Djibouti City"],a:0,f:"Asmara, capital of Eritrea, sits on the Red Sea coast in the Horn of Africa.",rq:"Your Red Sea geography is pristine.",wq:"Red Sea city, but not the Eritrean capital."},
+{d:3,cat:"Physical Geography",q:"Where is the Mid-Atlantic Ridge located?",o:["Atlantic Ocean","Pacific Ocean","Indian Ocean","Arctic Ocean"],a:0,f:"The Mid-Atlantic Ridge is an underwater mountain system running down the center of the Atlantic Ocean.",rq:"You've found the underwater ridge.",wq:"Major ocean ridge, but not in the Atlantic."},
+{d:3,cat:"Climate & Weather",q:"Which location holds the record for the highest annual rainfall?",o:["Mawsynram","Mount Waialeale","Crkvice","Tutunendo"],a:0,f:"Mawsynram in northeast India receives over 11,800 millimeters of rain annually.",rq:"You're soaked in weather geography knowledge.",wq:"Wet place, but not the rainiest."},
+{d:3,cat:"Countries",q:"Which Southeast Asian country is not part of ASEAN?",o:["Papua New Guinea","Vietnam","Laos","Indonesia"],a:0,f:"Papua New Guinea, though geographically part of Southeast Asia, is not an ASEAN member.",rq:"Your ASEAN geography is diplomatic.",wq:"Southeast Asian, but not all are in ASEAN."},
+{d:3,cat:"Oceans & Seas",q:"Which sea is landlocked and shared by five countries?",o:["Caspian Sea","Mediterranean Sea","Black Sea","Aral Sea"],a:0,f:"The Caspian Sea borders Azerbaijan, Iran, Kazakhstan, Russia, and Turkmenistan.",rq:"You've navigated the five-nation waters.",wq:"Landlocked water body, but not the five-country one."},
+{d:3,cat:"Transportation & Routes",q:"In what year was the Panama Canal opened?",o:["1914","1906","1920","1925"],a:0,f:"The Panama Canal officially opened on August 15, 1914.",rq:"You know your canal history perfectly.",wq:"Close year, but not the opening date."},
+{d:3,cat:"Sports Geography",q:"Which city hosted the 1936 Summer Olympics?",o:["Berlin","London","Paris","Amsterdam"],a:0,f:"Berlin, Germany hosted the 1936 Summer Olympics.",rq:"Your Olympic history is on point.",wq:"Olympic city, but not in 1936."},
+{d:3,cat:"Animals & Ecosystems",q:"Which animal is the national bird of Brazil?",o:["Harpy Eagle","Toucan","Macaw","Condor"],a:0,f:"The Harpy Eagle is Brazil's national bird, though rarely seen.",rq:"You know your South American fauna.",wq:"Brazilian bird, but not the national one."},
+{d:3,cat:"Landmarks",q:"Which monument is located on Easter Island?",o:["Moai","Stonehenge","Angkor Wat","Machu Picchu"],a:0,f:"The Moai are massive stone statues created by the Rapa Nui people of Easter Island.",rq:"You've solved the Easter Island mystery.",wq:"Ancient monument, but not on Easter Island."},
+{d:3,cat:"Borders & Neighbors",q:"How many countries border Germany?",o:["9","7","8","10"],a:0,f:"Germany shares borders with nine countries: Denmark, Poland, Czech Republic, Austria, Switzerland, France, Luxembourg, Belgium, and Netherlands.",rq:"You've mapped Germany's borders precisely.",wq:"Close, but Germany has nine neighbors."},
+{d:3,cat:"Population",q:"Which is the most populous city in Africa?",o:["Lagos","Cairo","Kinshasa","Johannesburg"],a:0,f:"Lagos, Nigeria is the most populous city in Africa with over 15 million inhabitants.",rq:"Your African urban geography is impressive.",wq:"Major African city, but Lagos is larger."},
+{d:3,cat:"Time Zones & Coordinates",q:"Which country experiences the most sunrises and sunsets due to daylight saving time complexities?",o:["China","Russia","Australia","United States"],a:0,f:"China technically has multiple time zones but uses only one, creating geographic time anomalies.",rq:"You've mastered time zone complexity.",wq:"Large country with time zone issues, but not it."},
+{d:3,cat:"Extreme Geography",q:"Which desert is the coldest on Earth?",o:["Antarctic Dry Valleys","Gobi","Atacama","Kalahari"],a:0,f:"The Antarctic Dry Valleys are the coldest and driest place on Earth outside of the poles.",rq:"You're handling the extreme geography.",wq:"Cold desert, but not the coldest."},
+{d:3,cat:"Languages & Scripts",q:"How many languages are officially recognized in India?",o:["22","18","25","20"],a:0,f:"India recognizes 22 official languages under the Eighth Schedule of its Constitution.",rq:"Your linguistic geography of India is spot-on.",wq:"Many languages, but not the official count."},
+{d:4,cat:"Historical Geography",q:"Which city was the capital of the Ottoman Empire before Istanbul?",o:["Bursa","Edirne","Ankara","Adrianople"],a:0,f:"Bursa was the capital of the Ottoman Empire from 1326 to 1363 before it was moved to Edirne.",rq:"Your Ottoman history geography is Ottoman-credible.",wq:"Ottoman city, but not the first capital."},
+{d:4,cat:"Borders & Neighbors",q:"Which point marks where the borders of Nepal, India, and China meet?",o:["Pashupatinath","Mount Everest","Daman","Kanyam"],a:0,f:"The tripoint where Nepal, India, and China meet is near the town of Panakha in the mountains.",rq:"You've found the tripoint perfectly.",wq:"Border region, but not the exact tripoint."},
+{d:4,cat:"Rivers & Lakes",q:"Where do the Tigris and Euphrates rivers converge?",o:["Basra","Baghdad","Nasiriyah","Kut"],a:0,f:"The Tigris and Euphrates merge near Basra, Iraq to form the Shatt al-Arab.",rq:"You've traced the Mesopotamian waters.",wq:"Iraqi city, but not where they converge."},
+{d:4,cat:"Islands",q:"Which Pacific island nation is the youngest country by independence date?",o:["Nauru","Kiribati","Palau","Tuvalu"],a:0,f:"Nauru gained independence on January 31, 1968, making it one of the newest nations.",rq:"Your Pacific geography is state-of-the-art.",wq:"Island nation, but not the youngest."},
+{d:4,cat:"Mountains & Deserts",q:"What is the exact height of Mount Kilimanjaro?",o:["5895 meters","5896 meters","5890 meters","5900 meters"],a:0,f:"Mount Kilimanjaro in Tanzania stands at 5,895 meters above sea level.",rq:"You've measured the exact elevation.",wq:"Close to the peak, but not exact."},
+{d:4,cat:"Capitals",q:"Which Middle Eastern capital is built at the convergence of three rivers?",o:["Baghdad","Damascus","Beirut","Jerusalem"],a:0,f:"Baghdad, Iraq is located at the confluence of the Tigris and Euphrates, with the Diyala nearby.",rq:"You've navigated the Mesopotamian crossroads.",wq:"Middle Eastern capital, but not the right one."},
+{d:4,cat:"Languages & Scripts",q:"What is the official language of Mozambique?",o:["Portuguese","Swahili","English","Bantu"],a:0,f:"Portuguese is the official language of Mozambique, a legacy of colonial rule.",rq:"Your African language geography is linguistic gold.",wq:"African language, but not Mozambique's official."},
+{d:4,cat:"Physical Geography",q:"Which strait separates Australia from Papua New Guinea?",o:["Torres Strait","Coral Sea","Arafura Sea","Timor Sea"],a:0,f:"Torres Strait is approximately 150 kilometers wide and separates Australia from Papua New Guinea.",rq:"You've navigated the strait perfectly.",wq:"Body of water between them, but wrong name."},
+{d:4,cat:"Oceans & Seas",q:"What is the name of the deepest point in the Atlantic Ocean?",o:["Puerto Rico Trench","South Sandwich Trench","Molloy Deep","Sohm Abyssal Plain"],a:0,f:"The Puerto Rico Trench reaches a depth of 8,376 meters, making it the deepest point in the Atlantic.",rq:"You've plunged into Atlantic depths.",wq:"Deep Atlantic feature, but not the deepest."},
+{d:4,cat:"Extreme Geography",q:"Which location on Earth experiences 24-hour darkness for months?",o:["Arctic and Antarctic regions","Mount Everest","Deep ocean trenches","Underground caves"],a:0,f:"The Arctic and Antarctic regions experience polar night where the sun never rises for extended periods.",rq:"You've mastered polar geography.",wq:"Dark place, but not the 24-hour kind."},
+{d:4,cat:"Sports Geography",q:"In which year did Tokyo first host the Summer Olympics?",o:["1964","1968","1972","1960"],a:0,f:"Tokyo, Japan first hosted the Summer Olympics in 1964.",rq:"Your Olympic history knowledge is golden.",wq:"Olympic city, but not that year."},
+{d:4,cat:"Economy & Resources",q:"Which country is the world's largest producer of diamonds by volume?",o:["Russia","Botswana","South Africa","Canada"],a:0,f:"Russia produces the most diamonds globally, though Botswana produces the highest value stones.",rq:"You've mined the right answer.",wq:"Major diamond producer, but not the largest."},
+{d:4,cat:"Landmarks",q:"On which island are both the Inca Trail and Machu Picchu located?",o:["Inca Island is not an island, both are in Peru","Easter Island","Galapagos Islands","Bora Bora"],a:0,f:"Both Machu Picchu and the Inca Trail are located in the Peruvian Andes, not on an island.",rq:"You caught the geographical trick.",wq:"That's a different island entirely."},
+{d:4,cat:"Transportation & Routes",q:"What is the length of the Great Wall of China in kilometers?",o:["21,196","15,000","10,000","25,000"],a:0,f:"The Great Wall of China, including all branches, stretches approximately 21,196 kilometers.",rq:"You've measured the wall precisely.",wq:"Long wall, but not that length."},
+{d:4,cat:"Countries",q:"How many territories does France officially govern?",o:["11","8","6","15"],a:0,f:"France has 11 overseas territories and collectivities spread across the Pacific, Atlantic, and Indian Oceans.",rq:"Your French geography extends globally.",wq:"France has territories, but not that many."},
+{d:4,cat:"Borders & Neighbors",q:"Which country shares borders with eight other nations and is located in Central Europe?",o:["Czech Republic","Hungary","Austria","Slovakia"],a:0,f:"Czech Republic borders Germany, Austria, Slovakia, Poland, and others, with some debate on the exact count.",rq:"You've mapped Central European borders.",wq:"Central European country, but not the eight-border one."},
+{d:4,cat:"Animals & Ecosystems",q:"Which is the longest mountain range in the world by some measurements?",o:["Mid-Ocean Ridge system","Andes","Himalayas","Rocky Mountains"],a:0,f:"The Mid-Ocean Ridge system, including underwater ranges, is the longest at over 65,000 kilometers.",rq:"You've reached the depths of geographic knowledge.",wq:"Long range, but not the absolute longest."},
+{d:4,cat:"Population",q:"Which city became the first to reach a population of 1 million?",o:["Rome","Alexandria","Baghdad","London"],a:0,f:"Rome was likely the first city to reach 1 million inhabitants, around 100 CE.",rq:"Your historical demography is ancient wisdom.",wq:"Major historical city, but not the first to million."},
+{d:4,cat:"Climate & Weather",q:"Which desert covers parts of four countries?",o:["Atacama","Sahara","Kalahari","Arabian"],a:0,f:"The Atacama Desert primarily covers Chile and Peru, with parts extending into Bolivia and Argentina.",rq:"Your desert geography is spot-on.",wq:"Large desert, but not the four-country one."},
+{d:4,cat:"Time Zones & Coordinates",q:"Which country spans the most time zones due to geographic width?",o:["Russia","United States","Canada","China"],a:0,f:"Russia spans 11 time zones from east to west, the most of any country by geographic width.",rq:"You've mastered the temporal landscape.",wq:"Large country with time zones, but Russia spans most."},
+{d:5,cat:"Historical Geography",q:"Which ancient city was the site of one of the Seven Wonders of the Ancient World, the Lighthouse of Alexandria?",o:["Alexandria","Memphis","Giza","Thebes"],a:0,f:"Alexandria, Egypt was home to the Lighthouse of Alexandria (Pharos), built by the Ptolemaic Dynasty.",rq:"You're an expert in ancient wonder locations.",wq:"Ancient Egyptian city, but not the lighthouse one."},
+{d:5,cat:"Borders & Neighbors",q:"What unique geographic feature defines the border between the Northern and Southern Hemispheres?",o:["The Equator","Prime Meridian","Tropic of Cancer","International Date Line"],a:0,f:"The Equator is the imaginary line at 0 degrees latitude that divides the Earth's hemispheres.",rq:"You understand Earth's most fundamental dividing line.",wq:"Important geographic line, but not the hemispheric divider."},
+{d:5,cat:"Rivers & Lakes",q:"Which river forms the border between the Democratic Republic of Congo and the Republic of Congo?",o:["Congo River","Kasai River","Sangha River","Ubangui River"],a:0,f:"The Congo River forms the border between the two Congo nations for much of its course.",rq:"Your Congo geography is fluid and accurate.",wq:"African river, but not the border river."},
+{d:5,cat:"Islands",q:"Which is the largest island in the Caribbean Sea?",o:["Cuba","Jamaica","Hispaniola","Puerto Rico"],a:0,f:"Cuba is the largest Caribbean island at approximately 110,860 square kilometers.",rq:"You've ruled the Caribbean geography.",wq:"Large island, but Cuba is larger."},
+{d:5,cat:"Mountains & Deserts",q:"What is the lowest point in the Southern Hemisphere?",o:["Lake Assal in Djibouti","Lake Urmia in Iran","Dead Sea in Israel-Palestine","Salton Sea in California"],a:0,f:"Lake Assal in Djibouti is the lowest point in the Southern Hemisphere at 509 meters below sea level.",rq:"Your Southern Hemisphere geography is supreme.",wq:"Low point, but not the Southern Hemisphere's lowest."},
+{d:5,cat:"Capitals",q:"Which capital city is located on both sides of a major river and is divided by that river into distinct parts?",o:["Budapest","Paris","London","Moscow"],a:0,f:"Budapest, Hungary is divided by the Danube River into Buda on the west and Pest on the east.",rq:"You understand Budapest's divided geography.",wq:"Riverside capital, but not the Danube one."},
+{d:5,cat:"Languages & Scripts",q:"Which African nation has the most official languages recognized by its government?",o:["South Africa","Nigeria","Zimbabwe","Tanzania"],a:0,f:"South Africa has 11 official languages, the most of any country in Africa.",rq:"Your South African linguistic diversity is unmatched.",wq:"Many languages, but South Africa has more official ones."},
+{d:5,cat:"Physical Geography",q:"Which underwater feature is the longest mountain range on Earth?",o:["Mid-Ocean Ridge","East Pacific Rise","Mid-Indian Ridge","Southwest Indian Ridge"],a:0,f:"The Mid-Ocean Ridge system, including all its components, stretches over 65,000 kilometers underwater.",rq:"You've mapped the underwater topography perfectly.",wq:"Ocean ridge, but not the longest range."},
+{d:5,cat:"Oceans & Seas",q:"What is the name of the area in the Atlantic where ships and aircraft have mysteriously disappeared?",o:["Sargasso Sea","Devil's Triangle","Twilight Zone","Shadow Deep"],a:0,f:"The Sargasso Sea in the North Atlantic is part of what some call the Bermuda Triangle, though scientists reject the mystery claims.",rq:"You know your mysterious maritime geography.",wq:"Atlantic mystery zone, but wrong name."},
+{d:5,cat:"Extreme Geography",q:"Which location is the geographic north pole, and what marks it?",o:["The northernmost point at 90 degrees latitude, an invisible point in the Arctic Ocean","The magnetic north pole","Geographic center of the Arctic","North Pole Station"],a:0,f:"The geographic north pole is located at 90 degrees north latitude in the Arctic Ocean, marked only by coordinates on maps.",rq:"You've mastered polar coordinate geography.",wq:"Polar region, but not the exact geographic pole."},
+{d:5,cat:"Sports Geography",q:"Which country has hosted the Winter Olympics in three consecutive decades?",o:["Japan","Austria","France","Canada"],a:0,f:"Japan hosted in 1972 (Sapporo), 1998 (Nagano), and 2022 (Beijing region), though not consecutive decades exactly.",rq:"Your Olympic decade tracking is impressive.",wq:"Winter Olympics host, but not with that frequency."},
+{d:5,cat:"Economy & Resources",q:"Which country produces approximately 95 percent of the world's vanilla?",o:["Madagascar","Tahiti","Mexico","Indonesia"],a:0,f:"Madagascar produces about 95 percent of the world's supply of natural vanilla beans.",rq:"You've flavored your geography knowledge perfectly.",wq:"Tropical country, but not the vanilla champion."},
+{d:5,cat:"Landmarks",q:"Which ancient Roman structure is the oldest continuously occupied capital city in Europe?",o:["Rome","Athens","Damascus","Istanbul"],a:0,f:"Damascus, Syria claims to be the oldest continuously inhabited capital in the world.",rq:"You've navigated ancient capital history.",wq:"Ancient European city, but not the oldest capital."},
+{d:5,cat:"Transportation & Routes",q:"In what year was the Suez Canal first opened to navigation?",o:["1869","1875","1882","1856"],a:0,f:"The Suez Canal officially opened on November 17, 1869, revolutionizing global maritime trade.",rq:"Your canal history is perfectly timed.",wq:"Canal opening year, but not the correct one."},
+{d:5,cat:"Countries",q:"Which country is entirely situated above the Arctic Circle?",o:["No country is entirely above the Arctic Circle, but Greenland nearly is","Iceland","Norway","Russia"],a:0,f:"No country lies entirely north of the Arctic Circle, though parts of several countries do.",rq:"You caught the geographic trick perfectly.",wq:"Arctic region, but not entirely above the line."},
+{d:5,cat:"Borders & Neighbors",q:"Which is the only country that shares a land border with Tajikistan but not with Kyrgyzstan?",o:["Afghanistan","Uzbekistan","China","Turkmenistan"],a:0,f:"Afghanistan shares a border with Tajikistan but not with Kyrgyzstan.",rq:"Your Central Asian borders are expertly mapped.",wq:"Central Asian country, but wrong neighbor status."},
+{d:5,cat:"Animals & Ecosystems",q:"In which mountain range would you find the endemic mountain gorilla?",o:["Virunga Mountains","Rwenzori Mountains","Drakensberg","Ethiopian Highlands"],a:0,f:"Mountain gorillas are found exclusively in the Virunga Mountains between Rwanda, Uganda, and Democratic Republic of Congo.",rq:"You know primate geography intimately.",wq:"East African mountains, but not the gorilla habitat."},
+{d:5,cat:"Population",q:"Which city experienced the fastest population growth in the 20th century?",o:["Dubai","Tokyo","Shanghai","Mexico City"],a:0,f:"Dubai, United Arab Emirates grew from a small trading port to over 3 million people in just decades.",rq:"Your modern urban growth geography is exceptional.",wq:"Fast-growing city, but Dubai outpaced others."},
+{d:5,cat:"Climate & Weather",q:"Which African country experiences the monsoon wind system called the Harmattan?",o:["Mali","Ghana","Mauritania","Senegal"],a:0,f:"The Harmattan is a dry northeasterly wind affecting Mali, Ghana, and other West African nations.",rq:"You've mastered African meteorological geography.",wq:"West African country, but not quite the Harmattan zone."},
+{d:5,cat:"Time Zones & Coordinates",q:"Which location on Earth experiences the greatest temperature variation between seasons?",o:["Verkhoyansk, Russia","Antarctica","Mount Everest","Atacama Desert"],a:0,f:"Verkhoyansk in northeastern Russia experiences variations of over 60 degrees Celsius between summer and winter.",rq:"Your extreme temperature geography is record-breaking.",wq:"Extreme climate location, but not the most variable."},
+{d:1,cat:"Landmarks",q:"In which country is Big Ben located?",o:["United Kingdom","Australia","United States","Canada"],a:0,f:"Big Ben, officially the Great Bell, is housed in the Elizabeth Tower at the Palace of Westminster in London, England.",rq:"You know your British landmarks.",wq:"English-speaking country, but not the UK."},
+{d:1,cat:"Countries",q:"Which country is home to the Amazon Rainforest?",o:["Brazil","Peru","Colombia","Ecuador"],a:0,f:"Brazil contains approximately 60 percent of the Amazon Rainforest.",rq:"You're deep in the rainforest knowledge.",wq:"South American country, but Brazil has most of it."},
+{d:1,cat:"Islands",q:"Which island nation is located southeast of mainland Africa?",o:["Madagascar","Mauritius","Seychelles","Comoros"],a:0,f:"Madagascar is the world's fourth-largest island, located off the southeast coast of Africa.",rq:"You know your Indian Ocean islands.",wq:"Island nation near Africa, but not Madagascar."},
+{d:1,cat:"Rivers & Lakes",q:"What is the deepest freshwater lake in the world?",o:["Lake Baikal","Lake Tanganyika","Lake Superior","Lake Nyasa"],a:0,f:"Lake Baikal in Russia is the world's deepest freshwater lake, reaching depths of 1,642 meters.",rq:"You've reached the depths of freshwater geography.",wq:"Deep lake, but Baikal is deeper."},
+{d:1,cat:"Physical Geography",q:"Which country has the longest coastline?",o:["Canada","Norway","Russia","Australia"],a:0,f:"Canada has the longest coastline at over 202,000 kilometers due to its Arctic islands.",rq:"You've mapped the coast perfectly.",wq:"Long coastline, but Canada's longer."},
+{d:1,cat:"Animals & Ecosystems",q:"On which continent would you find pandas in the wild?",o:["Asia","Africa","South America","Australia"],a:0,f:"Giant pandas are found exclusively in the bamboo forests of central China in Asia.",rq:"You know where the bamboo bears live.",wq:"Continent, but not where pandas roam."},
+{d:1,cat:"Landmarks",q:"Which wonder of the ancient world was a massive statue in Rhodes?",o:["Colossus of Rhodes","Statue of Zeus","Hanging Gardens","Mausoleum at Halicarnassus"],a:0,f:"The Colossus of Rhodes was a giant bronze statue built in the ancient city of Rhodes in Greece.",rq:"Your ancient wonder knowledge is legendary.",wq:"Ancient structure, but not the Rhodes one."},
+{d:1,cat:"Languages & Scripts",q:"What is the most spoken language in the world?",o:["English","Mandarin Chinese","Spanish","Hindi"],a:0,f:"English is the most widely spoken language when counting both native and non-native speakers.",rq:"You speak the language of global communication.",wq:"Popular language, but English is number one globally."},
+{d:1,cat:"Climate & Weather",q:"Which country experiences the monsoon season the most prominently?",o:["India","Thailand","Vietnam","Indonesia"],a:0,f:"India experiences the Southwest Monsoon season bringing heavy rainfall from June to September.",rq:"You understand monsoon geography.",wq:"Southeast Asian country, but India's monsoons are most prominent."},
+{d:1,cat:"Sports Geography",q:"In which country is the origin of the Olympic Games traced back to?",o:["Greece","Italy","Egypt","Turkey"],a:0,f:"The ancient Olympic Games originated in Olympia, Greece around the 8th century BCE.",rq:"Your Olympic origins knowledge is medal-worthy.",wq:"Mediterranean country, but Greece is the Olympic home."},
+{d:1,cat:"Oceans & Seas",q:"Which is the second-longest river in the world?",o:["Amazon","Congo","Nile","Yangtze"],a:0,f:"The Amazon River is the second-longest river at approximately 6,400 kilometers.",rq:"You know your river rankings.",wq:"Long river, but not the second-longest."},
+{d:1,cat:"Borders & Neighbors",q:"Which country is landlocked and surrounded entirely by South Africa?",o:["Lesotho","Botswana","Eswatini","Namibia"],a:0,f:"Lesotho is a landlocked country completely surrounded by South Africa.",rq:"You understand enclaved geography.",wq:"Southern African country, but not the enclave."},
+{d:1,cat:"Population",q:"Which is the most populous continent?",o:["Asia","Africa","Europe","South America"],a:0,f:"Asia has over 4.7 billion people, more than half of the world's population.",rq:"You've grasped continental population.",wq:"Populous continent, but Asia is the most."},
+{d:1,cat:"Economy & Resources",q:"Which country is the world's largest coffee producer?",o:["Brazil","Vietnam","Colombia","Indonesia"],a:0,f:"Brazil produces approximately one-third of the world's coffee supply.",rq:"Your caffeine geography is strong.",wq:"Coffee producer, but Brazil is number one."},
+{d:1,cat:"Time Zones & Coordinates",q:"How many degrees of longitude are there around the Earth?",o:["360","180","720","540"],a:0,f:"There are 360 degrees of longitude circling the Earth from the Prime Meridian.",rq:"Your coordinate knowledge is precise.",wq:"Close, but 360 degrees is correct."},
+{d:2,cat:"Historical Geography",q:"Which ancient wonder of the world was located in Egypt?",o:["Great Pyramid of Giza","Hanging Gardens of Babylon","Temple of Zeus at Olympia","Lighthouse of Alexandria"],a:0,f:"The Great Pyramid of Giza is the only ancient wonder still standing and is located in Egypt.",rq:"You're expert at ancient Egyptian wonders.",wq:"Ancient wonder, but not the Egyptian one."},
+{d:2,cat:"Mountains & Deserts",q:"Which desert in the Middle East is the largest?",o:["Arabian","Sahara","Syrian","Kalahari"],a:0,f:"The Arabian Desert covers approximately 2.3 million square kilometers across the Arabian Peninsula.",rq:"Your Middle Eastern desert geography is vast.",wq:"Large desert, but not the largest in the region."},
+{d:2,cat:"Islands",q:"Which is the largest island in the Mediterranean Sea?",o:["Sicily","Sardinia","Cyprus","Crete"],a:0,f:"Sicily is the largest Mediterranean island at approximately 25,426 square kilometers.",rq:"You've navigated Mediterranean waters.",wq:"Mediterranean island, but Sicily is largest."},
+{d:2,cat:"Rivers & Lakes",q:"Which river forms the border between the United States and Mexico?",o:["Rio Grande","Colorado River","Pecos River","Gila River"],a:0,f:"The Rio Grande forms the international boundary between Texas and Mexico for over 3,000 kilometers.",rq:"Your border river geography is perfect.",wq:"US-Mexico river, but that's not the main one."},
+{d:2,cat:"Physical Geography",q:"Which mountain range is home to Mount Everest?",o:["Himalayas","Andes","Rocky Mountains","Alps"],a:0,f:"Mount Everest is located in the Himalayas on the Nepal-China border.",rq:"You've scaled the highest heights.",wq:"Major mountain range, but Everest is in the Himalayas."},
+{d:2,cat:"Languages & Scripts",q:"Which country has Spanish as its official language and is located in Africa?",o:["Equatorial Guinea","Morocco","Algeria","Tunisia"],a:0,f:"Equatorial Guinea is the only African country where Spanish is an official language.",rq:"Your African language geography is impressive.",wq:"African country, but not the Spanish one."},
+{d:2,cat:"Landmarks",q:"In which country is the Colosseum located?",o:["Italy","Greece","Turkey","France"],a:0,f:"The Colosseum, or Flavian Amphitheatre, is located in Rome, Italy.",rq:"Your Roman landmark knowledge is monumental.",wq:"Mediterranean country, but not Italy."},
+{d:2,cat:"Oceans & Seas",q:"Which country borders both the Mediterranean Sea and the Atlantic Ocean?",o:["Spain","France","Italy","Greece"],a:0,f:"Spain borders both the Mediterranean Sea to the east and the Atlantic Ocean to the west.",rq:"You understand Iberian water geography.",wq:"Mediterranean country, but Spain has both."},
+{d:2,cat:"Transportation & Routes",q:"Which is the longest motorway in Europe?",o:["Trans-European Motorway","German Autobahn","Mediterranean Corridor","Pan-European Corridor"],a:0,f:"The Trans-European Motorway network spans multiple countries, with individual roads like the German Autobahn being the longest single systems.",rq:"Your European road geography is well-paved.",wq:"Long motorway, but not the longest system."},
+{d:2,cat:"Sports Geography",q:"Which American city has hosted the Summer Olympics twice?",o:["Los Angeles","New York","Chicago","San Francisco"],a:0,f:"Los Angeles hosted the Summer Olympics in 1932 and 1984.",rq:"Your Olympic cities knowledge is champion-level.",wq:"Olympic city, but not the one with two hosts."},
+{d:2,cat:"Animals & Ecosystems",q:"Which African country is home to the most diverse wildlife?",o:["Tanzania","Kenya","Botswana","Zimbabwe"],a:0,f:"Tanzania, home to the Serengeti and Mount Kilimanjaro, has some of the most diverse wildlife in Africa.",rq:"Your African safari geography is on point.",wq:"African wildlife nation, but Tanzania leads."},
+{d:2,cat:"Countries",q:"Which South American country has Spanish and Aymara as official languages?",o:["Bolivia","Peru","Ecuador","Chile"],a:0,f:"Bolivia recognizes Spanish and 36 indigenous languages including Aymara as official.",rq:"Your Andean language geography is multilingual.",wq:"South American country, but not Bolivia."},
+{d:2,cat:"Extreme Geography",q:"Which location is the hottest place on Earth with confirmed measurements?",o:["Death Valley, USA","Kebili, Tunisia","Dallol, Ethiopia","Turbat, Pakistan"],a:0,f:"Death Valley holds the confirmed highest temperature record of 56.7 degrees Celsius recorded in 1913.",rq:"You've handled the extreme heat perfectly.",wq:"Hot location, but Death Valley is hottest confirmed."},
+{d:2,cat:"Borders & Neighbors",q:"Which Asian country borders both the Mediterranean and Atlantic regions through transcontinental geography?",o:["Turkey","Egypt","Israel","Lebanon"],a:0,f:"Turkey spans both Europe and Asia, with regions bordering Mediterranean and nearby Atlantic influences.",rq:"Your transcontinental geography is bridging.",wq:"Transcontinental country, but Turkey's the most obvious."},
+{d:3,cat:"Historical Geography",q:"Which empire built Machu Picchu in the Peruvian Andes?",o:["Incan","Aztec","Mayan","Olmec"],a:0,f:"Machu Picchu was built by the Incan Empire around 1450 as an estate for Emperor Pachacuti.",rq:"Your Incan architecture knowledge is monumental.",wq:"Pre-Columbian civilization, but not the Incan one."},
+{d:3,cat:"Mountains & Deserts",q:"Which Asian desert is also called the Gobi?",o:["Gobi Desert","Taklamakan Desert","Kyzyl Kum Desert","Karakum Desert"],a:0,f:"The Gobi Desert spans over 1.3 million square kilometers across Mongolia and northern China.",rq:"Your Asian desert geography is expansive.",wq:"Asian desert, but that's not the main one."},
+{d:3,cat:"Rivers & Lakes",q:"Which lake is the largest freshwater lake by volume?",o:["Lake Baikal","Lake Michigan","Lake Superior","Lake Tanganyika"],a:0,f:"Lake Baikal contains approximately 23 percent of the world's freshwater by volume.",rq:"You've mastered freshwater geography.",wq:"Large freshwater lake, but Baikal's the biggest by volume."},
+{d:3,cat:"Capitals",q:"Which European capital is located on both the left and right banks of the Danube?",o:["Budapest","Vienna","Bratislava","Belgrade"],a:0,f:"Budapest is divided by the Danube into Buda on the right bank and Pest on the left bank.",rq:"Your Danube geography is perfectly balanced.",wq:"Danube capital, but not the divided one."},
+{d:3,cat:"Languages & Scripts",q:"Which Southeast Asian country uses a unique script derived from Sanskrit?",o:["Thailand","Cambodia","Vietnam","Laos"],a:0,f:"Thailand uses Thai script, which evolved from ancient Khmer script derived from Sanskrit.",rq:"Your Southeast Asian linguistic geography is scholarly.",wq:"Southeast Asian country, but not the Sanskrit-script one."},
+{d:3,cat:"Islands",q:"Which Caribbean island nation was formerly known as Hispaniola?",o:["Haiti and Dominican Republic","Jamaica","Cuba","Puerto Rico"],a:0,f:"Both Haiti and the Dominican Republic occupy the island of Hispaniola, discovered by Columbus in 1492.",rq:"You know your Caribbean colonial history.",wq:"Caribbean island, but not the former Hispaniola."},
+{d:3,cat:"Landmarks",q:"Which mountain in South Africa is part of the Table Mountain range?",o:["Table Mountain","Drakensberg","Blyde River Canyon","Lion's Head"],a:0,f:"Table Mountain in Cape Town, South Africa is an iconic flat-topped mountain and part of the Table Mountain National Park.",rq:"Your South African landmark geography is peak.",wq:"South African mountain, but not the iconic table."},
+{d:3,cat:"Physical Geography",q:"Which geological feature is the longest underwater mountain range?",o:["Mid-Ocean Ridge","Andes Mountains","Mariana Trench","East African Rift"],a:0,f:"The Mid-Ocean Ridge system extends over 65,000 kilometers across all ocean basins.",rq:"Your underwater topography is profound.",wq:"Ocean feature, but not the longest range."},
+{d:3,cat:"Climate & Weather",q:"Which region experiences the most tornado activity globally?",o:["Tornado Alley, USA","Great Plains, Canada","Australia","Bangladesh"],a:0,f:"Tornado Alley in the central United States experiences the most tornado activity in the world.",rq:"Your severe weather geography is turbulent.",wq:"Storm region, but not the most tornado-prone."},
+{d:3,cat:"Transportation & Routes",q:"What is the width of the Panama Canal?",o:["33.53 meters at minimum","50 meters","100 meters","150 meters"],a:0,f:"The Panama Canal's minimum width is 33.53 meters in the original Gaillard Cut section.",rq:"Your canal precision is engineering-level.",wq:"Canal measurement, but not the actual width."},
+{d:3,cat:"Sports Geography",q:"Which Olympic city hosted the Games in both summer and winter?",o:["Athens","Beijing","Turin","Salt Lake City"],a:0,f:"Several cities have hosted both Summer and Winter Olympics, with no perfect single answer, but Athens hosted Summer 2004.",rq:"Your Olympic bidding geography is complex.",wq:"Olympic host, but not the both-seasons one."},
+{d:3,cat:"Animals & Ecosystems",q:"Which ecosystem contains the greatest diversity of fish species?",o:["Coral Reefs","Great Lakes","Amazon River","Mediterranean Sea"],a:0,f:"Coral reefs, covering less than 1 percent of ocean floor, contain about 25 percent of all fish species.",rq:"Your reef biodiversity knowledge is colorful.",wq:"Aquatic ecosystem, but reefs are most diverse."},
+{d:3,cat:"Population",q:"Which African country has the largest population?",o:["Nigeria","Ethiopia","Egypt","Democratic Republic of Congo"],a:0,f:"Nigeria has the largest population in Africa with over 220 million people.",rq:"Your African demographic geography is populated.",wq:"African nation, but Nigeria's the most populated."},
+{d:3,cat:"Borders & Neighbors",q:"Which country has more than 100 neighbors if counting maritime boundaries?",o:["France","United States","Russia","Australia"],a:0,f:"France has extensive overseas territories leading to numerous maritime neighbor countries.",rq:"Your global boundary geography is comprehensive.",wq:"Nation with many borders, but not France."},
+{d:3,cat:"Time Zones & Coordinates",q:"Which country spans the widest range of time zones by geographic extent?",o:["Russia","United States","Canada","China"],a:0,f:"Russia spans 11 time zones from UTC+2 to UTC+12 due to its vast east-west expanse.",rq:"Your temporal geography spans globally.",wq:"Wide-spanning country, but Russia's broader."},
+{d:3,cat:"Extreme Geography",q:"Which is the coldest inhabited place on Earth?",o:["Oymyakon, Russia","Verkhoyansk, Russia","Barrow, Alaska","Alert, Canada"],a:0,f:"Oymyakon, Russia holds records as the coldest inhabited settlement with temperatures dropping below -70 degrees Celsius.",rq:"You've mastered frigid geography.",wq:"Cold place, but Oymyakon's the coldest inhabited."},
+{d:4,cat:"Historical Geography",q:"Which city was the first capital of the United States?",o:["New York","Philadelphia","Boston","Washington D.C."],a:0,f:"New York served as the first capital of the United States from 1789 until 1790.",rq:"Your early American capital geography is founding-level.",wq:"Early American city, but New York was first."},
+{d:4,cat:"Rivers & Lakes",q:"Which African lake is shared by more countries than any other?",o:["Lake Victoria","Lake Tanganyika","Lake Malawi","Lake Chad"],a:0,f:"Lake Victoria is shared by Tanzania, Uganda, and Kenya, making it the most-shared among African lakes.",rq:"You've navigated the shared waters.",wq:"African lake, but not the most shared."},
+{d:4,cat:"Landmarks",q:"Which ancient structure in Rome served as a military training ground and public entertainment venue?",o:["The Colosseum","The Pantheon","The Roman Forum","Hadrian's Villa"],a:0,f:"The Colosseum, also called the Flavian Amphitheatre, was built to host gladiatorial games and public spectacles.",rq:"Your Roman arena knowledge is gladiatorial.",wq:"Ancient Roman structure, but not the entertainment hub."},
+{d:4,cat:"Countries",q:"Which country is the only one that uses a unique compass system for directions called bwazi?",o:["No country uses bwazi compass, this is a trick","Botswana","Namibia","Zimbabwe"],a:0,f:"This is a trick question; no country uses a system called bwazi compass.",rq:"You caught the geographic trick perfectly.",wq:"African country, but the trick gotcha."},
+{d:4,cat:"Islands",q:"Which is the deepest fjord in the world?",o:["Sognefjord, Norway","Hardangerfjord, Norway","Geirangerfjord, Norway","Scoresby Sund, Greenland"],a:0,f:"Sognefjord in Norway is the deepest fjord, reaching depths of 1,308 meters.",rq:"Your fjord geography plunges deep.",wq:"Norwegian fjord, but not the deepest."},
+{d:4,cat:"Mountains & Deserts",q:"Which mountain range runs through seven countries in Africa?",o:["Atlas Mountains","East African Rift Mountains","Drakensberg Mountains","Ruwenzori Mountains"],a:0,f:"The Atlas Mountains run through Morocco, Algeria, and Tunisia, not seven, making this a near-trick.",rq:"You navigated the Atlas trivia.",wq:"African mountains, but not the seven-country range."},
+{d:4,cat:"Capitals",q:"Which capital city of an island nation is the highest above sea level?",o:["La Paz, Bolivia","Mexico City, Mexico","Quito, Ecuador","Bogota, Colombia"],a:0,f:"While Bolivia is not an island, La Paz sits at 3,640 meters. Among islands, capital Nuku'alofa of Tonga is lower.",rq:"Your capital elevation geography is lofty.",wq:"Capital city, but not the highest island one."},
+{d:4,cat:"Physical Geography",q:"Which ocean basin is the smallest in volume?",o:["Arctic Ocean","Antarctic Ocean","Indian Ocean","Atlantic Ocean"],a:0,f:"The Arctic Ocean is the smallest ocean by both area and volume.",rq:"You've mapped polar water geography.",wq:"Ocean basin, but Arctic is the smallest."},
+{d:4,cat:"Languages & Scripts",q:"Which country has 23 official languages, the most of any nation?",o:["India","Mexico","South Africa","Switzerland"],a:0,f:"India has 22 official languages under the Eighth Schedule, though definitions vary slightly.",rq:"Your multilingual geography is linguistically rich.",wq:"Multilingual country, but India has the most."},
+{d:4,cat:"Oceans & Seas",q:"Which Gulf forms the border between Iran and Saudi Arabia?",o:["Persian Gulf","Gulf of Aden","Gulf of Oman","Red Sea"],a:0,f:"The Persian Gulf, also called the Arabian Gulf, separates Iran from Saudi Arabia and other Gulf states.",rq:"You know the Persian Gulf perfectly.",wq:"Middle Eastern water body, but not the Iran-Saudi one."},
+{d:4,cat:"Climate & Weather",q:"Which African country experiences the highest concentration of lightning strikes?",o:["Democratic Republic of Congo","Zambia","Uganda","Kenya"],a:0,f:"The Democratic Republic of Congo receives more lightning strikes than any other country.",rq:"Your electrical weather geography is striking.",wq:"African country, but not the lightning leader."},
+{d:4,cat:"Transportation & Routes",q:"How long is the Trans-Siberian Railway?",o:["9,289 kilometers","8,000 kilometers","10,000 kilometers","12,000 kilometers"],a:0,f:"The Trans-Siberian Railway is approximately 9,289 kilometers, making it the longest railway line in the world.",rq:"Your transcontinental rail geography is on track.",wq:"Long railway, but not the correct length."},
+{d:4,cat:"Sports Geography",q:"Which Winter Olympics were held during a summer season due to Southern Hemisphere location?",o:["1956 Melbourne Winter Olympics don't exist, trick question","2002 Salt Lake City","1998 Nagano","1994 Lillehammer"],a:0,f:"This is a trick; Winter Olympics are always held in their winter season regardless of hemisphere; no Winter Olympics in Melbourne.",rq:"You caught the seasonal geography trick.",wq:"Winter Olympics, but not the southern hemisphere one."},
+{d:4,cat:"Animals & Ecosystems",q:"Which rainforest produces 20 percent of the world's oxygen?",o:["Amazon Rainforest","Congo Rainforest","Southeast Asian Rainforest","Pacific Northwest Temperate Rainforest"],a:0,f:"The Amazon Rainforest produces approximately 20 percent of the world's oxygen supply.",rq:"You understand rainforest respiration geography.",wq:"Rainforest, but not the oxygen leader."},
+{d:4,cat:"Economy & Resources",q:"Which country has the largest proven oil reserves?",o:["Venezuela","Saudi Arabia","Iran","Iraq"],a:0,f:"Venezuela has the world's largest proven oil reserves at approximately 300 billion barrels.",rq:"Your energy reserves geography is well-fueled.",wq:"Major oil country, but Venezuela leads reserves."},
+{d:5,cat:"Historical Geography",q:"Which ancient city was rebuilt multiple times on the same site in Anatolia?",o:["Troy","Ephesus","Pergamon","Miletus"],a:0,f:"Troy in northwest Anatolia was built and destroyed nine times throughout its history.",rq:"Your archaeological geography is layered.",wq:"Anatolian ancient city, but not the rebuilt Troy."},
+{d:5,cat:"Mountains & Deserts",q:"Which mountain is the tallest measured from base to peak above sea level?",o:["Mauna Kea, Hawaii","Everest, Nepal-China","K2, Pakistan-China","Kangchenjunga, Nepal-India"],a:0,f:"Mauna Kea, if measured from its oceanic base, is taller than Everest, though Everest is highest above sea level.",rq:"Your mountain measurement geography is peak.",wq:"Tall mountain, but base-to-peak differs from elevation."},
+{d:5,cat:"Rivers & Lakes",q:"Which river is the only major river that flows northward in the Southern Hemisphere?",o:["Limpopo River","Nile River","Zambezi River","Orange River"],a:0,f:"The Limpopo River flows northward in southern Africa before turning east.",rq:"You've navigated Southern Hemisphere hydrology.",wq:"Southern African river, but not the northflow one."},
+{d:5,cat:"Islands",q:"Which Pacific island nation has the most active volcano?",o:["Vanuatu","Samoa","Tonga","Fiji"],a:0,f:"Vanuatu's Mount Yasur is one of the world's most continuously active volcanoes.",rq:"Your volcanic Pacific geography is hot.",wq:"Pacific island nation, but not the volcano leader."},
+{d:5,cat:"Capitals",q:"Which capital city was originally built as a planned military settlement?",o:["Canberra, Australia","Washington D.C., USA","New Delhi, India","Brasilia, Brazil"],a:0,f:"Canberra was purpose-built in 1927 as a compromise between rivals Sydney and Melbourne.",rq:"Your planned capital geography is architectural.",wq:"Planned capital, but not Canberra."},
+{d:5,cat:"Languages & Scripts",q:"Which country has the most linguistically diverse population with over 700 languages?",o:["Papua New Guinea","Indonesia","Nigeria","India"],a:0,f:"Papua New Guinea has over 800 languages, making it the most linguistically diverse nation.",rq:"Your linguistic diversity geography is profound.",wq:"Linguistically diverse nation, but PNG leads."},
+{d:5,cat:"Physical Geography",q:"Which underwater formation is the longest mountain range on any planet?",o:["Mid-Ocean Ridge, Earth","Tharsis Montes, Mars","Valles Marineris, Mars","Maxwell Montes, Venus"],a:0,f:"Earth's Mid-Ocean Ridge system is the longest mountain range in the solar system.",rq:"Your cosmic geography is out of this world.",wq:"Planetary feature, but not the longest."},
+{d:5,cat:"Oceans & Seas",q:"Which sea has the most countries sharing its coastline?",o:["Mediterranean Sea","Baltic Sea","Caribbean Sea","Southeast Asian waters"],a:0,f:"The Mediterranean Sea borders 21 countries across Europe, Asia, and Africa.",rq:"Your Mediterranean geography spans continents.",wq:"Shared sea, but not the most-bordered."},
+{d:5,cat:"Borders & Neighbors",q:"Which landlocked country is surrounded by only one other country?",o:["Lesotho","Vatican City","San Marino","Liechtenstein"],a:0,f:"Lesotho is completely surrounded by South Africa, the only country surrounded by a single neighbor.",rq:"You found the enclaved perfection.",wq:"Landlocked enclave, but not the sole-neighbor one."},
+{d:5,cat:"Population",q:"Which city experienced the greatest absolute population loss in the 21st century?",o:["Detroit, USA","Pittsburgh, USA","Nagasaki, Japan","Sardasht, Iran"],a:0,f:"Detroit lost over 600,000 people from 2000 to 2020, the largest decline of any major US city.",rq:"Your population migration geography is demographic.",wq:"Declining city, but not the steepest loss."},
+{d:5,cat:"Climate & Weather",q:"Which location has the most extreme wind speeds recorded?",o:["Mount Washington, USA","Port Martin, Antarctica","Commonwealth Bay, Antarctica","Barrow, Alaska"],a:0,f:"Commonwealth Bay, Antarctica has recorded the highest sustained wind speeds at over 200 kilometers per hour.",rq:"Your extreme wind geography is gale-force.",wq:"Windy location, but not the most extreme."},
+{d:5,cat:"Time Zones & Coordinates",q:"Which country has the most complex time zone system with multiple zones despite compact geography?",o:["Nepal","India","China","Australia"],a:0,f:"Nepal uses UTC+5:45, a unique time zone 45 minutes offset, unique among all nations.",rq:"You understand quirky time zone geography.",wq:"Unique time zone country, but not Nepal."},
+{d:5,cat:"Extreme Geography",q:"Which location is the geographic south pole?",o:["The southernmost point at 90 degrees latitude in Antarctica","The magnetic south pole","The pole of inaccessibility","The Ross Ice Shelf"],a:0,f:"The geographic south pole is at 90 degrees south latitude in Antarctica, marked only by coordinates.",rq:"You've reached the absolute bottom of Earth.",wq:"Southern location, but not the exact pole."},
+{d:1,cat:"Countries",q:"Which continent is entirely in the Southern Hemisphere?",o:["Antarctica","South America","Africa","Australia"],a:0,f:"Antarctica is the only continent entirely located in the Southern Hemisphere.",rq:"You know your hemispheres.",wq:"Southern continent, but not fully southern."},
+{d:1,cat:"Landmarks",q:"What ancient structure stands at Giza in Egypt?",o:["Great Pyramid","Sphinx","Temple of Khafre","Mortuary Temple"],a:0,f:"The Great Pyramid of Giza is one of the Seven Wonders of the Ancient World.",rq:"You've built up your pyramid knowledge.",wq:"Giza structure, but not the primary one."},
+{d:1,cat:"Rivers & Lakes",q:"Which is the smallest continent?",o:["Australia","Europe","Antarctica","Greenland is not a continent"],a:0,f:"Australia is the smallest continent at approximately 7.7 million square kilometers.",rq:"You've got continental sizing down.",wq:"Continent, but Australia's smallest."},
+{d:1,cat:"Oceans & Seas",q:"How many oceans are recognized on modern maps?",o:["5","4","3","6"],a:0,f:"Five oceans are recognized: Pacific, Atlantic, Indian, Arctic, and Southern.",rq:"You've charted the ocean count.",wq:"Ocean count, but five is standard."},
+{d:1,cat:"Animals & Ecosystems",q:"Which country is home to the most species of birds?",o:["Colombia","Peru","Indonesia","Brazil"],a:0,f:"Colombia has the highest bird species diversity with over 1,900 species.",rq:"Your avian geography is quite the spectacle.",wq:"Bird-rich country, but Colombia leads."},
+{d:1,cat:"Languages & Scripts",q:"What is the most common first language in China?",o:["Mandarin Chinese","Cantonese","Shanghainese","Hakka"],a:0,f:"Mandarin Chinese is spoken by the vast majority of Chinese citizens.",rq:"Your Chinese language geography is extensive.",wq:"Chinese language, but Mandarin dominates."},
+{d:1,cat:"Extreme Geography",q:"Which place is the driest desert on Earth?",o:["Atacama Desert, Chile","Sahara, Africa","Death Valley, USA","Kalahari, Southern Africa"],a:0,f:"The Atacama Desert in Chile is the driest place on Earth, with some areas never recording rainfall.",rq:"You know the dusty truth about deserts.",wq:"Dry place, but Atacama is the driest."},
+{d:2,cat:"Landmarks",q:"In which European country is the Leaning Tower of Pisa?",o:["Italy","France","Greece","Spain"],a:0,f:"The Leaning Tower of Pisa is located in Pisa, Tuscany, Italy.",rq:"You've balanced that tower correctly.",wq:"European country, but not Italy."},
+{d:2,cat:"Countries",q:"Which African country was formerly named Upper Volta?",o:["Burkina Faso","Mali","Niger","Senegal"],a:0,f:"Burkina Faso was formerly known as Upper Volta until 1984.",rq:"Your African geographic rebranding is sharp.",wq:"West African country, but not the former name."},
+{d:2,cat:"Islands",q:"Which Caribbean island is divided between two nations?",o:["Hispaniola","Borneo","Timor","New Guinea"],a:0,f:"Hispaniola is divided between Haiti on the west and Dominican Republic on the east.",rq:"You've split that Caribbean island perfectly.",wq:"Shared island, but not Hispaniola."},
+{d:2,cat:"Mountains & Deserts",q:"Which desert covers parts of both the United States and Mexico?",o:["Sonoran","Mojave","Chihuahuan","Great Basin"],a:0,f:"The Sonoran Desert spans parts of California, Arizona, and Mexico.",rq:"Your cross-border desert geography is stellar.",wq:"Shared desert, but not the main one."},
+{d:2,cat:"Physical Geography",q:"Which geographic feature is the largest coral reef system?",o:["Great Barrier Reef","Mesoamerican Barrier Reef","Florida Reef","Southeast Asian Coral Triangle"],a:0,f:"The Great Barrier Reef in Australia is the world's largest coral reef system at 2,300 kilometers long.",rq:"Your reef geography is colorfully accurate.",wq:"Major coral reef, but Great Barrier is largest."},
+{d:2,cat:"Transportation & Routes",q:"Which country contains the world's highest railway line?",o:["Peru","Bolivia","Tibet, China","Ecuador"],a:0,f:"Tibet, China has the world's highest railway, the Qinghai-Tibet Railway, with tracks at over 5,000 meters.",rq:"Your railway altitude geography is peak.",wq:"High-altitude country, but Tibet's higher."},
+{d:2,cat:"Climate & Weather",q:"Which place experiences the most consistent pleasant year-round weather?",o:["Canary Islands, Spain","Hawaii","San Diego","Kunming, China"],a:0,f:"The Canary Islands, Spain are known for their perpetual spring-like weather.",rq:"You've found the eternal spring.",wq:"Pleasant climate location, but not perfect."},
+{d:2,cat:"Sports Geography",q:"Which country has won the most FIFA World Cups?",o:["Brazil","Germany","France","Italy"],a:0,f:"Brazil has won the FIFA World Cup five times, more than any other nation.",rq:"Your football geography is goal-oriented.",wq:"World Cup champion, but Brazil wins most."},
+{d:2,cat:"Borders & Neighbors",q:"Which Asian country borders the most number of other countries?",o:["China","Russia","India","Kazakhstan"],a:0,f:"China shares land borders with 14 countries, the most of any country in Asia.",rq:"Your Asian border geography is comprehensive.",wq:"Asian nation with borders, but China's more."},
+{d:3,cat:"Landmarks",q:"On which continent is Angkor Wat, the largest religious monument in the world?",o:["Asia","Africa","South America","Australia"],a:0,f:"Angkor Wat is located in Cambodia, Southeast Asia, and is the world's largest religious temple complex.",rq:"You've navigated the Khmer temples.",wq:"Continent with monument, but Asia has it."},
+{d:3,cat:"Islands",q:"Which is the longest archipelago in the world?",o:["Indonesia","Philippines","Japan","Norway"],a:0,f:"Indonesia is the longest archipelago, stretching over 5,000 kilometers with 17,000 islands.",rq:"You've charted the island chain.",wq:"Archipelago, but Indonesia's the longest."},
+{d:3,cat:"Animals & Ecosystems",q:"Which biome covers the most land area on Earth?",o:["Taiga forest","Tropical forest","Desert","Grassland"],a:0,f:"Taiga or boreal forest is the largest terrestrial biome by area.",rq:"You understand planetary biome distribution.",wq:"Major biome, but taiga dominates."},
+{d:3,cat:"Rivers & Lakes",q:"What is the world's largest freshwater reservoir?",o:["Lake Baikal","Great Lakes","Greenland Ice Sheet","Antarctic Ice Sheet"],a:0,f:"The Antarctic Ice Sheet contains about 26.5 million cubic kilometers of freshwater.",rq:"You've frozen onto the right answer.",wq:"Water reservoir, but ice sheets hold most."},
+{d:3,cat:"Capitals",q:"Which capital city is the smallest in the world by area?",o:["Vatican City","Monaco","San Marino","Liechtenstein"],a:0,f:"Vatican City, with only 0.44 square kilometers, is the smallest capital city.",rq:"You've minimized to the right answer.",wq:"Small capital, but Vatican's the smallest."},
+{d:3,cat:"Languages & Scripts",q:"How many people speak English as a first or second language?",o:["Over 1.5 billion","Over 1 billion","Over 500 million","Over 750 million"],a:0,f:"English is spoken by over 1.5 billion people globally as a first or second language.",rq:"Your English speaker geography spans the globe.",wq:"Large number, but over 1.5 billion speak English."},
+{d:3,cat:"Time Zones & Coordinates",q:"Which country was divided by the 38th parallel during the Korean War?",o:["Korea","Vietnam","Germany","China"],a:0,f:"Korea was divided at the 38th parallel into North and South Korea after World War II.",rq:"Your Cold War geography is precisely parallel.",wq:"Divided country, but not the right latitude."},
+{d:4,cat:"Landmarks",q:"Which ancient wonder is the only one partially intact today?",o:["Mausoleum at Halicarnassus","Temple of Zeus","Hanging Gardens","Great Pyramid of Giza"],a:0,f:"The Great Pyramid of Giza is the only surviving wonder of the ancient world.",rq:"Your ancient wonder longevity is enduring.",wq:"Ancient wonder, but only Giza's mostly intact."},
+{d:4,cat:"Countries",q:"Which country changed its name from Rhodesia to Zimbabwe?",o:["Zimbabwe","South Africa","Zambia","Botswana"],a:0,f:"Zimbabwe was formerly called Rhodesia, changing its name in 1980 upon independence.",rq:"Your African national rebranding is sharp.",wq:"Southern African nation, but Zimbabwe's correct."},
+{d:4,cat:"Oceans & Seas",q:"What percentage of Earth's oceans have been explored?",o:["Less than 5 percent","10 percent","25 percent","50 percent"],a:0,f:"Humans have explored less than 5 percent of the world's oceans.",rq:"Your ocean exploration geography is deep.",wq:"Exploration percentage, but under 5 percent."},
+{d:4,cat:"Physical Geography",q:"Which location marks the lowest point of the contiguous United States?",o:["Death Valley","Badwater","Lake Tahoe","Death Valley National Park Basin"],a:0,f:"Badwater Basin in Death Valley, California is the lowest point at 86 meters below sea level.",rq:"You've plumbed US depths perfectly.",wq:"US low point, but Badwater's the lowest."},
+{d:4,cat:"Sports Geography",q:"Which Summer Olympic host is south of the Equator?",o:["Sydney, Australia","Rio de Janeiro, Brazil","Melbourne, Australia","All of the above"],a:3,f:"Sydney (2000) and Melbourne (1956) in Australia, and Rio de Janeiro (2016) in Brazil have hosted summer games below the equator.",rq:"You know Olympic Southern Hemisphere history.",wq:"Olympic host, but multiple are in Southern Hemisphere."},
+{d:4,cat:"Transportation & Routes",q:"Which country has the most extensive railway network?",o:["United States","Russia","China","India"],a:0,f:"The United States has the longest railway network at over 228,000 kilometers.",rq:"Your railroad geography is on track.",wq:"Long railway network, but USA leads."},
+{d:5,cat:"Landmarks",q:"Which historical city served as the capital of three major empires?",o:["Istanbul, Turkey","Rome, Italy","Cairo, Egypt","Delhi, India"],a:0,f:"Istanbul served as capital of Byzantine, Ottoman, and other empires across centuries.",rq:"Your imperial capital geography is legendary.",wq:"Multi-empire capital, but Istanbul's the champion."},
+{d:5,cat:"Rivers & Lakes",q:"Which river has the highest average discharge rate into the ocean?",o:["Amazon","Congo","Orinoco","Ganges"],a:0,f:"The Amazon River discharges about 209,000 cubic meters of water per second, far more than any other river.",rq:"Your river hydrology flows perfectly.",wq:"High-discharge river, but Amazon leads massively."},
+{d:5,cat:"Islands",q:"Which is the most remote inhabited island in the world?",o:["Tristan da Cunha","Easter Island","Pitcairn Islands","Ascension Island"],a:0,f:"Tristan da Cunha, 2,430 kilometers from the nearest mainland, is the most remote inhabited island.",rq:"You've found the most isolated outpost.",wq:"Remote island, but Tristan's furthest from land."},
+{d:5,cat:"Mountains & Deserts",q:"How many mountains on Earth exceed 8,000 meters in elevation?",o:["14","8","10","12"],a:0,f:"Exactly 14 peaks on Earth exceed 8,000 meters, all located in the Himalayas and Karakoram.",rq:"Your 8000-meter peak count is exact.",wq:"High peaks, but only 14 exceed 8000 meters."},
+{d:5,cat:"Capitals",q:"Which is the only capital city located on two continents?",o:["Istanbul, Turkey","Cairo, Egypt","Jerusalem, Israel","Almaty, Kazakhstan"],a:0,f:"Istanbul straddles Europe and Asia across the Bosphorus Strait.",rq:"You understand Istanbul's continental divide.",wq:"Transcontinental capital, but Istanbul bridges best."},
+{d:5,cat:"Languages & Scripts",q:"Which language has the most phonetic letters in its alphabet?",o:["English","Vietnamese","Khmer","Amharic"],a:0,f:"Vietnamese has the Latin alphabet with tone marks, while Khmer and Amharic have complex scripts.",rq:"Your linguistic complexity geography is nuanced.",wq:"Language script, but English is irregular."},
+{d:5,cat:"Physical Geography",q:"Which underwater canyon is deeper than the Grand Canyon?",o:["Monterey Canyon","Congo Canyon","Kuril Kamchatka Trench","New England Seamount Chain"],a:0,f:"Monterey Canyon off California is deeper than the Grand Canyon at 3,600 meters deep.",rq:"You know underwater geography exceeds surface.",wq:"Deep canyon, but Monterey's deeper."},
+{d:5,cat:"Economy & Resources",q:"Which country possesses the world's largest proven natural gas reserves?",o:["Russia","Iran","Qatar","United States"],a:0,f:"Russia has the largest proven natural gas reserves at approximately 47.8 trillion cubic meters.",rq:"Your energy reserves geography fuels knowledge.",wq:"Large gas reserves, but Russia's largest."},
+{d:5,cat:"Borders & Neighbors",q:"What is the quadripoint where four countries meet in the Balkans?",o:["No true quadripoint exists; Serbia-Croatia-Bosnia-Montenegro meet at a tripoint","Greece-Albania-Montenegro-Kosovo","Hungary-Serbia-Bosnia-Croatia","No clear quadripoint"],a:0,f:"No exact quadripoint exists in the Balkans, though multiple tripoints do.",rq:"You caught the Balkan boundaries perfectly.",wq:"Balkan borders, but no true quadripoint."},
 ];
 
 // ─── IMAGE-BASED QUESTIONS: Flags (using emoji) & Map Silhouettes ────────────
@@ -1536,6 +2131,63 @@ const SECRET_BADGE_DEFINITIONS = [
 
 // Combine all badge definitions
 const ALL_BADGE_DEFINITIONS = [...BADGE_DEFINITIONS, ...SECRET_BADGE_DEFINITIONS];
+
+// ─── Theme Definitions ────────────────────────────────────────────────────────
+const THEMES = {
+  space: {
+    id:'space', name:'Space', icon:'🚀', unlockReq:0,
+    wrapBg:'linear-gradient(135deg,#0a0a2e 0%,#1a1a4e 30%,#0d0d3a 70%,#050520 100%)',
+    starsBg:'radial-gradient(2px 2px at 20px 30px,rgba(255,255,255,0.3),transparent),radial-gradient(2px 2px at 40px 70px,rgba(255,255,255,0.2),transparent),radial-gradient(1px 1px at 90px 40px,rgba(255,255,255,0.3),transparent),radial-gradient(1px 1px at 130px 80px,rgba(255,255,255,0.15),transparent),radial-gradient(2px 2px at 160px 30px,rgba(255,255,255,0.25),transparent)',
+    cardBg:'rgba(255,255,255,0.07)', cardBorder:'rgba(255,255,255,0.15)',
+    btnGradient:'linear-gradient(135deg,#f7b733,#fc4a1a)', btnShadow:'rgba(252,74,26,0.3)',
+    titleGradient:'linear-gradient(to right,#f7b733,#fc4a1a,#f7b733)',
+    accent:'#f7b733', accentAlt:'#fc4a1a',
+    textPrimary:'#fff', textSecondary:'rgba(255,255,255,0.5)'
+  },
+  ocean: {
+    id:'ocean', name:'Ocean', icon:'🌊', unlockReq:5,
+    wrapBg:'linear-gradient(135deg,#0a2a3a 0%,#0d4a6a 30%,#083a55 70%,#051a2a 100%)',
+    starsBg:'radial-gradient(3px 3px at 30px 50px,rgba(100,200,255,0.2),transparent),radial-gradient(2px 2px at 80px 30px,rgba(100,220,255,0.15),transparent),radial-gradient(2px 2px at 140px 60px,rgba(80,200,240,0.2),transparent),radial-gradient(1px 1px at 50px 90px,rgba(120,220,255,0.15),transparent),radial-gradient(3px 3px at 170px 40px,rgba(100,200,255,0.1),transparent)',
+    cardBg:'rgba(13,106,143,0.15)', cardBorder:'rgba(0,201,255,0.2)',
+    btnGradient:'linear-gradient(135deg,#00c9ff,#2ed573)', btnShadow:'rgba(0,201,255,0.3)',
+    titleGradient:'linear-gradient(to right,#00c9ff,#2ed573,#00c9ff)',
+    accent:'#00c9ff', accentAlt:'#2ed573',
+    textPrimary:'#fff', textSecondary:'rgba(180,230,255,0.5)'
+  },
+  retro: {
+    id:'retro', name:'Retro', icon:'👾', unlockReq:10,
+    wrapBg:'linear-gradient(135deg,#1a1207 0%,#2d1f0e 30%,#1f1508 70%,#0d0a04 100%)',
+    starsBg:'radial-gradient(2px 2px at 25px 35px,rgba(0,255,65,0.2),transparent),radial-gradient(2px 2px at 75px 55px,rgba(255,176,0,0.15),transparent),radial-gradient(1px 1px at 120px 30px,rgba(0,255,65,0.2),transparent),radial-gradient(2px 2px at 50px 80px,rgba(255,176,0,0.1),transparent),radial-gradient(1px 1px at 160px 60px,rgba(0,255,65,0.15),transparent)',
+    cardBg:'rgba(0,255,65,0.05)', cardBorder:'rgba(0,255,65,0.2)',
+    btnGradient:'linear-gradient(135deg,#ffb000,#ff6600)', btnShadow:'rgba(255,176,0,0.3)',
+    titleGradient:'linear-gradient(to right,#00ff41,#ffb000,#00ff41)',
+    accent:'#00ff41', accentAlt:'#ffb000',
+    textPrimary:'#e0e0c0', textSecondary:'rgba(0,255,65,0.4)'
+  },
+  neon: {
+    id:'neon', name:'Neon', icon:'💜', unlockReq:20,
+    wrapBg:'linear-gradient(135deg,#0a0012 0%,#150025 30%,#0d001a 70%,#050008 100%)',
+    starsBg:'radial-gradient(2px 2px at 30px 40px,rgba(255,0,128,0.25),transparent),radial-gradient(2px 2px at 80px 60px,rgba(0,255,170,0.2),transparent),radial-gradient(1px 1px at 130px 35px,rgba(255,0,128,0.2),transparent),radial-gradient(2px 2px at 50px 85px,rgba(0,255,170,0.15),transparent),radial-gradient(2px 2px at 170px 50px,rgba(255,0,128,0.15),transparent)',
+    cardBg:'rgba(255,0,128,0.06)', cardBorder:'rgba(255,0,128,0.25)',
+    btnGradient:'linear-gradient(135deg,#ff0080,#00ffaa)', btnShadow:'rgba(255,0,128,0.3)',
+    titleGradient:'linear-gradient(to right,#ff0080,#00ffaa,#ff0080)',
+    accent:'#ff0080', accentAlt:'#00ffaa',
+    textPrimary:'#fff', textSecondary:'rgba(255,0,128,0.4)'
+  }
+};
+
+// ─── Challenge Mode Lock Requirements ─────────────────────────────────────────
+const CHALLENGE_LOCKS = {
+  continentsprint: { badgeId:'globe_trotter', badgeName:'Globe Trotter', desc:'Play 10 games' },
+  population: { badgeId:'century_club', badgeName:'Century Club', desc:'100 correct answers' }
+};
+
+// ─── Survival Difficulty Tiers ────────────────────────────────────────────────
+const SURVIVAL_TIERS = [
+  { id:'normal', name:'Normal', icon:'💚', lives:3, minDifficulty:1, timerSec:30, unlockBadge:null, unlockDesc:null, desc:'3 lives, all difficulties' },
+  { id:'hard', name:'Hard', icon:'🔶', lives:2, minDifficulty:3, timerSec:25, unlockBadge:'unstoppable', unlockDesc:'Get a 10-question streak', desc:'2 lives, hard questions, faster timer' },
+  { id:'legendary', name:'Legendary', icon:'💀', lives:1, minDifficulty:4, timerSec:20, unlockBadge:'flawless_survivor', unlockDesc:'10 perfect survival answers', desc:'1 life, expert questions, brutal timer' }
+];
 
 // ─── Daily Streak Milestones ──────────────────────────────────────────────────
 const STREAK_MILESTONES = [
@@ -1967,6 +2619,208 @@ const TOTAL_ROUNDS = 5;
 const TIMER_SECONDS = 20;
 const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
+// ─── Challenge Mode Data ──────────────────────────────────────────────────────
+// Border Challenge: "Name all countries that border X"
+const BORDER_CHALLENGES = [
+  { country: 'Switzerland', borders: ['Germany','France','Italy','Austria','Liechtenstein'], hint: 'Landlocked in the Alps', emoji: '🇨🇭' },
+  { country: 'Brazil', borders: ['Argentina','Bolivia','Colombia','French Guiana','Guyana','Paraguay','Peru','Suriname','Uruguay','Venezuela'], hint: 'South America\'s giant', emoji: '🇧🇷' },
+  { country: 'Germany', borders: ['Austria','Belgium','Czech Republic','Denmark','France','Luxembourg','Netherlands','Poland','Switzerland'], hint: 'Heart of Europe', emoji: '🇩🇪' },
+  { country: 'China', borders: ['Afghanistan','Bhutan','India','Kazakhstan','Kyrgyzstan','Laos','Mongolia','Myanmar','Nepal','North Korea','Pakistan','Russia','Tajikistan','Vietnam'], hint: 'Most land borders of any country', emoji: '🇨🇳' },
+  { country: 'Turkey', borders: ['Armenia','Azerbaijan','Bulgaria','Georgia','Greece','Iran','Iraq','Syria'], hint: 'Straddles two continents', emoji: '🇹🇷' },
+  { country: 'Tanzania', borders: ['Burundi','Democratic Republic of the Congo','Kenya','Malawi','Mozambique','Rwanda','Uganda','Zambia'], hint: 'Home of Kilimanjaro', emoji: '🇹🇿' },
+  { country: 'France', borders: ['Andorra','Belgium','Germany','Italy','Luxembourg','Monaco','Spain','Switzerland'], hint: 'L\'Hexagone', emoji: '🇫🇷' },
+  { country: 'India', borders: ['Bangladesh','Bhutan','China','Myanmar','Nepal','Pakistan'], hint: 'South Asia\'s subcontinent', emoji: '🇮🇳' },
+  { country: 'Russia', borders: ['Azerbaijan','Belarus','China','Estonia','Finland','Georgia','Kazakhstan','Latvia','Lithuania','Mongolia','North Korea','Norway','Poland','Ukraine'], hint: 'Spans 11 time zones', emoji: '🇷🇺' },
+  { country: 'South Africa', borders: ['Botswana','Eswatini','Lesotho','Mozambique','Namibia','Zimbabwe'], hint: 'Rainbow Nation at Africa\'s tip', emoji: '🇿🇦' },
+  { country: 'Austria', borders: ['Czech Republic','Germany','Hungary','Italy','Liechtenstein','Slovakia','Slovenia','Switzerland'], hint: 'Alpine republic', emoji: '🇦🇹' },
+  { country: 'Thailand', borders: ['Cambodia','Laos','Malaysia','Myanmar'], hint: 'Land of Smiles', emoji: '🇹🇭' },
+];
+
+// Capital Blitz: rapid-fire capital questions
+const CAPITAL_BLITZ_QS = [
+  { country: 'Japan', capital: 'Tokyo', decoys: ['Osaka','Kyoto','Nagoya'] },
+  { country: 'France', capital: 'Paris', decoys: ['Lyon','Marseille','Nice'] },
+  { country: 'Egypt', capital: 'Cairo', decoys: ['Alexandria','Luxor','Giza'] },
+  { country: 'Peru', capital: 'Lima', decoys: ['Cusco','Arequipa','Trujillo'] },
+  { country: 'South Korea', capital: 'Seoul', decoys: ['Busan','Incheon','Daegu'] },
+  { country: 'Kenya', capital: 'Nairobi', decoys: ['Mombasa','Kisumu','Nakuru'] },
+  { country: 'Norway', capital: 'Oslo', decoys: ['Bergen','Trondheim','Stavanger'] },
+  { country: 'Argentina', capital: 'Buenos Aires', decoys: ['Córdoba','Rosario','Mendoza'] },
+  { country: 'Thailand', capital: 'Bangkok', decoys: ['Chiang Mai','Phuket','Pattaya'] },
+  { country: 'Nigeria', capital: 'Abuja', decoys: ['Lagos','Kano','Ibadan'] },
+  { country: 'Poland', capital: 'Warsaw', decoys: ['Kraków','Gdańsk','Wrocław'] },
+  { country: 'Colombia', capital: 'Bogotá', decoys: ['Medellín','Cali','Cartagena'] },
+  { country: 'Vietnam', capital: 'Hanoi', decoys: ['Ho Chi Minh City','Da Nang','Hue'] },
+  { country: 'Morocco', capital: 'Rabat', decoys: ['Casablanca','Marrakech','Fez'] },
+  { country: 'Philippines', capital: 'Manila', decoys: ['Cebu','Davao','Quezon City'] },
+  { country: 'Sweden', capital: 'Stockholm', decoys: ['Gothenburg','Malmö','Uppsala'] },
+  { country: 'Chile', capital: 'Santiago', decoys: ['Valparaíso','Concepción','Antofagasta'] },
+  { country: 'Pakistan', capital: 'Islamabad', decoys: ['Karachi','Lahore','Peshawar'] },
+  { country: 'Ukraine', capital: 'Kyiv', decoys: ['Kharkiv','Odesa','Lviv'] },
+  { country: 'Iran', capital: 'Tehran', decoys: ['Isfahan','Shiraz','Tabriz'] },
+  { country: 'New Zealand', capital: 'Wellington', decoys: ['Auckland','Christchurch','Hamilton'] },
+  { country: 'Cuba', capital: 'Havana', decoys: ['Santiago de Cuba','Camagüey','Holguín'] },
+  { country: 'Czech Republic', capital: 'Prague', decoys: ['Brno','Ostrava','Plzeň'] },
+  { country: 'Ethiopia', capital: 'Addis Ababa', decoys: ['Dire Dawa','Mekelle','Gondar'] },
+  { country: 'Myanmar', capital: 'Naypyidaw', decoys: ['Yangon','Mandalay','Mawlamyine'] },
+  { country: 'Sri Lanka', capital: 'Sri Jayawardenepura Kotte', decoys: ['Colombo','Kandy','Galle'] },
+  { country: 'Turkey', capital: 'Ankara', decoys: ['Istanbul','Izmir','Antalya'] },
+  { country: 'Australia', capital: 'Canberra', decoys: ['Sydney','Melbourne','Brisbane'] },
+  { country: 'Canada', capital: 'Ottawa', decoys: ['Toronto','Vancouver','Montreal'] },
+  { country: 'Brazil', capital: 'Brasília', decoys: ['São Paulo','Rio de Janeiro','Salvador'] },
+  { country: 'Tanzania', capital: 'Dodoma', decoys: ['Dar es Salaam','Mwanza','Arusha'] },
+  { country: 'Kazakhstan', capital: 'Astana', decoys: ['Almaty','Shymkent','Karaganda'] },
+  { country: 'South Africa', capital: 'Pretoria', decoys: ['Cape Town','Johannesburg','Durban'] },
+  { country: 'Israel', capital: 'Jerusalem', decoys: ['Tel Aviv','Haifa','Be\'er Sheva'] },
+  { country: 'Malaysia', capital: 'Kuala Lumpur', decoys: ['Penang','Johor Bahru','Kuching'] },
+  { country: 'Nepal', capital: 'Kathmandu', decoys: ['Pokhara','Biratnagar','Lalitpur'] },
+];
+
+// Flag Frenzy: rapid-fire flag identification
+const FLAG_FRENZY_QS = [
+  {flag:'🇯🇵',country:'Japan',decoys:['China','South Korea','Vietnam']},
+  {flag:'🇧🇷',country:'Brazil',decoys:['Argentina','Colombia','Portugal']},
+  {flag:'🇨🇦',country:'Canada',decoys:['Peru','Switzerland','Denmark']},
+  {flag:'🇳🇬',country:'Nigeria',decoys:['India','Ireland','Ivory Coast']},
+  {flag:'🇦🇺',country:'Australia',decoys:['New Zealand','United Kingdom','Fiji']},
+  {flag:'🇲🇽',country:'Mexico',decoys:['Italy','Hungary','Ireland']},
+  {flag:'🇮🇳',country:'India',decoys:['Ireland','Niger','Ivory Coast']},
+  {flag:'🇰🇷',country:'South Korea',decoys:['Laos','Chile','North Korea']},
+  {flag:'🇩🇪',country:'Germany',decoys:['Belgium','Lithuania','Luxembourg']},
+  {flag:'🇫🇷',country:'France',decoys:['Netherlands','Russia','Luxembourg']},
+  {flag:'🇮🇹',country:'Italy',decoys:['Ireland','Mexico','Hungary']},
+  {flag:'🇬🇧',country:'United Kingdom',decoys:['Australia','Iceland','Norway']},
+  {flag:'🇪🇸',country:'Spain',decoys:['Portugal','Paraguay','Bolivia']},
+  {flag:'🇷🇺',country:'Russia',decoys:['Luxembourg','Netherlands','France']},
+  {flag:'🇿🇦',country:'South Africa',decoys:['Yemen','Jordan','Palestine']},
+  {flag:'🇹🇷',country:'Turkey',decoys:['Tunisia','Singapore','Algeria']},
+  {flag:'🇸🇪',country:'Sweden',decoys:['Denmark','Finland','Iceland']},
+  {flag:'🇳🇴',country:'Norway',decoys:['Iceland','Finland','Denmark']},
+  {flag:'🇵🇱',country:'Poland',decoys:['Monaco','Indonesia','Singapore']},
+  {flag:'🇪🇬',country:'Egypt',decoys:['Syria','Iraq','Yemen']},
+  {flag:'🇦🇷',country:'Argentina',decoys:['Uruguay','Honduras','El Salvador']},
+  {flag:'🇨🇱',country:'Chile',decoys:['Czech Republic','Philippines','Cuba']},
+  {flag:'🇨🇴',country:'Colombia',decoys:['Ecuador','Venezuela','Romania']},
+  {flag:'🇵🇪',country:'Peru',decoys:['Canada','Denmark','Austria']},
+  {flag:'🇨🇳',country:'China',decoys:['Vietnam','Morocco','Turkey']},
+  {flag:'🇹🇭',country:'Thailand',decoys:['Costa Rica','Paraguay','Laos']},
+  {flag:'🇻🇳',country:'Vietnam',decoys:['China','Morocco','Algeria']},
+  {flag:'🇮🇩',country:'Indonesia',decoys:['Monaco','Poland','Singapore']},
+  {flag:'🇵🇭',country:'Philippines',decoys:['Czech Republic','Cuba','Samoa']},
+  {flag:'🇵🇰',country:'Pakistan',decoys:['Algeria','Saudi Arabia','Turkey']},
+  {flag:'🇧🇩',country:'Bangladesh',decoys:['Japan','Palau','Libya']},
+  {flag:'🇰🇪',country:'Kenya',decoys:['Germany','South Sudan','Afghanistan']},
+  {flag:'🇪🇹',country:'Ethiopia',decoys:['Cameroon','Bolivia','India']},
+  {flag:'🇬🇭',country:'Ghana',decoys:['Ivory Coast','Guinea','Cameroon']},
+  {flag:'🇲🇦',country:'Morocco',decoys:['Vietnam','Algeria','Turkey']},
+  {flag:'🇨🇺',country:'Cuba',decoys:['Puerto Rico','Chile','Philippines']},
+  {flag:'🇬🇷',country:'Greece',decoys:['Uruguay','Argentina','Cyprus']},
+  {flag:'🇵🇹',country:'Portugal',decoys:['Brazil','Mexico','Italy']},
+  {flag:'🇳🇿',country:'New Zealand',decoys:['Australia','Fiji','United Kingdom']},
+  {flag:'🇯🇲',country:'Jamaica',decoys:['Bahamas','Trinidad','Barbados']},
+];
+
+// Continent Sprint: sort countries by continent
+const CONTINENT_SPRINT_DATA = {
+  Africa: ['Nigeria','Egypt','South Africa','Kenya','Ethiopia','Morocco','Ghana','Tanzania','Algeria','Senegal','Uganda','Rwanda','Cameroon','Mozambique','Madagascar','Tunisia','Ivory Coast','Zambia','Zimbabwe','Mali'],
+  Asia: ['China','India','Japan','Thailand','Vietnam','Indonesia','Philippines','Pakistan','Bangladesh','South Korea','Malaysia','Myanmar','Nepal','Sri Lanka','Cambodia','Mongolia','Kazakhstan','Uzbekistan','Laos','Bhutan'],
+  Europe: ['France','Germany','Italy','Spain','Poland','Ukraine','Romania','Netherlands','Belgium','Sweden','Norway','Austria','Switzerland','Portugal','Czech Republic','Greece','Hungary','Finland','Denmark','Ireland'],
+  'South America': ['Brazil','Argentina','Colombia','Peru','Chile','Venezuela','Ecuador','Bolivia','Uruguay','Paraguay','Guyana','Suriname'],
+  'North America': ['United States','Canada','Mexico','Cuba','Jamaica','Haiti','Dominican Republic','Guatemala','Honduras','Panama','Costa Rica','El Salvador','Nicaragua','Trinidad and Tobago','Belize'],
+  Oceania: ['Australia','New Zealand','Papua New Guinea','Fiji','Samoa','Tonga','Vanuatu','Solomon Islands','Kiribati','Micronesia','Palau','Marshall Islands','Nauru','Tuvalu'],
+};
+const CONTINENT_DECOYS = {
+  Africa: ['Asia','Europe','South America'],
+  Asia: ['Europe','Africa','Oceania'],
+  Europe: ['Asia','Africa','North America'],
+  'South America': ['North America','Africa','Europe'],
+  'North America': ['South America','Europe','Asia'],
+  Oceania: ['Asia','South America','Africa'],
+};
+
+// Population Showdown: which country has more people?
+const POPULATION_PAIRS = [
+  {a:'India',popA:1428,b:'China',popB:1425,unit:'M'},
+  {a:'Indonesia',popA:277,b:'Brazil',popB:216,unit:'M'},
+  {a:'Nigeria',popA:224,b:'Bangladesh',popB:173,unit:'M'},
+  {a:'Russia',popA:144,b:'Mexico',popB:129,unit:'M'},
+  {a:'Japan',popA:124,b:'Ethiopia',popB:126,unit:'M'},
+  {a:'Germany',popA:84,b:'France',popB:68,unit:'M'},
+  {a:'United Kingdom',popA:68,b:'Italy',popB:59,unit:'M'},
+  {a:'South Africa',popA:60,b:'South Korea',popB:52,unit:'M'},
+  {a:'Colombia',popA:52,b:'Spain',popB:48,unit:'M'},
+  {a:'Argentina',popA:46,b:'Ukraine',popB:37,unit:'M'},
+  {a:'Canada',popA:40,b:'Poland',popB:38,unit:'M'},
+  {a:'Morocco',popA:37,b:'Saudi Arabia',popB:36,unit:'M'},
+  {a:'Peru',popA:34,b:'Malaysia',popB:33,unit:'M'},
+  {a:'Ghana',popA:33,b:'Nepal',popB:30,unit:'M'},
+  {a:'Australia',popA:26,b:'Taiwan',popB:24,unit:'M'},
+  {a:'Chile',popA:20,b:'Netherlands',popB:18,unit:'M'},
+  {a:'Sweden',popA:10.5,b:'Portugal',popB:10.3,unit:'M'},
+  {a:'Switzerland',popA:8.8,b:'Austria',popB:9.1,unit:'M'},
+  {a:'Israel',popA:9.8,b:'Jordan',popB:11.5,unit:'M'},
+  {a:'Singapore',popA:5.9,b:'Norway',popB:5.5,unit:'M'},
+  {a:'New Zealand',popA:5.1,b:'Ireland',popB:5.1,unit:'M'},
+  {a:'Costa Rica',popA:5.2,b:'Panama',popB:4.4,unit:'M'},
+  {a:'Cuba',popA:11,b:'Belgium',popB:11.6,unit:'M'},
+  {a:'Thailand',popA:72,b:'Turkey',popB:85,unit:'M'},
+  {a:'Vietnam',popA:99,b:'Philippines',popB:117,unit:'M'},
+  {a:'Egypt',popA:111,b:'Pakistan',popB:240,unit:'M'},
+  {a:'Kenya',popA:54,b:'Tanzania',popB:65,unit:'M'},
+  {a:'Myanmar',popA:54,b:'Iraq',popB:44,unit:'M'},
+  {a:'Venezuela',popA:28,b:'Romania',popB:19,unit:'M'},
+  {a:'Czech Republic',popA:10.8,b:'Greece',popB:10.4,unit:'M'},
+  {a:'Hungary',popA:9.6,b:'Serbia',popB:6.6,unit:'M'},
+  {a:'Finland',popA:5.6,b:'Denmark',popB:5.9,unit:'M'},
+  {a:'Iceland',popA:0.38,b:'Luxembourg',popB:0.66,unit:'M'},
+  {a:'Mongolia',popA:3.4,b:'Jamaica',popB:2.8,unit:'M'},
+  {a:'Uruguay',popA:3.4,b:'Lithuania',popB:2.7,unit:'M'},
+];
+
+// Commentator reactions — context-aware quips
+const COMMENTATOR = {
+  streakStart: [
+    "Ooh, we got a streak building! 🔥",
+    "Two in a row — don't let it go to your head!",
+    "Back-to-back! The brain is warmed up!"
+  ],
+  streakHot: [
+    "UNSTOPPABLE! Are you secretly a cartographer?!",
+    "This is a MASTERCLASS in geography right now!",
+    "The streak is ALIVE! Nobody touch anything!"
+  ],
+  streakBroken: [
+    "Oof! The streak snaps! It was a good run though.",
+    "And the streak falls! Geography is a cruel mistress.",
+    "That one stings. Shake it off, shake it off!"
+  ],
+  comeback: [
+    "COMEBACK KID! Getting back on track!",
+    "That's the spirit! One right answer at a time!",
+    "The phoenix rises from the geographic ashes!"
+  ],
+  wrongStreak: [
+    "Uh oh... rough patch. This is character building!",
+    "The questions are fighting back! Hang in there!",
+    "Even Magellan got lost sometimes. You got this."
+  ],
+  clutch: [
+    "CLUTCH answer under pressure! Ice in the veins!",
+    "With barely any time left! What a save!",
+    "Photo finish! That timer was NOT your friend!"
+  ],
+  perfect: [
+    "PERFECT GAME! Are you even human?! 🏆",
+    "Flawless victory! The geography gods bow before you!",
+    "Not a single mistake! This is LEGENDARY!"
+  ],
+  halfwayCheck: [
+    "Halfway through! How are we feeling?",
+    "We're at the midpoint! The real test begins now.",
+    "Half the game down — let's see what you're made of!"
+  ]
+};
+
 // ─── Sound Effects (Game Show Quality) ───────────────────────────────────────
 const useSound = () => {
   const audioCtx = useRef(null);
@@ -2149,34 +3003,111 @@ const useSound = () => {
     setTimeout(()=>{playChord([784,1047,1319],.5,'sine',.05);playNoise(.1,.05,10000);},5*90);
   }, [playTone, playChord, playNoise]);
 
-  // ── Background Music: procedural game show loop ──
-  const startMusic = useCallback(() => {
+  // ── Background Music: difficulty-adaptive ambient tracks ──
+  const currentTier = useRef('chill'); // 'chill','medium','intense','legendary','blitz'
+
+  const MUSIC_TIERS = {
+    chill: { bpm: 85, bass: [131,147,165,147,131,147,165,147], chords: [[262,330,392],[294,370,440],[330,392,494],[294,370,440],[262,330,392],[294,370,440],[330,392,494],[294,370,440]], bassType:'sine', chordType:'sine', bassVol:0.04, chordVol:0.012, padFreqs:[220,330], padVol:0.008 },
+    medium: { bpm: 105, bass: [131,165,147,196,131,165,147,196], chords: [[262,330,392],[330,415,494],[294,370,440],[392,494,587],[262,330,392],[330,415,494],[294,370,440],[392,494,587]], bassType:'triangle', chordType:'sine', bassVol:0.05, chordVol:0.015, padFreqs:[262,392], padVol:0.01 },
+    intense: { bpm: 128, bass: [131,131,165,196,131,131,165,196], chords: [[262,330,392],[262,330,392],[330,415,494],[392,494,587],[262,330,392],[262,330,392],[330,415,494],[392,494,587]], bassType:'sawtooth', chordType:'triangle', bassVol:0.045, chordVol:0.014, padFreqs:[330,494], padVol:0.008 },
+    legendary: { bpm: 140, bass: [98,131,165,196,98,131,165,220], chords: [[196,262,330],[262,330,392],[330,392,494],[392,494,587],[196,262,330],[262,330,392],[330,392,494],[392,494,659]], bassType:'sawtooth', chordType:'triangle', bassVol:0.05, chordVol:0.016, padFreqs:[392,587], padVol:0.01 },
+    blitz: { bpm: 155, bass: [196,196,262,262,196,196,262,330], chords: [[392,494,587],[392,494,587],[494,587,659],[494,587,659],[392,494,587],[392,494,587],[494,587,659],[587,659,784]], bassType:'square', chordType:'triangle', bassVol:0.04, chordVol:0.012, padFreqs:[494,659], padVol:0.006 }
+  };
+
+  const setMusicTier = useCallback((tier) => {
+    if (!MUSIC_TIERS[tier]) return;
+    const wasPlaying = musicPlaying.current;
+    currentTier.current = tier;
+    if (wasPlaying) {
+      // Restart with new tier — stopMusic then startMusic will be called
+      musicPlaying.current = false;
+      if (musicTimer.current) { clearTimeout(musicTimer.current); musicTimer.current = null; }
+      // Small delay to allow cleanup
+      setTimeout(() => {
+        if (wasPlaying) {
+          musicPlaying.current = false; // ensure clean
+          // Re-trigger start
+          try {
+            const ctx = getCtx();
+            musicPlaying.current = true;
+            if (musicGain.current) musicGain.current.gain.value = musicVolume;
+            const tier2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
+            const beatLen = 60/tier2.bpm; const loopLen = tier2.bass.length * beatLen;
+            const scheduleLoop2 = () => {
+              if (!musicPlaying.current) return;
+              const ctx2 = audioCtx.current; if (!ctx2 || !musicGain.current) return;
+              const now = ctx2.currentTime;
+              tier2.bass.forEach((freq,i) => {
+                const t = now + i * beatLen;
+                try {
+                  const bOsc = ctx2.createOscillator(), bG = ctx2.createGain();
+                  bOsc.type = tier2.bassType; bOsc.frequency.value = freq;
+                  bG.gain.setValueAtTime(tier2.bassVol, t); bG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.9);
+                  bOsc.connect(bG); bG.connect(musicGain.current); bOsc.start(t); bOsc.stop(t + beatLen);
+                  if (tier2.chords[i]) tier2.chords[i].forEach(cf => {
+                    const cOsc = ctx2.createOscillator(), cG = ctx2.createGain();
+                    cOsc.type = tier2.chordType; cOsc.frequency.value = cf;
+                    cG.gain.setValueAtTime(tier2.chordVol, t); cG.gain.setValueAtTime(tier2.chordVol, t + beatLen*0.7);
+                    cG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.95);
+                    cOsc.connect(cG); cG.connect(musicGain.current); cOsc.start(t); cOsc.stop(t + beatLen);
+                  });
+                  // Ambient pad layer
+                  if (i === 0 && tier2.padFreqs) {
+                    tier2.padFreqs.forEach(pf => {
+                      const pOsc = ctx2.createOscillator(), pG = ctx2.createGain();
+                      pOsc.type = 'sine'; pOsc.frequency.value = pf;
+                      pG.gain.setValueAtTime(tier2.padVol, now); pG.gain.setValueAtTime(tier2.padVol, now + loopLen*0.8);
+                      pG.gain.exponentialRampToValueAtTime(0.001, now + loopLen*0.95);
+                      pOsc.connect(pG); pG.connect(musicGain.current); pOsc.start(now); pOsc.stop(now + loopLen);
+                    });
+                  }
+                } catch(e) {}
+              });
+              musicTimer.current = setTimeout(scheduleLoop2, loopLen * 900);
+            };
+            scheduleLoop2();
+          } catch(e) {}
+        }
+      }, 80);
+    }
+  }, [getCtx, musicVolume]);
+
+  const startMusic = useCallback((tier) => {
     if (musicPlaying.current || !musicEnabled) return;
+    if (tier) currentTier.current = tier;
     try {
       const ctx = getCtx();
       musicPlaying.current = true;
       if (musicGain.current) musicGain.current.gain.value = musicVolume;
-      const bassNotes = [131,147,165,147,131,165,147,131];
-      const chords = [[262,330,392],[294,370,440],[330,415,494],[294,370,440],[262,330,392],[330,415,494],[294,370,440],[262,330,392]];
-      const bpm = 110; const beatLen = 60/bpm; const loopLen = bassNotes.length * beatLen;
+      const t2 = MUSIC_TIERS[currentTier.current] || MUSIC_TIERS.chill;
+      const beatLen = 60/t2.bpm; const loopLen = t2.bass.length * beatLen;
       const scheduleLoop = () => {
         if (!musicPlaying.current) return;
         const ctx2 = audioCtx.current; if (!ctx2 || !musicGain.current) return;
         const now = ctx2.currentTime;
-        bassNotes.forEach((freq,i) => {
+        t2.bass.forEach((freq,i) => {
           const t = now + i * beatLen;
           try {
             const bOsc = ctx2.createOscillator(), bG = ctx2.createGain();
-            bOsc.type = 'triangle'; bOsc.frequency.value = freq;
-            bG.gain.setValueAtTime(0.06, t); bG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.9);
+            bOsc.type = t2.bassType; bOsc.frequency.value = freq;
+            bG.gain.setValueAtTime(t2.bassVol, t); bG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.9);
             bOsc.connect(bG); bG.connect(musicGain.current); bOsc.start(t); bOsc.stop(t + beatLen);
-            if (chords[i]) chords[i].forEach(cf => {
+            if (t2.chords[i]) t2.chords[i].forEach(cf => {
               const cOsc = ctx2.createOscillator(), cG = ctx2.createGain();
-              cOsc.type = 'sine'; cOsc.frequency.value = cf;
-              cG.gain.setValueAtTime(0.015, t); cG.gain.setValueAtTime(0.015, t + beatLen*0.7);
+              cOsc.type = t2.chordType; cOsc.frequency.value = cf;
+              cG.gain.setValueAtTime(t2.chordVol, t); cG.gain.setValueAtTime(t2.chordVol, t + beatLen*0.7);
               cG.gain.exponentialRampToValueAtTime(0.001, t + beatLen*0.95);
               cOsc.connect(cG); cG.connect(musicGain.current); cOsc.start(t); cOsc.stop(t + beatLen);
             });
+            if (i === 0 && t2.padFreqs) {
+              t2.padFreqs.forEach(pf => {
+                const pOsc = ctx2.createOscillator(), pG = ctx2.createGain();
+                pOsc.type = 'sine'; pOsc.frequency.value = pf;
+                pG.gain.setValueAtTime(t2.padVol, now); pG.gain.setValueAtTime(t2.padVol, now + loopLen*0.8);
+                pG.gain.exponentialRampToValueAtTime(0.001, now + loopLen*0.95);
+                pOsc.connect(pG); pG.connect(musicGain.current); pOsc.start(now); pOsc.stop(now + loopLen);
+              });
+            }
           } catch(e) {}
         });
         musicTimer.current = setTimeout(scheduleLoop, loopLen * 900);
@@ -2187,6 +3118,7 @@ const useSound = () => {
 
   const stopMusic = useCallback(() => {
     musicPlaying.current = false;
+    currentTier.current = 'chill';
     if (musicTimer.current) { clearTimeout(musicTimer.current); musicTimer.current = null; }
   }, []);
 
@@ -2199,10 +3131,38 @@ const useSound = () => {
     else if (!musicEnabled && musicPlaying.current) stopMusic();
   }, [musicEnabled, startMusic, stopMusic]);
 
+  // Challenge mode SFX
+  const blitzCorrect = useCallback(() => {
+    playTone(784,.06,'sine',.2); setTimeout(()=>playTone(1047,.08,'sine',.2),50);
+    playNoise(.03,.04,10000);
+  }, [playTone, playNoise]);
+
+  const blitzWrong = useCallback(() => {
+    playTone(200,.15,'sawtooth',.1);
+  }, [playTone]);
+
+  const blitzTick = useCallback(() => {
+    playTone(1200,.03,'square',.06);
+  }, [playTone]);
+
+  const challengeWin = useCallback(() => {
+    [523,659,784,1047,1319].forEach((f,i)=>setTimeout(()=>{
+      playTone(f,.2,'sine',.15); if(i>=2) playNoise(.04,.03,10000);
+    },i*90));
+    setTimeout(()=>playChord([784,1047,1319,1568],.6,'sine',.05),500);
+  }, [playTone, playNoise, playChord]);
+
+  const challengeStart = useCallback(() => {
+    playNoise(.08,.06,3000);
+    [392,494,587,784].forEach((f,i)=>setTimeout(()=>playTone(f,.15,'triangle',.14),i*100));
+    setTimeout(()=>playChord([587,784,988],.3,'triangle',.06),450);
+  }, [playTone, playNoise, playChord]);
+
   return {
     correct, wrong, tick, streak, roundStart, gameOver, click,
     lifeline, timeWarning, timeUp, perfectRound, playerSelect, badgeEarned,
-    startMusic, stopMusic,
+    startMusic, stopMusic, setMusicTier,
+    blitzCorrect, blitzWrong, blitzTick, challengeWin, challengeStart,
     sfxEnabled, setSfxEnabled: useCallback(v => setSfxEnabled(v), [setSfxEnabled]),
     musicEnabled, setMusicEnabled: useCallback(v => setMusicEnabled(v), [setMusicEnabled]),
     sfxVolume, setSfxVolume: useCallback(v => setSfxVolume(v), [setSfxVolume]),
@@ -2477,6 +3437,61 @@ const useBadges = (playerId) => {
   return { earned, checkBadges };
 };
 
+// ─── Country Coordinates for World Map (simplified Mercator, viewBox 0 0 1000 500) ─
+const COUNTRY_COORDS = {
+  // North America
+  US:[175,185,22],CA:[170,130,24],MX:[135,230,14],CU:[185,225,5],GT:[140,240,4],HN:[150,240,4],
+  NI:[155,248,4],CR:[158,255,3],PA:[165,258,3],BZ:[145,235,3],JM:[178,230,3],HT:[190,228,3],
+  DO:[198,228,3],PR:[205,228,3],BS:[190,210,3],
+  // South America
+  BR:[270,320,26],AR:[240,400,16],CO:[210,270,12],PE:[215,310,12],VE:[225,260,10],
+  CL:[225,390,8],EC:[200,285,6],BO:[240,340,10],PY:[255,360,7],GY:[240,265,5],UY:[260,380,5],
+  // Europe
+  GB:[435,135,7],FR:[445,160,9],DE:[465,145,8],IT:[470,170,7],ES:[425,170,9],PT:[415,170,5],
+  NL:[455,138,3],BE:[452,148,3],CH:[460,158,4],AT:[472,155,5],PL:[485,140,8],GR:[490,178,5],
+  IE:[420,135,5],NO:[465,105,7],SE:[478,110,7],FI:[500,105,7],DK:[460,130,4],IS:[405,100,5],
+  RO:[500,158,6],BG:[500,168,5],HR:[478,162,4],RS:[488,163,4],HU:[485,155,5],SK:[488,148,4],
+  UA:[520,145,10],CZ:[473,148,4],LT:[505,132,4],LV:[505,125,4],EE:[505,118,3],MD:[515,155,3],
+  AD:[438,168,2],LI:[462,155,2],MC:[452,165,2],SM:[468,165,2],VA:[468,170,2],MT:[472,182,2],
+  ME:[485,170,2],MK:[492,172,3],XK:[490,168,2],BY:[510,135,6],GE:[560,160,4],AZ:[570,160,4],
+  // Turkey bridges Europe/Asia
+  TR:[530,175,10],
+  // Africa
+  EG:[530,225,10],NG:[460,280,10],ZA:[530,420,12],KE:[570,300,7],ET:[570,275,9],
+  GH:[440,280,5],TZ:[565,320,8],UG:[555,295,5],DZ:[450,215,14],MA:[420,215,8],
+  TN:[470,205,4],LY:[495,225,12],SD:[545,260,12],SS:[545,290,7],CG:[510,310,5],
+  CD:[530,310,14],AO:[505,340,10],MZ:[565,370,6],MG:[590,370,8],MW:[565,345,4],
+  ZM:[540,350,9],ZW:[545,380,7],BW:[535,390,8],NE:[470,255,10],ML:[445,255,10],
+  SN:[410,265,4],TD:[510,265,10],RW:[555,310,3],DJ:[585,265,3],GM:[412,270,2],
+  SZ:[548,400,2],LS:[538,415,3],LR:[425,285,3],SO:[590,280,6],ST:[470,300,2],
+  MU:[605,370,2],SC:[600,335,2],KM:[575,345,2],TL:[730,305,2],
+  // Asia
+  CN:[720,190,28],JP:[790,185,8],IN:[640,240,18],KR:[770,190,5],ID:[720,305,16],
+  TH:[690,255,7],VN:[715,250,6],PH:[755,255,6],MY:[705,285,6],SG:[705,295,3],
+  MM:[680,240,7],KH:[705,260,5],LA:[700,245,5],BD:[660,235,5],LK:[650,275,4],
+  NP:[645,215,5],BT:[660,215,3],PK:[620,205,9],AF:[615,195,8],IR:[595,205,12],
+  IQ:[565,205,8],SA:[580,245,14],AE:[600,250,5],IL:[540,210,3],JO:[545,215,4],
+  LB:[540,200,2],SY:[550,195,5],KZ:[620,155,18],UZ:[620,175,7],TM:[600,180,6],
+  KG:[640,175,4],TJ:[635,185,4],MN:[720,155,12],KP:[765,180,4],TW:[760,225,4],
+  BN:[720,280,2],MV:[635,280,2],BH:[590,240,2],KW:[575,225,3],QA:[590,245,2],
+  YE:[585,265,6],CY:[530,190,3],PS:[540,213,2],
+  // Oceania
+  AU:[810,390,26],NZ:[885,430,7],FJ:[910,345,3],PG:[820,310,8],WS:[935,325,2],
+  TO:[925,345,2],KI:[920,300,2],GU:[805,250,2],GL:[340,85,14],
+  // Russia spans both
+  RU:[650,110,30]
+};
+
+// Continent outline paths (simplified shapes for background context)
+const CONTINENT_OUTLINES = {
+  "North America": "M80,90 L220,80 L230,140 L200,175 L180,225 L160,240 L130,260 L105,250 L100,210 L85,190 L80,150 Z",
+  "South America": "M175,260 L210,255 L250,260 L290,285 L290,350 L270,430 L240,470 L215,450 L200,390 L185,340 L175,290 Z",
+  "Europe": "M400,85 L540,80 L555,130 L530,170 L495,190 L445,185 L410,175 L415,145 L400,120 Z",
+  "Africa": "M400,195 L550,190 L600,230 L605,285 L590,350 L570,430 L530,460 L490,440 L470,380 L440,320 L415,280 L400,240 Z",
+  "Asia": "M555,80 L800,80 L810,130 L800,200 L770,260 L740,310 L700,300 L650,280 L590,270 L560,230 L555,180 Z",
+  "Oceania": "M760,300 L870,290 L920,320 L910,370 L860,460 L780,470 L750,420 L760,350 Z"
+};
+
 // ─── Map Progress Hook ────────────────────────────────────────────────────────
 const useMapProgress = (playerId) => {
   const key = playerId ? `geobee_map_${playerId}` : 'geobee_map';
@@ -2541,6 +3556,59 @@ export default function GeoBeeGame() {
   const [answerTimer, setAnswerTimer] = useState(10); // seconds to answer after buzzing
   const [answerTimerActive, setAnswerTimerActive] = useState(false);
   const [duelRoundLabel, setDuelRoundLabel] = useState('');
+  // ─── Challenge Mode State ─────────────────────────────────────────────
+  const [challengeType, setChallengeType] = useState(null); // 'borders' | 'blitz'
+  const [challengeData, setChallengeData] = useState(null); // current challenge info
+  const [borderGuesses, setBorderGuesses] = useState([]); // correct guesses so far
+  const [borderInput, setBorderInput] = useState('');
+  const [borderTimer, setBorderTimer] = useState(60);
+  const [borderTimerActive, setBorderTimerActive] = useState(false);
+  const [borderShake, setBorderShake] = useState(false);
+  const [borderHint, setBorderHint] = useState(false);
+  const [blitzQs, setBlitzQs] = useState([]); // shuffled blitz questions
+  const [blitzIdx, setBlitzIdx] = useState(0);
+  const [blitzScore, setBlitzScore] = useState(0);
+  const [blitzTimer, setBlitzTimer] = useState(60);
+  const [blitzTimerActive, setBlitzTimerActive] = useState(false);
+  const [blitzStreak, setBlitzStreak] = useState(0);
+  const [blitzBestStreak, setBlitzBestStreak] = useState(0);
+  const [blitzSelected, setBlitzSelected] = useState(null);
+  const [blitzResults, setBlitzResults] = useState([]);
+  const blitzOptionsRef = useRef([]);
+  // ─── Commentator State ──────────────────────────────────────────────
+  const [commentatorMsg, setCommentatorMsg] = useState(null);
+  const commentatorTimer = useRef(null);
+  const lastWrongStreak = useRef(0);
+  // Flag Frenzy state
+  const [flagQs, setFlagQs] = useState([]);
+  const [flagIdx, setFlagIdx] = useState(0);
+  const [flagScore, setFlagScore] = useState(0);
+  const [flagTimer, setFlagTimer] = useState(45);
+  const [flagTimerActive, setFlagTimerActive] = useState(false);
+  const [flagStreak, setFlagStreak] = useState(0);
+  const [flagBestStreak, setFlagBestStreak] = useState(0);
+  const [flagSelected, setFlagSelected] = useState(null);
+  const [flagResults, setFlagResults] = useState([]);
+  // Continent Sprint state
+  const [sprintContinent, setSprintContinent] = useState('');
+  const [sprintCountries, setSprintCountries] = useState([]);
+  const [sprintIdx, setSprintIdx] = useState(0);
+  const [sprintScore, setSprintScore] = useState(0);
+  const [sprintTimer, setSprintTimer] = useState(40);
+  const [sprintTimerActive, setSprintTimerActive] = useState(false);
+  const [sprintStreak, setSprintStreak] = useState(0);
+  const [sprintSelected, setSprintSelected] = useState(null);
+  const [sprintResults, setSprintResults] = useState([]);
+  // Population Showdown state
+  const [popPairs, setPopPairs] = useState([]);
+  const [popIdx, setPopIdx] = useState(0);
+  const [popScore, setPopScore] = useState(0);
+  const [popTimer, setPopTimer] = useState(50);
+  const [popTimerActive, setPopTimerActive] = useState(false);
+  const [popStreak, setPopStreak] = useState(0);
+  const [popBestStreak, setPopBestStreak] = useState(0);
+  const [popSelected, setPopSelected] = useState(null);
+  const [popResults, setPopResults] = useState([]);
   // Lifelines state
   const [lifelines, setLifelines] = useState({fiftyFifty:1,skip:1,extraTime:1});
   const lifelineTracker = useRef({ff:0,sk:0,et:0}); // tracks usage per game
@@ -2568,6 +3636,7 @@ export default function GeoBeeGame() {
 @keyframes titlePulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.15)}}
 @keyframes streakFlame{0%,100%{transform:scale(1);filter:brightness(1)}50%{transform:scale(1.15);filter:brightness(1.3)}}
 @keyframes buzzerPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 rgba(255,255,255,0)}50%{transform:scale(1.03);box-shadow:0 0 20px rgba(255,255,255,0.15)}}
+@keyframes mapPing{0%{r:0;opacity:1}100%{r:20;opacity:0}}
 `;
     document.head.appendChild(style);
   }, []);
@@ -2578,6 +3647,12 @@ export default function GeoBeeGame() {
   const mapProgress = useMapProgress(activePlayerId);
   const [profileTab, setProfileTab] = useState('stats');
   const [badgeToast, setBadgeToast] = useState(null);
+  // Theme and unlocks
+  const [selectedTheme, setSelectedTheme] = useLocalStorage(activePlayerId ? `geobee_theme_${activePlayerId}` : 'geobee_theme', 'space');
+  const [unlockToast, setUnlockToast] = useState(null);
+  const unlockToastTimer = useRef(null);
+  const [survivalTierActive, setSurvivalTierActive] = useState(null);
+  const [mapHovered, setMapHovered] = useState(null);
   const [streakMilestone, setStreakMilestone] = useState(null);
   const [roundCorrect, setRoundCorrect] = useState(0);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
@@ -2639,6 +3714,42 @@ export default function GeoBeeGame() {
     if (toastTimer.current) clearTimeout(toastTimer.current);
     toastTimer.current = setTimeout(() => setBadgeToast(null), 3500);
   }, []);
+
+  const showUnlockToast = useCallback((message) => {
+    setUnlockToast(message);
+    sound.challengeWin();
+    if (unlockToastTimer.current) clearTimeout(unlockToastTimer.current);
+    unlockToastTimer.current = setTimeout(() => setUnlockToast(null), 4000);
+  }, [sound]);
+
+  const checkUnlocks = useCallback((newBadgeIds) => {
+    if (!newBadgeIds || newBadgeIds.length === 0) return;
+
+    // Check challenge unlocks
+    Object.entries(CHALLENGE_LOCKS).forEach(([challengeType, lock]) => {
+      if (newBadgeIds.includes(lock.badgeId)) {
+        setTimeout(() => showUnlockToast(
+          challengeType === 'continentsprint' ? '🌍 Continent Sprint Challenge!' : '👥 Population Showdown Challenge!'
+        ), 2000);
+      }
+    });
+
+    // Check survival tier unlocks
+    SURVIVAL_TIERS.forEach(tier => {
+      if (tier.unlockBadge && newBadgeIds.includes(tier.unlockBadge)) {
+        setTimeout(() => showUnlockToast(`${tier.icon} Survival ${tier.name} Tier!`), 3000);
+      }
+    });
+
+    // Check theme unlocks (based on total badge count AFTER earning)
+    const totalBadges = badges.earned.length;
+    Object.values(THEMES).forEach(theme => {
+      if (theme.unlockReq > 0 && totalBadges >= theme.unlockReq && totalBadges - newBadgeIds.length < theme.unlockReq) {
+        setTimeout(() => showUnlockToast(`${theme.icon} ${theme.name} Theme!`), 4000);
+      }
+    });
+  }, [badges.earned, showUnlockToast]);
+
   // Check badges after profile changes
   const checkAndShowBadges = useCallback((extraData = {}) => {
     const data = {
@@ -2651,8 +3762,10 @@ export default function GeoBeeGame() {
       showBadgeToast(newBadges[0]);
       sound.badgeEarned();
       setNewBadgesThisGame(prev => [...prev, ...newBadges]);
+      // Check for unlocks
+      checkUnlocks(newBadges.map(b => b.id));
     }
-  }, [playerProfile.profile, mapProgress.discovered, dailyStreak.streak, badges, showBadgeToast]);
+  }, [playerProfile.profile, mapProgress.discovered, dailyStreak.streak, badges, showBadgeToast, checkUnlocks]);
 
   const selectGameQuestions = useCallback((mode) => {
     const m = mode || gameMode;
@@ -2773,16 +3886,389 @@ export default function GeoBeeGame() {
   const currentQ = gameQuestions[qIndex] || null;
   const totalQs = gameQuestions.length;
 
+  // ─── Commentator System ───────────────────────────────────────────────
+  const showCommentator = useCallback((category) => {
+    if (!COMMENTATOR[category]) return;
+    const msg = pick(COMMENTATOR[category]);
+    setCommentatorMsg(msg);
+    if (commentatorTimer.current) clearTimeout(commentatorTimer.current);
+    commentatorTimer.current = setTimeout(() => setCommentatorMsg(null), 3500);
+    // Also speak it if voice is on
+    speech.speak(msg.replace(/[🔥🏆]/g,''), { rate: 1.15, pitch: 1.12 });
+  }, [speech]);
+
+  // ─── Adaptive Music Tier (changes based on difficulty round) ──────────
+  useEffect(() => {
+    if (gameMode !== 'classic' && gameMode !== 'survival') return;
+    if (!currentQ) return;
+    const d = currentQ.d || 1;
+    const tierMap = { 1:'chill', 2:'medium', 3:'intense', 4:'legendary', 5:'legendary' };
+    const newTier = tierMap[d] || 'chill';
+    if (sound.musicEnabled) sound.setMusicTier(newTier);
+  }, [currentQ, gameMode, sound]);
+
+  // ─── Challenge Mode Functions ─────────────────────────────────────────
+  const startChallenge = useCallback((type) => {
+    // Check challenge lock
+    const lock = CHALLENGE_LOCKS[type];
+    if (lock && !badges.earned.includes(lock.badgeId)) {
+      speech.speak(`This challenge is locked! Earn the ${lock.badgeName} badge to unlock it.`, { rate: 1.1, pitch: 1.05 });
+      return;
+    }
+    sound.challengeStart();
+    speech.cancel();
+    setChallengeType(type);
+    if (type === 'borders') {
+      const challenge = BORDER_CHALLENGES[Math.floor(Math.random() * BORDER_CHALLENGES.length)];
+      setChallengeData(challenge);
+      setBorderGuesses([]);
+      setBorderInput('');
+      setBorderTimer(60);
+      setBorderTimerActive(false);
+      setBorderShake(false);
+      setBorderHint(false);
+      setScreen('challengeIntro');
+    } else if (type === 'blitz') {
+      const shuffled = [...CAPITAL_BLITZ_QS].sort(() => Math.random() - 0.5);
+      setBlitzQs(shuffled);
+      setBlitzIdx(0);
+      setBlitzScore(0);
+      setBlitzTimer(60);
+      setBlitzTimerActive(false);
+      setBlitzStreak(0);
+      setBlitzBestStreak(0);
+      setBlitzSelected(null);
+      setBlitzResults([]);
+      setScreen('challengeIntro');
+    } else if (type === 'flags') {
+      const shuffled = [...FLAG_FRENZY_QS].sort(() => Math.random() - 0.5);
+      setFlagQs(shuffled);
+      setFlagIdx(0);
+      setFlagScore(0);
+      setFlagTimer(45);
+      setFlagTimerActive(false);
+      setFlagStreak(0);
+      setFlagBestStreak(0);
+      setFlagSelected(null);
+      setFlagResults([]);
+      setScreen('challengeIntro');
+    } else if (type === 'continentsprint') {
+      const continents = Object.keys(CONTINENT_SPRINT_DATA);
+      const chosen = continents[Math.floor(Math.random() * continents.length)];
+      setSprintContinent(chosen);
+      // Build mix of correct and wrong countries
+      const correct = CONTINENT_SPRINT_DATA[chosen].map(c => ({country:c, belongs:true}));
+      const wrongPool = Object.entries(CONTINENT_SPRINT_DATA).filter(([k]) => k !== chosen).flatMap(([,v]) => v);
+      const wrongs = wrongPool.sort(() => Math.random()-0.5).slice(0, correct.length).map(c => ({country:c, belongs:false}));
+      const mixed = [...correct,...wrongs].sort(() => Math.random()-0.5);
+      setSprintCountries(mixed);
+      setSprintIdx(0);
+      setSprintScore(0);
+      setSprintTimer(40);
+      setSprintTimerActive(false);
+      setSprintStreak(0);
+      setSprintSelected(null);
+      setSprintResults([]);
+      setScreen('challengeIntro');
+    } else if (type === 'population') {
+      const shuffled = [...POPULATION_PAIRS].sort(() => Math.random() - 0.5);
+      // Randomly swap a/b in each pair for variety
+      const swapped = shuffled.map(p => Math.random() > 0.5 ? p : {a:p.b,popA:p.popB,b:p.a,popB:p.popA,unit:p.unit});
+      setPopPairs(swapped);
+      setPopIdx(0);
+      setPopScore(0);
+      setPopTimer(50);
+      setPopTimerActive(false);
+      setPopStreak(0);
+      setPopBestStreak(0);
+      setPopSelected(null);
+      setPopResults([]);
+      setScreen('challengeIntro');
+    }
+  }, [sound, speech]);
+
+  const startChallengeTimer = useCallback(() => {
+    if (challengeType === 'borders') {
+      setBorderTimerActive(true);
+      if (sound.musicEnabled) sound.startMusic('intense');
+      speech.speak(`Name all the countries that border ${challengeData?.country}! Go!`, { rate: 1.2, pitch: 1.15 });
+      setScreen('challengeBorders');
+    } else if (challengeType === 'blitz') {
+      setBlitzTimerActive(true);
+      if (sound.musicEnabled) sound.startMusic('blitz');
+      speech.speak("Capital Blitz! Name as many capitals as you can in 60 seconds! GO!", { rate: 1.3, pitch: 1.2 });
+      setScreen('challengeBlitz');
+    } else if (challengeType === 'flags') {
+      setFlagTimerActive(true);
+      if (sound.musicEnabled) sound.startMusic('blitz');
+      speech.speak("Flag Frenzy! Name the countries from their flags! GO!", { rate: 1.3, pitch: 1.2 });
+      setScreen('challengeFlags');
+    } else if (challengeType === 'continentsprint') {
+      setSprintTimerActive(true);
+      if (sound.musicEnabled) sound.startMusic('intense');
+      speech.speak(`Continent Sprint! Which countries belong to ${sprintContinent}? Quick!`, { rate: 1.2, pitch: 1.15 });
+      setScreen('challengeSprint');
+    } else if (challengeType === 'population') {
+      setPopTimerActive(true);
+      if (sound.musicEnabled) sound.startMusic('legendary');
+      speech.speak("Population Showdown! Pick the country with more people! GO!", { rate: 1.25, pitch: 1.15 });
+      setScreen('challengePopulation');
+    }
+  }, [challengeType, challengeData, sound, speech, sprintContinent]);
+
+  // Border challenge: check guess
+  const checkBorderGuess = useCallback(() => {
+    if (!challengeData || !borderInput.trim()) return;
+    const guess = borderInput.trim().toLowerCase();
+    const match = challengeData.borders.find(b => b.toLowerCase() === guess || b.toLowerCase().replace(/[^a-z]/g,'') === guess.replace(/[^a-z]/g,''));
+    if (match && !borderGuesses.includes(match)) {
+      sound.blitzCorrect();
+      setBorderGuesses(prev => [...prev, match]);
+      setBorderInput('');
+      // Check if all found
+      if (borderGuesses.length + 1 >= challengeData.borders.length) {
+        setBorderTimerActive(false);
+        sound.challengeWin();
+        speech.speak(`Incredible! You named ALL ${challengeData.borders.length} countries! Perfect score!`, { rate: 1.15, pitch: 1.15 });
+        setTimeout(() => setScreen('challengeResult'), 800);
+      }
+    } else if (borderGuesses.includes(match)) {
+      setBorderInput('');
+    } else {
+      sound.blitzWrong();
+      setBorderShake(true);
+      setTimeout(() => setBorderShake(false), 400);
+      setBorderInput('');
+    }
+  }, [challengeData, borderInput, borderGuesses, sound, speech]);
+
+  // Blitz: handle answer (pass true/false for correct)
+  const handleBlitzAnswer = useCallback((isCorrectChoice, displayIdx) => {
+    if (blitzSelected !== null) return;
+    const q = blitzQs[blitzIdx];
+    if (!q) return;
+    setBlitzSelected(displayIdx);
+    const isCorrect = isCorrectChoice;
+    if (isCorrect) {
+      sound.blitzCorrect();
+      setBlitzScore(s => s + 100 + (blitzStreak * 25));
+      setBlitzStreak(s => s + 1);
+      setBlitzBestStreak(b => Math.max(b, blitzStreak + 1));
+    } else {
+      sound.blitzWrong();
+      setBlitzStreak(0);
+    }
+    setBlitzResults(prev => [...prev, { country: q.country, capital: q.capital, correct: isCorrect }]);
+    // Quick auto-advance
+    setTimeout(() => {
+      setBlitzSelected(null);
+      if (blitzIdx + 1 < blitzQs.length) {
+        setBlitzIdx(i => i + 1);
+      } else {
+        // Out of questions
+        setBlitzTimerActive(false);
+        setScreen('challengeResult');
+      }
+    }, isCorrect ? 300 : 600);
+  }, [blitzSelected, blitzQs, blitzIdx, blitzStreak, sound]);
+
+  // Flag Frenzy: handle answer
+  const handleFlagAnswer = useCallback((selectedCountry, displayIdx) => {
+    if (flagSelected !== null) return;
+    const q = flagQs[flagIdx];
+    if (!q) return;
+    setFlagSelected(displayIdx);
+    const isCorrect = selectedCountry === q.country;
+    if (isCorrect) {
+      sound.blitzCorrect();
+      setFlagScore(s => s + 100 + (flagStreak * 25));
+      setFlagStreak(s => s + 1);
+      setFlagBestStreak(b => Math.max(b, flagStreak + 1));
+    } else {
+      sound.blitzWrong();
+      setFlagStreak(0);
+    }
+    setFlagResults(prev => [...prev, { flag: q.flag, country: q.country, correct: isCorrect }]);
+    setTimeout(() => {
+      setFlagSelected(null);
+      if (flagIdx + 1 < flagQs.length) {
+        setFlagIdx(i => i + 1);
+      } else {
+        setFlagTimerActive(false);
+        setScreen('challengeResult');
+      }
+    }, isCorrect ? 300 : 600);
+  }, [flagSelected, flagQs, flagIdx, flagStreak, sound]);
+
+  // Continent Sprint: handle answer
+  const handleSprintAnswer = useCallback((answer) => {
+    if (sprintSelected !== null) return;
+    const item = sprintCountries[sprintIdx];
+    if (!item) return;
+    setSprintSelected(answer);
+    const isCorrect = (answer === 'yes') === item.belongs;
+    if (isCorrect) {
+      sound.blitzCorrect();
+      setSprintScore(s => s + 100 + (sprintStreak * 20));
+      setSprintStreak(s => s + 1);
+    } else {
+      sound.blitzWrong();
+      setSprintStreak(0);
+    }
+    setSprintResults(prev => [...prev, { country: item.country, belongs: item.belongs, correct: isCorrect }]);
+    setTimeout(() => {
+      setSprintSelected(null);
+      if (sprintIdx + 1 < sprintCountries.length) {
+        setSprintIdx(i => i + 1);
+      } else {
+        setSprintTimerActive(false);
+        setScreen('challengeResult');
+      }
+    }, isCorrect ? 250 : 500);
+  }, [sprintSelected, sprintCountries, sprintIdx, sprintStreak, sound]);
+
+  // Population Showdown: handle answer
+  const handlePopAnswer = useCallback((choice) => {
+    if (popSelected !== null) return;
+    const pair = popPairs[popIdx];
+    if (!pair) return;
+    setPopSelected(choice);
+    const correctChoice = pair.popA >= pair.popB ? 'a' : 'b';
+    const isCorrect = choice === correctChoice;
+    if (isCorrect) {
+      sound.blitzCorrect();
+      setPopScore(s => s + 100 + (popStreak * 30));
+      setPopStreak(s => s + 1);
+      setPopBestStreak(b => Math.max(b, popStreak + 1));
+    } else {
+      sound.blitzWrong();
+      setPopStreak(0);
+    }
+    setPopResults(prev => [...prev, { a: pair.a, popA: pair.popA, b: pair.b, popB: pair.popB, correct: isCorrect }]);
+    setTimeout(() => {
+      setPopSelected(null);
+      if (popIdx + 1 < popPairs.length) {
+        setPopIdx(i => i + 1);
+      } else {
+        setPopTimerActive(false);
+        setScreen('challengeResult');
+      }
+    }, isCorrect ? 400 : 700);
+  }, [popSelected, popPairs, popIdx, popStreak, sound]);
+
+  // Border timer
+  useEffect(() => {
+    if (!borderTimerActive || borderTimer <= 0) return;
+    const interval = setInterval(() => {
+      setBorderTimer(t => {
+        if (t <= 1) {
+          setBorderTimerActive(false);
+          sound.timeUp();
+          speech.speak(`Time's up! You got ${borderGuesses.length} out of ${challengeData?.borders?.length || 0}!`, { rate: 1.1, pitch: 1.05 });
+          setTimeout(() => setScreen('challengeResult'), 600);
+          return 0;
+        }
+        if (t <= 10) sound.blitzTick();
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [borderTimerActive, borderTimer, borderGuesses, challengeData, sound, speech]);
+
+  // Blitz timer
+  useEffect(() => {
+    if (!blitzTimerActive || blitzTimer <= 0) return;
+    const interval = setInterval(() => {
+      setBlitzTimer(t => {
+        if (t <= 1) {
+          setBlitzTimerActive(false);
+          sound.timeUp();
+          const correct = blitzResults.filter(r => r.correct).length;
+          speech.speak(`Time's up! You got ${correct} capitals right! ${correct >= 15 ? 'AMAZING!' : correct >= 10 ? 'Great job!' : 'Not bad!'}`, { rate: 1.1, pitch: 1.05 });
+          setTimeout(() => setScreen('challengeResult'), 600);
+          return 0;
+        }
+        if (t <= 10) sound.blitzTick();
+        if (t === 30) speech.speak("30 seconds left!", { rate: 1.3, pitch: 1.2 });
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [blitzTimerActive, blitzTimer, blitzResults, blitzSelected, sound, speech]);
+
+  // Flag Frenzy timer
+  useEffect(() => {
+    if (!flagTimerActive || flagTimer <= 0) return;
+    const interval = setInterval(() => {
+      setFlagTimer(t => {
+        if (t <= 1) {
+          setFlagTimerActive(false);
+          sound.timeUp();
+          const correct = flagResults.filter(r => r.correct).length;
+          speech.speak(`Time's up! You identified ${correct} flags!`, { rate: 1.1, pitch: 1.05 });
+          setTimeout(() => setScreen('challengeResult'), 600);
+          return 0;
+        }
+        if (t <= 10) sound.blitzTick();
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [flagTimerActive, flagTimer, flagResults, sound, speech]);
+
+  // Continent Sprint timer
+  useEffect(() => {
+    if (!sprintTimerActive || sprintTimer <= 0) return;
+    const interval = setInterval(() => {
+      setSprintTimer(t => {
+        if (t <= 1) {
+          setSprintTimerActive(false);
+          sound.timeUp();
+          const correct = sprintResults.filter(r => r.correct).length;
+          speech.speak(`Time's up! You sorted ${correct} countries correctly!`, { rate: 1.1, pitch: 1.05 });
+          setTimeout(() => setScreen('challengeResult'), 600);
+          return 0;
+        }
+        if (t <= 8) sound.blitzTick();
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [sprintTimerActive, sprintTimer, sprintResults, sound, speech]);
+
+  // Population Showdown timer
+  useEffect(() => {
+    if (!popTimerActive || popTimer <= 0) return;
+    const interval = setInterval(() => {
+      setPopTimer(t => {
+        if (t <= 1) {
+          setPopTimerActive(false);
+          sound.timeUp();
+          const correct = popResults.filter(r => r.correct).length;
+          speech.speak(`Time's up! You got ${correct} population matchups right!`, { rate: 1.1, pitch: 1.05 });
+          setTimeout(() => setScreen('challengeResult'), 600);
+          return 0;
+        }
+        if (t <= 10) sound.blitzTick();
+        return t - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [popTimerActive, popTimer, popResults, sound, speech]);
+
   const getSetup = (cat) => {
     const setups = CATEGORY_SETUPS[cat] || CATEGORY_SETUPS["Physical Geography"];
     return setups[Math.floor(Math.random() * setups.length)];
   };
 
-  const startGame = (mode) => {
+  const startGame = (mode, survTier) => {
     const m = mode || gameMode;
     setGameMode(m);
     sound.click(); speech.cancel();
-    if (sound.musicEnabled) sound.startMusic();
+    lastWrongStreak.current = 0;
+    setCommentatorMsg(null);
+    const startTier = m === 'duel' ? 'intense' : m === 'survival' ? 'medium' : 'chill';
+    if (sound.musicEnabled) sound.startMusic(startTier);
     const gq = selectGameQuestions(m);
     setGameQuestions(gq);
     setScore(0); setStreak(0); setBestStreak(0); setQIndex(0);
@@ -2798,7 +4284,9 @@ export default function GeoBeeGame() {
       extraTime: earnedBadges.includes('first_steps') ? 1 : 0
     });
     if (m === 'survival') {
-      setSurvivalLives(3);
+      const tier = survTier || SURVIVAL_TIERS[0];
+      setSurvivalLives(tier.lives);
+      setSurvivalTierActive(tier);
     }
     if (m === 'multiplayer') {
       setPlayers([{name:mpNames[0],score:0,correct:0,history:[]},{name:mpNames[1],score:0,correct:0,history:[]}]);
@@ -3129,9 +4617,24 @@ export default function GeoBeeGame() {
       qtype: q.type || 'standard', difficulty: q.d, tinyCountry: isTiny
     });
     setHistory(h => [...h, { question: q.q, correct: isCorrect, selected: idx, answer: q.a, cat: q.cat, type: q.type }]);
+    // Commentator triggers
+    if (isCorrect) {
+      const ns = streak + 1;
+      if (ns === 2) setTimeout(() => showCommentator('streakStart'), 1200);
+      else if (ns >= 7) setTimeout(() => showCommentator('streakHot'), 1200);
+      if (timer <= 3 && timer > 0) setTimeout(() => showCommentator('clutch'), 800);
+      if (lastWrongStreak.current >= 2) setTimeout(() => showCommentator('comeback'), 1000);
+      lastWrongStreak.current = 0;
+      // Halfway check
+      if (qIndex === Math.floor(totalQs / 2) - 1) setTimeout(() => showCommentator('halfwayCheck'), 2000);
+    } else {
+      lastWrongStreak.current++;
+      if (streak >= 3) setTimeout(() => showCommentator('streakBroken'), 1200);
+      if (lastWrongStreak.current >= 3) setTimeout(() => showCommentator('wrongStreak'), 1200);
+    }
     setScreen('result');
     setTimeout(() => checkAndShowBadges({ bestStreak: Math.max(playerProfile.profile.bestStreak, isCorrect ? streak + 1 : streak) }), 100);
-  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer, triggerShake, triggerCorrectFlash]);
+  }, [selected, qIndex, gameQuestions, timer, streak, sound, speech, playerProfile, dailyStreak, mapProgress, checkAndShowBadges, gameMode, currentPlayer, triggerShake, triggerCorrectFlash, showCommentator, totalQs]);
 
   const endGame = useCallback(() => {
     setScreen('gameOver');
@@ -3226,21 +4729,22 @@ export default function GeoBeeGame() {
 
   const correctCount = history.filter(h => h.correct).length;
 
-  // ─── STYLES ──────────────────────────────────────────────────────────────
+  // ─── STYLES (Theme-Aware) ────────────────────────────────────────────────
+  const activeTheme = THEMES[selectedTheme] || THEMES.space;
   const S = {
-    wrap: { minHeight:'100vh', background:'linear-gradient(135deg,#0a0a2e 0%,#1a1a4e 30%,#0d0d3a 70%,#050520 100%)', color:'#fff', fontFamily:"'Segoe UI',system-ui,-apple-system,sans-serif", display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'20px', position:'relative' },
-    stars: { position:'fixed',top:0,left:0,right:0,bottom:0, background:'radial-gradient(2px 2px at 20px 30px,#fff,transparent),radial-gradient(2px 2px at 40px 70px,rgba(255,255,255,0.8),transparent),radial-gradient(1px 1px at 90px 40px,#fff,transparent)', backgroundSize:'200px 100px', pointerEvents:'none',zIndex:0 },
-    card: { background:'rgba(255,255,255,0.07)', backdropFilter:'blur(20px)', borderRadius:'24px', border:'1px solid rgba(255,255,255,0.15)', padding:'40px', maxWidth:'700px', width:'100%', position:'relative', zIndex:1, boxShadow:'0 25px 60px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.1)' },
-    title: { fontSize:'3.5rem', fontWeight:900, textAlign:'center', background:'linear-gradient(to right,#f7b733,#fc4a1a,#f7b733)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', letterSpacing:'-1px', lineHeight:1.1, marginBottom:'8px' },
-    sub: { textAlign:'center', color:'rgba(255,255,255,0.6)', fontSize:'1.1rem', marginBottom:'30px' },
-    btn: { background:'linear-gradient(135deg,#f7b733,#fc4a1a)', color:'#fff', border:'none', borderRadius:'16px', padding:'16px 40px', fontSize:'1.2rem', fontWeight:700, cursor:'pointer', transition:'all 0.2s', display:'block', margin:'0 auto', boxShadow:'0 4px 20px rgba(252,74,26,0.3)' },
-    host: { background:'rgba(247,183,51,0.1)', border:'1px solid rgba(247,183,51,0.3)', borderRadius:'16px', padding:'16px 20px', marginBottom:'24px', fontSize:'1rem', lineHeight:1.6 },
+    wrap: { minHeight:'100vh', background: activeTheme.wrapBg, color: activeTheme.textPrimary, fontFamily:"'Segoe UI',system-ui,-apple-system,sans-serif", display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'20px', position:'relative', overflow:'auto' },
+    stars: { position:'fixed',top:0,left:0,right:0,bottom:0, background: activeTheme.starsBg, backgroundSize:'200px 100px', pointerEvents:'none', zIndex:0 },
+    card: { background: activeTheme.cardBg, backdropFilter:'blur(20px)', borderRadius:'24px', border:'1px solid ' + activeTheme.cardBorder, padding:'40px', maxWidth:'700px', width:'100%', position:'relative', zIndex:1, boxShadow:'0 25px 60px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.1)' },
+    title: { fontSize:'3.5rem', fontWeight:900, textAlign:'center', background: activeTheme.titleGradient, WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', letterSpacing:'-1px', lineHeight:1.1, marginBottom:'8px' },
+    sub: { textAlign:'center', color: activeTheme.textSecondary, fontSize:'1.1rem', marginBottom:'30px' },
+    btn: { background: activeTheme.btnGradient, color:'#fff', border:'none', borderRadius:'16px', padding:'16px 40px', fontSize:'1.2rem', fontWeight:700, cursor:'pointer', transition:'all 0.2s', display:'block', margin:'0 auto', boxShadow:'0 4px 20px ' + activeTheme.btnShadow },
+    host: { background:'rgba(247,183,51,0.1)', border:'1px solid rgba(247,183,51,0.3)', borderRadius:'16px', padding:'16px 20px', marginBottom:'24px', fontSize:'1rem', lineHeight:1.6, color: activeTheme.textPrimary },
     cat: { display:'inline-block', background:'rgba(247,183,51,0.2)', color:'#f7b733', padding:'4px 14px', borderRadius:'20px', fontSize:'0.8rem', fontWeight:600, letterSpacing:'1px', textTransform:'uppercase', marginBottom:'12px' },
-    bar: { display:'flex', justifyContent:'space-between', alignItems:'center', padding:'12px 20px', background:'rgba(0,0,0,0.3)', borderRadius:'14px', marginBottom:'20px', fontSize:'0.9rem' },
+    bar: { display:'flex', justifyContent:'space-between', alignItems:'center', padding:'12px 20px', background:'rgba(0,0,0,0.3)', borderRadius:'14px', marginBottom:'20px', fontSize:'0.9rem', color: activeTheme.textPrimary },
     fact: { background:'rgba(46,213,115,0.08)', border:'1px solid rgba(46,213,115,0.2)', borderRadius:'12px', padding:'14px 18px', fontSize:'0.9rem', lineHeight:1.6, color:'rgba(255,255,255,0.8)', marginTop:'16px' },
-    statCard: { background:'rgba(255,255,255,0.06)', borderRadius:'14px', padding:'16px', textAlign:'center', flex:1 },
-    statVal: { fontSize:'2rem', fontWeight:800, background:'linear-gradient(to right,#f7b733,#fc4a1a)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent' },
-    statLbl: { fontSize:'0.8rem', color:'rgba(255,255,255,0.5)', marginTop:'4px', textTransform:'uppercase', letterSpacing:'1px' }
+    statCard: { background:'rgba(255,255,255,0.06)', borderRadius:'14px', padding:'16px', textAlign:'center', flex:1, color: activeTheme.textPrimary },
+    statVal: { fontSize:'2rem', fontWeight:800, background: activeTheme.titleGradient, WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent' },
+    statLbl: { fontSize:'0.8rem', color: activeTheme.textSecondary, marginTop:'4px', textTransform:'uppercase', letterSpacing:'1px' }
   };
 
   const optStyle = (idx) => {
@@ -3315,6 +4819,21 @@ export default function GeoBeeGame() {
     );
   })() : null;
 
+  // ─── Unlock Toast Overlay ────────────────────────────────────────────────
+  const UnlockToast = unlockToast ? (
+    <div style={{position:'fixed',top:'18px',left:'50%',transform:'translateX(-50%)',
+      background:'linear-gradient(135deg,rgba(247,183,51,0.95),rgba(255,215,0,0.95))',
+      borderRadius:'20px',padding:'14px 28px',zIndex:10000,
+      boxShadow:'0 8px 32px rgba(247,183,51,0.4),0 0 60px rgba(255,215,0,0.2)',
+      animation:'slideDown 0.5s ease-out',textAlign:'center',maxWidth:'340px'}}>
+      <div style={{fontSize:'1.5rem',marginBottom:'4px'}}>✨</div>
+      <div style={{fontSize:'0.75rem',fontWeight:800,color:'#1a1a2e',textTransform:'uppercase',letterSpacing:'1px',marginBottom:'2px'}}>
+        New Unlock!
+      </div>
+      <div style={{fontSize:'0.9rem',fontWeight:700,color:'#1a1a2e'}}>{unlockToast}</div>
+    </div>
+  ) : null;
+
   // ─── SCREENS ─────────────────────────────────────────────────────────────
 
   // ─── Helper: get any player's stats from localStorage ──────────────────
@@ -3362,6 +4881,61 @@ export default function GeoBeeGame() {
           })}
         </div>
         <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Each player's stats, badges, and map progress are tracked separately</div>
+      </div>
+    </div>
+  );
+
+  // ─── Survival Tier Select Screen ───────────────────────────────────────────
+  if (screen === 'survivalTierSelect') return (
+    <div style={S.wrap}><div style={S.stars}/>
+      <div style={animCard({textAlign:'center'})}>
+        <div style={{fontSize:'2.5rem',marginBottom:'6px'}}>❤️</div>
+        <div style={{...S.title,fontSize:'1.8rem',marginBottom:'4px'}}>SURVIVAL MODE</div>
+        <div style={{color:activeTheme.textSecondary,fontSize:'0.85rem',marginBottom:'20px'}}>
+          Choose your difficulty tier
+        </div>
+        <div style={{display:'flex',gap:'12px',justifyContent:'center',flexWrap:'wrap'}}>
+          {SURVIVAL_TIERS.map(tier => {
+            const isLocked = tier.unlockBadge && !badges.earned.includes(tier.unlockBadge);
+            return (
+              <button key={tier.id}
+                onClick={() => {
+                  if (isLocked) {
+                    speech.speak(`Locked! Earn the ${tier.unlockDesc} badge first.`, { rate: 1.1 });
+                    return;
+                  }
+                  sound.click();
+                  startGame('survival', tier);
+                }}
+                style={{
+                  flex:'1 1 140px',maxWidth:'180px',
+                  background: isLocked ? 'rgba(255,255,255,0.03)' : tier.id === 'normal' ? 'linear-gradient(135deg,#2ed573,#26c464)' : tier.id === 'hard' ? 'linear-gradient(135deg,#f7b733,#e67e22)' : 'linear-gradient(135deg,#ff4757,#c0392b)',
+                  border:'1px solid ' + (isLocked ? 'rgba(255,255,255,0.1)' : 'transparent'),
+                  borderRadius:'18px',padding:'20px 14px',color:'#fff',cursor:isLocked?'not-allowed':'pointer',
+                  transition:'all 0.2s',opacity:isLocked?0.5:1,position:'relative'
+                }}
+                onMouseOver={e=>{if(!isLocked)e.target.style.transform='scale(1.05)';}}
+                onMouseOut={e=>{e.target.style.transform='scale(1)';}}
+              >
+                {isLocked && <div style={{position:'absolute',top:'-8px',right:'-8px',fontSize:'1.4rem'}}>🔒</div>}
+                <div style={{fontSize:'2rem',marginBottom:'6px'}}>{tier.icon}</div>
+                <div style={{fontWeight:800,fontSize:'1.1rem',marginBottom:'4px'}}>{tier.name}</div>
+                <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.7)',marginBottom:'8px'}}>{tier.desc}</div>
+                <div style={{fontSize:'1.2rem'}}>
+                  {Array(tier.lives).fill('❤️').join('')}
+                </div>
+                {isLocked && <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)',marginTop:'8px'}}>
+                  Requires: {tier.unlockDesc}
+                </div>}
+              </button>
+            );
+          })}
+        </div>
+        <button onClick={() => { setScreen('title'); sound.click(); }}
+          style={{marginTop:'20px',background:'transparent',border:'1px solid rgba(255,255,255,0.2)',
+            borderRadius:'12px',padding:'10px 24px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer'}}>
+          ← Back
+        </button>
       </div>
     </div>
   );
@@ -3465,7 +5039,7 @@ export default function GeoBeeGame() {
       </button>
     );
     return (
-      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{UnlockToast}
         <div style={animCard({maxWidth:'800px'})}>
           <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:'24px'}}>
             <div>
@@ -3483,7 +5057,7 @@ export default function GeoBeeGame() {
             </button>
           </div>
           <div style={{display:'flex',gap:'8px',marginBottom:'24px'}}>
-            {tabBtn('stats','📊 Stats')}{tabBtn('badges','🏅 Badges')}{tabBtn('map','🗺️ World Map')}
+            {tabBtn('stats','📊 Stats')}{tabBtn('badges','🏅 Badges')}{tabBtn('map','🗺️ World Map')}{tabBtn('unlocks','🔓 Unlocks')}
           </div>
 
           {profileTab === 'stats' && (<div>
@@ -3608,32 +5182,77 @@ export default function GeoBeeGame() {
           </div>)}
 
           {profileTab === 'map' && (<div>
-            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'16px'}}>
+            {/* Progress bar */}
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
               <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>
                 {mapProgress.discovered.length}/{TOTAL_COUNTRIES} countries discovered
               </div>
-              <div style={{background:'rgba(255,255,255,0.1)',borderRadius:'20px',height:'8px',width:'200px',overflow:'hidden'}}>
+              <div style={{background:'rgba(255,255,255,0.1)',borderRadius:'20px',height:'8px',width:'180px',overflow:'hidden'}}>
                 <div style={{height:'100%',background:'linear-gradient(90deg,#f7b733,#fc4a1a)',borderRadius:'20px',
                   width:`${(mapProgress.discovered.length/TOTAL_COUNTRIES)*100}%`,transition:'width 0.5s'}}/>
               </div>
             </div>
+            {/* Open fullscreen map button */}
+            <button onClick={() => { setScreen('worldMap'); sound.click(); }}
+              style={{width:'100%',padding:'10px',marginBottom:'16px',background:'linear-gradient(135deg,rgba(247,183,51,0.15),rgba(252,74,26,0.1))',
+                border:'1px solid rgba(247,183,51,0.3)',borderRadius:'12px',color:'#f7b733',fontSize:'0.9rem',
+                fontWeight:600,cursor:'pointer',transition:'all 0.2s'}}
+              onMouseOver={e=>{e.target.style.background='linear-gradient(135deg,rgba(247,183,51,0.25),rgba(252,74,26,0.2))';}}
+              onMouseOut={e=>{e.target.style.background='linear-gradient(135deg,rgba(247,183,51,0.15),rgba(252,74,26,0.1))';}}>
+              🗺️ Open World Map Explorer
+            </button>
+            {/* SVG World Map Preview */}
+            <div style={{background:'rgba(0,0,0,0.3)',borderRadius:'16px',padding:'12px',marginBottom:'20px',overflow:'hidden'}}>
+              <svg viewBox="60 60 880 430" style={{width:'100%',height:'auto',display:'block'}}>
+                {/* Continent outlines */}
+                {Object.entries(CONTINENT_OUTLINES).map(([name, path]) => (
+                  <path key={name} d={path} fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" strokeWidth="1"/>
+                ))}
+                {/* Country dots */}
+                {Object.entries(COUNTRY_COORDS).map(([code, [cx, cy, r]]) => {
+                  const isDisc = mapProgress.discovered.includes(code);
+                  const allCountries = Object.values(WORLD_COUNTRIES).flat();
+                  const countryInfo = allCountries.find(c => c[0] === code);
+                  return (
+                    <g key={code}>
+                      <circle cx={cx} cy={cy} r={Math.max(r*0.45, 2.5)}
+                        fill={isDisc ? '#f7b733' : 'rgba(255,255,255,0.08)'}
+                        stroke={isDisc ? '#fc4a1a' : 'rgba(255,255,255,0.12)'}
+                        strokeWidth={isDisc ? 0.8 : 0.3}
+                        opacity={isDisc ? 0.9 : 0.4}
+                        style={{transition:'all 0.5s ease'}}/>
+                      {isDisc && r >= 8 && (
+                        <circle cx={cx} cy={cy} r={r*0.45+3} fill="none" stroke="rgba(247,183,51,0.2)" strokeWidth="0.5"/>
+                      )}
+                    </g>
+                  );
+                })}
+              </svg>
+            </div>
+            {/* Continent breakdown */}
             {Object.entries(WORLD_COUNTRIES).map(([continent, countries]) => {
               const discoveredInContinent = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
+              const pct = Math.round((discoveredInContinent/countries.length)*100);
+              const CONT_COLORS = {"North America":"#3498db","South America":"#2ecc71","Europe":"#9b59b6","Africa":"#e67e22","Asia":"#e74c3c","Oceania":"#1abc9c"};
+              const cc = CONT_COLORS[continent] || '#f7b733';
               return (
-                <div key={continent} style={{marginBottom:'20px'}}>
-                  <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'10px'}}>
-                    <div style={{fontWeight:700,color:'#f7b733',fontSize:'0.9rem'}}>{continent}</div>
-                    <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>{discoveredInContinent}/{countries.length}</div>
+                <div key={continent} style={{marginBottom:'16px'}}>
+                  <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'6px'}}>
+                    <div style={{fontWeight:700,color:cc,fontSize:'0.85rem'}}>{continent}</div>
+                    <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.4)'}}>{discoveredInContinent}/{countries.length} ({pct}%)</div>
                   </div>
-                  <div style={{display:'flex',flexWrap:'wrap',gap:'6px'}}>
+                  <div style={{background:'rgba(255,255,255,0.06)',borderRadius:'6px',height:'6px',overflow:'hidden',marginBottom:'8px'}}>
+                    <div style={{height:'100%',background:cc,borderRadius:'6px',width:`${pct}%`,transition:'width 0.5s',opacity:0.7}}/>
+                  </div>
+                  <div style={{display:'flex',flexWrap:'wrap',gap:'4px'}}>
                     {countries.map(([code, name]) => {
                       const isDiscovered = mapProgress.discovered.includes(code);
                       return (
                         <div key={code} title={name}
-                          style={{background:isDiscovered?'rgba(247,183,51,0.2)':'rgba(255,255,255,0.04)',
-                            border:`1px solid ${isDiscovered?'rgba(247,183,51,0.4)':'rgba(255,255,255,0.08)'}`,
-                            borderRadius:'8px',padding:'4px 10px',fontSize:'0.75rem',
-                            color:isDiscovered?'#f7b733':'rgba(255,255,255,0.25)',
+                          style={{background:isDiscovered?`${cc}25`:'rgba(255,255,255,0.03)',
+                            border:`1px solid ${isDiscovered?`${cc}50`:'rgba(255,255,255,0.06)'}`,
+                            borderRadius:'6px',padding:'3px 8px',fontSize:'0.7rem',
+                            color:isDiscovered?cc:'rgba(255,255,255,0.2)',
                             fontWeight:isDiscovered?600:400,transition:'all 0.3s',cursor:'default'}}>
                           {isDiscovered ? `${flagEmoji(code)} ${name}` : '???'}
                         </div>
@@ -3644,6 +5263,245 @@ export default function GeoBeeGame() {
               );
             })}
           </div>)}
+
+          {profileTab === 'unlocks' && (
+            <div>
+              {/* Progress Summary */}
+              <div style={{textAlign:'center',marginBottom:'20px',padding:'16px',
+                background:'rgba(255,255,255,0.05)',borderRadius:'16px'}}>
+                <div style={{fontSize:'2rem',fontWeight:900,color:activeTheme.accent}}>
+                  {(() => {
+                    let unlocked = 1; // space theme always unlocked
+                    Object.values(THEMES).forEach(t => { if (t.unlockReq > 0 && badges.earned.length >= t.unlockReq) unlocked++; });
+                    Object.values(CHALLENGE_LOCKS).forEach(l => { if (badges.earned.includes(l.badgeId)) unlocked++; });
+                    SURVIVAL_TIERS.forEach(t => { if (!t.unlockBadge || badges.earned.includes(t.unlockBadge)) unlocked++; });
+                    return unlocked;
+                  })()}/9
+                </div>
+                <div style={{color:activeTheme.textSecondary,fontSize:'0.8rem'}}>Unlocks Discovered</div>
+              </div>
+
+              {/* Themes Section */}
+              <div style={{marginBottom:'20px'}}>
+                <div style={{color:activeTheme.accent,fontWeight:700,fontSize:'0.85rem',marginBottom:'10px'}}>🎨 Themes</div>
+                <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(140px,1fr))',gap:'10px'}}>
+                  {Object.values(THEMES).map(theme => {
+                    const isUnlocked = theme.unlockReq === 0 || badges.earned.length >= theme.unlockReq;
+                    return (
+                      <div key={theme.id} style={{background:theme.wrapBg,borderRadius:'14px',padding:'14px',
+                        textAlign:'center',border:'1px solid ' + (isUnlocked ? theme.cardBorder : 'rgba(255,255,255,0.05)'),
+                        opacity:isUnlocked?1:0.4}}>
+                        <div style={{fontSize:'1.5rem'}}>{isUnlocked ? theme.icon : '🔒'}</div>
+                        <div style={{fontSize:'0.8rem',fontWeight:700,color:'#fff',marginTop:'4px'}}>{theme.name}</div>
+                        {!isUnlocked && <div style={{fontSize:'0.65rem',color:'rgba(255,255,255,0.4)',marginTop:'2px'}}>{theme.unlockReq} badges needed</div>}
+                        {isUnlocked && <div style={{fontSize:'0.65rem',color:'#2ed573',marginTop:'2px'}}>✓ Unlocked</div>}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Challenge Modes Section */}
+              <div style={{marginBottom:'20px'}}>
+                <div style={{color:activeTheme.accent,fontWeight:700,fontSize:'0.85rem',marginBottom:'10px'}}>⚡ Challenge Modes</div>
+                {[
+                  {type:'borders',name:'Border Challenge',icon:'🗺️',lock:null},
+                  {type:'blitz',name:'Capital Blitz',icon:'⚡',lock:null},
+                  {type:'flags',name:'Flag Frenzy',icon:'🏁',lock:null},
+                  {type:'continentsprint',name:'Continent Sprint',icon:'🌍',lock:CHALLENGE_LOCKS.continentsprint},
+                  {type:'population',name:'Population Showdown',icon:'👥',lock:CHALLENGE_LOCKS.population}
+                ].map(ch => {
+                  const isUnlocked = !ch.lock || badges.earned.includes(ch.lock.badgeId);
+                  return (
+                    <div key={ch.type} style={{display:'flex',alignItems:'center',gap:'12px',padding:'10px',
+                      background:'rgba(255,255,255,0.03)',borderRadius:'12px',marginBottom:'6px',
+                      opacity:isUnlocked?1:0.5}}>
+                      <div style={{fontSize:'1.3rem'}}>{isUnlocked ? ch.icon : '🔒'}</div>
+                      <div style={{flex:1}}>
+                        <div style={{fontSize:'0.85rem',fontWeight:700,color:'#fff'}}>{ch.name}</div>
+                        {ch.lock && !isUnlocked && <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)'}}>Requires: {ch.lock.badgeName} ({ch.lock.desc})</div>}
+                      </div>
+                      {isUnlocked && <div style={{color:'#2ed573',fontSize:'0.8rem',fontWeight:700}}>✓</div>}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Survival Tiers Section */}
+              <div>
+                <div style={{color:activeTheme.accent,fontWeight:700,fontSize:'0.85rem',marginBottom:'10px'}}>❤️ Survival Tiers</div>
+                {SURVIVAL_TIERS.map(tier => {
+                  const isUnlocked = !tier.unlockBadge || badges.earned.includes(tier.unlockBadge);
+                  return (
+                    <div key={tier.id} style={{display:'flex',alignItems:'center',gap:'12px',padding:'10px',
+                      background:'rgba(255,255,255,0.03)',borderRadius:'12px',marginBottom:'6px',
+                      opacity:isUnlocked?1:0.5}}>
+                      <div style={{fontSize:'1.3rem'}}>{isUnlocked ? tier.icon : '🔒'}</div>
+                      <div style={{flex:1}}>
+                        <div style={{fontSize:'0.85rem',fontWeight:700,color:'#fff'}}>{tier.name}</div>
+                        <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.5)'}}>{tier.desc}</div>
+                        {tier.unlockBadge && !isUnlocked && <div style={{fontSize:'0.65rem',color:'rgba(255,255,255,0.3)'}}>Requires: {tier.unlockDesc}</div>}
+                      </div>
+                      {isUnlocked && <div style={{color:'#2ed573',fontSize:'0.8rem',fontWeight:700}}>✓</div>}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ─── World Map Explorer Screen ───────────────────────────────────────
+  if (screen === 'worldMap') {
+    const [hoveredCountry, setHoveredCountry] = [mapHovered, setMapHovered];
+    const allCountries = Object.values(WORLD_COUNTRIES).flat();
+    const CONT_COLORS = {"North America":"#3498db","South America":"#2ecc71","Europe":"#9b59b6","Africa":"#e67e22","Asia":"#e74c3c","Oceania":"#1abc9c"};
+    const getContinent = (code) => {
+      for (const [cont, countries] of Object.entries(WORLD_COUNTRIES)) {
+        if (countries.some(c => c[0] === code)) return cont;
+      }
+      return null;
+    };
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+        <div style={animCard({maxWidth:'900px',padding:'24px'})}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'16px'}}>
+            <div>
+              <div style={{...S.title,fontSize:'1.8rem',textAlign:'left'}}>🗺️ WORLD MAP</div>
+              <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.85rem'}}>
+                {mapProgress.discovered.length}/{TOTAL_COUNTRIES} countries discovered ({Math.round((mapProgress.discovered.length/TOTAL_COUNTRIES)*100)}%)
+              </div>
+            </div>
+            <button onClick={() => { setScreen('profile'); setProfileTab('map'); sound.click(); }}
+              style={{background:'rgba(255,255,255,0.08)',border:'1px solid rgba(255,255,255,0.15)',
+                borderRadius:'10px',padding:'8px 16px',color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',cursor:'pointer'}}>
+              ← Back
+            </button>
+          </div>
+          {/* Interactive SVG Map */}
+          <div style={{background:'linear-gradient(180deg,rgba(0,20,60,0.6),rgba(0,10,40,0.8))',borderRadius:'16px',
+            padding:'16px',marginBottom:'20px',position:'relative',overflow:'hidden',
+            boxShadow:'inset 0 2px 20px rgba(0,0,0,0.3)'}}>
+            {/* Grid lines for map feel */}
+            <svg viewBox="40 50 940 440" style={{width:'100%',height:'auto',display:'block'}}>
+              <defs>
+                <radialGradient id="glow">
+                  <stop offset="0%" stopColor="#f7b733" stopOpacity="0.6"/>
+                  <stop offset="100%" stopColor="#f7b733" stopOpacity="0"/>
+                </radialGradient>
+                <filter id="countryGlow">
+                  <feGaussianBlur stdDeviation="3" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              {/* Latitude lines */}
+              {[100,150,200,250,300,350,400,450].map(y => (
+                <line key={y} x1="50" y1={y} x2="970" y2={y} stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" strokeDasharray="4,8"/>
+              ))}
+              {/* Longitude lines */}
+              {[100,200,300,400,500,600,700,800,900].map(x => (
+                <line key={x} x1={x} y1="60" x2={x} y2="480" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" strokeDasharray="4,8"/>
+              ))}
+              {/* Continent outlines */}
+              {Object.entries(CONTINENT_OUTLINES).map(([name, path]) => (
+                <path key={name} d={path} fill={`${CONT_COLORS[name] || '#fff'}08`} stroke={`${CONT_COLORS[name] || '#fff'}20`} strokeWidth="1.5"/>
+              ))}
+              {/* Country dots */}
+              {Object.entries(COUNTRY_COORDS).map(([code, [cx, cy, r]]) => {
+                const isDisc = mapProgress.discovered.includes(code);
+                const isHovered = hoveredCountry === code;
+                const countryInfo = allCountries.find(c => c[0] === code);
+                const continent = getContinent(code);
+                const cc = CONT_COLORS[continent] || '#f7b733';
+                const dotR = Math.max(r * 0.5, 3);
+                return (
+                  <g key={code}
+                    onMouseEnter={() => setHoveredCountry(code)}
+                    onMouseLeave={() => setHoveredCountry(null)}
+                    style={{cursor:'pointer'}}>
+                    {/* Glow ring for discovered */}
+                    {isDisc && (
+                      <circle cx={cx} cy={cy} r={dotR + 5} fill="none" stroke={`${cc}30`} strokeWidth="1.5">
+                        {isHovered && <animate attributeName="r" from={dotR+4} to={dotR+10} dur="1s" repeatCount="indefinite"/>}
+                      </circle>
+                    )}
+                    {/* Main dot */}
+                    <circle cx={cx} cy={cy} r={isHovered ? dotR + 2 : dotR}
+                      fill={isDisc ? cc : 'rgba(255,255,255,0.1)'}
+                      stroke={isDisc ? '#fff' : 'rgba(255,255,255,0.15)'}
+                      strokeWidth={isDisc ? (isHovered ? 1.5 : 0.8) : 0.3}
+                      opacity={isDisc ? (isHovered ? 1 : 0.85) : (isHovered ? 0.6 : 0.35)}
+                      filter={isDisc && isHovered ? 'url(#countryGlow)' : undefined}
+                      style={{transition:'all 0.3s ease'}}/>
+                    {/* Label for hovered discovered country */}
+                    {isHovered && isDisc && countryInfo && (
+                      <g>
+                        <rect x={cx - 40} y={cy - dotR - 22} width="80" height="18" rx="4"
+                          fill="rgba(0,0,0,0.8)" stroke={cc} strokeWidth="0.5"/>
+                        <text x={cx} y={cy - dotR - 10} textAnchor="middle" fill="#fff"
+                          fontSize="8" fontWeight="600" fontFamily="system-ui">{countryInfo[1]}</text>
+                      </g>
+                    )}
+                    {/* Label for hovered undiscovered country */}
+                    {isHovered && !isDisc && (
+                      <g>
+                        <rect x={cx - 20} y={cy - dotR - 22} width="40" height="18" rx="4"
+                          fill="rgba(0,0,0,0.8)" stroke="rgba(255,255,255,0.2)" strokeWidth="0.5"/>
+                        <text x={cx} y={cy - dotR - 10} textAnchor="middle" fill="rgba(255,255,255,0.5)"
+                          fontSize="8" fontFamily="system-ui">???</text>
+                      </g>
+                    )}
+                  </g>
+                );
+              })}
+              {/* Equator line */}
+              <line x1="50" y1="270" x2="970" y2="270" stroke="rgba(252,74,26,0.15)" strokeWidth="0.8" strokeDasharray="6,4"/>
+              <text x="55" y="267" fill="rgba(252,74,26,0.25)" fontSize="7" fontFamily="system-ui">Equator</text>
+            </svg>
+          </div>
+          {/* Continent stats bar */}
+          <div style={{display:'flex',gap:'6px',flexWrap:'wrap',marginBottom:'16px'}}>
+            {Object.entries(WORLD_COUNTRIES).map(([continent, countries]) => {
+              const disc = countries.filter(c => mapProgress.discovered.includes(c[0])).length;
+              const pct = Math.round((disc/countries.length)*100);
+              const cc = CONT_COLORS[continent];
+              return (
+                <div key={continent} style={{flex:'1 1 140px',background:`${cc}12`,border:`1px solid ${cc}30`,
+                  borderRadius:'10px',padding:'10px',textAlign:'center'}}>
+                  <div style={{fontWeight:700,color:cc,fontSize:'0.8rem',marginBottom:'4px'}}>{continent}</div>
+                  <div style={{fontSize:'1.2rem',fontWeight:800,color:'#fff'}}>{pct}%</div>
+                  <div style={{fontSize:'0.7rem',color:'rgba(255,255,255,0.4)'}}>{disc}/{countries.length}</div>
+                  <div style={{background:'rgba(255,255,255,0.08)',borderRadius:'3px',height:'4px',overflow:'hidden',marginTop:'6px'}}>
+                    <div style={{height:'100%',background:cc,borderRadius:'3px',width:`${pct}%`,transition:'width 0.5s'}}/>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* Recently discovered */}
+          {mapProgress.discovered.length > 0 && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px'}}>
+              <div style={{fontWeight:700,color:'#f7b733',fontSize:'0.8rem',marginBottom:'10px',textTransform:'uppercase',letterSpacing:'1px'}}>
+                Latest Discoveries
+              </div>
+              <div style={{display:'flex',flexWrap:'wrap',gap:'6px'}}>
+                {mapProgress.discovered.slice(-12).reverse().map(code => {
+                  const info = allCountries.find(c => c[0] === code);
+                  const continent = getContinent(code);
+                  const cc = CONT_COLORS[continent] || '#f7b733';
+                  return info ? (
+                    <div key={code} style={{background:`${cc}20`,border:`1px solid ${cc}40`,borderRadius:'8px',
+                      padding:'4px 10px',fontSize:'0.75rem',color:cc,fontWeight:600}}>
+                      {flagEmoji(code)} {info[1]}
+                    </div>
+                  ) : null;
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -3723,8 +5581,539 @@ export default function GeoBeeGame() {
     </div>
   );
 
-  if (screen === 'title') return (
+  // ─── Commentator Overlay (shows on question/result screens) ────────
+  const CommentatorOverlay = commentatorMsg ? (
+    <div style={{position:'fixed',top:'12px',left:'50%',transform:'translateX(-50%)',
+      background:'linear-gradient(135deg,rgba(247,183,51,0.95),rgba(252,74,26,0.9))',
+      borderRadius:'16px',padding:'10px 22px',zIndex:9999,
+      boxShadow:'0 4px 20px rgba(247,183,51,0.4)',
+      animation:'slideDown 0.3s ease-out',maxWidth:'90vw',textAlign:'center'}}>
+      <div style={{fontSize:'0.85rem',fontWeight:700,color:'#fff'}}>{commentatorMsg}</div>
+    </div>
+  ) : null;
+
+  // ─── Challenge Intro Screen ──────────────────────────────────────────
+  if (screen === 'challengeIntro') return (
     <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+      <div style={animCard({textAlign:'center'})}>
+        <div style={{fontSize:'3rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>
+          {challengeType === 'borders' ? '🗺️' : challengeType === 'blitz' ? '⚡' : challengeType === 'flags' ? '🏁' : challengeType === 'continentsprint' ? '🌍' : '👥'}
+        </div>
+        <div style={{...S.title,fontSize:'2rem',marginBottom:'6px'}}>
+          {challengeType === 'borders' ? 'BORDER CHALLENGE' : challengeType === 'blitz' ? 'CAPITAL BLITZ' : challengeType === 'flags' ? 'FLAG FRENZY' : challengeType === 'continentsprint' ? 'CONTINENT SPRINT' : 'POPULATION SHOWDOWN'}
+        </div>
+        <div style={{color:'rgba(255,255,255,0.6)',fontSize:'0.95rem',marginBottom:'24px'}}>
+          {challengeType === 'borders'
+            ? `Name every country that borders ${challengeData?.emoji || ''} ${challengeData?.country || '???'}!`
+            : challengeType === 'blitz'
+            ? 'How many world capitals can you name in 60 seconds?'
+            : challengeType === 'flags'
+            ? 'Identify countries from their flags! 45 seconds! Speed is everything!'
+            : challengeType === 'continentsprint'
+            ? `Sort countries: do they belong to ${sprintContinent}? Yes or No! 40 seconds!`
+            : 'Which country has MORE people? Pick fast! 50 seconds!'}
+        </div>
+        <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'14px',padding:'16px',marginBottom:'20px',textAlign:'left'}}>
+          <div style={{color:'#f7b733',fontWeight:700,marginBottom:'8px'}}>Rules:</div>
+          <div style={{color:'rgba(255,255,255,0.7)',fontSize:'0.9rem',lineHeight:1.8}}>
+            {challengeType === 'borders' ? (
+              <>
+                ⏱️ 60 seconds on the clock<br/>
+                🗺️ Type country names and press Enter<br/>
+                🎯 {challengeData?.borders?.length || '?'} countries to find<br/>
+                💡 Hint available after 20 seconds<br/>
+                📝 Spelling doesn't have to be perfect!
+              </>
+            ) : challengeType === 'blitz' ? (
+              <>
+                ⏱️ 60 seconds — answer as fast as you can!<br/>
+                ✅ Pick the correct capital from 4 choices<br/>
+                🔥 Streaks give bonus points (+25 per streak)<br/>
+                ⚡ Questions auto-advance — no waiting!<br/>
+                🏆 Can you beat 15 correct?
+              </>
+            ) : challengeType === 'flags' ? (
+              <>
+                🏁 45 seconds — identify flags rapidly!<br/>
+                ✅ Pick the correct country from 4 choices<br/>
+                🔥 Speed bonuses + streak multipliers (+25 per streak)<br/>
+                ⚡ Auto-advance — keep the momentum!<br/>
+                🎯 Each correct flag: 100 base + bonus points
+              </>
+            ) : challengeType === 'continentsprint' ? (
+              <>
+                🌍 40 seconds — sort countries by continent!<br/>
+                ✅ Answer Yes or No: Does it belong to {sprintContinent}?<br/>
+                🔥 Streaks give bonus points (+20 per streak)<br/>
+                ⚡ Rapid-fire questions — test your geography!<br/>
+                📊 Score: 100 points per correct answer
+              </>
+            ) : (
+              <>
+                👥 50 seconds — compare populations!<br/>
+                ✅ Pick which country has MORE people<br/>
+                🔥 Streaks give bonus points (+30 per streak)<br/>
+                ⚡ Auto-advance — no delays!<br/>
+                📈 Each correct pick: 100 base + streak bonus
+              </>
+            )}
+          </div>
+        </div>
+        <Btn onClick={startChallengeTimer}>
+          {challengeType === 'borders' ? `GO! Name ${challengeData?.country}'s neighbors!` : challengeType === 'blitz' ? 'START THE BLITZ! ⚡' : challengeType === 'flags' ? 'FLAG FRENZY! 🏁' : challengeType === 'continentsprint' ? `SPRINT! ${sprintContinent} 🌍` : 'POPULATION SHOWDOWN! 👥'}
+        </Btn>
+        <button onClick={() => { setScreen('title'); sound.click(); sound.stopMusic(); }}
+          style={{marginTop:'12px',background:'transparent',border:'1px solid rgba(255,255,255,0.2)',
+            borderRadius:'12px',padding:'8px 20px',color:'rgba(255,255,255,0.5)',fontSize:'0.85rem',cursor:'pointer'}}>
+          ← Back
+        </button>
+      </div>
+    </div>
+  );
+
+  // ─── Border Challenge Screen ──────────────────────────────────────────
+  if (screen === 'challengeBorders' && challengeData) {
+    const pct = challengeData.borders.length > 0 ? (borderGuesses.length / challengeData.borders.length * 100) : 0;
+    const timerColor = borderTimer <= 10 ? '#e74c3c' : borderTimer <= 30 ? '#f7b733' : '#2ed573';
+    return (
+      <div style={S.wrap}><div style={S.stars}/>
+        <div style={{...S.card,maxWidth:'600px',width:'95%',padding:'20px',animation:borderShake?'shakeWrong 0.4s ease-in-out':undefined}}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'16px'}}>
+            <div style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.6)'}}>
+              {challengeData.emoji} Border Challenge: <span style={{color:'#f7b733',fontWeight:700}}>{challengeData.country}</span>
+            </div>
+            <div style={{fontSize:'1.8rem',fontWeight:800,color:timerColor,fontFamily:'monospace'}}>{borderTimer}s</div>
+          </div>
+          {/* Progress bar */}
+          <div style={{background:'rgba(255,255,255,0.1)',borderRadius:'10px',height:'12px',marginBottom:'16px',overflow:'hidden'}}>
+            <div style={{height:'100%',borderRadius:'10px',transition:'width 0.3s',width:`${pct}%`,
+              background:`linear-gradient(90deg,#2ed573,#f7b733)`}}/>
+          </div>
+          <div style={{textAlign:'center',marginBottom:'12px',fontSize:'0.85rem',color:'rgba(255,255,255,0.5)'}}>
+            {borderGuesses.length} / {challengeData.borders.length} countries found
+          </div>
+          {/* Input */}
+          <div style={{display:'flex',gap:'8px',marginBottom:'16px'}}>
+            <input type="text" value={borderInput}
+              onChange={e => setBorderInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') checkBorderGuess(); }}
+              placeholder="Type a country name..."
+              autoFocus
+              style={{flex:1,padding:'12px 16px',borderRadius:'12px',background:'rgba(0,0,0,0.4)',
+                border:'2px solid rgba(255,255,255,0.2)',color:'#fff',fontSize:'1rem',outline:'none'}}/>
+            <button onClick={checkBorderGuess}
+              style={{background:'linear-gradient(135deg,#2ed573,#7bed9f)',border:'none',borderRadius:'12px',
+                padding:'12px 20px',color:'#fff',fontWeight:700,fontSize:'0.9rem',cursor:'pointer'}}>
+              ✓
+            </button>
+          </div>
+          {/* Guessed countries */}
+          <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginBottom:'16px',minHeight:'40px'}}>
+            {borderGuesses.map((g,i) => (
+              <span key={i} style={{background:'rgba(46,213,115,0.2)',border:'1px solid rgba(46,213,115,0.4)',
+                borderRadius:'20px',padding:'6px 14px',color:'#2ed573',fontSize:'0.85rem',fontWeight:600,
+                animation:'popIn 0.3s ease-out'}}>
+                ✓ {g}
+              </span>
+            ))}
+          </div>
+          {/* Hint */}
+          {borderTimer <= 40 && !borderHint && (
+            <button onClick={() => setBorderHint(true)}
+              style={{background:'rgba(247,183,51,0.15)',border:'1px solid rgba(247,183,51,0.3)',borderRadius:'10px',
+                padding:'8px 16px',color:'#f7b733',fontSize:'0.8rem',cursor:'pointer',width:'100%',marginBottom:'8px'}}>
+              💡 Show Hint
+            </button>
+          )}
+          {borderHint && (
+            <div style={{background:'rgba(247,183,51,0.1)',borderRadius:'10px',padding:'10px',marginBottom:'8px',
+              fontSize:'0.85rem',color:'#f7b733',textAlign:'center'}}>
+              💡 {challengeData.hint} • Look at the map — {challengeData.borders.length - borderGuesses.length} remaining
+            </div>
+          )}
+          {/* Remaining slots visualization */}
+          <div style={{display:'flex',justifyContent:'center',gap:'6px',flexWrap:'wrap'}}>
+            {challengeData.borders.map((b,i) => (
+              <div key={i} style={{width:'28px',height:'28px',borderRadius:'50%',
+                background:borderGuesses.includes(b) ? '#2ed573' : 'rgba(255,255,255,0.1)',
+                border:borderGuesses.includes(b) ? '2px solid #7bed9f' : '2px solid rgba(255,255,255,0.15)',
+                display:'flex',alignItems:'center',justifyContent:'center',fontSize:'0.6rem',color:'#fff',
+                transition:'all 0.3s'}}>
+                {borderGuesses.includes(b) ? '✓' : '?'}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Capital Blitz Screen ─────────────────────────────────────────────
+  if (screen === 'challengeBlitz' && blitzQs.length > 0) {
+    const q = blitzQs[blitzIdx];
+    const timerColor = blitzTimer <= 10 ? '#e74c3c' : blitzTimer <= 30 ? '#f7b733' : '#2ed573';
+    // Shuffle options for display
+    if (blitzSelected === null && (blitzOptionsRef.current.length === 0 || blitzOptionsRef.current[0]?.srcCountry !== q?.country)) {
+      const opts = [{ text: q.capital, isCorrect: true, srcCountry: q.country }, ...q.decoys.map(d => ({ text: d, isCorrect: false, srcCountry: q.country }))];
+      blitzOptionsRef.current = opts.sort(() => Math.random() - 0.5);
+    }
+    const displayOpts = blitzOptionsRef.current;
+    return (
+      <div style={S.wrap}><div style={S.stars}/>
+        <div style={{...S.card,maxWidth:'600px',width:'95%',padding:'20px'}}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
+            <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
+              <span style={{fontSize:'1.2rem'}}>⚡</span>
+              <span style={{color:'#f7b733',fontWeight:700,fontSize:'0.9rem'}}>Capital Blitz</span>
+            </div>
+            <div style={{fontSize:'1.8rem',fontWeight:800,color:timerColor,fontFamily:'monospace'}}>{blitzTimer}s</div>
+          </div>
+          {/* Score bar */}
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'16px',
+            background:'rgba(255,255,255,0.05)',borderRadius:'10px',padding:'8px 14px'}}>
+            <span style={{color:'rgba(255,255,255,0.6)',fontSize:'0.8rem'}}>Score: <b style={{color:'#f7b733'}}>{blitzScore}</b></span>
+            <span style={{color:'rgba(255,255,255,0.6)',fontSize:'0.8rem'}}>Correct: <b style={{color:'#2ed573'}}>{blitzResults.filter(r=>r.correct).length}</b></span>
+            {blitzStreak >= 2 && <span style={{color:'#ff6b6b',fontSize:'0.8rem',animation:'streakFlame 0.5s ease-in-out infinite'}}>🔥 x{blitzStreak}</span>}
+          </div>
+          {/* Question */}
+          <div style={{textAlign:'center',marginBottom:'20px'}}>
+            <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.4)',marginBottom:'6px',textTransform:'uppercase',letterSpacing:'2px'}}>
+              What is the capital of...
+            </div>
+            <div style={{fontSize:'2rem',fontWeight:800,color:'#fff',animation:'popIn 0.2s ease-out'}} key={blitzIdx}>
+              {q.country}
+            </div>
+          </div>
+          {/* Options */}
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px'}}>
+            {displayOpts.map((opt, oi) => {
+              const picked = blitzSelected !== null;
+              const isThis = picked && oi === blitzSelected;
+              const isCorrectOpt = opt.isCorrect;
+              let bg = 'rgba(255,255,255,0.08)';
+              let border = '2px solid rgba(255,255,255,0.15)';
+              if (picked && isCorrectOpt) { bg = 'rgba(46,213,115,0.2)'; border = '2px solid #2ed573'; }
+              if (picked && isThis && !isCorrectOpt) { bg = 'rgba(255,71,87,0.2)'; border = '2px solid #ff4757'; }
+              return (
+                <button key={oi} onClick={() => {
+                  handleBlitzAnswer(opt.isCorrect, oi);
+                }}
+                  disabled={blitzSelected !== null}
+                  style={{background:bg,border,borderRadius:'14px',padding:'14px',color:'#fff',
+                    fontSize:'0.95rem',fontWeight:600,cursor:picked?'default':'pointer',
+                    transition:'all 0.15s',opacity:picked && !isCorrectOpt && !isThis ? 0.4 : 1}}>
+                  {opt.text}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Flag Frenzy Screen ─────────────────────────────────────────────
+  if (screen === 'challengeFlags' && flagQs.length > 0) {
+    const q = flagQs[flagIdx];
+    if (!q) { setScreen('challengeResult'); return null; }
+    const opts = [q.country, ...q.decoys].sort(() => Math.random() - 0.5);
+    const pct = flagTimer / 45 * 100;
+    const timerColor = flagTimer <= 10 ? '#ff4757' : flagTimer <= 20 ? '#f7b733' : '#2ed573';
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{CommentatorOverlay}
+        <div style={animCard({textAlign:'center',maxWidth:'480px'})}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
+            <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.5)'}}>Flag {flagIdx+1}/{flagQs.length}</div>
+            <div style={{fontSize:'1.2rem',fontWeight:800,color:timerColor}}>{flagTimer}s</div>
+            <div style={{fontSize:'0.8rem',color:'#f7b733'}}>Score: {flagScore}</div>
+          </div>
+          <div style={{height:'4px',background:'rgba(255,255,255,0.1)',borderRadius:'2px',overflow:'hidden',marginBottom:'16px'}}>
+            <div style={{width:pct+'%',height:'100%',background:timerColor,transition:'width 1s linear',borderRadius:'2px'}}/>
+          </div>
+          <div style={{fontSize:'6rem',marginBottom:'16px',filter:'drop-shadow(0 4px 12px rgba(0,0,0,0.3))',
+            animation:'bounceIn 0.3s ease-out'}}>{q.flag}</div>
+          <div style={{color:'rgba(255,255,255,0.6)',fontSize:'0.85rem',marginBottom:'16px'}}>Which country does this flag belong to?</div>
+          {flagStreak >= 3 && <div style={{color:'#f7b733',fontSize:'0.8rem',marginBottom:'8px'}}>🔥 Streak: {flagStreak}</div>}
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px'}}>
+            {opts.map((opt, oi) => {
+              const isCorrect = opt === q.country;
+              const isSelected = flagSelected === oi;
+              const showResult = flagSelected !== null;
+              const bg = showResult ? (isCorrect ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)') : 'rgba(255,255,255,0.08)';
+              return (
+                <button key={oi} onClick={() => handleFlagAnswer(opt, oi)}
+                  style={{background:bg,border:'1px solid rgba(255,255,255,0.1)',borderRadius:'14px',
+                    padding:'14px',color:'#fff',fontSize:'0.95rem',fontWeight:600,cursor:showResult?'default':'pointer',
+                    transition:'all 0.2s',transform:isSelected?'scale(0.95)':'scale(1)'}}
+                  onMouseOver={e=>{if(!showResult)e.target.style.background='rgba(255,255,255,0.15)';}}
+                  onMouseOut={e=>{if(!showResult)e.target.style.background='rgba(255,255,255,0.08)';}}
+                  disabled={showResult}>{opt}</button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Continent Sprint Screen ────────────────────────────────────────
+  if (screen === 'challengeSprint' && sprintCountries.length > 0) {
+    const item = sprintCountries[sprintIdx];
+    if (!item) { setScreen('challengeResult'); return null; }
+    const pct = sprintTimer / 40 * 100;
+    const timerColor = sprintTimer <= 8 ? '#ff4757' : sprintTimer <= 18 ? '#f7b733' : '#2ed573';
+    const correct = sprintResults.filter(r => r.correct).length;
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{CommentatorOverlay}
+        <div style={animCard({textAlign:'center',maxWidth:'480px'})}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
+            <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.5)'}}>Q {sprintIdx+1}/{sprintCountries.length}</div>
+            <div style={{fontSize:'1.2rem',fontWeight:800,color:timerColor}}>{sprintTimer}s</div>
+            <div style={{fontSize:'0.8rem',color:'#2ed573'}}>✓ {correct}</div>
+          </div>
+          <div style={{height:'4px',background:'rgba(255,255,255,0.1)',borderRadius:'2px',overflow:'hidden',marginBottom:'20px'}}>
+            <div style={{width:pct+'%',height:'100%',background:timerColor,transition:'width 1s linear',borderRadius:'2px'}}/>
+          </div>
+          <div style={{background:'linear-gradient(135deg,rgba(155,89,182,0.3),rgba(142,68,173,0.2))',borderRadius:'16px',
+            padding:'16px',marginBottom:'20px',border:'1px solid rgba(155,89,182,0.3)'}}>
+            <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.75rem',textTransform:'uppercase',letterSpacing:'2px',marginBottom:'4px'}}>
+              Does this country belong to
+            </div>
+            <div style={{fontSize:'1.6rem',fontWeight:800,color:'#f7b733',textTransform:'uppercase'}}>{sprintContinent}?</div>
+          </div>
+          <div style={{fontSize:'2rem',fontWeight:800,color:'#fff',marginBottom:'24px',
+            animation:'bounceIn 0.3s ease-out'}}>{item.country}</div>
+          {sprintStreak >= 3 && <div style={{color:'#f7b733',fontSize:'0.8rem',marginBottom:'12px'}}>🔥 Streak: {sprintStreak}</div>}
+          <div style={{display:'flex',gap:'16px',justifyContent:'center'}}>
+            {['yes','no'].map(ans => {
+              const showResult = sprintSelected !== null;
+              const isCorrectAns = (ans === 'yes') === item.belongs;
+              const isSelected = sprintSelected === ans;
+              const bg = showResult ? (isCorrectAns ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)') : ans === 'yes' ? 'linear-gradient(135deg,#2ed573,#26c464)' : 'linear-gradient(135deg,#ff4757,#e8364b)';
+              return (
+                <button key={ans} onClick={() => handleSprintAnswer(ans)}
+                  style={{flex:1,maxWidth:'160px',background:bg,border:'none',borderRadius:'16px',
+                    padding:'18px 24px',color:'#fff',fontSize:'1.4rem',fontWeight:800,cursor:showResult?'default':'pointer',
+                    transition:'all 0.2s',opacity:showResult && !isCorrectAns && !isSelected ? 0.4 : 1,
+                    transform:isSelected?'scale(0.92)':'scale(1)',boxShadow:'0 4px 15px rgba(0,0,0,0.2)'}}
+                  disabled={showResult}>{ans === 'yes' ? '✓ YES' : '✗ NO'}</button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Population Showdown Screen ─────────────────────────────────────
+  if (screen === 'challengePopulation' && popPairs.length > 0) {
+    const pair = popPairs[popIdx];
+    if (!pair) { setScreen('challengeResult'); return null; }
+    const pct = popTimer / 50 * 100;
+    const timerColor = popTimer <= 10 ? '#ff4757' : popTimer <= 25 ? '#f7b733' : '#2ed573';
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{CommentatorOverlay}
+        <div style={animCard({textAlign:'center',maxWidth:'520px'})}>
+          <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
+            <div style={{fontSize:'0.8rem',color:'rgba(255,255,255,0.5)'}}>Round {popIdx+1}/{popPairs.length}</div>
+            <div style={{fontSize:'1.2rem',fontWeight:800,color:timerColor}}>{popTimer}s</div>
+            <div style={{fontSize:'0.8rem',color:'#f7b733'}}>Score: {popScore}</div>
+          </div>
+          <div style={{height:'4px',background:'rgba(255,255,255,0.1)',borderRadius:'2px',overflow:'hidden',marginBottom:'20px'}}>
+            <div style={{width:pct+'%',height:'100%',background:timerColor,transition:'width 1s linear',borderRadius:'2px'}}/>
+          </div>
+          <div style={{color:'rgba(255,255,255,0.5)',fontSize:'0.9rem',marginBottom:'16px'}}>
+            🏆 Which country has MORE people?
+          </div>
+          {popStreak >= 3 && <div style={{color:'#f7b733',fontSize:'0.8rem',marginBottom:'10px'}}>🔥 Streak: {popStreak}</div>}
+          <div style={{display:'flex',gap:'16px',justifyContent:'center',alignItems:'stretch'}}>
+            {['a','b'].map(side => {
+              const name = side === 'a' ? pair.a : pair.b;
+              const pop = side === 'a' ? pair.popA : pair.popB;
+              const otherPop = side === 'a' ? pair.popB : pair.popA;
+              const isWinner = pop >= otherPop;
+              const isSelected = popSelected === side;
+              const showResult = popSelected !== null;
+              const bg = showResult
+                ? (isWinner ? 'linear-gradient(135deg,#2ed573,#26c464)' : isSelected ? 'linear-gradient(135deg,#ff4757,#e8364b)' : 'rgba(255,255,255,0.06)')
+                : 'rgba(255,255,255,0.08)';
+              return (
+                <button key={side} onClick={() => handlePopAnswer(side)}
+                  style={{flex:1,background:bg,border:'1px solid rgba(255,255,255,0.12)',borderRadius:'18px',
+                    padding:'28px 16px',color:'#fff',cursor:showResult?'default':'pointer',transition:'all 0.2s',
+                    transform:isSelected?'scale(0.95)':'scale(1)',display:'flex',flexDirection:'column',alignItems:'center',gap:'8px'}}
+                  onMouseOver={e=>{if(!showResult)e.target.style.background='rgba(255,255,255,0.15)';}}
+                  onMouseOut={e=>{if(!showResult)e.target.style.background='rgba(255,255,255,0.08)';}}
+                  disabled={showResult}>
+                  <div style={{fontSize:'1.4rem',fontWeight:800,pointerEvents:'none'}}>{name}</div>
+                  {showResult && <div style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.6)',pointerEvents:'none'}}>{pop}{pair.unit} people</div>}
+                </button>
+              );
+            })}
+          </div>
+          <div style={{marginTop:'16px',color:'rgba(255,255,255,0.3)',fontSize:'0.75rem'}}>
+            VS
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Challenge Result Screen ──────────────────────────────────────────
+  if (screen === 'challengeResult') {
+    const isBorders = challengeType === 'borders';
+    const isBlitz = challengeType === 'blitz';
+    const isFlags = challengeType === 'flags';
+    const isSprint = challengeType === 'continentsprint';
+    const isPop = challengeType === 'population';
+    const total = isBorders ? (challengeData?.borders?.length || 0)
+      : isBlitz ? blitzResults.length
+      : isFlags ? flagResults.length
+      : isSprint ? sprintResults.length
+      : popResults.length;
+    const correct = isBorders ? borderGuesses.length
+      : isBlitz ? blitzResults.filter(r => r.correct).length
+      : isFlags ? flagResults.filter(r => r.correct).length
+      : isSprint ? sprintResults.filter(r => r.correct).length
+      : popResults.filter(r => r.correct).length;
+    const pct = total > 0 ? Math.round(correct / total * 100) : 0;
+    const isPerfect = isBorders ? correct >= total : correct >= Math.max(15, Math.floor(total * 0.8));
+    const grade = pct >= 90 ? 'S' : pct >= 75 ? 'A' : pct >= 60 ? 'B' : pct >= 40 ? 'C' : 'D';
+    const gradeColor = { S:'#f7b733', A:'#2ed573', B:'#3498db', C:'#f39c12', D:'#e74c3c' }[grade];
+    return (
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}
+        <div style={animCard({textAlign:'center'})}>
+          <div style={{fontSize:'3rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>
+            {isPerfect ? '🏆' : pct >= 60 ? '🎉' : '📚'}
+          </div>
+          <div style={{...S.title,fontSize:'1.8rem',marginBottom:'4px'}}>
+            {isBorders ? 'BORDER CHALLENGE' : isBlitz ? 'CAPITAL BLITZ' : isFlags ? 'FLAG FRENZY' : isSprint ? 'CONTINENT SPRINT' : 'POPULATION SHOWDOWN'} RESULTS
+          </div>
+          <div style={{fontSize:'4rem',fontWeight:900,color:gradeColor,margin:'12px 0',
+            textShadow:`0 0 30px ${gradeColor}40`}}>
+            {grade}
+          </div>
+          <div style={{display:'flex',justifyContent:'center',gap:'24px',marginBottom:'20px',flexWrap:'wrap'}}>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:'2rem',fontWeight:800,color:'#2ed573'}}>{correct}</div>
+              <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>Correct</div>
+            </div>
+            <div style={{textAlign:'center'}}>
+              <div style={{fontSize:'2rem',fontWeight:800,color:'rgba(255,255,255,0.6)'}}>{total}</div>
+              <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>Total</div>
+            </div>
+            {!isBorders && (
+              <>
+                <div style={{textAlign:'center'}}>
+                  <div style={{fontSize:'2rem',fontWeight:800,color:'#f7b733'}}>
+                    {isBlitz ? blitzBestStreak : isFlags ? flagBestStreak : isSprint ? sprintStreak : isPop ? popBestStreak : 0}
+                  </div>
+                  <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>Best Streak</div>
+                </div>
+                <div style={{textAlign:'center'}}>
+                  <div style={{fontSize:'2rem',fontWeight:800,color:'#f7b733'}}>
+                    {isBlitz ? blitzScore : isFlags ? flagScore : isSprint ? sprintScore : isPop ? popScore : 0}
+                  </div>
+                  <div style={{fontSize:'0.75rem',color:'rgba(255,255,255,0.5)'}}>Score</div>
+                </div>
+              </>
+            )}
+          </div>
+          {/* Show missed answers / results */}
+          {isBorders && correct < total && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'16px',textAlign:'left'}}>
+              <div style={{color:'#f7b733',fontWeight:700,fontSize:'0.85rem',marginBottom:'8px'}}>Missed countries:</div>
+              <div style={{display:'flex',flexWrap:'wrap',gap:'6px'}}>
+                {challengeData.borders.filter(b => !borderGuesses.includes(b)).map((b,i) => (
+                  <span key={i} style={{background:'rgba(255,71,87,0.15)',border:'1px solid rgba(255,71,87,0.3)',
+                    borderRadius:'16px',padding:'4px 12px',color:'#ff6b6b',fontSize:'0.8rem'}}>{b}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          {isBlitz && blitzResults.length > 0 && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'16px',
+              maxHeight:'180px',overflowY:'auto',textAlign:'left'}}>
+              <div style={{color:'#f7b733',fontWeight:700,fontSize:'0.85rem',marginBottom:'8px'}}>Results:</div>
+              {blitzResults.map((r,i) => (
+                <div key={i} style={{display:'flex',justifyContent:'space-between',padding:'4px 0',
+                  borderBottom:'1px solid rgba(255,255,255,0.05)',fontSize:'0.8rem'}}>
+                  <span style={{color:'rgba(255,255,255,0.7)'}}>{r.country}</span>
+                  <span style={{color:r.correct?'#2ed573':'#ff4757',fontWeight:600}}>
+                    {r.capital} {r.correct ? '✓' : '✗'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          {isFlags && flagResults.length > 0 && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'16px',
+              maxHeight:'180px',overflowY:'auto',textAlign:'left'}}>
+              <div style={{color:'#f7b733',fontWeight:700,fontSize:'0.85rem',marginBottom:'8px'}}>Flags:</div>
+              {flagResults.map((r,i) => (
+                <div key={i} style={{display:'flex',justifyContent:'space-between',padding:'4px 0',
+                  borderBottom:'1px solid rgba(255,255,255,0.05)',fontSize:'0.8rem',alignItems:'center'}}>
+                  <span style={{color:'rgba(255,255,255,0.7)'}}>{r.flag}</span>
+                  <span style={{color:r.correct?'#2ed573':'#ff4757',fontWeight:600}}>
+                    {r.country} {r.correct ? '✓' : '✗'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          {isSprint && sprintResults.length > 0 && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'16px',
+              maxHeight:'180px',overflowY:'auto',textAlign:'left'}}>
+              <div style={{color:'#f7b733',fontWeight:700,fontSize:'0.85rem',marginBottom:'8px'}}>Sorting Results:</div>
+              {sprintResults.map((r,i) => (
+                <div key={i} style={{display:'flex',justifyContent:'space-between',padding:'4px 0',
+                  borderBottom:'1px solid rgba(255,255,255,0.05)',fontSize:'0.8rem'}}>
+                  <span style={{color:'rgba(255,255,255,0.7)'}}>{r.country}</span>
+                  <span style={{color:r.correct?'#2ed573':'#ff4757',fontWeight:600}}>
+                    {r.belongs ? 'Yes' : 'No'} {r.correct ? '✓' : '✗'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          {isPop && popResults.length > 0 && (
+            <div style={{background:'rgba(255,255,255,0.05)',borderRadius:'12px',padding:'14px',marginBottom:'16px',
+              maxHeight:'180px',overflowY:'auto',textAlign:'left'}}>
+              <div style={{color:'#f7b733',fontWeight:700,fontSize:'0.85rem',marginBottom:'8px'}}>Comparisons:</div>
+              {popResults.map((r,i) => (
+                <div key={i} style={{display:'flex',justifyContent:'space-between',padding:'4px 0',
+                  borderBottom:'1px solid rgba(255,255,255,0.05)',fontSize:'0.8rem'}}>
+                  <span style={{color:'rgba(255,255,255,0.7)'}}>{r.a} ({r.popA}M) vs {r.b} ({r.popB}M)</span>
+                  <span style={{color:r.correct?'#2ed573':'#ff4757',fontWeight:600}}>
+                    {r.correct ? '✓' : '✗'}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          <div style={{display:'flex',gap:'10px',justifyContent:'center',flexWrap:'wrap'}}>
+            <Btn onClick={() => startChallenge(challengeType)}>PLAY AGAIN! 🔄</Btn>
+            <button onClick={() => {
+              const nextType = isBorders ? 'blitz' : isBlitz ? 'flags' : isFlags ? 'continentsprint' : isPop ? 'borders' : 'population';
+              startChallenge(nextType);
+            }}
+              style={{...S.btn,background:'linear-gradient(135deg,#9b59b6,#8e44ad)',fontSize:'0.9rem',padding:'12px 24px'}}
+              onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+              Try Another Mode →
+            </button>
+          </div>
+          <button onClick={() => { setScreen('title'); sound.click(); sound.stopMusic(); }}
+            style={{marginTop:'12px',background:'transparent',border:'1px solid rgba(255,255,255,0.2)',
+              borderRadius:'12px',padding:'8px 20px',color:'rgba(255,255,255,0.5)',fontSize:'0.85rem',cursor:'pointer'}}>
+            ← Back to Menu
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (screen === 'title') return (
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{UnlockToast}
       <div style={animCard({textAlign:'center'})}>
         <div style={{fontSize:'4rem',marginBottom:'10px',animation:'bounceIn 0.5s ease-out'}}>🌍</div>
         <div style={{...S.title,animation:'titlePulse 3s ease-in-out infinite'}}>GEO-WRECKED!</div>
@@ -3858,9 +6247,49 @@ export default function GeoBeeGame() {
             </div>
           </div>
         </div>
+        {/* Theme Picker */}
+        <div style={{marginTop:'10px',marginBottom:'10px'}}>
+          <div style={{color:activeTheme.textSecondary,fontSize:'0.75rem',textAlign:'center',marginBottom:'8px',textTransform:'uppercase',letterSpacing:'2px'}}>
+            Theme
+          </div>
+          <div style={{display:'flex',gap:'8px',justifyContent:'center',flexWrap:'wrap'}}>
+            {Object.values(THEMES).map(theme => {
+              const isLocked = theme.unlockReq > 0 && badges.earned.length < theme.unlockReq;
+              const isActive = selectedTheme === theme.id;
+              return (
+                <button key={theme.id}
+                  onClick={() => {
+                    if (isLocked) {
+                      speech.speak(`Unlock this theme by earning ${theme.unlockReq} badges! You have ${badges.earned.length}.`, { rate: 1.1 });
+                      return;
+                    }
+                    sound.click();
+                    setSelectedTheme(theme.id);
+                  }}
+                  style={{
+                    width:'72px',height:'72px',borderRadius:'16px',
+                    background: isLocked ? 'rgba(255,255,255,0.03)' : theme.wrapBg,
+                    border: isActive ? '2px solid ' + theme.accent : '1px solid ' + (isLocked ? 'rgba(255,255,255,0.08)' : theme.cardBorder),
+                    cursor: isLocked ? 'not-allowed' : 'pointer',
+                    transition:'all 0.2s',opacity:isLocked?0.4:1,position:'relative',
+                    display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:'2px',
+                    boxShadow: isActive ? '0 0 20px ' + theme.accent + '40' : 'none'
+                  }}
+                  onMouseOver={e=>{if(!isLocked)e.target.style.transform='scale(1.1)';}}
+                  onMouseOut={e=>{e.target.style.transform='scale(1)';}}
+                >
+                  {isLocked && <div style={{position:'absolute',top:'-6px',right:'-6px',fontSize:'1rem'}}>🔒</div>}
+                  <div style={{fontSize:'1.4rem',pointerEvents:'none'}}>{theme.icon}</div>
+                  <div style={{fontSize:'0.6rem',color:'#fff',fontWeight:600,pointerEvents:'none'}}>{theme.name}</div>
+                  {isLocked && <div style={{fontSize:'0.5rem',color:'rgba(255,255,255,0.4)',pointerEvents:'none'}}>{theme.unlockReq} badges</div>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
         <div style={{display:'flex',flexDirection:'column',gap:'10px',marginBottom:'10px'}}>
           <Btn onClick={() => startGame('classic')}>CLASSIC MODE 🌎</Btn>
-          <button onClick={() => startGame('survival')}
+          <button onClick={() => { sound.click(); setScreen('survivalTierSelect'); }}
             style={{...S.btn,background:'linear-gradient(135deg,#e74c3c,#c0392b)',boxShadow:'0 4px 20px rgba(231,76,60,0.3)',fontSize:'1rem',padding:'14px 32px'}}
             onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
             SURVIVAL MODE ❤️❤️❤️
@@ -3875,6 +6304,65 @@ export default function GeoBeeGame() {
             onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
             HEAD-TO-HEAD DUEL ⚡
           </button>
+        </div>
+        {/* Challenge Mode Buttons */}
+        <div style={{marginTop:'6px',marginBottom:'10px'}}>
+          <div style={{color:'rgba(255,255,255,0.4)',fontSize:'0.75rem',textAlign:'center',marginBottom:'8px',textTransform:'uppercase',letterSpacing:'2px'}}>
+            Challenge Modes
+          </div>
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'8px',maxWidth:'420px',margin:'0 auto'}}>
+            <button onClick={() => startChallenge('borders')}
+              style={{background:'linear-gradient(135deg,#1abc9c,#16a085)',border:'none',borderRadius:'14px',
+                padding:'12px 12px',color:'#fff',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',
+                boxShadow:'0 4px 15px rgba(26,188,156,0.3)',transition:'all 0.2s'}}
+              onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+              🗺️ Border Challenge
+            </button>
+            <button onClick={() => startChallenge('blitz')}
+              style={{background:'linear-gradient(135deg,#e67e22,#d35400)',border:'none',borderRadius:'14px',
+                padding:'12px 12px',color:'#fff',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',
+                boxShadow:'0 4px 15px rgba(230,126,34,0.3)',transition:'all 0.2s'}}
+              onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+              ⚡ Capital Blitz
+            </button>
+            <button onClick={() => startChallenge('flags')}
+              style={{background:'linear-gradient(135deg,#e74c3c,#c0392b)',border:'none',borderRadius:'14px',
+                padding:'12px 12px',color:'#fff',fontSize:'0.8rem',fontWeight:700,cursor:'pointer',
+                boxShadow:'0 4px 15px rgba(231,76,60,0.3)',transition:'all 0.2s'}}
+              onMouseOver={e=>{e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+              🏁 Flag Frenzy
+            </button>
+            {(() => {
+              const lock = CHALLENGE_LOCKS['continentsprint'];
+              const isLocked = lock && !badges.earned.includes(lock.badgeId);
+              return (
+                <button onClick={() => { if (isLocked) { speech.speak('Locked! ' + lock.desc, {rate:1.1}); return; } startChallenge('continentsprint'); }}
+                  style={{background:'linear-gradient(135deg,#9b59b6,#8e44ad)',border:'none',borderRadius:'14px',
+                    padding:'12px 12px',color:'#fff',fontSize:'0.8rem',fontWeight:700,cursor:isLocked?'not-allowed':'pointer',
+                    boxShadow:'0 4px 15px rgba(155,89,182,0.3)',transition:'all 0.2s',opacity:isLocked?0.4:1,position:'relative'}}
+                  onMouseOver={e=>{if(!isLocked)e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+                  {isLocked && <span style={{position:'absolute',top:'-6px',right:'-6px',fontSize:'1rem'}}>🔒</span>}
+                  🌍 Continent Sprint
+                  {isLocked && <div style={{fontSize:'0.6rem',marginTop:'2px',opacity:0.6}}>🏅 {lock.desc}</div>}
+                </button>
+              );
+            })()}
+            {(() => {
+              const lock = CHALLENGE_LOCKS['population'];
+              const isLocked = lock && !badges.earned.includes(lock.badgeId);
+              return (
+                <button onClick={() => { if (isLocked) { speech.speak('Locked! ' + lock.desc, {rate:1.1}); return; } startChallenge('population'); }}
+                  style={{gridColumn:'1 / -1',background:'linear-gradient(135deg,#3498db,#2980b9)',border:'none',borderRadius:'14px',
+                    padding:'12px 12px',color:'#fff',fontSize:'0.8rem',fontWeight:700,cursor:isLocked?'not-allowed':'pointer',
+                    boxShadow:'0 4px 15px rgba(52,152,219,0.3)',transition:'all 0.2s',opacity:isLocked?0.4:1,position:'relative'}}
+                  onMouseOver={e=>{if(!isLocked)e.target.style.transform='scale(1.05)';}} onMouseOut={e=>{e.target.style.transform='scale(1)';}}>
+                  {isLocked && <span style={{position:'absolute',top:'-6px',right:'-6px',fontSize:'1rem'}}>🔒</span>}
+                  👥 Population Showdown
+                  {isLocked && <div style={{fontSize:'0.6rem',marginTop:'2px',opacity:0.6}}>🏅 {lock.desc}</div>}
+                </button>
+              );
+            })()}
+          </div>
         </div>
         <div style={{display:'flex',justifyContent:'center',gap:'12px',marginBottom:'6px',fontSize:'0.7rem',color:'rgba(255,255,255,0.35)',flexWrap:'wrap'}}>
           <span>🌎 5 rounds, 25 Qs</span>
@@ -3898,6 +6386,14 @@ export default function GeoBeeGame() {
             onMouseOver={e=>{e.target.style.background='rgba(247,183,51,0.2)';e.target.style.color='#f7b733';}}
             onMouseOut={e=>{e.target.style.background='rgba(247,183,51,0.1)';e.target.style.color='rgba(247,183,51,0.8)';}}>
             🏆 Leaderboard
+          </button>
+          <button onClick={() => { setScreen('worldMap'); sound.click(); }}
+            style={{background:'rgba(46,213,115,0.1)',border:'1px solid rgba(46,213,115,0.25)',
+              borderRadius:'14px',padding:'12px 24px',color:'rgba(46,213,115,0.8)',fontSize:'0.9rem',
+              cursor:'pointer',transition:'all 0.2s'}}
+            onMouseOver={e=>{e.target.style.background='rgba(46,213,115,0.2)';e.target.style.color='#2ed573';}}
+            onMouseOut={e=>{e.target.style.background='rgba(46,213,115,0.1)';e.target.style.color='rgba(46,213,115,0.8)';}}>
+            🗺️ World Map
           </button>
         </div>
         <div style={{marginTop:'16px',fontSize:'0.8rem',color:'rgba(255,255,255,0.3)'}}>Preparing for the 8th Grade GeoBee • {QUESTIONS.length} questions in the bank</div>
@@ -3950,7 +6446,7 @@ export default function GeoBeeGame() {
   );
 
   if (screen === 'question' && currentQ) return (
-    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+    <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}{CommentatorOverlay}
       <div style={animCard()}>
         {/* Mode indicator bar */}
         {gameMode === 'survival' && (
@@ -4111,7 +6607,7 @@ export default function GeoBeeGame() {
     const timeBonus = isCorrect ? Math.floor(timer*5) : 0;
     const streakBonus = (isCorrect && streak >= 3) ? (streak-1)*10 : 0;
     return (
-      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}
+      <div style={S.wrap}><div style={S.stars}/>{BadgeToast}{ConfettiOverlay}{CommentatorOverlay}
         <div style={animCard()}>
           <div style={{textAlign:'center',marginBottom:'20px',animation:'bounceIn 0.4s ease-out'}}>
             <div style={{fontSize:'3rem',marginBottom:'8px'}}>{selected===-1?'⏰':isCorrect?'🎉':'😬'}</div>
